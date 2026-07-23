@@ -1,0 +1,179 @@
+# galerie
+url: https://osteopathie-animale.sitepreproduction.fr/galerie/
+title: Soins ostéopathie animale en photo - Marie Salabert
+description: Bienvenue chez Marie Salabert, spécialiste des soins ostéopathiques pour animaux. Découvrez mon expertise en images.
+
+
+## ZONE header (21 blocs)
+
+- p: Ostheopathie animale Toulouse
+- LINK [Ostheopathie animale Toulouse](https://osteopathie-animale.sitepreproduction.fr/) class=
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/) class=elementor-clickable
+- IMG `2024/05/cropped-logo-osteopathe-animalier-toulouse-31-300x293.png` alt='default-logo' 300x293
+- li: Accueil
+- LINK [Accueil](https://osteopathie-animale.sitepreproduction.fr/) class=hfe-menu-item
+- li: À Propos
+- LINK [À Propos](https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/) class=hfe-menu-item
+- li: Consultations
+- LINK [Consultations](https://osteopathie-animale.sitepreproduction.fr/consulation-osteopathe-animalier/) class=hfe-menu-item
+- li: Certification
+- LINK [Certification](https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/) class=hfe-menu-item
+- li: Actualités
+- LINK [Actualités](https://osteopathie-animale.sitepreproduction.fr/actualites/) class=hfe-menu-item
+- li: FAQ
+- LINK [FAQ](https://osteopathie-animale.sitepreproduction.fr/faq/) class=hfe-menu-item
+- li: Galerie
+- LINK [Galerie](https://osteopathie-animale.sitepreproduction.fr/galerie/) class=hfe-menu-item
+- li: Symbiosteo
+- LINK [Symbiosteo](https://osteopathie-animale.sitepreproduction.fr/symbiosteo-2/) class=hfe-menu-item
+- LINK [Prendre un rendez-vous](https://osteopathie-animale.sitepreproduction.fr/rendez-vous-osteopathe-animalier/) class=elementor-button elementor-button-link elementor-size-sm
+
+## ZONE main (117 blocs)
+
+- LINK [Aller au contenu](#content) class=skip-link screen-reader-text
+- h1: Photos lors de mes soins
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/0F5B6603-1F2C-4E03-9DBE-5CB61FAA5728.jpg) class=
+- IMG `2025/05/0F5B6603-1F2C-4E03-9DBE-5CB61FAA5728.jpg` alt='' 1440x961
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/8EA7CB2B-F3F6-43F4-9123-26CD0988B122.jpg) class=
+- IMG `2025/05/8EA7CB2B-F3F6-43F4-9123-26CD0988B122.jpg` alt='' 1440x961
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/9F3CC3C6-C8CC-45ED-84F6-D54379C346E8.jpg) class=
+- IMG `2025/05/9F3CC3C6-C8CC-45ED-84F6-D54379C346E8.jpg` alt='' 1440x963
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/1263AD08-F7DB-4256-AC10-44C276231849.jpg) class=
+- IMG `2025/05/1263AD08-F7DB-4256-AC10-44C276231849.jpg` alt='' 1440x961
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/b2e4d989-d855-48d1-97ef-fdefede9824b.jpg) class=
+- IMG `2025/05/b2e4d989-d855-48d1-97ef-fdefede9824b.jpg` alt='' 2048x2048
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/B8F0133C-B03C-433E-A182-443F72A4644B.jpg) class=
+- IMG `2025/05/B8F0133C-B03C-433E-A182-443F72A4644B.jpg` alt='' 1440x961
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/c96238dd-f7ec-48af-aa1c-168fc97085f7.jpg) class=
+- IMG `2025/05/c96238dd-f7ec-48af-aa1c-168fc97085f7.jpg` alt='' 1368x1824
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/D2FAB58D-7A14-4998-A8AB-85CCBB71F706.jpg) class=
+- IMG `2025/05/D2FAB58D-7A14-4998-A8AB-85CCBB71F706.jpg` alt='' 1440x961
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/decouvrir-osteopathe-animale-1.jpg) class=
+- IMG `2025/05/decouvrir-osteopathe-animale-1.jpg` alt='' 1488x1304
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/f054923d-0543-4a49-b053-d6087b4ee958.jpg) class=
+- IMG `2025/05/f054923d-0543-4a49-b053-d6087b4ee958.jpg` alt='' 1500x2000
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_0294.jpg) class=
+- IMG `2025/05/IMG_0294.jpg` alt='' 750x1001
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_0832.jpg) class=
+- IMG `2025/05/IMG_0832.jpg` alt='' 960x640
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_1122.jpg) class=
+- IMG `2025/05/IMG_1122.jpg` alt='' 1184x789
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_2050.jpg) class=
+- IMG `2025/05/IMG_2050.jpg` alt='' 721x960
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_2052.jpg) class=
+- IMG `2025/05/IMG_2052.jpg` alt='' 718x960
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_2053.jpg) class=
+- IMG `2025/05/IMG_2053.jpg` alt='' 1532x2048
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_2054.jpg) class=
+- IMG `2025/05/IMG_2054.jpg` alt='' 1532x2048
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_2057.jpg) class=
+- IMG `2025/05/IMG_2057.jpg` alt='' 960x720
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_3405.jpg) class=
+- IMG `2025/05/IMG_3405.jpg` alt='' 750x565
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_4326.jpg) class=
+- IMG `2025/05/IMG_4326.jpg` alt='' 750x565
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_4328.jpg) class=
+- IMG `2025/05/IMG_4328.jpg` alt='' 750x565
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5034.jpg) class=
+- IMG `2025/05/IMG_5034.jpg` alt='' 1032x774
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5204.jpg) class=
+- IMG `2025/05/IMG_5204.jpg` alt='' 1184x789
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5213.jpg) class=
+- IMG `2025/05/IMG_5213.jpg` alt='' 1184x789
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5249.jpg) class=
+- IMG `2025/05/IMG_5249.jpg` alt='' 1184x789
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5278.jpg) class=
+- IMG `2025/05/IMG_5278.jpg` alt='' 1184x789
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5282.jpg) class=
+- IMG `2025/05/IMG_5282.jpg` alt='' 1184x789
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5312.jpg) class=
+- IMG `2025/05/IMG_5312.jpg` alt='' 1184x789
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5392.jpg) class=
+- IMG `2025/05/IMG_5392.jpg` alt='' 789x1184
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5407.jpg) class=
+- IMG `2025/05/IMG_5407.jpg` alt='' 789x1184
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5417.jpg) class=
+- IMG `2025/05/IMG_5417.jpg` alt='' 789x1184
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5516.jpg) class=
+- IMG `2025/05/IMG_5516.jpg` alt='' 1184x789
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5617.jpg) class=
+- IMG `2025/05/IMG_5617.jpg` alt='' 789x1184
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5703.jpg) class=
+- IMG `2025/05/IMG_5703.jpg` alt='' 789x1184
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5732.jpg) class=
+- IMG `2025/05/IMG_5732.jpg` alt='' 789x1184
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_5743.jpg) class=
+- IMG `2025/05/IMG_5743.jpg` alt='' 789x1184
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_7834.jpg) class=
+- IMG `2025/05/IMG_7834.jpg` alt='' 720x960
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_7837.jpg) class=
+- IMG `2025/05/IMG_7837.jpg` alt='' 720x960
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_8229.jpg) class=
+- IMG `2025/05/IMG_8229.jpg` alt='' 720x960
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_8232.jpg) class=
+- IMG `2025/05/IMG_8232.jpg` alt='' 750x563
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_8248.jpg) class=
+- IMG `2025/05/IMG_8248.jpg` alt='' 750x1008
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_8250.jpg) class=
+- IMG `2025/05/IMG_8250.jpg` alt='' 750x1008
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_8260.jpg) class=
+- IMG `2025/05/IMG_8260.jpg` alt='' 750x1008
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_8268.jpg) class=
+- IMG `2025/05/IMG_8268.jpg` alt='Marie salabert en train de soigner un cheval.' 2000x1500
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/IMG_8271.jpg) class=
+- IMG `2025/05/IMG_8271.jpg` alt='Marie salabert en train de soigner un cheval.' 2000x1500
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/marie-salabert-osteopathe-animaliere-1.jpg) class=
+- IMG `2025/05/marie-salabert-osteopathe-animaliere-1.jpg` alt='Marie salabert en train de soigner un chat.' 1440x961
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/rendez-vous-osteopathe-animalier.jpg) class=
+- IMG `2025/05/rendez-vous-osteopathe-animalier.jpg` alt='Marie salabert en train de soigner un chien.' 1184x789
+- LINK [Réservez une séance d'ostéopathie animale](https://osteopathie-animale.sitepreproduction.fr/reservation/) class=elementor-button elementor-button-link elementor-size-md
+- label: Fonctionnel
+- label: Préférences
+- label: Statistiques
+- label: Marketing
+- li: Gérer les options
+- LINK [Gérer les options](#) class=cmplz-link cmplz-manage-options cookie-statement
+- li: Gérer les services
+- LINK [Gérer les services](#) class=cmplz-link cmplz-manage-third-parties cookie-statement
+- li: Gérer {vendor_count} fournisseurs
+- LINK [Gérer {vendor_count} fournisseurs](#) class=cmplz-link cmplz-manage-vendors tcf cookie-statement
+- li: En savoir plus sur ces finalités
+- LINK [En savoir plus sur ces finalités](https://cookiedatabase.org/tcf/purposes/) class=cmplz-link cmplz-external cmplz-read-more-purposes tcf
+- button: Accepter
+- button: Refuser
+- button: Voir les préférences
+- button: Enregistrer les préférences
+- LINK [Voir les préférences](#) class=cmplz-btn cmplz-manage-options tcf cookie-statement
+- li: {title}
+- LINK [{title}](#) class=cmplz-link cookie-statement
+- button: Gérer le consentement
+
+## ZONE footer (27 blocs)
+
+- IMG `2023/05/Logo-osteopathe-animalier-toulouse.png` alt="Logo de Marie Salabert représenté avec la tête de chien, d'un cochon, d'un lapin, d'un cheval, d'un chat, d'un taureau" 510x510
+- IMG `2023/05/shape-pattern-2.png` alt='' 489x473
+- h5: Plus d'infos
+- li: A propos
+- LINK [A propos](https://osteopathie-animale.sitepreproduction.fr/a-propos/) class=
+- li: Contact
+- LINK [Contact](https://osteopathie-animale.sitepreproduction.fr/contact/) class=
+- li: Réserver une séance
+- LINK [Réserver une séance](https://osteopathie-animale.sitepreproduction.fr/reservation/) class=
+- li: Politique de Cookies
+- LINK [Politique de Cookies](https://osteopathie-animale.sitepreproduction.fr/politique-de-cookies-ue/) class=
+- li: Mentions Légales
+- LINK [Mentions Légales](https://osteopathie-animale.sitepreproduction.fr/mentions-legales/) class=
+- li: Politique de Confidentialité
+- LINK [Politique de Confidentialité](https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/) class=
+- h5: Contact
+- li: Marie Salabert Ostéopathie Animale
+- li: 7 Rue des épicéas - 31180 Castelmaurou
+- li: Siret : 883.931.347.000.16
+- li: Inscrite sur le Registre National d’Aptitude tenu par le Conseil National de l’Ordre des Vétérinaires (OA 801)
+- li: Tél : 06.37.88.00.73
+- LINK [Tél : 06.37.88.00.73](tel:+33637880073) class=
+- IMG `2023/05/shape-pattern-3.png` alt='' 552x328
+- LINK [](https://www.facebook.com/mariesalabertosteopathieanimale/) class=elementor-icon
+- LINK [](https://www.instagram.com/mariesalabert.osteoanimale/) class=elementor-icon
+- LINK [](https://www.linkedin.com/in/marie-salabert-0197b2166/?originalSubdomain=fr) class=elementor-icon
+- LINK [Conception site internet : Clickzou](https://clickzou.fr/) class=

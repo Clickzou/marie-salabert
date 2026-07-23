@@ -1,0 +1,764 @@
+{
+ "slug": "conference-pour-l-ifce",
+ "url": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/",
+ "meta": {
+  "title": "Conférence pour l’IFCE – Etat des lieux pour l’ostéopathie animale",
+  "description": "Découvrez lors de notre conférence exclusive pour l’IFCE un état des lieux détaillé de l'ostéopathie animale.",
+  "robots": "noindex, nofollow",
+  "og:title": "Conférence pour l’IFCE – Etat des lieux pour l’ostéopathie animale",
+  "og:description": "Découvrez lors de notre conférence exclusive pour l’IFCE un état des lieux détaillé de l'ostéopathie animale.",
+  "og:image": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux.jpg",
+  "og:type": "article",
+  "og:url": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/",
+  "canonical": null,
+  "lang": "fr-FR",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Article",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/#article",
+      "isPartOf": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/"
+      },
+      "author": {
+       "name": "JC",
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#/schema/person/44bde9915ea386e3fc01ab1939297ece"
+      },
+      "headline": "Conférence pour l’IFCE – Etat des lieux pour l’ostéopathie animale",
+      "datePublished": "2024-05-15T11:38:04+00:00",
+      "dateModified": "2024-05-15T11:48:46+00:00",
+      "mainEntityOfPage": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/"
+      },
+      "wordCount": 216,
+      "publisher": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#organization"
+      },
+      "image": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/#primaryimage"
+      },
+      "thumbnailUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux.jpg",
+      "articleSection": [
+       "Actualités"
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/",
+      "name": "Conférence pour l’IFCE – Etat des lieux pour l’ostéopathie animale",
+      "isPartOf": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/#primaryimage"
+      },
+      "image": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/#primaryimage"
+      },
+      "thumbnailUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux.jpg",
+      "datePublished": "2024-05-15T11:38:04+00:00",
+      "dateModified": "2024-05-15T11:48:46+00:00",
+      "description": "Découvrez lors de notre conférence exclusive pour l’IFCE un état des lieux détaillé de l'ostéopathie animale.",
+      "breadcrumb": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "fr-FR",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/#primaryimage",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux.jpg",
+      "contentUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux.jpg",
+      "width": 2121,
+      "height": 1414,
+      "caption": "Un cheval se faisant soigné par un ostéopathe"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://osteopathie-animale.sitepreproduction.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Conférence pour l’IFCE – Etat des lieux pour l’ostéopathie animale"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/#website",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/",
+      "name": "Ostheopathie animale Toulouse",
+      "description": "",
+      "publisher": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://osteopathie-animale.sitepreproduction.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/#organization",
+      "name": "Ostheopathie animale Toulouse",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#/schema/logo/image/",
+       "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png",
+       "contentUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png",
+       "width": 336,
+       "height": 328,
+       "caption": "Ostheopathie animale Toulouse"
+      },
+      "image": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#/schema/logo/image/"
+      }
+     },
+     {
+      "@type": "Person",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/#/schema/person/44bde9915ea386e3fc01ab1939297ece",
+      "name": "JC",
+      "image": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://secure.gravatar.com/avatar/39d98c00e0f26bf7eb7fecb4d2eea8cd006c1a2e3fdf596112c3c1a47bd6b643?s=96&d=mm&r=g",
+       "url": "https://secure.gravatar.com/avatar/39d98c00e0f26bf7eb7fecb4d2eea8cd006c1a2e3fdf596112c3c1a47bd6b643?s=96&d=mm&r=g",
+       "contentUrl": "https://secure.gravatar.com/avatar/39d98c00e0f26bf7eb7fecb4d2eea8cd006c1a2e3fdf596112c3c1a47bd6b643?s=96&d=mm&r=g",
+       "caption": "JC"
+      },
+      "sameAs": [
+       "https://osteopathie-animale.sitepreproduction.fr"
+      ],
+      "url": "https://osteopathie-animale.sitepreproduction.fr/author/jc/"
+     }
+    ]
+   }
+  ],
+  "body_class": "wp-singular post-template-default single single-post postid-854 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-astra ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.6 ast-blog-single-style-1 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-page-856 ast-normal-title-enabled elementor-default elementor-template-canvas elementor-kit-88"
+ },
+ "css_backgrounds": [],
+ "blocks": [
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "",
+   "internal": true,
+   "class": "elementor-clickable"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31-300x293.png",
+   "alt": "default-logo",
+   "title": null,
+   "width": "300",
+   "height": "293",
+   "srcset": null,
+   "class": "hfe-site-logo-img elementor-animation-"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31-300x293.png",
+   "alt": "default-logo",
+   "title": null,
+   "width": "300",
+   "height": "293",
+   "srcset": null,
+   "class": "hfe-site-logo-img elementor-animation-"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Accueil"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "Accueil",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "À Propos"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/",
+   "text": "À Propos",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Consultations"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/consulation-osteopathe-animalier/",
+   "text": "Consultations",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Certification"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/",
+   "text": "Certification",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Actualités"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/actualites/",
+   "text": "Actualités",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "FAQ"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/faq/",
+   "text": "FAQ",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Galerie"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/galerie/",
+   "text": "Galerie",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Symbiosteo"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/symbiosteo-2/",
+   "text": "Symbiosteo",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/rendez-vous-osteopathe-animalier/",
+   "text": "Prendre un rendez-vous",
+   "internal": true,
+   "class": "elementor-button elementor-button-link elementor-size-sm"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/categorie/actualites/",
+   "text": "Actualités",
+   "internal": true,
+   "class": "elementor-post-info__terms-list-item"
+  },
+  {
+   "type": "h1",
+   "zone": "main",
+   "text": "Conférence pour l’IFCE – Etat des lieux pour l’ostéopathie animale"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "« Il n’a pas l’air très droit, il semble avoir mal au dos, on va faire venir l’ostéo ». Cette phrase est depuis quelques années prononcée régulièrement dans les écuries ! Mais face à la diversité des praticiens qui proposent différents services dans le domaine de l’ostéopathie, il n’est pas toujours facile de s’y retrouver."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Pour une consultation ostéopathique, il est possible de se tourner vers les vétérinaires formés à cette approche diagnostique et thérapeutique. Certains d’entre eux sont titulaires d’un diplôme, le « DIE d’ostéopathie vétérinaire », reconnu par l’Ordre des vétérinaires, mais celui-ci n’est pas obligatoire pour exercer l’ostéopathie vétérinaire."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Depuis 2017, l’ostéopathie animale peut être pratiquée par des non-vétérinaires. Ceux-ci doivent être inscrit sur le RNA (Registre National d’Aptitude), un registre tenu par le Conseil National de l’Ordre des Vétérinaires (CNOV)."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Les personnes inscrites sur ce registre ont passé un examen, obligatoire pour pouvoir pratiquer. Cet examen concerne tous les professionnels (ceux déjà en exercice avant 2017 et tous les étudiants sortants de leurs études)."
+  },
+  {
+   "type": "h4",
+   "zone": "main",
+   "text": "Vous aimez cet article ?"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/",
+   "text": "",
+   "internal": true,
+   "class": "elementor-post__thumbnail__link"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux-300x200.jpg",
+   "alt": "Un cheval se faisant soigné par un ostéopathe",
+   "title": null,
+   "width": "300",
+   "height": "200",
+   "srcset": null,
+   "class": "attachment-medium size-medium wp-image-129"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux-300x200.jpg",
+   "alt": "Un cheval se faisant soigné par un ostéopathe",
+   "title": null,
+   "width": "300",
+   "height": "200",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux-300x200.jpg 300w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux-1024x683.jpg 1024w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux-768x512.jpg 768w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux-1536x1024.jpg 1536w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux-2048x1365.jpg 2048w",
+   "class": "attachment-medium size-medium wp-image-129"
+  },
+  {
+   "type": "h3",
+   "zone": "main",
+   "text": "Conférence pour l’IFCE – Etat des lieux pour l’ostéopathie animale"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/",
+   "text": "Conférence pour l’IFCE – Etat des lieux pour l’ostéopathie animale",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "« Il n’a pas l’air très droit, il semble avoir mal au dos, on va faire venir l’ostéo ».Cette phrase est depuis quelques années prononcée"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/conference-pour-l-ifce/",
+   "text": "Lire la suite",
+   "internal": true,
+   "class": "elementor-post__read-more"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png",
+   "alt": "Logo de Marie Salabert représenté avec la tête de chien, d'un cochon, d'un lapin, d'un cheval, d'un chat, d'un taureau",
+   "title": null,
+   "width": "510",
+   "height": "510",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-272"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png",
+   "alt": "Logo de Marie Salabert représenté avec la tête de chien, d'un cochon, d'un lapin, d'un cheval, d'un chat, d'un taureau",
+   "title": null,
+   "width": "510",
+   "height": "510",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png 510w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse-300x300.png 300w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse-150x150.png 150w",
+   "class": "attachment-full size-full wp-image-272"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png",
+   "alt": "",
+   "title": null,
+   "width": "489",
+   "height": "473",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-70"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png",
+   "alt": "",
+   "title": null,
+   "width": "489",
+   "height": "473",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png 489w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2-300x290.png 300w",
+   "class": "attachment-full size-full wp-image-70"
+  },
+  {
+   "type": "h5",
+   "zone": "main",
+   "text": "Plus d'infos"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "A propos"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/a-propos/",
+   "text": "A propos",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Contact"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/contact/",
+   "text": "Contact",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Réserver une séance"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/reservation/",
+   "text": "Réserver une séance",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Politique de Cookies"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/politique-de-cookies-ue/",
+   "text": "Politique de Cookies",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Mentions Légales"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/mentions-legales/",
+   "text": "Mentions Légales",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Politique de Confidentialité"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/",
+   "text": "Politique de Confidentialité",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "h5",
+   "zone": "main",
+   "text": "Contact"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Marie Salabert Ostéopathie Animale"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "7 Rue des épicéas - 31180 Castelmaurou"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Siret : 883.931.347.000.16"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Inscrite sur le Registre National d’Aptitude tenu par le Conseil National de l’Ordre des Vétérinaires (OA 801)"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Tél : 06.37.88.00.73"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "tel:+33637880073",
+   "text": "Tél : 06.37.88.00.73",
+   "internal": false,
+   "class": ""
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png",
+   "alt": "",
+   "title": null,
+   "width": "552",
+   "height": "328",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-71"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png",
+   "alt": "",
+   "title": null,
+   "width": "552",
+   "height": "328",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png 552w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3-300x178.png 300w",
+   "class": "attachment-full size-full wp-image-71"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://www.facebook.com/mariesalabertosteopathieanimale/",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://www.instagram.com/mariesalabert.osteoanimale/",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://www.linkedin.com/in/marie-salabert-0197b2166/?originalSubdomain=fr",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://clickzou.fr/",
+   "text": "Conception site internet : Clickzou",
+   "internal": false,
+   "class": ""
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Fonctionnel"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Préférences"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Statistiques"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Marketing"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer les options"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer les options",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-options cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer les services"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer les services",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-third-parties cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer {vendor_count} fournisseurs"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer {vendor_count} fournisseurs",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-vendors tcf cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "En savoir plus sur ces finalités"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://cookiedatabase.org/tcf/purposes/",
+   "text": "En savoir plus sur ces finalités",
+   "internal": false,
+   "class": "cmplz-link cmplz-external cmplz-read-more-purposes tcf"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Accepter"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Refuser"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Voir les préférences"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Enregistrer les préférences"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Voir les préférences",
+   "internal": false,
+   "class": "cmplz-btn cmplz-manage-options tcf cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "{title}"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link cookie-statement"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link privacy-statement"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link impressum"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Gérer le consentement"
+  }
+ ]
+}

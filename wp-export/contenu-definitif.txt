@@ -1,0 +1,938 @@
+SITE MULTILINGUES : FRANÇAIS🇫🇷/ ANGLAIS🇬🇧 / ITALIEN🇮🇹
+
+ACCUEIL
+
+Éléments manquant important bandeau d’accueil : que les gens sachent qu’ils sont sur mon site!
+Ajouter « Marie Salabert Ostéopathie Animale » dans la partie blanche
+
+
+Pour les grands onglets du haut : Accueil - A propos - Actualités - Consultations - FAQ - Galerie - Contact - Symbiosteo
+
+
+PAGE D’ACCUEIL
+
+——————————————————————————————————
+
+Mettre le logo de l’ordre des vétérinaire et non de l’ordre des médecins
+
+—————————————————————————————————————
+Parcours Personnels
+
+Passionnée par les animaux et les thérapies manuelles depuis toujours, je me suis naturellement orientée vers des études d’ostéopathie animale.
+Après cinq années de formation et mon inscription au Registre National d’Aptitude tenu par le CNOV, je me suis installée en région toulousaine, dont je suis originaire, afin d’y exercer depuis 2020.
+Le sport, et notamment la pratique de l’athlétisme, a occupé une place importante dans mon parcours. Il m’a transmis des valeurs de rigueur, de persévérance et de discipline qui m’accompagnent aujourd’hui dans ma pratique professionnelle.
+Soucieuse de participer à l’évolution et à la reconnaissance de l’ostéopathie animale en France, je me suis engagée pendant plusieurs années au sein d’associations œuvrant pour la structuration de la profession. De 2017 à 2020, j’ai notamment assuré la présidence de l’Union Française des Étudiants Ostéopathes Animaliers (UFEOA), avant de co-fonder le Collectif des Ostéopathes Animaliers, au sein duquel je suis restée activement impliquée de 2020 à 2025. Celui-ci est devenu aujourd’hui le syndicat national des professionnels inscrits au RNA tenu par le CNOV.
+Animée par la volonté de créer du lien entre les différents acteurs de la santé animale, j’ai été à l’initiative de l’organisation des congrès SymbiOsteo en 2019 et 2022, puis j’ai co-créé SymbiOsteo, le podcast en 2024. Ces projets ont pour objectif de favoriser les échanges entre vétérinaires pratiquant l’ostéopathie, ostéopathes animaliers et ostéopathes humains, tout en mettant en lumière les évolutions des pratiques, l’actualité et les perspectives de recherche dans ce domaine.
+En 2025, j’ai souhaité approfondir mes connaissances et développer une approche davantage tournée vers la recherche scientifique. J’ai ainsi intégré le Master 2 « Gestion des Établissements de Formation et de Recherche en Santé » à l’Université de Haute-Alsace de Mulhouse. Cette formation a conduit à ma première publication scientifique dans la revue de santé intégrative Hegel : « Ostéopathie, chiropraxie, thérapies manuelles : analyse bibliométrique (1949–2025) ». https://stm.cairn.info/revue-hegel-2026-1-page-5?lang=fr Bouton : Lire l’article (coller le bouton au dernier paragraphe)
+
+
+
+Ajouter un bouton « Pour en savoir plus » et renvoyer sur la page Actualités
+
+—————————————————————————————————————
+
+				Pour les 3 piliers, remplacer les titres par :
+- « Ostéopathie pour animaux de compagnie - titre inférieur : chiens, chats, NAC’S »
+
+Accompagner la croissance, le développement et le vieillissement.
+Optimiser la récupération après un traumatisme ou une intervention chirurgicale.
+Intervenir suite à un épisode de boiterie afin de restaurer un fonctionnement locomoteur optimal.
+Contribuer à la prise en charge globale de certaines affections chroniques ou récidivantes.
+Participer au suivi fonctionnel d’animaux présentant certains troubles digestifs chroniques.
+S’intégrer au suivi de certains troubles métaboliques.
+Concourir à la prise en charge des animaux reproducteurs et des problématiques associées avec les éleveurs et vétérinaires référents.
+Assurer le suivi des animaux sportifs.
+Accompagner, en complément d’une prise en charge comportementale, aux côtés de vétérinaires et d’éducateurs spécialisés.
+Suivre les animaux adoptés et/ou ayant un parcours de vie difficile.
+Favoriser le bien-être général.
+
+
+- « Ostéopathie pour les équidés - titre inférieur : pour tous types de chevaux (course, sport équestre, élevage, spectacle, loisir, trait), ânes et mules »
+Suivre le poulain pendant sa croissance et contribuer au bon développement de ses aplombs, en collaboration avec des maréchaux-ferrants et des vétérinaires.
+Optimiser le suivi et les performances du cheval athlète.
+Améliorer la locomotion, la posture et la souplesse.
+S’intégrer au suivi global des chevaux atteints de troubles métaboliques ou endocriniens.
+Adapter le suivi pour les chevaux présentant des troubles chroniques (neurologiques, cutanés, digestifs).
+Participer à la récupération fonctionnelle après un effort intense ou une période de convalescence.
+S’inscrire dans le suivi de la reproduction des équidés, en collaboration avec les haras, les éleveurs et les vétérinaires (suivi des étalons, suivi des juments : troubles de la fertilité, gestation, post-mise bas).
+Aider pendant les phases de transition.
+Contribuer au confort du cheval âgé.
+Collaborer, par une approche interdisciplinaire, à une prise en charge globale avec les professionnels de la santé et du bien-être animal.
+
+
+- « Ostéopathie pour animaux de rente, ferme et production animale - titre inférieur : Bovins, Ovins, Caprins et Porcins »
+Favoriser un développement harmonieux des jeunes animaux.
+S’intégrer au suivi des animaux reproducteurs (des mâles et des femelles : troubles de la fertilité, gestation, post-mise bas).
+Améliorer la locomotion et la posture.
+Agir en collaboration avec le vétérinaire lorsque l’animal perd de l’état et ne peut plus se déplacer.
+Participer au suivi des animaux de concours.
+Contribuer au bien-être des animaux et à leur adaptation aux contraintes d’élevage.
+Optimiser la production laitière.
+
+—————————————————————————————————————
+
+FAUTES : « rdv ostéopathie animalier » à remplacer par « Rendez-vous en ostéopathie animale »
+
+Comment prendre rendez-vous ?
+La prise de rendez-vous se fait par téléphone, en cas d'indisponibilité je vous invite à me laisser un SMS avec la raison de votre appel, votre adresse ainsi que vos disponibilités.
+
+Depuis janvier 2025, j’ai délégué mon planning à mon assistante Anne-Sophie. Elle vous recontactera dans les meilleurs délais pour répondre à vos questions et planifier votre rendez-vous. Je reste cependant disponible pour échanger spécifiquement sur votre animal en cas de besoin.
+
+
+06 37 88 00 73
+Numéro du Secrétariat : 06 79 74 97 77
+
+Le tarif des consultations dépend de votre localisation, pour connaître le montant exact nous vous invitions à le demander au moment de la prise de rendez-vous.
+
+Moyens de paiement acceptés : chèque, virement ou espèces
+
+—————————————————————————————————
+
+Les lieux de consultation
+A votre domicile sur les départements suivant (31, 81, 82, 47, 32, 46, 09 et 11)
+Tous les vendredi après midi à la clinique vétérinaire du Val Dadou à Graulhet (81)
+A enlever : De manière ponctuelle au complexe Nature Animale sur Grenade sur Garonne (31)
+
+Tournées en Guyane Française (2 fois par an)
+Déplacement à domicile et dans les endroits suivants :
+Clinique vétérinaire de l’Ouest à Saint Laurent du Maroni
+Salon de Toilettage la Niche du Bien être à Matoury
+Salon de Toilettage Louloustars à Cayenne
+
+——————————————————————————————————
+«séance ostéopathie animalière » à remplacer par « séance d’ostéopathie animale »
+Le  déroulement d’une consultation en 6 étapes
+Anamnèse - recueil des informations sur la santé de votre animal et création de votre dossier.
+Chaque consultation débute par un temps d’échange afin de recueillir les informations essentielles concernant votre animal et le motif de la séance en ostéopathie. Son historique médical, son mode de vie, son comportement, son alimentation, son activité, son environnement sont abordés afin d’obtenir une vision globale de sa situation.
+Cette étape permet à votre ostéopathe de replacer l’animal dans son contexte de vie et d’orienter l’examen clinique et ostéopathique de manière adaptée.
+Le dossier de votre animal est ensuite créé et sécurisé via Djooka, le carnet de santé numérique dédié aux animaux. Vous y retrouverez les comptes rendus des consultations ainsi que les factures associées.
+
+https://djooka.com
+
+Mettre une photo
+
+  Examen locomoteur et statique
+La consultation se poursuit par une observation dynamique et statique de votre animal.
+L’analyse de la locomotion permet d’évaluer la qualité des déplacements, la symétrie des allures, les amplitudes de mouvement ainsi que l’existence d’éventuelles restrictions de mobilité, compensations ou irrégularités locomotrices.
+L’observation statique complète cet examen en recherchant d’éventuels déséquilibres posturaux, reports de poids, attitudes antalgiques ou adaptations corporelles pouvant traduire un inconfort fonctionnel.
+
+Le diagnostic d’opportunité ou d’exclusion
+Un examen palpatoire approfondi est ensuite réalisé afin de vérifier que votre animal est bien apte pour une prise en charge ostéopathique.
+Cette étape permet d’identifier d’éventuels signes d’alerte nécessitant une orientation préalable ou complémentaire vers votre vétérinaire. L’ostéopathie intervient toujours dans le respect de ses compétences et en complément du suivi vétérinaire lorsque celui-ci est indiqué.
+
+
+Le diagnostic ostéopathique
+À l’aide d’un examen manuel précis, l’ostéopathe évalue la mobilité des articulations, des muscles, des fascias, des viscères, du crâne et des différents tissus de l’organisme.
+Cette évaluation globale permet d’identifier les restrictions de mobilité, les adaptations fonctionnelles et les compensations susceptibles de participer aux déséquilibres observés.
+Un bilan vous est ensuite présenté et expliqué avant la mise en œuvre du traitement ostéopathique.
+
+Le traitement ostéopathique
+Le traitement repose exclusivement sur des techniques manuelles adaptées à chaque animal, à son espèce, à son âge, à son activité et au motif de consultation.
+L’objectif est de restaurer une mobilité tissulaire optimale, d’améliorer la qualité du mouvement, de favoriser les capacités d’adaptation de l’organisme et de contribuer au confort fonctionnel de l’animal.
+Ma pratique s’appuie sur différentes approches complémentaires :
+musculo-squelettiques ;
+myofasciales ;
+tissulaires ;
+viscérales ;
+liquidiennes ;
+crâniennes ;
+réflexes ;
+tenségritives.
+
+Les conseils après séance
+À l’issue de la séance, un compte rendu vous est transmis, accompagné de recommandations personnalisées, adaptées aux besoins de votre animal.
+Ces conseils portent notamment sur la gestion du repos, la reprise progressive de l’activité, les éventuels exercices recommandés ainsi que les points de vigilance à observer dans les jours suivant la consultation.
+L’objectif est de favoriser une récupération optimale et d’inscrire la prise en charge dans une démarche globale de santé et de bien-être, en collaboration avec votre vétérinaire lorsque cela est nécessaire.
+
+
+
+
+Bandeau « A vos côtés pour la santé et le bien-être de votre animal »
+
+
+—————————————————————————————————
+
+Avis Google (seulement ceux existants)
+
+—————————————————————————————————————
+
+PIED DE PAGE
+
+Pied de page
+Mettre le logo dans son intégralité (dessin et nom prénom ostéopathie animale) sans fond en plus gros
+
+Marie Salabert Ostéopathie Animale
+06 37 88 00 73
+Numéro du Secrétartiat
+06 79 74 97 77
+Entreprise Individuelle
+Siret 883 931 347 000 16
+Numéro de TVA intracommunautaire FR02883931347
+
+A ajouter zones d’interventions
+
+Inscrite sur le Registre National d’Aptitude tenu par le Conseil National de l’Ordre des Vétérinaires (OA 801)
+
+Facebook : Marie Salabert Ostéopathie Animale
+LinkedIN : Marie Salabert
+Instagram : mariesalabert.osteoanimale
+WHATSAPP (vers 2 numéros)
+
+Ne faire apparaître le mail professionnel que dans le formulaire de prise de rendez vous je préfère qu’on me contacte par SMS : mariesalabert.osteoanimale@gmail.com
+
+
+Adresse personnelle à indiquer dans les mentions légales : 10 le clos péchabé 31620 Castelnau d’Estrétefonds
+
+
+
+ACCÈS CERTIFICATION
+
+Inscrite sur le Registre National d’Aptitude (RNA) tenu par le Conseil National de l’Ordre des Vétérinaires (CNOV) au numéro 801
+
+Depuis 2011, l’ostéopathie animale est réglementée et encadrée par la profession vétérinaire ! Pour exercer en France il est donc obligatoire de figurer sur ce registre.
+(Lien qui renvoie vers le A propos partie législation)
+
+https://www.veterinaire.fr/annuaires/liste-des-personnes-non-veterinaires-pouvant-realiser-des-actes-dosteopathie-animale/liste-regionale-occitanie
++ Lien du pdf ou photo vers le papier de l’inscription au registre
+
+
+ONGLET A PROPOS
+
+Texte totalement repris retirer le précédent dans son intégralité
+
+
+Propos introductif
+
+Selon l’OMS (Organisation Mondiale de la Santé)
+« La santé est un état complet de bien-être physique, mental et social et ne consiste pas seulement en une absence de maladie ou d’infirmité. »
+
+
+
+Histoire de l’ostéopathie animale
+
+L’ostéopathie animale s’est développée en France à partir des années 1980. Initialement appliquée aux équidés, elle a été adaptée par le Docteur Vétérinaire Dominique Giniaux et l’ostéopathe humain Pascal Evrard, qui ont largement contribué à son essor dans le milieu équin.
+Au début des années 2000, cette discipline s’est progressivement étendue aux animaux de compagnie, notamment grâce aux travaux du Docteur Vétérinaire Francis Lizon. Quelques années plus tard, son développement s’est poursuivi dans le secteur des animaux d’élevage, en particulier sous l’impulsion du Docteur Vétérinaire Jean-Pierre Siméon, précurseur de l’ostéopathie bovine en France.
+Aujourd’hui, l’ostéopathie animale est pratiquée auprès de nombreuses espèces : animaux de compagnie, chevaux, animaux d’élevage, mais également animaux de sport, de travail ou de spectacle.
+Au cours des dernières décennies, les approches complémentaires de santé animale ont connu un développement important. De plus en plus de propriétaires souhaitent intégrer des thérapies manuelles ou d’autres approches complémentaires au suivi médical de leurs animaux, dans une démarche globale de prévention, de confort et de bien-être.
+Dans ce contexte, l’ostéopathie animale occupe aujourd’hui une place reconnue comme approche complémentaire au suivi vétérinaire. Grâce à son approche exclusivement manuelle, elle apporte une évaluation fonctionnelle globale de l’animal, en s’intéressant aux interactions entre les différents systèmes de l’organisme.
+
+L’ostéopathie animale est une médecine intégrative dite naturelle, par son approche manuelle elle permet d’apporter une vision globale différente et complémentaire de la médecine vétérinaire.
+
+Les différentes approches en ostéopathie
+
+Musculosquelettique (os, muscles, articulations, ligaments, tendons)
+Par cet aspect de l’ostéopathie nous allons travailler pour rééquilibrer la structure. Il peut s’agir de techniques dites structurelles, myotensives ou fonctionnelles ; dites directes ou indirectes.
+
+Tissulaire
+Ces techniques peuvent s’appliquer sur l’ensemble du corps. Elles visent à améliorer le mouvement d’une structure ciblée ou plus globalement à rendre une bonne communication tissulaire d’un bout à l’autre de l’organisme.
+
+Fasciale
+Le corps est composé en grande partie de fascias, initialement décrit comme du mésoderme au stade embryologique. Lors du développement de l’embryon et du fœtus ce mésoderme va se différencier en plusieurs types de fascias : superficiels (derme - hypoderme) ; intermédiaires (aponévroses, séreuses et mésos splanchniques, enveloppes des différents vaisseaux) et profonds (périoste, tendons, dure mère).
+Ces dernières années les fascias font le sujet de nombreuses recherches scientifiques mais captivent tout autant les ostéopathes,
+
+Viscérale
+Nous nous intéressons à la mobilité des organes et à leur attache ligamentaire. Mon mémoire de fin d’études porte notamment sur la pratique de l’ostéopathie sur les moyens de fixité des différents organes.
+
+Réflexe
+Les techniques réflexes permettent de travailler localement sur la peau, afin d’induire une action en profondeur dans l’organisme. J’apprécie particulièrement la réalisation de traits tirés axés sur certaines zones permettant d’avoir une action à la fois localisée et globale sur le système lymphatique, circulatoire et nerveux.
+
+
+
+ Législation
+Logo Ministère de l’Agriculture et de la souveraineté alimentaire et CNOV
+
+En 2011, la pratique des ostéopathes animaliers fut reconnue légalement par le Ministère de l’Agriculture et de l’Alimentation et de la Fôret ; au sein du 12° de l’Article L243-3 du code rural et de la pêche maritime (CRPM).
+
+Depuis les décrets du 19 avril 2017, les actes d’ostéopathie animale peuvent être réalisés par des personnes non vétérinaires ayant satisfait aux exigences réglementaires. Ces dernières doivent avoir réussi l’épreuve nationale d’aptitude, être inscrites sur le Registre National d’Aptitude (RNA) et figurer sur la liste tenue par le Conseil national de l’Ordre des vétérinaires (CNOV).
+
+https://extranet.veterinaire.fr/annuaires/osteopathes
+
+Art R.243-6  “Pour l’application du 12° de l’article L243-3, on entend par “acte d’ostéopathie animale” les manipulations ayant pour seul but de prévenir ou de traiter des troubles fonctionnels du corps de l’animal, à l'exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale, chirurgicale, médicamenteuse ou par agents physiques. Ces manipulations sont musculo-squelettiques et myo-fasciales, exclusivement manuelles et externes. Pour la prise en charge de ces troubles fonctionnels, les personnes réalisant des actes d’ostéopathie animale effectuent des actes de manipulations et mobilisations non instrumentales, directes et indirectes, non forcées.”
+
+Par ailleurs, l’ostéopathe animalier est tenu d’orienter le propriétaire vers un vétérinaire lorsque l’état de l’animal nécessite un diagnostic médical, un traitement, ou lorsque les troubles observés dépassent le champ de compétence de l’ostéopathie. Cette obligation fait partie des règles déontologiques fixées par le Code rural.
+
+Pour suivre l’actualité réglementaire de l’ostéopathie animale vous pouvez consulter le site internet du Conseil National de l’Ordre des Vétérinaires (CNOV), à la rubrique « Ostéopathie Animale »
+
+https://www.veterinaire.fr/la-profession-veterinaire/nos-grands-dossiers/osteopathie-animale
+
+
+Références web :
+12° du L243-3 du CRPM : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044233614
+Articles R.243-6 du CRPM : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034451012
+
+
+
+
+ONGLET CONSULTATIONS
+
+Titre général à ajouter
+
+
+Où l’ostéopathie animale peut agir en première intention
+### [Heading 2] Un accompagnement tout au long de la vie de votre animal
+L’ostéopathie animale peut s’intégrer dans le suivi global de votre animal à différents moments clés :
+Pendant la croissance : suivi des aplombs et accompagnement du développement, de la mobilité et des adaptations corporelles (1 à 3 consultations par an selon les besoins).
+À l’âge adulte : suivi préventif et maintien du confort fonctionnel (en moyenne 1 consultation annuelle selon le mode de vie).
+Chez les animaux sportifs : de la préparation physique, à la récupération et du suivi des échéances sportives.
+Chez les animaux âgés : soutien du confort, de la mobilité et de la qualité de vie dès l’apparition des premiers signes de vieillissement.
+Chez les animaux en fin de vie : accompagnement du confort et du bien-être.
+
+### [Heading 2] Motifs de consultation fréquents
+### [Heading 3] Troubles locomoteurs
+Allures irrégulières ;
+Démarche asymétrique ;
+Déplacements de biais ;
+Aplombs défectueux ;
+Raideurs musculaires ;
+
+### [Heading 3] Accompagnement émotionnel et comportemental
+(En complément d’un suivi avec un éducateur ou un vétérinaire comportementaliste lorsque cela est nécessaire)
+Changement soudain de comportement ;
+Sensibilité accrue, inquiétude ou réactions inhabituelles ;
+Accompagnement après un événement stressant ou traumatique ;
+Adaptation lors d’un changement de vie ;
+Difficultés liées à la perte d’un congénère ou d’un membre de la famille.
+
+Où l’ostéopathie animale peut agir en première intention seulement en fonction de l’état de l’animal : un échange téléphonique approfondi vous permettra de vous en assurer ; sinon vous serez réorienté vers votre vétérinaire.
+
+Difficultés locomotrices soudaines (dorsalgie, lombalgie)
+Irrégularité soudaine sans suppression d’appui
+Crise d’arthrose
+Post traumatique non lésionnel (chute, bagarre entre congénères)
+
+Ces mêmes motifs peuvent être également traités par une séance d’ostéopathie après une visite chez votre vétérinaire.
+
+En cas de doute, une évaluation préalable de la douleur de votre animal est nécessaire, pour réaliser une séance d’ostéopathie dans les meilleures conditions pour votre animal.
+
+### [Heading 2] Ostéopathie et accompagnement des affections chroniques
+L’ostéopathie animale intervient en complément du suivi vétérinaire établi. Elle ne remplace pas le diagnostic ni les traitements prescrits par votre vétérinaire.
+Dans certaines situations, elle peut contribuer à améliorer totalement ou partiellement des troubles chroniques dits récidivants et avoir un impact sur le confort et la qualité de vie de l’animal :
+Affections digestives (vomissements, diarrhée chroniques)
+Affections respiratoires (toux, asthme)
+Otites externes
+Affections cutanées (dermite, dermatite atopique, dépigmentation localisée, prurit)
+Mauvaise cicatrisation (post opératoire, plaies de léchage, automutilation)
+Certains cas d’infertilité
+Incontinence urinaire (en particulier pour celles suite à une stérilisation)
+
+Troubles chroniques où la séance d’ostéopathie a pour rôle d’apporter du confort et/ou d’accompagner la prise en charge faite par votre vétérinaire :
+Dysplasie
+Entorses et tendinites
+Ostéochondrite disséquante
+Insuffisance rénale chronique
+Affections neurologiques (hernie discale, AVC, ataxie, crise d’épilepsie, embolie fibrocartilagineuse)
+Animaux accidentés / amputés
+Animaux en fin de vie (perte d’équilibre, refus de prise alimentaire)
+
+### [Heading 2] Une approche collaborative pour la santé et le bien-être de votre animal
+L’ostéopathe animalier peut échanger avec votre vétérinaire traitant avec votre accord afin de favoriser une prise en charge cohérente et adaptée ou de lui transmettre ses observations pour optimiser la continuité des soins.
+Chaque animal étant unique, un échange permettra d’évaluer la situation, de répondre à vos questions et de vous orienter vers la démarche la plus appropriée pour votre compagnon.
+
+
+
+👾👾👾👾👾👾👾👾👾👾
+
+### [Heading 1] Ostéopathie équine
+### [Heading 2] Secteur d’intervention
+Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 12, 09 et 11
+ D’autres départements peuvent être envisagés lors de l’organisation de tournées.
+
+### [Heading 2] Une approche adaptée à tous les profils d’équidés
+L’ostéopathie équine occupe aujourd’hui une place importante dans le suivi global des chevaux. De nombreux propriétaires intègrent une ou plusieurs consultations annuelles dans la gestion du bien-être et du confort de leur équidé, en fonction de son âge, de son activité, de son mode de vie et de ses besoins.
+Au-delà des motifs de consultation communs à toutes les espèces, l’ostéopathie peut accompagner le cheval dans différentes étapes de sa vie, notamment :
+l’optimisation du confort locomoteur et de la mobilité ;
+l’accompagnement du cheval sportif dans sa préparation et sa récupération ;
+la réhabilitation fonctionnelle après une période d’arrêt ou de convalescence ;
+l’équilibre fonctionnel du couple cavalier-cheval ;
+l’accompagnement des chevaux sensibles ou présentant des modifications comportementales en complément d’une prise en charge adaptée.
+L’ostéopathie s’adresse à tous les équidés : chevaux de sport, chevaux de loisir, chevaux de spectacle, chevaux de travail, chevaux âgés, poulains, ânes et mules.
+### [Heading 2] Quelques motifs de consultation spécifiques aux chevaux
+Bilan ostéopathique annuel ;
+Suivi du poulain (réflexe de succion, aplombs défectueux) ;
+Préparation d’échéances sportives ou d’une saison de compétition / de course ;
+Accompagnement après un effort intense ;
+Raideurs, perte de souplesse ou difficultés dans le travail monté ;
+Aider dans le cadre d’ affections neurologiques (ataxie, wobbler, harper, shivering, headshaking etc..) ;
+Modification des allures ou de la locomotion ;
+Suite à un traumatisme (chute, accident dans le van, conflit entre congénères…) ;
+Aider dans le cadre d’affections métaboliques et/ou endocriniennes (fourbure, Cushing, SME, PSSM, etc..)
+Accompagnement après une période de convalescence ;
+Réhabilitation lors d’un changement d’activité ou de mode de vie ;
+Suivi des juments reproductrices (fertilité, gestation, post-mise bas) ;
+Suivi des étalons reproducteurs ;
+Changements comportementaux ou perte de confiance ;
+Difficultés dans la relation cavalier-cheval.
+
+
+### [Heading 2] Une approche globale du bien-être équin
+La santé et le bien-être du cheval reposent sur une prise en charge globale associant plusieurs compétences complémentaires.
+L’ostéopathie animale s’intègre dans cette démarche aux côtés de :
+la médecine vétérinaire ;
+la dentisterie équine ;
+la maréchalerie et la podologie ;
+la physiothérapie et les autres thérapies complémentaires adaptées (acupuncture, shiatsu, massages) ;
+le suivi du cavalier et l’équilibre du couple cavalier-cheval ;
+un matériel de travail adapté ;
+un environnement respectant les besoins physiques et sociaux du cheval ;
+une alimentation adaptée ;
+une meilleure compréhension du comportement équin.
+L’objectif est de favoriser une prise en charge cohérente, respectueuse et adaptée aux besoins individuels de chaque cheval.
+
+👾👾👾👾👾👾👾👾👾👾
+
+
+Ostéopathie canine, féline et pour les  nouveaux animaux de compagnie (NAC)
+Secteur d’intervention
+Les zones d’intervention sont identiques à celles proposées pour les équidés : 31, 81, 82, 47, 32, 09, 11, 12 et 46.
+Les consultations peuvent être réalisées à domicile afin de respecter les habitudes et l’environnement de votre animal.
+Afin de limiter les déplacements et de proposer des conditions de consultation adaptées, plusieurs lieux d’accueil sont progressivement développés.
+Depuis 6 ans je consulte tous les vendredis après-midi à la clinique vétérinaire du Val Dadou à Graulhet (81).
+Pour toute prise de rendez-vous dans ce lieu, merci de contacter directement la clinique au : 05.63.34.51.52
+### [Heading 2] Une approche adaptée aux animaux de compagnie
+Après s’être largement développée dans le milieu équin, l’ostéopathie animale occupe aujourd’hui une place grandissante dans le suivi des animaux de compagnie.
+Elle peut accompagner les chiens, les chats et les NAC tout au long de leur vie,
+### [Heading 1] Quelques motifs de consultation courants chez le chien
+Bilan ostéopathique annuel ;
+Accompagnement des chiens sportifs, de travail ou pratiquant une activité régulière ;
+Préparation aux échéances sportives et récupération après l’effort ;
+Aider dans le cadre d’affections neurologiques (épilepsie, hernie discale, embolie fibrocartilagineuse, wobbler, syndrome vestibulaire, etc..) ;
+Suite à un traumatisme (chute, accident, altercation entre congénères…) ;
+Accompagnement après un événement stressant ou traumatique ;
+Suite à un changement de vie ou une adoption ;
+Changements de comportement ;
+Difficultés de sociabilité (en complément d’un accompagnement avec un éducateur ou un comportementaliste si nécessaire) ;
+Manifestations liées au stress ou à l’inconfort, telles que des comportements d’automutilation ou un léchage excessif pouvant entraîner des zones de dépilation ;
+Suivi pendant la croissance ;
+Suivi des animaux reproducteurs (fertilité, gestation, post-mise bas) ;
+Affections locomotrices (boiteries, raideurs, compensations fonctionnelles…) ;
+Accompagnement après une intervention chirurgicale ;
+Affections digestives ou respiratoires chroniques, en complément du suivi vétérinaire.
+
+### [Heading 1] Quelques motifs de consultation courants chez le chat
+Bilan ostéopathique annuel ;
+Suivi pendant la croissance ;
+Suite à un traumatisme ;
+Accompagnement après une intervention chirurgicale ;
+Suite à un changement de vie ou une adoption ;
+Aider dans le cadre d’affections neurologiques (épilepsie, syndrome vestibulaire, etc) ;
+Changements de comportement (chat moins sociable, diminution des interactions, difficultés à sauter ou à se déplacer…) ;
+Manifestations liées au stress ou à l’inconfort, telles que le toilettage excessif pouvant conduire à un léchage compulsif et à des zones de perte de poils ;
+Suivi des femelles reproductrices (gestation et post-mise bas) ;
+Troubles locomoteurs ;
+Troubles digestifs ou respiratoires, en complément du suivi vétérinaire.
+
+### [Heading 1] Quelques motifs de consultation courants chez les nouveaux animaux de compagnie (NAC)
+Les NAC nécessitent une prise en charge adaptée à leurs particularités anatomiques, physiologiques et comportementales.
+Les consultations peuvent notamment concerner :
+Changements de comportement ;
+Troubles locomoteurs ;
+Difficultés de mobilité ;
+Aider pour les affections d’ordre digestives, en complément du suivi vétérinaire ;
+Certains troubles spécifiques comme les encéphalitozoonose, affections vestibulaires ou de tête penchée chez le lapin, après évaluation vétérinaire.
+### [Heading 2] Lapins et rongeurs
+Les consultations peuvent notamment concerner :
+Changements de comportement ;
+Troubles locomoteurs ou difficultés de déplacement ;
+Troubles digestifs et perturbations du transit, en complément d’une prise en charge vétérinaire ;
+Accompagnement lors de troubles liés aux boules de poils (trichobézoards), en complément des recommandations vétérinaires ;
+Difficultés alimentaires ou suspicion de troubles dentaires nécessitant une évaluation vétérinaire, notamment lors d’une pousse anormale des dents ou des problématiques de malocclusion.
+### [Heading 2] Reptiles
+Les consultations peuvent notamment concerner :
+Suites de traumatismes ;
+Changements de comportement ;
+Difficultés locomotrices ;
+Incapacité ou difficultés à s’alimenter ;
+Difficultés liées aux périodes de mue ;
+Accompagnement général du confort et de l’adaptation fonctionnelle, en complément du suivi vétérinaire spécialisé lorsque nécessaire.
+
+### [Heading 1] Une approche globale du bien-être de votre animal
+La santé et le bien-être de votre animal reposent sur une vision globale associant différentes compétences et différents facteurs essentiels.
+L’ostéopathie animale s’intègre dans cette démarche aux côtés de :
+La médecine vétérinaire ;
+Les soins dentaires adaptés ;
+La physiothérapie et les autres approches complémentaires adaptées (acupuncture, shiatsu, massage) ;
+Le toilettage et les soins d’entretien ;
+Un équipement adapté (harnais, accessoires…) ;
+Un environnement respectant les besoins de l’animal ;
+Des interactions sociales adaptées avec ses congénères ;
+L’éducation et l’accompagnement comportemental ;
+Une alimentation adaptée.
+L’objectif est de proposer une prise en charge cohérente et personnalisée, en plaçant le confort, la santé et le bien-être de l’animal au centre des priorités.
+
+👾👾👾👾👾👾👾👾👾👾
+Ostéopathie Bovine, Ovine, Caprine et Porcine
+(Vaches, Moutons, Chèvres, Porcs)
+### [Heading 2] Secteur d’intervention
+Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 12, 09 et 11
+ D’autres départements peuvent être envisagés lors de l’organisation de tournées.
+
+
+### [Heading 2] Une approche complémentaire au service des élevages
+L’ostéopathie animale en milieu rural connaît un développement progressif depuis les années 2000. Historiquement, les éleveurs ont toujours eu recours dans les campagnes à des pratiques manuelles traditionnelles pour accompagner leurs animaux lors de certaines difficultés fonctionnelles.
+Aujourd’hui, l’ostéopathie animale s’inscrit dans cette continuité en proposant une approche manuelle structurée, adaptée aux exigences actuelles du bien-être animal et complémentaire au suivi vétérinaire.
+Ayant grandi dans un environnement rural, j’ai eu la chance d’évoluer au contact de différents animaux d’élevage (bovins laitiers, porcins, lapins). Cette proximité avec le monde agricole m’a permis de comprendre les réalités du terrain et les enjeux quotidiens des éleveurs.
+À travers l’ostéopathie animale, l’objectif est aujourd’hui de contribuer au confort des animaux d’élevage et d’accompagner les professionnels dans une démarche globale de bien-être animal.
+
+### [Heading 2] Quelques motifs de consultation courants en élevage
+L’ostéopathie animale intervient toujours en complément de la médecine vétérinaire et ne se substitue pas au diagnostic ou aux traitements prescrits par le vétérinaire.
+Une consultation peut notamment être envisagée lors de :
+Analyse fonctionnelle du troupeau afin d’identifier les situations pouvant bénéficier d’un accompagnement ostéopathique ;
+Animaux présentant des difficultés à se déplacer ou restant couchés ;
+Affections locomotrices et boiteries ;
+Suites de traumatismes ;
+Problématiques liées à la reproduction (fertilité, suivi des reproducteurs) ;
+Suivi post-mise bas ou post-vêlage ;
+Difficultés d’adaptation du nouveau-né (absence de réflexe de succion, difficultés de démarrage) ;
+Perte d’état général ;
+Baisse de production ou de rendement laitier.
+### [Heading 2] Une approche globale du bien-être des animaux d’élevage
+La santé et le bien-être des animaux d’élevage reposent sur une prise en charge globale associant plusieurs facteurs essentiels.
+L’ostéopathie animale s’intègre dans cette démarche aux côtés de :
+La médecine vétérinaire ;
+Les soins de pédicurie et de dentisterie adaptés ;
+Un environnement de vie adapté aux besoins des animaux ;
+Des conditions d’élevage favorisant le confort et les comportements naturels ;
+Des interactions sociales respectant les besoins de l’espèce ;
+Un enrichissement du milieu de vie ;
+Une alimentation adaptée ;
+Des approches complémentaires pouvant contribuer au bien-être animal. (Acupuncture, phytothérapie)
+L’objectif est d’accompagner les éleveurs dans une démarche cohérente, respectueuse et adaptée aux besoins spécifiques de chaque animal et de chaque élevage.
+
+
+
+——————————
+Peut etre qu’on peut placer ceci quelque part dans le site ?
+
+« Au fil de ce parcours complémentaire, je me suis passionnée pour l’interdisciplinarité, c’est-à-dire la collaboration entre les différents professionnels de la santé animale. Je suis convaincue que la mise en commun de nos compétences et de nos approches permet d’offrir une prise en charge plus complète et plus adaptée à chaque animal.
+Ainsi, au-delà de mon accompagnement en ostéopathie, je veille toujours à vous conseiller et, lorsque cela est pertinent, à vous orienter vers le professionnel le plus adapté aux besoins spécifiques de votre animal, afin de lui garantir une prise en charge globale et cohérente.”
+. »
+
+
+
+
+FAQ
+### [Heading 2] Comment devenir ostéopathe animalier ? Faut-il être vétérinaire ou ostéopathe DO au préalable ?
+En France, il n’est pas nécessaire d’être vétérinaire ou ostéopathe humain diplômé (DO) pour exercer l’ostéopathie animale. Plusieurs parcours de formation permettent d’accéder à cette profession, sous réserve de répondre aux exigences réglementaires en vigueur, notamment la réussite de l’épreuve nationale d’aptitude organisée par le Conseil national de l’Ordre des vétérinaires (CNOV), indispensable pour pratiquer l’ostéopathie animale en tant que non-vétérinaire.
+Trois principales voies de formation existent :
+### [Heading 3] 1. Suivre une formation spécialisée en ostéopathie animale
+Il est possible d’intégrer une école d’ostéopathie animale proposant généralement un cursus de cinq années d’études comprenant des enseignements théoriques, pratiques et cliniques.
+À l’issue de cette formation, le candidat doit réussir l’examen national d’aptitude organisé par le CNOV afin d’être autorisé à exercer l’ostéopathie animale en France.
+### [Heading 3] 2. Être formé en ostéopathie humaine puis se spécialiser en ostéopathie animale
+Les ostéopathes humains diplômés peuvent également compléter leur parcours par une formation spécifique en ostéopathie animale.
+Ils doivent néanmoins répondre aux exigences réglementaires applicables aux non-vétérinaires et réussir l’épreuve nationale d’aptitude du CNOV.
+Il est essentiel de choisir une formation complète, intégrant l’étude des différentes espèces animales et une préparation adaptée aux exigences de l’examen national.
+### [Heading 3] 3. Devenir vétérinaire puis se spécialiser en ostéopathie vétérinaire
+Les étudiants vétérinaires peuvent se former à l’ostéopathie animale dans le cadre d’une spécialisation complémentaire, notamment par l’obtention d’un Diplôme Inter-Écoles (DIE) d’ostéopathie vétérinaire.
+Cette voie permet d’intégrer l’approche ostéopathique dans une formation médicale vétérinaire complète.
+
+
+### [Heading 2] Quelles sont les principales matières enseignées en ostéopathie animale ?
+La formation d’ostéopathe animalier repose sur un enseignement pluridisciplinaire associant connaissances scientifiques, compréhension du fonctionnement de l’animal et apprentissage des techniques manuelles.
+Les principales matières théoriques fondamentales comprennent :
+Anatomie animale, afin de connaître précisément les structures du corps et leurs interactions ;
+Physiologie, pour comprendre le fonctionnement des différents systèmes de l’organisme ;
+Biomécanique et locomotion, indispensables à l’analyse du mouvement et des adaptations corporelles ;
+Sémiologie vétérinaire, permettant d’identifier les signes nécessitant une orientation vers un vétérinaire.
+D’autres enseignements complètent la formation :
+biologie cellulaire ;
+biochimie ;
+histologie ;
+physiopathologie ;
+zootechnie ;
+nutrition animale ;
+éthologie ;
+bien-être animal ;
+éthique et déontologie ;
+santé publique.
+La formation pratique permet ensuite d’acquérir la maîtrise des différentes approches ostéopathiques, notamment les techniques musculo-squelettiques, fasciales, tissulaires, viscérales, crâniennes et autres approches adaptées aux différentes espèces.
+
+
+### [Heading 3] Une consultation d’ostéopathie animale nécessite-t-elle forcément des manipulations qui font « craquer » les articulations ?
+Non. Contrairement à certaines idées reçues, une consultation d’ostéopathie animale ne repose pas nécessairement sur des manipulations avec des bruits articulaires.
+L’ostéopathie utilise différentes techniques manuelles adaptées à chaque animal, à son âge, à son espèce, à son état de santé et à sa sensibilité. Les approches peuvent être articulaires, musculaires, fasciales, tissulaires, viscérales ou encore crâniennes, sans recherche systématique de « craquement ».
+L’objectif n’est pas de provoquer un mouvement forcé, mais d’accompagner les tissus vers une meilleure mobilité et un fonctionnement plus équilibré, dans le respect du confort de l’animal.
+### [Heading 3] À partir de quel âge un animal peut-il consulter un ostéopathe ?
+L’ostéopathie s’adresse aux animaux de tous âges. Une consultation peut être envisagée dès les premiers jours de vie, pendant la croissance, à l’âge adulte ou chez les animaux seniors, en fonction de leurs besoins.
+### [Heading 3] Mon animal a-t-il besoin d’une ordonnance vétérinaire ?
+Non. En France, un ostéopathe animalier inscrit sur le Registre National d’Aptitude (RNA) peut recevoir un animal sans prescription vétérinaire. En revanche, si l’état de l’animal le nécessite, il orientera systématiquement le propriétaire vers son vétérinaire.
+### [Heading 3] L’ostéopathie animale remplace-t-elle la médecine vétérinaire ?
+Non. L’ostéopathie est une approche complémentaire au suivi vétérinaire. Elle ne remplace ni un diagnostic médical, ni un traitement vétérinaire lorsque celui-ci est nécessaire.
+### [Heading 3] Comment se déroule une consultation ?
+Une consultation comprend un échange sur les antécédents de votre animal, un examen locomoteur et postural, un examen palpatoire, un diagnostic ostéopathique puis un traitement manuel adapté. Des conseils personnalisés vous sont ensuite donnés pour optimiser la récupération de votre animal.
+### [Heading 3] Les manipulations sont-elles douloureuses ?
+Les techniques utilisées sont adaptées à chaque animal et à son état de santé. Certains animaux peuvent manifester une sensibilité sur des zones déjà douloureuses, mais les manipulations sont réalisées dans le respect de leur confort.
+### [Heading 3] Combien de temps dure une consultation ?
+La durée moyenne est de 35 minutes à 1 heure, en fonction de l’espèce, du motif de consultation et des besoins de l’animal.
+### [Heading 3] Combien de séances sont nécessaires ?
+Chaque animal est unique. Une seule séance peut parfois suffire, tandis que certaines situations nécessitent un suivi régulier. Le nombre de consultations est déterminé en fonction de l’évolution de l’animal et de ses besoins.
+### [Heading 3] Mon animal doit-il se reposer après la séance ?
+Oui. Un temps de repos est généralement conseillé pendant les 24 à 72 heures suivant la consultation afin de permettre à l’organisme de s’adapter aux modifications induites par le traitement. Des recommandations adaptées vous seront transmises à la fin de la séance.
+### [Heading 3] Peut-on consulter en prévention ?
+Oui. L’ostéopathie peut s’intégrer dans un suivi préventif tout au long de la vie de votre animal, sans motif de consultation spécifique.
+### [Heading 3] Faut-il prévoir quelque chose pour la consultation ?
+Il est recommandé de prévoir les comptes rendus vétérinaires récents si votre animal est suivi pour une pathologie. Pour les chevaux et les animaux d’élevage, un espace sécurisé permettant leur observation et leur manipulation est nécessaire. Concernant les chats, une serviette ou plaid sur une table est privilégié pour leur confort et la praticité des manipulations.
+### [Heading 3] Les consultations sont-elles remboursées ?
+Certaines assurances santé animale prennent en charge tout ou partie des consultations d’ostéopathie. Les modalités varient selon les contrats ; il est conseillé de se rapprocher de votre assureur. En cas de besoin, une feuille de soin sera complétée.
+### [Heading 3] Quand ne faut-il pas consulter un ostéopathe ?
+En cas d’urgence (fracture, plaie importante, difficulté respiratoire, fièvre, suspicion d’infection, détresse neurologique, etc.), il est indispensable de contacter un vétérinaire en priorité. L’ostéopathie pourra éventuellement intervenir dans un second temps, en complément de la prise en charge médicale.
+### [Heading 3] L’ostéopathe animalier peut-il échanger directement avec mon vétérinaire ?
+Oui. La communication entre les différents professionnels qui interviennent auprès de votre animal permet une prise en charge globale et cohérente. Avec votre accord, l’ostéopathe animalier peut échanger avec votre vétérinaire traitant afin de partager les informations utiles au suivi de votre animal, dans le respect du rôle et des compétences de chacun.
+L’ostéopathie s’inscrit dans une démarche complémentaire au suivi vétérinaire, avec pour objectif commun de favoriser la santé, le confort, la mobilité et le bien-être de votre animal.
+### [Heading 3] Puis-je rester présent pendant la consultation d’ostéopathie ?
+Oui. Votre présence est souhaitée lors de la consultation. Votre connaissance de l’animal, de ses habitudes et de son comportement constitue une source d’informations précieuse lors de l’anamnèse et du déroulement de la séance.
+Votre présence permet également de participer aux échanges, de comprendre les observations réalisées et de recevoir les conseils nécessaires pour accompagner au mieux votre animal après la consultation.
+### [Heading 2] Mon chien boite, est-ce que l’ostéopathie peut l’aider ?
+Une boiterie peut avoir de nombreuses origines et nécessite parfois un examen vétérinaire afin d’en identifier la cause.
+Lorsque la cause médicale a été prise en charge ou lorsque la situation relève d’un trouble fonctionnel, l’ostéopathie peut contribuer à améliorer le confort locomoteur de l’animal. Elle permet d’évaluer les compensations mises en place par le corps, les restrictions de mobilité et les déséquilibres fonctionnels pouvant persister après un épisode douloureux.
+L’objectif est d’accompagner le retour à une locomotion plus harmonieuse et de limiter l’installation de compensations, en complément du suivi vétérinaire lorsque celui-ci est nécessaire.
+### [Heading 2] Mon cheval est raide ou manque de souplesse, faut-il consulter un ostéopathe ?
+Une diminution de souplesse, des raideurs ou une modification de la locomotion peuvent être liées à différentes causes : contraintes liées au travail, adaptations posturales, inconfort, vieillissement ou compensations fonctionnelles.
+Une consultation d’ostéopathie permet d’évaluer la mobilité globale du cheval, son équilibre corporel et les éventuelles restrictions pouvant limiter son confort ou ses capacités physiques.
+Chez le cheval sportif comme chez le cheval de loisir, l’objectif est de favoriser une locomotion fluide, une meilleure adaptation aux contraintes et un confort optimal.
+### [Heading 2] Mon animal a changé de comportement, une consultation d’ostéopathie peut-elle être utile ?
+Un changement de comportement peut avoir de nombreuses origines : environnement, éducation, stress, douleur ou inconfort physique.
+Lorsqu’une gêne corporelle participe à une modification du comportement, l’ostéopathie peut contribuer à identifier certaines restrictions fonctionnelles susceptibles d’impacter le bien-être de l’animal.
+Elle peut s’intégrer dans une prise en charge pluridisciplinaire, en collaboration avec le vétérinaire, le vétérinaire comportementaliste ou l’éducateur spécialisé lorsque cela est nécessaire.
+
+### [Heading 2] Quand consulter un ostéopathe pour un animal sportif ?
+Les animaux sportifs sont soumis à des contraintes physiques importantes nécessitant un suivi adapté.
+Une consultation peut être envisagée :
+en préparation d’une saison sportive ou d’une période d’activité intense ;
+avant une échéance importante ;
+après un effort soutenu afin d’accompagner la récupération ;
+lors d’une baisse de performance ou d’une modification de la locomotion ;
+en prévention afin de surveiller les compensations liées à l’entraînement.
+
+
+
+### [Heading 2] Onglet actualités
+### [Heading 2] L’actualité de mon activité en ostéopathie animale
+Depuis 2020, cette rubrique me permet de partager les évolutions de mon activité, mes projets, ainsi que les différentes innovations et approches que je développe en ostéopathie animale.
+Vous y retrouverez des articles autour des études récentes, des conférences effectuées, des cas pratiques, ainsi que des événements et formations qui enrichissent ma pratique au quotidien.
+Cet espace a pour objectif de vous faire découvrir les avancées du domaine, de mieux comprendre les méthodes de prise en charge proposées à vos animaux et de suivre l’évolution de mon travail au service de leur santé et de leur bien-être.
+Tous les articles
+Noms de chaque article en violet
+
+Article 1 - 2017 à 2020 : Mon parcours au sein de l’UFEOA (l’association nationale des étudiants en ostéopathie animale)
+
+En parallèle de mon cursus en ostéopathie animale, j’ai très tôt souhaité m’investir activement dans l’évolution et la reconnaissance de la profession. Dès ma deuxième année d’études, j’intègre en mai 2017 l’UFEOA (Union Française des Étudiants Ostéopathes Animaliers), avant d’en assurer la présidence de mars 2018 à octobre 2020.
+Au cours de cet engagement associatif, j’ai eu l’opportunité de représenter les étudiants auprès de différentes institutions et acteurs majeurs de la santé animale, notamment le Conseil National de l’Ordre des Vétérinaires, le Ministère de l’Agriculture et de la Souveraineté Alimentaire, ainsi que plusieurs syndicats et associations techniques vétérinaires.
+Convaincue que l’avenir de la santé animale repose sur une approche collaborative et pluridisciplinaire, j’ai œuvré au développement des échanges entre les différents professionnels du secteur afin de favoriser le dialogue, le partage des connaissances et la complémentarité des pratiques.
+Dans cette dynamique, j’ai notamment coordonné en octobre 2019 l’organisation de SymbiOsteo, le premier congrès dédié à l’ostéopathie animale. Cet événement, accueilli à la Sorbonne Pierre et Marie Curie à Paris, a réuni près de 500 participants autour de conférences et d’échanges consacrés à l’avenir et aux enjeux de la discipline.
+renvoyer vers le facebook de l’UFEOA : https://www.facebook.com/UFEOA?locale=fr_FR
+Image : UFEOA logo
+
+(
+
+
+Article 2 - SymbiOsteo  Le Congrès de l’ostéopathie pour animaux - les 26 et 27 octobre 2019 à la Sorbonne Pierre et Marie Curie (faculté des sciences Paris 5ème).
+
+Au cours de ma deuxième année d’engagement au sein de l’UFEOA, les nombreux échanges menés avec les professionnels du secteur ont mis en évidence un constat : l’ostéopathie animale manquait encore d’unité et de dialogue entre ses différents acteurs. Grâce à la position centrale occupée par l’association auprès des étudiants, des institutions et des professionnels de santé animale, nous avons souhaité développer un projet fédérateur porteur de sens pour la profession.
+C’est dans cette dynamique qu’est né le Congrès SymbiOsteo, avec une ambition claire : réunir autour d’un même événement l’ensemble des acteurs de la santé animale et de l’ostéopathie — vétérinaires, ostéopathes humains, vétérinaires pratiquant l’ostéopathie et ostéopathes animaliers.
+À travers ce projet d’envergure, notre volonté était de dresser un état des lieux de la discipline en proposant un programme de conférences riche et diversifié, représentant les différentes approches, pratiques et courants de pensée qui composent l’ostéopathie animale.
+L’événement a rassemblé près de 500 participants à la Sorbonne Pierre et Marie Curie, faculté des sciences de Paris, en présence de représentants du Ministère de l’Agriculture et de la Souveraineté Alimentaire, du Conseil National de l’Ordre des Vétérinaires ainsi que des syndicats vétérinaires.
+
+Teasing video : https://youtu.be/fvy8u2bhQCk
+Videos souvenir : https://youtu.be/nIHWHPRX-r8
+PDF fascicule 2019 + affiche + quelques photos (drive)
+
+Image : congrès symbiosteo
+
+
+Article 3 - 29 novembre 2019 : Article dans la semaine vétérinaire “OSTÉOPATHIE ANIMALE : POINTS DE TENSION”
+À la suite du congrès SymbiOsteo – Le Congrès de l’ostéopathie pour animaux, j’ai eu l’opportunité d’être interviewée par La Semaine Vétérinaire aux côtés de plusieurs représentants de la profession vétérinaire. Cette intervention a permis d’apporter, au nom de l’UFEOA, un regard étudiant sur la situation et les évolutions de l’ostéopathie animale en 2019.
+Bien que l’ostéopathie animale soit encadrée réglementairement depuis 2011, les examens destinés à reconnaître officiellement les compétences des ostéopathes animaliers ont été mis en place à partir de 2017. Deux ans après le début de ce processus, de nombreuses réflexions étaient engagées afin d’accompagner la structuration de la profession et l’évolution de son cadre réglementaire, dans un contexte marqué par le développement croissant des établissements de formation.
+Cette période soulevait également des enjeux importants autour de la qualité des formations, de la lisibilité des parcours professionnels et de l’accompagnement des étudiants face aux évolutions réglementaires du métier. À travers cet article, j’ai souhaité partager le regard de l’étudiante que j’étais alors, profondément attachée à une pratique rigoureuse, encadrée et construite en collaboration avec les acteurs du monde vétérinaire.
+Cette interview a également été l’occasion d’exprimer la volonté des étudiants de participer activement à l’évolution de la profession, avec une démarche fondée sur le dialogue interprofessionnel, la reconnaissance des compétences et le respect du cadre légal.
+
+Lien de l’article https://www.lepointveterinaire.fr/publications/la-semaine-veterinaire/article/n-1832/osteopathie-animale-points-de-tension.html
+
+Image : couverture de l’article
+
+Article 4 - Mars 2020 - Devenir ostéopathe animalier - Thotis X UFEOA
+En 2020, Thotis et l’UFEOA ont réalisé une interview dédiée à la filière de l’ostéopathie animale, afin d’apporter des informations claires et accessibles aux futurs étudiants.
+Destinée principalement aux lycéens et aux étudiants en phase d’orientation post-bac, cette vidéo a pour objectif de présenter le fonctionnement de la filière, les parcours de formation ainsi que le cadre réglementaire et législatif encadrant l’ostéopathie animale en France.
+À travers cet échange, l’UFEOA apporte un éclairage sur les enjeux de la profession, l’organisation des écoles, les exigences de formation et les évolutions de la réglementation, afin d’aider les futurs candidats à mieux comprendre cette voie d’études et ses perspectives professionnelles.
+
+https://youtu.be/XuCVbdWVAcQ?si=L3UOnPHcIoBv-1PJ
+
+image : logo thotis et UFEOA
+
+Article 5 - 28 Janvier 2021 : mon logo et sa signification (tout le détail plus haut)
+### [Heading 2] La philosophie qui accompagne ma pratique
+Mon logo reflète la vision avec laquelle j’exerce l’ostéopathie animale au quotidien. Chaque symbole qui le compose possède une signification forte, en lien avec ma manière d’aborder le vivant, le soin et l’équilibre du corps.
+Le symbole phi, placé au centre du logo, fait référence à la philosophie de l’ostéopathie, discipline qui occupe une place essentielle dans ma pratique. Il incarne la réflexion, l’écoute et la compréhension globale du corps et de ses mécanismes d’adaptation.
+Le pilier de Djed, symbole de l’Égypte antique, représente quant à lui la stabilité, la rigueur et l’ancrage. Historiquement associé à la colonne vertébrale — parfois appelée « colonne de vie » — il fait également écho à l’importance des structures anatomiques dans l’équilibre du corps.
+D’un point de vue anatomique, l’association du phi et du pilier de Djed évoque l’organisation des méninges au sein de la colonne vertébrale. Cette représentation illustre un aspect fondamental de ma pratique : la Force de Traction Médullaire (FTM), notion essentielle dans ma compréhension de l’équilibre et de la mobilité du vivant.
+À travers cette alliance symbolique, mon logo traduit la recherche constante d’équilibre entre stabilité et légèreté, structure et mouvement, matière et énergie. Ma vision de l’ostéopathie repose sur une approche globale et complémentaire du corps. Approches articulaires, musculo-squelettiques, tissulaires, viscérales, cranio-sacrées, réflexes ou encore tenségritives : chacune de ces dimensions fait partie intégrante de ma pratique et est utilisée en fonction des besoins spécifiques de chaque animal.
+
+Image : logo personnel
+
+
+Article 6 - 21 février 2021 : Membre fondateur du Collectif des ostéopathes animaliers
+À la suite du congrès SymbiOsteo en 2019, les échanges entre les différentes associations professionnelles de l’ostéopathie animale se sont progressivement intensifiés. Cet événement a contribué à renforcer le dialogue entre les acteurs de la profession et à favoriser une dynamique de collaboration autour des enjeux communs liés à l’évolution du métier.
+La période de la crise sanitaire liée au Covid-19 a ensuite marqué une étape importante dans cette coopération. Face aux nombreuses interrogations des praticiens, les associations professionnelles ont travaillé de manière concertée afin de communiquer des informations claires et cohérentes concernant les règles sanitaires et les conditions d’exercice applicables aux ostéopathes animaliers.
+C’est dans cette continuité qu’est né, en février 2021, le Collectif des Ostéopathes Animaliers, réunissant plusieurs représentants majeurs de la profession autour d’une volonté commune de structuration, de dialogue et de représentation de l’ostéopathie animale.
+Les membres fondateurs du collectif étaient :
+Gilles Botbol – Ostéopathes Animaliers Européens (OAE)
+Cédric Charles – Institut Professionnel des Ostéopathes Animaliers Mécanistes (IPOAM)
+Jacques Saada et Amandine d’Oléon – Fédération des Praticiens en Ostéopathie Animale (FédéOA)
+Sébastien Mesnil – Syndicat Professionnel des Ostéopathes Animaliers Exclusifs (SPOAE)
+Jean-Yves Girard – Fédération Européenne des Ostéopathes pour Animaux (FEOA)
+Marie Salabert - Union Française des Etudiants Ostéopathes Animaliers (UFEOA)
+lien vers le site internet : https://le-collectif-des-osteopathes-animaliers.assoconnect.com/page/3016397-presentation
+
+Image : Logo du collectif
+
+
+Article 7 - 17 mars 2021 : Conférence “Ostéopathie Animale et Vétérinaire : état des lieux” pour l’IFCE avec le DV Isabelle Lussot Kervern pour l’AVEF
+
+« Il n’a pas l’air très droit, il semble avoir mal au dos, on va faire venir l’ostéo ».
+Cette phrase est depuis quelques années prononcée régulièrement dans les écuries ! Mais face à la diversité des praticiens qui proposent différents services dans le domaine de l’ostéopathie, il n’est pas toujours facile de s’y retrouver.
+Pour une consultation ostéopathique, il est possible de se tourner vers les vétérinaires formés à cette approche diagnostique et thérapeutique. Certains d’entre eux sont titulaires d’un diplôme, le « DIE d’ostéopathie vétérinaire », reconnu par l’Ordre des vétérinaires, mais celui-ci n’est pas obligatoire pour exercer l’ostéopathie vétérinaire.
+Depuis 2017, l’ostéopathie animale peut être pratiquée par des non-vétérinaires. Ceux-ci doivent être inscrit sur le RNA (Registre National d’Aptitude), un registre tenu par le Conseil National de l’Ordre des Vétérinaires (CNOV).
+Les personnes inscrites sur ce registre ont passé un examen, obligatoire pour pouvoir pratiquer. Cet examen concerne tous les professionnels (ceux déjà en exercice avant 2017 et tous les étudiants sortants de leurs études).
+https://youtu.be/-_OQQInPSSY?si=N7vwtU6b0mUe3TtT
+
+Image : Logo de L’IFCE
+
+
+Article 8 - 7 juillet 2022 : Interview pour le SFDO - syndicat français des ostéopathes
+
+L’ostéopathie animale s’est historiquement construite en observant l’évolution de l’ostéopathie humaine, en s’inspirant de ses pratiques, de son cadre d’exercice et de son organisation professionnelle. Cette proximité entre les deux disciplines a naturellement favorisé, au fil du temps, des échanges entre leurs acteurs respectifs.
+Dans ce contexte, mon engagement associatif s’est d’abord développé au cours de mes années d’études au sein de l’UFEOA, puis s’est poursuivi dans le cadre de mon activité professionnelle au sein du collectif des ostéopathes animaliers.
+Tout au long de ce parcours, j’ai eu l’occasion d’échanger avec différents syndicats et associations en ostéopathie humaine, dans une démarche de dialogue et de compréhension des enjeux communs entre les deux professions.
+C’est dans ce cadre qu’en 2022, j’ai été interviewée par Pierre-Adrien Liot pour le Syndicat Français des Ostéopathes DO (SFDO). Cet entretien avait pour objectif de dresser un état des lieux de l’actualité de l’ostéopathie animale, en abordant son évolution, ses enjeux réglementaires ainsi que les relations entre les différents acteurs du secteur.
+Cette interview s’inscrit dans une volonté plus large de favoriser les échanges interprofessionnels.
+
+https://www.mplgrandouest.org/ressources_pdf/12022brevedugrand-ouest.pdf
+
+Image : logo du SFDO
+
+
+Article 9 - 4 octobre 2022 : Podcast 1 avec MORDANT “Marie Salabert ½ : SymbiOsteo 2 Le Congrès International de l’ostéopathie pour animaux”
+
+En amont de SymbiOsteo 2 – Le Congrès International de l’Ostéopathie pour Animaux, j’ai eu le plaisir d’être invitée dans le podcast Mordant, animé par l’ostéopathe animalier Mathilde Chalut Natal.
+Réalisée 1 mois avant le Congrès, cette interview avait pour objectif de présenter et de promouvoir l’événement, en revenant sur son organisation, ses ambitions et les thématiques qui allaient être abordées au cours des conférences.
+Cet échange a notamment permis de présenter les objectifs de SymbiOsteo 2, le déroulement des différentes journées ainsi que la diversité des intervenants invités pour cette seconde édition. Nous avons également évoqué la volonté de réunir les différents acteurs de l’ostéopathie et de la santé animale autour de temps d’échanges, de réflexion et de partage d’expériences.
+Ce podcast offre ainsi un aperçu des coulisses de l’événement et de l’esprit dans lequel ce congrès international a été pensé : favoriser le dialogue interprofessionnel, valoriser les initiatives de recherche et contribuer à une meilleure compréhension des enjeux actuels de l’ostéopathie animale.
+L’épisode est disponible à l’écoute sur Spotify, Apple Podcasts ainsi que sur les principales plateformes de streaming audio.
+
+https://open.spotify.com/episode/2vRo9R6p98eeJMcEcVsvmI?si=lDhLmAB6SAaHLGqF5qGEIw
+
+Sommaire de l’épisode
+00’ à 2’40 Présentation
+2’40 à 5’08 Pourquoi ce congrès a t il été crée ?
+5’08 à 8’49 Présentation des objectifs de SymbiOsteo 2
+8’50 à 10’ Comment la réunion d’acteurs ayant des points de vue divergents fut-elle possible ?
+10’ à 12’ La première édition de Symbiosteo était en 2019, comment les relations entre les différents acteurs ont-elles évolué ?
+12’ à 14’Quels types de conférence auront lieu sur symbiOsteo 2?
+14’ La dimension internationale de SymbiOsteo 2
+
+Image : couverture du podcast
+Lien vers : article 10 et 12
+
+
+Article 10 - 23 au 25 octobre 2022 : Organisatrice de SymbiOsteo 2 - Le Congrès International de l’ostéopathie pour animaux pour l’UFEOA
+
+En 2022, j’ai eu l’opportunité d’organiser, en tant que prestataire pour l’UFEOA, la seconde édition de SymbiOstéo – Le Congrès International de l’Ostéopathie pour Animaux.
+Cet événement s’est tenu du 23 au 25 octobre 2022 au Palais des Congrès de Lyon et a réuni près de 450 participants issus des différents domaines de l’ostéopathie et de la santé animale.
+L’objectif de cette seconde édition était de poursuivre les échanges engagés lors du premier congrès en réunissant les différents acteurs de la profession autour de thématiques communes : l’histoire de la discipline, son actualité, ainsi que les perspectives de recherche et d’évolution de l’ostéopathie animale.
+Durant deux jours et demi, une trentaine de conférences et interventions se sont succédé dans un cadre favorisant les rencontres et les échanges professionnels.
+Cette édition s’est également distinguée par la présence de conférenciers internationaux venus des États-Unis, du Canada, d’Allemagne, d’Angleterre et du Danemark, permettant d’apporter une ouverture supplémentaire sur les pratiques, les approches et les réflexions développées à l’international.
+
+Image : affiche du congrès, logo UFEOA
+Lien vers : article 9 et 12
+
+Article 11 - 28 octobre 2022 : Podcast 2 avec MORDANT “Marie Salabert 2/2 : Ostéopathe animalier engagée”
+
+À la suite de SymbiOstéo 2 – Le Congrès International de l’Ostéopathie pour Animaux, un second épisode du podcast Mordant, animé par l’ostéopathe animalier Mathilde Chalut Natal, a été publié sur les différentes plateformes d’écoute.
+Dans cet échange, nous revenons plus personnellement sur mon parcours en ostéopathie animale, depuis mes années d’études jusqu’à mon activité professionnelle actuelle. Cet épisode aborde notamment mon implication au sein de l’UFEOA, mon passage de l’examen national d’aptitude, ainsi que les différentes expériences qui ont accompagné mon évolution professionnelle au fil des années.
+Nous évoquons également mon engagement au sein du collectif des ostéopathes animaliers et les réflexions qui ont motivé mon implication dans la structuration et la représentation de la profession.
+Au cours de cet épisode, je partage aussi les raisons qui m’ont conduite à contribuer à l’organisation des différents congrès SymbiOstéo, ainsi que les motivations qui m’animent depuis maintenant plusieurs années dans mon exercice et mon engagement en faveur de l’ostéopathie animale.
+Cet épisode est disponible sur Spotify, Apple Podcasts et les principales plateformes d’écoute.
+
+https://open.spotify.com/episode/19QoC05ugEP6VgHStX2zLA?si=JmR4VvsXTriyD8vcyMc0tA
+
+Image : couverture de l’épisode mordant
+
+
+Article 12 - 18 novembre 2022 : Second article dans la semaine vétérinaire “OÙ EN EST LA RELATION ENTRE OSTÉOPATHES ANIMALIERS ET VÉTÉRINAIRES ?”
+À la suite de SymbiOsteo 2 - Le Congrès International de l’ostéopathie pour animaux, organisé en 2022, au Palais des Congrès de Lyon par l’UFEOA, La Semaine Vétérinaire a publié un nouvel article consacré à l’évolution des relations entre vétérinaires et ostéopathes animaliers.
+Ce congrès a réuni de nombreux intervenants autour d’une trentaine de conférences portant sur l’histoire de l’ostéopathie animale, les enjeux actuels de la profession ainsi que les perspectives de recherche et d’évolution de la discipline.
+Des représentants des syndicats professionnels, du Conseil National de l’Ordre des Vétérinaire étaient également présents, permettant des échanges riches entre les différents acteurs du secteur.
+Cet article fait suite à une première publication parue en 2019, intitulée « Ostéopathie animale : point de tension », réalisée après la première édition du congrès. Il propose un regard actualisé sur les évolutions du dialogue et des collaborations entre les professions vétérinaire et ostéopathique animale au cours des dernières années.
+
+https://www.lepointveterinaire.fr/publications/la-semaine-veterinaire/article/n-1966/ou-en-est-la-relation-entre-osteopathes-animaliers-et-veterinaires.html
+
+Lien vers article : 9 et 10
+Image : couverture de l’article et logo semaine vétérinaire
+
+
+Article 13 - Janvier 2024 : Naissance de SymbiOsteo Le Podcast
+Mon engagement dans le domaine de l’ostéopathie animale s’est construit progressivement au fil des années, en parallèle de mon parcours professionnel.
+De 2017 à 2020, j’ai d’abord été investie au sein de l’association étudiante UFEOA, une expérience fondatrice qui m’a permis de m’impliquer dans la structuration et la représentation des étudiants de la filière.
+À partir de 2020 et jusqu’en 2025, cet engagement s’est poursuivi au sein du collectif des ostéopathes animaliers, dans une dynamique de réflexion et d’action autour de l’évolution de la profession et de ses enjeux.
+En parallèle de cet engagement associatif, j’ai également contribué à l’organisation de deux congrès SymbiOstéo, en 2019 puis en 2022, réunissant les acteurs de l’ostéopathie et de la santé animale autour de temps d’échanges, de conférences et de réflexion sur la discipline.
+Début 2024, ce projet a évolué vers un nouveau format avec la création de SymbiOstéo – le podcast. Ce média a pour objectif de donner la parole aux différents acteurs de l’ostéopathie et de la santé animale.
+Le podcast met en lumière des parcours professionnels variés et souvent singuliers, avec pour objectif de comprendre le cheminement des intervenants, de leur point de départ à leur pratique actuelle, ainsi que les motivations personnelles et professionnelles qui ont guidé leurs choix.
+SymbiOstéo est né d’une volonté de partage et de transmission, ainsi que d’une envie profonde de mettre en lumière les valeurs communes qui relient les différents acteurs de la santé animale. Il repose également sur une passion forte pour le métier et son évolution.
+Le format du podcast se décline en plusieurs types d’épisodes : des interviews en duo, ainsi que des tables rondes réunissant plusieurs intervenants autour de thématiques communes.
+Le podcast est disponible sur la plupart des plateformes d’écoute, notamment Spotify, Apple Podcasts et Deezer.
+
+Image : SymbiOsteo le podcast : https://open.spotify.com/show/5jWkEbD1lZoZgitOLCazY6?si=-mna9iU7Qy-1fstXIlf9EA
+
+
+Article 14 - Mars 2024 - Publication du rapport de la CGAAER : Ostéopathie animale - Evaluation du dispositif de l’épreuve d’aptitude et de l’enseignement dispensé par les établissements de formation Rapport n° 23025
+
+En 2023, une mission d’inspection approfondie a été menée sur l’ensemble du dispositif réglementaire encadrant l’ostéopathie animale en France. Cette démarche a concerné l’ensemble de la chaîne de structuration de la profession, depuis la formation jusqu’à l’exercice, en passant par les modalités d’évaluation et d’encadrement administratif.
+Cette mission a été confiée à la CGAAER, une instance d’expertise et de conseil rattachée au Ministère de l’Agriculture et de la Souveraineté Alimentaire. Elle a été conduite par deux inspecteurs, Hanane Boutaieb et Pierre Lecouls, en qualité d’auditeurs indépendants.
+Au cours de près d’une année d’investigation, les différents acteurs de la filière ont été consultés : organismes de formation en ostéopathie animale, structures représentatives de la profession, ainsi que les instances en charge du suivi réglementaire, dont le dispositif de l’examen national d’aptitude et le rôle du Conseil national de l’Ordre des vétérinaires dans l’organisation du cadre d’exercice.
+Dans ce cadre, j’ai été sollicitée à plusieurs reprises pour contribuer aux échanges, notamment aux côtés du collectif des ostéopathes animaliers, ainsi qu’en tant qu’ancienne présidente de l’UFEOA, afin de partager des éléments de compréhension sur l’organisation et les enjeux de la profession.
+Cette mission avait pour objectif de dresser un état des lieux global du fonctionnement du secteur, afin d’en analyser les forces, les limites et les enjeux de structuration à venir.
+Le rapport final a été publié en mars 2024. Il présente une série de conclusions ainsi que sept recommandations visant à améliorer l’organisation et la lisibilité du cadre réglementaire de l’ostéopathie animale en France.
+Vous trouverez ci-dessous le lien vers ce rapport ainsi que le détail des sept points identifiés dans les conclusions de la mission.
+Les 7
+R1. Réduire les délais de passage de l’épreuve d’aptitude par l’ouverture d’un troisième
+centre d’examen, la possibilité de passer le questionnaire à choix multiples dans tous les
+centres et l’intégration des écoles dans le processus d’inscription de leurs apprenants à
+l’épreuve.
+R2. Mettre en place une instance unique traitant de toutes les questions de l’épreuve
+d’admissibilité composée à la fois d’ostéopathes animaliers exclusifs et de vétérinaires
+ostéopathes et former à l’évaluation les membres du jury de l’épreuve d’admission.
+R3. Sécuriser juridiquement la publication par le CNOV des taux de réussite à l’épreuve
+d’aptitude par établissement pour une question de transparence de l’information vis-à-vis
+du public.
+R4. Imposer le statut d’établissement d’enseignement supérieur privé libre à toutes les
+écoles formant à l’ostéopathie animale.
+R5. Elaborer des référentiels de compétences et de formations communs qui s’imposent à
+tous les établissements de formation à l’ostéopathie animale.
+R6. Mettre en place une certification de service institutionnelle volontaire pour les écoles
+d’ostéopathie animale
+R7 Améliorer et promouvoir l’accès à une information transparente et objective sur le
+métier, les formations et l’épreuve d’aptitude des futurs apprenants par une collaboration
+avec l’ONISEP et le CIDJ.
+
+https://s3-eu-west-1.amazonaws.com/buypacker-prod/coldstorage/Platform_01JAJST25S02H33HE8JQGZHP9H/Nonprofit_01JAJST25S02H33HE8JQGZHP9G/Organization_01JAJST25S02H33HE8JQGZHP9F/document/5171109.pdf?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27Rapport%2520oct%252023.pdf&response-x-robots-tag=noindex&AWSAccessKeyId=AKIAV4T67WN6ENNI5OX6&Expires=1801785600&Signature=ui7302DVoJtARdCJS6zFXHStFyk%3D&cache=1776763666
+
+Image : logo CGAAER, couverture du rapport
+Lien avec article 15
+
+Article 15 - 23/05/2025 : Troisième article dans la semaine vétérinaire « Ostéopathie animale : une nouvelle phase structurante ? »
+En 2025, j’ai été interviewée pour la troisième fois par La Semaine Vétérinaire afin d’échanger sur les évolutions en cours du cadre réglementaire de l’ostéopathie animale, ainsi que sur les relations entre ostéopathes animaliers et vétérinaires.
+Cette publication s’inscrit dans la continuité de deux précédents articles parus en 2019 et en 2022, qui avaient déjà permis d’aborder les dynamiques d’évolution de la profession et les enjeux de structuration du secteur.
+Dans cet entretien, nous revenons sur une nouvelle phase de structuration engagée en 2025, marquée notamment par les travaux en cours autour de l’élaboration d’un référentiel d’activités, de compétences et de formation destiné aux écoles d’ostéopathie animale. Ces travaux, actuellement en cours de finalisation, sont amenés à être publiés en 2026.
+Cette dynamique s’inscrit directement dans la continuité des recommandations formulées dans le rapport de la CGAAER publié en mars 2024, et plus particulièrement dans la recommandation visant à renforcer la structuration et l’harmonisation du cadre de formation et de compétences de la profession.
+À travers cette interview, j’ai pu partager ma vision en tant que coprésidente du collectif des ostéopathes animaliers, notamment sur les enjeux de lisibilité du cadre d’exercice, la structuration des formations, ainsi que sur la place du dialogue entre les différents acteurs de la santé animale.
+Cet échange s’inscrit dans une démarche de suivi dans le temps des évolutions de la profession et des réflexions engagées depuis plusieurs années autour de son organisation et de son avenir.
+https://www.lepointveterinaire.fr/publications/la-semaine-veterinaire/article/n-2080/osteopathie-animale-une-nouvelle-phase-structurante.html
+
+Image : Couverture de l’article
+Lien avec article 14
+
+Article 16 - Décembre 2025 - Obtention du Master 2 « Management des Etablissements de formation et de recherche en santé » à l’Université de Haute Alsace à Mulhouse
+
+En parallèle de mon activité professionnelle d’ostéopathe animalier, j’ai fait le choix en 2025 de reprendre un parcours universitaire, afin de suivre un Master 2 intitulé « Management des établissements de formation et de recherche en santé ».
+Ce parcours s’inscrit dans la continuité de mon engagement associatif de ces neuf dernières années, notamment en tant que présidente de l’UFEOA de 2017 à 2020, puis en tant que membre actif du collectif des ostéopathes animaliers entre 2020 et 2025, dont je suis également membre fondatrice. Il fait aussi suite à une volonté personnelle de consolider et professionnaliser des connaissances et compétences acquises jusqu’alors principalement par l’expérience de terrain, l’engagement associatif et l’apprentissage autonome.
+L’objectif de cette reprise d’études était ainsi de consolider les acquis issus de l’expérience professionnelle et de l’engagement de terrain, en les enrichissant par un cadre théorique, méthodologique et académique plus structuré.
+Ce master m’a notamment permis de développer des compétences précieuses en matière de recherche, avec l’objectif à terme de m’impliquer davantage dans les travaux de recherche en ostéopathie animale et dans l’évolution des connaissances scientifiques liées à la discipline.
+Il m’a également apporté des outils concrets dans plusieurs domaines essentiels à la structuration des organisations et des formations, notamment la supervision clinique, l’ingénierie de formation, la pédagogie, la gestion de projets, la gestion d’équipes, le management ainsi que la stratégie des organisations.
+Cette reprise d’études s’inscrit ainsi dans une démarche globale de consolidation de mon parcours professionnel et d’évolution vers une implication plus large dans les enjeux de recherche en ostéopathie animale.
+Image : Attestation de réussite + logo UHA
+
+Article 17 - Avril 2026 - Première parution scientifique dans la revue de santé intégrative Hegel « Ostéopathie, Chiropraxie, Thérapies manuelles animales : analyses bibliométriques (1945 - 2025) »
+En avril 2026, j’ai eu la joie de voir aboutir ma première publication scientifique au sein de la revue de santé intégrative Hegel. Cet article a également été référencé sur le moteur de recherche académique Cairn, contribuant ainsi à sa visibilité au sein de la littérature scientifique.
+Ce travail a été réalisé avec l’accompagnement du docteur Pierre-Luc L’Hermite, dont l’expertise a été précieuse tout au long de l’élaboration de cette étude.
+L’article, intitulé « Ostéopathie, chiropraxie, thérapies manuelles animales : analyse bibliométrique de 1949 à 2025 », propose une vision globale de l’état de la littérature scientifique consacrée aux thérapies manuelles appliquées aux animaux.
+Il s’agit d’un travail de bibliométrie visant à mieux comprendre la production scientifique existante sur ce sujet, à travers différents indicateurs tels que les années de publication, les types d’études réalisées, les auteurs impliqués, ainsi que leurs affiliations et leurs localisations géographiques.
+L’analyse s’intéresse également aux revues dans lesquelles ces travaux sont publiés, à leur positionnement scientifique, ainsi qu’à certains éléments liés à la diffusion des connaissances, comme les conditions de publication ou les coûts associés.
+L’ensemble de ces données permet d’apporter une vision d’ensemble de l’état actuel de la littérature scientifique dans ce domaine, en identifiant les tendances principales, les pays et acteurs les plus impliqués, ainsi que les dynamiques de publication à l’échelle internationale.
+Au-delà de cet état des lieux, ce travail met également en évidence certaines zones encore peu explorées, ouvrant des perspectives pour de futurs travaux de recherche et de développement des connaissances dans le domaine des thérapies manuelles appliquées aux animaux.
+
+https://stm.cairn.info/revue-hegel-2026-1-page-5?lang=fr
+Image : page de garde article + logo revue Hegel
+
+
+Onglet Galerie renommer « Galerie photos »
+Enlever la phrase « photos lors de mes soins »
+
+
+Onglet SymbiOsteo Le Podcast
+
+(Date du lancement 1 janvier 2024)
+Crée en janvier 2024, SymbiOsteO Le Podcast est un média qui donne la parole aux acteurs du monde de l’Ostéopathie (animale, vétérinaire et humaine), de la santé, aux explorateurs du vivant, aux passionnés et curieux.
+ Spotify https://open.spotify.com/show/5jWkEbD1lZoZgitOLCazY6?si=2ZYJ1ynhT5KqZnQWQIKzOQ
+
+apple podcast https://podcasts.apple.com/fr/podcast/symbiosteo-le-podcast/id1724241264
+
+Attention il faut supprimer certains épisodes présents sur le site
+Mettre les épisodes suivants en lien sur le site avec les titres écrits comme ci-dessous :
+
+#2 DV Raphaël BOILLOT - Un parcours interdisciplinaire - A la croisée des chemins entre ostéopathie, santé et monde animal  https://open.spotify.com/episode/1cV4vU4GLKntnxmLtYMhFZ?si=8oWQy5saTNuWXHLsDAK8pw
+
+#4 Dr Pierre Luc L’HERMITE - La rencontre entre l’ostéopathie et le monde académique  https://open.spotify.com/episode/51hoAg80VtmrkYXmvZ48y8?si=s9DczmMRSZ28S_akKRXjAA
+
+#6 DV Jean-Michel CLOBERT - Les médecines complémentaires au cœur du fonctionnement d’une clinique vétérinaire https://open.spotify.com/episode/1FC3oChGDWkFoSjR0T8nwy?si=TlsHpbJNQ4u0znhSjabuuw
+
+#7 Ouvrage « Mythologies ostéopathiques » https://open.spotify.com/episode/12dNNDkN5AjbLsaJARdIqI?si=7r9zUJs0Qze-mdp3_1sQIA
+
+#10 Christophe DREYER - (Auto)empathie au service du vivant - Devenir ostéopathe, un chemin vers Soi https://open.spotify.com/episode/2IQiEa6mTj9CZYPdYwlDRO?si=f5HF1QD3SpWF1GQ4PJnQEQ
+
+#11 DV Marie-José MAÎTRE - Le taoïsme pour accompagner le thérapeute dans le plaisir de pratiquer https://open.spotify.com/episode/0u7Ji2hX0KnwrVtz1UYTZq?si=ZJQrgo3-S_yrqSe__c7sNg
+
+#13 Table ronde : Ostéopathie Bovine - Le métier d’ostéopathe animalier avec Ambre LECOMTE, Mélina DUVAL et Justine RASERA MAGNET https://open.spotify.com/episode/1FdsN5D3vTyqVo0wHy4s2c?si=xwkcIRPNSx-q_YP8UNEp-A
+
+#16 Dr Loïc TREFFEL : Esprit critique en ostéopathie : recherche et médecine intégrative, vers une évolution de la discipline https://open.spotify.com/episode/7AfP8G69lmunI2HQOCvirY?si=weY6K3EZTIWkJ8QQrkGd5w
+
+
+
+
+Onglet Prendre un rendez-vous
+
+Enlever adresse avec mon cabinet !!!! C’est l’adresse de mes parents : je n’ai pas de cabinet pour éviter de tromper le publique : ne mettre aucune adresse postale
+
+Question du formulaire : ok
+
+A ajouter en intro
+Ce formulaire vous permet de prendre rendez-vous ou de me contacter pour toute question concernant les consultations ou les informations présentées sur le site.
+Afin de faciliter l'organisation des déplacements et de permettre une prise en charge dans les meilleurs délais, il est recommandé de préciser dans votre message :
+L'adresse où se trouve votre animal ;
+Vos disponibilités ;
+Le motif de la consultation.
+Chaque demande est étudiée avec attention et une réponse est apportée dans les meilleurs délais.
+
+
+
+Possible de Mettre une carte avec mon secteur : 1h45 autour de Toulouse ?
+Placer des points sur mes passages réguliers :
+Castelnau d’Estrétefonds
+Balma
+Toulouse
+Fronton
+Grenade
+Blagnac
+L’Union
+Graulhet
+Villeneuve sur Lot
+Agen
+Castelsarrasin
+Beaumont de Lomagne
+Caylus
+Montauban
+Muret
+Leguevin
+L’isle Jourdain
+Nailloux
+Saint Orens
+Labège
+Cahors
+Villfranche de Rouergue
+
+
+
+
+
+
+
+
+

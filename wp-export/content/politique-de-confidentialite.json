@@ -1,0 +1,852 @@
+{
+ "slug": "politique-de-confidentialite",
+ "url": "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/",
+ "meta": {
+  "title": "Politique de Confidentialité - Marie Salabert Ostéopathe Animalier",
+  "description": "Confiez le bien-être de vos animaux à Marie Salabert, ostéopathe animalière. Découvrez notre Politique de Confidentialité.",
+  "robots": "noindex, nofollow",
+  "og:title": "Politique de Confidentialité - Marie Salabert Ostéopathe Animalier",
+  "og:description": "Confiez le bien-être de vos animaux à Marie Salabert, ostéopathe animalière. Découvrez notre Politique de Confidentialité.",
+  "og:type": "article",
+  "og:url": "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/",
+  "canonical": null,
+  "lang": "fr-FR",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/",
+      "name": "Politique de Confidentialité - Marie Salabert Ostéopathe Animalier",
+      "isPartOf": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#website"
+      },
+      "datePublished": "2024-02-22T11:47:24+00:00",
+      "dateModified": "2024-02-22T11:48:26+00:00",
+      "description": "Confiez le bien-être de vos animaux à Marie Salabert, ostéopathe animalière. Découvrez notre Politique de Confidentialité.",
+      "breadcrumb": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://osteopathie-animale.sitepreproduction.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Politique de Confidentialité"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/#website",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/",
+      "name": "Ostheopathie animale Toulouse",
+      "description": "",
+      "publisher": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://osteopathie-animale.sitepreproduction.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/#organization",
+      "name": "Ostheopathie animale Toulouse",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#/schema/logo/image/",
+       "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png",
+       "contentUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png",
+       "width": 336,
+       "height": 328,
+       "caption": "Ostheopathie animale Toulouse"
+      },
+      "image": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#/schema/logo/image/"
+      }
+     }
+    ]
+   }
+  ],
+  "body_class": "wp-singular page-template-default page page-id-739 wp-custom-logo wp-embed-responsive wp-theme-astra ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.6 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-88 elementor-page elementor-page-739"
+ },
+ "css_backgrounds": [],
+ "blocks": [
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#content",
+   "text": "Aller au contenu",
+   "internal": false,
+   "class": "skip-link screen-reader-text"
+  },
+  {
+   "type": "p",
+   "zone": "header",
+   "text": "Ostheopathie animale Toulouse"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "Ostheopathie animale Toulouse",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "",
+   "internal": true,
+   "class": "elementor-clickable"
+  },
+  {
+   "type": "img",
+   "zone": "header",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31-300x293.png",
+   "alt": "default-logo",
+   "title": null,
+   "width": "300",
+   "height": "293",
+   "srcset": null,
+   "class": "hfe-site-logo-img elementor-animation-"
+  },
+  {
+   "type": "img",
+   "zone": "header",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31-300x293.png",
+   "alt": "default-logo",
+   "title": null,
+   "width": "300",
+   "height": "293",
+   "srcset": null,
+   "class": "hfe-site-logo-img elementor-animation-"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Accueil"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "Accueil",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "À Propos"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/",
+   "text": "À Propos",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Consultations"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/consulation-osteopathe-animalier/",
+   "text": "Consultations",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Certification"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/",
+   "text": "Certification",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Actualités"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/actualites/",
+   "text": "Actualités",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "FAQ"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/faq/",
+   "text": "FAQ",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Galerie"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/galerie/",
+   "text": "Galerie",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Symbiosteo"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/symbiosteo-2/",
+   "text": "Symbiosteo",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/rendez-vous-osteopathe-animalier/",
+   "text": "Prendre un rendez-vous",
+   "internal": true,
+   "class": "elementor-button elementor-button-link elementor-size-sm"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Politique de Confidentialité"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Définitions"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "L’Éditeur : La personne, physique ou morale, qui édite les services de communication au public en ligne. Le Site : L’ensemble des sites, pages Internet et services en ligne proposés par l’Éditeur. L’Utilisateur : La personne utilisant le Site et les services."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "1- Nature des données collectées"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Dans le cadre de l’utilisation des Sites, l’Éditeur est susceptible de collecter les catégories de données suivantes concernant ses Utilisateurs : Données d’état-civil, d’identité, d’identification…"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "2- Communication des données personnelles à des tiers"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Pas de communication à des tiers Vos données ne font l’objet d’aucune communication à des tiers. Vous êtes toutefois informés qu’elles pourront être divulguées en application d’une loi, d’un règlement ou en vertu d’une décision d’une autorité réglementaire ou judiciaire compétente."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "3- Information préalable pour la communication des données personnelles à des tiers en cas de fusion / absorption"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Collecte de l’opt-in (consentement) préalable à la transmission des données suite à une fusion / acquisition Dans le cas où nous prendrions part à une opération de fusion, d’acquisition ou à toute autre forme de cession d’actifs, nous nous engageons à obtenir votre consentement préalable à la transmission de vos données personnelles et à maintenir le niveau de confidentialité de vos données personnelles auquel vous avez consenti."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "4- Agrégation des données"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Agrégation avec des données non personnelles Nous pouvons publier, divulguer et utiliser les informations agrégées (informations relatives à tous nos Utilisateurs ou à des groupes ou catégories spécifiques d’Utilisateurs que nous combinons de manière à ce qu’un Utilisateur individuel ne puisse plus être identifié ou mentionné) et les informations non personnelles à des fins d’analyse du secteur et du marché, de profilage démographique, à des fins promotionnelles et publicitaires et à d’autres fins commerciales."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Agrégation avec des données personnelles disponibles sur les comptes sociaux de l’Utilisateur . Si vous connectez votre compte à un compte d’un autre service afin de faire des envois croisés, ledit service pourra nous communiquer vos informations de profil, de connexion, ainsi que toute autre information dont vous avez autorisé la divulgation. Nous pouvons agréger les informations relatives à tous nos autres Utilisateurs, groupes, comptes, aux données personnelles disponibles sur l’Utilisateur."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "5- Collecte des données d’identité"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Consultation libre La consultation du Site ne nécessite pas d’inscription ni d’identification préalable. Elle peut s’effectuer sans que vous ne communiquiez de données nominatives vous concernant (nom, prénom, adresse, etc). Nous ne procédons à aucun enregistrement de données nominatives pour la simple consultation du Site."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "6- Collecte des données d’identification"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Utilisation de l’identifiant de l’utilisateur uniquement pour l’accès aux services Nous utilisons vos identifiants électroniques seulement pour et pendant l’exécution du contrat."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "7- Collecte des données du terminal"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Collecte des données de profilage et des données techniques à des fins de fourniture du service Certaines des données techniques de votre appareil sont collectées automatiquement par le Site. Ces informations incluent notamment votre adresse IP, fournisseur d’accès à Internet, configuration matérielle, configuration logicielle, type et langue du navigateur… La collecte de ces données est nécessaire à la fourniture des services."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Collecte des données techniques à des fins publicitaires, commerciales et statistiques Les données techniques de votre appareil sont automatiquement collectées et enregistrées par le Site, à des fins publicitaires, commerciales et statistiques. Ces informations nous aident à personnaliser et à améliorer continuellement votre expérience sur notre Site. Nous ne collectons ni ne conservons aucune donnée nominative (nom, prénom, adresse…) éventuellement attachée à une donnée technique. Les données collectées sont susceptibles d’être revendues à des tiers."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "8- Cookies"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Durée de conservation des cookies Conformément aux recommandations de la CNIL, la durée maximale de conservation des cookies est de 13 mois au maximum après leur premier dépôt dans le terminal de l’Utilisateur, tout comme la durée de la validité du consentement de l’Utilisateur à l’utilisation de ces cookies. La durée de vie des cookies n’est pas prolongée à chaque visite. Le consentement de l’Utilisateur devra donc être renouvelé à l’issue de ce délai."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Finalité cookies Les cookies peuvent être utilisés pour des fins statistiques notamment pour optimiser les services rendus à l’Utilisateur, à partir du traitement des informations concernant la fréquence d’accès, la personnalisation des pages ainsi que les opérations réalisées et les informations consultées. Vous êtes informé que l’Éditeur est susceptible de déposer des cookies sur votre terminal. Le cookie enregistre des informations relatives à la navigation sur le service (les pages que vous avez consultées, la date et l’heure de la consultation…) que nous pourrons lire lors de vos visites ultérieures."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Droit de l’Utilisateur de refuser les cookies Vous reconnaissez avoir été informé que l’Éditeur peut avoir recours à des cookies. Si vous ne souhaitez pas que des cookies soient utilisés sur votre terminal, la plupart des navigateurs vous permettent de désactiver les cookies en passant par les options de réglage."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "9 – Conservation des données techniques"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Durée de conservation des données techniques Les données techniques sont conservées pour la durée strictement nécessaire à la réalisation des finalités visées ci-avant."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "10- Délai de conservation des données personnelles et d’anonymisation"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Conservation des données pendant la durée de la relation contractuelle Conformément à l’article 6-5° de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, les données à caractère personnel faisant l’objet d’un traitement ne sont pas conservées au-delà du temps nécessaire à l’exécution des obligations définies lors de la conclusion du contrat ou de la durée prédéfinie de la relation contractuelle."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Conservation des données anonymisées au delà de la relation contractuelle / après la suppression du compte Nous conservons les données personnelles pour la durée strictement nécessaire à la réalisation des finalités décrites dans les présentes Politiques de confidentialité. Au-delà de cette durée, elles seront anonymisées et conservées à des fins exclusivement statistiques et ne donneront lieu à aucune exploitation, de quelque nature que ce soit."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Suppression des données après suppression du compte Des moyens de purge de données sont mis en place afin d’en prévoir la suppression effective dès lors que la durée de conservation ou d’archivage nécessaire à l’accomplissement des finalités déterminées ou imposées est atteinte. Conformément à la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, vous disposez par ailleurs d’un droit de suppression sur vos données que vous pouvez exercer à tout moment en prenant contact avec l’Éditeur."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Suppression des données après 3 ans d’inactivité Pour des raisons de sécurité, si vous ne vous êtes pas authentifié sur le Site pendant une période de trois ans, vous recevrez un e-mail vous invitant à vous connecter dans les plus brefs délais, sans quoi vos données seront supprimées de nos bases de données."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "11- Suppression du compte"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Suppression du compte à la demande L’Utilisateur a la possibilité de supprimer son Compte à tout moment, par simple demande à l’Éditeur OU par le menu de suppression de Compte présent dans les paramètres du Compte le cas échéant."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Suppression du compte en cas de violation de la Politique de Confidentialité En cas de violation d’une ou de plusieurs dispositions de la Politique de Confidentialité ou de tout autre document incorporé aux présentes par référence, l’Éditeur se réserve le droit de mettre fin ou restreindre sans aucun avertissement préalable et à sa seule discrétion, votre usage et accès aux services, à votre compte et à tous les Sites."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "12- Indications en cas de faille de sécurité décelée par l’Éditeur"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Information de l’Utilisateur en cas de faille de sécurité Nous nous engageons à mettre en oeuvre toutes les mesures techniques et organisationnelles appropriées afin de garantir un niveau de sécurité adapté au regard des risques d’accès accidentels, non autorisés ou illégaux, de divulgation, d’altération, de perte ou encore de destruction des données personnelles vous concernant. Dans l’éventualité où nous prendrions connaissance d’un accès illégal aux données personnelles vous concernant stockées sur nos serveurs ou ceux de nos prestataires, ou d’un accès non autorisé ayant pour conséquence la réalisation des risques identifiés ci-dessus, nous nous engageons à : – Vous notifier l’incident dans les plus brefs délais ; – Examiner les causes de l’incident et vous en informer ; – Prendre les mesures nécessaires dans la limite du raisonnable afin d’amoindrir les effets négatifs et préjudices pouvant résulter dudit incident."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Limitation de la responsabilité En aucun cas les engagements définis au point ci-dessus relatifs à la notification en cas de faille de sécurité ne peuvent être assimilés à une quelconque reconnaissance de faute ou de responsabilité quant à la survenance de l’incident en question."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "13- Transfert des données personnelles à l’étranger"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Pas de transfert en dehors de l’Union européenne L’Éditeur s’engage à ne pas transférer les données personnelles de ses Utilisateurs en dehors de l’Union européenne."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "https://www.cnil.fr/fr/la-protection-des-donnees-dans-le-mondehttps://www.cnil.fr/fr/la-protectiondes-donnees-dans-le-monde"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "14- Modification de la politique de confidentialité"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "En cas de modification de la présente Politique de Confidentialité, engagement de ne pas baisser le niveau de confidentialité de manière substantielle sans l’information préalable des personnes concernées Nous nous engageons à vous informer en cas de modification substantielle de la présente Politique de Confidentialité, et à ne pas baisser le niveau de confidentialité de vos données de manière substantielle sans vous en informer et obtenir votre consentement."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "15- Droit applicable et modalités de recours"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Clause d’arbitrage Vous acceptez expressément que tout litige susceptible de naître du fait de la présente Politique de Confidentialité, notamment de son interprétation ou de son exécution, relèvera d’une procédure d’arbitrage soumise au règlement de la plateforme d’arbitrage choisie d’un commun accord, auquel vous adhérerez sans réserve."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "16- Portabilité des données"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Portabilité des données L’Éditeur s’engage à vous offrir la possibilité de vous faire restituer l’ensemble des données vous concernant sur simple demande. L’Utilisateur se voit ainsi garantir une meilleure maîtrise de ses données, et garde la possibilité de les réutiliser. Ces données devront être fournies dans un format ouvert et aisément réutilisable."
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png",
+   "alt": "Logo de Marie Salabert représenté avec la tête de chien, d'un cochon, d'un lapin, d'un cheval, d'un chat, d'un taureau",
+   "title": null,
+   "width": "510",
+   "height": "510",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-272"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png",
+   "alt": "Logo de Marie Salabert représenté avec la tête de chien, d'un cochon, d'un lapin, d'un cheval, d'un chat, d'un taureau",
+   "title": null,
+   "width": "510",
+   "height": "510",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png 510w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse-300x300.png 300w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse-150x150.png 150w",
+   "class": "attachment-full size-full wp-image-272"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png",
+   "alt": "",
+   "title": null,
+   "width": "489",
+   "height": "473",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-70"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png",
+   "alt": "",
+   "title": null,
+   "width": "489",
+   "height": "473",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png 489w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2-300x290.png 300w",
+   "class": "attachment-full size-full wp-image-70"
+  },
+  {
+   "type": "h5",
+   "zone": "footer",
+   "text": "Plus d'infos"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "A propos"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/a-propos/",
+   "text": "A propos",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Contact"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/contact/",
+   "text": "Contact",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Réserver une séance"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/reservation/",
+   "text": "Réserver une séance",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Politique de Cookies"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/politique-de-cookies-ue/",
+   "text": "Politique de Cookies",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Mentions Légales"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/mentions-legales/",
+   "text": "Mentions Légales",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Politique de Confidentialité"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/",
+   "text": "Politique de Confidentialité",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "h5",
+   "zone": "footer",
+   "text": "Contact"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Marie Salabert Ostéopathie Animale"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "7 Rue des épicéas - 31180 Castelmaurou"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Siret : 883.931.347.000.16"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Inscrite sur le Registre National d’Aptitude tenu par le Conseil National de l’Ordre des Vétérinaires (OA 801)"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Tél : 06.37.88.00.73"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "tel:+33637880073",
+   "text": "Tél : 06.37.88.00.73",
+   "internal": false,
+   "class": ""
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png",
+   "alt": "",
+   "title": null,
+   "width": "552",
+   "height": "328",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-71"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png",
+   "alt": "",
+   "title": null,
+   "width": "552",
+   "height": "328",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png 552w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3-300x178.png 300w",
+   "class": "attachment-full size-full wp-image-71"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://www.facebook.com/mariesalabertosteopathieanimale/",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://www.instagram.com/mariesalabert.osteoanimale/",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://www.linkedin.com/in/marie-salabert-0197b2166/?originalSubdomain=fr",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://clickzou.fr/",
+   "text": "Conception site internet : Clickzou",
+   "internal": false,
+   "class": ""
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Fonctionnel"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Préférences"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Statistiques"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Marketing"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer les options"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer les options",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-options cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer les services"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer les services",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-third-parties cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer {vendor_count} fournisseurs"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer {vendor_count} fournisseurs",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-vendors tcf cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "En savoir plus sur ces finalités"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://cookiedatabase.org/tcf/purposes/",
+   "text": "En savoir plus sur ces finalités",
+   "internal": false,
+   "class": "cmplz-link cmplz-external cmplz-read-more-purposes tcf"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Accepter"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Refuser"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Voir les préférences"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Enregistrer les préférences"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Voir les préférences",
+   "internal": false,
+   "class": "cmplz-btn cmplz-manage-options tcf cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "{title}"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link cookie-statement"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link privacy-statement"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link impressum"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Gérer le consentement"
+  }
+ ]
+}

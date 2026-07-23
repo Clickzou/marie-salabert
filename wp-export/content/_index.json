@@ -1,0 +1,122 @@
+[
+ {
+  "slug": "actualites",
+  "title": "Découvrez l'actualité de l'ostéopathie animale avec Marie Salabert",
+  "images": 16,
+  "css_bg": 0,
+  "links": 35,
+  "blocks": 97
+ },
+ {
+  "slug": "categorie__actualites",
+  "title": "Archives des Actualités - Ostheopathie animale Toulouse",
+  "images": 10,
+  "css_bg": 0,
+  "links": 36,
+  "blocks": 86
+ },
+ {
+  "slug": "conference-pour-l-ifce",
+  "title": "Conférence pour l’IFCE – Etat des lieux pour l’ostéopathie animale",
+  "images": 10,
+  "css_bg": 0,
+  "links": 33,
+  "blocks": 86
+ },
+ {
+  "slug": "consulation-osteopathe-animalier",
+  "title": "Consultations ostéopathe animalier - Marie Salabert Ostéopathe",
+  "images": 10,
+  "css_bg": 0,
+  "links": 37,
+  "blocks": 104
+ },
+ {
+  "slug": "faq",
+  "title": "FAQ Ostéopathie Animale : réponse à vos questions",
+  "images": 10,
+  "css_bg": 0,
+  "links": 52,
+  "blocks": 120
+ },
+ {
+  "slug": "galerie",
+  "title": "Soins ostéopathie animale en photo - Marie Salabert",
+  "images": 102,
+  "css_bg": 0,
+  "links": 79,
+  "blocks": 218
+ },
+ {
+  "slug": "index",
+  "title": "Ostéopathe animalier Toulouse - Marie Salabert",
+  "images": 16,
+  "css_bg": 0,
+  "links": 51,
+  "blocks": 164
+ },
+ {
+  "slug": "mentions-legales",
+  "title": "Mentions Légales ostéopathe animalier - Marie Salabert",
+  "images": 8,
+  "css_bg": 0,
+  "links": 31,
+  "blocks": 88
+ },
+ {
+  "slug": "mon-diplome-dosteopathe-animalier",
+  "title": "Mon Diplôme Ostéopathe Animalier - Marie Salabert",
+  "images": 10,
+  "css_bg": 0,
+  "links": 33,
+  "blocks": 86
+ },
+ {
+  "slug": "osteopahie-animale",
+  "title": "L'ostéopathie animale et ses bienfaits - Marie Salabert Ostéopathe",
+  "images": 34,
+  "css_bg": 0,
+  "links": 32,
+  "blocks": 146
+ },
+ {
+  "slug": "politique-de-confidentialite",
+  "title": "Politique de Confidentialité - Marie Salabert Ostéopathe Animalier",
+  "images": 8,
+  "css_bg": 0,
+  "links": 31,
+  "blocks": 120
+ },
+ {
+  "slug": "politique-de-cookies-ue",
+  "title": "Politique de cookies (UE) - Ostheopathie animale Toulouse",
+  "images": 8,
+  "css_bg": 0,
+  "links": 38,
+  "blocks": 130
+ },
+ {
+  "slug": "rendez-vous-osteopathe-animalier",
+  "title": "Contact ostéopathe animalier : Marie Salabert",
+  "images": 12,
+  "css_bg": 0,
+  "links": 32,
+  "blocks": 94
+ },
+ {
+  "slug": "reservation",
+  "title": "RDV ostéopathe animalier Toulouse : Réservez votre séance",
+  "images": 14,
+  "css_bg": 0,
+  "links": 38,
+  "blocks": 103
+ },
+ {
+  "slug": "symbiosteo-2",
+  "title": "L'ostéopathie animale et ses bienfaits - Marie Salabert Ostéopathe",
+  "images": 10,
+  "css_bg": 0,
+  "links": 34,
+  "blocks": 116
+ }
+]

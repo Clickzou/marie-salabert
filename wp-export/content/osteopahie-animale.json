@@ -1,0 +1,1159 @@
+{
+ "slug": "osteopahie-animale",
+ "url": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/",
+ "meta": {
+  "title": "L'ostéopathie animale et ses bienfaits - Marie Salabert Ostéopathe",
+  "description": "Découvrez l'ostéopathie animale et ses bienfaits : l'histoire de l’ostéopathie animale, les principes et les différentes approches.",
+  "robots": "noindex, nofollow",
+  "og:title": "L'ostéopathie animale et ses bienfaits - Marie Salabert Ostéopathe",
+  "og:description": "Découvrez l'ostéopathie animale et ses bienfaits : l'histoire de l’ostéopathie animale, les principes et les différentes approches.",
+  "og:image": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/a-propos-osteopathie-animale-scaled.jpg",
+  "og:type": "article",
+  "og:url": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/",
+  "canonical": null,
+  "lang": "fr-FR",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/",
+      "name": "L'ostéopathie animale et ses bienfaits - Marie Salabert Ostéopathe",
+      "isPartOf": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/#primaryimage"
+      },
+      "image": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/#primaryimage"
+      },
+      "thumbnailUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/a-propos-osteopathie-animale-scaled.jpg",
+      "datePublished": "2023-05-22T12:49:06+00:00",
+      "dateModified": "2025-11-20T11:39:11+00:00",
+      "description": "Découvrez l'ostéopathie animale et ses bienfaits : l'histoire de l’ostéopathie animale, les principes et les différentes approches.",
+      "breadcrumb": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "fr-FR",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/#primaryimage",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/a-propos-osteopathie-animale-scaled.jpg",
+      "contentUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/a-propos-osteopathie-animale-scaled.jpg",
+      "width": 2560,
+      "height": 974,
+      "caption": "Un oiseau, un gros lézard, un chat, un chien, un lapin et un furet"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://osteopathie-animale.sitepreproduction.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "A Propos"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/#website",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/",
+      "name": "Ostheopathie animale Toulouse",
+      "description": "",
+      "publisher": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://osteopathie-animale.sitepreproduction.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/#organization",
+      "name": "Ostheopathie animale Toulouse",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#/schema/logo/image/",
+       "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png",
+       "contentUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png",
+       "width": 336,
+       "height": 328,
+       "caption": "Ostheopathie animale Toulouse"
+      },
+      "image": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#/schema/logo/image/"
+      }
+     }
+    ]
+   }
+  ],
+  "body_class": "wp-singular page-template-default page page-id-47 wp-custom-logo wp-embed-responsive wp-theme-astra ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.6 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-88 elementor-page elementor-page-47"
+ },
+ "css_backgrounds": [],
+ "blocks": [
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#content",
+   "text": "Aller au contenu",
+   "internal": false,
+   "class": "skip-link screen-reader-text"
+  },
+  {
+   "type": "p",
+   "zone": "header",
+   "text": "Ostheopathie animale Toulouse"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "Ostheopathie animale Toulouse",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "",
+   "internal": true,
+   "class": "elementor-clickable"
+  },
+  {
+   "type": "img",
+   "zone": "header",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31-300x293.png",
+   "alt": "default-logo",
+   "title": null,
+   "width": "300",
+   "height": "293",
+   "srcset": null,
+   "class": "hfe-site-logo-img elementor-animation-"
+  },
+  {
+   "type": "img",
+   "zone": "header",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31-300x293.png",
+   "alt": "default-logo",
+   "title": null,
+   "width": "300",
+   "height": "293",
+   "srcset": null,
+   "class": "hfe-site-logo-img elementor-animation-"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Accueil"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "Accueil",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "À Propos"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/",
+   "text": "À Propos",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Consultations"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/consulation-osteopathe-animalier/",
+   "text": "Consultations",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Certification"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/",
+   "text": "Certification",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Actualités"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/actualites/",
+   "text": "Actualités",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "FAQ"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/faq/",
+   "text": "FAQ",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Galerie"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/galerie/",
+   "text": "Galerie",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Symbiosteo"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/symbiosteo-2/",
+   "text": "Symbiosteo",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/rendez-vous-osteopathe-animalier/",
+   "text": "Prendre un rendez-vous",
+   "internal": true,
+   "class": "elementor-button elementor-button-link elementor-size-sm"
+  },
+  {
+   "type": "h1",
+   "zone": "main",
+   "text": "A propos de l'ostéopathie animale"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/circle-pattern.png",
+   "alt": "",
+   "title": null,
+   "width": "745",
+   "height": "745",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-17"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/circle-pattern.png",
+   "alt": "",
+   "title": null,
+   "width": "745",
+   "height": "745",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/circle-pattern.png 745w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/circle-pattern-300x300.png 300w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/circle-pattern-150x150.png 150w",
+   "class": "attachment-full size-full wp-image-17"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/marie-salabert-osteopathe-animaliere-1024x683.jpg",
+   "alt": "Femme tenant un chat siamois allongé dans ses bras lors d’une consultation en extérieur, en tant qu’ostéopathe animalière, avec un fond composé d’une chaise, d’un mur clair et d’un volet bleu.",
+   "title": null,
+   "width": "1024",
+   "height": "683",
+   "srcset": null,
+   "class": "attachment-large size-large wp-image-1060"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/marie-salabert-osteopathe-animaliere-1024x683.jpg",
+   "alt": "Femme tenant un chat siamois allongé dans ses bras lors d’une consultation en extérieur, en tant qu’ostéopathe animalière, avec un fond composé d’une chaise, d’un mur clair et d’un volet bleu.",
+   "title": null,
+   "width": "1024",
+   "height": "683",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/marie-salabert-osteopathe-animaliere-1024x683.jpg 1024w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/marie-salabert-osteopathe-animaliere-300x200.jpg 300w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/marie-salabert-osteopathe-animaliere-768x513.jpg 768w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/marie-salabert-osteopathe-animaliere-18x12.jpg 18w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/marie-salabert-osteopathe-animaliere.jpg 1440w",
+   "class": "attachment-large size-large wp-image-1060"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Découvrez"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "L'ostéopathie animale et ses bienfaits"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "L’ostéopathie est une médecine naturelle qui prend en compte l’individu dans sa globalité, et qui consiste à « prévenir, diagnostiquer et traiter manuellement les dysfonctions de la mobilité des tissus du corps susceptibles d’en altérer l’état de santé.»"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "L’ostéopathie a été créée en 1874 par Andrew Taylor Still (1828-1917), on l’a décrit comme étant à la fois une science, un art et une philosophie."
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/decouvrir-osteopathe-animale-1024x897.jpg",
+   "alt": "",
+   "title": null,
+   "width": "1024",
+   "height": "897",
+   "srcset": null,
+   "class": "attachment-large size-large wp-image-1069"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/decouvrir-osteopathe-animale-1024x897.jpg",
+   "alt": "",
+   "title": null,
+   "width": "1024",
+   "height": "897",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/decouvrir-osteopathe-animale-1024x897.jpg 1024w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/decouvrir-osteopathe-animale-300x263.jpg 300w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/decouvrir-osteopathe-animale-768x673.jpg 768w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/decouvrir-osteopathe-animale-14x12.jpg 14w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/decouvrir-osteopathe-animale.jpg 1488w",
+   "class": "attachment-large size-large wp-image-1069"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Histoire de l’ostéopathie animale"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "L’ostéopathie a été adaptée des humains aux animaux dans les années 80, initialement pour les chevaux par le Docteur Vétérinaire Dominique Giniaux et par l’ostéopathe humain Pascal Evrard. Dans les années 2000, l’ostéopathie sur les animaux de compagnie commence par le biais du Docteur Vétérinaire Francis Lizon . Puis quelques années plus tard, l’ostéopathie animale s’est progressivement implantée dans le milieu rural et plus généralement à tous types d’animaux."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Aujourd’hui, l’ostéopathie animale s’est démocratisée et tant à entrer davantage dans les mœurs et les réflexes de pensées des différents propriétaires d’animaux."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Nous sommes dans une époque où les médecines naturelles prennent de plus en plus d’ampleur et les pensées communes évoluent. Depuis quelques années, se soigner de manière naturelle par les plantes, l’ostéopathie, l’acupuncture ou d’autres types de thérapies est devenu un réflexe pour beaucoup d’entre nous."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Cette évolution des mentalités a favorisé le développement de l’ostéopathie animale, qui est devenue aujourd’hui une approche indispensable dans le suivi de nos animaux."
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-lines.png",
+   "alt": "",
+   "title": null,
+   "width": "190",
+   "height": "258",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-25"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-lines.png",
+   "alt": "",
+   "title": null,
+   "width": "190",
+   "height": "258",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-25"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Les principes de l’ostéopathie"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "L’ostéopathie s’articule autour d’une philosophie qui lui est propre, décrite par son fondateur Andrew Taylor Still, selon 4 principes fondamentaux :"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "1️⃣ L’unité du corps"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Le corps forme un tout. Il fonctionne comme une unité indivisible où les systèmes structurels (os, muscles, organes, nerfs…) sont interconnectés. 👉 Toute perturbation dans une partie du corps peut avoir des répercussions ailleurs."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "2️⃣ La relation structure"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Le corps constitue une unité dans laquelle la structure (anatomie) et la fonction (physiologie) sont indissociablement liées. Le rôle de l’artère est suprême : une circulation sanguine correcte est donc indispensable à la vie cellulaire. 👉 Une perte de mobilité (articulaire, musculaire, fasciale…) peut altérer la fonction correspondante, et inversement."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "3️⃣ La capacité d’auto-guérison du corps"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Un organisme en bonne santé à la capacité de maîtriser seul les agressions extérieures et tend de manière autonome vers la santé. 👉 Le rôle de l’ostéopathe est de lever les blocages pour permettre au corps de relancer ses processus d’auto-régulation."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "4️⃣ La règle de l’artère est suprême"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Une circulation sanguine et lymphatique optimale est essentielle à la santé des tissus. 👉 Si les fluides circulent librement, les nutriments, hormones et cellules immunitaires peuvent remplir leur rôle efficacement."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "L’ostéopathie animale est une médecine intégrative dite naturelle, par son approche manuelle elle permet d’apporter une vision globale différente et complémentaire de la médecine traditionnelle."
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Les différentes approches de l’ostéopathie"
+  },
+  {
+   "type": "h3",
+   "zone": "main",
+   "text": "Musculosquelettique"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Par cet aspect de l’ostéopathie nous allons travailler pour rééquilibrer la structure (os, muscles, articulations, ligaments, tendons)."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Il peut s’agir de techniques dites structurelles, myotensives ou fonctionnelles."
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "h3",
+   "zone": "main",
+   "text": "Tissulaire"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Décrite par Pierre Tricot (Ostéopathe DO) ces techniques peuvent s’appliquer sur l’ensemble du corps. Elles visent à améliorer le mouvement d’une structure ciblée ou plus globalement à rendre une bonne communication tissulaire d’un bout à l’autre de l’organisme."
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "h3",
+   "zone": "main",
+   "text": "Liquidienne"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Utilisé la plupart du temps sur l’axe crânio-sacrée ces techniques permettent d’agir sur la fluctuation du liquide céphalo-rachidien et donc sur le système nerveux central, par ce que nous appelons couramment en ostéopathie le MRP (mouvement respiratoire primaire) ou souffle de vie."
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "h3",
+   "zone": "main",
+   "text": "Le réveil osseux"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Développée par Michèle Tarento (Médecin ORL et Ostéopathe DO), cette approche s’intéresse au système osseux pour permettre un rééquilibrage postural et une modification des alignements osseux."
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "h3",
+   "zone": "main",
+   "text": "Viscéral"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Nous nous intéressons à la mobilité des organes et à leur attache ligamentaire."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Mon mémoire de fin d’études porte notamment sur la pratique de l’ostéopathie sur les moyens de fixité des différents organes."
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "h3",
+   "zone": "main",
+   "text": "Faciale"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Le corps est composé en grande partie de fascias, initialement décrit comme du mésoderme au stade embryologique. Lors du développement de l’embryon et du fœtus ce mésoderme va se différencier en plusieurs types de fascias : superficiels (derme – hypoderme) ; intermédiaires (aponévroses, séreuses et mésos splanchniques, enveloppes des différents vaisseaux) et profonds (périoste, tendons, dure mère)."
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "h3",
+   "zone": "main",
+   "text": "Réflexe"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Les techniques réflexes décrites initialement par Robert Perronneaud Ferré (ostéopathe DO) permettent de travailler localement sur la peau, afin d’induire une action en profondeur dans l’organisme. J’apprécie particulièrement la réalisation de traits tirés accès sur certaines zones permettant d’avoir une action à la fois localisée et globale sur le système lymphatique, circulatoire et nerveux."
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "h3",
+   "zone": "main",
+   "text": "Le Corps Tenségritif"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Il s’agit d’un modèle considérant ensemble : la force de traction médullaire, la torsion physiologique, les loges viscérales, l’hélice fasciale et les hélices des membres. Ce modèle renforce l’importance de considérer un organisme dans sa globalité et offre une visualisation supplémentaire pour le professionnel qui l’utilise."
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Le Corps Tenségritif a été développé par Patrick Chêne (ostéopathe DO et vétérinaire) et Amélie Gardelle (ostéopathe animalier)."
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-triangle.png",
+   "alt": "",
+   "title": null,
+   "width": "125",
+   "height": "125",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-27"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Un conseil ?"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Contactez-moi"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Vous avez des question concernant l’ostéopathie animalière ou vous souhaitez en savoir plus sur mes soins animaliers, n’hésitez pas à me contacter."
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/contact/",
+   "text": "Contact",
+   "internal": true,
+   "class": "elementor-button elementor-button-link elementor-size-md"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/triangle-dots.png",
+   "alt": "",
+   "title": null,
+   "width": "372",
+   "height": "297",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-30"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/triangle-dots.png",
+   "alt": "",
+   "title": null,
+   "width": "372",
+   "height": "297",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/triangle-dots.png 372w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/triangle-dots-300x240.png 300w",
+   "class": "attachment-full size-full wp-image-30"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png",
+   "alt": "Logo de Marie Salabert représenté avec la tête de chien, d'un cochon, d'un lapin, d'un cheval, d'un chat, d'un taureau",
+   "title": null,
+   "width": "510",
+   "height": "510",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-272"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png",
+   "alt": "Logo de Marie Salabert représenté avec la tête de chien, d'un cochon, d'un lapin, d'un cheval, d'un chat, d'un taureau",
+   "title": null,
+   "width": "510",
+   "height": "510",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png 510w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse-300x300.png 300w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse-150x150.png 150w",
+   "class": "attachment-full size-full wp-image-272"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png",
+   "alt": "",
+   "title": null,
+   "width": "489",
+   "height": "473",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-70"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png",
+   "alt": "",
+   "title": null,
+   "width": "489",
+   "height": "473",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png 489w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2-300x290.png 300w",
+   "class": "attachment-full size-full wp-image-70"
+  },
+  {
+   "type": "h5",
+   "zone": "footer",
+   "text": "Plus d'infos"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "A propos"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/a-propos/",
+   "text": "A propos",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Contact"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/contact/",
+   "text": "Contact",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Réserver une séance"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/reservation/",
+   "text": "Réserver une séance",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Politique de Cookies"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/politique-de-cookies-ue/",
+   "text": "Politique de Cookies",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Mentions Légales"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/mentions-legales/",
+   "text": "Mentions Légales",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Politique de Confidentialité"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/",
+   "text": "Politique de Confidentialité",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "h5",
+   "zone": "footer",
+   "text": "Contact"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Marie Salabert Ostéopathie Animale"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "7 Rue des épicéas - 31180 Castelmaurou"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Siret : 883.931.347.000.16"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Inscrite sur le Registre National d’Aptitude tenu par le Conseil National de l’Ordre des Vétérinaires (OA 801)"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Tél : 06.37.88.00.73"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "tel:+33637880073",
+   "text": "Tél : 06.37.88.00.73",
+   "internal": false,
+   "class": ""
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png",
+   "alt": "",
+   "title": null,
+   "width": "552",
+   "height": "328",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-71"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png",
+   "alt": "",
+   "title": null,
+   "width": "552",
+   "height": "328",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png 552w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3-300x178.png 300w",
+   "class": "attachment-full size-full wp-image-71"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://www.facebook.com/mariesalabertosteopathieanimale/",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://www.instagram.com/mariesalabert.osteoanimale/",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://www.linkedin.com/in/marie-salabert-0197b2166/?originalSubdomain=fr",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://clickzou.fr/",
+   "text": "Conception site internet : Clickzou",
+   "internal": false,
+   "class": ""
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Fonctionnel"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Préférences"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Statistiques"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Marketing"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer les options"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer les options",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-options cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer les services"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer les services",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-third-parties cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer {vendor_count} fournisseurs"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer {vendor_count} fournisseurs",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-vendors tcf cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "En savoir plus sur ces finalités"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://cookiedatabase.org/tcf/purposes/",
+   "text": "En savoir plus sur ces finalités",
+   "internal": false,
+   "class": "cmplz-link cmplz-external cmplz-read-more-purposes tcf"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Accepter"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Refuser"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Voir les préférences"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Enregistrer les préférences"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Voir les préférences",
+   "internal": false,
+   "class": "cmplz-btn cmplz-manage-options tcf cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "{title}"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link cookie-statement"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link privacy-statement"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link impressum"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Gérer le consentement"
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "actualites": [],
+ "categorie__actualites": [],
+ "conference-pour-l-ifce": [
+  {
+   "selector": ".elementor-856 .elementor-element.elementor-element-12fc7fdb:not(.elementor-motion-effects-element-type-background), .elementor-856 .elementor-element.elementor-element-12fc7fdb > .elementor-motion-ef",
+   "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/toulouse-ostheopathe-animaux.jpg"
+  }
+ ],
+ "consulation-osteopathe-animalier": [],
+ "faq": [
+  {
+   "selector": ".elementor-52 .elementor-element.elementor-element-bf43f54:not(.elementor-motion-effects-element-type-background), .elementor-52 .elementor-element.elementor-element-bf43f54 > .elementor-motion-effect",
+   "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/questions-frequentes-osteopathe-animailier.jpg"
+  }
+ ],
+ "galerie": [],
+ "index": [
+  {
+   "selector": ".elementor-11 .elementor-element.elementor-element-8628a5c:not(.elementor-motion-effects-element-type-background), .elementor-11 .elementor-element.elementor-element-8628a5c > .elementor-motion-effect",
+   "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/a-propos-osteopathe-animalier.jpg"
+  }
+ ],
+ "mentions-legales": [],
+ "mon-diplome-dosteopathe-animalier": [
+  {
+   "selector": ".elementor-397 .elementor-element.elementor-element-0140de7:not(.elementor-motion-effects-element-type-background), .elementor-397 .elementor-element.elementor-element-0140de7 > .elementor-motion-effe",
+   "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/certification-osteopathe-animalier-toulouse.jpg"
+  }
+ ],
+ "osteopahie-animale": [
+  {
+   "selector": ".elementor-47 .elementor-element.elementor-element-d7b792d:not(.elementor-motion-effects-element-type-background), .elementor-47 .elementor-element.elementor-element-d7b792d > .elementor-motion-effect",
+   "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2025/05/a-propos-osteopathe-animalier-toulouse.jpg"
+  }
+ ],
+ "politique-de-confidentialite": [],
+ "politique-de-cookies-ue": [
+  {
+   "selector": "#cmplz-cookies-overview .cmplz-dropdown summary div:after,#cmplz-document .cmplz-dropdown summary div:after,.editor-styles-wrapper .cmplz-unlinked-mode .cmplz-dropdown summary div:after",
+   "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/plugins/complianz-gdpr/assets/images/chevron-down.svg"
+  }
+ ],
+ "rendez-vous-osteopathe-animalier": [],
+ "reservation": [
+  {
+   "selector": ".elementor-58 .elementor-element.elementor-element-27f7341:not(.elementor-motion-effects-element-type-background), .elementor-58 .elementor-element.elementor-element-27f7341 > .elementor-motion-effect",
+   "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/reservation-seance-osteopathe-toulouse-scaled.jpg"
+  }
+ ],
+ "symbiosteo-2": [
+  {
+   "selector": ".elementor-877 .elementor-element.elementor-element-d7b792d:not(.elementor-motion-effects-element-type-background), .elementor-877 .elementor-element.elementor-element-d7b792d > .elementor-motion-effe",
+   "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/symbiosteo.png"
+  }
+ ]
+}

@@ -1,0 +1,718 @@
+{
+ "slug": "mon-diplome-dosteopathe-animalier",
+ "url": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/",
+ "meta": {
+  "title": "Mon Diplôme Ostéopathe Animalier - Marie Salabert",
+  "description": "Découvrez l'expertise bienveillante de Marie Salabert, diplômée en ostéopathie animale. Soulagez vos compagnons avec soin et compétence.",
+  "robots": "noindex, nofollow",
+  "og:title": "Mon Diplôme Ostéopathe Animalier - Marie Salabert",
+  "og:description": "Découvrez l'expertise bienveillante de Marie Salabert, diplômée en ostéopathie animale. Soulagez vos compagnons avec soin et compétence.",
+  "og:image": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/verification-diplome-osteopathe-animalier-scaled.jpg",
+  "og:type": "article",
+  "og:url": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/",
+  "canonical": null,
+  "lang": "fr-FR",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/",
+      "name": "Mon Diplôme Ostéopathe Animalier - Marie Salabert",
+      "isPartOf": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/#primaryimage"
+      },
+      "image": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/#primaryimage"
+      },
+      "thumbnailUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/verification-diplome-osteopathe-animalier-scaled.jpg",
+      "datePublished": "2023-05-24T13:33:03+00:00",
+      "dateModified": "2025-05-05T16:15:51+00:00",
+      "description": "Découvrez l'expertise bienveillante de Marie Salabert, diplômée en ostéopathie animale. Soulagez vos compagnons avec soin et compétence.",
+      "breadcrumb": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "fr-FR",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/#primaryimage",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/verification-diplome-osteopathe-animalier-scaled.jpg",
+      "contentUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/verification-diplome-osteopathe-animalier-scaled.jpg",
+      "width": 2560,
+      "height": 974,
+      "caption": "Chien qui regarde dans une loupe"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://osteopathie-animale.sitepreproduction.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mon Diplôme d&rsquo;Ostéopathe Animalier"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/#website",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/",
+      "name": "Ostheopathie animale Toulouse",
+      "description": "",
+      "publisher": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://osteopathie-animale.sitepreproduction.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://osteopathie-animale.sitepreproduction.fr/#organization",
+      "name": "Ostheopathie animale Toulouse",
+      "url": "https://osteopathie-animale.sitepreproduction.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#/schema/logo/image/",
+       "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png",
+       "contentUrl": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png",
+       "width": 336,
+       "height": 328,
+       "caption": "Ostheopathie animale Toulouse"
+      },
+      "image": {
+       "@id": "https://osteopathie-animale.sitepreproduction.fr/#/schema/logo/image/"
+      }
+     }
+    ]
+   }
+  ],
+  "body_class": "wp-singular page-template-default page page-id-397 wp-custom-logo wp-embed-responsive wp-theme-astra ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.6 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-88 elementor-page elementor-page-397"
+ },
+ "css_backgrounds": [],
+ "blocks": [
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#content",
+   "text": "Aller au contenu",
+   "internal": false,
+   "class": "skip-link screen-reader-text"
+  },
+  {
+   "type": "p",
+   "zone": "header",
+   "text": "Ostheopathie animale Toulouse"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "Ostheopathie animale Toulouse",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "",
+   "internal": true,
+   "class": "elementor-clickable"
+  },
+  {
+   "type": "img",
+   "zone": "header",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31-300x293.png",
+   "alt": "default-logo",
+   "title": null,
+   "width": "300",
+   "height": "293",
+   "srcset": null,
+   "class": "hfe-site-logo-img elementor-animation-"
+  },
+  {
+   "type": "img",
+   "zone": "header",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2024/05/cropped-logo-osteopathe-animalier-toulouse-31-300x293.png",
+   "alt": "default-logo",
+   "title": null,
+   "width": "300",
+   "height": "293",
+   "srcset": null,
+   "class": "hfe-site-logo-img elementor-animation-"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Accueil"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/",
+   "text": "Accueil",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "À Propos"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/",
+   "text": "À Propos",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Consultations"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/consulation-osteopathe-animalier/",
+   "text": "Consultations",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Certification"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/",
+   "text": "Certification",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Actualités"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/actualites/",
+   "text": "Actualités",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "FAQ"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/faq/",
+   "text": "FAQ",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Galerie"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/galerie/",
+   "text": "Galerie",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "li",
+   "zone": "header",
+   "text": "Symbiosteo"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/symbiosteo-2/",
+   "text": "Symbiosteo",
+   "internal": true,
+   "class": "hfe-menu-item"
+  },
+  {
+   "type": "link",
+   "zone": "header",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/rendez-vous-osteopathe-animalier/",
+   "text": "Prendre un rendez-vous",
+   "internal": true,
+   "class": "elementor-button elementor-button-link elementor-size-sm"
+  },
+  {
+   "type": "h1",
+   "zone": "main",
+   "text": "Consultez ma certification"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Inscrite sur le Registre National d’Aptitude (RNA) tenu par le Conseil National de l’Ordre des Vétérinaires (CNOV) au numéro 801"
+  },
+  {
+   "type": "p",
+   "zone": "main",
+   "text": "Depuis 2011, l’ostéopathie animale est réglementée et encadrée par la profession vétérinaire ! Pour exercer en France il est donc obligatoire de figurer sur ce registre."
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://www.veterinaire.fr/annuaires/liste-des-personnes-non-veterinaires-pouvant-realiser-des-actes-dosteopathie-animale",
+   "text": "Liste des personnes non vétérinaires pouvant réaliser des actes d'ostéopathie animale",
+   "internal": false,
+   "class": "elementor-button elementor-button-link elementor-size-md"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Organisatrice de SymbiOsteo 2 - le Congrès de l’ostéopathie pour animaux (UFEOA)"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Coordinatrice intersyndicale pour les ostéopathes animaliers professionnels"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Membre fondateur du Collectif des ostéopathes animaliers"
+  },
+  {
+   "type": "h2",
+   "zone": "main",
+   "text": "Ancienne Présidente de L’UFEOA (2017-2020)"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Diplome-osteopathe-animalier-marie-salabert.png",
+   "alt": "Diplôme de Marie Salabert",
+   "title": null,
+   "width": "511",
+   "height": "740",
+   "srcset": null,
+   "class": "attachment-large size-large wp-image-518"
+  },
+  {
+   "type": "img",
+   "zone": "main",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Diplome-osteopathe-animalier-marie-salabert.png",
+   "alt": "Diplôme de Marie Salabert",
+   "title": null,
+   "width": "511",
+   "height": "740",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Diplome-osteopathe-animalier-marie-salabert.png 511w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Diplome-osteopathe-animalier-marie-salabert-207x300.png 207w",
+   "class": "attachment-large size-large wp-image-518"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Prendre un rendez-vous",
+   "internal": false,
+   "class": "elementor-button elementor-button-link elementor-size-md"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png",
+   "alt": "Logo de Marie Salabert représenté avec la tête de chien, d'un cochon, d'un lapin, d'un cheval, d'un chat, d'un taureau",
+   "title": null,
+   "width": "510",
+   "height": "510",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-272"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png",
+   "alt": "Logo de Marie Salabert représenté avec la tête de chien, d'un cochon, d'un lapin, d'un cheval, d'un chat, d'un taureau",
+   "title": null,
+   "width": "510",
+   "height": "510",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse.png 510w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse-300x300.png 300w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/Logo-osteopathe-animalier-toulouse-150x150.png 150w",
+   "class": "attachment-full size-full wp-image-272"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png",
+   "alt": "",
+   "title": null,
+   "width": "489",
+   "height": "473",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-70"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png",
+   "alt": "",
+   "title": null,
+   "width": "489",
+   "height": "473",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2.png 489w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-2-300x290.png 300w",
+   "class": "attachment-full size-full wp-image-70"
+  },
+  {
+   "type": "h5",
+   "zone": "footer",
+   "text": "Plus d'infos"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "A propos"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/a-propos/",
+   "text": "A propos",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Contact"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/contact/",
+   "text": "Contact",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Réserver une séance"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/reservation/",
+   "text": "Réserver une séance",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Politique de Cookies"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/politique-de-cookies-ue/",
+   "text": "Politique de Cookies",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Mentions Légales"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/mentions-legales/",
+   "text": "Mentions Légales",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Politique de Confidentialité"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/",
+   "text": "Politique de Confidentialité",
+   "internal": true,
+   "class": ""
+  },
+  {
+   "type": "h5",
+   "zone": "footer",
+   "text": "Contact"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Marie Salabert Ostéopathie Animale"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "7 Rue des épicéas - 31180 Castelmaurou"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Siret : 883.931.347.000.16"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Inscrite sur le Registre National d’Aptitude tenu par le Conseil National de l’Ordre des Vétérinaires (OA 801)"
+  },
+  {
+   "type": "li",
+   "zone": "footer",
+   "text": "Tél : 06.37.88.00.73"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "tel:+33637880073",
+   "text": "Tél : 06.37.88.00.73",
+   "internal": false,
+   "class": ""
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png",
+   "alt": "",
+   "title": null,
+   "width": "552",
+   "height": "328",
+   "srcset": null,
+   "class": "attachment-full size-full wp-image-71"
+  },
+  {
+   "type": "img",
+   "zone": "footer",
+   "src": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png",
+   "alt": "",
+   "title": null,
+   "width": "552",
+   "height": "328",
+   "srcset": "https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3.png 552w, https://osteopathie-animale.sitepreproduction.fr/wp-content/uploads/2023/05/shape-pattern-3-300x178.png 300w",
+   "class": "attachment-full size-full wp-image-71"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://www.facebook.com/mariesalabertosteopathieanimale/",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://www.instagram.com/mariesalabert.osteoanimale/",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://www.linkedin.com/in/marie-salabert-0197b2166/?originalSubdomain=fr",
+   "text": "",
+   "internal": false,
+   "class": "elementor-icon"
+  },
+  {
+   "type": "link",
+   "zone": "footer",
+   "href": "https://clickzou.fr/",
+   "text": "Conception site internet : Clickzou",
+   "internal": false,
+   "class": ""
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Fonctionnel"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Préférences"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Statistiques"
+  },
+  {
+   "type": "label",
+   "zone": "main",
+   "text": "Marketing"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer les options"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer les options",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-options cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer les services"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer les services",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-third-parties cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "Gérer {vendor_count} fournisseurs"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Gérer {vendor_count} fournisseurs",
+   "internal": false,
+   "class": "cmplz-link cmplz-manage-vendors tcf cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "En savoir plus sur ces finalités"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "https://cookiedatabase.org/tcf/purposes/",
+   "text": "En savoir plus sur ces finalités",
+   "internal": false,
+   "class": "cmplz-link cmplz-external cmplz-read-more-purposes tcf"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Accepter"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Refuser"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Voir les préférences"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Enregistrer les préférences"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "Voir les préférences",
+   "internal": false,
+   "class": "cmplz-btn cmplz-manage-options tcf cookie-statement"
+  },
+  {
+   "type": "li",
+   "zone": "main",
+   "text": "{title}"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link cookie-statement"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link privacy-statement"
+  },
+  {
+   "type": "link",
+   "zone": "main",
+   "href": "#",
+   "text": "{title}",
+   "internal": false,
+   "class": "cmplz-link impressum"
+  },
+  {
+   "type": "button",
+   "zone": "main",
+   "text": "Gérer le consentement"
+  }
+ ]
+}

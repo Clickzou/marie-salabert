@@ -1,0 +1,24 @@
+# dépendances et builds
+node_modules/
+site/node_modules/
+site/.next/
+site/out/
+.vercel/
+
+# variables d'environnement
+.env
+.env.local
+.env*.local
+
+# sauvegardes WordPress et éléments de migration volumineux
+*.wpress
+wp-export/uploads/
+wp-export/wp/
+wp-export/html/
+wp-export/css/
+wp-export/reference/
+
+# système
+.DS_Store
+Thumbs.db
+*.log

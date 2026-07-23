@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+/* Tokens repris a l'identique du site WordPress d'origine (kit Elementor + Astra) */
+@theme {
+  --color-plum: #933a50;
+  --color-plum-dark: #7a2f42;
+  --color-green: #2f7f64;
+  --color-green-light: #1da678;
+  --color-gold: #edd14f;
+  --color-gold-dark: #e0c23c;
+
+  --color-plum-soft: #c2919d;
+  --color-green-soft: #428b72;
+  --color-sky: #6ec1e4;
+  --color-star: #eeaf53;
+  --color-certif: #1d4ea6;
+
+  --color-ink: #1e293b;
+  --color-body: #334155;
+  --color-muted: #7a7a7a;
+  --color-surface: #f5f4f4;
+  --color-surface-alt: #f9fafb;
+
+  --font-sans: var(--font-roboto), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-el-messiri), Georgia, serif;
+
+  --container-site: 1200px;
+}
+
+/* @layer base : les utilitaires Tailwind restent prioritaires sur ces defauts */
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #fff;
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Titres en serif d'affichage (El Messiri) pour une allure plus racee */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  /* Corps de texte : mesure de lecture confortable */
+  p {
+    text-wrap: pretty;
+  }
+}
+
+/* Diaporama de fond du hero (effet Ken Burns d'Elementor) */
+@keyframes hero-slide {
+  0%,
+  22% {
+    opacity: 1;
+  }
+  28%,
+  94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+
+.hero-slide {
+  animation: hero-slide 32s infinite;
+  will-change: opacity;
+}
+
+.hero-slide > * {
+  animation: ken-burns 32s infinite alternate ease-out;
+}
+
+/* Sur-titre decoratif : petit label majuscule precede d'un trait, comme sur l'original */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-plum);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 2.5rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.5;
+}
+
+/* Filet decoratif centre (sous les titres de section centres) */
+.rule-center {
+  display: block;
+  width: 3.5rem;
+  height: 2px;
+  margin: 1.25rem auto 0;
+  background: var(--color-gold);
+  border-radius: 2px;
+}
+
+/* Carte standard : fond blanc, filet fin, arrondi doux, elevation au survol */
+.card {
+  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--color-ink) 8%, transparent);
+  border-radius: 14px;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -24px rgba(147, 58, 80, 0.35);
+  border-color: color-mix(in srgb, var(--color-plum) 25%, transparent);
+}
+
+/* Zoom doux d'une image au survol de son conteneur (conteneur en overflow-hidden) */
+.img-zoom {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group\/media:hover .img-zoom,
+.card-hover:hover .img-zoom {
+  transform: scale(1.05);
+}
+
+/* Animations d'entree au defilement (pilotees par le composant Reveal) */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  /* Pas d'animation d'entree : contenu visible d'emblee */
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}

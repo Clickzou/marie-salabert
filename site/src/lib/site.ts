@@ -1,0 +1,94 @@
+/**
+ * Donnees globales du site, reprises de la configuration WordPress d'origine.
+ * Les slugs sont conserves a l'identique pour ne perdre aucun referencement.
+ */
+
+export const site = {
+  name: "Ostheopathie animale Toulouse",
+  practitioner: "Marie Salabert",
+  tagline: "La santé de vos animaux par l'ostéopathie",
+  // A remplacer par le domaine definitif au moment de la mise en production
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://osteopathie-animale.fr",
+  locale: "fr_FR",
+  phone: "06 37 88 00 73",
+  phoneHref: "tel:+33637880073",
+  whatsapp: "https://wa.me/33637880073",
+  secretariatWhatsapp: "https://wa.me/33679749777",
+  // Departements d'intervention (Occitanie)
+  departments: "31, 81, 82, 47, 46, 32, 12, 09 et 11",
+  // Adresse personnelle : reservee aux mentions legales (souhait de la praticienne).
+  address: {
+    street: "10 le clos péchabé",
+    postalCode: "31620",
+    city: "Castelnau d'Estrétefonds",
+    country: "FR",
+  },
+  // Zone d'intervention affichee partout ailleurs (footer, contact, etc.).
+  serviceArea: "Toulouse et ses environs",
+  // Coordonnees professionnelles
+  secretariat: "06 79 74 97 77",
+  legalForm: "Entreprise Individuelle",
+  vat: "FR02883931347",
+  email: "mariesalabert.osteoanimale@gmail.com",
+  siret: "883.931.347.000.16",
+  registration:
+    "Inscrite sur le Registre National d'Aptitude tenu par le Conseil National de l'Ordre des Vétérinaires (OA 801)",
+  social: {
+    facebook: "https://www.facebook.com/mariesalabertosteopathieanimale/",
+    instagram: "https://www.instagram.com/mariesalabert.osteoanimale/",
+    linkedin:
+      "https://www.linkedin.com/in/marie-salabert-0197b2166/?originalSubdomain=fr",
+  },
+  socialHandles: {
+    facebook: "Marie Salabert Ostéopathie Animale",
+    linkedin: "Marie Salabert",
+    instagram: "mariesalabert.osteoanimale",
+  },
+  credit: { label: "Conception site internet : Clickzou", url: "https://clickzou.fr/" },
+} as const;
+
+export const routes = {
+  home: "/",
+  about: "/osteopahie-animale",
+  consultations: "/consulation-osteopathe-animalier",
+  certification: "/mon-diplome-dosteopathe-animalier",
+  news: "/actualites",
+  newsCategory: "/categorie/actualites",
+  faq: "/faq",
+  gallery: "/galerie",
+  symbiosteo: "/symbiosteo-2",
+  booking: "/reservation",
+  contact: "/rendez-vous-osteopathe-animalier",
+  legal: "/mentions-legales",
+  privacy: "/politique-de-confidentialite",
+  cookies: "/politique-de-cookies-ue",
+} as const;
+
+export const mainNav = [
+  { label: "Accueil", href: routes.home },
+  { label: "À Propos", href: routes.about },
+  { label: "Actualités", href: routes.news },
+  { label: "Consultations", href: routes.consultations },
+  { label: "FAQ", href: routes.faq },
+  { label: "Galerie photos", href: routes.gallery },
+  { label: "Contact", href: routes.contact },
+  { label: "Symbiosteo", href: routes.symbiosteo },
+] as const;
+
+export const headerCta = {
+  label: "Prendre un rendez-vous",
+  href: routes.contact,
+} as const;
+
+/**
+ * Liens du footer. Sur l'original, « A propos » et « Contact » pointaient vers
+ * /a-propos/ et /contact/ qui renvoyaient une 404 : corriges vers les vraies pages.
+ */
+export const footerNav = [
+  { label: "A propos", href: routes.about },
+  { label: "Contact", href: routes.contact },
+  { label: "Réserver une séance", href: routes.booking },
+  { label: "Politique de Cookies", href: routes.cookies },
+  { label: "Mentions Légales", href: routes.legal },
+  { label: "Politique de Confidentialité", href: routes.privacy },
+] as const;

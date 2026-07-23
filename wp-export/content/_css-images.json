@@ -1,0 +1,56 @@
+{
+ "brands.css": [
+  {
+   "selector": "/*!\n * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/f",
+   "url": "../../../../../../../../../../plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.svg#fontawesome"
+  }
+ ],
+ "brands.min.css": [
+  {
+   "selector": "/*!\n * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/f",
+   "url": "../../../../../../../../../../plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.svg#fontawesome"
+  }
+ ],
+ "document.min.css": [
+  {
+   "selector": "#cmplz-cookies-overview .cmplz-dropdown summary div:after,#cmplz-document .cmplz-dropdown summary div:after,.editor-styl",
+   "url": "../../../../../../../../../plugins/complianz-gdpr/assets/images/chevron-down.svg"
+  }
+ ],
+ "elementor-icons.min.css": [
+  {
+   "selector": "/*! elementor-icons - v5.53.0 - 16-07-2026 */\n@font-face",
+   "url": "../../../../../../../../../../plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.53.0#eicon"
+  }
+ ],
+ "post-47.css": [
+  {
+   "selector": ".elementor-47 .elementor-element.elementor-element-8642229:not( .elementor-widget-image ) .elementor-widget-container, .",
+   "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/plugins/elementor/assets/mask-shapes/circle.svg"
+  }
+ ],
+ "post-811.css": [
+  {
+   "selector": ".elementor-811 .elementor-element.elementor-element-8642229:not( .elementor-widget-image ) .elementor-widget-container, ",
+   "url": "https://osteopathie-animale.sitepreproduction.fr/wp-content/plugins/elementor/assets/mask-shapes/circle.svg "
+  }
+ ],
+ "regular.min.css": [
+  {
+   "selector": "/*!\n * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/f",
+   "url": "../../../../../../../../../../plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.svg#fontawesome"
+  }
+ ],
+ "solid.css": [
+  {
+   "selector": "/*!\n * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/f",
+   "url": "../../../../../../../../../../plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg#fontawesome"
+  }
+ ],
+ "solid.min.css": [
+  {
+   "selector": "/*!\n * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/f",
+   "url": "../../../../../../../../../../plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg#fontawesome"
+  }
+ ]
+}

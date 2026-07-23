@@ -1,0 +1,141 @@
+# osteopahie-animale
+url: https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/
+title: L'ostéopathie animale et ses bienfaits - Marie Salabert Ostéopathe
+description: Découvrez l'ostéopathie animale et ses bienfaits : l'histoire de l’ostéopathie animale, les principes et les différentes approches.
+
+
+## ZONE header (21 blocs)
+
+- p: Ostheopathie animale Toulouse
+- LINK [Ostheopathie animale Toulouse](https://osteopathie-animale.sitepreproduction.fr/) class=
+- LINK [](https://osteopathie-animale.sitepreproduction.fr/) class=elementor-clickable
+- IMG `2024/05/cropped-logo-osteopathe-animalier-toulouse-31-300x293.png` alt='default-logo' 300x293
+- li: Accueil
+- LINK [Accueil](https://osteopathie-animale.sitepreproduction.fr/) class=hfe-menu-item
+- li: À Propos
+- LINK [À Propos](https://osteopathie-animale.sitepreproduction.fr/osteopahie-animale/) class=hfe-menu-item
+- li: Consultations
+- LINK [Consultations](https://osteopathie-animale.sitepreproduction.fr/consulation-osteopathe-animalier/) class=hfe-menu-item
+- li: Certification
+- LINK [Certification](https://osteopathie-animale.sitepreproduction.fr/mon-diplome-dosteopathe-animalier/) class=hfe-menu-item
+- li: Actualités
+- LINK [Actualités](https://osteopathie-animale.sitepreproduction.fr/actualites/) class=hfe-menu-item
+- li: FAQ
+- LINK [FAQ](https://osteopathie-animale.sitepreproduction.fr/faq/) class=hfe-menu-item
+- li: Galerie
+- LINK [Galerie](https://osteopathie-animale.sitepreproduction.fr/galerie/) class=hfe-menu-item
+- li: Symbiosteo
+- LINK [Symbiosteo](https://osteopathie-animale.sitepreproduction.fr/symbiosteo-2/) class=hfe-menu-item
+- LINK [Prendre un rendez-vous](https://osteopathie-animale.sitepreproduction.fr/rendez-vous-osteopathe-animalier/) class=elementor-button elementor-button-link elementor-size-sm
+
+## ZONE main (79 blocs)
+
+- LINK [Aller au contenu](#content) class=skip-link screen-reader-text
+- h1: A propos de l'ostéopathie animale
+- IMG `2023/05/circle-pattern.png` alt='' 745x745
+- IMG `2025/05/marie-salabert-osteopathe-animaliere-1024x683.jpg` alt='Femme tenant un chat siamois allongé dans ses bras lors d’une consultation en extérieur, en tant qu’ostéopathe animalière, avec un fond composé d’une chaise, d’un mur clair et d’un volet bleu.' 1024x683
+- p: Découvrez
+- h2: L'ostéopathie animale et ses bienfaits
+- p: L’ostéopathie est une médecine naturelle qui prend en compte l’individu dans sa globalité, et qui consiste à « prévenir, diagnostiquer et traiter manuellement les dysfonctions de la mobilité des tissus du corps susceptibles d’en altérer l’état de santé.»
+- p: L’ostéopathie a été créée en 1874 par Andrew Taylor Still (1828-1917), on l’a décrit comme étant à la fois une science, un art et une philosophie.
+- IMG `2025/05/decouvrir-osteopathe-animale-1024x897.jpg` alt='' 1024x897
+- h2: Histoire de l’ostéopathie animale
+- p: L’ostéopathie a été adaptée des humains aux animaux dans les années 80, initialement pour les chevaux par le Docteur Vétérinaire Dominique Giniaux et par l’ostéopathe humain Pascal Evrard. Dans les années 2000, l’ostéopathie sur les animaux de compagnie commence par le biais du Docteur Vétérinaire Francis Lizon . Puis quelques années plus tard, l’ostéopathie animale s’est progressivement implantée dans le milieu rural et plus généralement à tous types d’animaux.
+- p: Aujourd’hui, l’ostéopathie animale s’est démocratisée et tant à entrer davantage dans les mœurs et les réflexes de pensées des différents propriétaires d’animaux.
+- p: Nous sommes dans une époque où les médecines naturelles prennent de plus en plus d’ampleur et les pensées communes évoluent. Depuis quelques années, se soigner de manière naturelle par les plantes, l’ostéopathie, l’acupuncture ou d’autres types de thérapies est devenu un réflexe pour beaucoup d’entre nous.
+- p: Cette évolution des mentalités a favorisé le développement de l’ostéopathie animale, qui est devenue aujourd’hui une approche indispensable dans le suivi de nos animaux.
+- IMG `2023/05/shape-lines.png` alt='' 190x258
+- h2: Les principes de l’ostéopathie
+- p: L’ostéopathie s’articule autour d’une philosophie qui lui est propre, décrite par son fondateur Andrew Taylor Still, selon 4 principes fondamentaux :
+- h2: 1️⃣ L’unité du corps
+- p: Le corps forme un tout. Il fonctionne comme une unité indivisible où les systèmes structurels (os, muscles, organes, nerfs…) sont interconnectés. 👉 Toute perturbation dans une partie du corps peut avoir des répercussions ailleurs.
+- h2: 2️⃣ La relation structure
+- p: Le corps constitue une unité dans laquelle la structure (anatomie) et la fonction (physiologie) sont indissociablement liées. Le rôle de l’artère est suprême : une circulation sanguine correcte est donc indispensable à la vie cellulaire. 👉 Une perte de mobilité (articulaire, musculaire, fasciale…) peut altérer la fonction correspondante, et inversement.
+- h2: 3️⃣ La capacité d’auto-guérison du corps
+- p: Un organisme en bonne santé à la capacité de maîtriser seul les agressions extérieures et tend de manière autonome vers la santé. 👉 Le rôle de l’ostéopathe est de lever les blocages pour permettre au corps de relancer ses processus d’auto-régulation.
+- h2: 4️⃣ La règle de l’artère est suprême
+- p: Une circulation sanguine et lymphatique optimale est essentielle à la santé des tissus. 👉 Si les fluides circulent librement, les nutriments, hormones et cellules immunitaires peuvent remplir leur rôle efficacement.
+- p: L’ostéopathie animale est une médecine intégrative dite naturelle, par son approche manuelle elle permet d’apporter une vision globale différente et complémentaire de la médecine traditionnelle.
+- h2: Les différentes approches de l’ostéopathie
+- h3: Musculosquelettique
+- p: Par cet aspect de l’ostéopathie nous allons travailler pour rééquilibrer la structure (os, muscles, articulations, ligaments, tendons).
+- p: Il peut s’agir de techniques dites structurelles, myotensives ou fonctionnelles.
+- IMG `2023/05/shape-triangle.png` alt='' 125x125
+- h3: Tissulaire
+- p: Décrite par Pierre Tricot (Ostéopathe DO) ces techniques peuvent s’appliquer sur l’ensemble du corps. Elles visent à améliorer le mouvement d’une structure ciblée ou plus globalement à rendre une bonne communication tissulaire d’un bout à l’autre de l’organisme.
+- IMG `2023/05/shape-triangle.png` alt='' 125x125
+- h3: Liquidienne
+- p: Utilisé la plupart du temps sur l’axe crânio-sacrée ces techniques permettent d’agir sur la fluctuation du liquide céphalo-rachidien et donc sur le système nerveux central, par ce que nous appelons couramment en ostéopathie le MRP (mouvement respiratoire primaire) ou souffle de vie.
+- IMG `2023/05/shape-triangle.png` alt='' 125x125
+- h3: Le réveil osseux
+- p: Développée par Michèle Tarento (Médecin ORL et Ostéopathe DO), cette approche s’intéresse au système osseux pour permettre un rééquilibrage postural et une modification des alignements osseux.
+- IMG `2023/05/shape-triangle.png` alt='' 125x125
+- h3: Viscéral
+- p: Nous nous intéressons à la mobilité des organes et à leur attache ligamentaire.
+- p: Mon mémoire de fin d’études porte notamment sur la pratique de l’ostéopathie sur les moyens de fixité des différents organes.
+- IMG `2023/05/shape-triangle.png` alt='' 125x125
+- h3: Faciale
+- p: Le corps est composé en grande partie de fascias, initialement décrit comme du mésoderme au stade embryologique. Lors du développement de l’embryon et du fœtus ce mésoderme va se différencier en plusieurs types de fascias : superficiels (derme – hypoderme) ; intermédiaires (aponévroses, séreuses et mésos splanchniques, enveloppes des différents vaisseaux) et profonds (périoste, tendons, dure mère).
+- IMG `2023/05/shape-triangle.png` alt='' 125x125
+- h3: Réflexe
+- p: Les techniques réflexes décrites initialement par Robert Perronneaud Ferré (ostéopathe DO) permettent de travailler localement sur la peau, afin d’induire une action en profondeur dans l’organisme. J’apprécie particulièrement la réalisation de traits tirés accès sur certaines zones permettant d’avoir une action à la fois localisée et globale sur le système lymphatique, circulatoire et nerveux.
+- IMG `2023/05/shape-triangle.png` alt='' 125x125
+- h3: Le Corps Tenségritif
+- p: Il s’agit d’un modèle considérant ensemble : la force de traction médullaire, la torsion physiologique, les loges viscérales, l’hélice fasciale et les hélices des membres. Ce modèle renforce l’importance de considérer un organisme dans sa globalité et offre une visualisation supplémentaire pour le professionnel qui l’utilise.
+- p: Le Corps Tenségritif a été développé par Patrick Chêne (ostéopathe DO et vétérinaire) et Amélie Gardelle (ostéopathe animalier).
+- IMG `2023/05/shape-triangle.png` alt='' 125x125
+- p: Un conseil ?
+- h2: Contactez-moi
+- p: Vous avez des question concernant l’ostéopathie animalière ou vous souhaitez en savoir plus sur mes soins animaliers, n’hésitez pas à me contacter.
+- LINK [Contact](https://osteopathie-animale.sitepreproduction.fr/contact/) class=elementor-button elementor-button-link elementor-size-md
+- IMG `2023/05/triangle-dots.png` alt='' 372x297
+- label: Fonctionnel
+- label: Préférences
+- label: Statistiques
+- label: Marketing
+- li: Gérer les options
+- LINK [Gérer les options](#) class=cmplz-link cmplz-manage-options cookie-statement
+- li: Gérer les services
+- LINK [Gérer les services](#) class=cmplz-link cmplz-manage-third-parties cookie-statement
+- li: Gérer {vendor_count} fournisseurs
+- LINK [Gérer {vendor_count} fournisseurs](#) class=cmplz-link cmplz-manage-vendors tcf cookie-statement
+- li: En savoir plus sur ces finalités
+- LINK [En savoir plus sur ces finalités](https://cookiedatabase.org/tcf/purposes/) class=cmplz-link cmplz-external cmplz-read-more-purposes tcf
+- button: Accepter
+- button: Refuser
+- button: Voir les préférences
+- button: Enregistrer les préférences
+- LINK [Voir les préférences](#) class=cmplz-btn cmplz-manage-options tcf cookie-statement
+- li: {title}
+- LINK [{title}](#) class=cmplz-link cookie-statement
+- button: Gérer le consentement
+
+## ZONE footer (27 blocs)
+
+- IMG `2023/05/Logo-osteopathe-animalier-toulouse.png` alt="Logo de Marie Salabert représenté avec la tête de chien, d'un cochon, d'un lapin, d'un cheval, d'un chat, d'un taureau" 510x510
+- IMG `2023/05/shape-pattern-2.png` alt='' 489x473
+- h5: Plus d'infos
+- li: A propos
+- LINK [A propos](https://osteopathie-animale.sitepreproduction.fr/a-propos/) class=
+- li: Contact
+- LINK [Contact](https://osteopathie-animale.sitepreproduction.fr/contact/) class=
+- li: Réserver une séance
+- LINK [Réserver une séance](https://osteopathie-animale.sitepreproduction.fr/reservation/) class=
+- li: Politique de Cookies
+- LINK [Politique de Cookies](https://osteopathie-animale.sitepreproduction.fr/politique-de-cookies-ue/) class=
+- li: Mentions Légales
+- LINK [Mentions Légales](https://osteopathie-animale.sitepreproduction.fr/mentions-legales/) class=
+- li: Politique de Confidentialité
+- LINK [Politique de Confidentialité](https://osteopathie-animale.sitepreproduction.fr/politique-de-confidentialite/) class=
+- h5: Contact
+- li: Marie Salabert Ostéopathie Animale
+- li: 7 Rue des épicéas - 31180 Castelmaurou
+- li: Siret : 883.931.347.000.16
+- li: Inscrite sur le Registre National d’Aptitude tenu par le Conseil National de l’Ordre des Vétérinaires (OA 801)
+- li: Tél : 06.37.88.00.73
+- LINK [Tél : 06.37.88.00.73](tel:+33637880073) class=
+- IMG `2023/05/shape-pattern-3.png` alt='' 552x328
+- LINK [](https://www.facebook.com/mariesalabertosteopathieanimale/) class=elementor-icon
+- LINK [](https://www.instagram.com/mariesalabert.osteoanimale/) class=elementor-icon
+- LINK [](https://www.linkedin.com/in/marie-salabert-0197b2166/?originalSubdomain=fr) class=elementor-icon
+- LINK [Conception site internet : Clickzou](https://clickzou.fr/) class=
