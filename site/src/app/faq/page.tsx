@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { avis } from "@/content/avis";
+import { avis, googleAvis } from "@/content/avis";
 import { routes } from "@/lib/site";
 import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
 import { PageHero, Testimonials } from "@/components/sections";
 import { FaqAccordion, faqPageJsonLd, type FaqItem } from "@/components/FaqAccordion";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "FAQ Ostéopathie Animale : réponses à vos questions",
@@ -402,78 +403,76 @@ const allItems: FaqItem[] = [...formation, ...comprendre, ...consultation, ...si
 export default function FaqPage() {
   return (
     <>
-      {/* La banniere d'origine mesure 608 px de haut : on l'impose au PageHero partage. */}
-      <div className="[&>section]:min-h-[360px] lg:[&>section]:min-h-[608px]">
-        <PageHero
-          image="/images/2025/05/questions-frequentes-osteopathe-animailier.jpg"
-          title="Les questions les plus posées"
-        />
-      </div>
+      <PageHero
+        image="/images/2025/05/questions-frequentes-osteopathe-animailier.jpg"
+        eyebrow="FAQ"
+        title="Les questions les plus posées"
+        subtitle="Formation, déroulé d'une séance, situations particulières : les réponses aux questions qui reviennent le plus souvent."
+      />
 
-      <Section className="pt-[100px] pb-0 sm:pt-[100px] sm:pb-0">
-        <Container>
-          <div className="grid gap-12 md:grid-cols-2 md:items-start">
-            <div className="md:self-center">
-              <Eyebrow>FAQ</Eyebrow>
-              <SectionTitle className="mt-3">Les questions les plus posées</SectionTitle>
-              <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-body">
-                <p>
-                  Vous trouverez sur cette page les questions les plus fréquemment posées par mes
-                  clients lors de mes consultations ou par téléphone avant de prendre un rendez-vous.
-                </p>
-                <p>Je reste toujours disponible si vous avez d&apos;autres questions.</p>
-              </div>
-              <div className="mt-8">
+      {/* Propos d'ouverture et contact */}
+      <Section>
+        <Container width="full">
+          <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-20">
+            <Reveal>
+              <Eyebrow>Vos questions</Eyebrow>
+              <SectionTitle className="mt-5 max-w-xl">
+                Tout ce que l&apos;on me demande avant une séance
+              </SectionTitle>
+            </Reveal>
+            <Reveal delay={120} className="max-w-2xl">
+              <p className="text-[19px] leading-[1.6] text-ink sm:text-[21px]">
+                Vous trouverez sur cette page les questions les plus fréquemment posées par mes
+                clients lors de mes consultations ou par téléphone avant de prendre un rendez-vous.
+              </p>
+              <p className="mt-5 text-[16.5px] leading-[1.7] text-body">
+                Je reste toujours disponible si vous avez d&apos;autres questions.
+              </p>
+              <div className="mt-9">
                 <Button href={routes.contact}>Besoin d&apos;aide ? Contactez-moi</Button>
               </div>
-            </div>
-
-            <div>
-              <h2 className="text-[23px] font-semibold text-plum">
-                Devenir ostéopathe animalier &amp; formation
-              </h2>
-              <FaqAccordion items={formation} />
-            </div>
+            </Reveal>
           </div>
         </Container>
       </Section>
 
-      <Section className="pt-10 pb-0 sm:pt-10 sm:pb-0">
-        <Container>
-          <div className="grid gap-12 md:grid-cols-2 md:items-start">
-            <div>
-              <h2 className="text-[23px] font-semibold text-plum">
-                Comprendre l&apos;ostéopathie animale
-              </h2>
-              <FaqAccordion items={comprendre} />
+      {/* Les quatre familles de questions, chacune avec son titre collant */}
+      {[
+        { titre: "Devenir ostéopathe animalier & formation", items: formation, gris: true },
+        { titre: "Comprendre l'ostéopathie animale", items: comprendre, gris: false },
+        { titre: "La consultation en pratique", items: consultation, gris: true },
+        { titre: "Situations particulières", items: situations, gris: false },
+      ].map((groupe, i) => (
+        <Section key={groupe.titre} tone={groupe.gris ? "surface" : "white"}>
+          <Container width="full">
+            <div className="grid gap-10 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)] lg:gap-20">
+              <Reveal className="lg:sticky lg:top-32 lg:self-start">
+                <span
+                  aria-hidden="true"
+                  className="text-[13px] font-semibold tracking-[0.18em] text-plum/60"
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h2 className="mt-4 text-[26px] leading-snug tracking-[-0.02em] text-ink sm:text-[32px]">
+                  {groupe.titre}
+                </h2>
+                <p className="mt-4 text-[14px] text-muted">{groupe.items.length} questions</p>
+              </Reveal>
+              <Reveal delay={100}>
+                <FaqAccordion items={groupe.items} />
+              </Reveal>
             </div>
-            <div>
-              <h2 className="text-[23px] font-semibold text-plum">La consultation en pratique</h2>
-              <FaqAccordion items={consultation} />
-            </div>
-          </div>
-        </Container>
-      </Section>
+          </Container>
+        </Section>
+      ))}
 
-      <Section className="pt-10 pb-[50px] sm:pt-10 sm:pb-[50px]">
-        <Container>
-          <div className="grid gap-12 md:grid-cols-2 md:items-start">
-            <div>
-              <h2 className="text-[23px] font-semibold text-plum">Situations particulières</h2>
-              <FaqAccordion items={situations} />
-            </div>
-            <div aria-hidden="true" />
-          </div>
-        </Container>
-      </Section>
+      <Testimonials items={avis.slice(0, 3)} profile={googleAvis} />
 
-      <Testimonials items={avis.slice(0, 3)} />
-
-      <Section className="py-12 text-center sm:py-12">
-        <Container>
-          <Button href={routes.booking} className="px-8 py-4 text-[16px]">
-            Réservez une séance d&apos;ostéopathie animale
-          </Button>
+      <Section className="text-center">
+        <Container width="full">
+          <Reveal>
+            <Button href={routes.booking}>Réservez une séance d&apos;ostéopathie animale</Button>
+          </Reveal>
         </Container>
       </Section>
 

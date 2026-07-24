@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Image from "next/image";
-import { avis } from "@/content/avis";
+import { avis, googleAvis } from "@/content/avis";
 import { routes, site } from "@/lib/site";
 import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
 import {
@@ -11,6 +12,7 @@ import {
   Testimonials,
 } from "@/components/sections";
 import Reveal from "@/components/Reveal";
+import SecteurMap from "@/components/SecteurMap";
 
 export const metadata: Metadata = {
   title: "Ostéopathe animalier Toulouse - Marie Salabert",
@@ -23,7 +25,8 @@ const publics = [
   {
     title: "Ostéopathie pour animaux de compagnie",
     subtitle: "Chiens, chats, NAC'S",
-    icon: "M4.5 9.5c0-.8.7-1.5 1.5-1.5h1l1.5-2h5l1.5 2h1c.8 0 1.5.7 1.5 1.5V15a1 1 0 01-1 1h-1v2h-2v-2H8.5v2h-2v-2h-1a1 1 0 01-1-1V9.5zM6 4l1.5 3M18 4l-1.5 3",
+    image: "/images/2025/05/IMG_5516.jpg",
+    alt: "Séance d'ostéopathie sur un berger allemand",
     items: [
       "Accompagner la croissance, le développement et le vieillissement.",
       "Optimiser la récupération après un traumatisme ou une intervention chirurgicale.",
@@ -37,13 +40,13 @@ const publics = [
       "Suivre les animaux adoptés et/ou ayant un parcours de vie difficile.",
       "Favoriser le bien-être général.",
     ],
-    featured: false,
   },
   {
     title: "Ostéopathie pour les équidés",
     subtitle:
       "Pour tous types de chevaux (course, sport équestre, élevage, spectacle, loisir, trait), ânes et mules",
-    icon: "M4 18v-4c0-3 2-5 5-5h3l3-4 2 1-1 3 2 2v7h-2v-4l-2-1-2 2v3H9v-4l-3 2v2H4z",
+    image: "/images/2025/05/IMG_5249.jpg",
+    alt: "Séance d'ostéopathie sur un poney au pré",
     items: [
       "Suivre le poulain pendant sa croissance et contribuer au bon développement de ses aplombs, en collaboration avec des maréchaux-ferrants et des vétérinaires.",
       "Optimiser le suivi et les performances du cheval athlète.",
@@ -56,12 +59,12 @@ const publics = [
       "Contribuer au confort du cheval âgé.",
       "Collaborer, par une approche interdisciplinaire, à une prise en charge globale avec les professionnels de la santé et du bien-être animal.",
     ],
-    featured: true,
   },
   {
     title: "Ostéopathie pour animaux de rente, ferme et production animale",
     subtitle: "Bovins, Ovins, Caprins et Porcins",
-    icon: "M20 6c-1.5 0-3 .5-4 1.5L13 9c-3 0-6 2-7 5l-2 4 4-1c3.5 0 7-2 8.5-5L19 9c1-1 1.5-2 1-3z",
+    image: "/images/publics/rente.jpg",
+    alt: "Main posée sur une vache dans une étable",
     items: [
       "Favoriser un développement harmonieux des jeunes animaux.",
       "S'intégrer au suivi des animaux reproducteurs (des mâles et des femelles : troubles de la fertilité, gestation, post-mise bas).",
@@ -71,9 +74,24 @@ const publics = [
       "Contribuer au bien-être des animaux et à leur adaptation aux contraintes d'élevage.",
       "Optimiser la production laitière.",
     ],
-    featured: false,
   },
 ] as const;
+
+/** Nombre d'indications affichées d'emblée ; les suivantes sont repliées. */
+const INDICATIONS_VISIBLES = 4;
+
+/** Ligne d'indication : puce discrète plutôt qu'une coche, les listes étant longues. */
+function Indication({ children }: { children: ReactNode }) {
+  return (
+    <li className="flex gap-3.5 text-[14.5px] leading-relaxed text-body">
+      <span
+        aria-hidden="true"
+        className="mt-[10px] h-[5px] w-[5px] shrink-0 rounded-full bg-plum/45"
+      />
+      <span>{children}</span>
+    </li>
+  );
+}
 
 const etapes = [
   {
@@ -126,9 +144,16 @@ const etapes = [
   },
 ] as const;
 
-const lieux = [
-  "À votre domicile sur les départements suivants (31, 81, 82, 47, 32, 46, 09 et 11)",
-  "Tous les vendredis après-midi à la clinique vétérinaire du Val Dadou à Graulhet (81)",
+/** Departements couverts par les visites a domicile, dans l'ordre du site d'origine. */
+const departements = [
+  { code: "31", nom: "Haute-Garonne" },
+  { code: "81", nom: "Tarn" },
+  { code: "82", nom: "Tarn-et-Garonne" },
+  { code: "47", nom: "Lot-et-Garonne" },
+  { code: "32", nom: "Gers" },
+  { code: "46", nom: "Lot" },
+  { code: "09", nom: "Ariège" },
+  { code: "11", nom: "Aude" },
 ] as const;
 
 export default function HomePage() {
@@ -233,48 +258,93 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* L'ostéopathie animale pour qui ? */}
-      <Section tone="surface" padding="no-top" className="pt-20 sm:pt-28">
-        <Container width="wide">
+      {/* L'ostéopathie animale pour qui ? — pleine largeur, marge de 100 px */}
+      <Section tone="surface" padding="no-top" className="pt-24 sm:pt-36">
+        <Container width="full">
           <Reveal className="text-center">
             <Eyebrow className="justify-center">Champs d&apos;intervention</Eyebrow>
             <SectionTitle className="mt-4">L&apos;ostéopathie animale, pour qui ?</SectionTitle>
             <span className="rule-center" />
           </Reveal>
 
-          <ul className="mt-14 grid gap-6 lg:grid-cols-3 lg:items-stretch lg:gap-8">
-            {publics.map((p, idx) => (
-              <Reveal
-                as="li"
-                key={p.title}
-                delay={idx * 120}
-                className={`card card-hover flex h-full flex-col p-8 text-center ${
-                  p.featured ? "lg:-mt-4 lg:pb-12" : ""
-                }`}
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  width="40"
-                  height="40"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                  className="mx-auto text-green"
+          {/* Trois cartes illustrees : la photo porte la carte, les listes longues
+              sont repliees au-dela de quatre lignes. */}
+          <ul className="mt-14 grid gap-6 lg:grid-cols-3 lg:gap-8">
+            {publics.map((p, idx) => {
+              const visibles = p.items.slice(0, INDICATIONS_VISIBLES);
+              const repliees = p.items.slice(INDICATIONS_VISIBLES);
+              return (
+                <Reveal
+                  as="li"
+                  key={p.title}
+                  delay={idx * 140}
+                  className="card card-hover flex flex-col overflow-hidden"
                 >
-                  <path d={p.icon} />
-                </svg>
-                <h3 className="mt-5 min-h-[64px] text-[22px] leading-tight text-plum">{p.title}</h3>
-                <p className="mt-3 min-h-[60px] text-[14px] text-green">{p.subtitle}</p>
-                <CheckList items={p.items} className="mt-6 text-left" />
-                <div className="mt-8 pt-2">
-                  <Button href={routes.booking}>Réserver</Button>
-                </div>
-              </Reveal>
-            ))}
+                  <div className="overflow-hidden">
+                    <Image
+                      src={p.image}
+                      alt={p.alt}
+                      width={1024}
+                      height={768}
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      className="img-zoom aspect-[16/10] w-full object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-8 sm:p-9">
+                    {/* hauteurs figees a partir de lg : les trois listes demarrent
+                        alors sur la meme ligne malgre des titres de longueurs differentes */}
+                    <h3 className="text-[21px] leading-snug text-plum lg:min-h-[58px]">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 text-[13.5px] leading-relaxed text-muted lg:min-h-[44px]">
+                      {p.subtitle}
+                    </p>
+                    <span aria-hidden="true" className="mt-6 block h-px w-8 bg-gold" />
+
+                    <ul className="mt-6 space-y-3.5">
+                      {visibles.map((item) => (
+                        <Indication key={item}>{item}</Indication>
+                      ))}
+                    </ul>
+
+                    {repliees.length > 0 && (
+                      <details className="disclosure mt-5">
+                        <summary className="inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-plum transition-colors hover:text-plum-dark focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-plum">
+                          <span className="when-closed">
+                            Voir les {repliees.length} autres indications
+                          </span>
+                          <span className="when-open">Réduire</span>
+                          <svg
+                            className="chevron"
+                            width="14"
+                            height="14"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            aria-hidden="true"
+                          >
+                            <path d="M6 9l6 6 6-6" />
+                          </svg>
+                        </summary>
+                        <ul className="mt-3.5 space-y-3.5">
+                          {repliees.map((item) => (
+                            <Indication key={item}>{item}</Indication>
+                          ))}
+                        </ul>
+                      </details>
+                    )}
+                  </div>
+                </Reveal>
+              );
+            })}
           </ul>
+
+          <Reveal className="mt-12 text-center">
+            <Button href={routes.booking}>Prendre un rendez-vous</Button>
+          </Reveal>
         </Container>
       </Section>
 
@@ -349,26 +419,53 @@ export default function HomePage() {
             <SectionTitle className="mt-4">Les lieux de consultation</SectionTitle>
             <span className="rule-center" />
           </Reveal>
-          <ul className="mx-auto mt-12 grid max-w-4xl gap-5 sm:grid-cols-2">
-            {lieux.map((l, idx) => (
-              <Reveal
-                as="li"
-                key={l}
-                delay={idx * 100}
-                className="rounded-lg bg-green px-6 py-6 text-center text-[15px] font-medium text-white"
-              >
-                {l}
-              </Reveal>
-            ))}
-          </ul>
+          <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+            <Reveal>
+              <h3 className="text-[21px] leading-snug text-plum">
+                À votre domicile, en Occitanie et Nouvelle-Aquitaine
+              </h3>
+              <p className="mt-3 text-[15px] leading-relaxed text-body">
+                Environ 1h45 de route autour de Toulouse, sur les huit départements suivants :
+              </p>
+              <ul className="mt-6 flex flex-wrap gap-2.5">
+                {departements.map((d) => (
+                  <li
+                    key={d.code}
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-[13.5px] text-body ring-1 ring-ink/10"
+                  >
+                    <span className="font-semibold text-plum">{d.code}</span>
+                    {d.nom}
+                  </li>
+                ))}
+              </ul>
 
-          <Reveal className="mx-auto mt-12 max-w-2xl text-center">
-            <h3 className="text-[22px] text-plum">Tournées en Guyane Française (2 fois par an)</h3>
-            <p className="mt-3 text-[15px] text-body">
+              <div className="mt-10 border-t border-ink/10 pt-8">
+                <h3 className="text-[21px] leading-snug text-plum">
+                  En clinique, tous les vendredis après-midi
+                </h3>
+                <p className="mt-3 text-[15px] leading-relaxed text-body">
+                  Clinique vétérinaire du Val Dadou, à Graulhet (81).
+                </p>
+              </div>
+            </Reveal>
+
+            <Reveal
+              delay={140}
+              className="overflow-hidden rounded-lg ring-1 ring-ink/10 [&_iframe]:block"
+            >
+              <SecteurMap className="h-[340px] sm:h-[460px]" />
+            </Reveal>
+          </div>
+
+          <Reveal className="mt-14 rounded-lg border border-plum/15 bg-white p-8 sm:p-10">
+            <h3 className="text-[21px] leading-snug text-plum">
+              Tournées en Guyane française, deux fois par an
+            </h3>
+            <p className="mt-3 text-[15px] leading-relaxed text-body">
               Déplacement à domicile et dans les endroits suivants :
             </p>
             <CheckList
-              className="mt-5 inline-block text-left"
+              className="mt-5"
               items={[
                 "Clinique vétérinaire de l'Ouest à Saint Laurent du Maroni",
                 "Salon de Toilettage la Niche du Bien être à Matoury",
@@ -390,45 +487,66 @@ export default function HomePage() {
             <span className="rule-center" />
           </Reveal>
 
-          <ol className="mx-auto mt-14 max-w-3xl space-y-10">
+          {/* Grille editoriale pleine largeur : chiffre fantome, filet fin, pas de carte */}
+          <ol className="mt-16 grid gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-16">
             {etapes.map((e, i) => (
-              <Reveal as="li" key={e.title} delay={i * 80} className="flex gap-6">
+              <Reveal
+                as="li"
+                key={e.title}
+                delay={(i % 3) * 120}
+                className="border-t border-ink/10 pt-7"
+              >
                 <span
                   aria-hidden="true"
-                  className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-plum font-display text-[18px] font-semibold text-white"
+                  className="block font-display text-[44px] font-semibold leading-none text-plum/20"
                 >
-                  {i + 1}
+                  {String(i + 1).padStart(2, "0")}
                 </span>
-                <div>
-                  <h3 className="text-[20px] leading-snug text-ink">{e.title}</h3>
-                  <div className="mt-3 space-y-3 text-[15px] leading-relaxed text-body">
-                    {e.paragraphs.map((par, j) => (
-                      <p key={j}>{par}</p>
-                    ))}
-                  </div>
-                  {"link" in e && e.link && (
-                    <a
-                      href={e.link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-3 inline-block text-[14px] font-medium text-green underline underline-offset-2 hover:text-plum"
-                    >
-                      {e.link.label}
-                    </a>
-                  )}
-                  {i === 0 && (
-                    <div
-                      role="img"
-                      aria-label="Photo d'une consultation à ajouter"
-                      className="mt-5 grid h-40 place-items-center rounded-sm border border-dashed border-plum/30 bg-surface text-center text-[13px] text-muted"
-                    >
-                      Photo d&apos;une consultation — à fournir
-                    </div>
-                  )}
+                <h3 className="mt-4 text-[20px] leading-snug text-ink">{e.title}</h3>
+                <div className="mt-4 space-y-3 text-[14.5px] leading-relaxed text-body">
+                  {e.paragraphs.map((par, j) => (
+                    <p key={j}>{par}</p>
+                  ))}
                 </div>
+                {"link" in e && e.link && (
+                  <a
+                    href={e.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-1.5 text-[13.5px] font-medium text-green transition-colors hover:text-plum"
+                  >
+                    {e.link.label}
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h13M13 6l6 6-6 6" />
+                    </svg>
+                  </a>
+                )}
               </Reveal>
             ))}
           </ol>
+
+          {/* Visuel de section, hors grille : place dans une colonne il creusait un
+              vide sous les etapes 02 et 03. */}
+          <Reveal variant="scale" className="group/media mt-16 overflow-hidden rounded-lg">
+            <Image
+              src="/images/2025/05/IMG_5034.jpg"
+              alt="Marie Salabert en consultation d'ostéopathie auprès d'un cochon sur la paille"
+              width={1036}
+              height={778}
+              sizes="100vw"
+              className="img-zoom h-[280px] w-full object-cover object-center sm:h-[420px]"
+            />
+          </Reveal>
         </Container>
       </Section>
 
@@ -438,7 +556,7 @@ export default function HomePage() {
         cta={{ label: "Prendre un rendez-vous", href: routes.booking }}
       />
 
-      <Testimonials items={avis.slice(0, 3)} />
+      <Testimonials items={avis.slice(0, 3)} profile={googleAvis} />
 
       <Section className="py-16 text-center">
         <Container width="wide">

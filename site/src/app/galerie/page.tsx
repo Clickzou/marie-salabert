@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { routes } from "@/lib/site";
 import { Button, Container, Section } from "@/components/ui";
+import { PageHero } from "@/components/sections";
 import GalerieLightbox, { type GaleriePhoto } from "@/components/GalerieLightbox";
 
 export const metadata: Metadata = {
@@ -86,26 +87,23 @@ const photos: GaleriePhoto[] = [
 export default function GaleriePage() {
   return (
     <>
-      <section className="bg-surface py-[50px]">
-        <Container>
-          <h1 className="text-center text-[32px] leading-tight text-plum sm:text-[40px]">
-            Galerie photos
-          </h1>
-        </Container>
-      </section>
+      <PageHero
+        image={`${D}/IMG_8268.jpg`}
+        eyebrow="En images"
+        title="Galerie photos"
+        subtitle={`${photos.length} photos de consultations : chevaux, chiens, chats, NAC et animaux de ferme.`}
+      />
 
-      {/* Section pleine largeur : la galerie d'origine occupe toute la fenetre, marges de 20px */}
-      <section className="bg-surface pb-[70px]">
-        <div className="w-full px-5">
+      {/* Mosaique pleine largeur, marge de 100 px */}
+      <Section tone="surface">
+        <Container width="full">
           <GalerieLightbox photos={photos} />
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       <Section className="text-center">
-        <Container>
-          <Button href={routes.booking} className="px-8 py-4 text-[16px]">
-            Réservez une séance d&apos;ostéopathie animale
-          </Button>
+        <Container width="full">
+          <Button href={routes.booking}>Réservez une séance d&apos;ostéopathie animale</Button>
         </Container>
       </Section>
     </>

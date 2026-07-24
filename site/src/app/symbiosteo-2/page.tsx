@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
-import { Button, Container, Section } from "@/components/ui";
+import { Button, Container, Section, SectionTitle } from "@/components/ui";
+import Reveal from "@/components/Reveal";
 import SymbiosteoHero from "@/components/SymbiosteoHero";
 
 export const metadata: Metadata = {
@@ -78,24 +79,24 @@ export default function SymbiosteoPage() {
     <>
       <SymbiosteoHero title="SymbiOsteO - Le Podcast" />
 
-      <Section className="pb-0 sm:pb-0">
-        <Container>
-          <div className="grid items-center gap-12 md:grid-cols-2">
-            {/* Colonne image : masquee sur mobile comme sur le site d'origine */}
-            <div className="hidden justify-center md:flex">
+      <Section>
+        <Container width="full">
+          <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-20">
+            {/* Colonne image */}
+            <Reveal variant="right" className="group/media hidden overflow-hidden rounded-lg md:block">
               <Image
                 src="/images/2024/05/podcast.jpg"
-                alt="Photo de vue supérieure du concept de podcast - lightbox avec podcast de lettres là-dessus, écouteurs et microphone professionnel"
+                alt="Micro de studio et casque, plateau du podcast SymbiOsteO"
                 width={768}
                 height={1152}
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                sizes="(max-width: 1024px) 100vw, 480px"
                 priority
-                className="h-auto w-full max-w-[398px] object-cover"
+                className="img-zoom aspect-[4/5] w-full object-cover"
               />
-            </div>
+            </Reveal>
 
-            <div className="text-[15px] leading-relaxed text-[#141414]">
-              <p className="font-bold">
+            <Reveal delay={120} className="max-w-2xl text-[16.5px] leading-[1.7] text-body">
+              <p className="text-[19px] font-medium leading-[1.6] text-ink sm:text-[21px]">
                 Créé en janvier 2024, SymbiOsteO Le Podcast est un média qui donne la parole aux
                 acteurs du monde de l&apos;Ostéopathie (animale, vétérinaire et humaine), de la
                 santé, aux explorateurs du vivant, aux passionnés et curieux.
@@ -107,23 +108,27 @@ export default function SymbiosteoPage() {
                 travers de ce podcast de structurer une communauté et pour projet d&apos;organiser
                 des évènements.
               </p>
-              <p className="mt-6">Nous vous proposerons différents types d&apos;épisodes :</p>
-              <ul className="mt-6">
+              <p className="mt-6">Différents formats d&apos;épisodes :</p>
+              <ul className="mt-5 flex flex-wrap gap-2.5">
                 {formats.map((f) => (
-                  <li key={f}>{f}</li>
+                  <li
+                    key={f}
+                    className="inline-flex items-center rounded-full bg-surface px-4 py-2 text-[14px] text-body ring-1 ring-line"
+                  >
+                    {f}
+                  </li>
                 ))}
               </ul>
-              <p className="mt-6">Animés par Amélie Gardelle et Marie Salabert</p>
               <p className="mt-6">
-                Email :{" "}
+                Animés par Amélie Gardelle et Marie Salabert — contact{" "}
                 <a
                   href="mailto:symbiosteo3@gmail.com"
-                  className="text-plum underline underline-offset-2 hover:text-plum-dark"
+                  className="underline-grow font-medium text-plum"
                 >
                   symbiosteo3@gmail.com
                 </a>
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-9 flex flex-wrap gap-4">
                 <Button href={SPOTIFY_URL} variant="green">
                   Écouter sur Spotify
                 </Button>
@@ -131,55 +136,77 @@ export default function SymbiosteoPage() {
                   Écouter sur Apple Podcasts
                 </Button>
               </div>
-            </div>
+            </Reveal>
           </div>
         </Container>
       </Section>
 
-      <Section className="pt-[100px] pb-0 sm:pt-[100px] sm:pb-0">
-        <Container>
-          <h2 className="text-center text-[32px] leading-snug text-plum">
-            Nos épisodes à écouter
-          </h2>
-        </Container>
-      </Section>
+      {/* Episodes : liste numerotee, sur fond gris pleine largeur */}
+      <Section tone="surface">
+        <Container width="full">
+          <Reveal className="flex flex-wrap items-end justify-between gap-4">
+            <SectionTitle className="text-[26px] sm:text-[34px]">Nos épisodes à écouter</SectionTitle>
+            <p className="text-[14px] text-muted">{episodes.length} épisodes disponibles</p>
+          </Reveal>
 
-      <Section className="pt-8 sm:pt-8">
-        <Container>
-          <ul className="mx-auto flex max-w-[820px] flex-col gap-4">
-            {episodes.map((e) => (
-              <li key={e.number}>
+          <ul className="mt-12 grid gap-4 lg:grid-cols-2 lg:gap-6">
+            {episodes.map((e, i) => (
+              <Reveal as="li" key={e.number} delay={(i % 2) * 90}>
                 <a
                   href={e.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-start gap-4 rounded-2xl border border-plum/15 bg-surface p-5 transition-all duration-300 hover:border-plum hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum sm:gap-6 sm:p-6"
+                  className="card card-hover group/media group flex h-full items-center gap-5 overflow-hidden p-4 sm:gap-6 sm:p-5"
                 >
-                  <span
-                    aria-hidden="true"
-                    className="shrink-0 font-display text-[26px] font-semibold leading-none text-gold sm:text-[30px]"
-                  >
-                    #{e.number}
+                  {/* pochette de l'episode, recuperee sur Spotify */}
+                  <span className="relative block shrink-0 overflow-hidden rounded-[6px]">
+                    <Image
+                      src={`/images/symbiosteo/${e.number}.jpg`}
+                      alt=""
+                      aria-hidden="true"
+                      width={300}
+                      height={300}
+                      sizes="120px"
+                      className="img-zoom h-[104px] w-[104px] object-cover sm:h-[120px] sm:w-[120px]"
+                    />
+                    <span
+                      aria-hidden="true"
+                      className="absolute left-2 top-2 rounded-full bg-white/90 px-2 py-0.5 text-[11px] font-semibold text-plum"
+                    >
+                      {String(e.number).padStart(2, "0")}
+                    </span>
                   </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="block text-[15px] font-medium leading-snug text-plum sm:text-[16px]">
+                  <span className="min-w-0 flex-1 py-1">
+                    <span className="block text-[16.5px] font-medium leading-snug text-ink">
                       {e.title}
                     </span>
-                    <span className="mt-2 inline-flex items-center gap-1 text-[14px] font-medium text-green transition-colors group-hover:text-plum">
-                      Écouter
-                      <span aria-hidden="true">→</span>
+                    <span className="arrow-link mt-3 inline-flex items-center gap-2 text-[14px] font-medium text-plum">
+                      Écouter l&apos;épisode
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
                     </span>
                   </span>
                 </a>
-              </li>
+              </Reveal>
             ))}
           </ul>
 
-          <div className="mt-10 flex justify-center">
+          <Reveal className="mt-14 text-center">
             <Button href={SPOTIFY_URL} variant="green">
               Suivez le podcast sur Spotify
             </Button>
-          </div>
+          </Reveal>
         </Container>
       </Section>
     </>

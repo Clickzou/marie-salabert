@@ -8,12 +8,24 @@ import { setConsent, useConsent } from "@/lib/consent";
  * (meme choix que le bandeau maison), sinon un substitut est propose avec un
  * lien direct vers Google Maps.
  */
-export default function ConsentMap({ query, title }: { query: string; title: string }) {
+export default function ConsentMap({
+  query,
+  title,
+  zoom = 11,
+  className = "h-[400px] sm:h-[500px]",
+}: {
+  query: string;
+  title: string;
+  /** niveau de zoom Google Maps : 11 pour une ville, 8 pour une region */
+  zoom?: number;
+  /** hauteur (et eventuels arrondis) de la carte comme du substitut */
+  className?: string;
+}) {
   const allowed = useConsent() === "accepted";
 
   const src = `https://maps.google.com/maps?q=${encodeURIComponent(
     query,
-  )}&t=m&z=11&output=embed&iwloc=near`;
+  )}&t=m&z=${zoom}&output=embed&iwloc=near`;
 
   if (allowed) {
     return (
@@ -22,13 +34,15 @@ export default function ConsentMap({ query, title }: { query: string; title: str
         src={src}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="h-[400px] w-full border-0 sm:h-[500px]"
+        className={`w-full border-0 ${className}`}
       />
     );
   }
 
   return (
-    <div className="flex h-[400px] w-full flex-col items-center justify-center gap-5 bg-surface px-6 text-center sm:h-[500px]">
+    <div
+      className={`flex w-full flex-col items-center justify-center gap-5 bg-surface px-6 text-center ${className}`}
+    >
       <p className="max-w-md text-[15px] leading-relaxed text-body">
         La carte est fournie par Google Maps, qui dépose des cookies. Elle
         s&apos;affiche uniquement après votre accord.

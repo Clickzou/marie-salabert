@@ -1,13 +1,36 @@
-import Image from "next/image";
-import { MissingVisual } from "./AProposPlaceholder";
+﻿import Image from "next/image";
 
 /** Texte exact de l'article R.243-6 du CRPM, place en citation encadree. */
 const ARTICLE_R243_6 =
-  'Art R.243-6  "Pour l’application du 12° de l’article L243-3, on entend par "acte d’ostéopathie animale" les manipulations ayant pour seul but de prévenir ou de traiter des troubles fonctionnels du corps de l’animal, à l’exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale, chirurgicale, médicamenteuse ou par agents physiques. Ces manipulations sont musculo-squelettiques et myo-fasciales, exclusivement manuelles et externes. Pour la prise en charge de ces troubles fonctionnels, les personnes réalisant des actes d’ostéopathie animale effectuent des actes de manipulations et mobilisations non instrumentales, directes et indirectes, non forcées."';
+  '"Pour l’application du 12° de l’article L243-3, on entend par "acte d’ostéopathie animale" les manipulations ayant pour seul but de prévenir ou de traiter des troubles fonctionnels du corps de l’animal, à l’exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale, chirurgicale, médicamenteuse ou par agents physiques. Ces manipulations sont musculo-squelettiques et myo-fasciales, exclusivement manuelles et externes. Pour la prise en charge de ces troubles fonctionnels, les personnes réalisant des actes d’ostéopathie animale effectuent des actes de manipulations et mobilisations non instrumentales, directes et indirectes, non forcées."';
 
-const references = [
+/** Les deux dates qui structurent le cadre legal, presentees en repere. */
+const jalons = [
   {
-    label: "12° du L243-3 du CRPM",
+    annee: "2011",
+    titre: "Reconnaissance légale de la pratique",
+    texte:
+      "Le ministère de l’Agriculture reconnaît la pratique des ostéopathes animaliers au sein du 12° de l’article L243-3 du code rural et de la pêche maritime (CRPM).",
+  },
+  {
+    annee: "2017",
+    titre: "Décrets du 19 avril",
+    texte:
+      "Les actes d’ostéopathie animale peuvent être réalisés par des personnes non vétérinaires ayant réussi l’épreuve nationale d’aptitude, inscrites au Registre National d’Aptitude (RNA) et figurant sur la liste tenue par le Conseil national de l’Ordre des vétérinaires (CNOV).",
+  },
+] as const;
+
+const liens = [
+  {
+    label: "Annuaire des ostéopathes inscrits (CNOV)",
+    href: "https://extranet.veterinaire.fr/annuaires/osteopathes",
+  },
+  {
+    label: "veterinaire.fr — rubrique Ostéopathie animale",
+    href: "https://www.veterinaire.fr/la-profession-veterinaire/nos-grands-dossiers/osteopathie-animale",
+  },
+  {
+    label: "Article L243-3, 12° du CRPM",
     href: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044233614",
   },
   {
@@ -16,104 +39,128 @@ const references = [
   },
 ] as const;
 
+const logos = [
+  {
+    src: "/images/2024/05/logo-ministere-agriculture.webp",
+    alt: "Logo du ministère de l’Agriculture et de la Souveraineté alimentaire",
+    legende: "Ministère de l’Agriculture et de la Souveraineté alimentaire",
+    optimise: true,
+  },
+  {
+    src: "/images/2024/05/logo-cnov.gif",
+    alt: "Logo du Conseil National de l’Ordre des Vétérinaires (CNOV)",
+    legende: "Conseil National de l’Ordre des Vétérinaires",
+    optimise: false,
+  },
+] as const;
+
+/** Fleche des liens sortants. */
+function Fleche() {
+  return (
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="shrink-0"
+    >
+      <path d="M5 12h13M13 6l6 6-6 6" />
+    </svg>
+  );
+}
+
 /**
- * Contenu de la section « Législation » de la page A propos : cadre reglementaire,
- * logos institutionnels, citation encadree de l'article R.243-6 et references web.
+ * Section « Législation » : deux jalons en repere chronologique, encart des
+ * autorites de reference avec leurs logos, puis le texte integral de l'article
+ * R.243-6 en pleine largeur.
  */
 export function AProposLegislation() {
   return (
-    <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_260px]">
-      <div className="space-y-6 text-[15px] leading-relaxed text-body">
-        <p>
-          En 2011, la pratique des ostéopathes animaliers fut reconnue légalement par le Ministère
-          de l’Agriculture et de l’Alimentation et de la Fôret ; au sein du 12° de l’Article L243-3
-          du code rural et de la pêche maritime (CRPM).
-        </p>
-        <p>
-          Depuis les décrets du 19 avril 2017, les actes d’ostéopathie animale peuvent être réalisés
-          par des personnes non vétérinaires ayant satisfait aux exigences réglementaires. Ces
-          dernières doivent avoir réussi l’épreuve nationale d’aptitude, être inscrites sur le
-          Registre National d’Aptitude (RNA) et figurer sur la liste tenue par le Conseil national
-          de l’Ordre des vétérinaires (CNOV).
-        </p>
-        <p>
-          <a
-            href="https://extranet.veterinaire.fr/annuaires/osteopathes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-plum underline underline-offset-2 hover:text-plum-dark"
-          >
-            Consulter l’annuaire des ostéopathes inscrits (CNOV)
-          </a>
-        </p>
-
-        <blockquote className="border-l-4 border-plum bg-surface p-6 text-[15px] italic leading-relaxed text-ink">
-          {ARTICLE_R243_6}
-        </blockquote>
-
-        <p>
-          Par ailleurs, l’ostéopathe animalier est tenu d’orienter le propriétaire vers un
-          vétérinaire lorsque l’état de l’animal nécessite un diagnostic médical, un traitement, ou
-          lorsque les troubles observés dépassent le champ de compétence de l’ostéopathie. Cette
-          obligation fait partie des règles déontologiques fixées par le Code rural.
-        </p>
-        <p>
-          Pour suivre l’actualité réglementaire de l’ostéopathie animale vous pouvez consulter le
-          site internet du Conseil National de l’Ordre des Vétérinaires (CNOV), à la rubrique
-          «&nbsp;Ostéopathie Animale&nbsp;»
-        </p>
-        <p>
-          <a
-            href="https://www.veterinaire.fr/la-profession-veterinaire/nos-grands-dossiers/osteopathie-animale"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-plum underline underline-offset-2 hover:text-plum-dark"
-          >
-            veterinaire.fr — rubrique Ostéopathie Animale
-          </a>
-        </p>
-
-        <div className="border-t border-black/10 pt-6">
-          <p className="text-[13px] font-semibold uppercase tracking-wide text-muted">
-            Références web
-          </p>
-          <ul className="mt-3 space-y-2">
-            {references.map((ref) => (
-              <li key={ref.href} className="text-[15px] leading-relaxed">
-                <span className="text-body">{ref.label} : </span>
-                <a
-                  href={ref.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="break-all text-plum underline underline-offset-2 hover:text-plum-dark"
-                >
-                  {ref.href}
-                </a>
+    <div className="space-y-14">
+      <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-16">
+        <div>
+          {/* Reperes chronologiques : filet vertical et annee en gros caracteres */}
+          <ol className="relative space-y-10 border-l border-line pl-8 sm:pl-10">
+            {jalons.map((j) => (
+              <li key={j.annee} className="relative">
+                <span
+                  aria-hidden="true"
+                  className="absolute -left-[41px] top-2 h-2.5 w-2.5 rounded-full bg-plum ring-4 ring-surface sm:-left-[49px]"
+                />
+                <p className="text-[28px] font-semibold leading-none tracking-[-0.02em] text-plum sm:text-[34px]">
+                  {j.annee}
+                </p>
+                <h3 className="mt-3 text-[19px] leading-snug text-ink">{j.titre}</h3>
+                <p className="mt-3 max-w-2xl text-[16.5px] leading-[1.7] text-body">{j.texte}</p>
               </li>
             ))}
-          </ul>
+          </ol>
+
+          <p className="mt-12 max-w-2xl text-[16.5px] leading-[1.7] text-body">
+            Par ailleurs, l’ostéopathe animalier est tenu d’orienter le propriétaire vers un
+            vétérinaire lorsque l’état de l’animal nécessite un diagnostic médical, un traitement, ou
+            lorsque les troubles observés dépassent le champ de compétence de l’ostéopathie. Cette
+            obligation fait partie des règles déontologiques fixées par le Code rural.
+          </p>
         </div>
+
+        <aside className="lg:sticky lg:top-32 lg:self-start">
+          <div className="rounded-lg border border-line bg-white p-7">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">
+              Autorités de référence
+            </p>
+            <div className="mt-6 space-y-7">
+              {logos.map((l) => (
+                <figure key={l.src} className="flex flex-col items-center gap-3 text-center">
+                  <Image
+                    src={l.src}
+                    alt={l.alt}
+                    width={1200}
+                    height={630}
+                    unoptimized={!l.optimise}
+                    sizes="(max-width: 1024px) 45vw, 200px"
+                    className="h-auto w-full max-w-[180px] object-contain"
+                  />
+                  <figcaption className="text-[13px] leading-snug text-muted">
+                    {l.legende}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+
+            <ul className="mt-8 space-y-3 border-t border-line pt-6">
+              {liens.map((lien) => (
+                <li key={lien.href}>
+                  <a
+                    href={lien.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="arrow-link inline-flex items-start gap-2 text-[14.5px] font-medium leading-snug text-plum"
+                  >
+                    {lien.label}
+                    <Fleche />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </aside>
       </div>
 
-      <aside className="flex flex-col gap-6 lg:pt-1">
-        <MissingVisual
-          label="Logo Ministère de l’Agriculture et de la Souveraineté alimentaire — à fournir"
-          className="aspect-square"
-        />
-        <figure className="flex flex-col items-center gap-3 rounded-[6px] bg-white p-4 shadow-sm">
-          <Image
-            src="/images/2024/05/logo-conseil-ordre-national-des-medecins.png"
-            alt="Logo du Conseil National de l’Ordre des Vétérinaires (CNOV)"
-            width={300}
-            height={300}
-            sizes="(max-width: 1024px) 40vw, 200px"
-            className="h-auto w-full max-w-[180px] object-contain"
-          />
-          <figcaption className="text-center text-[13px] font-medium text-muted">
-            Conseil National de l’Ordre des Vétérinaires
-          </figcaption>
-        </figure>
-      </aside>
+      {/* Texte reglementaire, en pleine largeur pour respirer */}
+      <figure className="rounded-lg bg-white p-8 ring-1 ring-line sm:p-12">
+        <figcaption className="text-[12px] font-semibold uppercase tracking-[0.16em] text-plum">
+          Article R.243-6 du code rural et de la pêche maritime
+        </figcaption>
+        <blockquote className="mt-6 max-w-4xl text-[16.5px] leading-[1.75] text-body">
+          {ARTICLE_R243_6}
+        </blockquote>
+      </figure>
     </div>
   );
 }

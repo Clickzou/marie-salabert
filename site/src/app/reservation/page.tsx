@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 import { ContactInfoBlocks } from "@/components/ContactInfoBlocks";
 import { PageHero, Testimonials } from "@/components/sections";
 import { Container, Section } from "@/components/ui";
-import { avis } from "@/content/avis";
+import { avis, googleAvis } from "@/content/avis";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -90,7 +90,7 @@ export default function ReservationPage() {
         </Container>
       </Section>
 
-      <Testimonials items={avis} />
+      <Testimonials items={avis} profile={googleAvis} />
     </>
   );
 }

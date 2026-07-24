@@ -1,10 +1,12 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { routes } from "@/lib/site";
 import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
-import { CheckList, CtaBand, PageHero } from "@/components/sections";
-import { ConsultationsNav } from "@/components/ConsultationsNav";
+import { CheckList, CtaBand, PageHero, Testimonials } from "@/components/sections";
+import { avis, googleAvis } from "@/content/avis";
+import Reveal from "@/components/Reveal";
+import SecteurMap from "@/components/SecteurMap";
 
 export const metadata: Metadata = {
   title:
@@ -222,11 +224,89 @@ const elevageApprocheGlobale = [
   "Des approches complémentaires pouvant contribuer au bien-être animal. (Acupuncture, phytothérapie)",
 ] as const;
 
-const departements = "31, 81, 82, 47, 46, 32, 12, 09 et 11";
+/** Sommaire illustre place sous la banniere. */
+const sommaire = [
+  {
+    href: "#equides",
+    label: "Équidés",
+    detail: "Chevaux de sport, de loisir, poulains, ânes et mules",
+    image: "/images/2025/05/IMG_5249.jpg",
+  },
+  {
+    href: "#compagnie",
+    label: "Chiens · Chats · NAC",
+    detail: "Croissance, sport, vieillissement et convalescence",
+    image: "/images/2025/05/IMG_5516.jpg",
+  },
+  {
+    href: "#rente",
+    label: "Animaux de rente",
+    detail: "Bovins, ovins, caprins et porcins, en élevage",
+    image: "/images/publics/rente.jpg",
+  },
+] as const;
+
+/** Departements d'intervention, code et nom, dans l'ordre du site d'origine. */
+const departements = [
+  { code: "31", nom: "Haute-Garonne" },
+  { code: "81", nom: "Tarn" },
+  { code: "82", nom: "Tarn-et-Garonne" },
+  { code: "47", nom: "Lot-et-Garonne" },
+  { code: "46", nom: "Lot" },
+  { code: "32", nom: "Gers" },
+  { code: "12", nom: "Aveyron" },
+  { code: "09", nom: "Ariège" },
+  { code: "11", nom: "Aude" },
+] as const;
 
 /* --------------------------------------------------------------------------
  * Petits composants de mise en page, locaux a la page.
  * ------------------------------------------------------------------------ */
+
+/** Numero + intitule en tete de chaque bandeau d'espece. */
+function NumeroSection({ numero, label }: { numero: string; label: string }) {
+  return (
+    <p className="flex items-center gap-4">
+      <span
+        aria-hidden="true"
+        className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/40 text-[15px] font-semibold text-white"
+      >
+        {numero}
+      </span>
+      <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-gold">
+        {label}
+      </span>
+    </p>
+  );
+}
+
+/** Lien de retour au sommaire, en fin de section d'espece. */
+function RetourSommaire() {
+  return (
+    <p className="mt-14 border-t border-line pt-8">
+      <a
+        href="#sommaire"
+        className="group inline-flex items-center gap-2 text-[14px] font-medium text-plum"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+          className="transition-transform duration-500 group-hover:-translate-y-1"
+        >
+          <path d="M12 19V5M6 11l6-6 6 6" />
+        </svg>
+        Revenir au sommaire
+      </a>
+    </p>
+  );
+}
 
 /** Titre de sous-partie (h3) sobre, avec filet prune. */
 function SubHeading({ children }: { children: ReactNode }) {
@@ -251,7 +331,7 @@ function MotifCard({
 }) {
   return (
     <div
-      className={`flex h-full flex-col rounded-2xl border border-black/8 bg-white p-6 sm:p-8 ${className ?? ""}`}
+      className={`flex h-full flex-col rounded-lg border border-black/8 bg-white p-6 sm:p-8 ${className ?? ""}`}
     >
       <SubHeading>{title}</SubHeading>
       {note && <p className="mt-2 text-[14px] leading-relaxed text-muted italic">{note}</p>}
@@ -273,57 +353,11 @@ function ApprocheGlobale({
   conclusion: string;
 }) {
   return (
-    <div className="rounded-2xl border border-plum/15 bg-plum-soft/10 p-6 sm:p-9">
+    <div className="rounded-lg border border-plum/15 bg-plum-soft/10 p-6 sm:p-9">
       <SubHeading>{title}</SubHeading>
       <p className="mt-4 text-[15px] leading-relaxed text-body">{intro}</p>
       <CheckList items={items} className="mt-5 sm:columns-2 sm:gap-x-10 [&>li]:mb-3" />
       <p className="mt-6 text-[15px] leading-relaxed text-body">{conclusion}</p>
-    </div>
-  );
-}
-
-/** Bandeau « Secteur d'intervention » commun aux sections espèces. */
-function SecteurIntervention() {
-  return (
-    <div className="rounded-2xl border border-black/8 bg-surface p-6 sm:p-7">
-      <p className="eyebrow text-green">Secteur d&apos;intervention</p>
-      <p className="mt-4 text-[15px] leading-relaxed text-body">
-        Interventions principales dans les départements : {departements}
-      </p>
-      <p className="mt-2 text-[15px] leading-relaxed text-body">
-        D&apos;autres départements peuvent être envisagés lors de l&apos;organisation de tournées.
-      </p>
-    </div>
-  );
-}
-
-/** Emplacement provisoire pour une photo non encore fournie. */
-function ImagePlaceholder({ caption, className }: { caption: string; className?: string }) {
-  return (
-    <div
-      role="img"
-      aria-label={caption}
-      className={`flex items-center justify-center rounded-2xl border-2 border-dashed border-plum/25 bg-surface px-6 py-12 text-center ${className ?? ""}`}
-    >
-      <span className="max-w-xs text-[14px] leading-relaxed text-muted">
-        <svg
-          width="34"
-          height="34"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-hidden="true"
-          className="mx-auto mb-3 text-plum/40"
-        >
-          <rect x="3" y="4" width="18" height="16" rx="2" />
-          <circle cx="8.5" cy="9.5" r="1.5" />
-          <path d="M21 16l-5-5L5 20" />
-        </svg>
-        {caption}
-      </span>
     </div>
   );
 }
@@ -333,12 +367,63 @@ export default function ConsultationsPage() {
     <>
       <PageHero
         image="/images/2025/05/osteopathe-animalier-toulouse.jpg"
+        eyebrow="Prestations"
         title="Consultations en ostéopathie animale"
         subtitle="Chevaux, chiens, chats, NAC et animaux de rente, en Occitanie"
-        height="short"
       />
 
-      <ConsultationsNav />
+      {/* Sommaire illustre : oriente d'emblee vers la bonne famille d'animaux.
+          Il remplace l'ancienne barre d'ancres collante, redondante avec lui. */}
+      <Section id="sommaire" tone="surface" className={ANCHOR}>
+        <Container width="full">
+          <Eyebrow>Sommaire</Eyebrow>
+          <SectionTitle className="mt-5 max-w-3xl">
+            Quel animal souhaitez-vous accompagner&nbsp;?
+          </SectionTitle>
+          <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {sommaire.map((s) => (
+              <li key={s.href} className="flex">
+                <a
+                  href={s.href}
+                  className="card card-hover group/media flex w-full flex-col overflow-hidden"
+                >
+                  <div className="overflow-hidden">
+                    <Image
+                      src={s.image}
+                      alt=""
+                      aria-hidden="true"
+                      width={1024}
+                      height={768}
+                      sizes="(max-width: 640px) 100vw, 25vw"
+                      className="img-zoom aspect-[4/3] w-full object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-6">
+                    <h3 className="text-[19px] leading-snug text-ink">{s.label}</h3>
+                    <p className="mt-2 text-[14.5px] leading-relaxed text-muted">{s.detail}</p>
+                    <span className="arrow-link mt-5 inline-flex items-center gap-2 text-[14px] font-medium text-plum">
+                      Voir la section
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M5 12h13M13 6l6 6-6 6" />
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </Section>
 
       {/* ================= GÉNÉRAL ================= */}
       <Section id="general" className={ANCHOR}>
@@ -354,107 +439,255 @@ export default function ConsultationsPage() {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {etapesDeVie.map((e, i) => (
-              <li
-                key={e.label}
-                className="flex flex-col rounded-2xl border border-black/8 bg-white p-6"
-              >
-                <span
-                  aria-hidden="true"
-                  className="grid h-9 w-9 place-items-center rounded-full bg-plum/10 text-[14px] font-semibold text-plum"
+        </Container>
+
+        {/* Frise horizontale : les cinq etapes restent sur une seule ligne, reliees
+            par un filet ; la piste defile lateralement sur petits ecrans. */}
+        <Container width="full">
+          {/* La frise s'anime a l'arrivee : pastille 1 qui se remplit, filet qui se
+              trace, puis pastille 2, etc. */}
+          <Reveal className="frise no-scrollbar mt-14 overflow-x-auto pb-4">
+            <ol className="flex min-w-max lg:min-w-0">
+              {etapesDeVie.map((e, i) => (
+                <li
+                  key={e.label}
+                  style={{ ["--jalon-delay" as string]: `${i * 420}ms` }}
+                  className="relative w-[300px] shrink-0 pr-8 last:pr-0 lg:w-auto lg:flex-1"
                 >
-                  {i + 1}
-                </span>
-                <p className="mt-4 text-[15px] leading-relaxed text-body">
-                  <strong className="text-ink">{e.label} :</strong> {e.text}
-                </p>
-              </li>
-            ))}
-          </ul>
+                  {/* filet de liaison vers l'etape suivante */}
+                  {i < etapesDeVie.length - 1 && (
+                    <span
+                      aria-hidden="true"
+                      className="jalon-filet absolute left-[52px] right-0 top-[22px] h-px bg-plum/40"
+                    />
+                  )}
+                  <span
+                    aria-hidden="true"
+                    className="jalon-puce relative grid h-11 w-11 place-items-center rounded-full border border-plum/25 bg-white text-[15px] font-semibold text-plum"
+                  >
+                    {i + 1}
+                  </span>
+                  <div className="jalon-texte">
+                    <h3 className="mt-6 pr-4 text-[18px] leading-snug text-ink">{e.label}</h3>
+                    <p className="mt-3 pr-4 text-[15.5px] leading-relaxed text-body">{e.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </Reveal>
         </Container>
       </Section>
 
-      {/* Motifs de consultation fréquents */}
-      <Section tone="surface" padding="no-top">
-        <Container>
-          <SectionTitle>Motifs de consultation fréquents</SectionTitle>
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            <MotifCard title="Troubles locomoteurs" items={troublesLocomoteurs} />
-            <MotifCard
-              title="Accompagnement émotionnel et comportemental"
-              note="En complément d'un suivi avec un éducateur ou un vétérinaire comportementaliste lorsque cela est nécessaire."
-              items={accompagnementEmotionnel}
-            />
+      {/* Motifs de consultation fréquents : deux colonnes separees par un filet,
+          sans encadrement, pour alleger la page. */}
+      <Section tone="surface">
+        <Container width="full">
+          <SectionTitle className="mx-auto max-w-3xl text-center">
+            Motifs de consultation fréquents
+          </SectionTitle>
+
+          {/* deux cartes larges, avec pastille d'icone */}
+          <div className="mx-auto mt-16 grid max-w-6xl gap-6 lg:grid-cols-2 lg:gap-8">
+            {[
+              {
+                titre: "Troubles locomoteurs",
+                note: null,
+                items: troublesLocomoteurs,
+                icone: "M4 18l4-6 3 3 3-5 6 8",
+                fond: "bg-plum/8 ring-plum/15",
+                couleur: "text-plum",
+              },
+              {
+                titre: "Accompagnement émotionnel et comportemental",
+                note: "En complément d'un suivi avec un éducateur ou un vétérinaire comportementaliste lorsque cela est nécessaire.",
+                items: accompagnementEmotionnel,
+                icone: "M12 21s-7-4.35-9.33-8.5A5.5 5.5 0 0112 6.5a5.5 5.5 0 019.33 6C19 16.65 12 21 12 21z",
+                fond: "bg-green/8 ring-green/15",
+                couleur: "text-green",
+              },
+            ].map((c) => (
+              <div key={c.titre} className="card card-hover flex h-full flex-col p-9 sm:p-12">
+                <span
+                  className={`grid h-12 w-12 place-items-center rounded-full ring-1 ${c.fond} ${c.couleur}`}
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d={c.icone} />
+                  </svg>
+                </span>
+                <h3 className="mt-6 text-[22px] leading-snug text-ink">{c.titre}</h3>
+                {c.note && <p className="mt-4 text-[15px] leading-relaxed text-muted">{c.note}</p>}
+                <span aria-hidden="true" className="mt-6 block h-px w-full bg-line" />
+                <CheckList items={c.items} className="mt-6" />
+              </div>
+            ))}
           </div>
 
           {/* Première intention selon l'état de l'animal */}
-          <div className="mt-12 rounded-2xl border border-green/20 bg-green-soft/10 p-6 sm:p-9">
-            <SubHeading>En première intention, selon l&apos;état de votre animal</SubHeading>
-            <p className="mt-4 text-[15px] leading-relaxed text-body">
-              L&apos;ostéopathie animale peut agir en première intention seulement en fonction de
-              l&apos;état de l&apos;animal : un échange téléphonique approfondi vous permettra de
-              vous en assurer ; sinon vous serez réorienté vers votre vétérinaire.
-            </p>
-            <CheckList items={premiereIntention} className="mt-6" />
-            <p className="mt-6 text-[15px] leading-relaxed text-body">
-              Ces mêmes motifs peuvent être également traités par une séance d&apos;ostéopathie après
-              une visite chez votre vétérinaire.
-            </p>
-            <p className="mt-3 text-[15px] leading-relaxed text-body">
-              En cas de doute, une évaluation préalable de la douleur de votre animal est nécessaire,
-              pour réaliser une séance d&apos;ostéopathie dans les meilleures conditions pour votre
-              animal.
-            </p>
+          <div className="mt-16 rounded-lg bg-white p-8 ring-1 ring-line sm:p-12">
+            <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-16">
+              <div>
+                <h3 className="text-[21px] leading-snug text-ink">
+                  En première intention, selon l&apos;état de votre animal
+                </h3>
+                <p className="mt-5 text-[16px] leading-[1.7] text-body">
+                  L&apos;ostéopathie animale peut agir en première intention seulement en fonction de
+                  l&apos;état de l&apos;animal : un échange téléphonique approfondi vous permettra de
+                  vous en assurer ; sinon vous serez réorienté vers votre vétérinaire.
+                </p>
+                <p className="mt-4 text-[16px] leading-[1.7] text-body">
+                  Ces mêmes motifs peuvent être également traités par une séance d&apos;ostéopathie
+                  après une visite chez votre vétérinaire. En cas de doute, une évaluation préalable
+                  de la douleur est nécessaire pour réaliser la séance dans les meilleures
+                  conditions.
+                </p>
+              </div>
+              <CheckList items={premiereIntention} className="lg:pt-1" />
+            </div>
           </div>
         </Container>
       </Section>
 
-      {/* Affections chroniques */}
+      {/* Affections chroniques — pleine largeur, marge de 100 px */}
       <Section>
-        <Container>
-          <div className="max-w-3xl">
+        <Container width="full">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-end lg:gap-20">
             <SectionTitle>Ostéopathie et accompagnement des affections chroniques</SectionTitle>
-            <p className="mt-6 text-[15px] leading-relaxed text-body">
-              L&apos;ostéopathie animale intervient en complément du suivi vétérinaire établi. Elle ne
-              remplace pas le diagnostic ni les traitements prescrits par votre vétérinaire.
-            </p>
+            {/* rappel important : mis en avant par une pastille et un fond doux */}
+            <div className="flex items-start gap-4 rounded-lg bg-surface p-6 sm:p-7">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-plum ring-1 ring-plum/15">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 8h.01M11 12h1v4h1" />
+                </svg>
+              </span>
+              <p className="text-[16px] leading-[1.7] text-body">
+                L&apos;ostéopathie animale intervient <strong className="text-ink">en complément</strong>{" "}
+                du suivi vétérinaire établi. Elle ne remplace ni le diagnostic ni les traitements
+                prescrits par votre vétérinaire.
+              </p>
+            </div>
           </div>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            <MotifCard
-              title="Vers une amélioration du confort et de la qualité de vie"
-              note="Dans certaines situations, l'ostéopathie peut contribuer à améliorer totalement ou partiellement des troubles chroniques dits récidivants."
-              items={chroniquesAmelioration}
-            />
-            <MotifCard
-              title="En accompagnement de la prise en charge vétérinaire"
-              note="Troubles chroniques où la séance a pour rôle d'apporter du confort et/ou d'accompagner la prise en charge faite par votre vétérinaire."
-              items={chroniquesConfort}
-            />
+          {/* deux cartes : pastille d'icone, titre, note puis liste */}
+          <div className="mt-14 grid gap-6 lg:grid-cols-2 lg:gap-8">
+            {[
+              {
+                titre: "Vers une amélioration du confort et de la qualité de vie",
+                note: "Dans certaines situations, l'ostéopathie peut contribuer à améliorer totalement ou partiellement des troubles chroniques dits récidivants.",
+                items: chroniquesAmelioration,
+                icone: "M12 21s-7-4.35-9.33-8.5A5.5 5.5 0 0112 6.5a5.5 5.5 0 019.33 6C19 16.65 12 21 12 21z",
+                couleur: "text-plum",
+                fond: "bg-plum/8 ring-plum/15",
+              },
+              {
+                titre: "En accompagnement de la prise en charge vétérinaire",
+                note: "Troubles chroniques où la séance a pour rôle d'apporter du confort et/ou d'accompagner la prise en charge faite par votre vétérinaire.",
+                items: chroniquesConfort,
+                icone: "M10 3h4v5h5v4h-5v5h-4v-5H5V8h5V3z",
+                couleur: "text-green",
+                fond: "bg-green/8 ring-green/15",
+              },
+            ].map((c) => (
+              <div key={c.titre} className="card card-hover flex h-full flex-col p-8 sm:p-10">
+                <span
+                  className={`grid h-12 w-12 place-items-center rounded-full ring-1 ${c.fond} ${c.couleur}`}
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d={c.icone} />
+                  </svg>
+                </span>
+                <h3 className="mt-6 text-[21px] leading-snug text-ink">{c.titre}</h3>
+                <p className="mt-4 text-[15px] leading-relaxed text-muted">{c.note}</p>
+                <span aria-hidden="true" className="mt-6 block h-px w-full bg-line" />
+                <CheckList items={c.items} className="mt-6" />
+              </div>
+            ))}
           </div>
         </Container>
       </Section>
 
-      {/* Approche collaborative */}
+      {/* Approche collaborative + secteur d'intervention : titre et carte a gauche,
+          propos, appel a l'action et departements a droite. */}
       <Section tone="surface" padding="no-top">
-        <Container>
-          <div className="mx-auto max-w-3xl rounded-2xl border border-black/8 bg-white p-8 text-center sm:p-12">
-            <SectionTitle>
-              Une approche collaborative pour la santé et le bien-être de votre animal
-            </SectionTitle>
-            <p className="mt-6 text-[15px] leading-relaxed text-body">
-              L&apos;ostéopathe animalier peut échanger avec votre vétérinaire traitant avec votre
-              accord afin de favoriser une prise en charge cohérente et adaptée ou de lui transmettre
-              ses observations pour optimiser la continuité des soins.
-            </p>
-            <p className="mt-4 text-[15px] leading-relaxed text-body">
-              Chaque animal étant unique, un échange permettra d&apos;évaluer la situation, de
-              répondre à vos questions et de vous orienter vers la démarche la plus appropriée pour
-              votre compagnon.
-            </p>
-            <div className="mt-8">
-              <Button href={routes.contact}>Prendre un rendez-vous</Button>
+        <Container width="full">
+          <div className="grid gap-12 border-t border-line pt-14 lg:grid-cols-2 lg:gap-20">
+            <div>
+              <Eyebrow>Avec votre vétérinaire</Eyebrow>
+              <SectionTitle className="mt-5 max-w-xl">
+                Une approche collaborative pour la santé de votre animal
+              </SectionTitle>
+              <div className="mt-10 overflow-hidden rounded-lg bg-white ring-1 ring-line">
+                <SecteurMap className="h-[320px] sm:h-[440px]" />
+              </div>
+            </div>
+
+            <div>
+              <p className="max-w-2xl text-[19px] leading-[1.6] text-ink sm:text-[21px]">
+                L&apos;ostéopathe animalier peut échanger avec votre vétérinaire traitant, avec votre
+                accord, afin de favoriser une prise en charge cohérente et de lui transmettre ses
+                observations.
+              </p>
+              <p className="mt-5 max-w-2xl text-[16.5px] leading-[1.7] text-body">
+                Chaque animal étant unique, un échange permettra d&apos;évaluer la situation, de
+                répondre à vos questions et de vous orienter vers la démarche la plus appropriée pour
+                votre compagnon.
+              </p>
+              <div className="mt-9">
+                <Button href={routes.contact}>Prendre un rendez-vous</Button>
+              </div>
+
+              <div className="mt-12 border-t border-line pt-10">
+                <p className="eyebrow text-green">Secteur d&apos;intervention</p>
+                <p className="mt-5 max-w-2xl text-[16.5px] leading-[1.7] text-body">
+                  Interventions principales, environ 1h45 de route autour de Toulouse, sur les
+                  départements suivants :
+                </p>
+                <ul className="mt-6 flex flex-wrap gap-2.5">
+                  {departements.map((d) => (
+                    <li
+                      key={d.code}
+                      className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-[13.5px] text-body ring-1 ring-line"
+                    >
+                      <span className="font-semibold text-plum">{d.code}</span>
+                      {d.nom}
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-6 text-[15px] leading-relaxed text-muted">
+                  D&apos;autres départements peuvent être envisagés lors de l&apos;organisation de
+                  tournées.
+                </p>
+              </div>
             </div>
           </div>
         </Container>
@@ -473,7 +706,7 @@ export default function ConsultationsPage() {
             />
           </div>
           <div className="flex flex-col justify-center px-6 py-14 sm:px-10 lg:px-14">
-            <p className="eyebrow text-gold">Ostéopathie équine</p>
+            <NumeroSection numero="01" label="Ostéopathie équine" />
             <h2 className="mt-3 font-display text-[32px] leading-[1.1] font-semibold text-white sm:text-[42px]">
               Une approche adaptée à tous les profils d&apos;équidés
             </h2>
@@ -488,11 +721,9 @@ export default function ConsultationsPage() {
       </Section>
 
       <Section>
-        <Container>
-          <SecteurIntervention />
-
-          <div className="mt-12 max-w-3xl">
-            <p className="text-[15px] leading-relaxed text-body">
+        <Container width="full">
+          <div className="max-w-3xl">
+            <p className="text-[16.5px] leading-[1.7] text-body">
               Au-delà des motifs de consultation communs à toutes les espèces, l&apos;ostéopathie
               peut accompagner le cheval dans différentes étapes de sa vie, notamment :
             </p>
@@ -520,6 +751,8 @@ export default function ConsultationsPage() {
               conclusion="L'objectif est de favoriser une prise en charge cohérente, respectueuse et adaptée aux besoins individuels de chaque cheval."
             />
           </div>
+
+          <RetourSommaire />
         </Container>
       </Section>
 
@@ -527,7 +760,7 @@ export default function ConsultationsPage() {
       <Section id="compagnie" tone="green" className={ANCHOR} padding="none">
         <div className="grid items-stretch lg:grid-cols-2">
           <div className="order-2 flex flex-col justify-center px-6 py-14 sm:px-10 lg:order-1 lg:px-14">
-            <p className="eyebrow text-gold">Chiens · Chats · NAC</p>
+            <NumeroSection numero="02" label="Chiens · Chats · NAC" />
             <h2 className="mt-3 font-display text-[30px] leading-[1.12] font-semibold text-white sm:text-[40px]">
               Ostéopathie canine, féline et pour les nouveaux animaux de compagnie (NAC)
             </h2>
@@ -561,10 +794,9 @@ export default function ConsultationsPage() {
       </Section>
 
       <Section>
-        <Container>
+        <Container width="full">
           <div className="grid gap-6 lg:grid-cols-2">
-            <SecteurIntervention />
-            <div className="rounded-2xl border border-green/25 bg-green-soft/10 p-6 sm:p-7">
+            <div className="rounded-lg border border-green/25 bg-green-soft/10 p-6 sm:p-7">
               <p className="eyebrow text-green">Un lieu de consultation fixe</p>
               <p className="mt-4 text-[15px] leading-relaxed text-body">
                 Les zones d&apos;intervention sont identiques à celles proposées pour les équidés :
@@ -614,20 +846,27 @@ export default function ConsultationsPage() {
               conclusion="L'objectif est de proposer une prise en charge cohérente et personnalisée, en plaçant le confort, la santé et le bien-être de l'animal au centre des priorités."
             />
           </div>
+
+          <RetourSommaire />
         </Container>
       </Section>
 
       {/* ================= ANIMAUX DE RENTE ================= */}
       <Section id="rente" tone="plum" className={ANCHOR} padding="none">
         <div className="grid items-stretch lg:grid-cols-2">
-          <div className="order-2 lg:order-1">
-            <ImagePlaceholder
-              caption="Photo à fournir : ostéopathie en élevage (bovins, ovins, caprins, porcins)"
-              className="h-full min-h-[280px] rounded-none border-x-0 border-y-0 bg-plum-dark/40 text-white/70 lg:min-h-[440px]"
+          <div className="relative order-2 min-h-[280px] lg:order-1 lg:min-h-[440px]">
+            {/* vraie photo d'un animal de ferme, faute de cliche avec des bovins
+                dans la mediatheque (voir note au client) */}
+            <Image
+              src="/images/2025/05/IMG_5034.jpg"
+              alt="Marie Salabert en consultation d'ostéopathie auprès d'un cochon sur la paille"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
           </div>
           <div className="order-1 flex flex-col justify-center px-6 py-14 sm:px-10 lg:order-2 lg:px-14">
-            <p className="eyebrow text-gold">Ostéopathie Bovine, Ovine, Caprine et Porcine</p>
+            <NumeroSection numero="03" label="Ostéopathie bovine, ovine, caprine et porcine" />
             <h2 className="mt-3 font-display text-[30px] leading-[1.12] font-semibold text-white sm:text-[40px]">
               Une approche complémentaire au service des élevages
             </h2>
@@ -643,10 +882,9 @@ export default function ConsultationsPage() {
       </Section>
 
       <Section>
-        <Container>
-          <SecteurIntervention />
-
-          <div className="mt-12 max-w-3xl space-y-4 text-[15px] leading-relaxed text-body">
+        <Container width="full">
+          {/* encart teinte prune, en echo a la couleur de la section elevage */}
+          <div className="max-w-4xl space-y-4 rounded-lg border border-plum/15 bg-plum/[0.04] p-8 text-[16.5px] leading-[1.7] text-body sm:p-10">
             <p>
               Aujourd&apos;hui, l&apos;ostéopathie animale s&apos;inscrit dans cette continuité en
               proposant une approche manuelle structurée, adaptée aux exigences actuelles du
@@ -682,8 +920,12 @@ export default function ConsultationsPage() {
               conclusion="L'objectif est d'accompagner les éleveurs dans une démarche cohérente, respectueuse et adaptée aux besoins spécifiques de chaque animal et de chaque élevage."
             />
           </div>
+
+          <RetourSommaire />
         </Container>
       </Section>
+
+      <Testimonials items={avis.slice(0, 3)} profile={googleAvis} />
 
       <CtaBand
         image="/images/2025/05/a-propos-osteopathe-animalier.jpg"

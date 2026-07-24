@@ -13,11 +13,14 @@ export default function Reveal({
   as,
   className,
   delay = 0,
+  variant = "up",
 }: {
   children: ReactNode;
   as?: ElementType;
   className?: string;
   delay?: number;
+  /** sens de l'apparition : glissement, leger zoom avec flou, ou lateral */
+  variant?: "up" | "scale" | "left" | "right";
 }) {
   const Tag = as ?? "div";
   const ref = useRef<HTMLElement | null>(null);
@@ -35,7 +38,7 @@ export default function Reveal({
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
+      { threshold: 0.08, rootMargin: "0px 0px -10% 0px" },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -44,7 +47,7 @@ export default function Reveal({
   return (
     <Tag
       ref={ref}
-      data-reveal=""
+      data-reveal={variant}
       className={visible ? `is-visible ${className ?? ""}` : className}
       style={delay ? ({ "--reveal-delay": `${delay}ms` } as React.CSSProperties) : undefined}
     >

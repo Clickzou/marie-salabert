@@ -35,7 +35,7 @@ function renderInline(line: string, keyPrefix: string): ReactNode[] {
       <a
         key={`${keyPrefix}-l${i}`}
         href={href}
-        className="font-medium text-plum underline underline-offset-2 hover:no-underline"
+        className="underline-grow font-medium text-plum"
         {...(isExternal(href) ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       >
         {text}
@@ -51,15 +51,18 @@ function renderInline(line: string, keyPrefix: string): ReactNode[] {
 export default function ArticleBody({ body }: { body: string }) {
   const blocks = toBlocks(body);
 
+  const blocsTexte = blocks.filter((b) => b.type === "paragraph");
+  const premierParagraphe = blocsTexte[0];
+
   return (
-    <div className="space-y-6">
+    <div className="space-y-7">
       {blocks.map((block, i) => {
         if (block.type === "heading") {
           const Tag = `h${block.level}` as "h2" | "h3" | "h4";
           return (
             <Tag
               key={i}
-              className="pt-4 font-display text-[24px] uppercase leading-tight text-plum"
+              className="pt-8 text-[24px] leading-snug tracking-[-0.02em] text-ink sm:text-[28px]"
             >
               {block.lines[0]}
             </Tag>
@@ -71,16 +74,26 @@ export default function ArticleBody({ body }: { body: string }) {
         if (sole) {
           const [, label, href] = sole;
           return (
-            <p key={i} className="pt-1">
-              <Button href={href} variant="plum">
+            <p key={i} className="pt-2">
+              <Button href={href} variant="green">
                 {label}
               </Button>
             </p>
           );
         }
 
+        /* Le premier paragraphe sert d'accroche : plus grand et en encre foncee. */
+        const accroche = block === premierParagraphe;
+
         return (
-          <p key={i} className="text-[15px] leading-[2] text-muted">
+          <p
+            key={i}
+            className={
+              accroche
+                ? "text-[19px] leading-[1.6] text-ink sm:text-[21px]"
+                : "text-[17px] leading-[1.8] text-body"
+            }
+          >
             {block.lines.map((line, j) => (
               <Fragment key={j}>
                 {j > 0 && <br />}

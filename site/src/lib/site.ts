@@ -64,6 +64,19 @@ export const routes = {
   cookies: "/politique-de-cookies-ue",
 } as const;
 
+/**
+ * Pages qui commencent par une banniere photo : l'en-tete s'y superpose en
+ * transparence tant que le visiteur n'a pas defile. Ailleurs il reste blanc.
+ */
+export const heroRoutes: readonly string[] = [
+  routes.home,
+  routes.about,
+  routes.consultations,
+  routes.certification,
+  routes.faq,
+  routes.booking,
+];
+
 export const mainNav = [
   { label: "Accueil", href: routes.home },
   { label: "À Propos", href: routes.about },

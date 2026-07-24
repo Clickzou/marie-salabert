@@ -1,22 +1,16 @@
 import type { Metadata } from "next";
-import { El_Messiri, Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const roboto = Roboto({
+/* Une seule famille pour tout le site : Inter, variable, avec un interlettrage
+   resserre sur les titres (voir globals.css). */
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-  variable: "--font-roboto",
-  display: "swap",
-});
-
-const elMessiri = El_Messiri({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-el-messiri",
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -61,7 +55,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className={`${roboto.variable} ${elMessiri.variable}`}>
+    <html lang="fr" className={inter.variable}>
       <body>
         <a
           href="#content"

@@ -4,10 +4,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getArticle, getArticles } from "@/lib/articles";
 import { routes, site } from "@/lib/site";
-import { Eyebrow } from "@/components/ui";
+import { Container, Eyebrow, Section } from "@/components/ui";
 import ArticleBody from "@/components/ArticleBody";
-import ArticleCard, { ImagePlaceholder } from "@/components/ArticleCard";
+import { ImagePlaceholder } from "@/components/ArticleCard";
+import ArticlesCarousel from "@/components/ArticlesCarousel";
 import ArticleShare from "@/components/ArticleShare";
+import Reveal from "@/components/Reveal";
 
 /**
  * Page d'article de blog. Les URL sont generees a partir des fichiers MDX de
@@ -58,13 +60,14 @@ export default async function ArticlePage({
 
   const url = `${site.url}/${article.slug}`;
 
-  // « À lire aussi » : articles explicitement lies, sinon les plus recents.
+  /* « À lire aussi » : les articles explicitement lies d'abord, completes par les
+     plus recents jusqu'a neuf — le carrousel a ainsi toujours de quoi defiler. */
   const all = getArticles();
-  const related = article.related.length
-    ? article.related
-        .map((s) => all.find((a) => a.slug === s))
-        .filter((a): a is NonNullable<typeof a> => Boolean(a))
-    : all.filter((a) => a.slug !== article.slug).slice(0, 3);
+  const lies = article.related
+    .map((s) => all.find((a) => a.slug === s))
+    .filter((a): a is NonNullable<typeof a> => Boolean(a));
+  const dejaVus = new Set([article.slug, ...lies.map((a) => a.slug)]);
+  const related = [...lies, ...all.filter((a) => !dejaVus.has(a.slug))].slice(0, 9);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -87,80 +90,112 @@ export default async function ArticlePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="bg-surface-alt">
-        {/* Banniere : image mise en avant, ou visuel de remplacement */}
-        <div className="relative h-[260px] w-full sm:h-[380px] lg:h-[500px]">
-          {article.image ? (
-            <Image
-              src={article.image}
-              alt=""
-              aria-hidden="true"
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover object-center"
-            />
-          ) : (
-            <ImagePlaceholder title={article.title} className="h-full" />
-          )}
-        </div>
-
-        {/* Carte blanche chevauchant la banniere */}
-        <div className="mx-auto w-full max-w-[1200px] px-5">
-          <article className="relative mx-auto -mt-20 max-w-[796px] bg-white px-6 py-12 shadow-[0_2px_20px_rgba(0,0,0,0.06)] sm:px-14 sm:py-14 lg:-mt-[218px]">
-            <p className="text-center">
-              <Link
-                href={routes.newsCategory}
-                className="text-[13px] font-medium uppercase tracking-[0.18em] text-green-light hover:underline"
-              >
-                Actualités
-              </Link>
-            </p>
-
-            <h1 className="mt-6 text-center font-display text-[24px] uppercase leading-[1.25] text-plum sm:text-[30px]">
+      {/* Banniere : l'image de l'article en plein ecran, titre en bas a gauche */}
+      <header className="relative flex min-h-[440px] items-end overflow-hidden sm:min-h-[560px] lg:min-h-[640px]">
+        {article.image ? (
+          <Image
+            src={article.image}
+            alt=""
+            aria-hidden="true"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+        ) : (
+          <ImagePlaceholder title={article.title} className="absolute inset-0 h-full" />
+        )}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/25 to-black/75"
+        />
+        <Container width="full" className="relative pb-14 pt-40 sm:pb-20">
+          <div className="max-w-4xl">
+            <Link
+              href={routes.newsCategory}
+              className="rise text-[12px] font-semibold uppercase tracking-[0.2em] text-gold"
+            >
+              Actualités
+            </Link>
+            <h1
+              className="rise mt-5 text-[30px] font-semibold uppercase leading-[1.05] tracking-[-0.02em] text-white sm:text-[46px] lg:text-[56px]"
+              style={{ animationDelay: "120ms" }}
+            >
               {article.title}
             </h1>
-
             {article.dateLabel && (
-              <p className="mt-4 text-center text-[13px] font-medium uppercase tracking-[0.12em] text-green">
+              <p
+                className="rise mt-6 text-[14px] font-medium uppercase tracking-[0.14em] text-white/75"
+                style={{ animationDelay: "280ms" }}
+              >
                 {article.dateLabel}
               </p>
             )}
+          </div>
+        </Container>
+      </header>
 
-            <div className="mt-10">
-              <ArticleBody body={article.body} />
+      {/* Carte d'introduction horizontale : visuel de l'article et resume */}
+      <Section padding="no-bottom">
+        <Container width="default">
+          <Reveal className="card group/media overflow-hidden sm:grid sm:grid-cols-[minmax(0,360px)_minmax(0,1fr)]">
+            <div className="overflow-hidden">
+              {article.image ? (
+                <Image
+                  src={article.image}
+                  alt={article.imageAlt}
+                  width={768}
+                  height={512}
+                  sizes="(max-width: 640px) 100vw, 360px"
+                  className="img-zoom aspect-[3/2] w-full object-cover sm:h-full"
+                />
+              ) : (
+                <ImagePlaceholder title={article.title} className="h-full" />
+              )}
             </div>
+            <div className="flex flex-col justify-center p-8 sm:p-10">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">
+                {article.dateLabel || "Actualité"}
+              </p>
+              <p className="mt-4 text-[18px] leading-[1.6] text-ink sm:text-[20px]">
+                {article.description}
+              </p>
+            </div>
+          </Reveal>
+        </Container>
+      </Section>
 
-            <h2 className="mt-14 font-display text-[22px] uppercase leading-tight text-plum">
-              Vous aimez cet article ?
-            </h2>
-            <div className="mt-6">
-              <ArticleShare
-                url={url}
-                title={article.title}
-                image={article.image ? `${site.url}${article.image}` : ""}
-              />
+      {/* Corps : colonne de lecture unique, plus large que la mesure standard */}
+      <Section>
+        <Container width="default">
+          <article className="mx-auto max-w-[980px]">
+            <ArticleBody body={article.body} />
+
+            <div className="mt-14 border-t border-line pt-10">
+              <h2 className="text-[19px] text-ink">Vous aimez cet article&nbsp;?</h2>
+              <div className="mt-5">
+                <ArticleShare
+                  url={url}
+                  title={article.title}
+                  image={article.image ? `${site.url}${article.image}` : ""}
+                />
+              </div>
             </div>
           </article>
-        </div>
-
-        <div className="h-10 sm:h-14" />
-      </div>
+        </Container>
+      </Section>
 
       {/* Articles a lire ensuite */}
       {related.length > 0 && (
-        <section className="bg-white py-14">
-          <div className="mx-auto w-full max-w-[1400px] px-5">
+        <Section tone="surface">
+          <Container width="full">
             <Eyebrow>À lire aussi</Eyebrow>
-            <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {related.map((item) => (
-                <li key={item.slug} className="flex">
-                  <ArticleCard article={item} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
+            {/* carrousel : les articles lies restent sur une seule ligne */}
+            <div className="mt-10">
+              <ArticlesCarousel articles={related} />
+            </div>
+          </Container>
+        </Section>
       )}
     </>
   );

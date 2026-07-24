@@ -13,15 +13,17 @@ export function Container({
   className?: string;
   /**
    * default : colonne centree max 1200px (pages de contenu).
-   * wide    : pleine largeur avec marge laterale ~100px (accueil, sections vitrine).
+   * wide    : large, plafonnee a 1720px (accueil, sections vitrine).
+   * full    : toute la largeur de l'ecran, marge laterale de 100px, sans plafond.
    * narrow  : colonne de lecture etroite (textes longs, pages legales).
    */
-  width?: "default" | "wide" | "narrow";
+  width?: "default" | "wide" | "full" | "narrow";
   children: ReactNode;
 }) {
   const widths = {
     default: "mx-auto w-full max-w-[1200px] px-5 sm:px-6",
     wide: "mx-auto w-full max-w-[1720px] px-5 sm:px-10 lg:px-[100px]",
+    full: "w-full px-5 sm:px-10 lg:px-[100px]",
     narrow: "mx-auto w-full max-w-[760px] px-5 sm:px-6",
   } as const;
   return <div className={cx(widths[width], className)}>{children}</div>;
@@ -51,10 +53,10 @@ export function Section({
     green: "bg-green text-white",
   } as const;
   const paddings = {
-    default: "py-20 sm:py-28",
+    default: "py-24 sm:py-36",
     none: "",
-    "no-top": "pb-20 sm:pb-28",
-    "no-bottom": "pt-20 sm:pt-28",
+    "no-top": "pb-24 sm:pb-36",
+    "no-bottom": "pt-24 sm:pt-36",
   } as const;
   return (
     <section className={cx(paddings[padding], tones[tone], className)} {...rest}>
@@ -65,11 +67,13 @@ export function Section({
 
 type ButtonVariant = "gold" | "green" | "plum" | "outline";
 
+/* Jaune pour les appels a l'action principaux, vert pour les actions
+   secondaires, contour fin pour les liens discrets. Plus aucun bouton noir. */
 const buttonStyles: Record<ButtonVariant, string> = {
-  gold: "bg-gold text-ink hover:bg-gold-dark shadow-sm hover:shadow-md",
-  green: "bg-green text-white hover:bg-green-light shadow-sm hover:shadow-md",
-  plum: "bg-plum text-white hover:bg-plum-dark shadow-sm hover:shadow-md",
-  outline: "border border-plum/30 text-plum hover:border-plum hover:bg-plum hover:text-white",
+  gold: "bg-gold text-ink hover:bg-gold-dark",
+  green: "bg-green text-white hover:bg-green-light",
+  plum: "bg-green text-white hover:bg-green-light",
+  outline: "border border-ink/15 text-ink hover:border-ink/40 hover:bg-ink/[0.03]",
 };
 
 export function Button({
@@ -86,8 +90,10 @@ export function Button({
 } & Omit<ComponentProps<typeof Link>, "href">) {
   const external = href.startsWith("http") || href.startsWith("tel:") || href.startsWith("mailto:");
   const classes = cx(
-    "group inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-[14px] font-medium tracking-wide",
-    "transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum",
+    "group inline-flex items-center justify-center gap-2 rounded-[10px] px-8 py-4 text-[15px] font-medium",
+    "transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5",
+    "shadow-[0_10px_24px_-16px_rgba(22,23,26,0.8)] hover:shadow-[0_18px_36px_-18px_rgba(22,23,26,0.55)]",
+    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum",
     buttonStyles[variant],
     className,
   );
@@ -134,10 +140,12 @@ export function SectionTitle({
   return (
     <Tag
       className={cx(
-        "font-display font-semibold text-plum",
+        // grande taille, graisse moyenne, interlettrage resserre : le titre porte
+        // seul, sans filet ni couleur d'accent
+        "font-display font-semibold tracking-[-0.03em] text-ink",
         Tag === "h1"
-          ? "text-[38px] leading-[1.1] sm:text-[52px]"
-          : "text-[30px] leading-[1.15] sm:text-[40px]",
+          ? "text-[40px] leading-[1.05] sm:text-[62px]"
+          : "text-[32px] leading-[1.08] sm:text-[46px]",
         className,
       )}
     >

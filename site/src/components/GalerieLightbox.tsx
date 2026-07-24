@@ -10,15 +10,19 @@ export type GaleriePhoto = {
   alt: string;
 };
 
-const SIZES = "(max-width: 479px) 100vw, (max-width: 767px) 50vw, 25vw";
+const SIZES = "(max-width: 479px) 100vw, (max-width: 767px) 50vw, (max-width: 1279px) 33vw, 25vw";
+
+/** Nombre de photos affichees avant le premier « Afficher plus ». */
+const PAS = 16;
 
 /**
- * Grille de la page « galerie » (4 colonnes >= 768px, 2 colonnes >= 480px, 1 colonne
- * en dessous, gouttiere de 30px et coins arrondis a 30px comme sur l'original)
- * et visionneuse plein ecran reprenant la lightbox Elementor.
+ * Galerie en mosaique (colonnes CSS : les formats portrait et paysage
+ * s'imbriquent sans blanc) et visionneuse plein ecran (fleches, clavier,
+ * fermeture au clic sur le fond, compteur).
  */
 export default function GalerieLightbox({ photos }: { photos: readonly GaleriePhoto[] }) {
   const [index, setIndex] = useState<number | null>(null);
+  const [visibles, setVisibles] = useState(PAS);
   const dialogRef = useRef<HTMLDivElement>(null);
   const openerRef = useRef<HTMLButtonElement | null>(null);
 
@@ -75,19 +79,20 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
   }, [index, close, move]);
 
   const current = index === null ? null : photos[index];
+  const affichees = photos.slice(0, visibles);
 
   return (
     <>
-      <ul className="grid grid-cols-1 gap-[30px] min-[480px]:grid-cols-2 md:grid-cols-4">
-        {photos.map((photo, i) => (
-          <li key={photo.src} className="self-start">
+      <ul className="columns-1 gap-5 min-[480px]:columns-2 md:columns-3 xl:columns-4">
+        {affichees.map((photo, i) => (
+          <li key={photo.src} className="mb-5 break-inside-avoid">
             <button
               type="button"
               onClick={(event) => {
                 openerRef.current = event.currentTarget;
                 setIndex(i);
               }}
-              className="block w-full cursor-zoom-in rounded-[30px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-plum"
+              className="group relative block w-full cursor-zoom-in overflow-hidden rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-plum"
               aria-label={photo.alt || `Agrandir la photo ${i + 1} sur ${photos.length}`}
             >
               <Image
@@ -98,12 +103,47 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
                 sizes={SIZES}
                 priority={i < 4}
                 loading={i < 4 ? undefined : "lazy"}
-                className="h-auto w-full rounded-[30px] object-cover"
+                className="img-zoom h-auto w-full object-cover"
               />
+              {/* voile + loupe au survol */}
+              <span
+                aria-hidden="true"
+                className="absolute inset-0 flex items-center justify-center bg-ink/0 opacity-0 transition-all duration-500 group-hover:bg-ink/25 group-hover:opacity-100"
+              >
+                <span className="grid h-12 w-12 place-items-center rounded-full bg-white/90 text-ink">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                  >
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="M20 20l-3.5-3.5M11 8v6M8 11h6" />
+                  </svg>
+                </span>
+              </span>
             </button>
           </li>
         ))}
       </ul>
+
+      {visibles < photos.length && (
+        <div className="mt-10 text-center">
+          <button
+            type="button"
+            onClick={() => setVisibles((v) => v + PAS)}
+            className="inline-flex items-center gap-2 rounded-[10px] border border-ink/15 px-8 py-4 text-[15px] font-medium text-ink transition-all duration-500 hover:-translate-y-0.5 hover:border-ink/40 hover:bg-ink/[0.03]"
+          >
+            Afficher plus de photos
+            <span className="text-[13px] text-muted">
+              {visibles} / {photos.length}
+            </span>
+          </button>
+        </div>
+      )}
 
       {current && (
         <div
@@ -111,7 +151,7 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
           role="dialog"
           aria-modal="true"
           aria-label="Visionneuse de photos"
-          className="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 p-4"
+          className="fixed inset-0 z-[200] flex items-center justify-center bg-ink/95 p-4 backdrop-blur-sm"
           onClick={(event) => {
             if (event.target === event.currentTarget) close();
           }}
@@ -120,17 +160,21 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
             type="button"
             onClick={close}
             aria-label="Fermer la visionneuse"
-            className="absolute right-4 top-4 z-10 grid h-11 w-11 place-items-center rounded-full bg-white/10 text-2xl text-white hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="absolute right-5 top-5 z-10 grid h-12 w-12 place-items-center rounded-full border border-white/30 text-white transition-all duration-500 hover:border-white hover:bg-white hover:text-ink"
           >
-            <span aria-hidden="true">×</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
           </button>
           <button
             type="button"
             onClick={() => move(-1)}
             aria-label="Photo précédente"
-            className="absolute left-3 top-1/2 z-10 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-white/10 text-2xl text-white hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="absolute left-4 top-1/2 z-10 grid h-14 w-14 -translate-y-1/2 place-items-center rounded-full border border-white/30 text-white transition-all duration-500 hover:border-white hover:bg-white hover:text-ink sm:left-8"
           >
-            <span aria-hidden="true">‹</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M15 6l-6 6 6 6" />
+            </svg>
           </button>
           <figure className="max-h-full">
             <Image
@@ -139,9 +183,9 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
               width={current.width}
               height={current.height}
               sizes="100vw"
-              className="max-h-[85vh] w-auto max-w-full object-contain"
+              className="max-h-[82vh] w-auto max-w-full rounded-lg object-contain"
             />
-            <figcaption className="mt-3 text-center text-[14px] text-white/80">
+            <figcaption className="mt-5 text-center text-[13px] uppercase tracking-[0.18em] text-white/70">
               {index !== null ? `${index + 1} / ${photos.length}` : null}
             </figcaption>
           </figure>
@@ -149,9 +193,11 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
             type="button"
             onClick={() => move(1)}
             aria-label="Photo suivante"
-            className="absolute right-3 top-1/2 z-10 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-white/10 text-2xl text-white hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="absolute right-4 top-1/2 z-10 grid h-14 w-14 -translate-y-1/2 place-items-center rounded-full border border-white/30 text-white transition-all duration-500 hover:border-white hover:bg-white hover:text-ink sm:right-8"
           >
-            <span aria-hidden="true">›</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 6l6 6-6 6" />
+            </svg>
           </button>
         </div>
       )}

@@ -3,14 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import { headerCta, mainNav, site } from "@/lib/site";
+import { useEffect, useState } from "react";
+import { headerCta, heroRoutes, mainNav, site } from "@/lib/site";
 import { Container } from "./ui";
 
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [lastPath, setLastPath] = useState(pathname);
+  const [scrolled, setScrolled] = useState(false);
 
   // referme le menu mobile a chaque changement de page : ajustement pendant le
   // rendu plutot qu'un effet, qui declencherait un second rendu inutile
@@ -19,12 +20,34 @@ export default function Header() {
     setOpen(false);
   }
 
-  const isActive = (href: string) =>
-    href === "/" ? pathname === "/" : pathname.startsWith(href);
+  /* En haut d'une page a banniere, l'en-tete se fond dans la photo ; des le
+     premier defilement il redevient blanc et compact. */
+  const surHero = heroRoutes.includes(pathname);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const transparent = surHero && !scrolled && !open;
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 bg-white">
-      <Container width="wide" className="flex h-[88px] items-center justify-between gap-4">
+    <>
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,border-color] duration-500 ${
+        transparent
+          ? "border-b border-white/15 bg-transparent"
+          : "border-b border-black/5 bg-white/95 shadow-[0_10px_30px_-24px_rgba(30,41,59,0.6)] backdrop-blur-md"
+      }`}
+    >
+      <Container
+        width="wide"
+        className={`flex items-center justify-between gap-4 transition-[height] duration-500 ${
+          transparent ? "h-[104px]" : "h-[78px]"
+        }`}
+      >
         <Link href="/" className="flex shrink-0 items-center gap-3" aria-label={site.name}>
           <Image
             src="/images/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png"
@@ -32,38 +55,67 @@ export default function Header() {
             width={300}
             height={293}
             priority
-            className="h-[52px] w-auto"
+            className={`w-auto transition-all duration-500 ${
+              transparent ? "h-[58px] drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]" : "h-[48px]"
+            }`}
           />
-          <span className="hidden font-display text-[19px] font-semibold leading-tight text-plum sm:block">
+          <span
+            className={`hidden font-display text-[19px] font-semibold leading-tight transition-colors duration-500 sm:block ${
+              transparent ? "text-white drop-shadow-sm" : "text-plum"
+            }`}
+          >
             Marie Salabert
-            <span className="block text-[12px] font-normal uppercase tracking-[0.18em] text-muted">
+            <span
+              className={`block text-[12px] font-normal uppercase tracking-[0.18em] transition-colors duration-500 ${
+                transparent ? "text-white/80" : "text-muted"
+              }`}
+            >
               Ostéopathie Animale
             </span>
           </span>
         </Link>
 
         <nav aria-label="Navigation principale" className="hidden lg:block">
-          <ul className="flex items-center gap-5 xl:gap-6">
-            {mainNav.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  aria-current={isActive(item.href) ? "page" : undefined}
-                  className={`text-[14px] transition-colors hover:text-plum ${
-                    isActive(item.href) ? "text-plum" : "text-body"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+          <ul className="flex items-center gap-5 xl:gap-7">
+            {mainNav.map((item) => {
+              const actif =
+                item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    aria-current={actif ? "page" : undefined}
+                    className={`group relative block py-1 text-[14px] transition-colors ${
+                      transparent
+                        ? "text-white/90 drop-shadow-sm hover:text-white"
+                        : actif
+                          ? "text-plum"
+                          : "text-body hover:text-plum"
+                    }`}
+                  >
+                    {item.label}
+                    {/* filet anime : plein sur la page courante, au survol ailleurs */}
+                    <span
+                      aria-hidden="true"
+                      className={`absolute -bottom-0.5 left-0 h-px w-full origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${
+                        transparent ? "bg-white" : "bg-plum"
+                      } ${actif ? "scale-x-100" : ""}`}
+                    />
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
 
         <div className="flex items-center gap-3">
           <Link
             href={headerCta.href}
-            className="hidden rounded-full bg-gold px-5 py-2.5 text-center text-[13px] font-medium tracking-wide text-ink shadow-sm transition-all hover:bg-gold-dark hover:shadow-md sm:inline-flex sm:text-[14px]"
+            className={`hidden rounded-[10px] px-6 py-2.5 text-center text-[14px] font-medium transition-all duration-500 hover:-translate-y-0.5 sm:inline-flex ${
+              transparent
+                ? "border border-white/70 text-white hover:border-white hover:bg-white hover:text-ink"
+                : "bg-gold text-ink shadow-[0_10px_24px_-16px_rgba(22,23,26,0.8)] hover:bg-gold-dark"
+            }`}
           >
             {headerCta.label}
           </Link>
@@ -74,7 +126,9 @@ export default function Header() {
             aria-expanded={open}
             aria-controls="menu-mobile"
             aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
-            className="grid h-11 w-11 place-items-center rounded text-plum lg:hidden"
+            className={`grid h-11 w-11 place-items-center rounded transition-colors lg:hidden ${
+              transparent ? "text-white" : "text-plum"
+            }`}
           >
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               {open ? (
@@ -91,23 +145,25 @@ export default function Header() {
         <nav id="menu-mobile" aria-label="Navigation mobile" className="border-t border-black/5 bg-white lg:hidden">
           <Container className="py-2">
             <ul className="divide-y divide-black/5">
-              {mainNav.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    aria-current={isActive(item.href) ? "page" : undefined}
-                    className={`block py-3 text-[15px] ${
-                      isActive(item.href) ? "text-plum" : "text-body"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              {mainNav.map((item) => {
+                const actif =
+                  item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+                return (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      aria-current={actif ? "page" : undefined}
+                      className={`block py-3 text-[15px] ${actif ? "text-plum" : "text-body"}`}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
             <Link
               href={headerCta.href}
-              className="my-4 inline-flex w-full items-center justify-center rounded-[3px] bg-gold px-5 py-3 text-[15px] font-medium text-black"
+              className="my-4 inline-flex w-full items-center justify-center rounded-[10px] bg-gold px-5 py-3 text-[15px] font-medium text-ink"
             >
               {headerCta.label}
             </Link>
@@ -115,5 +171,9 @@ export default function Header() {
         </nav>
       )}
     </header>
+
+    {/* Hors pages a banniere, l'en-tete etant fixe, on compense sa hauteur */}
+    {!surHero && <div aria-hidden="true" className="h-[78px]" />}
+    </>
   );
 }
