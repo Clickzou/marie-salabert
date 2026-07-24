@@ -1,5 +1,6 @@
 import { Fragment, type ReactNode } from "react";
 import { toBlocks } from "@/lib/articles";
+import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui";
 
 /**
@@ -60,12 +61,9 @@ export default function ArticleBody({ body }: { body: string }) {
         if (block.type === "heading") {
           const Tag = `h${block.level}` as "h2" | "h3" | "h4";
           return (
-            <Tag
-              key={i}
-              className="pt-8 text-[24px] leading-snug tracking-[-0.02em] text-ink sm:text-[28px]"
-            >
+            <Reveal key={i} as={Tag} className="pt-8 text-[24px] leading-snug tracking-[-0.02em] text-ink sm:text-[28px]">
               {block.lines[0]}
-            </Tag>
+            </Reveal>
           );
         }
 
@@ -74,11 +72,11 @@ export default function ArticleBody({ body }: { body: string }) {
         if (sole) {
           const [, label, href] = sole;
           return (
-            <p key={i} className="pt-2">
+            <Reveal key={i} as="p" variant="scale" className="pt-2">
               <Button href={href} variant="green">
                 {label}
               </Button>
-            </p>
+            </Reveal>
           );
         }
 
@@ -86,8 +84,9 @@ export default function ArticleBody({ body }: { body: string }) {
         const accroche = block === premierParagraphe;
 
         return (
-          <p
+          <Reveal
             key={i}
+            as="p"
             className={
               accroche
                 ? "text-[19px] leading-[1.6] text-ink sm:text-[21px]"
@@ -100,7 +99,7 @@ export default function ArticleBody({ body }: { body: string }) {
                 {renderInline(line, `${i}-${j}`)}
               </Fragment>
             ))}
-          </p>
+          </Reveal>
         );
       })}
     </div>

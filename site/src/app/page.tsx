@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 
 const publics = [
   {
-    title: "Ostéopathie pour animaux de compagnie",
-    subtitle: "Chiens, chats, NAC'S",
+    title: "Animaux de compagnie",
+    subtitle: "Chiens · Chats · NAC",
     image: "/images/2025/05/IMG_5516.jpg",
     alt: "Séance d'ostéopathie sur un berger allemand",
     items: [
@@ -42,9 +42,8 @@ const publics = [
     ],
   },
   {
-    title: "Ostéopathie pour les équidés",
-    subtitle:
-      "Pour tous types de chevaux (course, sport équestre, élevage, spectacle, loisir, trait), ânes et mules",
+    title: "Équidés",
+    subtitle: "Chevaux de course, de sport, de loisir · Ânes · Mules",
     image: "/images/2025/05/IMG_5249.jpg",
     alt: "Séance d'ostéopathie sur un poney au pré",
     items: [
@@ -61,8 +60,8 @@ const publics = [
     ],
   },
   {
-    title: "Ostéopathie pour animaux de rente, ferme et production animale",
-    subtitle: "Bovins, Ovins, Caprins et Porcins",
+    title: "Animaux de rente",
+    subtitle: "Bovins · Ovins · Caprins · Porcins",
     image: "/images/publics/rente.jpg",
     alt: "Main posée sur une vache dans une étable",
     items: [
@@ -78,7 +77,7 @@ const publics = [
 ] as const;
 
 /** Nombre d'indications affichées d'emblée ; les suivantes sont repliées. */
-const INDICATIONS_VISIBLES = 4;
+const INDICATIONS_VISIBLES = 3;
 
 /** Ligne d'indication : puce discrète plutôt qu'une coche, les listes étant longues. */
 function Indication({ children }: { children: ReactNode }) {
@@ -278,7 +277,7 @@ export default function HomePage() {
                   as="li"
                   key={p.title}
                   delay={idx * 140}
-                  className="card card-hover flex flex-col overflow-hidden"
+                  className="card card-hover group/media flex flex-col overflow-hidden border-transparent bg-white"
                 >
                   <div className="overflow-hidden">
                     <Image
@@ -290,25 +289,21 @@ export default function HomePage() {
                       className="img-zoom aspect-[16/10] w-full object-cover"
                     />
                   </div>
-                  <div className="flex flex-1 flex-col p-8 sm:p-9">
-                    {/* hauteurs figees a partir de lg : les trois listes demarrent
-                        alors sur la meme ligne malgre des titres de longueurs differentes */}
-                    <h3 className="text-[21px] leading-snug text-plum lg:min-h-[58px]">
-                      {p.title}
-                    </h3>
-                    <p className="mt-2 text-[13.5px] leading-relaxed text-muted lg:min-h-[44px]">
+                  <div className="flex flex-1 flex-col p-8 sm:p-10">
+                    <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">
                       {p.subtitle}
                     </p>
-                    <span aria-hidden="true" className="mt-6 block h-px w-8 bg-gold" />
+                    <h3 className="mt-3 text-[24px] leading-snug text-plum">{p.title}</h3>
 
-                    <ul className="mt-6 space-y-3.5">
+                    <ul className="mt-7 space-y-3.5">
                       {visibles.map((item) => (
                         <Indication key={item}>{item}</Indication>
                       ))}
                     </ul>
 
                     {repliees.length > 0 && (
-                      <details className="disclosure mt-5">
+                      /* mt-auto : le lien se cale en bas, les trois cartes finissent alignees */
+                      <details className="disclosure mt-auto pt-6">
                         <summary className="inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-plum transition-colors hover:text-plum-dark focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-plum">
                           <span className="when-closed">
                             Voir les {repliees.length} autres indications

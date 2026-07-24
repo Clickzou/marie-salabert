@@ -7,6 +7,7 @@ import { CheckList, CtaBand, PageHero, Testimonials } from "@/components/section
 import { avis, googleAvis } from "@/content/avis";
 import Reveal from "@/components/Reveal";
 import SecteurMap from "@/components/SecteurMap";
+import SommaireFlottant from "@/components/SommaireFlottant";
 
 export const metadata: Metadata = {
   title:
@@ -372,6 +373,16 @@ export default function ConsultationsPage() {
         subtitle="Chevaux, chiens, chats, NAC et animaux de rente, en Occitanie"
       />
 
+      {/* Sommaire flottant a droite, cale au milieu de l'ecran (desktop) */}
+      <SommaireFlottant
+        liens={[
+          { href: "#sommaire", label: "Sommaire" },
+          { href: "#equides", label: "Équidés" },
+          { href: "#compagnie", label: "Chiens · Chats · NAC" },
+          { href: "#rente", label: "Animaux de rente" },
+        ]}
+      />
+
       {/* Sommaire illustre : oriente d'emblee vers la bonne famille d'animaux.
           Il remplace l'ancienne barre d'ancres collante, redondante avec lui. */}
       <Section id="sommaire" tone="surface" className={ANCHOR}>
@@ -707,7 +718,7 @@ export default function ConsultationsPage() {
           </div>
           <div className="flex flex-col justify-center px-6 py-14 sm:px-10 lg:px-14">
             <NumeroSection numero="01" label="Ostéopathie équine" />
-            <h2 className="mt-3 font-display text-[32px] leading-[1.1] font-semibold text-white sm:text-[42px]">
+            <h2 className="uppercase mt-3 font-display text-[32px] leading-[1.1] font-light text-white sm:text-[42px] tracking-[0.05em]">
               Une approche adaptée à tous les profils d&apos;équidés
             </h2>
             <p className="mt-6 text-[15px] leading-relaxed text-white/90">
@@ -761,7 +772,7 @@ export default function ConsultationsPage() {
         <div className="grid items-stretch lg:grid-cols-2">
           <div className="order-2 flex flex-col justify-center px-6 py-14 sm:px-10 lg:order-1 lg:px-14">
             <NumeroSection numero="02" label="Chiens · Chats · NAC" />
-            <h2 className="mt-3 font-display text-[30px] leading-[1.12] font-semibold text-white sm:text-[40px]">
+            <h2 className="uppercase mt-3 font-display text-[30px] leading-[1.12] font-light text-white sm:text-[40px] tracking-[0.05em]">
               Ostéopathie canine, féline et pour les nouveaux animaux de compagnie (NAC)
             </h2>
             <p className="mt-6 text-[15px] leading-relaxed text-white/90">
@@ -867,7 +878,7 @@ export default function ConsultationsPage() {
           </div>
           <div className="order-1 flex flex-col justify-center px-6 py-14 sm:px-10 lg:order-2 lg:px-14">
             <NumeroSection numero="03" label="Ostéopathie bovine, ovine, caprine et porcine" />
-            <h2 className="mt-3 font-display text-[30px] leading-[1.12] font-semibold text-white sm:text-[40px]">
+            <h2 className="uppercase mt-3 font-display text-[30px] leading-[1.12] font-light text-white sm:text-[40px] tracking-[0.05em]">
               Une approche complémentaire au service des élevages
             </h2>
             <p className="mt-3 text-[15px] text-white/70">(Vaches, Moutons, Chèvres, Porcs)</p>

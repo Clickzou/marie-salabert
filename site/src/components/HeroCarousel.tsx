@@ -113,7 +113,7 @@ export default function HeroCarousel({
               <div className="rise mt-10" style={{ animationDelay: "460ms" }}>
                 <Link
                   href={cta.href}
-                  className="inline-flex items-center justify-center rounded-[10px] bg-gold px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.16em] text-ink shadow-[0_16px_36px_-20px_rgba(0,0,0,0.9)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:bg-gold-dark"
+                  className="btn-shine inline-flex items-center justify-center rounded-[10px] bg-gold px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.16em] text-ink shadow-[0_16px_36px_-20px_rgba(0,0,0,0.9)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:bg-gold-dark"
                 >
                   {cta.label}
                 </Link>

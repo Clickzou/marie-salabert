@@ -30,7 +30,7 @@ export default function RendezVousPage() {
           <div className="grid gap-12 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-20">
             <Reveal className="lg:sticky lg:top-32 lg:self-start">
               <Eyebrow>Me joindre</Eyebrow>
-              <h2 className="mt-5 text-[28px] leading-snug tracking-[-0.02em] text-ink sm:text-[34px]">
+              <h2 className="font-light uppercase mt-5 text-[28px] leading-snug tracking-[0.05em] text-ink sm:text-[34px]">
                 Un appel suffit pour convenir d&apos;un créneau
               </h2>
 
@@ -123,7 +123,7 @@ export default function RendezVousPage() {
 
             <Reveal delay={120}>
               <div className="card p-8 sm:p-12">
-                <h2 className="text-[24px] leading-snug text-ink sm:text-[28px]">
+                <h2 className="font-light uppercase text-[24px] leading-snug text-ink sm:text-[28px] tracking-[0.05em]">
                   Formulaire de contact
                 </h2>
                 <p className="mt-5 max-w-2xl text-[16.5px] leading-[1.7] text-body">
@@ -158,7 +158,7 @@ export default function RendezVousPage() {
         <Container width="full">
           <Reveal className="max-w-3xl">
             <Eyebrow>Secteur d&apos;intervention</Eyebrow>
-            <h2 className="mt-5 text-[28px] leading-snug tracking-[-0.02em] text-ink sm:text-[34px]">
+            <h2 className="font-light uppercase mt-5 text-[28px] leading-snug tracking-[0.05em] text-ink sm:text-[34px]">
               Environ 1h45 de route autour de Toulouse
             </h2>
           </Reveal>

@@ -51,21 +51,23 @@ export function PageHero({
 /** Pastille de certification qui chevauche le bas du hero (page d'accueil). */
 export function CertificationBadge({ href }: { href: string }) {
   return (
-    <div className="relative z-10 -mt-16 flex flex-col items-center gap-5 pb-16">
-      {/* VISUEL À FOURNIR : logo officiel du Conseil National de l'Ordre des
-          Vétérinaires (CNOV). L'ancien visuel était par erreur celui de l'Ordre
-          des Médecins. En attendant, pastille sobre légendée. */}
+    <div className="relative z-10 -mt-24 flex flex-col items-center gap-6 pb-16">
+      {/* Logo officiel du Conseil National de l'Ordre des Vétérinaires (CNOV),
+          inscrit dans une pastille blanche qui chevauche la banniere. */}
       <a
         href={href}
-        aria-label="Voir ma certification (inscription au RNA / CNOV)"
-        className="grid h-[132px] w-[132px] place-items-center rounded-full border border-plum/15 bg-white px-5 text-center shadow-[0_10px_30px_-12px_rgba(147,58,80,0.4)]"
+        aria-label="Voir ma certification (inscription au RNA tenu par le CNOV)"
+        className="hover-raise grid h-[200px] w-[200px] place-items-center rounded-full border border-plum/10 bg-white p-5 text-center shadow-[0_18px_40px_-18px_rgba(22,23,26,0.35)] sm:h-[230px] sm:w-[230px] sm:p-6"
       >
-        <span className="font-display text-[13px] font-semibold leading-tight text-plum">
-          Inscrite au RNA
-          <span className="mt-1 block text-[11px] font-normal uppercase tracking-wider text-muted">
-            CNOV · OA 801
-          </span>
-        </span>
+        <Image
+          src="/images/2024/05/logo-cnov.gif"
+          alt="Conseil National de l'Ordre des Vétérinaires"
+          width={1200}
+          height={630}
+          unoptimized
+          sizes="230px"
+          className="h-auto w-full object-contain"
+        />
       </a>
       <Button href={href} variant="plum" className="px-6 py-2.5 text-[13px]">
         Voir ma certification
@@ -131,7 +133,7 @@ export function CtaBand({
       )}
       <Container width="wide" className="relative">
         <Reveal>
-          <h2 className="mx-auto max-w-3xl text-[32px] font-semibold leading-[1.08] tracking-[-0.03em] text-white sm:text-[46px]">
+          <h2 className="mx-auto max-w-3xl text-[26px] font-light uppercase leading-[1.2] tracking-[0.05em] text-white sm:text-[38px]">
             {title}
           </h2>
           <div className="mt-10">
@@ -212,7 +214,7 @@ export function Testimonials({
     <section className="bg-surface py-24 sm:py-36">
       <Container width="wide">
         <Reveal className="text-center">
-          <h2 className="text-[32px] font-semibold tracking-[-0.03em] text-ink sm:text-[46px]">
+          <h2 className="text-[26px] font-light uppercase tracking-[0.05em] text-ink sm:text-[38px]">
             {title}
           </h2>
           {profile && (

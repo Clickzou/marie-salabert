@@ -33,7 +33,7 @@ export default function ReservationPage() {
           className="pointer-events-none absolute left-6 top-6 hidden select-none lg:block xl:left-16"
         />
         <Container>
-          <h2 className="text-center text-[24px] font-bold leading-snug text-plum sm:text-[28px]">
+          <h2 className="uppercase text-center text-[24px] font-light leading-snug text-plum sm:text-[28px] tracking-[0.05em]">
             Réservez une séance d&apos;ostéopathie pour votre animal
           </h2>
         </Container>
@@ -79,7 +79,7 @@ export default function ReservationPage() {
             />
 
             <div>
-              <h2 className="text-[26px] leading-tight text-green sm:text-[30px]">
+              <h2 className="font-light uppercase text-[26px] leading-tight text-green sm:text-[30px] tracking-[0.05em]">
                 Formulaire de contact
               </h2>
               <div className="mt-8">

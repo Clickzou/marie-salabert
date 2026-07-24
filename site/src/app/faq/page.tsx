@@ -453,7 +453,7 @@ export default function FaqPage() {
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <h2 className="mt-4 text-[26px] leading-snug tracking-[-0.02em] text-ink sm:text-[32px]">
+                <h2 className="font-light uppercase mt-4 text-[26px] leading-snug tracking-[0.05em] text-ink sm:text-[32px]">
                   {groupe.titre}
                 </h2>
                 <p className="mt-4 text-[14px] text-muted">{groupe.items.length} questions</p>

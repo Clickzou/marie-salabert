@@ -46,7 +46,7 @@ export default function CategorieActualitesPage() {
                   )}
                 </Link>
 
-                <h2 className="mt-5 text-[22px] font-normal leading-snug text-plum sm:text-[26px]">
+                <h2 className="font-light uppercase mt-5 text-[22px] font-normal leading-snug text-plum sm:text-[26px] tracking-[0.05em]">
                   <Link href={`/${article.slug}`} className="hover:underline">
                     {article.title}
                   </Link>

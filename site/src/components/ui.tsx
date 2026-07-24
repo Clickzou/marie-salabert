@@ -90,7 +90,7 @@ export function Button({
 } & Omit<ComponentProps<typeof Link>, "href">) {
   const external = href.startsWith("http") || href.startsWith("tel:") || href.startsWith("mailto:");
   const classes = cx(
-    "group inline-flex items-center justify-center gap-2 rounded-[10px] px-8 py-4 text-[15px] font-medium",
+    "btn-shine group inline-flex items-center justify-center gap-2 rounded-[10px] px-8 py-4 text-[15px] font-medium",
     "transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5",
     "shadow-[0_10px_24px_-16px_rgba(22,23,26,0.8)] hover:shadow-[0_18px_36px_-18px_rgba(22,23,26,0.55)]",
     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum",
@@ -140,12 +140,11 @@ export function SectionTitle({
   return (
     <Tag
       className={cx(
-        // grande taille, graisse moyenne, interlettrage resserre : le titre porte
-        // seul, sans filet ni couleur d'accent
-        "font-display font-semibold tracking-[-0.03em] text-ink",
+        // capitales fines et espacees : plus racees qu'une graisse forte
+        "font-display font-light uppercase tracking-[0.05em] text-ink",
         Tag === "h1"
-          ? "text-[40px] leading-[1.05] sm:text-[62px]"
-          : "text-[32px] leading-[1.08] sm:text-[46px]",
+          ? "text-[34px] leading-[1.12] sm:text-[50px]"
+          : "text-[26px] leading-[1.18] sm:text-[38px]",
         className,
       )}
     >

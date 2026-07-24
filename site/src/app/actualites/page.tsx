@@ -88,7 +88,7 @@ export default function ActualitesPage() {
               <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-white/60">
                 Un conseil ?
               </p>
-              <h2 className="mt-4 max-w-2xl text-[28px] font-semibold leading-[1.15] tracking-[-0.03em] text-white sm:text-[38px]">
+              <h2 className="uppercase mt-4 max-w-2xl text-[28px] font-light leading-[1.15] tracking-[0.05em] text-white sm:text-[38px]">
                 Une question sur l&apos;ostéopathie animale&nbsp;?
               </h2>
               <p className="mt-4 max-w-xl text-[16.5px] leading-relaxed text-white/75">

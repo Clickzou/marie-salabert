@@ -210,6 +210,61 @@
   transform: scale(1.06);
 }
 
+/* Reflet qui balaie un bouton plein au survol */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 -60%;
+  width: 45%;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    color-mix(in srgb, #fff 45%, transparent),
+    transparent
+  );
+  transform: skewX(-18deg);
+  transition: transform 0.9s var(--ease-out-soft);
+  pointer-events: none;
+}
+.btn-shine:hover::after {
+  transform: translateX(320%) skewX(-18deg);
+}
+
+/* Petit bloc qui se souleve au survol (pastilles, encarts, lignes de liste) */
+.hover-raise {
+  transition:
+    transform 0.5s var(--ease-out-soft),
+    box-shadow 0.5s var(--ease-out-soft),
+    border-color 0.5s ease,
+    background-color 0.5s ease;
+}
+.hover-raise:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px -22px rgba(22, 23, 26, 0.5);
+}
+
+/* Filet qui se trace sous un titre lorsqu'il apparait */
+.title-rule::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 3rem;
+  margin-top: 1.25rem;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.8s var(--ease-out-soft) 0.25s;
+}
+.is-visible .title-rule::after,
+.title-rule.is-visible::after {
+  transform: scaleX(1);
+}
+
 /* Fleche qui avance au survol d'un lien */
 .arrow-link svg {
   transition: transform 0.4s var(--ease-out-soft);
@@ -330,6 +385,41 @@
 [data-reveal="left"] {
   transform: translateX(28px);
 }
+/* apparition douce sans deplacement, pour les blocs deja en mouvement */
+[data-reveal="fade"] {
+  transform: none;
+}
+
+/* Cascade automatique des enfants directs d'un bloc revele */
+[data-reveal].cascade > * {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.8s var(--ease-out-soft),
+    transform 0.8s var(--ease-out-soft);
+}
+[data-reveal].cascade.is-visible > * {
+  opacity: 1;
+  transform: none;
+}
+[data-reveal].cascade.is-visible > *:nth-child(1) {
+  transition-delay: 60ms;
+}
+[data-reveal].cascade.is-visible > *:nth-child(2) {
+  transition-delay: 160ms;
+}
+[data-reveal].cascade.is-visible > *:nth-child(3) {
+  transition-delay: 260ms;
+}
+[data-reveal].cascade.is-visible > *:nth-child(4) {
+  transition-delay: 360ms;
+}
+[data-reveal].cascade.is-visible > *:nth-child(5) {
+  transition-delay: 460ms;
+}
+[data-reveal].cascade.is-visible > *:nth-child(n + 6) {
+  transition-delay: 560ms;
+}
 
 [data-reveal].is-visible {
   opacity: 1;
@@ -349,9 +439,14 @@
     transition-duration: 0.01ms !important;
   }
 
-  [data-reveal] {
+  [data-reveal],
+  [data-reveal].cascade > * {
     opacity: 1;
     transform: none;
     filter: none;
+  }
+
+  .title-rule::after {
+    transform: none;
   }
 }
