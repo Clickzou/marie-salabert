@@ -1,15 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import type { Dictionnaire } from "@/i18n/dictionnaire";
 
 type State = { status: "idle" | "sending" | "sent" | "error"; message?: string };
 
 const field =
-  "w-full rounded-[3px] border border-black/15 bg-white px-4 py-3 text-[15px] text-body " +
+  "w-full rounded-[10px] border border-ink/15 bg-white px-4 py-3 text-[15px] text-body " +
   "outline-none transition-colors focus:border-plum focus:ring-2 focus:ring-plum/20";
 
 /** Remplace le formulaire Elementor d'origine (memes champs, memes libelles). */
-export default function ContactForm() {
+export default function ContactForm({ d }: { d: Dictionnaire }) {
   const [state, setState] = useState<State>({ status: "idle" });
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -26,17 +27,11 @@ export default function ContactForm() {
       const json = await res.json();
       if (!res.ok) throw new Error(json.error ?? "Envoi impossible");
       form.reset();
-      setState({
-        status: "sent",
-        message: "Merci, votre message a bien été envoyé. Je vous réponds dans les meilleurs délais.",
-      });
+      setState({ status: "sent", message: d.formulaire.succes });
     } catch (error) {
       setState({
         status: "error",
-        message:
-          error instanceof Error
-            ? error.message
-            : "Une erreur est survenue, merci de réessayer ou de m'appeler directement.",
+        message: error instanceof Error ? error.message : d.formulaire.erreur,
       });
     }
   }
@@ -46,13 +41,13 @@ export default function ContactForm() {
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="nom" className="mb-1.5 block text-[14px] font-medium text-ink">
-            Nom <span aria-hidden="true">*</span>
+            {d.formulaire.nom} <span aria-hidden="true">*</span>
           </label>
           <input id="nom" name="nom" type="text" required autoComplete="family-name" className={field} />
         </div>
         <div>
           <label htmlFor="prenom" className="mb-1.5 block text-[14px] font-medium text-ink">
-            Prénom <span aria-hidden="true">*</span>
+            {d.formulaire.prenom} <span aria-hidden="true">*</span>
           </label>
           <input id="prenom" name="prenom" type="text" required autoComplete="given-name" className={field} />
         </div>
@@ -61,13 +56,13 @@ export default function ContactForm() {
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="email" className="mb-1.5 block text-[14px] font-medium text-ink">
-            E-mail
+            {d.formulaire.email}
           </label>
           <input id="email" name="email" type="email" autoComplete="email" className={field} />
         </div>
         <div>
           <label htmlFor="telephone" className="mb-1.5 block text-[14px] font-medium text-ink">
-            Tél. <span aria-hidden="true">*</span>
+            {d.formulaire.telephone} <span aria-hidden="true">*</span>
           </label>
           <input id="telephone" name="telephone" type="tel" required autoComplete="tel" className={field} />
         </div>
@@ -75,7 +70,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="message" className="mb-1.5 block text-[14px] font-medium text-ink">
-          Message <span aria-hidden="true">*</span>
+          {d.formulaire.message} <span aria-hidden="true">*</span>
         </label>
         <textarea id="message" name="message" rows={6} required className={field} />
       </div>
@@ -90,12 +85,12 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={state.status === "sending"}
-          className="w-full rounded-[3px] bg-green px-7 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-plum disabled:cursor-not-allowed disabled:opacity-60"
+          className="btn-shine w-full rounded-[10px] bg-green px-7 py-4 text-[15px] font-medium text-white transition-all duration-500 hover:-translate-y-0.5 hover:bg-green-light disabled:pointer-events-none disabled:opacity-60"
         >
-          {state.status === "sending" ? "Envoi en cours…" : "Envoyer"}
+          {state.status === "sending" ? d.formulaire.envoiEnCours : d.formulaire.envoyer}
         </button>
         <p className="text-[13px] text-muted">
-          Les champs suivis de <span aria-hidden="true">*</span> sont obligatoires.
+          {d.formulaire.champsObligatoires}
         </p>
       </div>
 

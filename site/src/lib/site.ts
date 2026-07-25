@@ -77,15 +77,16 @@ export const heroRoutes: readonly string[] = [
   routes.booking,
 ];
 
+/** `cle` renvoie vers l'entree correspondante de `nav` dans les dictionnaires. */
 export const mainNav = [
-  { label: "Accueil", href: routes.home },
-  { label: "À Propos", href: routes.about },
-  { label: "Actualités", href: routes.news },
-  { label: "Consultations", href: routes.consultations },
-  { label: "FAQ", href: routes.faq },
-  { label: "Galerie photos", href: routes.gallery },
-  { label: "Contact", href: routes.contact },
-  { label: "Symbiosteo", href: routes.symbiosteo },
+  { cle: "accueil", href: routes.home },
+  { cle: "aPropos", href: routes.about },
+  { cle: "actualites", href: routes.news },
+  { cle: "consultations", href: routes.consultations },
+  { cle: "faq", href: routes.faq },
+  { cle: "galerie", href: routes.gallery },
+  { cle: "contact", href: routes.contact },
+  { cle: "symbiosteo", href: routes.symbiosteo },
 ] as const;
 
 export const headerCta = {
@@ -98,10 +99,10 @@ export const headerCta = {
  * /a-propos/ et /contact/ qui renvoyaient une 404 : corriges vers les vraies pages.
  */
 export const footerNav = [
-  { label: "A propos", href: routes.about },
-  { label: "Contact", href: routes.contact },
-  { label: "Réserver une séance", href: routes.booking },
-  { label: "Politique de Cookies", href: routes.cookies },
-  { label: "Mentions Légales", href: routes.legal },
-  { label: "Politique de Confidentialité", href: routes.privacy },
+  { cle: "aPropos", href: routes.about },
+  { cle: "contact", href: routes.contact },
+  { cle: "reserver", href: routes.booking },
+  { cle: "cookies", href: routes.cookies },
+  { cle: "mentions", href: routes.legal },
+  { cle: "confidentialite", href: routes.privacy },
 ] as const;

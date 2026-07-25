@@ -4,10 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { cheminLocalise, cheminSansLocale, type Locale } from "@/i18n/config";
+import type { Dictionnaire } from "@/i18n/dictionnaire";
 import { headerCta, heroRoutes, mainNav, site } from "@/lib/site";
+import SelecteurLangue from "./SelecteurLangue";
 import { Container } from "./ui";
 
-export default function Header() {
+export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [lastPath, setLastPath] = useState(pathname);
@@ -21,8 +24,10 @@ export default function Header() {
   }
 
   /* En haut d'une page a banniere, l'en-tete se fond dans la photo ; des le
-     premier defilement il redevient blanc et compact. */
-  const surHero = heroRoutes.includes(pathname);
+     premier defilement il redevient blanc et compact. Le chemin est compare
+     sans son prefixe de langue. */
+  const cheminNu = cheminSansLocale(pathname);
+  const surHero = heroRoutes.includes(cheminNu);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -48,7 +53,11 @@ export default function Header() {
           transparent ? "h-[104px]" : "h-[78px]"
         }`}
       >
-        <Link href="/" className="flex shrink-0 items-center gap-3" aria-label={site.name}>
+        <Link
+          href={cheminLocalise("/", locale)}
+          className="flex shrink-0 items-center gap-3"
+          aria-label={site.name}
+        >
           <Image
             src="/images/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png"
             alt={`${site.practitioner} — ostéopathe animalier à Toulouse`}
@@ -79,11 +88,11 @@ export default function Header() {
           <ul className="flex items-center gap-4 xl:gap-6">
             {mainNav.map((item) => {
               const actif =
-                item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+                item.href === "/" ? cheminNu === "/" : cheminNu.startsWith(item.href);
               return (
                 <li key={item.href}>
                   <Link
-                    href={item.href}
+                    href={cheminLocalise(item.href, locale)}
                     aria-current={actif ? "page" : undefined}
                     className={`group relative block py-1 text-[13.5px] font-medium uppercase tracking-[0.08em] transition-colors ${
                       transparent
@@ -93,7 +102,7 @@ export default function Header() {
                           : "text-body hover:text-plum"
                     }`}
                   >
-                    {item.label}
+                    {d.nav[item.cle]}
                     {/* filet anime : plein sur la page courante, au survol ailleurs */}
                     <span
                       aria-hidden="true"
@@ -109,15 +118,17 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <SelecteurLangue locale={locale} transparent={transparent} etiquette={d.nav.changerLangue} />
+
           <Link
-            href={headerCta.href}
+            href={cheminLocalise(headerCta.href, locale)}
             className={`btn-shine hidden rounded-[10px] px-6 py-2.5 text-center text-[14px] font-medium transition-all duration-500 hover:-translate-y-0.5 sm:inline-flex ${
               transparent
                 ? "border border-white/70 text-white hover:border-white hover:bg-white hover:text-ink"
                 : "bg-gold text-ink shadow-[0_10px_24px_-16px_rgba(22,23,26,0.8)] hover:bg-gold-dark"
             }`}
           >
-            {headerCta.label}
+            {d.commun.prendreRdv}
           </Link>
 
           <button
@@ -125,7 +136,7 @@ export default function Header() {
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-controls="menu-mobile"
-            aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-label={open ? d.nav.fermerMenu : d.nav.ouvrirMenu}
             className={`grid h-11 w-11 place-items-center rounded transition-colors lg:hidden ${
               transparent ? "text-white" : "text-plum"
             }`}
@@ -147,27 +158,27 @@ export default function Header() {
             <ul className="divide-y divide-black/5">
               {mainNav.map((item) => {
                 const actif =
-                  item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+                  item.href === "/" ? cheminNu === "/" : cheminNu.startsWith(item.href);
                 return (
                   <li key={item.href}>
                     <Link
-                      href={item.href}
+                      href={cheminLocalise(item.href, locale)}
                       aria-current={actif ? "page" : undefined}
                       className={`block py-3.5 text-[14px] font-medium uppercase tracking-[0.08em] ${
                         actif ? "text-plum" : "text-body"
                       }`}
                     >
-                      {item.label}
+                      {d.nav[item.cle]}
                     </Link>
                   </li>
                 );
               })}
             </ul>
             <Link
-              href={headerCta.href}
+              href={cheminLocalise(headerCta.href, locale)}
               className="my-4 inline-flex w-full items-center justify-center rounded-[10px] bg-gold px-5 py-3 text-[15px] font-medium text-ink"
             >
-              {headerCta.label}
+              {d.commun.prendreRdv}
             </Link>
           </Container>
         </nav>

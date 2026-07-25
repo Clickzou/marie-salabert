@@ -1,0 +1,965 @@
+{
+  "nav": {
+    "accueil": "Home",
+    "aPropos": "Chi sono",
+    "actualites": "Attualità",
+    "consultations": "Consulti",
+    "faq": "FAQ",
+    "galerie": "Galleria fotografica",
+    "contact": "Contatti",
+    "symbiosteo": "Symbiosteo",
+    "ouvrirMenu": "Apri il menu",
+    "fermerMenu": "Chiudi il menu",
+    "changerLangue": "Cambia lingua"
+  },
+  "commun": {
+    "prendreRdv": "Prenota un appuntamento",
+    "reserverSeance": "Prenota una seduta di osteopatia animale",
+    "voirCertification": "Vedi la mia certificazione",
+    "meContacter": "Contattami",
+    "lireArticle": "Leggi l'articolo",
+    "voirSection": "Vai alla sezione",
+    "revenirSommaire": "Torna al sommario",
+    "faitesDefiler": "Scorri per scoprirle",
+    "precedent": "Precedente",
+    "suivant": "Successivo",
+    "telephone": "Telefono",
+    "secretariat": "Segreteria",
+    "zoneIntervention": "Zona di intervento",
+    "sommaire": "Sommario",
+    "allerAuContenu": "Vai al contenuto"
+  },
+  "footer": {
+    "plusInfos": "Altre informazioni",
+    "contact": "Contatti",
+    "suivezMoi": "Seguimi",
+    "zonesIntervention": "Zone di intervento",
+    "departements": "Dipartimenti",
+    "entrepriseIndividuelle": "Ditta individuale",
+    "siret": "Numero d'impresa",
+    "tva": "Partita IVA intracomunitaria",
+    "droits": "Tutti i diritti riservati",
+    "liens": {
+      "aPropos": "Chi sono",
+      "contact": "Contatti",
+      "reserver": "Prenota una seduta",
+      "cookies": "Informativa sui cookie",
+      "mentions": "Note legali",
+      "confidentialite": "Informativa sulla privacy"
+    },
+    "registre": "Iscritta al Registro Nazionale di Idoneità tenuto dal Consiglio Nazionale dell'Ordine dei Veterinari francese (OA 801)"
+  },
+  "cookies": {
+    "titre": "Gestione dei cookie",
+    "texte": "Questo sito non utilizza alcun tracciante pubblicitario. Alcuni contenuti esterni (mappa, video) possono installare cookie: vengono mostrati solo con il tuo consenso.",
+    "accepter": "Accetta",
+    "refuser": "Rifiuta",
+    "enSavoirPlus": "Scopri di più"
+  },
+  "formulaire": {
+    "nom": "Cognome",
+    "prenom": "Nome",
+    "email": "E-mail",
+    "telephone": "Telefono",
+    "message": "Messaggio",
+    "envoyer": "Invia",
+    "envoiEnCours": "Invio in corso…",
+    "succes": "Il tuo messaggio è stato inviato. Riceverai una risposta al più presto.",
+    "erreur": "Invio non riuscito. Puoi contattarmi direttamente per telefono.",
+    "champObligatoire": "Campo obbligatorio",
+    "champsObligatoires": "I campi contrassegnati con * sono obbligatori."
+  },
+  "avis": {
+    "titre": "I pareri dei proprietari",
+    "avisGoogle": "recensioni Google",
+    "lireTous": "Leggi le {n} recensioni su Google"
+  },
+  "accueil": {
+    "heroSousTitre": "La salute dei tuoi animali attraverso l'osteopatia",
+    "parcours": {
+      "surTitre": "Chi sono",
+      "titre": "Il mio percorso",
+      "lireArticle": "Leggi l'articolo",
+      "enSavoirPlus": "Scopri di più",
+      "paragraphes": [
+        "Da sempre appassionata di animali e terapie manuali, mi sono naturalmente orientata verso studi di osteopatia animale.",
+        "Dopo cinque anni di formazione e l'iscrizione al Registro Nazionale di Attitudine tenuto dal CNOV, mi sono stabilita nella regione di Toulouse, di cui sono originaria, per esercitare a partire dal 2020.",
+        "Lo sport, e in particolare la pratica dell'atletica leggera, ha occupato un posto importante nel mio percorso. Mi ha trasmesso valori di rigore, perseveranza e disciplina che oggi mi accompagnano nella mia pratica professionale.",
+        "Desiderosa di contribuire all'evoluzione e al riconoscimento dell'osteopatia animale in Francia, mi sono impegnata per diversi anni all'interno di associazioni che operano per la strutturazione della professione. Dal 2017 al 2020, ho in particolare ricoperto la presidenza dell'Union Française des Étudiants Ostéopathes Animaliers (UFEOA), prima di co-fondare il Collectif des Ostéopathes Animaliers, all'interno del quale sono rimasta attivamente coinvolta dal 2020 al 2025. Questo è diventato oggi il sindacato nazionale dei professionisti iscritti al RNA tenuto dal CNOV.",
+        "Animata dalla volontà di creare legami tra i diversi attori della salute animale, sono stata all'origine dell'organizzazione dei congressi SymbiOsteo nel 2019 e nel 2022, per poi co-creare SymbiOsteo, il podcast, nel 2024. Questi progetti hanno l'obiettivo di favorire gli scambi tra veterinari che praticano l'osteopatia, osteopati animalieri e osteopati umani, mettendo in luce le evoluzioni delle pratiche, l'attualità e le prospettive di ricerca in questo ambito.",
+        "Nel 2025, ho desiderato approfondire le mie conoscenze e sviluppare un approccio maggiormente orientato verso la ricerca scientifica. Ho quindi seguito il Master 2 « Gestion des Établissements de Formation et de Recherche en Santé » presso l'Université de Haute-Alsace di Mulhouse. Questa formazione ha portato alla mia prima pubblicazione scientifica sulla rivista di salute integrativa Hegel: « Ostéopathie, chiropraxie, thérapies manuelles : analyse bibliométrique (1949–2025) »."
+      ],
+      "alt": "Marie Salabert al microfono durante una conferenza sull'osteopatia animale"
+    },
+    "pourQui": {
+      "surTitre": "Ambiti di intervento",
+      "titre": "L'osteopatia animale, per chi?",
+      "voirAutres": "Vedi le altre {n} indicazioni",
+      "reduire": "Riduci",
+      "liste": [
+        {
+          "titre": "Animali da compagnia",
+          "sousTitre": "Cani · Gatti · NAC",
+          "alt": "Seduta di osteopatia su un pastore tedesco",
+          "indications": [
+            "Accompagnare la crescita, lo sviluppo e l'invecchiamento.",
+            "Ottimizzare il recupero dopo un trauma o un intervento chirurgico.",
+            "Intervenire a seguito di un episodio di zoppia al fine di ripristinare un funzionamento locomotorio ottimale.",
+            "Contribuire alla gestione globale di alcune affezioni croniche o recidivanti.",
+            "Partecipare al monitoraggio funzionale di animali con determinati disturbi digestivi cronici.",
+            "Integrarsi nel monitoraggio di alcuni disturbi metabolici.",
+            "Concorrere alla gestione degli animali riproduttori e delle problematiche associate, insieme ad allevatori e veterinari referenti.",
+            "Assicurare il monitoraggio degli animali sportivi.",
+            "Accompagnare, in complemento a una presa in carico comportamentale, insieme a veterinari ed educatori specializzati.",
+            "Seguire gli animali adottati e/o con un percorso di vita difficile.",
+            "Favorire il benessere generale."
+          ]
+        },
+        {
+          "titre": "Equidi",
+          "sousTitre": "Cavalli da corsa, da sport, da diporto · Asini · Muli",
+          "alt": "Seduta di osteopatia su un pony al pascolo",
+          "indications": [
+            "Seguire il puledro durante la crescita e contribuire al corretto sviluppo degli appiombi, in collaborazione con maniscalchi e veterinari.",
+            "Ottimizzare il monitoraggio e le prestazioni del cavallo atleta.",
+            "Migliorare la locomozione, la postura e la flessibilità.",
+            "Integrarsi nel monitoraggio globale dei cavalli affetti da disturbi metabolici o endocrini.",
+            "Adattare il monitoraggio per i cavalli con disturbi cronici (neurologici, cutanei, digestivi).",
+            "Partecipare al recupero funzionale dopo uno sforzo intenso o un periodo di convalescenza.",
+            "Inserirsi nel monitoraggio della riproduzione degli equidi, in collaborazione con gli allevamenti, gli allevatori e i veterinari (monitoraggio degli stalloni, monitoraggio delle fattrici: disturbi della fertilità, gestazione, post-parto).",
+            "Aiutare durante le fasi di transizione.",
+            "Contribuire al comfort del cavallo anziano.",
+            "Collaborare, attraverso un approccio interdisciplinare, a una presa in carico globale con i professionisti della salute e del benessere animale."
+          ]
+        },
+        {
+          "titre": "Animali da reddito",
+          "sousTitre": "Bovini · Ovini · Caprini · Suini",
+          "alt": "Mano posata su una mucca in una stalla",
+          "indications": [
+            "Favorire uno sviluppo armonioso dei giovani animali.",
+            "Integrarsi nel monitoraggio degli animali riproduttori (maschi e femmine: disturbi della fertilità, gestazione, post-parto).",
+            "Migliorare la locomozione e la postura.",
+            "Agire in collaborazione con il veterinario quando l'animale perde condizione e non riesce più a spostarsi.",
+            "Partecipare al monitoraggio degli animali da concorso.",
+            "Contribuire al benessere degli animali e al loro adattamento ai vincoli dell'allevamento.",
+            "Ottimizzare la produzione di latte."
+          ]
+        }
+      ]
+    },
+    "rendezVous": {
+      "surTitre": "Appuntamenti di osteopatia animale",
+      "titre": "Come prenotare un appuntamento",
+      "paragraphes": [
+        "La presa di appuntamento avviene per telefono; in caso di indisponibilità, vi invitiamo a lasciarmi un SMS con il motivo della vostra chiamata, il vostro indirizzo e le vostre disponibilità.",
+        "Da gennaio 2025, ho delegato la gestione della mia agenda alla mia assistente Anne-Sophie. Vi ricontatterà nel più breve tempo possibile per rispondere alle vostre domande e pianificare il vostro appuntamento. Resto comunque disponibile per uno scambio specifico riguardo al vostro animale, in caso di necessità."
+      ],
+      "tarif": "La tariffa dei consulti dipende dalla vostra localizzazione; per conoscere l'importo esatto, vi invitiamo a richiederlo al momento della presa di appuntamento.",
+      "paiement": "Metodi di pagamento accettati: assegno, bonifico o contanti.",
+      "alt": "Marie Salabert, osteopata animale"
+    },
+    "lieux": {
+      "surTitre": "Zona di intervento",
+      "titre": "I luoghi delle sedute",
+      "domicileTitre": "A domicilio, in Occitania e Nuova Aquitania",
+      "domicileTexte": "Circa 1 ora e 45 minuti di strada intorno a Tolosa, nei seguenti otto dipartimenti:",
+      "cliniqueTitre": "In clinica, ogni venerdì pomeriggio",
+      "cliniqueTexte": "Clinica veterinaria du Val Dadou, a Graulhet (81).",
+      "guyaneTitre": "Tour nella Guyana francese, due volte all'anno",
+      "guyaneTexte": "Visite a domicilio e nelle sedi seguenti:",
+      "guyaneLieux": [
+        "Clinica veterinaria dell'Ovest a Saint Laurent du Maroni",
+        "Salone di toelettatura la Niche du Bien être a Matoury",
+        "Salone di toelettatura Louloustars a Cayenne"
+      ],
+      "departements": [
+        {
+          "code": "31",
+          "nom": "Haute-Garonne"
+        },
+        {
+          "code": "81",
+          "nom": "Tarn"
+        },
+        {
+          "code": "82",
+          "nom": "Tarn-et-Garonne"
+        },
+        {
+          "code": "47",
+          "nom": "Lot-et-Garonne"
+        },
+        {
+          "code": "32",
+          "nom": "Gers"
+        },
+        {
+          "code": "46",
+          "nom": "Lot"
+        },
+        {
+          "code": "09",
+          "nom": "Ariège"
+        },
+        {
+          "code": "11",
+          "nom": "Aude"
+        }
+      ]
+    },
+    "etapes": {
+      "surTitre": "Seduta di osteopatia animale",
+      "titre": "Lo svolgimento di un consulto in 6 fasi",
+      "liste": [
+        {
+          "titre": "Anamnesi — raccolta delle informazioni sulla salute del vostro animale e creazione del vostro fascicolo",
+          "paragraphes": [
+            "Ogni consulto inizia con un momento di scambio per raccogliere le informazioni essenziali riguardanti il vostro animale e il motivo della seduta di osteopatia. Vengono affrontati la sua storia clinica, il suo stile di vita, il suo comportamento, la sua alimentazione, la sua attività e il suo ambiente, al fine di ottenere una visione globale della sua situazione.",
+            "Questa fase permette al vostro osteopata di ricollocare l'animale nel suo contesto di vita e di orientare l'esame clinico e osteopatico in modo adeguato.",
+            "Il fascicolo del vostro animale viene quindi creato e protetto tramite Djooka, il libretto sanitario digitale dedicato agli animali. Vi troverete i resoconti dei consulti così come le relative fatture."
+          ],
+          "lien": {
+            "libelle": "Scoprire Djooka",
+            "url": "https://djooka.com"
+          }
+        },
+        {
+          "titre": "Esame locomotorio e statico",
+          "paragraphes": [
+            "Il consulto prosegue con un'osservazione dinamica e statica del vostro animale.",
+            "L'analisi della locomozione permette di valutare la qualità degli spostamenti, la simmetria delle andature, le ampiezze di movimento nonché l'eventuale presenza di restrizioni di mobilità, compensazioni o irregolarità locomotorie.",
+            "L'osservazione statica completa questo esame ricercando eventuali squilibri posturali, scarichi di peso, atteggiamenti antalgici o adattamenti corporei che possano indicare un disagio funzionale."
+          ]
+        },
+        {
+          "titre": "La diagnosi di opportunità o di esclusione",
+          "paragraphes": [
+            "Viene poi eseguito un esame palpatorio approfondito per verificare che il vostro animale sia effettivamente idoneo per una presa in carico osteopatica.",
+            "Questa fase permette di individuare eventuali segnali d'allarme che richiedono un orientamento preliminare o complementare verso il vostro veterinario. L'osteopatia interviene sempre nel rispetto delle proprie competenze e in complemento al monitoraggio veterinario, quando quest'ultimo è indicato."
+          ]
+        },
+        {
+          "titre": "La diagnosi osteopatica",
+          "paragraphes": [
+            "Attraverso un esame manuale preciso, l'osteopata valuta la mobilità delle articolazioni, dei muscoli, delle fasce, dei visceri, del cranio e dei diversi tessuti dell'organismo.",
+            "Questa valutazione globale permette di individuare le restrizioni di mobilità, gli adattamenti funzionali e le compensazioni che possono contribuire agli squilibri osservati.",
+            "Un bilancio vi viene poi presentato e spiegato prima dell'attuazione del trattamento osteopatico."
+          ]
+        },
+        {
+          "titre": "Il trattamento osteopatico",
+          "paragraphes": [
+            "Il trattamento si basa esclusivamente su tecniche manuali adattate a ciascun animale, alla sua specie, alla sua età, alla sua attività e al motivo del consulto.",
+            "L'obiettivo è ripristinare una mobilità tissutale ottimale, migliorare la qualità del movimento, favorire le capacità di adattamento dell'organismo e contribuire al comfort funzionale dell'animale.",
+            "La mia pratica si basa su diversi approcci complementari: muscolo-scheletrici, miofasciali, tissutali, viscerali, liquidali, craniali, riflessi e tensegritivi."
+          ]
+        },
+        {
+          "titre": "I consigli dopo la seduta",
+          "paragraphes": [
+            "Al termine della seduta, vi viene trasmesso un resoconto, accompagnato da raccomandazioni personalizzate, adattate alle esigenze del vostro animale.",
+            "Questi consigli riguardano in particolare la gestione del riposo, la ripresa graduale dell'attività, gli eventuali esercizi consigliati nonché i punti di attenzione da osservare nei giorni successivi al consulto.",
+            "L'obiettivo è favorire un recupero ottimale e inserire la presa in carico in un percorso globale di salute e benessere, in collaborazione con il vostro veterinario quando necessario."
+          ]
+        }
+      ],
+      "photoAlt": "Marie Salabert durante un consulto di osteopatia su un maiale sulla paglia"
+    },
+    "cta": "Al tuo fianco per la salute e il benessere del tuo animale",
+    "meta": {
+      "titre": "Osteopata animale Toulouse - Marie Salabert",
+      "description": "Osteopata animale Toulouse: osteopata per cani, gatti, NAC, cavalli (sport, diporto, allevamento), asini, animali da reddito, da fattoria, esotici…",
+      "titreHero": "Marie Salabert Osteopatia Animale"
+    }
+  },
+  "aPropos": {
+    "meta": {
+      "titre": "Informazioni sull'osteopatia animale - Marie Salabert Osteopata",
+      "description": "L'osteopatia animale: la sua storia, i suoi diversi approcci (muscoloscheletrico, tissutale, fasciale, viscerale, riflesso) e il suo quadro legale in Francia."
+    },
+    "hero": {
+      "surTitre": "La disciplina",
+      "titre": "Informazioni sull'osteopatia animale",
+      "sousTitre": "La sua storia, i suoi approcci e il suo quadro legale in Francia."
+    },
+    "citation": {
+      "texte": "« La salute è uno stato di completo benessere fisico, mentale e sociale e non consiste solamente in un'assenza di malattia o infermità. »",
+      "source": "Organizzazione Mondiale della Sanità"
+    },
+    "histoire": {
+      "surTitre": "Una disciplina riconosciuta",
+      "titre": "Storia dell'osteopatia animale",
+      "photoAlt": "Mano posata sulla testa di un cavallo, disciplina nata presso gli equidi",
+      "chapitres": [
+        {
+          "periode": "Anni '80",
+          "intitule": "Gli inizi, presso gli equidi",
+          "paragraphes": [
+            "L'osteopatia animale si è sviluppata in Francia a partire dagli anni '80. Applicata inizialmente agli equidi, è stata adattata dal Dottor Veterinario Dominique Giniaux e dall'osteopata umano Pascal Evrard, che hanno ampiamente contribuito alla sua diffusione nell'ambiente equino."
+          ]
+        },
+        {
+          "periode": "Anni 2000",
+          "intitule": "Animali da compagnia, poi allevamento",
+          "paragraphes": [
+            "All'inizio degli anni 2000, questa disciplina si è progressivamente estesa agli animali da compagnia, in particolare grazie ai lavori del Dottor Veterinario Francis Lizon.",
+            "Alcuni anni più tardi, il suo sviluppo è proseguito nel settore degli animali da allevamento, in particolare per impulso del Dottor Veterinario Jean-Pierre Siméon, precursore dell'osteopatia bovina in Francia."
+          ]
+        },
+        {
+          "periode": "Oggi",
+          "intitule": "Un approccio complementare riconosciuto",
+          "paragraphes": [
+            "L'osteopatia animale viene praticata su numerose specie: animali da compagnia, cavalli, animali da allevamento, ma anche animali da sport, da lavoro o da spettacolo.",
+            "Nel corso degli ultimi decenni, gli approcci complementari di salute animale hanno conosciuto uno sviluppo importante. Sempre più proprietari desiderano integrare terapie manuali nel percorso medico dei loro animali, in un'ottica globale di prevenzione, comfort e benessere.",
+            "Grazie al suo approccio esclusivamente manuale, essa offre una valutazione funzionale globale dell'animale, ponendo attenzione alle interazioni tra i diversi sistemi dell'organismo."
+          ]
+        }
+      ],
+      "synthese": "L'osteopatia animale è una medicina integrativa detta naturale: grazie al suo approccio manuale, offre una visione globale diversa e complementare alla medicina veterinaria."
+    },
+    "approches": {
+      "surTitre": "Tecniche",
+      "titre": "I 5 approcci in osteopatia",
+      "liste": [
+        {
+          "titre": "Muscoloscheletrico (ossa, muscoli, articolazioni, legamenti, tendini)",
+          "alt": "Mani che mobilizzano la spalla di un cane sdraiato su un tappeto",
+          "paragraphes": [
+            "Attraverso questo aspetto dell'osteopatia lavoriamo per riequilibrare la struttura. Possono trattarsi di tecniche dette strutturali, miotensive o funzionali; dette dirette o indirette."
+          ]
+        },
+        {
+          "titre": "Tissutale",
+          "alt": "Mani posate piatte sul dorso di un cavallo nel box",
+          "paragraphes": [
+            "Queste tecniche possono essere applicate su tutto il corpo. Mirano a migliorare il movimento di una struttura specifica o, più globalmente, a ripristinare una buona comunicazione tissutale da un capo all'altro dell'organismo."
+          ]
+        },
+        {
+          "titre": "Fasciale",
+          "alt": "Mani che scivolano lungo il fianco di un cane in piedi",
+          "paragraphes": [
+            "Il corpo è composto in gran parte da fasce, inizialmente descritte come mesoderma nello stadio embriologico. Durante lo sviluppo dell'embrione e del feto, questo mesoderma si differenzia in diversi tipi di fasce: superficiali (derma - ipoderma); intermedie (aponeurosi, sierose e mesi splancnici, involucri dei diversi vasi) e profonde (periostio, tendini, dura madre).",
+            "Negli ultimi anni le fasce sono oggetto di numerose ricerche scientifiche, ma affascinano altrettanto gli osteopati."
+          ]
+        },
+        {
+          "titre": "Viscerale",
+          "alt": "Mani posate sulla pancia di un cane rilassato",
+          "paragraphes": [
+            "Ci interessiamo alla mobilità degli organi e alla loro attaccatura legamentosa. La mia tesi di fine studi verte in particolare sulla pratica dell'osteopatia sui mezzi di fissità dei diversi organi."
+          ]
+        },
+        {
+          "titre": "Riflesso",
+          "alt": "Dita che tracciano una linea sul collo di un cavallo",
+          "paragraphes": [
+            "Le tecniche riflesse permettono di lavorare localmente sulla pelle, al fine di indurre un'azione in profondità nell'organismo. Apprezzo particolarmente la realizzazione di tratti mirati su determinate zone, che permettono un'azione al contempo localizzata e globale sul sistema linfatico, circolatorio e nervoso."
+          ]
+        }
+      ],
+      "precedente": "Approccio precedente",
+      "suivante": "Approccio successivo"
+    },
+    "legislation": {
+      "surTitre": "Quadro normativo",
+      "titre": "Legislazione",
+      "jalons": [
+        {
+          "annee": "2011",
+          "titre": "Riconoscimento legale della pratica",
+          "texte": "Il ministero dell'Agricoltura riconosce la pratica degli osteopati animali all'interno del 12° dell'articolo L243-3 del codice rurale e della pesca marittima (CRPM)."
+        },
+        {
+          "annee": "2017",
+          "titre": "Decreti del 19 aprile",
+          "texte": "Gli atti di osteopatia animale possono essere effettuati da persone non veterinarie che hanno superato la prova nazionale di attitudine, iscritte al Registro Nazionale di Attitudine (RNA) e presenti nell'elenco tenuto dal Consiglio nazionale dell'Ordine dei veterinari (CNOV)."
+        }
+      ],
+      "obligation": "Inoltre, l'osteopata animale è tenuto a indirizzare il proprietario verso un veterinario quando lo stato dell'animale richiede una diagnosi medica, un trattamento, oppure quando i disturbi osservati superano il campo di competenza dell'osteopatia. Questo obbligo fa parte delle regole deontologiche stabilite dal Codice rurale.",
+      "autorites": "Autorità di riferimento",
+      "liens": [
+        "Elenco degli osteopati iscritti (CNOV)",
+        "veterinaire.fr — sezione Osteopatia animale",
+        "Articolo L243-3, 12° del CRPM",
+        "Articolo R.243-6 del CRPM"
+      ],
+      "logos": [
+        "Ministero dell'Agricoltura e della Sovranità alimentare",
+        "Consiglio Nazionale dell'Ordine dei Veterinari"
+      ],
+      "articleTitre": "Articolo R.243-6 del codice rurale e della pesca marittima"
+    },
+    "interdisciplinarite": {
+      "paragraphes": [
+        "Nel corso di questo percorso complementare, mi sono appassionata all'interdisciplinarità, ossia alla collaborazione tra i diversi professionisti della salute animale. Sono convinta che la messa in comune delle nostre competenze e dei nostri approcci permetta di offrire una presa in carico più completa e più adatta a ogni animale.",
+        "Così, al di là del mio accompagnamento in osteopatia, mi impegno sempre a consigliarvi e, quando ciò è pertinente, a indirizzarvi verso il professionista più adatto alle esigenze specifiche del vostro animale."
+      ],
+      "signature": "Marie Salabert",
+      "photoAlt": "Marie Salabert al microfono durante una conferenza sull'osteopatia animale"
+    }
+  },
+  "contact": {
+    "meta": {
+      "titre": "Contatto osteopata animale: Marie Salabert",
+      "description": "Osteopatia animale per ogni tipo di animale. Contattatemi per prenotare una seduta o per saperne di più sull'osteopatia animale."
+    },
+    "hero": {
+      "surTitre": "Contatto",
+      "titre": "Prendere appuntamento",
+      "sousTitre": "Per telefono, per SMS o tramite il modulo: la vostra richiesta viene esaminata con attenzione."
+    },
+    "meJoindre": {
+      "surTitre": "Contattarmi",
+      "titre": "Una chiamata è sufficiente per concordare un orario"
+    },
+    "cartes": {
+      "telephoneTexte": "In caso di indisponibilità, lasciatemi un SMS con il motivo, il vostro indirizzo e le vostre disponibilità.",
+      "zoneTexte": "Consulti a domicilio, circa 1h45 di strada intorno a Toulouse.",
+      "secretariatTexte": "Anne-Sophie gestisce l'agenda e vi ricontatterà il prima possibile."
+    },
+    "formulaire": {
+      "titre": "Modulo di contatto",
+      "intro": "Per facilitare l'organizzazione degli spostamenti, precisate nel vostro messaggio:",
+      "puces": [
+        "L'indirizzo dove si trova il vostro animale",
+        "Le vostre disponibilità",
+        "Il motivo del consulto"
+      ]
+    },
+    "secteur": {
+      "surTitre": "Zona d'intervento",
+      "titre": "Circa 1h45 di strada intorno a Toulouse"
+    }
+  },
+  "galerie": {
+    "meta": {
+      "titre": "Galleria fotografica - Osteopatia animale - Marie Salabert",
+      "description": "Scoprite in immagini i consulti di osteopatia animale di Marie Salabert: cavalli, cani, gatti, NAC e animali da fattoria."
+    },
+    "hero": {
+      "surTitre": "In immagini",
+      "titre": "Galleria fotografica",
+      "sousTitre": "{n} foto di consulti: cavalli, cani, gatti, NAC e animali da fattoria."
+    },
+    "afficherPlus": "Mostra altre foto",
+    "visionneuse": "Visualizzatore di foto",
+    "fermer": "Chiudere il visualizzatore",
+    "photoPrecedente": "Foto precedente",
+    "photoSuivante": "Foto successiva",
+    "agrandir": "Ingrandire la foto {i} su {n}"
+  },
+  "symbiosteo": {
+    "meta": {
+      "titre": "SymbiOsteO Le Podcast - Marie Salabert Ostéopathe",
+      "description": "SymbiOsteO Le Podcast, creato nel gennaio 2024, dà voce ai protagonisti del mondo dell'osteopatia animale, veterinaria e umana, della salute e agli esploratori del vivente."
+    },
+    "accroche": "Creato nel gennaio 2024, SymbiOsteO Le Podcast è un media che dà voce ai protagonisti del mondo dell'Osteopatia (animale, veterinaria e umana), della salute, agli esploratori del vivente, agli appassionati e curiosi.",
+    "paragraphe": "Questo spazio di dialogo e scambio ha lo scopo di raccogliere punti di vista diversificati, favorevoli alla costruzione di un pensiero complesso. Crediamo nella virtù del dialogo come mezzo per creare legami. Attraverso questo podcast ci proponiamo di strutturare una comunità e come progetto di organizzare eventi.",
+    "formatsIntro": "Diversi formati di episodi:",
+    "formats": [
+      "🎤 Interviste",
+      "🏵️ Tavole rotonde",
+      "👫 Duo: Amélie & Marie",
+      "🧍‍♀️ Solo: Amélie o Marie"
+    ],
+    "animePar": "Condotti da Amélie Gardelle e Marie Salabert — contatto",
+    "ecouterSpotify": "Ascolta su Spotify",
+    "ecouterApple": "Ascolta su Apple Podcasts",
+    "suivreSpotify": "Segui il podcast su Spotify",
+    "episodesTitre": "I nostri episodi da ascoltare",
+    "episodesCompteur": "{n} episodi disponibili",
+    "ecouterEpisode": "Ascolta l'episodio",
+    "photoAlt": "Microfono da studio e cuffie, set del podcast SymbiOsteO"
+  },
+  "actualites": {
+    "meta": {
+      "titre": "Scoprite le novità dell'osteopatia animale con Marie Salabert",
+      "description": "Esplorate gli ultimi progressi dell'osteopatia animale con Marie Salabert. Cure innovative e consigli per i vostri animali."
+    },
+    "surTitre": "Il giornale",
+    "titre": "Le novità della mia attività in osteopatia animale",
+    "accroche": "Dal 2020, questa rubrica mi permette di condividere l'evoluzione della mia attività, i miei progetti, così come le diverse innovazioni e approcci che sviluppo in osteopatia animale.",
+    "paragraphes": [
+      "Vi troverete articoli su studi recenti, conferenze tenute, casi pratici, così come eventi e formazioni che arricchiscono la mia pratica quotidiana.",
+      "Questo spazio ha l'obiettivo di farvi scoprire i progressi del settore, di comprendere meglio i metodi di presa in carico proposti per i vostri animali e di seguire l'evoluzione del mio lavoro al servizio della loro salute e del loro benessere."
+    ],
+    "photoAlt": "Ritratto di Marie Salabert, osteopata animale",
+    "tousLesArticles": "Tutti gli articoli",
+    "compteur": "{n} pubblicazioni dal 2020",
+    "cta": {
+      "surTitre": "Un consiglio?",
+      "titre": "Una domanda sull'osteopatia animale?",
+      "texte": "Per saperne di più sulle cure proposte per il vostro animale, scrivetemi o chiamate la segreteria."
+    },
+    "article": {
+      "categorie": "Novità",
+      "partage": "Vi piace questo articolo?",
+      "aLireAussi": "Da leggere anche"
+    }
+  },
+  "consultations": {
+    "listes": {
+      "troublesLocomoteurs": [
+        "Andatura irregolare",
+        "Andatura asimmetrica",
+        "Spostamenti in obliquo",
+        "Appiombi difettosi",
+        "Rigidità muscolari"
+      ],
+      "accompagnementEmotionnel": [
+        "Cambiamento improvviso di comportamento",
+        "Sensibilità accresciuta, inquietudine o reazioni insolite",
+        "Accompagnamento dopo un evento stressante o traumatico",
+        "Adattamento in caso di cambiamento di vita",
+        "Difficoltà legate alla perdita di un consimile o di un membro della famiglia"
+      ],
+      "premiereIntention": [
+        "Difficoltà locomotorie improvvise (dorsalgia, lombalgia)",
+        "Irregolarità improvvisa senza soppressione d'appoggio",
+        "Crisi di artrosi",
+        "Post traumatico non lesionale (caduta, litigio tra conspecifici)"
+      ],
+      "chroniquesAmelioration": [
+        "Disturbi digestivi (vomito, diarrea cronica)",
+        "Disturbi respiratori (tosse, asma)",
+        "Otiti esterne",
+        "Disturbi cutanei (dermite, dermatite atopica, depigmentazione localizzata, prurito)",
+        "Cicatrizzazione difettosa (post operatoria, ferite da leccamento, automutilazione)",
+        "Alcuni casi di infertilità",
+        "Incontinenza urinaria (in particolare quelle conseguenti a sterilizzazione)"
+      ],
+      "chroniquesConfort": [
+        "Displasia",
+        "Distorsioni e tendiniti",
+        "Osteocondrite dissecante",
+        "Insufficienza renale cronica",
+        "Affezioni neurologiche (ernia discale, ictus, atassia, crisi epilettica, embolia fibrocartilaginea)",
+        "Animali incidentati / amputati",
+        "Animali in fin di vita (perdita di equilibrio, rifiuto dell'alimentazione)"
+      ],
+      "equinEtapes": [
+        "l'ottimizzazione del comfort locomotore e della mobilità",
+        "l'accompagnamento del cavallo sportivo nella sua preparazione e nel suo recupero",
+        "la riabilitazione funzionale dopo un periodo di fermo o di convalescenza",
+        "l'equilibrio funzionale della coppia cavaliere-cavallo",
+        "l'accompagnamento dei cavalli sensibili o che presentano modifiche comportamentali in aggiunta a una presa in carico adeguata"
+      ],
+      "equinMotifs": [
+        "Bilancio osteopatico annuale",
+        "Monitoraggio del puledro (riflesso di suzione, appiombi difettosi)",
+        "Preparazione a scadenze sportive o a una stagione di competizioni / corse",
+        "Accompagnamento dopo uno sforzo intenso",
+        "Rigidità, perdita di scioltezza o difficoltà nel lavoro montato",
+        "Supporto nell'ambito di affezioni neurologiche (atassia, wobbler, harper, shivering, headshaking ecc.)",
+        "Modifica delle andature o della locomozione",
+        "A seguito di un trauma (caduta, incidente nel van, conflitto tra conspecifici…)",
+        "Supporto nell'ambito di affezioni metaboliche e/o endocrine (laminite, Cushing, SME, PSSM, ecc.)",
+        "Accompagnamento dopo un periodo di convalescenza",
+        "Riabilitazione in caso di cambiamento di attività o di stile di vita",
+        "Monitoraggio delle fattrici riproduttrici (fertilità, gestazione, post-parto)",
+        "Monitoraggio degli stalloni riproduttori",
+        "Cambiamenti comportamentali o perdita di fiducia",
+        "Difficoltà nella relazione cavaliere-cavallo"
+      ],
+      "equinApprocheGlobale": [
+        "la medicina veterinaria",
+        "l'odontoiatria equina",
+        "la maniscalcheria e la podologia",
+        "la fisioterapia e le altre terapie complementari adatte (agopuntura, shiatsu, massaggi)",
+        "il monitoraggio del cavaliere e l'equilibrio della coppia cavaliere-cavallo",
+        "un'attrezzatura di lavoro adeguata",
+        "un ambiente che rispetti i bisogni fisici e sociali del cavallo",
+        "un'alimentazione adeguata",
+        "una migliore comprensione del comportamento equino"
+      ],
+      "chienMotifs": [
+        "Bilancio osteopatico annuale",
+        "Accompagnamento di cani sportivi, da lavoro o che praticano un'attività regolare",
+        "Preparazione alle scadenze sportive e recupero dopo lo sforzo",
+        "Aiuto nell'ambito di affezioni neurologiche (epilessia, ernia discale, embolia fibrocartilaginea, wobbler, sindrome vestibolare, ecc.)",
+        "In seguito a un trauma (caduta, incidente, alterco tra consimili…)",
+        "Accompagnamento dopo un evento stressante o traumatico",
+        "In seguito a un cambiamento di vita o a un'adozione",
+        "Cambiamenti comportamentali",
+        "Difficoltà di socievolezza (in complemento a un accompagnamento con un educatore o un comportamentalista, se necessario)",
+        "Manifestazioni legate allo stress o al disagio, come comportamenti di automutilazione o leccamento eccessivo che possono provocare zone di depilazione",
+        "Monitoraggio durante la crescita",
+        "Monitoraggio degli animali riproduttori (fertilità, gestazione, post-parto)",
+        "Affezioni locomotorie (zoppie, rigidità, compensazioni funzionali…)",
+        "Accompagnamento dopo un intervento chirurgico",
+        "Affezioni digestive o respiratorie croniche, in complemento al monitoraggio veterinario"
+      ],
+      "chatMotifs": [
+        "Bilancio osteopatico annuale",
+        "Monitoraggio durante la crescita",
+        "In seguito a un trauma",
+        "Accompagnamento dopo un intervento chirurgico",
+        "In seguito a un cambiamento di vita o a un'adozione",
+        "Supporto nell'ambito di affezioni neurologiche (epilessia, sindrome vestibolare, ecc.)",
+        "Cambiamenti comportamentali (gatto meno socievole, riduzione delle interazioni, difficoltà a saltare o a spostarsi…)",
+        "Manifestazioni legate allo stress o al disagio, come il grooming eccessivo che può portare a leccamento compulsivo e a zone di perdita di pelo",
+        "Monitoraggio delle femmine riproduttrici (gestazione e post-parto)",
+        "Disturbi locomotori",
+        "Disturbi digestivi o respiratori, a complemento del monitoraggio veterinario"
+      ],
+      "nacMotifs": [
+        "Cambiamenti comportamentali",
+        "Disturbi locomotori",
+        "Difficoltà di mobilità",
+        "Aiutare in caso di disturbi digestivi, in complemento al monitoraggio veterinario",
+        "Alcuni disturbi specifici come l'encefalitozoonosi, i disturbi vestibolari o la sindrome della testa inclinata nel coniglio, dopo valutazione veterinaria"
+      ],
+      "lapinsRongeurs": [
+        "Cambiamenti di comportamento",
+        "Disturbi locomotori o difficoltà di movimento",
+        "Disturbi digestivi e alterazioni del transito, in complemento a una presa in carico veterinaria",
+        "Accompagnamento in caso di disturbi legati ai boli di pelo (tricobezoari), in complemento alle raccomandazioni veterinarie",
+        "Difficoltà alimentari o sospetto di disturbi dentali che richiedono una valutazione veterinaria, in particolare in caso di crescita anomala dei denti o problemi di malocclusione"
+      ],
+      "reptiles": [
+        "Postumi di traumi",
+        "Cambiamenti comportamentali",
+        "Difficoltà locomotorie",
+        "Incapacità o difficoltà ad alimentarsi",
+        "Difficoltà legate ai periodi di muta",
+        "Accompagnamento generale del comfort e dell'adattamento funzionale, in aggiunta al monitoraggio veterinario specializzato quando necessario"
+      ],
+      "compagnieApprocheGlobale": [
+        "La medicina veterinaria",
+        "Le cure dentali adeguate",
+        "La fisioterapia e altri approcci complementari adeguati (agopuntura, shiatsu, massaggio)",
+        "La toelettatura e le cure di mantenimento",
+        "Un'attrezzatura adeguata (imbracatura, accessori…)",
+        "Un ambiente che rispetti i bisogni dell'animale",
+        "Interazioni sociali adeguate con i propri simili",
+        "L'educazione e l'accompagnamento comportamentale",
+        "Un'alimentazione adeguata"
+      ],
+      "elevageMotifs": [
+        "Analisi funzionale della mandria al fine di individuare le situazioni che possono beneficiare di un accompagnamento osteopatico",
+        "Animali che presentano difficoltà nel muoversi o che restano sdraiati",
+        "Affezioni locomotorie e zoppie",
+        "Esiti di traumi",
+        "Problematiche legate alla riproduzione (fertilità, monitoraggio dei riproduttori)",
+        "Monitoraggio post-parto o post-parto bovino",
+        "Difficoltà di adattamento del neonato (assenza di riflesso di suzione, difficoltà di avvio)",
+        "Perdita dello stato generale",
+        "Calo della produzione o della resa lattiera"
+      ],
+      "elevageApprocheGlobale": [
+        "La medicina veterinaria",
+        "Le cure di pedicure e odontoiatria adeguate",
+        "Un ambiente di vita adatto ai bisogni degli animali",
+        "Condizioni di allevamento che favoriscono il comfort e i comportamenti naturali",
+        "Interazioni sociali rispettose dei bisogni della specie",
+        "Un arricchimento dell'ambiente di vita",
+        "Un'alimentazione adeguata",
+        "Approcci complementari che possono contribuire al benessere animale (Agopuntura, fitoterapia)"
+      ]
+    },
+    "etapesDeVie": [
+      {
+        "label": "Durante la crescita",
+        "texte": "monitoraggio degli appiombi e accompagnamento dello sviluppo, della mobilità e degli adattamenti corporei (da 1 a 3 consulti all'anno secondo le necessità)."
+      },
+      {
+        "label": "In età adulta",
+        "texte": "monitoraggio preventivo e mantenimento del comfort funzionale (in media 1 consulto annuale secondo lo stile di vita)."
+      },
+      {
+        "label": "Negli animali sportivi",
+        "texte": "dalla preparazione fisica, al recupero e al monitoraggio delle scadenze sportive."
+      },
+      {
+        "label": "Negli animali anziani",
+        "texte": "sostegno del comfort, della mobilità e della qualità di vita fin dalla comparsa dei primi segni di invecchiamento."
+      },
+      {
+        "label": "Negli animali in fine vita",
+        "texte": "accompagnamento del comfort e del benessere."
+      }
+    ],
+    "sommaire": [
+      {
+        "label": "Equidi",
+        "detail": "Cavalli sportivi, da tempo libero, puledri, asini e muli"
+      },
+      {
+        "label": "Cani · Gatti · NAC",
+        "detail": "Crescita, sport, invecchiamento e convalescenza"
+      },
+      {
+        "label": "Animali da reddito",
+        "detail": "Bovini, ovini, caprini e suini, in allevamento"
+      }
+    ],
+    "departements": [
+      {
+        "code": "31",
+        "nom": "Haute-Garonne"
+      },
+      {
+        "code": "81",
+        "nom": "Tarn"
+      },
+      {
+        "code": "82",
+        "nom": "Tarn-et-Garonne"
+      },
+      {
+        "code": "47",
+        "nom": "Lot-et-Garonne"
+      },
+      {
+        "code": "46",
+        "nom": "Lot"
+      },
+      {
+        "code": "32",
+        "nom": "Gers"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron"
+      },
+      {
+        "code": "09",
+        "nom": "Ariège"
+      },
+      {
+        "code": "11",
+        "nom": "Aude"
+      }
+    ],
+    "meta": {
+      "titre": "Consulti di osteopatia animale a Toulouse - cavallo, cane, gatto, NAC, allevamento | Marie Salabert",
+      "description": "Osteopatia animale a Toulouse e in Occitania: consulti per cavalli ed equidi, cani, gatti, NAC (conigli, roditori, rettili) e animali da reddito (bovini, ovini, caprini, suini). Motivi, aree di intervento e approccio complementare al monitoraggio veterinario."
+    },
+    "hero": {
+      "surTitre": "Prestazioni",
+      "titre": "Consulti in osteopatia animale",
+      "sousTitre": "Cavalli, cani, gatti, NAC e animali da reddito, in Occitania"
+    },
+    "sommaireTitre": "Quale animale desidera accompagnare?",
+    "general": {
+      "surTitre": "Dove può intervenire l'osteopatia animale",
+      "titre": "Un accompagnamento lungo tutta la vita del vostro animale",
+      "intro": "L'osteopatia animale può integrarsi nel monitoraggio globale del vostro animale in diversi momenti chiave:"
+    },
+    "motifs": {
+      "titre": "Motivi di consulto frequenti",
+      "locomoteurs": "Disturbi locomotori",
+      "emotionnel": "Supporto emozionale e comportamentale",
+      "emotionnelNote": "In aggiunta a un percorso con un educatore o un veterinario comportamentalista quando necessario.",
+      "premiereIntentionTitre": "In prima istanza, secondo lo stato del vostro animale",
+      "premiereIntentionTexte1": "L'osteopatia animale può intervenire in prima istanza solo in base allo stato dell'animale: uno scambio telefonico approfondito vi permetterà di accertarvene; in caso contrario sarete indirizzati verso il vostro veterinario.",
+      "premiereIntentionTexte2": "Questi stessi motivi possono essere trattati anche con una seduta di osteopatia dopo una visita dal vostro veterinario. In caso di dubbio, una valutazione preliminare del dolore è necessaria per svolgere la seduta nelle migliori condizioni."
+    },
+    "chroniques": {
+      "titre": "Osteopatia e accompagnamento delle affezioni croniche",
+      "avertissement": "L'osteopatia animale interviene in complemento al monitoraggio veterinario stabilito. Non sostituisce né la diagnosi né i trattamenti prescritti dal vostro veterinario.",
+      "avertissementFort": "in complemento",
+      "ameliorationTitre": "Verso un miglioramento del comfort e della qualità di vita",
+      "ameliorationNote": "In alcune situazioni, l'osteopatia può contribuire a migliorare totalmente o parzialmente disturbi cronici detti recidivanti.",
+      "confortTitre": "In accompagnamento alla presa in carico veterinaria",
+      "confortNote": "Disturbi cronici in cui la seduta ha lo scopo di apportare comfort e/o di accompagnare la presa in carico effettuata dal vostro veterinario."
+    },
+    "collaboration": {
+      "surTitre": "Con il vostro veterinario",
+      "titre": "Un approccio collaborativo per la salute del vostro animale",
+      "texte1": "L'osteopata animale può confrontarsi con il vostro veterinario curante, previo vostro consenso, al fine di favorire una presa in carico coerente e di trasmettergli le proprie osservazioni.",
+      "texte2": "Poiché ogni animale è unico, un confronto permetterà di valutare la situazione, rispondere alle vostre domande e orientarvi verso l'approccio più adatto al vostro compagno."
+    },
+    "secteur": {
+      "surTitre": "Zona di intervento",
+      "intro": "Interventi principali, entro circa 1h45 di strada intorno a Toulouse, nei seguenti dipartimenti:",
+      "complement": "Altri dipartimenti possono essere presi in considerazione in occasione dell'organizzazione di giri di consulti."
+    },
+    "equides": {
+      "numero": "Osteopatia equina",
+      "titre": "Un approccio adatto a tutti i profili di equidi",
+      "chapo": "L'osteopatia animale occupa oggi un posto importante nel monitoraggio globale dei cavalli. Numerosi proprietari integrano una o più consultazioni annuali nella gestione del benessere e del comfort del proprio equide, in funzione della sua età, della sua attività, del suo stile di vita e delle sue esigenze.",
+      "etapesIntro": "Al di là dei motivi di consulto comuni a tutte le specie, l'osteopatia può accompagnare il cavallo nelle diverse tappe della sua vita, in particolare:",
+      "etapesFin": "L'osteopatia si rivolge a tutti gli equidi: cavalli sportivi, cavalli da tempo libero, cavalli da spettacolo, cavalli da lavoro, cavalli anziani, puledri, asini e muli.",
+      "motifsTitre": "Alcuni motivi di consulto specifici per i cavalli",
+      "globaleTitre": "Un approccio globale al benessere equino",
+      "globaleIntro": "La salute e il benessere del cavallo si basano su una presa in carico globale che associa diverse competenze complementari. L'osteopatia animale si inserisce in questo percorso accanto a:",
+      "globaleConclusione": "L'obiettivo è favorire una presa in carico coerente, rispettosa e adatta alle esigenze individuali di ogni cavallo.",
+      "photoAlt": "Marie Salabert mentre mobilizza il posteriore di un cavallo in scuderia",
+      "globaleConclusion": "L'obiettivo è favorire una presa in carico coerente, rispettosa e adatta alle esigenze individuali di ogni cavallo."
+    },
+    "compagnie": {
+      "numero": "Cani · Gatti · NAC",
+      "titre": "Osteopatia canina, felina e per i nuovi animali da compagnia (NAC)",
+      "chapo": "Dopo essersi ampiamente sviluppata nell'ambito equino, l'osteopatia animale occupa oggi un posto crescente nel monitoraggio degli animali da compagnia. Può accompagnare cani, gatti e NAC lungo tutto il corso della loro vita.",
+      "lieuFixeTitre": "Un luogo di consulto fisso",
+      "lieuFixeTexte1": "Le zone di intervento sono identiche a quelle proposte per gli equini: 31, 81, 82, 47, 32, 09, 11, 12 e 46. I consulti possono essere effettuati a domicilio per rispettare le abitudini e l'ambiente del vostro animale.",
+      "lieuFixeTexte2": "Da 6 anni, ricevo tutti i venerdì pomeriggio presso la clinica veterinaria del Val Dadou a Graulhet (81). Per qualsiasi prenotazione presso questa sede, vi preghiamo di contattare direttamente la clinica al",
+      "chienTitre": "Motivi di consulto comuni nel cane",
+      "chatTitre": "Motivi di consulto comuni nel gatto",
+      "nacTitre": "Alcuni motivi di consulto comuni nei nuovi animali da compagnia (NAC)",
+      "nacGeneraux": "NAC — motivi generali",
+      "lapinsTitre": "Conigli e roditori",
+      "reptilesTitre": "Rettili",
+      "globaleTitre": "Un approccio globale al benessere del vostro animale",
+      "globaleIntro": "La salute e il benessere del vostro animale si basano su una visione globale che associa diverse competenze e diversi fattori essenziali. L'osteopatia animale si inserisce in questo percorso accanto a:",
+      "globaleConclusion": "L'obiettivo è proporre una presa in carico coerente e personalizzata, ponendo il comfort, la salute e il benessere dell'animale al centro delle priorità.",
+      "photoChienAlt": "Marie Salabert con un cane di tipo border collie",
+      "photoChatAlt": "Marie Salabert con in braccio un gatto nero durante un consulto"
+    },
+    "rente": {
+      "numero": "Osteopatia bovina, ovina, caprina e suina",
+      "titre": "Un approccio complementare al servizio degli allevamenti",
+      "chapo": "L'osteopatia animale si è sviluppata nel settore dell'allevamento a partire dagli anni 2000. Storicamente, gli allevatori hanno sempre fatto ricorso, nelle campagne, a pratiche manuali tradizionali per accompagnare i loro animali in caso di alcune difficoltà funzionali.",
+      "paragraphes": [
+        "Oggi, l'osteopatia animale si inserisce in questa continuità proponendo un approccio manuale strutturato, adatto alle esigenze attuali del benessere animale e complementare al monitoraggio veterinario.",
+        "Essendo cresciuta in un ambiente rurale, ho avuto la fortuna di crescere a contatto con diversi animali da allevamento (bovini da latte, suini, conigli). Questa vicinanza con il mondo agricolo mi ha permesso di comprendere le realtà del territorio e le sfide quotidiane degli allevatori.",
+        "Attraverso l'osteopatia animale, l'obiettivo è oggi contribuire al comfort degli animali da allevamento e accompagnare i professionisti in un percorso globale di benessere animale."
+      ],
+      "motifsTitre": "Alcuni motivi di consulto comuni in allevamento",
+      "motifsNote": "L'osteopatia animale interviene sempre in complemento alla medicina veterinaria e non si sostituisce alla diagnosi o ai trattamenti prescritti dal veterinario. Un consulto può in particolare essere previsto in caso di:",
+      "globaleTitre": "Un approccio globale al benessere degli animali da allevamento",
+      "globaleIntro": "La salute e il benessere degli animali da allevamento si basano su una presa in carico globale che associa diversi fattori essenziali. L'osteopatia animale si inserisce in questo percorso accanto a:",
+      "globaleConclusion": "L'obiettivo è accompagnare gli allevatori in un percorso coerente, rispettoso e adatto alle esigenze specifiche di ogni animale e di ogni allevamento.",
+      "photoAlt": "Marie Salabert durante un consulto di osteopatia con un maiale sulla paglia"
+    }
+  },
+  "faq": {
+    "meta": {
+      "titre": "FAQ Osteopatia Animale: risposte alle vostre domande",
+      "description": "Formazione, svolgimento delle sedute, prevenzione, rimborso, casi particolari: tutte le risposte sull'osteopatia animale a Toulouse e dintorni."
+    },
+    "hero": {
+      "surTitre": "FAQ",
+      "titre": "Le domande più frequenti",
+      "sousTitre": "Formazione, svolgimento di una seduta, situazioni particolari: le risposte alle domande più ricorrenti."
+    },
+    "intro": {
+      "surTitre": "Le vostre domande",
+      "titre": "Tutto ciò che mi viene chiesto prima di una seduta",
+      "accroche": "In questa pagina troverete le domande più frequentemente poste dai miei clienti durante i consulti o per telefono prima di prendere un appuntamento.",
+      "complement": "Resto sempre disponibile per qualsiasi altra domanda.",
+      "bouton": "Bisogno di aiuto? Contattatemi"
+    },
+    "groupes": {
+      "formation": "Diventare osteopata animale & formazione",
+      "comprendre": "Comprendere l'osteopatia animale",
+      "consultation": "Il consulto in pratica",
+      "situations": "Situazioni particolari"
+    },
+    "compteur": "{n} domande",
+    "items": {
+      "formation": [
+        {
+          "question": "Come si diventa osteopata animale? Bisogna essere veterinari o osteopati DO in precedenza?",
+          "reponse": "In Francia, non è necessario essere veterinari o osteopati umani diplomati (DO) per esercitare l'osteopatia animale. Diversi percorsi formativi permettono di accedere a questa professione, a condizione di rispondere ai requisiti normativi in vigore, in particolare il superamento della prova nazionale attitudinale organizzata dal Conseil national de l'Ordre des vétérinaires (CNOV), indispensabile per praticare l'osteopatia animale in qualità di non veterinario. Esistono tre principali percorsi formativi: 1. Seguire una formazione specializzata in osteopatia animale — È possibile iscriversi a una scuola di osteopatia animale che propone generalmente un percorso di studi di cinque anni comprendente insegnamenti teorici, pratici e clinici. Al termine di questa formazione, il candidato deve superare l'esame nazionale attitudinale organizzato dal CNOV per essere autorizzato a esercitare l'osteopatia animale in Francia. 2. Formarsi in osteopatia umana per poi specializzarsi in osteopatia animale — Gli osteopati umani diplomati possono anche completare il proprio percorso con una formazione specifica in osteopatia animale. Devono tuttavia rispondere ai requisiti normativi applicabili ai non veterinari e superare la prova nazionale attitudinale del CNOV. È essenziale scegliere una formazione completa, che integri lo studio delle diverse specie animali e una preparazione adeguata alle esigenze dell'esame nazionale. 3. Diventare veterinario per poi specializzarsi in osteopatia veterinaria — Gli studenti veterinari possono formarsi all'osteopatia animale nell'ambito di una specializzazione complementare, in particolare tramite il conseguimento di un Diplôme Inter-Écoles (DIE) di osteopatia veterinaria. Questo percorso permette di integrare l'approccio osteopatico in una formazione medica veterinaria completa."
+        },
+        {
+          "question": "Quali sono le principali materie insegnate in osteopatia animale?",
+          "reponse": "La formazione da osteopata animale si basa su un insegnamento pluridisciplinare che associa conoscenze scientifiche, comprensione del funzionamento dell'animale e apprendimento delle tecniche manuali. Le principali materie teoriche fondamentali comprendono: Anatomia animale, per conoscere con precisione le strutture del corpo e le loro interazioni; Fisiologia, per comprendere il funzionamento dei diversi sistemi dell'organismo; Biomeccanica e locomozione, indispensabili per l'analisi del movimento e degli adattamenti corporei; Semeiotica veterinaria, che permette di individuare i segni che richiedono un invio a un veterinario. Altri insegnamenti completano la formazione: biologia cellulare; biochimica; istologia; fisiopatologia; zootecnia; nutrizione animale; etologia; benessere animale; etica e deontologia; sanità pubblica. La formazione pratica permette poi di acquisire la padronanza dei diversi approcci osteopatici, in particolare le tecniche muscolo-scheletriche, fasciali, tissutali, viscerali, craniali e altri approcci adattati alle diverse specie."
+        }
+      ],
+      "comprendre": [
+        {
+          "question": "Un consulto di osteopatia animale richiede necessariamente manipolazioni che fanno «scrocchiare» le articolazioni?",
+          "reponse": "No. Contrariamente ad alcune idee diffuse, un consulto di osteopatia animale non si basa necessariamente su manipolazioni con rumori articolari. L'osteopatia utilizza diverse tecniche manuali adattate a ogni animale, alla sua età, alla sua specie, al suo stato di salute e alla sua sensibilità. Gli approcci possono essere articolari, muscolari, fasciali, tissutali, viscerali o anche craniali, senza una ricerca sistematica dello «scrocchio». L'obiettivo non è provocare un movimento forzato, ma accompagnare i tessuti verso una migliore mobilità e un funzionamento più equilibrato, nel rispetto del comfort dell'animale."
+        },
+        {
+          "question": "A partire da quale età un animale può consultare un osteopata?",
+          "reponse": "L'osteopatia si rivolge agli animali di tutte le età. Un consulto può essere previsto fin dai primi giorni di vita, durante la crescita, in età adulta o negli animali anziani, in base alle loro esigenze."
+        },
+        {
+          "question": "Il mio animale ha bisogno di una prescrizione veterinaria?",
+          "reponse": "No. In Francia, un osteopata animale iscritto al Registre National d'Aptitude (RNA) può ricevere un animale senza prescrizione veterinaria. Tuttavia, se lo stato dell'animale lo richiede, indirizzerà sistematicamente il proprietario verso il proprio veterinario."
+        },
+        {
+          "question": "L'osteopatia animale sostituisce la medicina veterinaria?",
+          "reponse": "No. L'osteopatia è un approccio complementare al monitoraggio veterinario. Non sostituisce né una diagnosi medica, né un trattamento veterinario quando quest'ultimo è necessario."
+        }
+      ],
+      "consultation": [
+        {
+          "question": "Come si svolge un consulto?",
+          "risposta": "Un consulto comprende uno scambio sulla storia clinica del vostro animale, un esame locomotorio e posturale, un esame palpatorio, una diagnosi osteopatica e infine un trattamento manuale adeguato. Vengono poi forniti consigli personalizzati per ottimizzare il recupero del vostro animale."
+        },
+        {
+          "question": "Le manipolazioni sono dolorose?",
+          "risposta": "Le tecniche utilizzate sono adattate a ogni animale e al suo stato di salute. Alcuni animali possono manifestare una sensibilità nelle zone già dolorose, ma le manipolazioni vengono eseguite nel rispetto del loro comfort."
+        },
+        {
+          "question": "Quanto dura un consulto?",
+          "risposta": "La durata media è di 35 minuti a 1 ora, in funzione della specie, del motivo del consulto e delle esigenze dell'animale."
+        },
+        {
+          "question": "Quante sedute sono necessarie?",
+          "risposta": "Ogni animale è unico. A volte una sola seduta può essere sufficiente, mentre alcune situazioni richiedono un monitoraggio regolare. Il numero di consulti viene stabilito in base all'evoluzione dell'animale e alle sue esigenze."
+        },
+        {
+          "question": "Il mio animale deve riposare dopo la seduta?",
+          "risposta": "Sì. Un periodo di riposo è generalmente consigliato nelle 24-72 ore successive al consulto, per permettere all'organismo di adattarsi ai cambiamenti indotti dal trattamento. Al termine della seduta vi verranno fornite raccomandazioni adeguate."
+        },
+        {
+          "question": "Si può consultare a scopo preventivo?",
+          "risposta": "Sì. L'osteopatia può inserirsi in un percorso preventivo lungo tutta la vita del vostro animale, senza un motivo di consulto specifico."
+        },
+        {
+          "question": "Bisogna prevedere qualcosa per il consulto?",
+          "risposta": "È consigliabile portare i referti veterinari recenti se il vostro animale è seguito per una patologia. Per i cavalli e gli animali da allevamento è necessario uno spazio sicuro che consenta la loro osservazione e manipolazione. Per i gatti, si privilegia un asciugamano o una copertina su un tavolo, per il loro comfort e la praticità delle manipolazioni."
+        },
+        {
+          "question": "I consulti sono rimborsati?",
+          "risposta": "Alcune assicurazioni sanitarie per animali coprono in tutto o in parte i consulti di osteopatia. Le modalità variano a seconda dei contratti; si consiglia di rivolgersi alla propria compagnia assicurativa. Se necessario, verrà compilata una scheda di cura."
+        },
+        {
+          "question": "Quando non bisogna consultare un osteopata?",
+          "risposta": "In caso di emergenza (frattura, ferita importante, difficoltà respiratoria, febbre, sospetta infezione, sofferenza neurologica, ecc.), è indispensabile contattare prioritariamente un veterinario. L'osteopatia potrà eventualmente intervenire in un secondo momento, come complemento alla presa in carico medica."
+        },
+        {
+          "question": "L'osteopata animale può comunicare direttamente con il mio veterinario?",
+          "risposta": "Sì. La comunicazione tra i diversi professionisti che intervengono presso il vostro animale consente una presa in carico globale e coerente. Con il vostro consenso, l'osteopata animale può scambiare informazioni con il vostro veterinario curante al fine di condividere le informazioni utili al monitoraggio del vostro animale, nel rispetto del ruolo e delle competenze di ciascuno. L'osteopatia si inserisce in un percorso complementare al monitoraggio veterinario, con l'obiettivo comune di favorire la salute, il comfort, la mobilità e il benessere del vostro animale."
+        },
+        {
+          "question": "Posso restare presente durante il consulto di osteopatia?",
+          "risposta": "Sì. La vostra presenza è auspicabile durante il consulto. La vostra conoscenza dell'animale, delle sue abitudini e del suo comportamento costituisce una fonte di informazioni preziosa durante l'anamnesi e lo svolgimento della seduta. La vostra presenza consente inoltre di partecipare agli scambi, di comprendere le osservazioni effettuate e di ricevere i consigli necessari per accompagnare al meglio il vostro animale dopo il consulto."
+        }
+      ],
+      "situations": [
+        {
+          "question": "Il mio cane zoppica, l'osteopatia può aiutarlo?",
+          "reponse": "Una zoppia può avere numerose origini e talvolta richiede un esame veterinario per identificarne la causa. Quando la causa medica è già stata gestita o quando la situazione rientra in un disturbo funzionale, l'osteopatia può contribuire a migliorare il comfort locomotore dell'animale. Permette di valutare i compensi messi in atto dal corpo, le restrizioni di mobilità e gli squilibri funzionali che possono persistere dopo un episodio doloroso. L'obiettivo è accompagnare il ritorno a una locomozione più armoniosa e limitare l'instaurarsi di compensi, in complemento al monitoraggio veterinario quando necessario."
+        },
+        {
+          "question": "Il mio cavallo è rigido o manca di scioltezza, bisogna consultare un osteopata?",
+          "reponse": "Una riduzione della scioltezza, rigidità o una modifica della locomozione possono essere legate a diverse cause: sollecitazioni legate al lavoro, adattamenti posturali, disagio, invecchiamento o compensi funzionali. Un consulto di osteopatia permette di valutare la mobilità globale del cavallo, il suo equilibrio corporeo e le eventuali restrizioni che possono limitare il suo comfort o le sue capacità fisiche. Sia nel cavallo sportivo che nel cavallo da tempo libero, l'obiettivo è favorire una locomozione fluida, un miglior adattamento alle sollecitazioni e un comfort ottimale."
+        },
+        {
+          "question": "Il mio animale ha cambiato comportamento, un consulto di osteopatia può essere utile?",
+          "reponse": "Un cambiamento di comportamento può avere numerose origini: ambiente, educazione, stress, dolore o disagio fisico. Quando un fastidio corporeo contribuisce a una modifica del comportamento, l'osteopatia può contribuire a identificare alcune restrizioni funzionali suscettibili di incidere sul benessere dell'animale. Può inserirsi in una presa in carico pluridisciplinare, in collaborazione con il veterinario, il veterinario comportamentalista o l'educatore specializzato quando necessario."
+        },
+        {
+          "question": "Quando consultare un osteopata per un animale sportivo?",
+          "reponse": "Gli animali sportivi sono sottoposti a sollecitazioni fisiche importanti che richiedono un monitoraggio adeguato. Un consulto può essere previsto: in preparazione di una stagione sportiva o di un periodo di attività intensa; prima di un appuntamento importante; dopo uno sforzo sostenuto per accompagnare il recupero; in caso di calo delle prestazioni o di modifica della locomozione; in prevenzione, per sorvegliare i compensi legati all'allenamento."
+        }
+      ]
+    }
+  },
+  "reservation": {
+    "meta": {
+      "titre": "Prenota una seduta di osteopatia animale - Marie Salabert",
+      "description": "Appuntamento con Marie Salabert, osteopata animale a Toulouse. Offrite al vostro compagno un benessere ottimale. Prenotate la vostra seduta."
+    },
+    "heroTitre": "Prenotate la vostra seduta",
+    "titre": "Prenotate una seduta di osteopatia per il vostro animale",
+    "infosContact": "Informazioni di contatto",
+    "formulaire": "Modulo di contatto"
+  },
+  "certification": {
+    "meta": {
+      "titre": "La mia certificazione in osteopatia animale - Marie Salabert",
+      "description": "Iscritta al Registre National d'Aptitude tenuto dal Conseil National de l'Ordre des Vétérinaires con il numero OA 801."
+    }
+  }
+}

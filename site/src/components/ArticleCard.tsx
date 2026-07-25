@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { cheminLocalise, type Locale } from "@/i18n/config";
 import type { Article } from "@/lib/articles";
 
 /**
@@ -10,12 +11,17 @@ import type { Article } from "@/lib/articles";
 export default function ArticleCard({
   article,
   orientation = "vertical",
+  locale = "fr",
+  libelle = "Lire l'article",
 }: {
   article: Article;
   /** horizontal : vignette a gauche, texte a droite (listes en une colonne) */
   orientation?: "vertical" | "horizontal";
+  locale?: Locale;
+  /** libelle du lien de lecture, traduit */
+  libelle?: string;
 }) {
-  const href = `/${article.slug}`;
+  const href = cheminLocalise(`/${article.slug}`, locale);
   const horizontal = orientation === "horizontal";
   return (
     <article
@@ -68,7 +74,7 @@ export default function ArticleCard({
             href={href}
             className="arrow-link inline-flex items-center gap-2 text-[14px] font-medium text-plum"
           >
-            Lire l&apos;article
+            {libelle}
             <svg
               width="15"
               height="15"

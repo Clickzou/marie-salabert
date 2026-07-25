@@ -49,7 +49,7 @@ export function PageHero({
 }
 
 /** Pastille de certification qui chevauche le bas du hero (page d'accueil). */
-export function CertificationBadge({ href }: { href: string }) {
+export function CertificationBadge({ href, libelle }: { href: string; libelle: string }) {
   return (
     <div className="relative z-10 -mt-24 flex flex-col items-center gap-6 pb-16">
       {/* Logo officiel du Conseil National de l'Ordre des Vétérinaires (CNOV),
@@ -70,7 +70,7 @@ export function CertificationBadge({ href }: { href: string }) {
         />
       </a>
       <Button href={href} variant="plum" className="px-6 py-2.5 text-[13px]">
-        Voir ma certification
+        {libelle}
       </Button>
     </div>
   );
@@ -169,7 +169,7 @@ function LogoGoogle({ size = 18 }: { size?: number }) {
 /** Etoiles pleines puis vides, pour une note sur 5. */
 function Stars({ value, className }: { value: number; className?: string }) {
   return (
-    <span className={className} aria-label={`${value} étoiles sur 5`}>
+    <span className={className} aria-label={`${value}/5`}>
       <span aria-hidden="true">{"★".repeat(value)}</span>
       <span aria-hidden="true" className="opacity-30">
         {"★".repeat(5 - value)}
@@ -178,25 +178,13 @@ function Stars({ value, className }: { value: number; className?: string }) {
   );
 }
 
-const moisFr = [
-  "janvier",
-  "février",
-  "mars",
-  "avril",
-  "mai",
-  "juin",
-  "juillet",
-  "août",
-  "septembre",
-  "octobre",
-  "novembre",
-  "décembre",
-];
-
-/** « 2024-03-13 » -> « mars 2024 » (sans dependre du fuseau du navigateur). */
-function moisAnnee(iso: string) {
+/** « 2024-03-13 » -> « mars 2024 » / « March 2024 » / « marzo 2024 ». */
+function moisAnnee(iso: string, locale: string) {
   const [annee, mois] = iso.split("-");
-  return `${moisFr[Number(mois) - 1]} ${annee}`;
+  const nom = new Intl.DateTimeFormat(locale, { month: "long", timeZone: "UTC" }).format(
+    new Date(Date.UTC(Number(annee), Number(mois) - 1, 1)),
+  );
+  return `${nom} ${annee}`;
 }
 
 /** Bandeau vert des avis Google : note globale de la fiche puis temoignages. */
@@ -204,11 +192,17 @@ export function Testimonials({
   items,
   profile,
   title = "Les avis des propriétaires",
+  libelles = { avisGoogle: "avis Google", lireTous: "Lire les {n} avis sur Google" },
+  locale = "fr",
 }: {
   items: readonly { name: string; text: string; stars: number; date?: string; href?: string }[];
   /** note moyenne et nombre total d'avis de la fiche Google */
   profile?: { note: number; nombre: number; url: string };
   title?: string;
+  /** libelles traduits ; « {n} » est remplace par le nombre d'avis */
+  libelles?: { avisGoogle: string; lireTous: string };
+  /** sert au format de la note et des dates */
+  locale?: string;
 }) {
   return (
     <section className="bg-surface py-24 sm:py-36">
@@ -226,11 +220,11 @@ export function Testimonials({
             >
               <LogoGoogle size={22} />
               <span className="font-display text-[20px] font-semibold leading-none text-ink">
-                {profile.note.toLocaleString("fr-FR", { minimumFractionDigits: 1 })}
+                {profile.note.toLocaleString(locale, { minimumFractionDigits: 1 })}
               </span>
               <Stars value={profile.note} className="text-[15px] tracking-[0.1em] text-star" />
               <span className="border-l border-ink/15 pl-3 text-[13px] text-muted">
-                {profile.nombre} avis Google
+                {profile.nombre} {libelles.avisGoogle}
               </span>
             </a>
           )}
@@ -264,7 +258,7 @@ export function Testimonials({
                     t.name
                   )}
                 </p>
-                {t.date && <p className="mt-0.5 text-[12.5px] text-muted">{moisAnnee(t.date)}</p>}
+                {t.date && <p className="mt-0.5 text-[12.5px] text-muted">{moisAnnee(t.date, locale)}</p>}
               </div>
             </Reveal>
           ))}
@@ -278,7 +272,7 @@ export function Testimonials({
               rel="noopener noreferrer"
               className="arrow-link inline-flex items-center gap-2 text-[15px] font-medium text-plum"
             >
-              Lire les {profile.nombre} avis sur Google
+              {libelles.lireTous.replace("{n}", String(profile.nombre))}
               <svg
                 width="15"
                 height="15"

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import type { Locale } from "@/i18n/config";
 import type { Article } from "@/lib/articles";
 import ArticleCard from "./ArticleCard";
 
@@ -9,7 +10,15 @@ import ArticleCard from "./ArticleCard";
  * (glisser au doigt, molette, clavier) et fleches pleines pour naviguer.
  * Meme mecanique que le carrousel des approches, sur la page A propos.
  */
-export default function ArticlesCarousel({ articles }: { articles: readonly Article[] }) {
+export default function ArticlesCarousel({
+  articles,
+  locale = "fr",
+  libelles = { lireArticle: "Lire l'article", precedent: "Précédent", suivant: "Suivant" },
+}: {
+  articles: readonly Article[];
+  locale?: Locale;
+  libelles?: { lireArticle: string; precedent: string; suivant: string };
+}) {
   const piste = useRef<HTMLUListElement | null>(null);
   const [debut, setDebut] = useState(true);
   const [fin, setFin] = useState(false);
@@ -48,7 +57,7 @@ export default function ArticlesCarousel({ articles }: { articles: readonly Arti
             key={article.slug}
             className="flex w-[86%] shrink-0 snap-start sm:w-[48%] xl:w-[calc(33.333%-1rem)]"
           >
-            <ArticleCard article={article} />
+            <ArticleCard article={article} locale={locale} libelle={libelles.lireArticle} />
           </li>
         ))}
       </ul>
@@ -56,8 +65,8 @@ export default function ArticlesCarousel({ articles }: { articles: readonly Arti
       {articles.length > 1 && (
         <div className="mt-8 flex items-center justify-end gap-3">
           {[
-            { d: "M15 6l-6 6 6 6", label: "Article précédent", sens: -1 as const, inactif: debut },
-            { d: "M9 6l6 6-6 6", label: "Article suivant", sens: 1 as const, inactif: fin },
+            { d: "M15 6l-6 6 6 6", label: libelles.precedent, sens: -1 as const, inactif: debut },
+            { d: "M9 6l6 6-6 6", label: libelles.suivant, sens: 1 as const, inactif: fin },
           ].map((b) => (
             <button
               key={b.label}

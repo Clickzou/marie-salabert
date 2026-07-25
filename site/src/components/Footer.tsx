@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { cheminLocalise, type Locale } from "@/i18n/config";
+import type { Dictionnaire } from "@/i18n/dictionnaire";
 import { footerNav, site } from "@/lib/site";
 import { Container } from "./ui";
 
@@ -30,7 +32,7 @@ const socials = [
   },
 ];
 
-export default function Footer() {
+export default function Footer({ locale, d }: { locale: Locale; d: Dictionnaire }) {
   return (
     <footer className="relative overflow-hidden bg-plum text-white">
       {/* motif decoratif discret */}
@@ -47,7 +49,7 @@ export default function Footer() {
         <div className="grid gap-14 md:grid-cols-[1.1fr_1fr_1.3fr] md:gap-10">
           {/* Logo + identite */}
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
-            <Link href="/" aria-label={site.name}>
+            <Link href={cheminLocalise("/", locale)} aria-label={site.name}>
               {/* NOTE visuel a fournir : logo complet (dessin + nom) sur fond transparent.
                   En attendant, le pictogramme existant est affiche en grand, sans fond. */}
               <Image
@@ -55,29 +57,30 @@ export default function Footer() {
                 alt="Logo Marie Salabert Ostéopathie Animale"
                 width={510}
                 height={510}
-                className="h-[150px] w-[150px] object-contain"
+                className="h-[190px] w-[190px] object-contain"
               />
+              <span className="mt-6 block font-display text-[26px] leading-tight text-white">
+                {site.practitioner}
+                <span className="mt-2 block text-[14px] font-normal uppercase tracking-[0.2em] text-gold">
+                  Ostéopathie Animale
+                </span>
+              </span>
             </Link>
-            <p className="mt-5 font-display text-[20px] leading-tight text-white">
-              {site.practitioner}
-              <br />
-              Ostéopathie Animale
-            </p>
           </div>
 
           {/* Navigation */}
           <nav aria-label="Liens de bas de page">
-            <h2 className="mb-6 text-[16px] font-semibold uppercase tracking-wider text-gold">
-              Plus d&apos;infos
+            <h2 className="mb-6 text-[16px] font-semibold uppercase tracking-[0.12em] text-gold">
+              {d.footer.plusInfos}
             </h2>
             <ul className="space-y-3.5">
               {footerNav.map((item) => (
                 <li key={item.href}>
                   <Link
-                    href={item.href}
+                    href={cheminLocalise(item.href, locale)}
                     className="text-[15px] text-white/85 transition-colors hover:text-gold"
                   >
-                    {item.label}
+                    {d.footer.liens[item.cle]}
                   </Link>
                 </li>
               ))}
@@ -86,8 +89,8 @@ export default function Footer() {
 
           {/* Coordonnees & identite legale */}
           <div>
-            <h2 className="mb-6 text-[16px] font-semibold uppercase tracking-wider text-gold">
-              Contact
+            <h2 className="mb-6 text-[16px] font-semibold uppercase tracking-[0.12em] text-gold">
+              {d.footer.contact}
             </h2>
             <address className="space-y-2.5 text-[14px] not-italic leading-relaxed text-white/85">
               <p>
@@ -96,7 +99,7 @@ export default function Footer() {
                 </a>
               </p>
               <p>
-                Secrétariat :{" "}
+                {d.commun.secretariat} :{" "}
                 <a
                   href={`tel:+33${site.secretariat.replace(/\s/g, "").slice(1)}`}
                   className="transition-colors hover:text-gold"
@@ -104,12 +107,20 @@ export default function Footer() {
                   {site.secretariat}
                 </a>
               </p>
-              <p className="pt-1">Zones d&apos;intervention : {site.serviceArea}</p>
-              <p className="text-white/70">Départements {site.departments}</p>
-              <p className="pt-3">{site.legalForm}</p>
-              <p>Siret : {site.siret}</p>
-              <p>N° TVA intracommunautaire : {site.vat}</p>
-              <p className="pt-2 text-white/70">{site.registration}</p>
+              <p className="pt-1">
+                {d.footer.zonesIntervention} : {site.serviceArea}
+              </p>
+              <p className="text-white/70">
+                {d.footer.departements} {site.departments}
+              </p>
+              <p className="pt-3">{d.footer.entrepriseIndividuelle}</p>
+              <p>
+                {d.footer.siret} : {site.siret}
+              </p>
+              <p>
+                {d.footer.tva} : {site.vat}
+              </p>
+              <p className="pt-2 text-white/70">{d.footer.registre}</p>
             </address>
           </div>
         </div>

@@ -1,0 +1,964 @@
+{
+  "nav": {
+    "accueil": "Accueil",
+    "aPropos": "À Propos",
+    "actualites": "Actualités",
+    "consultations": "Consultations",
+    "faq": "FAQ",
+    "galerie": "Galerie photos",
+    "contact": "Contact",
+    "symbiosteo": "Symbiosteo",
+    "ouvrirMenu": "Ouvrir le menu",
+    "fermerMenu": "Fermer le menu",
+    "changerLangue": "Changer de langue"
+  },
+  "commun": {
+    "prendreRdv": "Prendre un rendez-vous",
+    "reserverSeance": "Réservez une séance d'ostéopathie animale",
+    "voirCertification": "Voir ma certification",
+    "meContacter": "Me contacter",
+    "lireArticle": "Lire l'article",
+    "voirSection": "Voir la section",
+    "revenirSommaire": "Revenir au sommaire",
+    "faitesDefiler": "Faites défiler pour les découvrir",
+    "precedent": "Précédent",
+    "suivant": "Suivant",
+    "telephone": "Téléphone",
+    "secretariat": "Secrétariat",
+    "zoneIntervention": "Zone d'intervention",
+    "sommaire": "Sommaire",
+    "allerAuContenu": "Aller au contenu"
+  },
+  "footer": {
+    "plusInfos": "Plus d'infos",
+    "contact": "Contact",
+    "suivezMoi": "Suivez-moi",
+    "zonesIntervention": "Zones d'intervention",
+    "departements": "Départements",
+    "entrepriseIndividuelle": "Entreprise Individuelle",
+    "siret": "Siret",
+    "tva": "Numéro de TVA intracommunautaire",
+    "droits": "Tous droits réservés",
+    "liens": {
+      "aPropos": "A propos",
+      "contact": "Contact",
+      "reserver": "Réserver une séance",
+      "cookies": "Politique de Cookies",
+      "mentions": "Mentions Légales",
+      "confidentialite": "Politique de Confidentialité"
+    },
+    "registre": "Inscrite sur le Registre National d'Aptitude tenu par le Conseil National de l'Ordre des Vétérinaires (OA 801)"
+  },
+  "cookies": {
+    "titre": "Gestion des cookies",
+    "texte": "Ce site n'utilise aucun traceur publicitaire. Certains contenus externes (carte, vidéos) peuvent déposer des cookies : ils ne s'affichent qu'avec votre accord.",
+    "accepter": "Accepter",
+    "refuser": "Refuser",
+    "enSavoirPlus": "En savoir plus"
+  },
+  "formulaire": {
+    "nom": "Nom",
+    "prenom": "Prénom",
+    "email": "E-mail",
+    "telephone": "Téléphone",
+    "message": "Message",
+    "envoyer": "Envoyer",
+    "envoiEnCours": "Envoi en cours…",
+    "succes": "Votre message a bien été envoyé. Une réponse vous sera apportée dans les meilleurs délais.",
+    "erreur": "L'envoi a échoué. Vous pouvez me joindre directement par téléphone.",
+    "champObligatoire": "Ce champ est obligatoire",
+    "champsObligatoires": "Les champs suivis de * sont obligatoires."
+  },
+  "avis": {
+    "titre": "Les avis des propriétaires",
+    "avisGoogle": "avis Google",
+    "lireTous": "Lire les {n} avis sur Google"
+  },
+  "accueil": {
+    "heroSousTitre": "La santé de vos animaux par l'ostéopathie",
+    "parcours": {
+      "surTitre": "Qui suis-je ?",
+      "titre": "Parcours personnel",
+      "lireArticle": "Lire l'article",
+      "enSavoirPlus": "Pour en savoir plus",
+      "paragraphes": [
+        "Passionnée par les animaux et les thérapies manuelles depuis toujours, je me suis naturellement orientée vers des études d'ostéopathie animale.",
+        "Après cinq années de formation et mon inscription au Registre National d'Aptitude tenu par le CNOV, je me suis installée en région toulousaine, dont je suis originaire, afin d'y exercer depuis 2020.",
+        "Le sport, et notamment la pratique de l'athlétisme, a occupé une place importante dans mon parcours. Il m'a transmis des valeurs de rigueur, de persévérance et de discipline qui m'accompagnent aujourd'hui dans ma pratique professionnelle.",
+        "Soucieuse de participer à l'évolution et à la reconnaissance de l'ostéopathie animale en France, je me suis engagée pendant plusieurs années au sein d'associations œuvrant pour la structuration de la profession. De 2017 à 2020, j'ai notamment assuré la présidence de l'Union Française des Étudiants Ostéopathes Animaliers (UFEOA), avant de co-fonder le Collectif des Ostéopathes Animaliers, au sein duquel je suis restée activement impliquée de 2020 à 2025. Celui-ci est devenu aujourd'hui le syndicat national des professionnels inscrits au RNA tenu par le CNOV.",
+        "Animée par la volonté de créer du lien entre les différents acteurs de la santé animale, j'ai été à l'initiative de l'organisation des congrès SymbiOsteo en 2019 et 2022, puis j'ai co-créé SymbiOsteo, le podcast en 2024. Ces projets ont pour objectif de favoriser les échanges entre vétérinaires pratiquant l'ostéopathie, ostéopathes animaliers et ostéopathes humains, tout en mettant en lumière les évolutions des pratiques, l'actualité et les perspectives de recherche dans ce domaine.",
+        "En 2025, j'ai souhaité approfondir mes connaissances et développer une approche davantage tournée vers la recherche scientifique. J'ai ainsi intégré le Master 2 « Gestion des Établissements de Formation et de Recherche en Santé » à l'Université de Haute-Alsace de Mulhouse. Cette formation a conduit à ma première publication scientifique dans la revue de santé intégrative Hegel : « Ostéopathie, chiropraxie, thérapies manuelles : analyse bibliométrique (1949–2025) »."
+      ],
+      "alt": "Marie Salabert au micro lors d'une conférence sur l'ostéopathie animale"
+    },
+    "pourQui": {
+      "surTitre": "Champs d'intervention",
+      "titre": "L'ostéopathie animale, pour qui ?",
+      "voirAutres": "Voir les {n} autres indications",
+      "reduire": "Réduire",
+      "liste": [
+        {
+          "titre": "Animaux de compagnie",
+          "sousTitre": "Chiens · Chats · NAC",
+          "alt": "Séance d'ostéopathie sur un berger allemand",
+          "indications": [
+            "Accompagner la croissance, le développement et le vieillissement.",
+            "Optimiser la récupération après un traumatisme ou une intervention chirurgicale.",
+            "Intervenir suite à un épisode de boiterie afin de restaurer un fonctionnement locomoteur optimal.",
+            "Contribuer à la prise en charge globale de certaines affections chroniques ou récidivantes.",
+            "Participer au suivi fonctionnel d'animaux présentant certains troubles digestifs chroniques.",
+            "S'intégrer au suivi de certains troubles métaboliques.",
+            "Concourir à la prise en charge des animaux reproducteurs et des problématiques associées avec les éleveurs et vétérinaires référents.",
+            "Assurer le suivi des animaux sportifs.",
+            "Accompagner, en complément d'une prise en charge comportementale, aux côtés de vétérinaires et d'éducateurs spécialisés.",
+            "Suivre les animaux adoptés et/ou ayant un parcours de vie difficile.",
+            "Favoriser le bien-être général."
+          ]
+        },
+        {
+          "titre": "Équidés",
+          "sousTitre": "Chevaux de course, de sport, de loisir · Ânes · Mules",
+          "alt": "Séance d'ostéopathie sur un poney au pré",
+          "indications": [
+            "Suivre le poulain pendant sa croissance et contribuer au bon développement de ses aplombs, en collaboration avec des maréchaux-ferrants et des vétérinaires.",
+            "Optimiser le suivi et les performances du cheval athlète.",
+            "Améliorer la locomotion, la posture et la souplesse.",
+            "S'intégrer au suivi global des chevaux atteints de troubles métaboliques ou endocriniens.",
+            "Adapter le suivi pour les chevaux présentant des troubles chroniques (neurologiques, cutanés, digestifs).",
+            "Participer à la récupération fonctionnelle après un effort intense ou une période de convalescence.",
+            "S'inscrire dans le suivi de la reproduction des équidés, en collaboration avec les haras, les éleveurs et les vétérinaires (suivi des étalons, suivi des juments : troubles de la fertilité, gestation, post-mise bas).",
+            "Aider pendant les phases de transition.",
+            "Contribuer au confort du cheval âgé.",
+            "Collaborer, par une approche interdisciplinaire, à une prise en charge globale avec les professionnels de la santé et du bien-être animal."
+          ]
+        },
+        {
+          "titre": "Animaux de rente",
+          "sousTitre": "Bovins · Ovins · Caprins · Porcins",
+          "alt": "Main posée sur une vache dans une étable",
+          "indications": [
+            "Favoriser un développement harmonieux des jeunes animaux.",
+            "S'intégrer au suivi des animaux reproducteurs (des mâles et des femelles : troubles de la fertilité, gestation, post-mise bas).",
+            "Améliorer la locomotion et la posture.",
+            "Agir en collaboration avec le vétérinaire lorsque l'animal perd de l'état et ne peut plus se déplacer.",
+            "Participer au suivi des animaux de concours.",
+            "Contribuer au bien-être des animaux et à leur adaptation aux contraintes d'élevage.",
+            "Optimiser la production laitière."
+          ]
+        }
+      ]
+    },
+    "rendezVous": {
+      "surTitre": "Rendez-vous en ostéopathie animale",
+      "titre": "Comment prendre rendez-vous ?",
+      "paragraphes": [
+        "La prise de rendez-vous se fait par téléphone, en cas d'indisponibilité je vous invite à me laisser un SMS avec la raison de votre appel, votre adresse ainsi que vos disponibilités.",
+        "Depuis janvier 2025, j'ai délégué mon planning à mon assistante Anne-Sophie. Elle vous recontactera dans les meilleurs délais pour répondre à vos questions et planifier votre rendez-vous. Je reste cependant disponible pour échanger spécifiquement sur votre animal en cas de besoin."
+      ],
+      "tarif": "Le tarif des consultations dépend de votre localisation, pour connaître le montant exact nous vous invitons à le demander au moment de la prise de rendez-vous.",
+      "paiement": "Moyens de paiement acceptés : chèque, virement ou espèces.",
+      "alt": "Marie Salabert, ostéopathe animalier"
+    },
+    "lieux": {
+      "surTitre": "Secteur d'intervention",
+      "titre": "Les lieux de consultation",
+      "domicileTitre": "À votre domicile, en Occitanie et Nouvelle-Aquitaine",
+      "domicileTexte": "Environ 1h45 de route autour de Toulouse, sur les huit départements suivants :",
+      "cliniqueTitre": "En clinique, tous les vendredis après-midi",
+      "cliniqueTexte": "Clinique vétérinaire du Val Dadou, à Graulhet (81).",
+      "guyaneTitre": "Tournées en Guyane française, deux fois par an",
+      "guyaneTexte": "Déplacement à domicile et dans les endroits suivants :",
+      "guyaneLieux": [
+        "Clinique vétérinaire de l'Ouest à Saint Laurent du Maroni",
+        "Salon de Toilettage la Niche du Bien être à Matoury",
+        "Salon de Toilettage Louloustars à Cayenne"
+      ],
+      "departements": [
+        {
+          "code": "31",
+          "nom": "Haute-Garonne"
+        },
+        {
+          "code": "81",
+          "nom": "Tarn"
+        },
+        {
+          "code": "82",
+          "nom": "Tarn-et-Garonne"
+        },
+        {
+          "code": "47",
+          "nom": "Lot-et-Garonne"
+        },
+        {
+          "code": "32",
+          "nom": "Gers"
+        },
+        {
+          "code": "46",
+          "nom": "Lot"
+        },
+        {
+          "code": "09",
+          "nom": "Ariège"
+        },
+        {
+          "code": "11",
+          "nom": "Aude"
+        }
+      ]
+    },
+    "etapes": {
+      "surTitre": "Séance d'ostéopathie animale",
+      "titre": "Le déroulement d'une consultation en 6 étapes",
+      "liste": [
+        {
+          "titre": "Anamnèse — recueil des informations sur la santé de votre animal et création de votre dossier",
+          "paragraphes": [
+            "Chaque consultation débute par un temps d'échange afin de recueillir les informations essentielles concernant votre animal et le motif de la séance en ostéopathie. Son historique médical, son mode de vie, son comportement, son alimentation, son activité, son environnement sont abordés afin d'obtenir une vision globale de sa situation.",
+            "Cette étape permet à votre ostéopathe de replacer l'animal dans son contexte de vie et d'orienter l'examen clinique et ostéopathique de manière adaptée.",
+            "Le dossier de votre animal est ensuite créé et sécurisé via Djooka, le carnet de santé numérique dédié aux animaux. Vous y retrouverez les comptes rendus des consultations ainsi que les factures associées."
+          ],
+          "lien": {
+            "libelle": "Découvrir Djooka",
+            "url": "https://djooka.com"
+          }
+        },
+        {
+          "titre": "Examen locomoteur et statique",
+          "paragraphes": [
+            "La consultation se poursuit par une observation dynamique et statique de votre animal.",
+            "L'analyse de la locomotion permet d'évaluer la qualité des déplacements, la symétrie des allures, les amplitudes de mouvement ainsi que l'existence d'éventuelles restrictions de mobilité, compensations ou irrégularités locomotrices.",
+            "L'observation statique complète cet examen en recherchant d'éventuels déséquilibres posturaux, reports de poids, attitudes antalgiques ou adaptations corporelles pouvant traduire un inconfort fonctionnel."
+          ]
+        },
+        {
+          "titre": "Le diagnostic d'opportunité ou d'exclusion",
+          "paragraphes": [
+            "Un examen palpatoire approfondi est ensuite réalisé afin de vérifier que votre animal est bien apte pour une prise en charge ostéopathique.",
+            "Cette étape permet d'identifier d'éventuels signes d'alerte nécessitant une orientation préalable ou complémentaire vers votre vétérinaire. L'ostéopathie intervient toujours dans le respect de ses compétences et en complément du suivi vétérinaire lorsque celui-ci est indiqué."
+          ]
+        },
+        {
+          "titre": "Le diagnostic ostéopathique",
+          "paragraphes": [
+            "À l'aide d'un examen manuel précis, l'ostéopathe évalue la mobilité des articulations, des muscles, des fascias, des viscères, du crâne et des différents tissus de l'organisme.",
+            "Cette évaluation globale permet d'identifier les restrictions de mobilité, les adaptations fonctionnelles et les compensations susceptibles de participer aux déséquilibres observés.",
+            "Un bilan vous est ensuite présenté et expliqué avant la mise en œuvre du traitement ostéopathique."
+          ]
+        },
+        {
+          "titre": "Le traitement ostéopathique",
+          "paragraphes": [
+            "Le traitement repose exclusivement sur des techniques manuelles adaptées à chaque animal, à son espèce, à son âge, à son activité et au motif de consultation.",
+            "L'objectif est de restaurer une mobilité tissulaire optimale, d'améliorer la qualité du mouvement, de favoriser les capacités d'adaptation de l'organisme et de contribuer au confort fonctionnel de l'animal.",
+            "Ma pratique s'appuie sur différentes approches complémentaires : musculo-squelettiques, myofasciales, tissulaires, viscérales, liquidiennes, crâniennes, réflexes et tenségritives."
+          ]
+        },
+        {
+          "titre": "Les conseils après séance",
+          "paragraphes": [
+            "À l'issue de la séance, un compte rendu vous est transmis, accompagné de recommandations personnalisées, adaptées aux besoins de votre animal.",
+            "Ces conseils portent notamment sur la gestion du repos, la reprise progressive de l'activité, les éventuels exercices recommandés ainsi que les points de vigilance à observer dans les jours suivant la consultation.",
+            "L'objectif est de favoriser une récupération optimale et d'inscrire la prise en charge dans une démarche globale de santé et de bien-être, en collaboration avec votre vétérinaire lorsque cela est nécessaire."
+          ]
+        }
+      ],
+      "photoAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un cochon sur la paille"
+    },
+    "cta": "À vos côtés pour la santé et le bien-être de votre animal",
+    "meta": {
+      "titre": "Ostéopathe animalier Toulouse - Marie Salabert",
+      "description": "Ostéopathe animalier Toulouse : ostéopathe chien, chat, NACS, chevaux (sport, loisir, élevage), âne, animaux de rente, de ferme, exotiques…",
+      "titreHero": "Marie Salabert Ostéopathie Animale"
+    }
+  },
+  "aPropos": {
+    "meta": {
+      "titre": "À propos de l'ostéopathie animale - Marie Salabert Ostéopathe",
+      "description": "L'ostéopathie animale : son histoire, ses différentes approches (musculosquelettique, tissulaire, fasciale, viscérale, réflexe) et son cadre légal en France."
+    },
+    "hero": {
+      "surTitre": "La discipline",
+      "titre": "À propos de l'ostéopathie animale",
+      "sousTitre": "Son histoire, ses approches et son cadre légal en France."
+    },
+    "citation": {
+      "texte": "« La santé est un état complet de bien-être physique, mental et social et ne consiste pas seulement en une absence de maladie ou d'infirmité. »",
+      "source": "Organisation mondiale de la santé"
+    },
+    "histoire": {
+      "surTitre": "Une discipline reconnue",
+      "titre": "Histoire de l'ostéopathie animale",
+      "photoAlt": "Main posée sur la tête d'un cheval, discipline née auprès des équidés",
+      "chapitres": [
+        {
+          "periode": "Années 1980",
+          "intitule": "Les débuts, auprès des équidés",
+          "paragraphes": [
+            "L'ostéopathie animale s'est développée en France à partir des années 1980. Initialement appliquée aux équidés, elle a été adaptée par le Docteur Vétérinaire Dominique Giniaux et l'ostéopathe humain Pascal Evrard, qui ont largement contribué à son essor dans le milieu équin."
+          ]
+        },
+        {
+          "periode": "Années 2000",
+          "intitule": "Animaux de compagnie, puis élevage",
+          "paragraphes": [
+            "Au début des années 2000, cette discipline s'est progressivement étendue aux animaux de compagnie, notamment grâce aux travaux du Docteur Vétérinaire Francis Lizon.",
+            "Quelques années plus tard, son développement s'est poursuivi dans le secteur des animaux d'élevage, en particulier sous l'impulsion du Docteur Vétérinaire Jean-Pierre Siméon, précurseur de l'ostéopathie bovine en France."
+          ]
+        },
+        {
+          "periode": "Aujourd'hui",
+          "intitule": "Une approche complémentaire reconnue",
+          "paragraphes": [
+            "L'ostéopathie animale est pratiquée auprès de nombreuses espèces : animaux de compagnie, chevaux, animaux d'élevage, mais également animaux de sport, de travail ou de spectacle.",
+            "Au cours des dernières décennies, les approches complémentaires de santé animale ont connu un développement important. De plus en plus de propriétaires souhaitent intégrer des thérapies manuelles au suivi médical de leurs animaux, dans une démarche globale de prévention, de confort et de bien-être.",
+            "Grâce à son approche exclusivement manuelle, elle apporte une évaluation fonctionnelle globale de l'animal, en s'intéressant aux interactions entre les différents systèmes de l'organisme."
+          ]
+        }
+      ],
+      "synthese": "L'ostéopathie animale est une médecine intégrative dite naturelle : par son approche manuelle, elle apporte une vision globale différente et complémentaire de la médecine vétérinaire."
+    },
+    "approches": {
+      "surTitre": "Techniques",
+      "titre": "Les 5 approches en ostéopathie",
+      "liste": [
+        {
+          "titre": "Musculosquelettique (os, muscles, articulations, ligaments, tendons)",
+          "alt": "Mains mobilisant l'épaule d'un chien allongé sur un tapis",
+          "paragraphes": [
+            "Par cet aspect de l'ostéopathie nous allons travailler pour rééquilibrer la structure. Il peut s'agir de techniques dites structurelles, myotensives ou fonctionnelles ; dites directes ou indirectes."
+          ]
+        },
+        {
+          "titre": "Tissulaire",
+          "alt": "Mains posées à plat sur le dos d'un cheval au box",
+          "paragraphes": [
+            "Ces techniques peuvent s'appliquer sur l'ensemble du corps. Elles visent à améliorer le mouvement d'une structure ciblée ou plus globalement à rendre une bonne communication tissulaire d'un bout à l'autre de l'organisme."
+          ]
+        },
+        {
+          "titre": "Fasciale",
+          "alt": "Mains glissant le long du flanc d'un chien debout",
+          "paragraphes": [
+            "Le corps est composé en grande partie de fascias, initialement décrit comme du mésoderme au stade embryologique. Lors du développement de l'embryon et du fœtus ce mésoderme va se différencier en plusieurs types de fascias : superficiels (derme - hypoderme) ; intermédiaires (aponévroses, séreuses et mésos splanchniques, enveloppes des différents vaisseaux) et profonds (périoste, tendons, dure mère).",
+            "Ces dernières années les fascias font le sujet de nombreuses recherches scientifiques mais captivent tout autant les ostéopathes."
+          ]
+        },
+        {
+          "titre": "Viscérale",
+          "alt": "Mains posées sur le ventre d'un chien détendu",
+          "paragraphes": [
+            "Nous nous intéressons à la mobilité des organes et à leur attache ligamentaire. Mon mémoire de fin d'études porte notamment sur la pratique de l'ostéopathie sur les moyens de fixité des différents organes."
+          ]
+        },
+        {
+          "titre": "Réflexe",
+          "alt": "Doigts traçant une ligne sur l'encolure d'un cheval",
+          "paragraphes": [
+            "Les techniques réflexes permettent de travailler localement sur la peau, afin d'induire une action en profondeur dans l'organisme. J'apprécie particulièrement la réalisation de traits tirés axés sur certaines zones permettant d'avoir une action à la fois localisée et globale sur le système lymphatique, circulatoire et nerveux."
+          ]
+        }
+      ],
+      "precedente": "Approche précédente",
+      "suivante": "Approche suivante"
+    },
+    "legislation": {
+      "surTitre": "Cadre réglementaire",
+      "titre": "Législation",
+      "jalons": [
+        {
+          "annee": "2011",
+          "titre": "Reconnaissance légale de la pratique",
+          "texte": "Le ministère de l'Agriculture reconnaît la pratique des ostéopathes animaliers au sein du 12° de l'article L243-3 du code rural et de la pêche maritime (CRPM)."
+        },
+        {
+          "annee": "2017",
+          "titre": "Décrets du 19 avril",
+          "texte": "Les actes d'ostéopathie animale peuvent être réalisés par des personnes non vétérinaires ayant réussi l'épreuve nationale d'aptitude, inscrites au Registre National d'Aptitude (RNA) et figurant sur la liste tenue par le Conseil national de l'Ordre des vétérinaires (CNOV)."
+        }
+      ],
+      "obligation": "Par ailleurs, l'ostéopathe animalier est tenu d'orienter le propriétaire vers un vétérinaire lorsque l'état de l'animal nécessite un diagnostic médical, un traitement, ou lorsque les troubles observés dépassent le champ de compétence de l'ostéopathie. Cette obligation fait partie des règles déontologiques fixées par le Code rural.",
+      "autorites": "Autorités de référence",
+      "liens": [
+        "Annuaire des ostéopathes inscrits (CNOV)",
+        "veterinaire.fr — rubrique Ostéopathie animale",
+        "Article L243-3, 12° du CRPM",
+        "Article R.243-6 du CRPM"
+      ],
+      "logos": [
+        "Ministère de l'Agriculture et de la Souveraineté alimentaire",
+        "Conseil National de l'Ordre des Vétérinaires"
+      ],
+      "articleTitre": "Article R.243-6 du code rural et de la pêche maritime"
+    },
+    "interdisciplinarite": {
+      "paragraphes": [
+        "Au fil de ce parcours complémentaire, je me suis passionnée pour l'interdisciplinarité, c'est-à-dire la collaboration entre les différents professionnels de la santé animale. Je suis convaincue que la mise en commun de nos compétences et de nos approches permet d'offrir une prise en charge plus complète et plus adaptée à chaque animal.",
+        "Ainsi, au-delà de mon accompagnement en ostéopathie, je veille toujours à vous conseiller et, lorsque cela est pertinent, à vous orienter vers le professionnel le plus adapté aux besoins spécifiques de votre animal."
+      ],
+      "signature": "Marie Salabert",
+      "photoAlt": "Marie Salabert au micro lors d'une conférence sur l'ostéopathie animale"
+    }
+  },
+  "contact": {
+    "meta": {
+      "titre": "Contact ostéopathe animalier : Marie Salabert",
+      "description": "Ostéopathie animale pour tout type d'animaux. Contactez-moi pour réserver une séance ou en apprendre plus sur l'ostéopathie animale."
+    },
+    "hero": {
+      "surTitre": "Contact",
+      "titre": "Prendre rendez-vous",
+      "sousTitre": "Par téléphone, par SMS ou via le formulaire : votre demande est étudiée avec attention."
+    },
+    "meJoindre": {
+      "surTitre": "Me joindre",
+      "titre": "Un appel suffit pour convenir d'un créneau"
+    },
+    "cartes": {
+      "telephoneTexte": "En cas d'indisponibilité, laissez-moi un SMS avec le motif, votre adresse et vos disponibilités.",
+      "zoneTexte": "Consultations à domicile, environ 1h45 de route autour de Toulouse.",
+      "secretariatTexte": "Anne-Sophie gère le planning et vous recontacte dans les meilleurs délais."
+    },
+    "formulaire": {
+      "titre": "Formulaire de contact",
+      "intro": "Pour faciliter l'organisation des déplacements, précisez dans votre message :",
+      "puces": [
+        "L'adresse où se trouve votre animal",
+        "Vos disponibilités",
+        "Le motif de la consultation"
+      ]
+    },
+    "secteur": {
+      "surTitre": "Secteur d'intervention",
+      "titre": "Environ 1h45 de route autour de Toulouse"
+    }
+  },
+  "galerie": {
+    "meta": {
+      "titre": "Galerie photos - Ostéopathie animale - Marie Salabert",
+      "description": "Découvrez en images les consultations d'ostéopathie animale de Marie Salabert : chevaux, chiens, chats, NAC et animaux de ferme."
+    },
+    "hero": {
+      "surTitre": "En images",
+      "titre": "Galerie photos",
+      "sousTitre": "{n} photos de consultations : chevaux, chiens, chats, NAC et animaux de ferme."
+    },
+    "afficherPlus": "Afficher plus de photos",
+    "visionneuse": "Visionneuse de photos",
+    "fermer": "Fermer la visionneuse",
+    "photoPrecedente": "Photo précédente",
+    "photoSuivante": "Photo suivante",
+    "agrandir": "Agrandir la photo {i} sur {n}"
+  },
+  "symbiosteo": {
+    "meta": {
+      "titre": "SymbiOsteO Le Podcast - Marie Salabert Ostéopathe",
+      "description": "SymbiOsteO Le Podcast, créé en janvier 2024, donne la parole aux acteurs du monde de l'ostéopathie animale, vétérinaire et humaine, de la santé et aux explorateurs du vivant."
+    },
+    "accroche": "Créé en janvier 2024, SymbiOsteO Le Podcast est un média qui donne la parole aux acteurs du monde de l'Ostéopathie (animale, vétérinaire et humaine), de la santé, aux explorateurs du vivant, aux passionnés et curieux.",
+    "paragraphe": "Cet espace de dialogue et d'échanges a pour vocation de recueillir des points de vue diversifiés propices à la construction d'une pensée complexe. Nous croyons à la vertu du dialogue comme moyen de créer du lien. Nous avons pour objectif au travers de ce podcast de structurer une communauté et pour projet d'organiser des évènements.",
+    "formatsIntro": "Différents formats d'épisodes :",
+    "formats": [
+      "🎤 Interviews",
+      "🏵️ Tables rondes",
+      "👫 Duo : Amélie & Marie",
+      "🧍‍♀️ Solo : Amélie ou Marie"
+    ],
+    "animePar": "Animés par Amélie Gardelle et Marie Salabert — contact",
+    "ecouterSpotify": "Écouter sur Spotify",
+    "ecouterApple": "Écouter sur Apple Podcasts",
+    "suivreSpotify": "Suivez le podcast sur Spotify",
+    "episodesTitre": "Nos épisodes à écouter",
+    "episodesCompteur": "{n} épisodes disponibles",
+    "ecouterEpisode": "Écouter l'épisode",
+    "photoAlt": "Micro de studio et casque, plateau du podcast SymbiOsteO"
+  },
+  "actualites": {
+    "meta": {
+      "titre": "Découvrez l'actualité de l'ostéopathie animale avec Marie Salabert",
+      "description": "Explorez les dernières avancées en ostéopathie animale avec Marie Salabert. Soins innovants et conseils pour vos animaux."
+    },
+    "surTitre": "Le journal",
+    "titre": "L'actualité de mon activité en ostéopathie animale",
+    "accroche": "Depuis 2020, cette rubrique me permet de partager les évolutions de mon activité, mes projets, ainsi que les différentes innovations et approches que je développe en ostéopathie animale.",
+    "paragraphes": [
+      "Vous y retrouverez des articles autour des études récentes, des conférences effectuées, des cas pratiques, ainsi que des événements et formations qui enrichissent ma pratique au quotidien.",
+      "Cet espace a pour objectif de vous faire découvrir les avancées du domaine, de mieux comprendre les méthodes de prise en charge proposées à vos animaux et de suivre l'évolution de mon travail au service de leur santé et de leur bien-être."
+    ],
+    "photoAlt": "Portrait de Marie Salabert, ostéopathe animalière",
+    "tousLesArticles": "Tous les articles",
+    "compteur": "{n} publications depuis 2020",
+    "cta": {
+      "surTitre": "Un conseil ?",
+      "titre": "Une question sur l'ostéopathie animale ?",
+      "texte": "Pour en savoir plus sur les soins proposés à votre animal, écrivez-moi ou appelez le secrétariat."
+    },
+    "article": {
+      "categorie": "Actualités",
+      "partage": "Vous aimez cet article ?",
+      "aLireAussi": "À lire aussi"
+    }
+  },
+  "consultations": {
+    "listes": {
+      "troublesLocomoteurs": [
+        "Allures irrégulières",
+        "Démarche asymétrique",
+        "Déplacements de biais",
+        "Aplombs défectueux",
+        "Raideurs musculaires"
+      ],
+      "accompagnementEmotionnel": [
+        "Changement soudain de comportement",
+        "Sensibilité accrue, inquiétude ou réactions inhabituelles",
+        "Accompagnement après un événement stressant ou traumatique",
+        "Adaptation lors d'un changement de vie",
+        "Difficultés liées à la perte d'un congénère ou d'un membre de la famille"
+      ],
+      "premiereIntention": [
+        "Difficultés locomotrices soudaines (dorsalgie, lombalgie)",
+        "Irrégularité soudaine sans suppression d'appui",
+        "Crise d'arthrose",
+        "Post traumatique non lésionnel (chute, bagarre entre congénères)"
+      ],
+      "chroniquesAmelioration": [
+        "Affections digestives (vomissements, diarrhée chroniques)",
+        "Affections respiratoires (toux, asthme)",
+        "Otites externes",
+        "Affections cutanées (dermite, dermatite atopique, dépigmentation localisée, prurit)",
+        "Mauvaise cicatrisation (post opératoire, plaies de léchage, automutilation)",
+        "Certains cas d'infertilité",
+        "Incontinence urinaire (en particulier pour celles suite à une stérilisation)"
+      ],
+      "chroniquesConfort": [
+        "Dysplasie",
+        "Entorses et tendinites",
+        "Ostéochondrite disséquante",
+        "Insuffisance rénale chronique",
+        "Affections neurologiques (hernie discale, AVC, ataxie, crise d'épilepsie, embolie fibrocartilagineuse)",
+        "Animaux accidentés / amputés",
+        "Animaux en fin de vie (perte d'équilibre, refus de prise alimentaire)"
+      ],
+      "equinEtapes": [
+        "l'optimisation du confort locomoteur et de la mobilité",
+        "l'accompagnement du cheval sportif dans sa préparation et sa récupération",
+        "la réhabilitation fonctionnelle après une période d'arrêt ou de convalescence",
+        "l'équilibre fonctionnel du couple cavalier-cheval",
+        "l'accompagnement des chevaux sensibles ou présentant des modifications comportementales en complément d'une prise en charge adaptée"
+      ],
+      "equinMotifs": [
+        "Bilan ostéopathique annuel",
+        "Suivi du poulain (réflexe de succion, aplombs défectueux)",
+        "Préparation d'échéances sportives ou d'une saison de compétition / de course",
+        "Accompagnement après un effort intense",
+        "Raideurs, perte de souplesse ou difficultés dans le travail monté",
+        "Aider dans le cadre d'affections neurologiques (ataxie, wobbler, harper, shivering, headshaking etc..)",
+        "Modification des allures ou de la locomotion",
+        "Suite à un traumatisme (chute, accident dans le van, conflit entre congénères…)",
+        "Aider dans le cadre d'affections métaboliques et/ou endocriniennes (fourbure, Cushing, SME, PSSM, etc..)",
+        "Accompagnement après une période de convalescence",
+        "Réhabilitation lors d'un changement d'activité ou de mode de vie",
+        "Suivi des juments reproductrices (fertilité, gestation, post-mise bas)",
+        "Suivi des étalons reproducteurs",
+        "Changements comportementaux ou perte de confiance",
+        "Difficultés dans la relation cavalier-cheval"
+      ],
+      "equinApprocheGlobale": [
+        "la médecine vétérinaire",
+        "la dentisterie équine",
+        "la maréchalerie et la podologie",
+        "la physiothérapie et les autres thérapies complémentaires adaptées (acupuncture, shiatsu, massages)",
+        "le suivi du cavalier et l'équilibre du couple cavalier-cheval",
+        "un matériel de travail adapté",
+        "un environnement respectant les besoins physiques et sociaux du cheval",
+        "une alimentation adaptée",
+        "une meilleure compréhension du comportement équin"
+      ],
+      "chienMotifs": [
+        "Bilan ostéopathique annuel",
+        "Accompagnement des chiens sportifs, de travail ou pratiquant une activité régulière",
+        "Préparation aux échéances sportives et récupération après l'effort",
+        "Aider dans le cadre d'affections neurologiques (épilepsie, hernie discale, embolie fibrocartilagineuse, wobbler, syndrome vestibulaire, etc..)",
+        "Suite à un traumatisme (chute, accident, altercation entre congénères…)",
+        "Accompagnement après un événement stressant ou traumatique",
+        "Suite à un changement de vie ou une adoption",
+        "Changements de comportement",
+        "Difficultés de sociabilité (en complément d'un accompagnement avec un éducateur ou un comportementaliste si nécessaire)",
+        "Manifestations liées au stress ou à l'inconfort, telles que des comportements d'automutilation ou un léchage excessif pouvant entraîner des zones de dépilation",
+        "Suivi pendant la croissance",
+        "Suivi des animaux reproducteurs (fertilité, gestation, post-mise bas)",
+        "Affections locomotrices (boiteries, raideurs, compensations fonctionnelles…)",
+        "Accompagnement après une intervention chirurgicale",
+        "Affections digestives ou respiratoires chroniques, en complément du suivi vétérinaire"
+      ],
+      "chatMotifs": [
+        "Bilan ostéopathique annuel",
+        "Suivi pendant la croissance",
+        "Suite à un traumatisme",
+        "Accompagnement après une intervention chirurgicale",
+        "Suite à un changement de vie ou une adoption",
+        "Aider dans le cadre d'affections neurologiques (épilepsie, syndrome vestibulaire, etc)",
+        "Changements de comportement (chat moins sociable, diminution des interactions, difficultés à sauter ou à se déplacer…)",
+        "Manifestations liées au stress ou à l'inconfort, telles que le toilettage excessif pouvant conduire à un léchage compulsif et à des zones de perte de poils",
+        "Suivi des femelles reproductrices (gestation et post-mise bas)",
+        "Troubles locomoteurs",
+        "Troubles digestifs ou respiratoires, en complément du suivi vétérinaire"
+      ],
+      "nacMotifs": [
+        "Changements de comportement",
+        "Troubles locomoteurs",
+        "Difficultés de mobilité",
+        "Aider pour les affections d'ordre digestives, en complément du suivi vétérinaire",
+        "Certains troubles spécifiques comme les encéphalitozoonose, affections vestibulaires ou de tête penchée chez le lapin, après évaluation vétérinaire"
+      ],
+      "lapinsRongeurs": [
+        "Changements de comportement",
+        "Troubles locomoteurs ou difficultés de déplacement",
+        "Troubles digestifs et perturbations du transit, en complément d'une prise en charge vétérinaire",
+        "Accompagnement lors de troubles liés aux boules de poils (trichobézoards), en complément des recommandations vétérinaires",
+        "Difficultés alimentaires ou suspicion de troubles dentaires nécessitant une évaluation vétérinaire, notamment lors d'une pousse anormale des dents ou des problématiques de malocclusion"
+      ],
+      "reptiles": [
+        "Suites de traumatismes",
+        "Changements de comportement",
+        "Difficultés locomotrices",
+        "Incapacité ou difficultés à s'alimenter",
+        "Difficultés liées aux périodes de mue",
+        "Accompagnement général du confort et de l'adaptation fonctionnelle, en complément du suivi vétérinaire spécialisé lorsque nécessaire"
+      ],
+      "compagnieApprocheGlobale": [
+        "La médecine vétérinaire",
+        "Les soins dentaires adaptés",
+        "La physiothérapie et les autres approches complémentaires adaptées (acupuncture, shiatsu, massage)",
+        "Le toilettage et les soins d'entretien",
+        "Un équipement adapté (harnais, accessoires…)",
+        "Un environnement respectant les besoins de l'animal",
+        "Des interactions sociales adaptées avec ses congénères",
+        "L'éducation et l'accompagnement comportemental",
+        "Une alimentation adaptée"
+      ],
+      "elevageMotifs": [
+        "Analyse fonctionnelle du troupeau afin d'identifier les situations pouvant bénéficier d'un accompagnement ostéopathique",
+        "Animaux présentant des difficultés à se déplacer ou restant couchés",
+        "Affections locomotrices et boiteries",
+        "Suites de traumatismes",
+        "Problématiques liées à la reproduction (fertilité, suivi des reproducteurs)",
+        "Suivi post-mise bas ou post-vêlage",
+        "Difficultés d'adaptation du nouveau-né (absence de réflexe de succion, difficultés de démarrage)",
+        "Perte d'état général",
+        "Baisse de production ou de rendement laitier"
+      ],
+      "elevageApprocheGlobale": [
+        "La médecine vétérinaire",
+        "Les soins de pédicurie et de dentisterie adaptés",
+        "Un environnement de vie adapté aux besoins des animaux",
+        "Des conditions d'élevage favorisant le confort et les comportements naturels",
+        "Des interactions sociales respectant les besoins de l'espèce",
+        "Un enrichissement du milieu de vie",
+        "Une alimentation adaptée",
+        "Des approches complémentaires pouvant contribuer au bien-être animal. (Acupuncture, phytothérapie)"
+      ]
+    },
+    "etapesDeVie": [
+      {
+        "label": "Pendant la croissance",
+        "texte": "suivi des aplombs et accompagnement du développement, de la mobilité et des adaptations corporelles (1 à 3 consultations par an selon les besoins)."
+      },
+      {
+        "label": "À l'âge adulte",
+        "texte": "suivi préventif et maintien du confort fonctionnel (en moyenne 1 consultation annuelle selon le mode de vie)."
+      },
+      {
+        "label": "Chez les animaux sportifs",
+        "texte": "de la préparation physique, à la récupération et du suivi des échéances sportives."
+      },
+      {
+        "label": "Chez les animaux âgés",
+        "texte": "soutien du confort, de la mobilité et de la qualité de vie dès l'apparition des premiers signes de vieillissement."
+      },
+      {
+        "label": "Chez les animaux en fin de vie",
+        "texte": "accompagnement du confort et du bien-être."
+      }
+    ],
+    "sommaire": [
+      {
+        "label": "Équidés",
+        "detail": "Chevaux de sport, de loisir, poulains, ânes et mules"
+      },
+      {
+        "label": "Chiens · Chats · NAC",
+        "detail": "Croissance, sport, vieillissement et convalescence"
+      },
+      {
+        "label": "Animaux de rente",
+        "detail": "Bovins, ovins, caprins et porcins, en élevage"
+      }
+    ],
+    "departements": [
+      {
+        "code": "31",
+        "nom": "Haute-Garonne"
+      },
+      {
+        "code": "81",
+        "nom": "Tarn"
+      },
+      {
+        "code": "82",
+        "nom": "Tarn-et-Garonne"
+      },
+      {
+        "code": "47",
+        "nom": "Lot-et-Garonne"
+      },
+      {
+        "code": "46",
+        "nom": "Lot"
+      },
+      {
+        "code": "32",
+        "nom": "Gers"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron"
+      },
+      {
+        "code": "09",
+        "nom": "Ariège"
+      },
+      {
+        "code": "11",
+        "nom": "Aude"
+      }
+    ],
+    "meta": {
+      "titre": "Consultations en ostéopathie animale à Toulouse - cheval, chien, chat, NAC, élevage | Marie Salabert",
+      "description": "Ostéopathie animale à Toulouse et en Occitanie : consultations pour chevaux et équidés, chiens, chats, NAC (lapins, rongeurs, reptiles) et animaux de rente (bovins, ovins, caprins, porcins). Motifs, secteurs d'intervention et approche complémentaire au suivi vétérinaire."
+    },
+    "hero": {
+      "surTitre": "Prestations",
+      "titre": "Consultations en ostéopathie animale",
+      "sousTitre": "Chevaux, chiens, chats, NAC et animaux de rente, en Occitanie"
+    },
+    "sommaireTitre": "Quel animal souhaitez-vous accompagner ?",
+    "general": {
+      "surTitre": "Où l'ostéopathie animale peut agir",
+      "titre": "Un accompagnement tout au long de la vie de votre animal",
+      "intro": "L'ostéopathie animale peut s'intégrer dans le suivi global de votre animal à différents moments clés :"
+    },
+    "motifs": {
+      "titre": "Motifs de consultation fréquents",
+      "locomoteurs": "Troubles locomoteurs",
+      "emotionnel": "Accompagnement émotionnel et comportemental",
+      "emotionnelNote": "En complément d'un suivi avec un éducateur ou un vétérinaire comportementaliste lorsque cela est nécessaire.",
+      "premiereIntentionTitre": "En première intention, selon l'état de votre animal",
+      "premiereIntentionTexte1": "L'ostéopathie animale peut agir en première intention seulement en fonction de l'état de l'animal : un échange téléphonique approfondi vous permettra de vous en assurer ; sinon vous serez réorienté vers votre vétérinaire.",
+      "premiereIntentionTexte2": "Ces mêmes motifs peuvent être également traités par une séance d'ostéopathie après une visite chez votre vétérinaire. En cas de doute, une évaluation préalable de la douleur est nécessaire pour réaliser la séance dans les meilleures conditions."
+    },
+    "chroniques": {
+      "titre": "Ostéopathie et accompagnement des affections chroniques",
+      "avertissement": "L'ostéopathie animale intervient en complément du suivi vétérinaire établi. Elle ne remplace ni le diagnostic ni les traitements prescrits par votre vétérinaire.",
+      "avertissementFort": "en complément",
+      "ameliorationTitre": "Vers une amélioration du confort et de la qualité de vie",
+      "ameliorationNote": "Dans certaines situations, l'ostéopathie peut contribuer à améliorer totalement ou partiellement des troubles chroniques dits récidivants.",
+      "confortTitre": "En accompagnement de la prise en charge vétérinaire",
+      "confortNote": "Troubles chroniques où la séance a pour rôle d'apporter du confort et/ou d'accompagner la prise en charge faite par votre vétérinaire."
+    },
+    "collaboration": {
+      "surTitre": "Avec votre vétérinaire",
+      "titre": "Une approche collaborative pour la santé de votre animal",
+      "texte1": "L'ostéopathe animalier peut échanger avec votre vétérinaire traitant, avec votre accord, afin de favoriser une prise en charge cohérente et de lui transmettre ses observations.",
+      "texte2": "Chaque animal étant unique, un échange permettra d'évaluer la situation, de répondre à vos questions et de vous orienter vers la démarche la plus appropriée pour votre compagnon."
+    },
+    "secteur": {
+      "surTitre": "Secteur d'intervention",
+      "intro": "Interventions principales, environ 1h45 de route autour de Toulouse, sur les départements suivants :",
+      "complement": "D'autres départements peuvent être envisagés lors de l'organisation de tournées."
+    },
+    "equides": {
+      "numero": "Ostéopathie équine",
+      "titre": "Une approche adaptée à tous les profils d'équidés",
+      "chapo": "L'ostéopathie animale occupe aujourd'hui une place importante dans le suivi global des chevaux. De nombreux propriétaires intègrent une ou plusieurs consultations annuelles dans la gestion du bien-être et du confort de leur équidé, en fonction de son âge, de son activité, de son mode de vie et de ses besoins.",
+      "etapesIntro": "Au-delà des motifs de consultation communs à toutes les espèces, l'ostéopathie peut accompagner le cheval dans différentes étapes de sa vie, notamment :",
+      "etapesFin": "L'ostéopathie s'adresse à tous les équidés : chevaux de sport, chevaux de loisir, chevaux de spectacle, chevaux de travail, chevaux âgés, poulains, ânes et mules.",
+      "motifsTitre": "Quelques motifs de consultation spécifiques aux chevaux",
+      "globaleTitre": "Une approche globale du bien-être équin",
+      "globaleIntro": "La santé et le bien-être du cheval reposent sur une prise en charge globale associant plusieurs compétences complémentaires. L'ostéopathie animale s'intègre dans cette démarche aux côtés de :",
+      "globaleConclusion": "L'objectif est de favoriser une prise en charge cohérente, respectueuse et adaptée aux besoins individuels de chaque cheval.",
+      "photoAlt": "Marie Salabert mobilisant le postérieur d'un cheval en écurie"
+    },
+    "compagnie": {
+      "numero": "Chiens · Chats · NAC",
+      "titre": "Ostéopathie canine, féline et pour les nouveaux animaux de compagnie (NAC)",
+      "chapo": "Après s'être largement développée dans le milieu équin, l'ostéopathie animale occupe aujourd'hui une place grandissante dans le suivi des animaux de compagnie. Elle peut accompagner les chiens, les chats et les NAC tout au long de leur vie.",
+      "lieuFixeTitre": "Un lieu de consultation fixe",
+      "lieuFixeTexte1": "Les zones d'intervention sont identiques à celles proposées pour les équidés : 31, 81, 82, 47, 32, 09, 11, 12 et 46. Les consultations peuvent être réalisées à domicile afin de respecter les habitudes et l'environnement de votre animal.",
+      "lieuFixeTexte2": "Depuis 6 ans, je consulte tous les vendredis après-midi à la clinique vétérinaire du Val Dadou à Graulhet (81). Pour toute prise de rendez-vous dans ce lieu, merci de contacter directement la clinique au",
+      "chienTitre": "Motifs de consultation courants chez le chien",
+      "chatTitre": "Motifs de consultation courants chez le chat",
+      "nacTitre": "Quelques motifs de consultation courants chez les nouveaux animaux de compagnie (NAC)",
+      "nacGeneraux": "NAC — motifs généraux",
+      "lapinsTitre": "Lapins et rongeurs",
+      "reptilesTitre": "Reptiles",
+      "globaleTitre": "Une approche globale du bien-être de votre animal",
+      "globaleIntro": "La santé et le bien-être de votre animal reposent sur une vision globale associant différentes compétences et différents facteurs essentiels. L'ostéopathie animale s'intègre dans cette démarche aux côtés de :",
+      "globaleConclusion": "L'objectif est de proposer une prise en charge cohérente et personnalisée, en plaçant le confort, la santé et le bien-être de l'animal au centre des priorités.",
+      "photoChienAlt": "Marie Salabert avec un chien de type border collie",
+      "photoChatAlt": "Marie Salabert portant un chat noir en consultation"
+    },
+    "rente": {
+      "numero": "Ostéopathie bovine, ovine, caprine et porcine",
+      "titre": "Une approche complémentaire au service des élevages",
+      "chapo": "L'ostéopathie animale s'est développée dans le secteur de l'élevage à partir des années 2000. Historiquement, les éleveurs ont toujours eu recours dans les campagnes à des pratiques manuelles traditionnelles pour accompagner leurs animaux lors de certaines difficultés fonctionnelles.",
+      "paragraphes": [
+        "Aujourd'hui, l'ostéopathie animale s'inscrit dans cette continuité en proposant une approche manuelle structurée, adaptée aux exigences actuelles du bien-être animal et complémentaire au suivi vétérinaire.",
+        "Ayant grandi dans un environnement rural, j'ai eu la chance d'évoluer au contact de différents animaux d'élevage (bovins laitiers, porcins, lapins). Cette proximité avec le monde agricole m'a permis de comprendre les réalités du terrain et les enjeux quotidiens des éleveurs.",
+        "À travers l'ostéopathie animale, l'objectif est aujourd'hui de contribuer au confort des animaux d'élevage et d'accompagner les professionnels dans une démarche globale de bien-être animal."
+      ],
+      "motifsTitre": "Quelques motifs de consultation courants en élevage",
+      "motifsNote": "L'ostéopathie animale intervient toujours en complément de la médecine vétérinaire et ne se substitue pas au diagnostic ou aux traitements prescrits par le vétérinaire. Une consultation peut notamment être envisagée lors de :",
+      "globaleTitre": "Une approche globale du bien-être des animaux d'élevage",
+      "globaleIntro": "La santé et le bien-être des animaux d'élevage reposent sur une prise en charge globale associant plusieurs facteurs essentiels. L'ostéopathie animale s'intègre dans cette démarche aux côtés de :",
+      "globaleConclusion": "L'objectif est d'accompagner les éleveurs dans une démarche cohérente, respectueuse et adaptée aux besoins spécifiques de chaque animal et de chaque élevage.",
+      "photoAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un cochon sur la paille"
+    }
+  },
+  "faq": {
+    "meta": {
+      "titre": "FAQ Ostéopathie Animale : réponses à vos questions",
+      "description": "Formation, déroulement des séances, prévention, remboursement, cas particuliers : toutes les réponses sur l'ostéopathie animale à Toulouse et ses environs."
+    },
+    "hero": {
+      "surTitre": "FAQ",
+      "titre": "Les questions les plus posées",
+      "sousTitre": "Formation, déroulé d'une séance, situations particulières : les réponses aux questions qui reviennent le plus souvent."
+    },
+    "intro": {
+      "surTitre": "Vos questions",
+      "titre": "Tout ce que l'on me demande avant une séance",
+      "accroche": "Vous trouverez sur cette page les questions les plus fréquemment posées par mes clients lors de mes consultations ou par téléphone avant de prendre un rendez-vous.",
+      "complement": "Je reste toujours disponible si vous avez d'autres questions.",
+      "bouton": "Besoin d'aide ? Contactez-moi"
+    },
+    "groupes": {
+      "formation": "Devenir ostéopathe animalier & formation",
+      "comprendre": "Comprendre l'ostéopathie animale",
+      "consultation": "La consultation en pratique",
+      "situations": "Situations particulières"
+    },
+    "compteur": "{n} questions",
+    "items": {
+      "formation": [
+        {
+          "question": "Comment devenir ostéopathe animalier ? Faut-il être vétérinaire ou ostéopathe DO au préalable ?",
+          "reponse": "En France, il n’est pas nécessaire d’être vétérinaire ou ostéopathe humain diplômé (DO) pour exercer l’ostéopathie animale. Plusieurs parcours de formation permettent d’accéder à cette profession, sous réserve de répondre aux exigences réglementaires en vigueur, notamment la réussite de l’épreuve nationale d’aptitude organisée par le Conseil national de l’Ordre des vétérinaires (CNOV), indispensable pour pratiquer l’ostéopathie animale en tant que non-vétérinaire. Trois principales voies de formation existent : 1. Suivre une formation spécialisée en ostéopathie animale — Il est possible d’intégrer une école d’ostéopathie animale proposant généralement un cursus de cinq années d’études comprenant des enseignements théoriques, pratiques et cliniques. À l’issue de cette formation, le candidat doit réussir l’examen national d’aptitude organisé par le CNOV afin d’être autorisé à exercer l’ostéopathie animale en France. 2. Être formé en ostéopathie humaine puis se spécialiser en ostéopathie animale — Les ostéopathes humains diplômés peuvent également compléter leur parcours par une formation spécifique en ostéopathie animale. Ils doivent néanmoins répondre aux exigences réglementaires applicables aux non-vétérinaires et réussir l’épreuve nationale d’aptitude du CNOV. Il est essentiel de choisir une formation complète, intégrant l’étude des différentes espèces animales et une préparation adaptée aux exigences de l’examen national. 3. Devenir vétérinaire puis se spécialiser en ostéopathie vétérinaire — Les étudiants vétérinaires peuvent se former à l’ostéopathie animale dans le cadre d’une spécialisation complémentaire, notamment par l’obtention d’un Diplôme Inter-Écoles (DIE) d’ostéopathie vétérinaire. Cette voie permet d’intégrer l’approche ostéopathique dans une formation médicale vétérinaire complète."
+        },
+        {
+          "question": "Quelles sont les principales matières enseignées en ostéopathie animale ?",
+          "reponse": "La formation d’ostéopathe animalier repose sur un enseignement pluridisciplinaire associant connaissances scientifiques, compréhension du fonctionnement de l’animal et apprentissage des techniques manuelles. Les principales matières théoriques fondamentales comprennent : Anatomie animale, afin de connaître précisément les structures du corps et leurs interactions ; Physiologie, pour comprendre le fonctionnement des différents systèmes de l’organisme ; Biomécanique et locomotion, indispensables à l’analyse du mouvement et des adaptations corporelles ; Sémiologie vétérinaire, permettant d’identifier les signes nécessitant une orientation vers un vétérinaire. D’autres enseignements complètent la formation : biologie cellulaire ; biochimie ; histologie ; physiopathologie ; zootechnie ; nutrition animale ; éthologie ; bien-être animal ; éthique et déontologie ; santé publique. La formation pratique permet ensuite d’acquérir la maîtrise des différentes approches ostéopathiques, notamment les techniques musculo-squelettiques, fasciales, tissulaires, viscérales, crâniennes et autres approches adaptées aux différentes espèces."
+        }
+      ],
+      "comprendre": [
+        {
+          "question": "Une consultation d'ostéopathie animale nécessite-t-elle forcément des manipulations qui font « craquer » les articulations ?",
+          "reponse": "Non. Contrairement à certaines idées reçues, une consultation d’ostéopathie animale ne repose pas nécessairement sur des manipulations avec des bruits articulaires. L’ostéopathie utilise différentes techniques manuelles adaptées à chaque animal, à son âge, à son espèce, à son état de santé et à sa sensibilité. Les approches peuvent être articulaires, musculaires, fasciales, tissulaires, viscérales ou encore crâniennes, sans recherche systématique de « craquement ». L’objectif n’est pas de provoquer un mouvement forcé, mais d’accompagner les tissus vers une meilleure mobilité et un fonctionnement plus équilibré, dans le respect du confort de l’animal."
+        },
+        {
+          "question": "À partir de quel âge un animal peut-il consulter un ostéopathe ?",
+          "reponse": "L’ostéopathie s’adresse aux animaux de tous âges. Une consultation peut être envisagée dès les premiers jours de vie, pendant la croissance, à l’âge adulte ou chez les animaux seniors, en fonction de leurs besoins."
+        },
+        {
+          "question": "Mon animal a-t-il besoin d'une ordonnance vétérinaire ?",
+          "reponse": "Non. En France, un ostéopathe animalier inscrit sur le Registre National d’Aptitude (RNA) peut recevoir un animal sans prescription vétérinaire. En revanche, si l’état de l’animal le nécessite, il orientera systématiquement le propriétaire vers son vétérinaire."
+        },
+        {
+          "question": "L'ostéopathie animale remplace-t-elle la médecine vétérinaire ?",
+          "reponse": "Non. L’ostéopathie est une approche complémentaire au suivi vétérinaire. Elle ne remplace ni un diagnostic médical, ni un traitement vétérinaire lorsque celui-ci est nécessaire."
+        }
+      ],
+      "consultation": [
+        {
+          "question": "Comment se déroule une consultation ?",
+          "reponse": "Une consultation comprend un échange sur les antécédents de votre animal, un examen locomoteur et postural, un examen palpatoire, un diagnostic ostéopathique puis un traitement manuel adapté. Des conseils personnalisés vous sont ensuite donnés pour optimiser la récupération de votre animal."
+        },
+        {
+          "question": "Les manipulations sont-elles douloureuses ?",
+          "reponse": "Les techniques utilisées sont adaptées à chaque animal et à son état de santé. Certains animaux peuvent manifester une sensibilité sur des zones déjà douloureuses, mais les manipulations sont réalisées dans le respect de leur confort."
+        },
+        {
+          "question": "Combien de temps dure une consultation ?",
+          "reponse": "La durée moyenne est de 35 minutes à 1 heure, en fonction de l’espèce, du motif de consultation et des besoins de l’animal."
+        },
+        {
+          "question": "Combien de séances sont nécessaires ?",
+          "reponse": "Chaque animal est unique. Une seule séance peut parfois suffire, tandis que certaines situations nécessitent un suivi régulier. Le nombre de consultations est déterminé en fonction de l’évolution de l’animal et de ses besoins."
+        },
+        {
+          "question": "Mon animal doit-il se reposer après la séance ?",
+          "reponse": "Oui. Un temps de repos est généralement conseillé pendant les 24 à 72 heures suivant la consultation afin de permettre à l’organisme de s’adapter aux modifications induites par le traitement. Des recommandations adaptées vous seront transmises à la fin de la séance."
+        },
+        {
+          "question": "Peut-on consulter en prévention ?",
+          "reponse": "Oui. L’ostéopathie peut s’intégrer dans un suivi préventif tout au long de la vie de votre animal, sans motif de consultation spécifique."
+        },
+        {
+          "question": "Faut-il prévoir quelque chose pour la consultation ?",
+          "reponse": "Il est recommandé de prévoir les comptes rendus vétérinaires récents si votre animal est suivi pour une pathologie. Pour les chevaux et les animaux d’élevage, un espace sécurisé permettant leur observation et leur manipulation est nécessaire. Concernant les chats, une serviette ou plaid sur une table est privilégié pour leur confort et la praticité des manipulations."
+        },
+        {
+          "question": "Les consultations sont-elles remboursées ?",
+          "reponse": "Certaines assurances santé animale prennent en charge tout ou partie des consultations d’ostéopathie. Les modalités varient selon les contrats ; il est conseillé de se rapprocher de votre assureur. En cas de besoin, une feuille de soin sera complétée."
+        },
+        {
+          "question": "Quand ne faut-il pas consulter un ostéopathe ?",
+          "reponse": "En cas d’urgence (fracture, plaie importante, difficulté respiratoire, fièvre, suspicion d’infection, détresse neurologique, etc.), il est indispensable de contacter un vétérinaire en priorité. L’ostéopathie pourra éventuellement intervenir dans un second temps, en complément de la prise en charge médicale."
+        },
+        {
+          "question": "L'ostéopathe animalier peut-il échanger directement avec mon vétérinaire ?",
+          "reponse": "Oui. La communication entre les différents professionnels qui interviennent auprès de votre animal permet une prise en charge globale et cohérente. Avec votre accord, l’ostéopathe animalier peut échanger avec votre vétérinaire traitant afin de partager les informations utiles au suivi de votre animal, dans le respect du rôle et des compétences de chacun. L’ostéopathie s’inscrit dans une démarche complémentaire au suivi vétérinaire, avec pour objectif commun de favoriser la santé, le confort, la mobilité et le bien-être de votre animal."
+        },
+        {
+          "question": "Puis-je rester présent pendant la consultation d'ostéopathie ?",
+          "reponse": "Oui. Votre présence est souhaitée lors de la consultation. Votre connaissance de l’animal, de ses habitudes et de son comportement constitue une source d’informations précieuse lors de l’anamnèse et du déroulement de la séance. Votre présence permet également de participer aux échanges, de comprendre les observations réalisées et de recevoir les conseils nécessaires pour accompagner au mieux votre animal après la consultation."
+        }
+      ],
+      "situations": [
+        {
+          "question": "Mon chien boite, est-ce que l'ostéopathie peut l'aider ?",
+          "reponse": "Une boiterie peut avoir de nombreuses origines et nécessite parfois un examen vétérinaire afin d’en identifier la cause. Lorsque la cause médicale a été prise en charge ou lorsque la situation relève d’un trouble fonctionnel, l’ostéopathie peut contribuer à améliorer le confort locomoteur de l’animal. Elle permet d’évaluer les compensations mises en place par le corps, les restrictions de mobilité et les déséquilibres fonctionnels pouvant persister après un épisode douloureux. L’objectif est d’accompagner le retour à une locomotion plus harmonieuse et de limiter l’installation de compensations, en complément du suivi vétérinaire lorsque celui-ci est nécessaire."
+        },
+        {
+          "question": "Mon cheval est raide ou manque de souplesse, faut-il consulter un ostéopathe ?",
+          "reponse": "Une diminution de souplesse, des raideurs ou une modification de la locomotion peuvent être liées à différentes causes : contraintes liées au travail, adaptations posturales, inconfort, vieillissement ou compensations fonctionnelles. Une consultation d’ostéopathie permet d’évaluer la mobilité globale du cheval, son équilibre corporel et les éventuelles restrictions pouvant limiter son confort ou ses capacités physiques. Chez le cheval sportif comme chez le cheval de loisir, l’objectif est de favoriser une locomotion fluide, une meilleure adaptation aux contraintes et un confort optimal."
+        },
+        {
+          "question": "Mon animal a changé de comportement, une consultation d'ostéopathie peut-elle être utile ?",
+          "reponse": "Un changement de comportement peut avoir de nombreuses origines : environnement, éducation, stress, douleur ou inconfort physique. Lorsqu’une gêne corporelle participe à une modification du comportement, l’ostéopathie peut contribuer à identifier certaines restrictions fonctionnelles susceptibles d’impacter le bien-être de l’animal. Elle peut s’intégrer dans une prise en charge pluridisciplinaire, en collaboration avec le vétérinaire, le vétérinaire comportementaliste ou l’éducateur spécialisé lorsque cela est nécessaire."
+        },
+        {
+          "question": "Quand consulter un ostéopathe pour un animal sportif ?",
+          "reponse": "Les animaux sportifs sont soumis à des contraintes physiques importantes nécessitant un suivi adapté. Une consultation peut être envisagée : en préparation d’une saison sportive ou d’une période d’activité intense ; avant une échéance importante ; après un effort soutenu afin d’accompagner la récupération ; lors d’une baisse de performance ou d’une modification de la locomotion ; en prévention afin de surveiller les compensations liées à l’entraînement."
+        }
+      ]
+    }
+  },
+  "reservation": {
+    "meta": {
+      "titre": "Réserver une séance d'ostéopathie animale - Marie Salabert",
+      "description": "Rendez-vous avec Marie Salabert, ostéopathe animalier à Toulouse. Offrez à votre compagnon un bien-être optimal. Réservez votre séance."
+    },
+    "heroTitre": "Réservez votre séance",
+    "titre": "Réservez une séance d'ostéopathie pour votre animal",
+    "infosContact": "Informations de contact",
+    "formulaire": "Formulaire de contact"
+  },
+  "certification": {
+    "meta": {
+      "titre": "Ma certification en ostéopathie animale - Marie Salabert",
+      "description": "Inscrite au Registre National d'Aptitude tenu par le Conseil National de l'Ordre des Vétérinaires sous le numéro OA 801."
+    }
+  }
+}

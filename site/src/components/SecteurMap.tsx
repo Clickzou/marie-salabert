@@ -29,6 +29,36 @@ const COULEURS = {
 const TOULOUSE: [number, number] = [43.6045, 1.444];
 const RAYON_METRES = 105_000;
 
+/**
+ * Passages reguliers, listes par la praticienne dans le document de contenu.
+ * Affiches en petits points prune, sans etiquette permanente : le nom apparait
+ * au survol pour ne pas surcharger la carte.
+ */
+const PASSAGES: readonly { nom: string; position: [number, number] }[] = [
+  { nom: "Toulouse", position: [43.6045, 1.444] },
+  { nom: "Castelnau d'Estrétefonds", position: [43.7833, 1.35] },
+  { nom: "Balma", position: [43.6111, 1.5] },
+  { nom: "Fronton", position: [43.8386, 1.3714] },
+  { nom: "Grenade", position: [43.7714, 1.2939] },
+  { nom: "Blagnac", position: [43.6333, 1.3936] },
+  { nom: "L'Union", position: [43.6539, 1.4903] },
+  { nom: "Graulhet", position: [43.7594, 1.9906] },
+  { nom: "Villeneuve-sur-Lot", position: [44.4081, 0.7031] },
+  { nom: "Agen", position: [44.2032, 0.6167] },
+  { nom: "Castelsarrasin", position: [44.0403, 1.1069] },
+  { nom: "Beaumont-de-Lomagne", position: [43.8836, 0.9878] },
+  { nom: "Caylus", position: [44.2372, 1.7739] },
+  { nom: "Montauban", position: [44.0181, 1.355] },
+  { nom: "Muret", position: [43.4611, 1.3269] },
+  { nom: "Léguevin", position: [43.6, 1.2333] },
+  { nom: "L'Isle-Jourdain", position: [43.6144, 1.0817] },
+  { nom: "Nailloux", position: [43.3547, 1.6297] },
+  { nom: "Saint-Orens-de-Gameville", position: [43.5522, 1.5308] },
+  { nom: "Labège", position: [43.5442, 1.515] },
+  { nom: "Cahors", position: [44.4475, 1.4406] },
+  { nom: "Villefranche-de-Rouergue", position: [44.3525, 2.035] },
+];
+
 const LIEUX: readonly Lieu[] = [
   {
     nom: "Toulouse et sa région",
@@ -83,6 +113,19 @@ export default function SecteurMap({ className = "h-[340px] sm:h-[460px]" }: { c
         fillColor: "#933a50",
         fillOpacity: 0.08,
       }).addTo(carte);
+
+      /* petits points des passages reguliers, sous les deux marqueurs principaux */
+      PASSAGES.forEach((passage) => {
+        L.circleMarker(passage.position, {
+          radius: 5,
+          color: "#fff",
+          weight: 1.5,
+          fillColor: "#933a50",
+          fillOpacity: 0.9,
+        })
+          .addTo(carte!)
+          .bindTooltip(passage.nom, { direction: "top", offset: [0, -6] });
+      });
 
       LIEUX.forEach((lieu) => {
         const couleur = COULEURS[lieu.couleur];

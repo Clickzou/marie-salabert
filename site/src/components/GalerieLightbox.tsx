@@ -20,7 +20,20 @@ const PAS = 16;
  * s'imbriquent sans blanc) et visionneuse plein ecran (fleches, clavier,
  * fermeture au clic sur le fond, compteur).
  */
-export default function GalerieLightbox({ photos }: { photos: readonly GaleriePhoto[] }) {
+export default function GalerieLightbox({
+  photos,
+  libelles,
+}: {
+  photos: readonly GaleriePhoto[];
+  libelles: {
+    afficherPlus: string;
+    visionneuse: string;
+    fermer: string;
+    photoPrecedente: string;
+    photoSuivante: string;
+    agrandir: string;
+  };
+}) {
   const [index, setIndex] = useState<number | null>(null);
   const [visibles, setVisibles] = useState(PAS);
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -93,7 +106,7 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
                 setIndex(i);
               }}
               className="group relative block w-full cursor-zoom-in overflow-hidden rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-plum"
-              aria-label={photo.alt || `Agrandir la photo ${i + 1} sur ${photos.length}`}
+              aria-label={photo.alt || libelles.agrandir.replace("{i}", String(i + 1)).replace("{n}", String(photos.length))}
             >
               <Image
                 src={photo.src}
@@ -137,7 +150,7 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
             onClick={() => setVisibles((v) => v + PAS)}
             className="inline-flex items-center gap-2 rounded-[10px] border border-ink/15 px-8 py-4 text-[15px] font-medium text-ink transition-all duration-500 hover:-translate-y-0.5 hover:border-ink/40 hover:bg-ink/[0.03]"
           >
-            Afficher plus de photos
+            {libelles.afficherPlus}
             <span className="text-[13px] text-muted">
               {visibles} / {photos.length}
             </span>
@@ -150,7 +163,7 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
           ref={dialogRef}
           role="dialog"
           aria-modal="true"
-          aria-label="Visionneuse de photos"
+          aria-label={libelles.visionneuse}
           className="fixed inset-0 z-[200] flex items-center justify-center bg-ink/95 p-4 backdrop-blur-sm"
           onClick={(event) => {
             if (event.target === event.currentTarget) close();
@@ -159,7 +172,7 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
           <button
             type="button"
             onClick={close}
-            aria-label="Fermer la visionneuse"
+            aria-label={libelles.fermer}
             className="absolute right-5 top-5 z-10 grid h-12 w-12 place-items-center rounded-full border border-white/30 text-white transition-all duration-500 hover:border-white hover:bg-white hover:text-ink"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
@@ -169,7 +182,7 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
           <button
             type="button"
             onClick={() => move(-1)}
-            aria-label="Photo précédente"
+            aria-label={libelles.photoPrecedente}
             className="absolute left-4 top-1/2 z-10 grid h-14 w-14 -translate-y-1/2 place-items-center rounded-full border border-white/30 text-white transition-all duration-500 hover:border-white hover:bg-white hover:text-ink sm:left-8"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -192,7 +205,7 @@ export default function GalerieLightbox({ photos }: { photos: readonly GaleriePh
           <button
             type="button"
             onClick={() => move(1)}
-            aria-label="Photo suivante"
+            aria-label={libelles.photoSuivante}
             className="absolute right-4 top-1/2 z-10 grid h-14 w-14 -translate-y-1/2 place-items-center rounded-full border border-white/30 text-white transition-all duration-500 hover:border-white hover:bg-white hover:text-ink sm:right-8"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">

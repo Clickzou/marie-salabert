@@ -14,8 +14,10 @@ import type { ReactNode } from "react";
  */
 export function AProposApproches({
   items,
+  libelles,
 }: {
   items: readonly { title: string; body: ReactNode; image?: string; alt?: string }[];
+  libelles: { faitesDefiler: string; precedente: string; suivante: string };
 }) {
   const piste = useRef<HTMLUListElement | null>(null);
   const [debut, setDebut] = useState(true);
@@ -50,7 +52,7 @@ export function AProposApproches({
         ref={piste}
         onScroll={majBornes}
         tabIndex={0}
-        aria-label="Approches en ostéopathie"
+        aria-label={libelles.faitesDefiler}
         className="no-scrollbar flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-plum"
       >
         {items.map((item, i) => (
@@ -88,12 +90,12 @@ export function AProposApproches({
       </ul>
 
       <div className="mt-8 flex items-center justify-between gap-6">
-        <p className="text-[14px] text-muted">Faites défiler pour les découvrir</p>
+        <p className="text-[14px] text-muted">{libelles.faitesDefiler}</p>
         {/* Fleches pleines et genereuses : elles doivent se voir au premier coup d'oeil */}
         <div className="flex items-center gap-3">
           {[
-            { d: "M15 6l-6 6 6 6", label: "Approche précédente", sens: -1 as const, inactif: debut },
-            { d: "M9 6l6 6-6 6", label: "Approche suivante", sens: 1 as const, inactif: fin },
+            { d: "M15 6l-6 6 6 6", label: libelles.precedente, sens: -1 as const, inactif: debut },
+            { d: "M9 6l6 6-6 6", label: libelles.suivante, sens: 1 as const, inactif: fin },
           ].map((b) => (
             <button
               key={b.label}
