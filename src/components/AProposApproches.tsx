@@ -1,13 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
+import { useCarrousel } from "./useCarrousel";
 
 /**
  * « Les differentes approches en osteopathie » : carrousel horizontal de cartes
  * illustrees. Defilement natif (glisser au doigt, molette horizontale, clavier)
  * avec accroche par carte ; les fleches font defiler d'une carte.
+ *
+ * Le comportement du defilement automatique — et les conditions dans lesquelles
+ * il se suspend ou s'arrete — vit dans `useCarrousel`, partage avec le carrousel
+ * de photos de l'accueil.
  *
  * Les visuels ont ete generes avec fal.ai (voir scripts/gen-approches-images.mjs) :
  * gros plans de mains, sans visage, pour illustrer chaque technique.
@@ -19,38 +23,13 @@ export function AProposApproches({
   items: readonly { title: string; body: ReactNode; image?: string; alt?: string }[];
   libelles: { faitesDefiler: string; precedente: string; suivante: string };
 }) {
-  const piste = useRef<HTMLUListElement | null>(null);
-  const [debut, setDebut] = useState(true);
-  const [fin, setFin] = useState(false);
-
-  const majBornes = useCallback(() => {
-    const el = piste.current;
-    if (!el) return;
-    setDebut(el.scrollLeft < 8);
-    setFin(el.scrollLeft + el.clientWidth >= el.scrollWidth - 8);
-  }, []);
-
-  useEffect(() => {
-    majBornes();
-    const el = piste.current;
-    if (!el) return;
-    window.addEventListener("resize", majBornes);
-    return () => window.removeEventListener("resize", majBornes);
-  }, [majBornes]);
-
-  const defiler = (sens: 1 | -1) => {
-    const el = piste.current;
-    if (!el) return;
-    const carte = el.querySelector("li");
-    const pas = carte ? carte.getBoundingClientRect().width + 24 : el.clientWidth * 0.8;
-    el.scrollBy({ left: sens * pas, behavior: "smooth" });
-  };
+  const { debut, fin, defiler, reprendreLaMain, proprietesPiste, proprietesConteneur } =
+    useCarrousel();
 
   return (
-    <div className="mt-16">
+    <div className="mt-16" {...proprietesConteneur}>
       <ul
-        ref={piste}
-        onScroll={majBornes}
+        {...proprietesPiste}
         tabIndex={0}
         aria-label={libelles.faitesDefiler}
         className="no-scrollbar flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-plum"
@@ -91,7 +70,10 @@ export function AProposApproches({
 
       <div className="mt-8 flex items-center justify-between gap-6">
         <p className="text-[14px] text-muted">{libelles.faitesDefiler}</p>
-        {/* Fleches pleines et genereuses : elles doivent se voir au premier coup d'oeil */}
+        {/* Fleches pleines et genereuses : elles doivent se voir au premier coup
+            d'oeil. Pas de commande de lecture/pause a l'ecran : le defilement se
+            suspend au survol et au focus, et s'arrete pour de bon des la
+            premiere action manuelle. */}
         <div className="flex items-center gap-3">
           {[
             { d: "M15 6l-6 6 6 6", label: libelles.precedente, sens: -1 as const, inactif: debut },
@@ -100,7 +82,10 @@ export function AProposApproches({
             <button
               key={b.label}
               type="button"
-              onClick={() => defiler(b.sens)}
+              onClick={() => {
+                reprendreLaMain();
+                defiler(b.sens);
+              }}
               aria-label={b.label}
               disabled={b.inactif}
               className="grid h-14 w-14 place-items-center rounded-full bg-green text-white shadow-[0_14px_30px_-16px_rgba(22,23,26,0.9)] transition-all duration-500 hover:-translate-y-0.5 hover:bg-green-light disabled:pointer-events-none disabled:bg-ink/15 disabled:text-white/70 disabled:shadow-none"

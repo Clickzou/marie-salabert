@@ -27,7 +27,12 @@
     "secretariat": "Reception desk",
     "zoneIntervention": "Area covered",
     "sommaire": "Contents",
-    "allerAuContenu": "Skip to content"
+    "allerAuContenu": "Skip to content",
+    "pause": "Pause the carousel",
+    "lecture": "Resume the carousel",
+    "photosSeances": "Session photos",
+    "reconnaissance": "Official recognition",
+    "registre": "Listed on the French National Register of Aptitude held by the National Council of the Order of Veterinarians (OA 801)"
   },
   "footer": {
     "plusInfos": "More information",
@@ -46,8 +51,7 @@
       "cookies": "Cookie policy",
       "mentions": "Legal notice",
       "confidentialite": "Privacy policy"
-    },
-    "registre": "Listed on the French National Register of Aptitude held by the National Council of the Order of Veterinarians (OA 801)"
+    }
   },
   "cookies": {
     "titre": "Cookie settings",
@@ -135,7 +139,7 @@
         {
           "titre": "Farm animals",
           "sousTitre": "Cattle · Sheep · Goats · Pigs",
-          "alt": "Hand placed on a cow in a barn",
+          "alt": "Marie Salabert crouching behind a Charolais bovine in a cattle shed",
           "indications": [
             "Promote the harmonious development of young animals.",
             "Take part in the follow-up of breeding animals (both males and females: fertility issues, gestation, post-birth).",
@@ -380,6 +384,7 @@
       ],
       "obligation": "Furthermore, animal osteopaths are required to refer owners to a veterinary surgeon when the animal's condition requires a medical diagnosis, treatment, or when the observed disorders fall outside the scope of osteopathy. This obligation is part of the code of ethics set out in the Rural Code.",
       "autorites": "Reference authorities",
+      "liensTitre": "Legal texts and registers",
       "liens": [
         "Directory of registered osteopaths (CNOV)",
         "veterinaire.fr — Animal Osteopathy section",

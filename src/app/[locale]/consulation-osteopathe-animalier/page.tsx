@@ -43,7 +43,8 @@ const ancresSommaire = ["#equides", "#compagnie", "#rente"];
 const photosSommaire = [
   "/images/2025/05/IMG_5249.jpg",
   "/images/2025/05/IMG_5516.jpg",
-  "/images/publics/rente.jpg",
+  // photo de terrain, en bouverie, a la place de l'image d'illustration
+  "/images/2025/05/IMG_2057.avif",
 ];
 
 /* Marge appliquee aux cibles d'ancres : compense header (88px) + sous-nav collante. */

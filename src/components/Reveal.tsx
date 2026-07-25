@@ -19,8 +19,9 @@ export default function Reveal({
   as?: ElementType;
   className?: string;
   delay?: number;
-  /** sens de l'apparition : glissement, leger zoom avec flou, ou lateral */
-  variant?: "up" | "scale" | "left" | "right";
+  /** sens de l'apparition : glissement, leger zoom avec flou, lateral, ou simple
+      fondu — ce dernier pour les blocs qui bougent deja d'eux-memes */
+  variant?: "up" | "scale" | "left" | "right" | "fade";
 }) {
   const Tag = as ?? "div";
   const ref = useRef<HTMLElement | null>(null);

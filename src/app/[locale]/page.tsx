@@ -16,6 +16,7 @@ import {
 } from "@/components/sections";
 import Reveal from "@/components/Reveal";
 import SecteurMap from "@/components/SecteurMap";
+import { CarrouselPhotos } from "@/components/CarrouselPhotos";
 
 export async function generateMetadata({
   params,
@@ -44,11 +45,64 @@ const photosHero = [
   "/images/2025/05/osteopathe-chat-toulouse.jpg",
 ];
 
+/**
+ * Carrousel de la section « Deroulement d'une seance ».
+ *
+ * Six cliches de la galerie. Le tri s'est fait sur le contenu, pas sur le nom de
+ * fichier : la banniere sert les memes photos sous d'autres noms — le poulain,
+ * le border collie et le chat noir de la galerie sont exactement les cliches de
+ * `osteopathe-animalier-toulouse`, `osteopathe-chien-toulouse` et
+ * `osteopathe-chat-toulouse`. Chaque image ci-dessous a donc ete comparee une a
+ * une aux quatre vues de la banniere, et les especes sont variees.
+ *
+ * Les textes alternatifs decrivent la scene : ces photos portent une
+ * information, elles ne sont pas decoratives.
+ */
+const photosSeances = [
+  {
+    src: "/images/2025/05/9F3CC3C6-C8CC-45ED-84F6-D54379C346E8.jpg",
+    largeur: 1440,
+    hauteur: 963,
+    alt: "Marie Salabert travaille le dos d'un berger allemand assis dans l'herbe.",
+  },
+  {
+    src: "/images/2025/05/marie-salabert-osteopathe-animaliere-1.jpg",
+    largeur: 1440,
+    hauteur: 961,
+    alt: "Marie Salabert porte un chat siamois contre elle avant une séance.",
+  },
+  {
+    src: "/images/2025/05/B8F0133C-B03C-433E-A182-443F72A4644B.jpg",
+    largeur: 1440,
+    hauteur: 961,
+    alt: "Marie Salabert mobilise la tête d'un cheval bai dans une écurie.",
+  },
+  {
+    src: "/images/2025/05/D2FAB58D-7A14-4998-A8AB-85CCBB71F706.jpg",
+    largeur: 1440,
+    hauteur: 961,
+    alt: "Marie Salabert soutient l'encolure d'un poney brun dans un pré fleuri.",
+  },
+  {
+    src: "/images/2025/05/decouvrir-osteopathe-animale-1.jpg",
+    largeur: 1488,
+    hauteur: 1304,
+    alt: "Marie Salabert mobilise l'antérieur d'un cheval bai, au pré.",
+  },
+  {
+    src: "/images/2025/05/IMG_8271.jpg",
+    largeur: 2000,
+    hauteur: 1500,
+    alt: "Marie Salabert examine le dos d'un cheval bai en extérieur, au pré.",
+  },
+] as const;
+
 /** Visuels des trois publics, dans l'ordre du dictionnaire. */
 const photosPublics = [
   "/images/2025/05/IMG_5516.jpg",
   "/images/2025/05/IMG_5249.jpg",
-  "/images/publics/rente.jpg",
+  // meme photo de terrain que la carte « Animaux de rente » des consultations
+  "/images/2025/05/IMG_2057.avif",
 ];
 
 const ARTICLE_HEGEL = "https://stm.cairn.info/revue-hegel-2026-1-page-5?lang=fr";
@@ -86,10 +140,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <CertificationBadge
         href={cheminLocalise(routes.certification, locale)}
         libelle={d.commun.voirCertification}
+        surTitre={d.commun.reconnaissance}
+        mention={d.commun.registre}
       />
 
-      {/* Parcours personnel */}
-      <Section padding="no-top">
+      {/* Parcours personnel. Espacement complet : le « no-top » d'avant
+          compensait la pastille de certification et sa marge basse, que le
+          bandeau plat ne produit plus. */}
+      <Section>
         <Container width="wide">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <Reveal className="relative">
@@ -368,19 +426,21 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             ))}
           </ol>
 
-          {/* Visuel de section, hors grille : place dans une colonne il creusait un
-              vide sous les etapes 02 et 03. */}
-          <Reveal variant="scale" className="group/media mt-16 overflow-hidden rounded-lg">
-            <Image
-              src="/images/2025/05/IMG_5034.jpg"
-              alt={a.etapes.photoAlt}
-              width={1036}
-              height={778}
-              sizes="100vw"
-              className="img-zoom h-[280px] w-full object-cover object-center sm:h-[420px]"
-            />
-          </Reveal>
         </Container>
+
+        {/* Carrousel de photos, hors grille et hors conteneur pour occuper toute
+            la largeur de l'ecran. Les cliches viennent de la galerie et ne sont
+            utilises nulle part ailleurs sur l'accueil. */}
+        <Reveal variant="fade" className="mt-16">
+          <CarrouselPhotos
+            photos={photosSeances}
+            libelles={{
+              titre: d.commun.photosSeances,
+              precedent: d.commun.precedent,
+              suivant: d.commun.suivant,
+            }}
+          />
+        </Reveal>
       </Section>
 
       <CtaBand

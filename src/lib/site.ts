@@ -81,10 +81,10 @@ export const heroRoutes: readonly string[] = [
 export const mainNav = [
   { cle: "accueil", href: routes.home },
   { cle: "aPropos", href: routes.about },
-  { cle: "actualites", href: routes.news },
   { cle: "consultations", href: routes.consultations },
   { cle: "faq", href: routes.faq },
   { cle: "galerie", href: routes.gallery },
+  { cle: "actualites", href: routes.news },
   { cle: "contact", href: routes.contact },
   { cle: "symbiosteo", href: routes.symbiosteo },
 ] as const;

@@ -120,7 +120,7 @@ export default function Footer({ locale, d }: { locale: Locale; d: Dictionnaire 
               <p>
                 {d.footer.tva} : {site.vat}
               </p>
-              <p className="pt-2 text-white/70">{d.footer.registre}</p>
+              <p className="pt-2 text-white/70">{d.commun.registre}</p>
             </address>
           </div>
         </div>

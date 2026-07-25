@@ -6,12 +6,53 @@ type Lien = { href: string; label: string };
 
 /**
  * Sommaire flottant, cale a droite et centre verticalement : une pastille par
- * section, avec le libelle qui apparait au survol. La pastille active suit le
- * defilement (IntersectionObserver). Masque en dessous de lg, ou la barre
- * prendrait trop de place.
+ * section, chacune accompagnee de son libelle. La pastille active suit le
+ * defilement (IntersectionObserver).
+ *
+ * Les libelles restent affiches en permanence : des pastilles nues n'annoncent
+ * pas ou elles menent, et il fallait survoler chacune pour le decouvrir. Ils
+ * gardent leur pastille blanche, qui les rend lisibles aussi bien sur fond clair
+ * que par-dessus les bandeaux prune.
+ *
+ * Masque en dessous de xl : plus bas, la colonne de libelles viendrait mordre
+ * sur le contenu, que le sommaire est cense accompagner et non recouvrir.
  */
 export default function SommaireFlottant({ liens }: { liens: readonly Lien[] }) {
   const [actif, setActif] = useState(liens[0]?.href ?? "");
+  const [visible, setVisible] = useState(false);
+
+  /* Le sommaire n'a rien a annoncer tant que la banniere occupe l'ecran : il
+     n'apparait qu'une fois le haut de la premiere section arrive a mi-hauteur,
+     et se retire si l'on remonte au-dessus.
+
+     Lecture directe de la position plutot qu'un IntersectionObserver : celui-ci
+     ne se declenche qu'aux franchissements de seuil, et un saut instantane —
+     retour en haut de page, clic sur une ancre — traverse la zone sans qu'aucun
+     franchissement soit observe. Le sommaire restait alors affiche au-dessus de
+     sa section. Le calcul est cadence par `requestAnimationFrame` : au plus une
+     mesure par image, quel que soit le debit des evenements de defilement. */
+  useEffect(() => {
+    const premier = liens[0] && document.querySelector<HTMLElement>(liens[0].href);
+    if (!premier) return;
+
+    let image = 0;
+    const mesurer = () => {
+      image = 0;
+      setVisible(premier.getBoundingClientRect().top < window.innerHeight * 0.5);
+    };
+    const planifier = () => {
+      if (!image) image = requestAnimationFrame(mesurer);
+    };
+
+    mesurer();
+    window.addEventListener("scroll", planifier, { passive: true });
+    window.addEventListener("resize", planifier);
+    return () => {
+      if (image) cancelAnimationFrame(image);
+      window.removeEventListener("scroll", planifier);
+      window.removeEventListener("resize", planifier);
+    };
+  }, [liens]);
 
   useEffect(() => {
     const cibles = liens
@@ -37,7 +78,11 @@ export default function SommaireFlottant({ liens }: { liens: readonly Lien[] }) 
   return (
     <nav
       aria-label="Sommaire de la page"
-      className="fixed right-6 top-1/2 z-40 hidden -translate-y-1/2 lg:block"
+      /* `invisible` en plus de l'opacite : un bloc simplement transparent
+         resterait cliquable et capterait les survols par-dessus le contenu. */
+      className={`fixed right-6 top-1/2 z-40 hidden -translate-y-1/2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] xl:block ${
+        visible ? "translate-x-0 opacity-100" : "invisible translate-x-4 opacity-0"
+      }`}
     >
       <ul className="flex flex-col items-end gap-5">
         {liens.map((lien) => {
@@ -50,8 +95,10 @@ export default function SommaireFlottant({ liens }: { liens: readonly Lien[] }) 
                 className="group flex items-center justify-end gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-plum"
               >
                 <span
-                  className={`translate-x-2 rounded-full bg-white px-3.5 py-1.5 text-[12px] font-medium whitespace-nowrap opacity-0 shadow-[0_10px_24px_-14px_rgba(22,23,26,0.6)] ring-1 ring-line transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100 ${
-                    courant ? "text-plum" : "text-body"
+                  className={`rounded-full bg-white px-3.5 py-1.5 text-[12px] whitespace-nowrap shadow-[0_10px_24px_-14px_rgba(22,23,26,0.6)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:text-plum group-hover:ring-plum/30 ${
+                    courant
+                      ? "font-semibold text-plum ring-1 ring-plum/25"
+                      : "font-medium text-body ring-1 ring-line"
                   }`}
                 >
                   {lien.label}

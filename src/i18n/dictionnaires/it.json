@@ -27,7 +27,12 @@
     "secretariat": "Segreteria",
     "zoneIntervention": "Zona di intervento",
     "sommaire": "Sommario",
-    "allerAuContenu": "Vai al contenuto"
+    "allerAuContenu": "Vai al contenuto",
+    "pause": "Metti in pausa lo scorrimento",
+    "lecture": "Riprendi lo scorrimento",
+    "photosSeances": "Foto delle sedute",
+    "reconnaissance": "Riconoscimento ufficiale",
+    "registre": "Iscritta al Registro Nazionale di Idoneità tenuto dal Consiglio Nazionale dell'Ordine dei Veterinari francese (OA 801)"
   },
   "footer": {
     "plusInfos": "Altre informazioni",
@@ -46,8 +51,7 @@
       "cookies": "Informativa sui cookie",
       "mentions": "Note legali",
       "confidentialite": "Informativa sulla privacy"
-    },
-    "registre": "Iscritta al Registro Nazionale di Idoneità tenuto dal Consiglio Nazionale dell'Ordine dei Veterinari francese (OA 801)"
+    }
   },
   "cookies": {
     "titre": "Gestione dei cookie",
@@ -135,7 +139,7 @@
         {
           "titre": "Animali da reddito",
           "sousTitre": "Bovini · Ovini · Caprini · Suini",
-          "alt": "Mano posata su una mucca in una stalla",
+          "alt": "Marie Salabert accovacciata dietro un bovino charolais, in una stalla",
           "indications": [
             "Favorire uno sviluppo armonioso dei giovani animali.",
             "Integrarsi nel monitoraggio degli animali riproduttori (maschi e femmine: disturbi della fertilità, gestazione, post-parto).",
@@ -380,6 +384,7 @@
       ],
       "obligation": "Inoltre, l'osteopata animale è tenuto a indirizzare il proprietario verso un veterinario quando lo stato dell'animale richiede una diagnosi medica, un trattamento, oppure quando i disturbi osservati superano il campo di competenza dell'osteopatia. Questo obbligo fa parte delle regole deontologiche stabilite dal Codice rurale.",
       "autorites": "Autorità di riferimento",
+      "liensTitre": "Testi e registri",
       "liens": [
         "Elenco degli osteopati iscritti (CNOV)",
         "veterinaire.fr — sezione Osteopatia animale",

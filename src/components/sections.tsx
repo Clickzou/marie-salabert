@@ -48,31 +48,77 @@ export function PageHero({
   );
 }
 
-/** Pastille de certification qui chevauche le bas du hero (page d'accueil). */
-export function CertificationBadge({ href, libelle }: { href: string; libelle: string }) {
+/**
+ * Bandeau de reconnaissance officielle, juste sous la banniere de l'accueil.
+ *
+ * Remplace une pastille ronde : le logo du CNOV est large (ratio proche de 2:1),
+ * l'enfermer dans un cercle l'obligeait a retrecir pour tenir dans la largeur et
+ * laissait deux croissants vides. Un filet horizontal lui rend ses proportions
+ * et supprime les ~300 px de vide entre la banniere et le premier contenu.
+ */
+export function CertificationBadge({
+  href,
+  libelle,
+  surTitre,
+  mention,
+}: {
+  href: string;
+  libelle: string;
+  surTitre: string;
+  mention: string;
+}) {
   return (
-    <div className="relative z-10 -mt-24 flex flex-col items-center gap-6 pb-16">
-      {/* Logo officiel du Conseil National de l'Ordre des Vétérinaires (CNOV),
-          inscrit dans une pastille blanche qui chevauche la banniere. */}
-      <a
-        href={href}
-        aria-label="Voir ma certification (inscription au RNA tenu par le CNOV)"
-        className="hover-raise grid h-[200px] w-[200px] place-items-center rounded-full border border-plum/10 bg-white p-5 text-center shadow-[0_18px_40px_-18px_rgba(22,23,26,0.35)] sm:h-[230px] sm:w-[230px] sm:p-6"
-      >
-        <Image
-          src="/images/2024/05/logo-cnov.gif"
-          alt="Conseil National de l'Ordre des Vétérinaires"
-          width={1200}
-          height={630}
-          unoptimized
-          sizes="230px"
-          className="h-auto w-full object-contain"
-        />
-      </a>
-      <Button href={href} variant="plum" className="px-6 py-2.5 text-[13px]">
-        {libelle}
-      </Button>
-    </div>
+    <section className="bg-plum text-white">
+      <Container width="wide">
+        <div className="flex flex-col items-center gap-6 py-8 text-center sm:flex-row sm:gap-10 sm:py-7 sm:text-left">
+          {/* Logo officiel du Conseil National de l'Ordre des Vétérinaires (CNOV).
+              Le GIF a un fond blanc opaque : plutot que de le laisser decouper un
+              rectangle sur le bordeaux, on en fait une plaque assumee. */}
+          <span className="shrink-0 rounded-md bg-white px-5 py-3">
+            <Image
+              src="/images/2024/05/logo-cnov.gif"
+              alt="Conseil National de l'Ordre des Vétérinaires"
+              width={1200}
+              height={630}
+              unoptimized
+              sizes="200px"
+              className="h-[54px] w-auto object-contain sm:h-[62px]"
+            />
+          </span>
+
+          <div className="sm:flex-1">
+            {/* Le sur-titre ne peut pas reprendre la classe `.eyebrow`, qui est
+                bordeaux sur fond clair. L'or du site tient le contraste sur le
+                bordeaux (4,7:1, au-dessus du seuil AA). */}
+            <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-gold">
+              {surTitre}
+            </p>
+            <p className="mt-2 text-[15px] leading-snug text-white/90">{mention}</p>
+          </div>
+
+          <a
+            href={href}
+            className="arrow-link inline-flex shrink-0 items-center gap-2 text-[14.5px] font-medium text-white transition-colors duration-300 hover:text-gold"
+          >
+            {libelle}
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="shrink-0"
+            >
+              <path d="M5 12h13M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </Container>
+    </section>
   );
 }
 

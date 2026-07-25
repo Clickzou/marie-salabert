@@ -27,7 +27,12 @@
     "secretariat": "Secrétariat",
     "zoneIntervention": "Zone d'intervention",
     "sommaire": "Sommaire",
-    "allerAuContenu": "Aller au contenu"
+    "allerAuContenu": "Aller au contenu",
+    "pause": "Mettre le défilement en pause",
+    "lecture": "Reprendre le défilement",
+    "photosSeances": "Photos de séances",
+    "reconnaissance": "Reconnaissance officielle",
+    "registre": "Inscrite sur le Registre National d'Aptitude tenu par le Conseil National de l'Ordre des Vétérinaires (OA 801)"
   },
   "footer": {
     "plusInfos": "Plus d'infos",
@@ -46,8 +51,7 @@
       "cookies": "Politique de Cookies",
       "mentions": "Mentions Légales",
       "confidentialite": "Politique de Confidentialité"
-    },
-    "registre": "Inscrite sur le Registre National d'Aptitude tenu par le Conseil National de l'Ordre des Vétérinaires (OA 801)"
+    }
   },
   "cookies": {
     "titre": "Gestion des cookies",
@@ -135,7 +139,7 @@
         {
           "titre": "Animaux de rente",
           "sousTitre": "Bovins · Ovins · Caprins · Porcins",
-          "alt": "Main posée sur une vache dans une étable",
+          "alt": "Marie Salabert accroupie derrière un bovin charolais, dans une bouverie",
           "indications": [
             "Favoriser un développement harmonieux des jeunes animaux.",
             "S'intégrer au suivi des animaux reproducteurs (des mâles et des femelles : troubles de la fertilité, gestation, post-mise bas).",
@@ -380,6 +384,7 @@
       ],
       "obligation": "Par ailleurs, l'ostéopathe animalier est tenu d'orienter le propriétaire vers un vétérinaire lorsque l'état de l'animal nécessite un diagnostic médical, un traitement, ou lorsque les troubles observés dépassent le champ de compétence de l'ostéopathie. Cette obligation fait partie des règles déontologiques fixées par le Code rural.",
       "autorites": "Autorités de référence",
+      "liensTitre": "Textes et registres",
       "liens": [
         "Annuaire des ostéopathes inscrits (CNOV)",
         "veterinaire.fr — rubrique Ostéopathie animale",
