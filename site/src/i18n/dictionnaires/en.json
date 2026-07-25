@@ -960,5 +960,269 @@
       "titre": "My Certification in Animal Osteopathy - Marie Salabert",
       "description": "Registered on the Registre National d'Aptitude held by the Conseil National de l'Ordre des Vétérinaires under number OA 801."
     }
+  },
+  "legales": {
+    "mentions": {
+      "titre": "Legal Notice",
+      "intro": [
+        "The Marie Salabert Animal Osteopathy website (hereinafter \"the Site\"), accessible at {{site.url}}, is published by Marie Salabert (hereinafter \"the Publisher\"), residing at {{site.address.street}}, {{site.address.postalCode}} {{site.address.city}} ({{site.phone}}, marie.salabert@outlook.fr)."
+      ],
+      "sections": [
+        {
+          "titre": "Website editorial responsibility",
+          "paragraphes": [
+            "Publication director: Marie Salabert: 06.37.88.00.73; marie.salabert@outlook.fr"
+          ]
+        },
+        {
+          "titre": "Website host",
+          "paragraphes": [
+            "The Site is hosted by o2switch, an EURL with capital of 100,000 euros, whose registered office is located at 224 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France, contactable by the following means: 0444446040."
+          ]
+        },
+        {
+          "titre": "Respect for intellectual property",
+          "paragraphes": [
+            "All trademarks, photographs, texts, comments, illustrations, animated or static images, video sequences, sounds, as well as all computer applications that may be used to operate the Site, and more generally all elements reproduced or used on the Site, are protected by the laws in force regarding intellectual property.",
+            "They are the full and exclusive property of the Publisher or its partners, unless otherwise stated. Any reproduction, representation, use or adaptation, in any form whatsoever, of all or part of these elements, including computer applications, without the prior written consent of the Publisher, is strictly prohibited. The fact that the Publisher does not initiate proceedings upon becoming aware of such unauthorised use does not constitute acceptance of such use or a waiver of the right to take legal action.",
+            "Only use for private purposes within a family circle is permitted, and any other use constitutes infringement and/or a breach of related rights, punishable under the Intellectual Property Code.",
+            "The reuse of all or part of this content requires the prior authorisation of the Publisher or the holder of the rights to this content."
+          ]
+        },
+        {
+          "titre": "Hyperlinks",
+          "paragraphes": [
+            "The Site may contain hyperlinks giving access to other websites published and managed by third parties and not by the Publisher. The Publisher cannot be held directly or indirectly liable should such third-party sites fail to comply with legal requirements."
+          ]
+        }
+      ]
+    },
+    "confidentialite": {
+      "titre": "Privacy Policy",
+      "intro": [],
+      "sections": [
+        {
+          "titre": "Definitions",
+          "paragraphes": [
+            "The Publisher: The natural or legal person who publishes online public communication services. The Site: All websites, web pages and online services offered by the Publisher. The User: The person using the Site and its services."
+          ]
+        },
+        {
+          "titre": "1- Nature of the data collected",
+          "paragraphes": [
+            "In the course of using the Sites, the Publisher may collect the following categories of data concerning its Users"
+          ]
+        },
+        {
+          "titre": "2- Disclosure of personal data to third parties",
+          "paragraphes": [
+            "No disclosure to third parties"
+          ]
+        },
+        {
+          "titre": "3- Prior notice for the disclosure of personal data to third parties in the event of a merger / takeover",
+          "paragraphes": [
+            "Collection of opt-in consent prior to the transfer of data following a merger / acquisition"
+          ]
+        },
+        {
+          "titre": "4- Data aggregation",
+          "paragraphes": [
+            "Aggregation with non-personal data",
+            "Aggregation with personal data available on the User's social media accounts"
+          ]
+        },
+        {
+          "titre": "5- Collection of identity data",
+          "paragraphes": [
+            "Free consultation"
+          ]
+        },
+        {
+          "titre": "6- Collection of identification data",
+          "paragraphes": [
+            "Use of the user's identifier solely for access to the services"
+          ]
+        },
+        {
+          "titre": "7- Collection of terminal data",
+          "paragraphes": [
+            "Collection of profiling data and technical data for the purpose of providing the service",
+            "Collection of technical data for advertising, commercial and statistical purposes"
+          ]
+        },
+        {
+          "titre": "8- Cookies",
+          "paragraphes": [
+            "Cookie retention period",
+            "Purpose of cookies",
+            "The User's right to refuse cookies"
+          ]
+        },
+        {
+          "titre": "9 – Retention of technical data",
+          "paragraphes": [
+            "Retention period for technical data"
+          ]
+        },
+        {
+          "titre": "10- Retention period for personal data and anonymisation",
+          "paragraphes": [
+            "Retention of data for the duration of the contractual relationship",
+            "Retention of anonymised data beyond the contractual relationship / after account deletion",
+            "Deletion of data after account deletion",
+            "Deletion of data after 3 years of inactivity"
+          ]
+        },
+        {
+          "titre": "11- Account deletion",
+          "paragraphes": [
+            "Account deletion on request",
+            "Account deletion in the event of a breach of the Privacy Policy"
+          ]
+        },
+        {
+          "titre": "12- Notifications in the event of a security breach detected by the Publisher",
+          "paragraphes": [
+            "Notifying the User in the event of a security breach",
+            "Limitation of liability"
+          ]
+        },
+        {
+          "titre": "13- Transfer of personal data abroad",
+          "paragraphes": [
+            "No transfer outside the European Union",
+            "[ https://www.cnil.fr/fr/la-protection-des-donnees-dans-le-monde ](https://www.cnil.fr/fr/la-protection-des-donnees-dans-le-monde)"
+          ]
+        },
+        {
+          "titre": "14- Amendment of the privacy policy",
+          "paragraphes": [
+            "In the event of any amendment to this Privacy Policy, a commitment not to substantially lower the level of privacy protection without prior notice to the persons concerned"
+          ]
+        },
+        {
+          "titre": "15- Applicable law and means of recourse",
+          "paragraphes": [
+            "Arbitration clause"
+          ]
+        },
+        {
+          "titre": "16- Data portability",
+          "paragraphes": [
+            "Data portability"
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "titre": "Cookie Policy (EU)",
+      "intro": [
+        "This cookie policy was last updated on 22/07/2026 and applies to citizens and legal permanent residents of the European Economic Area and Switzerland."
+      ],
+      "sections": [
+        {
+          "titre": "1. Introduction",
+          "paragraphes": [
+            "Our website, {{site.url}} (hereinafter: \"the website\") uses cookies and other related technologies (for simplicity, all these technologies are referred to as \"cookies\"). No cookies are placed by third parties without your prior consent. In the document below, we inform you about the use of cookies on our website."
+          ]
+        },
+        {
+          "titre": "2. What are cookies?",
+          "paragraphes": [
+            "A cookie is a small, simple file sent along with the pages of this website and stored by your browser on the hard drive of your computer or another device. The information stored therein may be returned to our servers or to the servers of the relevant third parties during a subsequent visit."
+          ]
+        },
+        {
+          "titre": "3. What are scripts?",
+          "paragraphes": [
+            "A script is a piece of code used to ensure that our website functions properly and interactively. This code is executed on our server or on your device."
+          ]
+        },
+        {
+          "titre": "4. What is a web beacon?",
+          "paragraphes": [
+            "A web beacon (or tracking pixel) is a small, invisible piece of text or image on a website used to monitor traffic on that website. To do this, various pieces of data about you are stored using web beacons. Our website does not use web beacons."
+          ]
+        },
+        {
+          "titre": "5. Cookies",
+          "paragraphes": [
+            "Certain cookies ensure that particular parts of the website function properly and that your preferences as a user are taken into account. By placing functional cookies, we make it easier for you to visit our website: you will not need to repeatedly enter the same information when visiting our website. We may place these cookies without your consent.",
+            "Marketing/tracking cookies are cookies or any other form of local storage used to build user profiles in order to display advertisements or to track a user on this website or across multiple websites for similar marketing purposes. Our website does not place any marketing or tracking cookies, and does not use any audience measurement tools."
+          ],
+          "sousTitres": [
+            "5.1 Technical or functional cookies",
+            "5.2 Marketing/tracking cookies"
+          ]
+        },
+        {
+          "titre": "6. Cookies placed",
+          "paragraphes": [
+            "The table below summarises all the cookies and data stored on your device by our website.",
+            "The site's contact form does not place any cookies: the information you enter there is sent to us by email and is used only to respond to your enquiry."
+          ]
+        },
+        {
+          "titre": "7. Consent",
+          "paragraphes": [
+            "When you visit our website for the first time, we display a banner with an explanation about cookies. As soon as you click \"Accept\", you authorise us to load the third-party content described in this cookie policy. If you click \"Decline\", no third-party content is loaded and the site remains fully usable. Your choice is stored on your device and is not shared with anyone."
+          ],
+          "sousTitres": [
+            "7.1 Manage your consent settings"
+          ]
+        },
+        {
+          "titre": "8. Enabling/disabling and deleting cookies",
+          "paragraphes": [
+            "You can use your internet browser to automatically or manually delete cookies. You can also specify that certain cookies may not be placed. Another option is to change the settings of your internet browser so that you receive a message every time a cookie is placed. For more information about these options, please refer to the instructions in your browser's Help section.",
+            "If you delete your browsing data in your browser, your consent choice will be erased: the banner will be shown to you again on your next visit."
+          ]
+        },
+        {
+          "titre": "9. Your rights regarding personal data",
+          "paragraphes": [
+            "You have the following rights regarding your personal data:",
+            "To exercise these rights, please contact us. Please refer to the contact details at the bottom of this cookie policy. If you have a complaint about the way we handle your data, we would like to be informed of this, but you also have the right to lodge a complaint with the supervisory authority (the data protection authority).",
+            "You can also consult our privacy policy."
+          ],
+          "liste": [
+            "You have the right to know why your personal data is needed, what will happen to it, and how long it will be retained.",
+            "Right of access: you have the right to access the personal data we hold about you.",
+            "Right of rectification: you have the right at any time to complete, correct, have deleted, or have blocked your personal data.",
+            "If you have given us your consent to process your data, you have the right to withdraw that consent and to have your personal data deleted.",
+            "Right to data portability: you have the right to request all your personal data from the data controller and to transfer it in full to another data controller.",
+            "Right to object: you may object to the processing of your data. We will comply, unless there are legitimate grounds for the processing."
+          ]
+        },
+        {
+          "titre": "10. Contact details",
+          "paragraphes": [
+            "For questions and/or comments about our cookie policy and this statement, please contact us using the following details:",
+            "Marie Salabert Ostéopathie Animale {{site.serviceArea}} France Website: {{site.url}} Email: [ marie.salabert@outlook.fr ](mailto:marie.salabert@outlook.fr) Phone number: 06.37.88.00.73"
+          ]
+        }
+      ],
+      "tableau": {
+        "legende": "Cookies and storage set by the site",
+        "colonnes": [
+          "Name",
+          "Type",
+          "Purpose",
+          "Expiry",
+          "Category"
+        ],
+        "lignes": [
+          {
+            "nom": "cookie-consent",
+            "type": "Local storage (localStorage)",
+            "finalite": "Remembers your choice to accept or decline third-party content",
+            "duree": "Until deleted from your browser",
+            "categorie": "Functional"
+          }
+        ],
+        "note": "The map of the service area uses OpenStreetMap base layers: they do not set any cookies, only the IP address is sent to the tile server to display the map."
+      }
+    }
   }
 }

@@ -961,5 +961,269 @@
       "titre": "La mia certificazione in osteopatia animale - Marie Salabert",
       "description": "Iscritta al Registre National d'Aptitude tenuto dal Conseil National de l'Ordre des Vétérinaires con il numero OA 801."
     }
+  },
+  "legales": {
+    "mentions": {
+      "titre": "Note legali",
+      "intro": [
+        "Il sito Marie Salabert Ostéopathie Animale (di seguito «il Sito»), accessibile all'indirizzo {{site.url}}, è pubblicato da Marie Salabert (di seguito «l'Editore»), domiciliata presso {{site.address.street}}, {{site.address.postalCode}} {{site.address.city}} ({{site.phone}}, marie.salabert@outlook.fr)."
+      ],
+      "sections": [
+        {
+          "titre": "Redazione del sito internet",
+          "paragraphes": [
+            "Direttore della pubblicazione: Marie Salabert: 06.37.88.00.73; marie.salabert@outlook.fr"
+          ]
+        },
+        {
+          "titre": "Hosting del sito internet",
+          "paragraphes": [
+            "Il Sito è ospitato da o2switch, EURL con capitale di 100 000 euro, con sede legale in 224 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, Francia, contattabile al seguente recapito: 0444446040."
+          ]
+        },
+        {
+          "titre": "Rispetto della proprietà intellettuale",
+          "paragraphes": [
+            "Tutti i marchi, le fotografie, i testi, i commenti, le illustrazioni, le immagini animate o meno, le sequenze video, i suoni, nonché tutte le applicazioni informatiche che potrebbero essere utilizzate per far funzionare il Sito e più in generale tutti gli elementi riprodotti o utilizzati sul Sito sono protetti dalle leggi vigenti in materia di proprietà intellettuale.",
+            "Essi sono di proprietà esclusiva dell'Editore o dei suoi partner, salvo indicazioni particolari. Qualsiasi riproduzione, rappresentazione, utilizzo o adattamento, sotto qualsiasi forma, dell'insieme o di parte di questi elementi, comprese le applicazioni informatiche, senza l'accordo preventivo e scritto dell'Editore, sono severamente vietati. Il fatto che l'Editore non avvii un'azione legale non appena venga a conoscenza di tali utilizzi non autorizzati non equivale ad un'accettazione di detti utilizzi né a una rinuncia a perseguirli.",
+            "È autorizzato unicamente l'uso a titolo privato nell'ambito familiare; qualsiasi altro utilizzo costituisce contraffazione e/o violazione dei diritti connessi, sanzionati dal Codice della proprietà intellettuale.",
+            "La ripresa dell'insieme o di parte di questo contenuto richiede l'autorizzazione preventiva dell'Editore o del titolare dei diritti su tale contenuto."
+          ]
+        },
+        {
+          "titre": "Collegamenti ipertestuali",
+          "paragraphes": [
+            "Il Sito può contenere collegamenti ipertestuali che danno accesso ad altri siti web pubblicati e gestiti da terzi e non dall'Editore. L'Editore non potrà essere ritenuto responsabile direttamente o indirettamente nel caso in cui tali siti terzi non rispettassero le disposizioni legali."
+          ]
+        }
+      ]
+    },
+    "confidentialite": {
+      "titre": "Informativa sulla privacy",
+      "intro": [],
+      "sections": [
+        {
+          "titre": "Definizioni",
+          "paragraphes": [
+            "L'Editore: La persona, fisica o giuridica, che pubblica i servizi di comunicazione al pubblico online. Il Sito: L'insieme dei siti, pagine Internet e servizi online proposti dall'Editore. L'Utente: La persona che utilizza il Sito e i servizi."
+          ]
+        },
+        {
+          "titre": "1- Natura dei dati raccolti",
+          "paragraphes": [
+            "Nell'ambito dell'utilizzo dei Siti, l'Editore può raccogliere le seguenti categorie di dati relativi ai suoi Utenti"
+          ]
+        },
+        {
+          "titre": "2- Comunicazione dei dati personali a terzi",
+          "paragraphes": [
+            "Nessuna comunicazione a terzi"
+          ]
+        },
+        {
+          "titre": "3- Informazione preliminare per la comunicazione dei dati personali a terzi in caso di fusione / acquisizione",
+          "paragraphes": [
+            "Raccolta del consenso (opt-in) preliminare alla trasmissione dei dati a seguito di una fusione / acquisizione"
+          ]
+        },
+        {
+          "titre": "4- Aggregazione dei dati",
+          "paragraphes": [
+            "Aggregazione con dati non personali",
+            "Aggregazione con dati personali disponibili sugli account social dell'Utente"
+          ]
+        },
+        {
+          "titre": "5- Raccolta dei dati identificativi",
+          "paragraphes": [
+            "Consultazione libera"
+          ]
+        },
+        {
+          "titre": "6- Raccolta dei dati di identificazione",
+          "paragraphes": [
+            "Utilizzo dell'identificativo dell'utente unicamente per l'accesso ai servizi"
+          ]
+        },
+        {
+          "titre": "7- Raccolta dei dati del dispositivo",
+          "paragraphes": [
+            "Raccolta dei dati di profilazione e dei dati tecnici ai fini della fornitura del servizio",
+            "Raccolta dei dati tecnici a fini pubblicitari, commerciali e statistici"
+          ]
+        },
+        {
+          "titre": "8- Cookie",
+          "paragraphes": [
+            "Durata di conservazione dei cookie",
+            "Finalità dei cookie",
+            "Diritto dell'Utente di rifiutare i cookie"
+          ]
+        },
+        {
+          "titre": "9 – Conservazione dei dati tecnici",
+          "paragraphes": [
+            "Durata di conservazione dei dati tecnici"
+          ]
+        },
+        {
+          "titre": "10- Termine di conservazione dei dati personali e di anonimizzazione",
+          "paragraphes": [
+            "Conservazione dei dati per la durata del rapporto contrattuale",
+            "Conservazione dei dati anonimizzati oltre il rapporto contrattuale / dopo la cancellazione dell'account",
+            "Cancellazione dei dati dopo la cancellazione dell'account",
+            "Cancellazione dei dati dopo 3 anni di inattività"
+          ]
+        },
+        {
+          "titre": "11- Cancellazione dell'account",
+          "paragraphes": [
+            "Cancellazione dell'account su richiesta",
+            "Cancellazione dell'account in caso di violazione dell'Informativa sulla Privacy"
+          ]
+        },
+        {
+          "titre": "12- Indicazioni in caso di violazione della sicurezza rilevata dall'Editore",
+          "paragraphes": [
+            "Informazione dell'Utente in caso di violazione della sicurezza",
+            "Limitazione della responsabilità"
+          ]
+        },
+        {
+          "titre": "13- Trasferimento dei dati personali all'estero",
+          "paragraphes": [
+            "Nessun trasferimento al di fuori dell'Unione europea",
+            "[ https://www.cnil.fr/fr/la-protection-des-donnees-dans-le-monde ](https://www.cnil.fr/fr/la-protection-des-donnees-dans-le-monde)"
+          ]
+        },
+        {
+          "titre": "14- Modifica dell'informativa sulla privacy",
+          "paragraphes": [
+            "In caso di modifica della presente Informativa sulla Privacy, impegno a non abbassare il livello di riservatezza in modo sostanziale senza informazione preliminare delle persone interessate"
+          ]
+        },
+        {
+          "titre": "15- Legge applicabile e modalità di ricorso",
+          "paragraphes": [
+            "Clausola arbitrale"
+          ]
+        },
+        {
+          "titre": "16- Portabilità dei dati",
+          "paragraphes": [
+            "Portabilità dei dati"
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "titre": "Politica sui cookie (UE)",
+      "intro": [
+        "Questa politica sui cookie è stata aggiornata l'ultima volta il 22/07/2026 e si applica ai cittadini e ai residenti permanenti legali dello Spazio Economico Europeo e della Svizzera."
+      ],
+      "sections": [
+        {
+          "titre": "1. Introduzione",
+          "paragraphes": [
+            "Il nostro sito web, {{site.url}} (di seguito: «il sito web») utilizza cookie e altre tecnologie correlate (per semplicità, tutte queste tecnologie sono indicate con il termine «cookie»). Nessun cookie viene depositato da terze parti senza il vostro previo consenso. Nel documento seguente, vi informiamo sull'utilizzo dei cookie sul nostro sito web."
+          ]
+        },
+        {
+          "titre": "2. Cosa sono i cookie?",
+          "paragraphes": [
+            "Un cookie è un piccolo file semplice inviato insieme alle pagine di questo sito web e memorizzato dal vostro browser sul disco rigido del vostro computer o di un altro dispositivo. Le informazioni memorizzate possono essere rinviate ai nostri server o ai server delle terze parti interessate durante una visita successiva."
+          ]
+        },
+        {
+          "titre": "3. Cosa sono gli script?",
+          "paragraphes": [
+            "Uno script è un elemento di codice utilizzato per far funzionare il nostro sito web in modo corretto e interattivo. Questo codice viene eseguito sul nostro server o sul vostro dispositivo."
+          ]
+        },
+        {
+          "titre": "4. Cos'è un tag invisibile?",
+          "paragraphes": [
+            "Un tag invisibile (o web beacon) è un piccolo pezzo di testo o immagine invisibile su un sito web, utilizzato per monitorare il traffico su un sito web. A tale scopo, vari dati che vi riguardano vengono memorizzati tramite tag invisibili. Il nostro sito web non utilizza tag invisibili."
+          ]
+        },
+        {
+          "titre": "5. Cookie",
+          "paragraphes": [
+            "Alcuni cookie garantiscono il corretto funzionamento di determinate parti del sito web e la considerazione delle vostre preferenze come utente. Posizionando cookie funzionali, vi facilitiamo la visita al nostro sito web: non dovete inserire ripetutamente le stesse informazioni durante la visita al nostro sito web. Possiamo depositare questi cookie senza il vostro consenso.",
+            "I cookie di marketing/tracciamento sono cookie o qualsiasi altra forma di archiviazione locale, utilizzati per creare profili utente al fine di mostrare pubblicità o tracciare l'utente su questo sito web o su più siti web per finalità di marketing simili. Il nostro sito web non deposita alcun cookie di marketing o di tracciamento, e non utilizza alcuno strumento di misurazione dell'audience."
+          ],
+          "sousTitres": [
+            "5.1 Cookie tecnici o funzionali",
+            "5.2 Cookie di marketing/tracciamento"
+          ]
+        },
+        {
+          "titre": "6. Cookie depositati",
+          "paragraphes": [
+            "La tabella seguente riepiloga la totalità dei cookie e dei dati memorizzati sul vostro dispositivo dal nostro sito web.",
+            "Il modulo di contatto del sito non deposita alcun cookie: le informazioni che inserite ci vengono trasmesse via e-mail e servono unicamente a rispondere alla vostra richiesta."
+          ]
+        },
+        {
+          "titre": "7. Consenso",
+          "paragraphes": [
+            "Quando visitate il nostro sito web per la prima volta, vi mostriamo un banner con una spiegazione sui cookie. Non appena cliccate su «Accetta», ci autorizzate a caricare i contenuti di terze parti descritti nella presente politica sui cookie. Se cliccate su «Rifiuta», nessun contenuto di terze parti viene caricato e il sito rimane pienamente utilizzabile. La vostra scelta viene conservata sul vostro dispositivo e non viene trasmessa a nessuno."
+          ],
+          "sousTitres": [
+            "7.1 Gestite le vostre impostazioni di consenso"
+          ]
+        },
+        {
+          "titre": "8. Attivare/disattivare ed eliminare i cookie",
+          "paragraphes": [
+            "Potete utilizzare il vostro browser internet per eliminare automaticamente o manualmente i cookie. Potete anche specificare che alcuni cookie non possano essere posizionati. Un'altra opzione consiste nel modificare le impostazioni del vostro browser Internet in modo da ricevere un messaggio ogni volta che viene posizionato un cookie. Per maggiori informazioni su queste opzioni, fate riferimento alle istruzioni nella sezione Aiuto del vostro browser.",
+            "Se eliminate i dati di navigazione nel vostro browser, la vostra scelta di consenso viene cancellata: il banner vi verrà nuovamente proposto alla vostra prossima visita."
+          ]
+        },
+        {
+          "titre": "9. I vostri diritti riguardo ai dati personali",
+          "paragraphes": [
+            "Avete i seguenti diritti riguardo ai vostri dati personali:",
+            "Per esercitare questi diritti, vi preghiamo di contattarci. Vi preghiamo di fare riferimento ai contatti in fondo a questa politica sui cookie. Se avete un reclamo riguardo al modo in cui trattiamo i vostri dati, saremmo lieti di esserne informati, ma avete anche il diritto di presentare un reclamo presso l'autorità di controllo (l'autorità incaricata della protezione dei dati).",
+            "Potete anche consultare la nostra politica sulla privacy."
+          ],
+          "liste": [
+            "Avete il diritto di sapere perché i vostri dati personali sono necessari, cosa accadrà loro e per quanto tempo saranno conservati.",
+            "Diritto di accesso: avete il diritto di accedere ai vostri dati personali di cui siamo a conoscenza.",
+            "Diritto di rettifica: avete il diritto in qualsiasi momento di completare, correggere, far cancellare o bloccare i vostri dati personali.",
+            "Se ci fornite il vostro consenso per il trattamento dei vostri dati, avete il diritto di revocare tale consenso e di far cancellare i vostri dati personali.",
+            "Diritto di trasferire i vostri dati: avete il diritto di richiedere tutti i vostri dati personali al titolare del trattamento e di trasferirli integralmente a un altro titolare del trattamento.",
+            "Diritto di opposizione: potete opporvi al trattamento dei vostri dati. Ci conformeremo, a meno che alcune ragioni non giustifichino tale trattamento."
+          ]
+        },
+        {
+          "titre": "10. Contatti",
+          "paragraphes": [
+            "Per domande e/o commenti sulla nostra politica sui cookie e questa dichiarazione, vi preghiamo di contattarci utilizzando i seguenti contatti:",
+            "Marie Salabert Ostéopathie Animale {{site.serviceArea}} France Sito web: {{site.url}} E-mail: [ marie.salabert@outlook.fr ](mailto:marie.salabert@outlook.fr) Numero di telefono: 06.37.88.00.73"
+          ]
+        }
+      ],
+      "tableau": {
+        "legende": "Cookie e archiviazioni depositati dal sito",
+        "colonnes": [
+          "Nome",
+          "Tipo",
+          "Funzione",
+          "Scadenza",
+          "Categoria"
+        ],
+        "lignes": [
+          {
+            "nom": "cookie-consent",
+            "type": "Archiviazione locale (localStorage)",
+            "finalite": "Memorizzare la vostra scelta di accettare o rifiutare i contenuti di terze parti",
+            "duree": "Fino alla sua eliminazione dal vostro browser",
+            "categorie": "Funzionale"
+          }
+        ],
+        "note": "La mappa della zona d'intervento si basa sulle mappe OpenStreetMap: queste non depositano alcun cookie, viene trasmesso solo l'indirizzo IP al server delle tessere per visualizzare la mappa."
+      }
+    }
   }
 }
