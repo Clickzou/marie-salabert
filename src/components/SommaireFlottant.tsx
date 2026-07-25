@@ -17,7 +17,19 @@ type Lien = { href: string; label: string };
  * Masque en dessous de xl : plus bas, la colonne de libelles viendrait mordre
  * sur le contenu, que le sommaire est cense accompagner et non recouvrir.
  */
-export default function SommaireFlottant({ liens }: { liens: readonly Lien[] }) {
+export default function SommaireFlottant({
+  liens,
+  declencheur,
+}: {
+  liens: readonly Lien[];
+  /**
+   * Selecteur de l'element a partir duquel le sommaire apparait. Il est distinct
+   * des `liens` : le sommaire peut n'annoncer que la fin de la page tout en se
+   * montrant plus tot, pendant que le lecteur approche. A defaut, c'est la
+   * premiere entree du sommaire qui sert de declencheur.
+   */
+  declencheur?: string;
+}) {
   const [actif, setActif] = useState(liens[0]?.href ?? "");
   const [visible, setVisible] = useState(false);
 
@@ -32,13 +44,14 @@ export default function SommaireFlottant({ liens }: { liens: readonly Lien[] }) 
      sa section. Le calcul est cadence par `requestAnimationFrame` : au plus une
      mesure par image, quel que soit le debit des evenements de defilement. */
   useEffect(() => {
-    const premier = liens[0] && document.querySelector<HTMLElement>(liens[0].href);
-    if (!premier) return;
+    const cible = declencheur ?? liens[0]?.href;
+    const depart = cible ? document.querySelector<HTMLElement>(cible) : null;
+    if (!depart) return;
 
     let image = 0;
     const mesurer = () => {
       image = 0;
-      setVisible(premier.getBoundingClientRect().top < window.innerHeight * 0.5);
+      setVisible(depart.getBoundingClientRect().top < window.innerHeight * 0.5);
     };
     const planifier = () => {
       if (!image) image = requestAnimationFrame(mesurer);
@@ -52,7 +65,7 @@ export default function SommaireFlottant({ liens }: { liens: readonly Lien[] }) 
       window.removeEventListener("scroll", planifier);
       window.removeEventListener("resize", planifier);
     };
-  }, [liens]);
+  }, [liens, declencheur]);
 
   useEffect(() => {
     const cibles = liens

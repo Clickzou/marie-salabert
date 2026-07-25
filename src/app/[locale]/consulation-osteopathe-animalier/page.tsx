@@ -180,10 +180,13 @@ export default async function ConsultationsPage({
         subtitle={c.hero.sousTitre}
       />
 
-      {/* Sommaire flottant a droite, cale au milieu de l'ecran (desktop) */}
+      {/* Sommaire flottant a droite, cale au milieu de l'ecran (desktop). Il
+          n'apparait qu'a partir de la quatrieme section (`#chroniques`), le
+          temps que le lecteur ait parcouru l'introduction ; les trois familles
+          d'animaux qu'il annonce viennent juste apres. */}
       <SommaireFlottant
+        declencheur="#chroniques"
         liens={[
-          { href: "#sommaire", label: "Sommaire" },
           { href: "#equides", label: "Équidés" },
           { href: "#compagnie", label: "Chiens · Chats · NAC" },
           { href: "#rente", label: "Animaux de rente" },
@@ -374,8 +377,10 @@ export default async function ConsultationsPage({
         </Container>
       </Section>
 
-      {/* Affections chroniques — pleine largeur, marge de 100 px */}
-      <Section>
+      {/* Affections chroniques — pleine largeur, marge de 100 px.
+          L'identifiant ne sert pas d'ancre de navigation : il marque le point a
+          partir duquel le sommaire flottant apparait. */}
+      <Section id="chroniques">
         <Container width="full">
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-end lg:gap-20">
             <SectionTitle>{c.chroniques.titre}</SectionTitle>
