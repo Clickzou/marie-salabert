@@ -35,7 +35,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; article: string }>;
 }): Promise<Metadata> {
   const { locale, article: slug } = await params;
-  const article = getArticle(slug);
+  const article = getArticle(slug, locale);
   if (!article) return {};
 
   return {
@@ -68,14 +68,14 @@ export default async function ArticlePage({
   const { locale, article: slug } = await params;
   if (!estLocale(locale)) notFound();
   const d = getDictionnaire(locale);
-  const article = getArticle(slug);
+  const article = getArticle(slug, locale);
   if (!article) notFound();
 
   const url = `${site.url}/${article.slug}`;
 
   /* « À lire aussi » : les articles explicitement lies d'abord, completes par les
      plus recents jusqu'a neuf — le carrousel a ainsi toujours de quoi defiler. */
-  const all = getArticles();
+  const all = getArticles(locale);
   const lies = article.related
     .map((s) => all.find((a) => a.slug === s))
     .filter((a): a is NonNullable<typeof a> => Boolean(a));

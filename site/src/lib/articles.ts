@@ -69,9 +69,16 @@ function parseFrontmatter(raw: string): { data: Record<string, string>; body: st
   return { data, body: normalised.slice(match[0].length).trim() };
 }
 
-function readArticle(fileName: string): Article {
+/**
+ * Lit un article dans la langue demandee : `<slug>.<locale>.mdx` s'il existe,
+ * sinon la version francaise. Un article non encore traduit reste donc lisible.
+ */
+function readArticle(fileName: string, locale = "fr"): Article {
   const slug = fileName.replace(/\.mdx?$/, "");
-  const raw = fs.readFileSync(path.join(ARTICLES_DIR, fileName), "utf8");
+  const traduit = path.join(ARTICLES_DIR, `${slug}.${locale}.mdx`);
+  const chemin =
+    locale !== "fr" && fs.existsSync(traduit) ? traduit : path.join(ARTICLES_DIR, fileName);
+  const raw = fs.readFileSync(chemin, "utf8");
   const { data, body } = parseFrontmatter(raw);
 
   return {
@@ -92,18 +99,19 @@ function readArticle(fileName: string): Article {
 }
 
 /** Tous les articles publies, du plus recent au plus ancien. */
-export function getArticles(): Article[] {
+export function getArticles(locale = "fr"): Article[] {
   if (!fs.existsSync(ARTICLES_DIR)) return [];
   return fs
     .readdirSync(ARTICLES_DIR)
-    .filter((f) => /\.mdx?$/.test(f))
-    .map(readArticle)
+    // les traductions portent un suffixe de langue : on ne liste que les sources
+    .filter((f) => /\.mdx?$/.test(f) && !/\.(en|it)\.mdx?$/.test(f))
+    .map((f) => readArticle(f, locale))
     .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
 }
 
 /** Un article par son slug, ou `undefined` s'il n'existe pas. */
-export function getArticle(slug: string): Article | undefined {
-  return getArticles().find((a) => a.slug === slug);
+export function getArticle(slug: string, locale = "fr"): Article | undefined {
+  return getArticles(locale).find((a) => a.slug === slug);
 }
 
 /**

@@ -37,7 +37,7 @@ export default async function ActualitesPage({
   if (!estLocale(locale)) notFound();
   const d = getDictionnaire(locale);
   const n = d.actualites;
-  const articles = getArticles();
+  const articles = getArticles(locale);
 
   return (
     <>
