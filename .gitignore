@@ -1,9 +1,10 @@
 # dépendances et builds
 node_modules/
-site/node_modules/
-site/.next/
-site/out/
+.next/
+out/
 .vercel/
+tsconfig.tsbuildinfo
+next-env.d.ts
 
 # variables d'environnement
 .env
