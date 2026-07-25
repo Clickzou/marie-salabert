@@ -85,7 +85,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
         </Link>
 
         <nav aria-label="Navigation principale" className="hidden lg:block">
-          <ul className="flex items-center gap-4 xl:gap-6">
+          <ul className="flex items-center gap-3 xl:gap-5">
             {mainNav.map((item) => {
               const actif =
                 item.href === "/" ? cheminNu === "/" : cheminNu.startsWith(item.href);
@@ -94,7 +94,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                   <Link
                     href={cheminLocalise(item.href, locale)}
                     aria-current={actif ? "page" : undefined}
-                    className={`group relative block py-1 text-[13.5px] font-medium uppercase tracking-[0.08em] transition-colors ${
+                    className={`group relative block whitespace-nowrap py-1 text-[13px] font-medium uppercase tracking-[0.06em] transition-colors xl:text-[13.5px] xl:tracking-[0.08em] ${
                       transparent
                         ? "text-white/90 drop-shadow-sm hover:text-white"
                         : actif
@@ -122,7 +122,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
 
           <Link
             href={cheminLocalise(headerCta.href, locale)}
-            className={`btn-shine hidden rounded-[10px] px-6 py-2.5 text-center text-[14px] font-medium transition-all duration-500 hover:-translate-y-0.5 sm:inline-flex ${
+            className={`btn-shine hidden whitespace-nowrap rounded-[10px] px-5 py-2.5 text-center text-[13.5px] font-medium transition-all duration-500 hover:-translate-y-0.5 sm:inline-flex xl:px-6 xl:text-[14px] ${
               transparent
                 ? "border border-white/70 text-white hover:border-white hover:bg-white hover:text-ink"
                 : "bg-gold text-ink shadow-[0_10px_24px_-16px_rgba(22,23,26,0.8)] hover:bg-gold-dark"

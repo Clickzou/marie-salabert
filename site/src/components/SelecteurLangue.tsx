@@ -32,8 +32,9 @@ export default function SelecteurLangue({
     <div className="relative" onMouseLeave={() => setOuvert(false)}>
       <button
         type="button"
+        /* le survol n'ouvre pas le menu : combine au clic, il le refermait
+           aussitot ouvert. Un clic (ou une tape) suffit, dans les deux sens. */
         onClick={() => setOuvert((v) => !v)}
-        onMouseEnter={() => setOuvert(true)}
         aria-expanded={ouvert}
         aria-label={etiquette}
         className={`flex items-center gap-1.5 rounded-[10px] px-3 py-2 text-[13px] font-medium uppercase tracking-[0.08em] transition-colors duration-500 ${
