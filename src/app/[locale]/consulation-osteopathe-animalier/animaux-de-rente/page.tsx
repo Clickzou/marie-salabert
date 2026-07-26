@@ -66,7 +66,8 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
             <h1 className="uppercase mt-3 font-display text-[30px] leading-[1.12] font-light text-white sm:text-[40px] tracking-[0.05em]">
               {c.sommaire[2].label}
             </h1>
-            <p className="mt-3 text-[15px] text-white/70">{c.sommaire[2].detail}</p>
+            {/* Pas de sous-titre ici : le sur-titre au-dessus enumere deja les
+                especes (« ostéopathie bovine, ovine, caprine et porcine »). */}
             <p className="mt-6 text-[15px] leading-relaxed text-white/90">{c.rente.chapo}</p>
             {/* Appel a l'action des la banniere : le visiteur qui arrive
                 par le menu n'a pas a parcourir la page pour le trouver. */}
