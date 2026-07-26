@@ -155,14 +155,14 @@ export default async function ConsultationsPage({
       {/* Le titre qui coiffait l'ensemble a ete retire : la banniere le porte
           desormais, l'afficher deux fois de suite n'apprenait rien. Les parties
           A a D s'enchainent donc directement sous la banniere. */}
-      <Section id="general" className={ANCHOR} padding="no-bottom">
-        <Container>
+      <Section id="general" className={ANCHOR}>
+        <Container width="full">
           <div className="max-w-3xl">
             <TitrePrincipal numero="1">{c.general.surTitre}</TitrePrincipal>
           </div>
 
           {/* Point 1 */}
-          <div className="mt-12 max-w-3xl">
+          <div className="mt-16 max-w-3xl">
             <PointTitre numero="01">{c.general.titre}</PointTitre>
             <p className="mt-6 text-[15px] leading-relaxed text-body">
               {c.general.intro}
@@ -176,7 +176,7 @@ export default async function ConsultationsPage({
         <Container width="full">
           {/* La frise s'anime a l'arrivee : pastille 1 qui se remplit, filet qui se
               trace, puis pastille 2, etc. */}
-          <Reveal className="frise no-scrollbar mt-14 overflow-x-auto pb-4">
+          <Reveal className="frise no-scrollbar mt-16 overflow-x-auto pb-4">
             <ol className="flex min-w-max lg:min-w-0">
               {c.etapesDeVie.map((e, i) => (
                 <li
@@ -210,12 +210,12 @@ export default async function ConsultationsPage({
 
       {/* Points 2 et 3 de la partie A : meme rang que le point 1, donc meme
           intitule numerote. Chacun garde sa carte illustree d'origine. */}
-      <Section tone="surface" padding="no-bottom">
+      <Section tone="surface">
         <Container width="full">
           {/* Cote a cote : les deux listes se lisent en parallele plutot que
               l'une sous l'autre, et la page y gagne une pleine hauteur d'ecran.
               `items-start` : la carte la plus courte n'est pas etiree. */}
-          <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
+          <div className="grid items-start gap-14 lg:grid-cols-2 lg:gap-16">
             {[
               {
                 numero: "02",
@@ -241,7 +241,7 @@ export default async function ConsultationsPage({
                 {point.note && (
                   <p className="mt-4 text-[15px] leading-relaxed text-muted">{point.note}</p>
                 )}
-                <div className="mt-6 rounded-lg bg-white p-7 ring-1 ring-line sm:p-9">
+                <div className="mt-8 rounded-lg bg-white p-7 ring-1 ring-line sm:p-9">
                   <span
                     className={`grid h-12 w-12 place-items-center rounded-full ring-1 ${point.fond} ${point.couleur}`}
                   >
@@ -269,10 +269,10 @@ export default async function ConsultationsPage({
 
       {/* ================= B ================= */}
       <Section>
-        <Container>
+        <Container width="full">
           <div className="max-w-3xl">
             <TitrePrincipal numero="2">{c.motifs.premiereIntentionTitre}</TitrePrincipal>
-            <p className="mt-6 text-[16px] leading-[1.7] text-body">
+            <p className="mt-10 text-[16px] leading-[1.7] text-body">
               {c.motifs.premiereIntentionTexte1}
             </p>
             <CheckList items={L.premiereIntention} className="mt-7" />
@@ -366,7 +366,7 @@ export default async function ConsultationsPage({
 
       {/* Approche collaborative + secteur d'intervention : titre et carte a gauche,
           propos, appel a l'action et departements a droite. */}
-      <Section padding="no-top">
+      <Section>
         <Container width="full">
           <div className="grid gap-12 border-t border-line pt-14 lg:grid-cols-2 lg:gap-20">
             <div>
