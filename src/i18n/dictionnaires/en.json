@@ -705,16 +705,19 @@
     ],
     "sommaire": [
       {
-        "label": "Equines",
-        "detail": "Sport and leisure horses, foals, donkeys and mules"
+        "menu": "Equines",
+        "label": "Equine osteopathy",
+        "detail": "For all types of horses (racing, equestrian sport, breeding, show, leisure, draught), donkeys and mules"
       },
       {
-        "label": "Dogs · Cats · Exotic pets",
-        "detail": "Growth, sport, ageing and convalescence"
+        "menu": "Dogs · Cats · Exotic pets",
+        "label": "Osteopathy for companion animals",
+        "detail": "Dogs, cats, exotic pets"
       },
       {
-        "label": "Farm animals",
-        "detail": "Cattle, sheep, goats and pigs, on farms"
+        "menu": "Farm animals",
+        "label": "Osteopathy for farm and production animals",
+        "detail": "Cattle, sheep, goats and pigs"
       }
     ],
     "departements": [

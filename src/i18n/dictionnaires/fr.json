@@ -705,16 +705,19 @@
     ],
     "sommaire": [
       {
-        "label": "Équidés",
-        "detail": "Chevaux de sport, de loisir, poulains, ânes et mules"
+        "menu": "Équidés",
+        "label": "Ostéopathie équine",
+        "detail": "Pour tous types de chevaux (course, sport équestre, élevage, spectacle, loisir, trait), ânes et mules"
       },
       {
-        "label": "Chiens · Chats · NAC",
-        "detail": "Croissance, sport, vieillissement et convalescence"
+        "menu": "Chiens · Chats · NAC",
+        "label": "Ostéopathie pour animaux de compagnie",
+        "detail": "Chiens, chats, NAC"
       },
       {
-        "label": "Animaux de rente",
-        "detail": "Bovins, ovins, caprins et porcins, en élevage"
+        "menu": "Animaux de rente",
+        "label": "Ostéopathie pour animaux de rente, ferme et production animale",
+        "detail": "Bovins, ovins, caprins et porcins"
       }
     ],
     "departements": [

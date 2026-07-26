@@ -137,7 +137,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                                   courant ? "text-plum" : "text-body hover:bg-surface hover:text-plum"
                                 }`}
                               >
-                                {d.consultations.sommaire[i].label}
+                                {d.consultations.sommaire[i].menu}
                               </Link>
                             </li>
                           );
@@ -223,7 +223,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                                   courant ? "text-plum" : "text-muted"
                                 }`}
                               >
-                                {d.consultations.sommaire[i].label}
+                                {d.consultations.sommaire[i].menu}
                               </Link>
                             </li>
                           );

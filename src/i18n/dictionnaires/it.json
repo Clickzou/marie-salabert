@@ -705,16 +705,19 @@
     ],
     "sommaire": [
       {
-        "label": "Equidi",
-        "detail": "Cavalli sportivi, da tempo libero, puledri, asini e muli"
+        "menu": "Equidi",
+        "label": "Osteopatia equina",
+        "detail": "Per tutti i tipi di cavalli (corsa, sport equestri, allevamento, spettacolo, tempo libero, tiro), asini e muli"
       },
       {
-        "label": "Cani · Gatti · NAC",
-        "detail": "Crescita, sport, invecchiamento e convalescenza"
+        "menu": "Cani · Gatti · NAC",
+        "label": "Osteopatia per animali da compagnia",
+        "detail": "Cani, gatti, NAC"
       },
       {
-        "label": "Animali da reddito",
-        "detail": "Bovini, ovini, caprini e suini, in allevamento"
+        "menu": "Animali da reddito",
+        "label": "Osteopatia per animali da reddito, fattoria e produzione animale",
+        "detail": "Bovini, ovini, caprini e suini"
       }
     ],
     "departements": [

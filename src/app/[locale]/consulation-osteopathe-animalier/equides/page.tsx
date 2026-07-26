@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import { routes } from "@/lib/site";
-import { Container, Section } from "@/components/ui";
+import { Button, Container, Section } from "@/components/ui";
 import { CheckList, CtaBand } from "@/components/sections";
 import {
   ApprocheGlobale,
@@ -65,16 +65,25 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
           <div className="flex flex-col justify-center px-6 py-14 sm:px-10 lg:px-14">
             <NumeroSection numero="01" label={c.equides.numero} />
             <h1 className="uppercase mt-3 font-display text-[32px] leading-[1.1] font-light text-white sm:text-[42px] tracking-[0.05em]">
-              {c.equides.titre}
+              {c.sommaire[0].label}
             </h1>
+            <p className="mt-3 text-[15px] text-white/70">{c.sommaire[0].detail}</p>
             <p className="mt-6 text-[15px] leading-relaxed text-white/90">{c.equides.chapo}</p>
+            {/* Appel a l'action des la banniere : le visiteur qui arrive
+                par le menu n'a pas a parcourir la page pour le trouver. */}
+            <div className="mt-8">
+              <Button href={cheminLocalise(routes.contact, locale)} variant="gold">
+                {d.commun.prendreRdv}
+              </Button>
+            </div>
           </div>
         </div>
       </Section>
 
       <Section>
         <Container width="full">
-          <div className="max-w-3xl">
+          {/* Encart centre, comme sur les deux autres pages d'especes */}
+          <div className="mx-auto max-w-4xl rounded-lg border border-plum/15 bg-plum/[0.04] p-8 sm:p-10">
             <p className="text-[16.5px] leading-[1.7] text-body">{c.equides.etapesIntro}</p>
             <CheckList items={L.equinEtapes} className="mt-5" />
             <p className="mt-6 text-[15px] leading-relaxed text-body">{c.equides.etapesFin}</p>
@@ -95,6 +104,10 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
               items={L.equinApprocheGlobale}
               conclusion={c.equides.globaleConclusion}
             />
+          </div>
+
+          <div className="mt-16 text-center">
+            <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.prendreRdv}</Button>
           </div>
 
           <RetourConsultations

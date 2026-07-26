@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import { routes } from "@/lib/site";
-import { Container, Section } from "@/components/ui";
+import { Button, Container, Section } from "@/components/ui";
 import { CtaBand } from "@/components/sections";
 import {
   ApprocheGlobale,
@@ -59,9 +59,17 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
           <div className="order-2 flex flex-col justify-center px-6 py-14 sm:px-10 lg:order-1 lg:px-14">
             <NumeroSection numero="02" label={c.compagnie.numero} />
             <h1 className="uppercase mt-3 font-display text-[30px] leading-[1.12] font-light text-white sm:text-[40px] tracking-[0.05em]">
-              {c.compagnie.titre}
+              {c.sommaire[1].label}
             </h1>
+            <p className="mt-3 text-[15px] text-white/70">{c.sommaire[1].detail}</p>
             <p className="mt-6 text-[15px] leading-relaxed text-white/90">{c.compagnie.chapo}</p>
+            {/* Appel a l'action des la banniere : le visiteur qui arrive
+                par le menu n'a pas a parcourir la page pour le trouver. */}
+            <div className="mt-8">
+              <Button href={cheminLocalise(routes.contact, locale)} variant="gold">
+                {d.commun.prendreRdv}
+              </Button>
+            </div>
           </div>
           <div className="order-1 grid grid-cols-2 lg:order-2">
             <div className="relative min-h-[220px] lg:min-h-[440px]">
@@ -89,8 +97,9 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
 
       <Section>
         <Container width="full">
-          <div className="grid gap-6 lg:grid-cols-2">
-            <div className="rounded-lg border border-green/25 bg-green-soft/10 p-6 sm:p-7">
+          {/* Encart centre, comme sur les deux autres pages d'especes */}
+          <div className="mx-auto max-w-4xl">
+            <div className="rounded-lg border border-green/25 bg-green-soft/10 p-8 sm:p-10">
               <p className="eyebrow text-green">{c.compagnie.lieuFixeTitre}</p>
               <p className="mt-4 text-[15px] leading-relaxed text-body">
                 {c.compagnie.lieuFixeTexte1}
@@ -126,6 +135,10 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
               items={L.compagnieApprocheGlobale}
               conclusion={c.compagnie.globaleConclusion}
             />
+          </div>
+
+          <div className="mt-16 text-center">
+            <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.prendreRdv}</Button>
           </div>
 
           <RetourConsultations

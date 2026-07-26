@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import { routes } from "@/lib/site";
-import { Container, Section } from "@/components/ui";
+import { Button, Container, Section } from "@/components/ui";
 import { CtaBand } from "@/components/sections";
 import {
   ApprocheGlobale,
@@ -64,10 +64,17 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
           <div className="order-1 flex flex-col justify-center px-6 py-14 sm:px-10 lg:order-2 lg:px-14">
             <NumeroSection numero="03" label={c.rente.numero} />
             <h1 className="uppercase mt-3 font-display text-[30px] leading-[1.12] font-light text-white sm:text-[40px] tracking-[0.05em]">
-              {c.rente.titre}
+              {c.sommaire[2].label}
             </h1>
-            <p className="mt-3 text-[15px] text-white/70">(Vaches, Moutons, Chèvres, Porcs)</p>
+            <p className="mt-3 text-[15px] text-white/70">{c.sommaire[2].detail}</p>
             <p className="mt-6 text-[15px] leading-relaxed text-white/90">{c.rente.chapo}</p>
+            {/* Appel a l'action des la banniere : le visiteur qui arrive
+                par le menu n'a pas a parcourir la page pour le trouver. */}
+            <div className="mt-8">
+              <Button href={cheminLocalise(routes.contact, locale)} variant="gold">
+                {d.commun.prendreRdv}
+              </Button>
+            </div>
           </div>
         </div>
       </Section>
@@ -75,7 +82,7 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
       <Section>
         <Container width="full">
           {/* encart teinte prune, en echo a la couleur du bandeau */}
-          <div className="max-w-4xl space-y-4 rounded-lg border border-plum/15 bg-plum/[0.04] p-8 text-[16.5px] leading-[1.7] text-body sm:p-10">
+          <div className="mx-auto max-w-4xl space-y-4 rounded-lg border border-plum/15 bg-plum/[0.04] p-8 text-[16.5px] leading-[1.7] text-body sm:p-10">
             {c.rente.paragraphes.map((par) => (
               <p key={par.slice(0, 40)}>{par}</p>
             ))}
@@ -97,6 +104,10 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
               items={L.elevageApprocheGlobale}
               conclusion={c.rente.globaleConclusion}
             />
+          </div>
+
+          <div className="mt-16 text-center">
+            <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.prendreRdv}</Button>
           </div>
 
           <RetourConsultations
