@@ -58,7 +58,8 @@
       "reserver": "Prenota una seduta",
       "cookies": "Informativa sui cookie",
       "mentions": "Note legali",
-      "confidentialite": "Informativa sulla privacy"
+      "confidentialite": "Informativa sulla privacy",
+      "plan": "Mappa del sito"
     }
   },
   "cookies": {
@@ -1312,5 +1313,23 @@
       ],
       "conclusion": "Ogni richiesta viene esaminata con attenzione."
     }
+  },
+  "planDuSite": {
+    "meta": {
+      "titre": "Mappa del sito - Marie Salabert, osteopata animale",
+      "description": "Tutte le pagine del sito: consulti per specie, chi sono, FAQ, galleria, notizie e contatto."
+    },
+    "hero": {
+      "surTitre": "Mappa del sito",
+      "titre": "Tutte le pagine in breve"
+    },
+    "groupes": {
+      "site": "Il sito",
+      "consultations": "Consulti per specie",
+      "infos": "Informazioni",
+      "legal": "Note legali",
+      "articles": "Articoli"
+    },
+    "autresLangues": "Questo sito è disponibile anche in"
   }
 }

@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: routes.symbiosteo, priority: 0.6, freq: "monthly" },
     { path: routes.rendezVous, priority: 0.9, freq: "monthly" },
     { path: routes.contact, priority: 0.8, freq: "monthly" },
+    { path: routes.plan, priority: 0.3, freq: "monthly" },
     { path: routes.legal, priority: 0.2, freq: "yearly" },
     { path: routes.privacy, priority: 0.2, freq: "yearly" },
     { path: routes.cookies, priority: 0.2, freq: "yearly" },

@@ -72,6 +72,9 @@ export const routes = {
      une question, un devis, un partenariat. Le bouton dore de l'en-tete mene
      toujours a la prise de rendez-vous, l'entree « Contact » du menu ici. */
   contact: "/contact",
+  /* Plan du site lisible, en complement du sitemap.xml : il donne au visiteur
+     — et au robot qui suit les liens — une entree vers chaque page. */
+  plan: "/plan-du-site",
   legal: "/mentions-legales",
   privacy: "/politique-de-confidentialite",
   cookies: "/politique-de-cookies-ue",
@@ -134,6 +137,7 @@ export const headerCta = {
 export const footerNav = [
   { cle: "aPropos", href: routes.about },
   { cle: "contact", href: routes.contact },
+  { cle: "plan", href: routes.plan },
   { cle: "cookies", href: routes.cookies },
   { cle: "mentions", href: routes.legal },
   { cle: "confidentialite", href: routes.privacy },

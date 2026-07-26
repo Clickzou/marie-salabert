@@ -58,7 +58,8 @@
       "reserver": "Réserver une séance",
       "cookies": "Politique de Cookies",
       "mentions": "Mentions Légales",
-      "confidentialite": "Politique de Confidentialité"
+      "confidentialite": "Politique de Confidentialité",
+      "plan": "Plan du site"
     }
   },
   "cookies": {
@@ -1300,5 +1301,23 @@
       ],
       "conclusion": "Chaque demande est étudiée avec attention."
     }
+  },
+  "planDuSite": {
+    "meta": {
+      "titre": "Plan du site - Marie Salabert, ostéopathe animalier",
+      "description": "Toutes les pages du site : consultations par espèce, à propos, FAQ, galerie, actualités et contact."
+    },
+    "hero": {
+      "surTitre": "Plan du site",
+      "titre": "Toutes les pages en un coup d'œil"
+    },
+    "groupes": {
+      "site": "Le site",
+      "consultations": "Consultations par espèce",
+      "infos": "Informations",
+      "legal": "Mentions légales",
+      "articles": "Articles"
+    },
+    "autresLangues": "Ce site existe aussi en"
   }
 }

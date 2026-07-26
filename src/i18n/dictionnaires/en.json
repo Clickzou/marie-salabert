@@ -58,7 +58,8 @@
       "reserver": "Book a session",
       "cookies": "Cookie policy",
       "mentions": "Legal notice",
-      "confidentialite": "Privacy policy"
+      "confidentialite": "Privacy policy",
+      "plan": "Site map"
     }
   },
   "cookies": {
@@ -1300,5 +1301,23 @@
       ],
       "conclusion": "Every request is considered with care."
     }
+  },
+  "planDuSite": {
+    "meta": {
+      "titre": "Site map - Marie Salabert, animal osteopath",
+      "description": "Every page on the site: consultations by species, about, FAQ, gallery, news and contact."
+    },
+    "hero": {
+      "surTitre": "Site map",
+      "titre": "Every page at a glance"
+    },
+    "groupes": {
+      "site": "The site",
+      "consultations": "Consultations by species",
+      "infos": "Information",
+      "legal": "Legal notices",
+      "articles": "Articles"
+    },
+    "autresLangues": "This site is also available in"
   }
 }
