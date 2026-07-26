@@ -154,6 +154,7 @@ export default async function ConsultationsPage({
     <>
       <PageHero
         image="/images/2025/05/osteopathe-animalier-toulouse.jpg"
+        alt={c.heroAlt}
         eyebrow={c.hero.surTitre}
         title={c.hero.titre}
         subtitle={c.hero.sousTitre}

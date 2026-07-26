@@ -28,12 +28,18 @@ export function NumeroSection({ numero, label }: { numero: string; label: string
   );
 }
 
-/** Titre de sous-partie (h3) sobre, en prune. */
+/**
+ * Titre de partie, sobre, en prune.
+ *
+ * `h2` et non `h3` : sur les pages d'espece, ces intitules viennent
+ * directement sous le titre de la page, sans niveau intermediaire. Les
+ * declarer h3 creait un saut h1 vers h3 dans le plan du document.
+ */
 export function SubHeading({ children }: { children: ReactNode }) {
   return (
-    <h3 className="font-display text-[22px] leading-tight font-semibold text-plum sm:text-[26px]">
+    <h2 className="font-display text-[22px] leading-tight font-semibold text-plum sm:text-[26px]">
       {children}
-    </h3>
+    </h2>
   );
 }
 

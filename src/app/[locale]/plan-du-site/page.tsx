@@ -95,6 +95,7 @@ export default async function PlanDuSitePage({
     <>
       <PageHero
         image="/images/2025/05/osteopathie-cheval-24.jpg"
+        alt={p.heroAlt}
         eyebrow={p.hero.surTitre}
         title={p.hero.titre}
       />

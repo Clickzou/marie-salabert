@@ -65,6 +65,7 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
     <>
       <PageHero
         image="/images/2025/05/a-propos-osteopathe-animalier-toulouse.jpg"
+        alt={a.heroAlt}
         eyebrow={a.hero.surTitre}
         title={a.hero.titre}
         subtitle={a.hero.sousTitre}

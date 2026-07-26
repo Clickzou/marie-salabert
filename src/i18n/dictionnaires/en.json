@@ -306,7 +306,13 @@
       "titre": "Animal Osteopath Toulouse - Marie Salabert",
       "description": "Animal osteopath Toulouse: osteopath for dogs, cats, exotic pets, horses (sport, leisure, breeding), donkeys, farm animals, exotic animals…",
       "titreHero": "Marie Salabert Animal Osteopathy"
-    }
+    },
+    "heroAlts": [
+      "Marie Salabert with a filly in a field",
+      "Marie Salabert extending a horse's hind leg in a stable",
+      "Marie Salabert giving an osteopathy consultation to a dog",
+      "Marie Salabert examining a cat at its owners' home"
+    ]
   },
   "aPropos": {
     "meta": {
@@ -435,12 +441,13 @@
       ],
       "signature": "Marie Salabert",
       "photoAlt": "Marie Salabert speaking at a conference on animal osteopathy"
-    }
+    },
+    "heroAlt": "Marie Salabert, animal osteopath near Toulouse, with a horse"
   },
   "contact": {
     "meta": {
       "titre": "Book an appointment - Marie Salabert, animal osteopath",
-      "description": "Book an animal osteopathy session in and around Toulouse: by phone, by text or through the form. Horses, dogs, cats, exotic pets and farm animals."
+      "description": "Book an animal osteopathy session around Toulouse: by phone, by text or through the form. Horses, dogs, cats, exotic pets and farm animals."
     },
     "hero": {
       "surTitre": "Contact",
@@ -469,7 +476,8 @@
       "phraseEspeces": "Main coverage in departments 31, 81, 82, 47, 46, 32, 33, 12, 09 and 11. Other departments may be considered when tours are organised.",
       "surTitre": "Area covered",
       "titre": "Approximately 1h45 drive around Toulouse"
-    }
+    },
+    "heroAlt": "Marie Salabert giving an osteopathy consultation to a horse"
   },
   "galerie": {
     "meta": {
@@ -486,12 +494,13 @@
     "fermer": "Close the viewer",
     "photoPrecedente": "Previous photo",
     "photoSuivante": "Next photo",
-    "agrandir": "Enlarge photo {i} of {n}"
+    "agrandir": "Enlarge photo {i} of {n}",
+    "heroAlt": "Marie Salabert during an osteopathy session with a horse"
   },
   "symbiosteo": {
     "meta": {
       "titre": "SymbiOsteO Le Podcast - Marie Salabert Osteopath",
-      "description": "SymbiOsteO Le Podcast, launched in January 2024, gives a voice to those involved in animal, veterinary and human osteopathy, in health, and to explorers of the living world."
+      "description": "Created in January 2024, SymbiOsteO Le Podcast gives a voice to people working in animal, veterinary and human osteopathy, and in health."
     },
     "accroche": "Launched in January 2024, SymbiOsteO Le Podcast is a media platform that gives a voice to those involved in the world of Osteopathy (animal, veterinary and human), in health, to explorers of the living world, and to enthusiasts and the curious alike.",
     "paragraphe": "This space for dialogue and exchange aims to gather diverse points of view conducive to building complex thinking. We believe in the value of dialogue as a means of creating connection. Through this podcast, our goal is to build a community, and our project is to organise events.",
@@ -506,8 +515,8 @@
   },
   "actualites": {
     "meta": {
-      "titre": "Discover the latest news in animal osteopathy with Marie Salabert",
-      "description": "Explore the latest developments in animal osteopathy with Marie Salabert. Innovative care and advice for your animals."
+      "titre": "Animal osteopathy news",
+      "description": "Scientific publications, congresses, podcasts and how the profession is changing: the journal of my work in animal osteopathy."
     },
     "surTitre": "The journal",
     "titre": "News from my animal osteopathy practice",
@@ -528,6 +537,10 @@
       "categorie": "News",
       "partage": "Did you enjoy this article?",
       "aLireAussi": "You may also like"
+    },
+    "metaCategorie": {
+      "titre": "All the news - Marie Salabert",
+      "description": "Every article published on animal osteopathy: my path, the SymbiOsteO congresses, features in the veterinary press and research work."
     }
   },
   "consultations": {
@@ -772,8 +785,8 @@
       }
     ],
     "meta": {
-      "titre": "Animal osteopathy consultations in Toulouse - horse, dog, cat, exotic pets, farm animals | Marie Salabert",
-      "description": "Animal osteopathy in Toulouse and the Occitanie region: consultations for horses and equines, dogs, cats, exotic pets (rabbits, rodents, reptiles) and farm animals (cattle, sheep, goats, pigs). Reasons for consultation, areas covered and an approach complementary to veterinary care."
+      "titre": "Animal osteopathy consultations near Toulouse",
+      "description": "Horses, dogs, cats, exotic pets and farm animals: how a session unfolds, common reasons for a consultation and the area covered around Toulouse."
     },
     "hero": {
       "surTitre": "Services",
@@ -831,7 +844,11 @@
       "globaleIntro": "A horse's health and wellbeing rely on comprehensive care combining several complementary skills. Animal osteopathy fits into this approach alongside:",
       "globaleConclusion": "The aim is to promote consistent, respectful care tailored to the individual needs of each horse.",
       "photoAlt": "Marie Salabert mobilising a horse's hindquarters in a stable",
-      "photoGlobaleAlt": "Marie Salabert with a horse and a pony under a shelter"
+      "photoGlobaleAlt": "Marie Salabert with a horse and a pony under a shelter",
+      "meta": {
+        "titre": "Equine osteopath near Toulouse - Marie Salabert",
+        "description": "Osteopathy for sport and leisure horses, ponies and donkeys: common reasons for a session, how it unfolds and the area covered around Toulouse."
+      }
     },
     "compagnie": {
       "numero": "Dogs · Cats · Exotic pets",
@@ -854,7 +871,11 @@
       "photoReptileAlt": "Marie Salabert carrying a snake coiled over her shoulders",
       "photoChienAlt": "Marie Salabert with a border collie type dog",
       "photoChatAlt": "Marie Salabert holding a black cat during a consultation",
-      "photoGlobaleAlt": "Ginger cat perched in a tree among the leaves"
+      "photoGlobaleAlt": "Ginger cat perched in a tree among the leaves",
+      "meta": {
+        "titre": "Osteopath for dogs, cats and exotic pets - Toulouse",
+        "description": "Home visits for dogs, cats and small exotic pets: common reasons for a consultation, how a session unfolds and the area covered around Toulouse."
+      }
     },
     "rente": {
       "numero": "Bovine, ovine, caprine and porcine osteopathy",
@@ -871,8 +892,13 @@
       "globaleIntro": "The health and wellbeing of farm animals rely on comprehensive care combining several essential factors. Animal osteopathy fits into this approach alongside:",
       "globaleConclusion": "The aim is to support farmers in a consistent, respectful approach tailored to the specific needs of each animal and each farm.",
       "photoAlt": "Marie Salabert beside a calf in a cattle shed",
-      "photoGlobaleAlt": "Marie Salabert during an osteopathy consultation with a bovine in a farm building"
-    }
+      "photoGlobaleAlt": "Marie Salabert during an osteopathy consultation with a bovine in a farm building",
+      "meta": {
+        "titre": "Rural osteopathy for farm animals - Toulouse",
+        "description": "Osteopathy for cattle, sheep, goats and pigs: what brings a farmer to call, a whole-farm view of animal welfare and the departments covered."
+      }
+    },
+    "heroAlt": "Marie Salabert consulting with a foal in a field"
   },
   "faq": {
     "meta": {
@@ -995,7 +1021,8 @@
           "reponse": "Sporting animals are subject to significant physical demands requiring appropriate monitoring. A consultation may be considered: in preparation for a sporting season or a period of intense activity; before an important event; after sustained effort, to support recovery; in the event of a drop in performance or a change in locomotion; and as a preventive measure, to monitor compensations linked to training."
         }
       ]
-    }
+    },
+    "heroAlt": "Marie Salabert answering an owner's questions during a session"
   },
   "reservation": {
     "meta": {
@@ -1010,8 +1037,9 @@
   "certification": {
     "meta": {
       "titre": "My Certification in Animal Osteopathy - Marie Salabert",
-      "description": "Registered on the Registre National d'Aptitude held by the Conseil National de l'Ordre des Vétérinaires under number OA 801."
-    }
+      "description": "Listed on the National Register of Aptitude held by the French Veterinary Council under number OA 801: certificate and legal framework."
+    },
+    "heroAlt": "Marie Salabert, animal osteopath listed on the National Register of Aptitude"
   },
   "legales": {
     "mentions": {
@@ -1047,7 +1075,11 @@
             "The Site may contain hyperlinks giving access to other websites published and managed by third parties and not by the Publisher. The Publisher cannot be held directly or indirectly liable should such third-party sites fail to comply with legal requirements."
           ]
         }
-      ]
+      ],
+      "meta": {
+        "titre": "Legal notice - Marie Salabert, animal osteopath",
+        "description": "Site publisher, hosting, intellectual property and liability: the legal notice for Marie Salabert's animal osteopathy website."
+      }
     },
     "confidentialite": {
       "titre": "Privacy Policy",
@@ -1165,7 +1197,11 @@
             "Data portability"
           ]
         }
-      ]
+      ],
+      "meta": {
+        "titre": "Privacy policy - Marie Salabert",
+        "description": "Data collected through the contact form, how long it is kept and how to exercise your rights: the site's privacy policy."
+      }
     },
     "cookies": {
       "titre": "Cookie Policy (EU)",
@@ -1274,6 +1310,10 @@
           }
         ],
         "note": "The map of the service area uses OpenStreetMap base layers: they do not set any cookies, only the IP address is sent to the tile server to display the map."
+      },
+      "meta": {
+        "titre": "Cookie policy - Marie Salabert",
+        "description": "Cookies set by this site, what each one is for, how long it lasts and how to withdraw your consent at any time."
       }
     }
   },
@@ -1300,7 +1340,8 @@
         "How you would prefer to be contacted"
       ],
       "conclusion": "Every request is considered with care."
-    }
+    },
+    "heroAlt": "Marie Salabert with a pony in a field, at the end of a consultation"
   },
   "planDuSite": {
     "meta": {
@@ -1318,6 +1359,7 @@
       "legal": "Legal notices",
       "articles": "Articles"
     },
-    "autresLangues": "This site is also available in"
+    "autresLangues": "This site is also available in",
+    "heroAlt": "Marie Salabert with a horse after an osteopathy session"
   }
 }

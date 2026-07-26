@@ -22,6 +22,7 @@ export default function HeroCarousel({
   cta,
   height = "tall",
   priority = true,
+  alts,
   children,
 }: {
   slides: readonly string[];
@@ -31,6 +32,12 @@ export default function HeroCarousel({
   cta?: { label: string; href: string };
   height?: "tall" | "short";
   priority?: boolean;
+  /**
+   * Texte de remplacement de chaque vue. Ces photos montrent la praticienne au
+   * travail : les laisser sans description les retirait de la recherche
+   * d'images, alors qu'elles occupent tout le haut de la page.
+   */
+  alts?: readonly string[];
   children?: React.ReactNode;
 }) {
   const [actif, setActif] = useState(0);
@@ -70,7 +77,7 @@ export default function HeroCarousel({
         >
           <Image
             src={src}
-            alt=""
+            alt={alts?.[i] ?? ""}
             fill
             priority={priority && i === 0}
             sizes="100vw"

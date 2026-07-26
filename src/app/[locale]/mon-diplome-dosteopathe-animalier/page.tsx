@@ -17,6 +17,7 @@ export async function generateMetadata({
   const d = getDictionnaire(locale);
   return {
     title: d.certification.meta.titre,
+    description: d.certification.meta.description,
     alternates: {
       canonical: cheminLocalise("/mon-diplome-dosteopathe-animalier", locale),
       languages: {
@@ -42,6 +43,9 @@ export default function CertificationPage() {
       <div className="[&_h1]:mx-auto [&_h1]:max-w-[860px] [&_h1]:font-display [&_h1]:font-semibold [&_h1]:text-[22px] [&_h1]:leading-snug sm:[&_h1]:text-[28px] lg:[&_h1]:text-[34px]">
         <PageHero
           image="/images/2025/05/certification-osteopathe-animalier-toulouse.jpg"
+          /* Cette page n'est pas traduite : son contenu est ecrit en dur, le
+             texte de remplacement suit la meme regle. */
+          alt="Marie Salabert, ostéopathe animalier inscrite au Registre National d’Aptitude"
           title="Inscrite sur le Registre National d’Aptitude (RNA) tenu par le Conseil National de l’Ordre des Vétérinaires (CNOV) au numéro 801"
           height="short"
         />

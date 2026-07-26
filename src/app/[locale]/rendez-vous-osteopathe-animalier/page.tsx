@@ -47,6 +47,7 @@ export default async function RendezVousPage({
     <>
       <PageHero
         image="/images/2025/05/rendez-vous-osteopathe-animalier.jpg"
+        alt={c.heroAlt}
         eyebrow={c.hero.surTitre}
         title={c.hero.titre}
         subtitle={c.hero.sousTitre}

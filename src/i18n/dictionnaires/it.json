@@ -306,7 +306,13 @@
       "titre": "Osteopata animale Toulouse - Marie Salabert",
       "description": "Osteopata animale Toulouse: osteopata per cani, gatti, NAC, cavalli (sport, diporto, allevamento), asini, animali da reddito, da fattoria, esotici…",
       "titreHero": "Marie Salabert Osteopatia Animale"
-    }
+    },
+    "heroAlts": [
+      "Marie Salabert accanto a una puledra in un prato",
+      "Marie Salabert in estensione del posteriore di un cavallo, in scuderia",
+      "Marie Salabert durante un consulto di osteopatia con un cane",
+      "Marie Salabert mentre visita un gatto a casa dei proprietari"
+    ]
   },
   "aPropos": {
     "meta": {
@@ -435,12 +441,13 @@
       ],
       "signature": "Marie Salabert",
       "photoAlt": "Marie Salabert al microfono durante una conferenza sull'osteopatia animale"
-    }
+    },
+    "heroAlt": "Marie Salabert, osteopata animale vicino a Tolosa, con un cavallo"
   },
   "contact": {
     "meta": {
       "titre": "Prenota un appuntamento - Marie Salabert, osteopata animale",
-      "description": "Prenota una seduta di osteopatia animale a Tolosa e dintorni: per telefono, con un SMS o tramite il modulo. Cavalli, cani, gatti, animali esotici e da allevamento."
+      "description": "Prenota una seduta di osteopatia animale intorno a Tolosa: per telefono, con un SMS o tramite il modulo. Cavalli, cani, gatti, esotici e allevamento."
     },
     "hero": {
       "surTitre": "Contatto",
@@ -469,7 +476,8 @@
       "phraseEspeces": "Interventi principali nei dipartimenti 31, 81, 82, 47, 46, 32, 33, 12, 09 e 11. Altri dipartimenti possono essere presi in considerazione in occasione delle tournée.",
       "surTitre": "Zona d'intervento",
       "titre": "Circa 1h45 di strada intorno a Toulouse"
-    }
+    },
+    "heroAlt": "Marie Salabert durante un consulto di osteopatia con un cavallo"
   },
   "galerie": {
     "meta": {
@@ -486,12 +494,13 @@
     "fermer": "Chiudere il visualizzatore",
     "photoPrecedente": "Foto precedente",
     "photoSuivante": "Foto successiva",
-    "agrandir": "Ingrandire la foto {i} su {n}"
+    "agrandir": "Ingrandire la foto {i} su {n}",
+    "heroAlt": "Marie Salabert durante una seduta di osteopatia con un cavallo"
   },
   "symbiosteo": {
     "meta": {
       "titre": "SymbiOsteO Le Podcast - Marie Salabert, osteopata animale",
-      "description": "SymbiOsteO Le Podcast, creato nel gennaio 2024, dà voce ai protagonisti del mondo dell'osteopatia animale, veterinaria e umana, della salute e agli esploratori del vivente."
+      "description": "Creato a gennaio 2024, SymbiOsteO Le Podcast dà voce a chi lavora nell'osteopatia animale, veterinaria e umana, e nel mondo della salute."
     },
     "accroche": "Creato nel gennaio 2024, SymbiOsteO Le Podcast è un media che dà voce ai protagonisti del mondo dell'Osteopatia (animale, veterinaria e umana), della salute, agli esploratori del vivente, agli appassionati e curiosi.",
     "paragraphe": "Questo spazio di dialogo e scambio ha lo scopo di raccogliere punti di vista diversificati, favorevoli alla costruzione di un pensiero complesso. Crediamo nella virtù del dialogo come mezzo per creare legami. Attraverso questo podcast ci proponiamo di strutturare una comunità e come progetto di organizzare eventi.",
@@ -506,8 +515,8 @@
   },
   "actualites": {
     "meta": {
-      "titre": "Scoprite le novità dell'osteopatia animale con Marie Salabert",
-      "description": "Esplorate gli ultimi progressi dell'osteopatia animale con Marie Salabert. Cure innovative e consigli per i vostri animali."
+      "titre": "Notizie di osteopatia animale",
+      "description": "Pubblicazioni scientifiche, congressi, podcast ed evoluzioni della professione: il diario della mia attività in osteopatia animale."
     },
     "surTitre": "Il giornale",
     "titre": "Le novità della mia attività in osteopatia animale",
@@ -528,6 +537,10 @@
       "categorie": "Novità",
       "partage": "Vi piace questo articolo?",
       "aLireAussi": "Da leggere anche"
+    },
+    "metaCategorie": {
+      "titre": "Tutte le notizie - Marie Salabert",
+      "description": "Tutti gli articoli pubblicati sull'osteopatia animale: il mio percorso, i congressi SymbiOsteO, gli articoli sulla stampa veterinaria e la ricerca."
     }
   },
   "consultations": {
@@ -772,8 +785,8 @@
       }
     ],
     "meta": {
-      "titre": "Consulti di osteopatia animale a Toulouse - cavallo, cane, gatto, NAC, allevamento | Marie Salabert",
-      "description": "Osteopatia animale a Toulouse e in Occitania: consulti per cavalli ed equidi, cani, gatti, NAC (conigli, roditori, rettili) e animali da reddito (bovini, ovini, caprini, suini). Motivi, aree di intervento e approccio complementare al monitoraggio veterinario."
+      "titre": "Consulti di osteopatia animale vicino a Tolosa",
+      "description": "Cavalli, cani, gatti, animali esotici e da allevamento: svolgimento di una seduta, motivi di consulto e zona di intervento intorno a Tolosa."
     },
     "hero": {
       "surTitre": "Prestazioni",
@@ -832,7 +845,11 @@
       "globaleConclusione": "L'obiettivo è favorire una presa in carico coerente, rispettosa e adatta alle esigenze individuali di ogni cavallo.",
       "photoAlt": "Marie Salabert mentre mobilizza il posteriore di un cavallo in scuderia",
       "globaleConclusion": "L'obiettivo è favorire una presa in carico coerente, rispettosa e adatta alle esigenze individuali di ogni cavallo.",
-      "photoGlobaleAlt": "Marie Salabert accanto a un cavallo e a un pony sotto una tettoia"
+      "photoGlobaleAlt": "Marie Salabert accanto a un cavallo e a un pony sotto una tettoia",
+      "meta": {
+        "titre": "Osteopata equino vicino a Tolosa - Marie Salabert",
+        "description": "Osteopatia per cavalli sportivi e da diporto, pony e asini: motivi frequenti, svolgimento della seduta e zona di intervento intorno a Tolosa."
+      }
     },
     "compagnie": {
       "numero": "Cani · Gatti · NAC",
@@ -855,7 +872,11 @@
       "photoReptileAlt": "Marie Salabert porta un serpente arrotolato sulle spalle",
       "photoChienAlt": "Marie Salabert con un cane di tipo border collie",
       "photoChatAlt": "Marie Salabert con in braccio un gatto nero durante un consulto",
-      "photoGlobaleAlt": "Gatto rosso appollaiato su un albero, tra le foglie"
+      "photoGlobaleAlt": "Gatto rosso appollaiato su un albero, tra le foglie",
+      "meta": {
+        "titre": "Osteopata per cani, gatti e animali esotici - Tolosa",
+        "description": "Osteopatia a domicilio per cani, gatti e piccoli animali esotici: motivi di consulto, svolgimento della seduta e zona coperta intorno a Tolosa."
+      }
     },
     "rente": {
       "numero": "Osteopatia bovina, ovina, caprina e suina",
@@ -872,8 +893,13 @@
       "globaleIntro": "La salute e il benessere degli animali da allevamento si basano su una presa in carico globale che associa diversi fattori essenziali. L'osteopatia animale si inserisce in questo percorso accanto a:",
       "globaleConclusion": "L'obiettivo è accompagnare gli allevatori in un percorso coerente, rispettoso e adatto alle esigenze specifiche di ogni animale e di ogni allevamento.",
       "photoAlt": "Marie Salabert accanto a un vitello nella stalla",
-      "photoGlobaleAlt": "Marie Salabert durante un consulto di osteopatia con un bovino in una stalla"
-    }
+      "photoGlobaleAlt": "Marie Salabert durante un consulto di osteopatia con un bovino in una stalla",
+      "meta": {
+        "titre": "Osteopatia rurale per animali d'allevamento - Tolosa",
+        "description": "Osteopatia per bovini, ovini, caprini e suini: motivi riscontrati in allevamento, approccio globale al benessere animale e dipartimenti serviti."
+      }
+    },
+    "heroAlt": "Marie Salabert durante un consulto con un puledro in un prato"
   },
   "faq": {
     "meta": {
@@ -1007,7 +1033,8 @@
           "reponse": "Gli animali sportivi sono sottoposti a sollecitazioni fisiche importanti che richiedono un monitoraggio adeguato. Un consulto può essere previsto: in preparazione di una stagione sportiva o di un periodo di attività intensa; prima di un appuntamento importante; dopo uno sforzo sostenuto per accompagnare il recupero; in caso di calo delle prestazioni o di modifica della locomozione; in prevenzione, per sorvegliare i compensi legati all'allenamento."
         }
       ]
-    }
+    },
+    "heroAlt": "Marie Salabert risponde alle domande di un proprietario durante una seduta"
   },
   "reservation": {
     "meta": {
@@ -1022,8 +1049,9 @@
   "certification": {
     "meta": {
       "titre": "La mia certificazione in osteopatia animale - Marie Salabert",
-      "description": "Iscritta al Registre National d'Aptitude tenuto dal Conseil National de l'Ordre des Vétérinaires con il numero OA 801."
-    }
+      "description": "Iscritta al Registro Nazionale di Attitudine tenuto dall'Ordine dei Veterinari francese con il numero OA 801: attestato e quadro normativo."
+    },
+    "heroAlt": "Marie Salabert, osteopata animale iscritta al Registro Nazionale di Attitudine"
   },
   "legales": {
     "mentions": {
@@ -1059,7 +1087,11 @@
             "Il Sito può contenere collegamenti ipertestuali che danno accesso ad altri siti web pubblicati e gestiti da terzi e non dall'Editore. L'Editore non potrà essere ritenuto responsabile direttamente o indirettamente nel caso in cui tali siti terzi non rispettassero le disposizioni legali."
           ]
         }
-      ]
+      ],
+      "meta": {
+        "titre": "Note legali - Marie Salabert, osteopata animale",
+        "description": "Editore del sito, hosting, proprietà intellettuale e responsabilità: le note legali del sito di Marie Salabert, osteopata animale."
+      }
     },
     "confidentialite": {
       "titre": "Informativa sulla privacy",
@@ -1177,7 +1209,11 @@
             "Portabilità dei dati"
           ]
         }
-      ]
+      ],
+      "meta": {
+        "titre": "Informativa sulla privacy - Marie Salabert",
+        "description": "Dati raccolti tramite il modulo di contatto, durata di conservazione ed esercizio dei tuoi diritti: l'informativa sulla privacy del sito."
+      }
     },
     "cookies": {
       "titre": "Politica sui cookie (UE)",
@@ -1286,6 +1322,10 @@
           }
         ],
         "note": "La mappa della zona d'intervento si basa sulle mappe OpenStreetMap: queste non depositano alcun cookie, viene trasmesso solo l'indirizzo IP al server delle tessere per visualizzare la mappa."
+      },
+      "meta": {
+        "titre": "Politica dei cookie - Marie Salabert",
+        "description": "Cookie depositati dal sito, finalità di ciascuno, durata e modo di revocare il consenso in qualsiasi momento."
       }
     }
   },
@@ -1312,7 +1352,8 @@
         "Come preferisci essere ricontattato"
       ],
       "conclusion": "Ogni richiesta viene esaminata con attenzione."
-    }
+    },
+    "heroAlt": "Marie Salabert accanto a un pony in un prato, a fine consulto"
   },
   "planDuSite": {
     "meta": {
@@ -1330,6 +1371,7 @@
       "legal": "Note legali",
       "articles": "Articoli"
     },
-    "autresLangues": "Questo sito è disponibile anche in"
+    "autresLangues": "Questo sito è disponibile anche in",
+    "heroAlt": "Marie Salabert accanto a un cavallo dopo una seduta di osteopatia"
   }
 }

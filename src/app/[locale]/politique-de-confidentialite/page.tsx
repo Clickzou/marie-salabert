@@ -14,7 +14,8 @@ export async function generateMetadata({
   if (!estLocale(locale)) return {};
   const d = getDictionnaire(locale);
   return {
-    title: d.legales.confidentialite.titre,
+    title: d.legales.confidentialite.meta.titre,
+    description: d.legales.confidentialite.meta.description,
     alternates: {
       canonical: cheminLocalise(routes.privacy, locale),
       languages: {

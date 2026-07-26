@@ -130,6 +130,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <>
       <PageHero
         images={photosHero}
+        alt={a.heroAlts}
         title={a.meta.titreHero}
         subtitle={a.heroSousTitre}
         cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.rendezVous, locale) }}

@@ -22,8 +22,8 @@ export async function generateMetadata({
   if (!estLocale(locale)) return {};
   const d = getDictionnaire(locale);
   return {
-    title: `${d.consultations.equides.titre} | ${d.consultations.hero.titre}`,
-    description: d.consultations.equides.chapo,
+    title: d.consultations.equides.meta.titre,
+    description: d.consultations.equides.meta.description,
     alternates: {
       canonical: cheminLocalise(routes.equides, locale),
       languages: {

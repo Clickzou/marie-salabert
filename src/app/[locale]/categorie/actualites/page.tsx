@@ -16,7 +16,8 @@ export async function generateMetadata({
   if (!estLocale(locale)) return {};
   const d = getDictionnaire(locale);
   return {
-    title: `${d.actualites.article.categorie} — ${d.actualites.meta.titre}`,
+    title: d.actualites.metaCategorie.titre,
+    description: d.actualites.metaCategorie.description,
     alternates: {
       canonical: cheminLocalise("/categorie/actualites", locale),
       languages: {

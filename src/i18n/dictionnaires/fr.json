@@ -306,7 +306,13 @@
       "titre": "Ostéopathe animalier Toulouse - Marie Salabert",
       "description": "Ostéopathe animalier Toulouse : ostéopathe chien, chat, NACS, chevaux (sport, loisir, élevage), âne, animaux de rente, de ferme, exotiques…",
       "titreHero": "Marie Salabert Ostéopathie Animale"
-    }
+    },
+    "heroAlts": [
+      "Marie Salabert au contact d'une pouliche dans un pré",
+      "Marie Salabert en extension du postérieur d'un cheval, dans une écurie",
+      "Marie Salabert en consultation d'ostéopathie auprès d'un chien",
+      "Marie Salabert examinant un chat au domicile de ses propriétaires"
+    ]
   },
   "aPropos": {
     "meta": {
@@ -435,12 +441,13 @@
       ],
       "signature": "Marie Salabert",
       "photoAlt": "Marie Salabert au micro lors d'une conférence sur l'ostéopathie animale"
-    }
+    },
+    "heroAlt": "Marie Salabert, ostéopathe animalier à Toulouse, auprès d'un cheval"
   },
   "contact": {
     "meta": {
       "titre": "Prendre rendez-vous - Marie Salabert, ostéopathe animalier",
-      "description": "Réservez une séance d'ostéopathie animale à Toulouse et ses environs : par téléphone, par SMS ou via le formulaire. Chevaux, chiens, chats, NAC et animaux d'élevage."
+      "description": "Réservez une séance d'ostéopathie animale autour de Toulouse : par téléphone, par SMS ou via le formulaire. Chevaux, chiens, chats, NAC et élevage."
     },
     "hero": {
       "surTitre": "Contact",
@@ -469,7 +476,8 @@
       "phraseEspeces": "Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 33, 12, 09 et 11. D'autres départements peuvent être envisagés lors de l'organisation de tournées.",
       "surTitre": "Secteur d'intervention",
       "titre": "Environ 1h45 de route autour de Toulouse"
-    }
+    },
+    "heroAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un cheval"
   },
   "galerie": {
     "meta": {
@@ -486,12 +494,13 @@
     "fermer": "Fermer la visionneuse",
     "photoPrecedente": "Photo précédente",
     "photoSuivante": "Photo suivante",
-    "agrandir": "Agrandir la photo {i} sur {n}"
+    "agrandir": "Agrandir la photo {i} sur {n}",
+    "heroAlt": "Marie Salabert en séance d'ostéopathie auprès d'un cheval"
   },
   "symbiosteo": {
     "meta": {
       "titre": "SymbiOsteO Le Podcast - Marie Salabert Ostéopathe",
-      "description": "SymbiOsteO Le Podcast, créé en janvier 2024, donne la parole aux acteurs du monde de l'ostéopathie animale, vétérinaire et humaine, de la santé et aux explorateurs du vivant."
+      "description": "Créé en janvier 2024, SymbiOsteO Le Podcast donne la parole aux acteurs de l'ostéopathie animale, vétérinaire et humaine, et de la santé."
     },
     "accroche": "Créé en janvier 2024, SymbiOsteO Le Podcast est un média qui donne la parole aux acteurs du monde de l'Ostéopathie (animale, vétérinaire et humaine), de la santé, aux explorateurs du vivant, aux passionnés et curieux.",
     "paragraphe": "Cet espace de dialogue et d'échanges a pour vocation de recueillir des points de vue diversifiés propices à la construction d'une pensée complexe. Nous croyons à la vertu du dialogue comme moyen de créer du lien. Nous avons pour objectif au travers de ce podcast de structurer une communauté et pour projet d'organiser des évènements.",
@@ -506,8 +515,8 @@
   },
   "actualites": {
     "meta": {
-      "titre": "Découvrez l'actualité de l'ostéopathie animale avec Marie Salabert",
-      "description": "Explorez les dernières avancées en ostéopathie animale avec Marie Salabert. Soins innovants et conseils pour vos animaux."
+      "titre": "Actualités de l'ostéopathie animale",
+      "description": "Publications scientifiques, congrès, podcasts et évolutions de la profession : le journal de mon activité en ostéopathie animale."
     },
     "surTitre": "Le journal",
     "titre": "L'actualité de mon activité en ostéopathie animale",
@@ -528,6 +537,10 @@
       "categorie": "Actualités",
       "partage": "Vous aimez cet article ?",
       "aLireAussi": "À lire aussi"
+    },
+    "metaCategorie": {
+      "titre": "Toutes les actualités - Marie Salabert",
+      "description": "L'ensemble des articles publiés sur l'ostéopathie animale : parcours, congrès SymbiOsteO, parutions dans la presse vétérinaire et travaux de recherche."
     }
   },
   "consultations": {
@@ -772,8 +785,8 @@
       }
     ],
     "meta": {
-      "titre": "Consultations en ostéopathie animale à Toulouse - cheval, chien, chat, NAC, élevage | Marie Salabert",
-      "description": "Ostéopathie animale à Toulouse et en Occitanie : consultations pour chevaux et équidés, chiens, chats, NAC (lapins, rongeurs, reptiles) et animaux de rente (bovins, ovins, caprins, porcins). Motifs, secteurs d'intervention et approche complémentaire au suivi vétérinaire."
+      "titre": "Consultations en ostéopathie animale à Toulouse",
+      "description": "Chevaux, chiens, chats, NAC et animaux d'élevage : déroulé d'une séance, motifs de consultation et secteur d'intervention autour de Toulouse."
     },
     "hero": {
       "surTitre": "Prestations",
@@ -831,7 +844,11 @@
       "globaleIntro": "La santé et le bien-être du cheval reposent sur une prise en charge globale associant plusieurs compétences complémentaires. L'ostéopathie animale s'intègre dans cette démarche aux côtés de :",
       "globaleConclusion": "L'objectif est de favoriser une prise en charge cohérente, respectueuse et adaptée aux besoins individuels de chaque cheval.",
       "photoAlt": "Marie Salabert mobilisant le postérieur d'un cheval en écurie",
-      "photoGlobaleAlt": "Marie Salabert auprès d'un cheval et d'un poney sous un abri"
+      "photoGlobaleAlt": "Marie Salabert auprès d'un cheval et d'un poney sous un abri",
+      "meta": {
+        "titre": "Ostéopathe équin à Toulouse - Marie Salabert",
+        "description": "Ostéopathie pour chevaux de sport, de loisir, poneys et ânes : motifs fréquents, déroulé de la séance et zone d'intervention autour de Toulouse."
+      }
     },
     "compagnie": {
       "numero": "Chiens · Chats · NAC",
@@ -854,7 +871,11 @@
       "photoReptileAlt": "Marie Salabert porte un serpent enroulé sur ses épaules",
       "photoChienAlt": "Marie Salabert avec un chien de type border collie",
       "photoChatAlt": "Marie Salabert portant un chat noir en consultation",
-      "photoGlobaleAlt": "Chat roux perché dans un arbre, entre les feuilles"
+      "photoGlobaleAlt": "Chat roux perché dans un arbre, entre les feuilles",
+      "meta": {
+        "titre": "Ostéopathe pour chien, chat et NAC à Toulouse",
+        "description": "Ostéopathie animale à domicile pour chiens, chats et nouveaux animaux de compagnie : motifs de consultation, déroulé de la séance et secteur couvert."
+      }
     },
     "rente": {
       "numero": "Ostéopathie bovine, ovine, caprine et porcine",
@@ -871,8 +892,13 @@
       "globaleIntro": "La santé et le bien-être des animaux d'élevage reposent sur une prise en charge globale associant plusieurs facteurs essentiels. L'ostéopathie animale s'intègre dans cette démarche aux côtés de :",
       "globaleConclusion": "L'objectif est d'accompagner les éleveurs dans une démarche cohérente, respectueuse et adaptée aux besoins spécifiques de chaque animal et de chaque élevage.",
       "photoAlt": "Marie Salabert auprès d'un veau dans une stabulation",
-      "photoGlobaleAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un bovin dans un bâtiment d'élevage"
-    }
+      "photoGlobaleAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un bovin dans un bâtiment d'élevage",
+      "meta": {
+        "titre": "Ostéopathie rurale pour animaux d'élevage - Toulouse",
+        "description": "Ostéopathie pour bovins, ovins, caprins et porcins : motifs rencontrés en élevage, approche globale du bien-être animal et départements desservis."
+      }
+    },
+    "heroAlt": "Marie Salabert en consultation auprès d'un poulain dans un pré"
   },
   "faq": {
     "meta": {
@@ -995,7 +1021,8 @@
           "reponse": "Les animaux sportifs sont soumis à des contraintes physiques importantes nécessitant un suivi adapté. Une consultation peut être envisagée : en préparation d’une saison sportive ou d’une période d’activité intense ; avant une échéance importante ; après un effort soutenu afin d’accompagner la récupération ; lors d’une baisse de performance ou d’une modification de la locomotion ; en prévention afin de surveiller les compensations liées à l’entraînement."
         }
       ]
-    }
+    },
+    "heroAlt": "Marie Salabert répondant aux questions d'un propriétaire pendant une séance"
   },
   "reservation": {
     "meta": {
@@ -1010,8 +1037,9 @@
   "certification": {
     "meta": {
       "titre": "Ma certification en ostéopathie animale - Marie Salabert",
-      "description": "Inscrite au Registre National d'Aptitude tenu par le Conseil National de l'Ordre des Vétérinaires sous le numéro OA 801."
-    }
+      "description": "Inscrite au Registre National d'Aptitude tenu par le Conseil National de l'Ordre des Vétérinaires sous le numéro OA 801 : attestation et cadre légal."
+    },
+    "heroAlt": "Marie Salabert, ostéopathe animalier inscrite au Registre National d'Aptitude"
   },
   "legales": {
     "mentions": {
@@ -1047,7 +1075,11 @@
             "Le Site peut contenir des liens hypertexte donnant accès à d'autres sites web édités et gérés par des tiers et non par l'Editeur. L'Editeur ne pourra être tenu responsable directement ou indirectement dans le cas où lesdits sites tiers ne respecteraient pas les dispositions légales."
           ]
         }
-      ]
+      ],
+      "meta": {
+        "titre": "Mentions légales - Marie Salabert, ostéopathe animalier",
+        "description": "Éditeur du site, hébergement, propriété intellectuelle et responsabilité : les mentions légales du site de Marie Salabert, ostéopathe animalier."
+      }
     },
     "confidentialite": {
       "titre": "Politique de confidentialité",
@@ -1165,7 +1197,11 @@
             "Portabilité des données"
           ]
         }
-      ]
+      ],
+      "meta": {
+        "titre": "Politique de confidentialité - Marie Salabert",
+        "description": "Données collectées via le formulaire de contact, durée de conservation et exercice de vos droits : la politique de confidentialité du site."
+      }
     },
     "cookies": {
       "titre": "Politique de cookies (UE)",
@@ -1274,6 +1310,10 @@
           }
         ],
         "note": "La carte du secteur d'intervention s'appuie sur les fonds de plan OpenStreetMap : ils ne déposent aucun cookie, seule l'adresse IP est transmise au serveur de tuiles pour afficher la carte."
+      },
+      "meta": {
+        "titre": "Politique de cookies - Marie Salabert",
+        "description": "Cookies déposés par le site, finalité de chacun, durée de vie et moyens de retirer votre consentement à tout moment."
       }
     }
   },
@@ -1300,7 +1340,8 @@
         "Le moyen par lequel vous préférez être recontacté"
       ],
       "conclusion": "Chaque demande est étudiée avec attention."
-    }
+    },
+    "heroAlt": "Marie Salabert auprès d'un poney dans un pré, en fin de consultation"
   },
   "planDuSite": {
     "meta": {
@@ -1318,6 +1359,7 @@
       "legal": "Mentions légales",
       "articles": "Articles"
     },
-    "autresLangues": "Ce site existe aussi en"
+    "autresLangues": "Ce site existe aussi en",
+    "heroAlt": "Marie Salabert accompagnant un cheval après une séance d'ostéopathie"
   }
 }

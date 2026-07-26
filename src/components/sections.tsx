@@ -17,6 +17,7 @@ export function PageHero({
   cta,
   height = "tall",
   priority = true,
+  alt,
   children,
 }: {
   /** petite ligne en capitales au-dessus du titre */
@@ -30,9 +31,12 @@ export function PageHero({
   cta?: { label: string; href: string };
   height?: "tall" | "short";
   priority?: boolean;
+  /** description de la photo, ou une par vue quand la banniere en enchaine plusieurs */
+  alt?: string | readonly string[];
   children?: ReactNode;
 }) {
   const slides = images ?? (image ? [image] : []);
+  const alts = typeof alt === "string" ? [alt] : alt;
   return (
     <HeroCarousel
       slides={slides}
@@ -42,6 +46,7 @@ export function PageHero({
       cta={cta}
       height={height}
       priority={priority}
+      alts={alts}
     >
       {children}
     </HeroCarousel>

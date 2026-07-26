@@ -15,7 +15,8 @@ export async function generateMetadata({
   if (!estLocale(locale)) return {};
   const d = getDictionnaire(locale);
   return {
-    title: d.legales.cookies.titre,
+    title: d.legales.cookies.meta.titre,
+    description: d.legales.cookies.meta.description,
     alternates: {
       canonical: cheminLocalise(routes.cookies, locale),
       languages: {
