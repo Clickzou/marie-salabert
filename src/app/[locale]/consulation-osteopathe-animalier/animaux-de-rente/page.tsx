@@ -54,7 +54,7 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
         <div className="grid items-stretch lg:min-h-[610px] lg:grid-cols-2">
           <div className="relative order-2 min-h-[280px] lg:order-1 lg:min-h-[440px]">
             <Image
-              src="/images/2025/05/IMG_2057.avif"
+              src="/images/2026/07/osteopathie-animaux-de-rente.jpeg"
               alt={c.rente.photoAlt}
               fill
               priority
@@ -112,10 +112,10 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
               items={L.elevageApprocheGlobale}
               conclusion={c.rente.globaleConclusion}
               photo={{
-                src: "/images/2026/07/osteopathie-elevage-approche-globale.jpeg",
+                src: "/images/2025/05/IMG_2057.avif",
                 alt: c.rente.photoGlobaleAlt,
                 largeur: 960,
-                hauteur: 960,
+                hauteur: 720,
               }}
             />
           </div>
