@@ -34,6 +34,12 @@ export type Article = {
    */
   image: string;
   imageAlt: string;
+  /**
+   * Cadrage du visuel : « cover » recadre pour remplir la vignette, « contain »
+   * l'affiche en entier sur un fond neutre. Necessaire pour les couvertures qui
+   * sont des logos ou des affiches : les recadrer en coupe les bords.
+   */
+  imageFit: "cover" | "contain";
   /** Extrait court (25 mots), tel qu'affiche sur les cartes d'Elementor */
   excerpt: string;
   /** Slugs d'articles lies, pour la rubrique « À lire aussi ». */
@@ -89,6 +95,7 @@ function readArticle(fileName: string, locale = "fr"): Article {
     dateLabel: data.dateLabel ?? "",
     image: data.image ?? "",
     imageAlt: data.imageAlt ?? "",
+    imageFit: data.imageFit === "contain" ? "contain" : "cover",
     excerpt: data.excerpt ?? "",
     related: (data.related ?? "")
       .split(",")

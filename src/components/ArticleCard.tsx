@@ -48,9 +48,11 @@ export default function ArticleCard({
                 ? "(max-width: 640px) 100vw, 300px"
                 : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             }
-            className={`img-zoom w-full object-cover ${
-              horizontal ? "aspect-[3/2] sm:h-full sm:min-h-[220px]" : "aspect-[3/2]"
-            }`}
+            /* Les couvertures qui sont des logos ou des affiches s'affichent en
+               entier sur un fond neutre : les recadrer leur coupait les bords. */
+            className={`img-zoom w-full ${
+              article.imageFit === "contain" ? "bg-surface object-contain p-6" : "object-cover"
+            } ${horizontal ? "aspect-[3/2] sm:h-full sm:min-h-[220px]" : "aspect-[3/2]"}`}
           />
         ) : (
           <ImagePlaceholder title={article.title} className={horizontal ? "h-full" : "aspect-[3/2]"} />

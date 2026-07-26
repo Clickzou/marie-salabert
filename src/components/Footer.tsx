@@ -24,13 +24,33 @@ const socials = [
     href: site.social.linkedin,
     path: "M6.94 8.5H3.9V21h3.04V8.5zM5.42 3a1.76 1.76 0 100 3.53 1.76 1.76 0 000-3.53zM20.1 13.85c0-3.24-1.73-4.75-4.04-4.75-1.86 0-2.7 1.03-3.16 1.75V8.5H9.86V21h3.04v-6.7c0-1.42.27-2.8 2.03-2.8 1.74 0 1.76 1.63 1.76 2.9V21h3.4v-7.15z",
   },
-  {
-    label: "WhatsApp",
-    name: "WhatsApp",
-    href: site.whatsapp,
-    path: "M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 3.5A8.5 8.5 0 004.6 16.2L3.5 20.5l4.4-1.15A8.5 8.5 0 1012 3.5z",
-  },
 ];
+
+const CHEMIN_WHATSAPP =
+  "M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 3.5A8.5 8.5 0 004.6 16.2L3.5 20.5l4.4-1.15A8.5 8.5 0 1012 3.5z";
+
+/**
+ * Renvoi WhatsApp, place a cote du numero qu'il compose. Les deux lignes
+ * (praticienne et secretariat) ont chacune le sien : accole a son numero,
+ * aucun risque de les confondre.
+ */
+function LienWhatsapp({ href, libelle }: { href: string; libelle: string }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={libelle}
+      title={libelle}
+      className="inline-flex items-center gap-1.5 rounded-full border border-white/25 px-3 py-1 text-[12px] leading-none text-white/85 transition-colors hover:border-gold hover:text-gold"
+    >
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d={CHEMIN_WHATSAPP} />
+      </svg>
+      WhatsApp
+    </a>
+  );
+}
 
 export default function Footer({ locale, d }: { locale: Locale; d: Dictionnaire }) {
   return (
@@ -93,19 +113,32 @@ export default function Footer({ locale, d }: { locale: Locale; d: Dictionnaire 
               {d.footer.contact}
             </h2>
             <address className="space-y-2.5 text-[14px] not-italic leading-relaxed text-white/85">
-              <p>
+              {/* Les deux lignes telephoniques sont presentees a l'identique :
+                  chacune annoncee par son intitule, puis son numero. */}
+              <p className="font-medium text-white">
+                {site.practitioner} Ostéopathie Animale
+              </p>
+              <p className="flex flex-wrap items-center gap-x-3 gap-y-2">
                 <a href={site.phoneHref} className="transition-colors hover:text-gold">
                   {site.phone}
                 </a>
+                <LienWhatsapp
+                  href={site.whatsapp}
+                  libelle={`${d.footer.ecrireWhatsapp} — ${site.practitioner} : ${site.phone}`}
+                />
               </p>
-              <p>
-                {d.commun.secretariat} :{" "}
+              <p className="pt-1 font-medium text-white">{d.footer.numeroSecretariat}</p>
+              <p className="flex flex-wrap items-center gap-x-3 gap-y-2">
                 <a
                   href={`tel:+33${site.secretariat.replace(/\s/g, "").slice(1)}`}
                   className="transition-colors hover:text-gold"
                 >
                   {site.secretariat}
                 </a>
+                <LienWhatsapp
+                  href={site.secretariatWhatsapp}
+                  libelle={`${d.footer.ecrireWhatsapp} — ${d.commun.secretariat} : ${site.secretariat}`}
+                />
               </p>
               <p className="pt-1">
                 {d.footer.zonesIntervention} : {site.serviceArea}

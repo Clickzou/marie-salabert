@@ -111,6 +111,12 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
               intro={c.rente.globaleIntro}
               items={L.elevageApprocheGlobale}
               conclusion={c.rente.globaleConclusion}
+              photo={{
+                src: "/images/2026/07/osteopathie-elevage-approche-globale.jpeg",
+                alt: c.rente.photoGlobaleAlt,
+                largeur: 960,
+                hauteur: 960,
+              }}
             />
           </div>
 

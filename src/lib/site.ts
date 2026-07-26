@@ -15,7 +15,7 @@ export const site = {
   whatsapp: "https://wa.me/33637880073",
   secretariatWhatsapp: "https://wa.me/33679749777",
   // Departements d'intervention (Occitanie)
-  departments: "31, 81, 82, 47, 46, 32, 12, 09 et 11",
+  departments: "31, 81, 82, 47, 46, 32, 33, 12, 09 et 11",
   // Adresse personnelle : reservee aux mentions legales (souhait de la praticienne).
   address: {
     street: "10 le clos péchabé",

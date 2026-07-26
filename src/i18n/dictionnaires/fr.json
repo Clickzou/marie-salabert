@@ -43,6 +43,8 @@
     "plusInfos": "Plus d'infos",
     "contact": "Contact",
     "suivezMoi": "Suivez-moi",
+    "numeroSecretariat": "Numéro du Secrétariat",
+    "ecrireWhatsapp": "Écrire sur WhatsApp",
     "zonesIntervention": "Zones d'intervention",
     "departements": "Départements",
     "entrepriseIndividuelle": "Entreprise Individuelle",
@@ -188,7 +190,13 @@
       ],
       "italieTitre": "Tournées en Italie, trois fois par an",
       "italieTexte": "Déplacement à domicile et dans les endroits suivants :",
-      "italieVilles": ["Pise", "Florence", "Bologne", "Parme", "Milan"],
+      "italieVilles": [
+        "Pise",
+        "Florence",
+        "Bologne",
+        "Parme",
+        "Milan"
+      ],
       "tourneesNote": "Ces tournées restent ponctuelles ; j'exerce principalement en France tout au long de l'année. Si une consultation ne peut pas attendre mon retour, une personne de confiance assure le relais auprès de votre animal. Le cas échéant, mon secrétariat vous propose un rendez-vous avec cette même personne.",
       "departements": [
         {
@@ -208,6 +216,10 @@
           "nom": "Lot-et-Garonne"
         },
         {
+          "code": "46",
+          "nom": "Lot"
+        },
+        {
           "code": "32",
           "nom": "Gers"
         },
@@ -216,8 +228,8 @@
           "nom": "Gironde"
         },
         {
-          "code": "46",
-          "nom": "Lot"
+          "code": "12",
+          "nom": "Aveyron"
         },
         {
           "code": "09",
@@ -452,7 +464,7 @@
       ]
     },
     "secteur": {
-      "phraseEspeces": "Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 12, 33, 09 et 11. D'autres départements peuvent être envisagés lors de l'organisation de tournées.",
+      "phraseEspeces": "Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 33, 12, 09 et 11. D'autres départements peuvent être envisagés lors de l'organisation de tournées.",
       "surTitre": "Secteur d'intervention",
       "titre": "Environ 1h45 de route autour de Toulouse"
     }
@@ -808,7 +820,7 @@
       "texte2": "Chaque animal étant unique, un échange permettra d'évaluer la situation, de répondre à vos questions et de vous orienter vers la démarche la plus appropriée pour votre compagnon."
     },
     "secteur": {
-      "phraseEspeces": "Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 12, 33, 09 et 11. D'autres départements peuvent être envisagés lors de l'organisation de tournées.",
+      "phraseEspeces": "Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 33, 12, 09 et 11. D'autres départements peuvent être envisagés lors de l'organisation de tournées.",
       "surTitre": "Secteur d'intervention",
       "intro": "Interventions principales, environ 1h45 de route autour de Toulouse, sur les départements suivants :",
       "complement": "D'autres départements peuvent être envisagés lors de l'organisation de tournées."
@@ -861,7 +873,8 @@
       "globaleTitre": "Une approche globale du bien-être des animaux d'élevage",
       "globaleIntro": "La santé et le bien-être des animaux d'élevage reposent sur une prise en charge globale associant plusieurs facteurs essentiels. L'ostéopathie animale s'intègre dans cette démarche aux côtés de :",
       "globaleConclusion": "L'objectif est d'accompagner les éleveurs dans une démarche cohérente, respectueuse et adaptée aux besoins spécifiques de chaque animal et de chaque élevage.",
-      "photoAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un cochon sur la paille"
+      "photoAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un cochon sur la paille",
+      "photoGlobaleAlt": "Marie Salabert auprès d'un animal d'élevage lors d'une séance d'ostéopathie"
     }
   },
   "faq": {

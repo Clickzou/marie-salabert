@@ -43,6 +43,8 @@
     "plusInfos": "More information",
     "contact": "Contact",
     "suivezMoi": "Follow me",
+    "numeroSecretariat": "Secretariat number",
+    "ecrireWhatsapp": "Message on WhatsApp",
     "zonesIntervention": "Areas covered",
     "departements": "Departments",
     "entrepriseIndividuelle": "Sole proprietorship",
@@ -188,7 +190,13 @@
       ],
       "italieTitre": "Tours in Italy, three times a year",
       "italieTexte": "Home visits and at the following locations:",
-      "italieVilles": ["Pisa", "Florence", "Bologna", "Parma", "Milan"],
+      "italieVilles": [
+        "Pisa",
+        "Florence",
+        "Bologna",
+        "Parma",
+        "Milan"
+      ],
       "tourneesNote": "These tours remain occasional; I practise mainly in France throughout the year. If a consultation cannot wait until my return, a trusted colleague takes over the care of your animal. Where applicable, my reception desk will arrange an appointment with that same person.",
       "departements": [
         {
@@ -208,6 +216,10 @@
           "nom": "Lot-et-Garonne"
         },
         {
+          "code": "46",
+          "nom": "Lot"
+        },
+        {
           "code": "32",
           "nom": "Gers"
         },
@@ -216,8 +228,8 @@
           "nom": "Gironde"
         },
         {
-          "code": "46",
-          "nom": "Lot"
+          "code": "12",
+          "nom": "Aveyron"
         },
         {
           "code": "09",
@@ -452,7 +464,7 @@
       ]
     },
     "secteur": {
-      "phraseEspeces": "Main coverage in departments 31, 81, 82, 47, 46, 32, 12, 33, 09 and 11. Other departments may be considered when tours are organised.",
+      "phraseEspeces": "Main coverage in departments 31, 81, 82, 47, 46, 32, 33, 12, 09 and 11. Other departments may be considered when tours are organised.",
       "surTitre": "Area covered",
       "titre": "Approximately 1h45 drive around Toulouse"
     }
@@ -808,7 +820,7 @@
       "texte2": "As every animal is unique, a discussion will help assess the situation, answer your questions and guide you towards the most appropriate approach for your companion."
     },
     "secteur": {
-      "phraseEspeces": "Main coverage in departments 31, 81, 82, 47, 46, 32, 12, 33, 09 and 11. Other departments may be considered when tours are organised.",
+      "phraseEspeces": "Main coverage in departments 31, 81, 82, 47, 46, 32, 33, 12, 09 and 11. Other departments may be considered when tours are organised.",
       "surTitre": "Areas covered",
       "intro": "Main areas of intervention, approximately 1h45 by road around Toulouse, in the following départements:",
       "complement": "Other départements may be considered when organising rounds."
@@ -861,7 +873,8 @@
       "globaleTitre": "A holistic approach to farm animal wellbeing",
       "globaleIntro": "The health and wellbeing of farm animals rely on comprehensive care combining several essential factors. Animal osteopathy fits into this approach alongside:",
       "globaleConclusion": "The aim is to support farmers in a consistent, respectful approach tailored to the specific needs of each animal and each farm.",
-      "photoAlt": "Marie Salabert during an osteopathy consultation with a pig on straw"
+      "photoAlt": "Marie Salabert during an osteopathy consultation with a pig on straw",
+      "photoGlobaleAlt": "Marie Salabert with a farm animal during an osteopathy session"
     }
   },
   "faq": {

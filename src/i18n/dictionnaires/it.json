@@ -43,6 +43,8 @@
     "plusInfos": "Altre informazioni",
     "contact": "Contatti",
     "suivezMoi": "Seguimi",
+    "numeroSecretariat": "Numero della segreteria",
+    "ecrireWhatsapp": "Scrivi su WhatsApp",
     "zonesIntervention": "Zone di intervento",
     "departements": "Dipartimenti",
     "entrepriseIndividuelle": "Ditta individuale",
@@ -188,7 +190,13 @@
       ],
       "italieTitre": "Tournée in Italia, tre volte all'anno",
       "italieTexte": "Spostamento a domicilio e nei seguenti luoghi:",
-      "italieVilles": ["Pisa", "Firenze", "Bologna", "Parma", "Milano"],
+      "italieVilles": [
+        "Pisa",
+        "Firenze",
+        "Bologna",
+        "Parma",
+        "Milano"
+      ],
       "tourneesNote": "Queste tournée restano occasionali; esercito principalmente in Francia durante tutto l'anno. Se un consulto non può attendere il mio ritorno, una persona di fiducia si occupa del vostro animale. Se necessario, la mia segreteria vi propone un appuntamento con questa stessa persona.",
       "departements": [
         {
@@ -208,6 +216,10 @@
           "nom": "Lot-et-Garonne"
         },
         {
+          "code": "46",
+          "nom": "Lot"
+        },
+        {
           "code": "32",
           "nom": "Gers"
         },
@@ -216,8 +228,8 @@
           "nom": "Gironde"
         },
         {
-          "code": "46",
-          "nom": "Lot"
+          "code": "12",
+          "nom": "Aveyron"
         },
         {
           "code": "09",
@@ -452,7 +464,7 @@
       ]
     },
     "secteur": {
-      "phraseEspeces": "Interventi principali nei dipartimenti 31, 81, 82, 47, 46, 32, 12, 33, 09 e 11. Altri dipartimenti possono essere presi in considerazione in occasione delle tournée.",
+      "phraseEspeces": "Interventi principali nei dipartimenti 31, 81, 82, 47, 46, 32, 33, 12, 09 e 11. Altri dipartimenti possono essere presi in considerazione in occasione delle tournée.",
       "surTitre": "Zona d'intervento",
       "titre": "Circa 1h45 di strada intorno a Toulouse"
     }
@@ -808,7 +820,7 @@
       "texte2": "Poiché ogni animale è unico, un confronto permetterà di valutare la situazione, rispondere alle vostre domande e orientarvi verso l'approccio più adatto al vostro compagno."
     },
     "secteur": {
-      "phraseEspeces": "Interventi principali nei dipartimenti 31, 81, 82, 47, 46, 32, 12, 33, 09 e 11. Altri dipartimenti possono essere presi in considerazione in occasione delle tournée.",
+      "phraseEspeces": "Interventi principali nei dipartimenti 31, 81, 82, 47, 46, 32, 33, 12, 09 e 11. Altri dipartimenti possono essere presi in considerazione in occasione delle tournée.",
       "surTitre": "Zona di intervento",
       "intro": "Interventi principali, entro circa 1h45 di strada intorno a Toulouse, nei seguenti dipartimenti:",
       "complement": "Altri dipartimenti possono essere presi in considerazione in occasione dell'organizzazione di giri di consulti."
@@ -862,7 +874,8 @@
       "globaleTitre": "Un approccio globale al benessere degli animali da allevamento",
       "globaleIntro": "La salute e il benessere degli animali da allevamento si basano su una presa in carico globale che associa diversi fattori essenziali. L'osteopatia animale si inserisce in questo percorso accanto a:",
       "globaleConclusion": "L'obiettivo è accompagnare gli allevatori in un percorso coerente, rispettoso e adatto alle esigenze specifiche di ogni animale e di ogni allevamento.",
-      "photoAlt": "Marie Salabert durante un consulto di osteopatia con un maiale sulla paglia"
+      "photoAlt": "Marie Salabert durante un consulto di osteopatia con un maiale sulla paglia",
+      "photoGlobaleAlt": "Marie Salabert accanto a un animale d'allevamento durante una seduta di osteopatia"
     }
   },
   "faq": {

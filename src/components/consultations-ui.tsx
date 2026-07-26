@@ -83,18 +83,46 @@ export function ApprocheGlobale({
   intro,
   items,
   conclusion,
+  photo,
 }: {
   title: string;
   intro: string;
   items: readonly string[];
   conclusion: string;
+  /** Visuel d'accompagnement, en colonne de droite a partir de 1024 px. */
+  photo?: { src: string; alt: string; largeur: number; hauteur: number };
 }) {
-  return (
-    <div className="rounded-lg border border-plum/15 bg-plum-soft/10 p-6 sm:p-9">
+  const texte = (
+    <div>
       <SubHeading>{title}</SubHeading>
       <p className="mt-4 text-[15px] leading-relaxed text-body">{intro}</p>
-      <CheckList items={items} className="mt-5 sm:columns-2 sm:gap-x-10 [&>li]:mb-3" />
+      <CheckList
+        items={items}
+        className={`mt-5 sm:gap-x-10 [&>li]:mb-3 ${photo ? "sm:columns-2 lg:columns-1 xl:columns-2" : "sm:columns-2"}`}
+      />
       <p className="mt-6 text-[15px] leading-relaxed text-body">{conclusion}</p>
+    </div>
+  );
+
+  if (!photo) {
+    return <div className="rounded-lg border border-plum/15 bg-plum-soft/10 p-6 sm:p-9">{texte}</div>;
+  }
+
+  /* Avec un visuel, la photo occupe toute la hauteur du bloc a droite : elle
+     borde le texte sans le repousser, la carte garde donc sa densite. */
+  return (
+    <div className="grid overflow-hidden rounded-lg border border-plum/15 bg-plum-soft/10 lg:grid-cols-[minmax(0,1fr)_minmax(0,360px)]">
+      <div className="order-2 p-6 sm:p-9 lg:order-1">{texte}</div>
+      <div className="group/media relative order-1 min-h-[240px] overflow-hidden lg:order-2 lg:min-h-full">
+        <Image
+          src={photo.src}
+          alt={photo.alt}
+          width={photo.largeur}
+          height={photo.hauteur}
+          sizes="(max-width: 1024px) 100vw, 360px"
+          className="img-zoom absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
     </div>
   );
 }

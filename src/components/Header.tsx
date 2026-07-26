@@ -82,14 +82,17 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
               transparent ? "h-[58px] drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]" : "h-[48px]"
             }`}
           />
+          {/* Le nom accompagne le pictogramme a toutes les largeurs : sur
+              telephone le logo seul ne disait pas de qui est le site. Il y
+              tient parce que l'appel a l'action y est masque. */}
           <span
-            className={`hidden font-display text-[19px] font-semibold leading-tight transition-colors duration-500 sm:block ${
+            className={`font-display text-[16px] font-semibold leading-tight transition-colors duration-500 sm:text-[19px] ${
               transparent ? "text-white drop-shadow-sm" : "text-plum"
             }`}
           >
             Marie Salabert
             <span
-              className={`block text-[12px] font-normal uppercase tracking-[0.18em] transition-colors duration-500 ${
+              className={`block text-[10px] font-normal uppercase tracking-[0.14em] transition-colors duration-500 sm:text-[12px] sm:tracking-[0.18em] ${
                 transparent ? "text-white/80" : "text-muted"
               }`}
             >
