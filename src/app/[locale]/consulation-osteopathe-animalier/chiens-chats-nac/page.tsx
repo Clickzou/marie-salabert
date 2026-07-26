@@ -5,7 +5,7 @@ import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import { routes } from "@/lib/site";
 import { Button, Container, Section } from "@/components/ui";
-import { CtaBand } from "@/components/sections";
+import { CheckList, CtaBand } from "@/components/sections";
 import {
   ApprocheGlobale,
   MotifCard,
@@ -119,20 +119,28 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
             <MotifCard title={c.compagnie.chienTitre} items={L.chienMotifs} />
             <MotifCard title={c.compagnie.chatTitre} items={L.chatMotifs} />
           </div>
+        </Container>
+      </Section>
 
-          <div className="mt-12">
-            <SubHeading>{c.compagnie.nacTitre}</SubHeading>
-            <div className="mt-6 grid gap-6 lg:grid-cols-3">
-              <MotifCard
-                title={c.compagnie.nacGeneraux}
+      {/* Fond gris a partir des NAC : il detache la partie consacree aux
+          especes moins courantes et l'approche globale qui la conclut. */}
+      <Section tone="surface">
+        <Container width="full">
+          <div>
+            {/* Motifs communs a tous les NAC, dans un encart teinte : ils
+                chapeautent les deux cartes qui suivent, chacune consacree a une
+                famille. La liste est en grille et non en colonnes CSS, qui
+                coupaient la serie a un endroit arbitraire et laissaient les deux
+                colonnes de hauteurs inegales. */}
+            <div className="rounded-lg border border-green/25 bg-green-soft/10 p-8 sm:p-10">
+              <SubHeading>{c.compagnie.nacTitre}</SubHeading>
+              <CheckList
                 items={L.nacMotifs}
-                photo={{
-                  src: "/images/2026/07/osteopathie-nac-lapin.jpg",
-                  alt: c.compagnie.photoNacAlt,
-                  largeur: 1366,
-                  hauteur: 2048,
-                }}
+                className="mt-7 sm:grid sm:grid-cols-2 sm:gap-x-12 sm:gap-y-4 sm:space-y-0"
               />
+            </div>
+
+            <div className="mt-10 grid gap-6 lg:grid-cols-2">
               <MotifCard
                 title={c.compagnie.lapinsTitre}
                 items={L.lapinsRongeurs}
@@ -147,10 +155,10 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
                 title={c.compagnie.reptilesTitre}
                 items={L.reptiles}
                 photo={{
-                  src: "/images/2026/07/osteopathie-reptile-lezard.jpg",
+                  src: "/images/2026/07/osteopathie-reptile-serpent.jpeg",
                   alt: c.compagnie.photoReptileAlt,
-                  largeur: 750,
-                  hauteur: 1000,
+                  largeur: 1080,
+                  hauteur: 1350,
                 }}
               />
             </div>

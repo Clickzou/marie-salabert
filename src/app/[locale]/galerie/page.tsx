@@ -32,7 +32,14 @@ export async function generateMetadata({
 
 const D = "/images/2025/05";
 
-/** Les 47 photos de la galerie Elementor, dans l'ordre exact du site d'origine. */
+/**
+ * Photos de la galerie, dans l'ordre du site d'origine.
+ *
+ * Trois cliches y figuraient deux fois sous des noms differents — IMG_5312,
+ * IMG_5213 et endez-vous-osteopathe-animalier doublaient trois entrees deja
+ * presentes. Les fichiers restent sur le disque, deux d'entre eux servant
+ * ailleurs sur le site ; seules les entrees en double ont disparu.
+ */
 const photos: GaleriePhoto[] = [
   { src: `${D}/0F5B6603-1F2C-4E03-9DBE-5CB61FAA5728.jpg`, width: 1440, height: 961, alt: "" },
   { src: `${D}/8EA7CB2B-F3F6-43F4-9123-26CD0988B122.jpg`, width: 1440, height: 961, alt: "" },
@@ -57,11 +64,9 @@ const photos: GaleriePhoto[] = [
   { src: `${D}/IMG_4328.jpg`, width: 750, height: 565, alt: "" },
   { src: `${D}/IMG_5034.jpg`, width: 1032, height: 774, alt: "" },
   { src: `${D}/IMG_5204.jpg`, width: 1184, height: 789, alt: "" },
-  { src: `${D}/IMG_5213.jpg`, width: 1184, height: 789, alt: "" },
   { src: `${D}/IMG_5249.jpg`, width: 1184, height: 789, alt: "" },
   { src: `${D}/IMG_5278.jpg`, width: 1184, height: 789, alt: "" },
   { src: `${D}/IMG_5282.jpg`, width: 1184, height: 789, alt: "" },
-  { src: `${D}/IMG_5312.jpg`, width: 1184, height: 789, alt: "" },
   { src: `${D}/IMG_5392.jpg`, width: 789, height: 1184, alt: "" },
   { src: `${D}/IMG_5407.jpg`, width: 789, height: 1184, alt: "" },
   { src: `${D}/IMG_5417.jpg`, width: 789, height: 1184, alt: "" },
@@ -95,12 +100,6 @@ const photos: GaleriePhoto[] = [
     height: 961,
     alt: "Marie salabert en train de soigner un chat.",
   },
-  {
-    src: `${D}/rendez-vous-osteopathe-animalier.jpg`,
-    width: 1184,
-    height: 789,
-    alt: "Marie salabert en train de soigner un chien.",
-  },
 ];
 
 export default async function GaleriePage({ params }: { params: Promise<{ locale: string }> }) {
@@ -114,7 +113,6 @@ export default async function GaleriePage({ params }: { params: Promise<{ locale
         image={`${D}/IMG_8268.jpg`}
         eyebrow={d.galerie.hero.surTitre}
         title={d.galerie.hero.titre}
-        subtitle={d.galerie.hero.sousTitre.replace("{n}", String(photos.length))}
       />
 
       {/* Mosaique pleine largeur, marge de 100 px */}

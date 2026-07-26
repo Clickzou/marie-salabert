@@ -4,7 +4,7 @@ import { avis, googleAvis } from "@/content/avis";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import { routes } from "@/lib/site";
-import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
+import { Button, Container, Section } from "@/components/ui";
 import { PageHero, Testimonials } from "@/components/sections";
 import { FaqAccordion, faqPageJsonLd, type FaqItem } from "@/components/FaqAccordion";
 import Reveal from "@/components/Reveal";
@@ -340,6 +340,38 @@ const consultation: FaqItem[] = [
 
 const situations: FaqItem[] = [
   {
+    question:
+      "Mon chien est très actif, méfiant ou réactif : comment se déroule une séance dans ce type de situation ?",
+    answer: (
+      <>
+        <p>
+          Les chiens réactifs ou ayant des difficultés à se laisser manipuler sont des animaux que
+          je rencontre régulièrement en consultation. Je suis formée pour adapter la prise en charge
+          à chaque profil et respecter le rythme de chaque animal.
+        </p>
+        <p>
+          Afin de préparer au mieux la séance, nous échangeons ensemble par téléphone en amont de ma
+          venue. Cela me permet de recueillir les informations importantes concernant votre chien,
+          ses réactions habituelles et de mettre en place les meilleures conditions possibles pour
+          que la rencontre se déroule sereinement. Si vous souhaitez mettre une muselière à votre
+          chien pour sécuriser la séance, celle-ci pourra être utilisée à votre demande. Si votre
+          animal présente des signes importants de méfiance, de peur ou d&apos;agressivité, nous
+          adapterons également nos attitudes et nos postures respectives afin de favoriser un climat
+          de confiance et de sécurité pour tous.
+        </p>
+        <p>
+          Mon objectif est toujours de respecter les limites de votre chien. S&apos;il n&apos;est
+          réellement pas en mesure d&apos;être approché ou touché le jour de la séance, celle-ci ne
+          sera pas maintenue afin de ne pas renforcer ses réactions de défense ou sa méfiance envers
+          les manipulations. Dans ce cas, nous veillerons simplement à terminer la rencontre sur une
+          expérience positive et rassurante pour lui avant mon départ.
+        </p>
+      </>
+    ),
+    plain:
+      "Les chiens réactifs ou ayant des difficultés à se laisser manipuler sont des animaux que je rencontre régulièrement en consultation. Je suis formée pour adapter la prise en charge à chaque profil et respecter le rythme de chaque animal. Afin de préparer au mieux la séance, nous échangeons ensemble par téléphone en amont de ma venue. Cela me permet de recueillir les informations importantes concernant votre chien, ses réactions habituelles et de mettre en place les meilleures conditions possibles pour que la rencontre se déroule sereinement. Si vous souhaitez mettre une muselière à votre chien pour sécuriser la séance, celle-ci pourra être utilisée à votre demande. Si votre animal présente des signes importants de méfiance, de peur ou d’agressivité, nous adapterons également nos attitudes et nos postures respectives afin de favoriser un climat de confiance et de sécurité pour tous. Mon objectif est toujours de respecter les limites de votre chien. S’il n’est réellement pas en mesure d’être approché ou touché le jour de la séance, celle-ci ne sera pas maintenue afin de ne pas renforcer ses réactions de défense ou sa méfiance envers les manipulations. Dans ce cas, nous veillerons simplement à terminer la rencontre sur une expérience positive et rassurante pour lui avant mon départ.",
+  },
+  {
     question: "Mon chien boite, est-ce que l'ostéopathie peut l'aider ?",
     answer: (
       <p>
@@ -451,30 +483,9 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
         subtitle={f.hero.sousTitre}
       />
 
-      {/* Propos d'ouverture et contact */}
-      <Section>
-        <Container width="full">
-          <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-20">
-            <Reveal>
-              <Eyebrow>{f.intro.surTitre}</Eyebrow>
-              <SectionTitle className="mt-5 max-w-xl">
-                {f.intro.titre}
-              </SectionTitle>
-            </Reveal>
-            <Reveal delay={120} className="max-w-2xl">
-              <p className="text-[19px] leading-[1.6] text-ink sm:text-[21px]">
-                {f.intro.accroche}
-              </p>
-              <p className="mt-5 text-[16.5px] leading-[1.7] text-body">
-                {f.intro.complement}
-              </p>
-              <div className="mt-9">
-                <Button href={cheminLocalise(routes.contact, locale)}>{f.intro.bouton}</Button>
-              </div>
-            </Reveal>
-          </div>
-        </Container>
-      </Section>
+      {/* Propos d'ouverture retire : la banniere annonce deja la page, et le
+          visiteur venu chercher une reponse tombait sur un paragraphe avant la
+          premiere question. L'invitation a contacter est reprise en bas de page. */}
 
       {/* Les quatre familles de questions, chacune avec son titre collant */}
       {groupes.map((groupe, i) => (
