@@ -20,18 +20,25 @@ type Lien = { href: string; label: string };
 export default function SommaireFlottant({
   liens,
   declencheur,
+  actifHref,
 }: {
   liens: readonly Lien[];
   /**
    * Selecteur de l'element a partir duquel le sommaire apparait. Il est distinct
    * des `liens` : le sommaire peut n'annoncer que la fin de la page tout en se
-   * montrant plus tot, pendant que le lecteur approche. A defaut, c'est la
-   * premiere entree du sommaire qui sert de declencheur.
+   * montrant plus tot, pendant que le lecteur approche. Sans lui, le sommaire
+   * est affiche d'emblee.
    */
   declencheur?: string;
+  /**
+   * Entree a marquer comme courante quand les liens menent vers d'autres pages
+   * et non vers des ancres. Le reperage par defilement n'a alors plus de sens :
+   * c'est la page affichee qui designe l'entree active.
+   */
+  actifHref?: string;
 }) {
-  const [actif, setActif] = useState(liens[0]?.href ?? "");
-  const [visible, setVisible] = useState(false);
+  const [actif, setActif] = useState(actifHref ?? liens[0]?.href ?? "");
+  const [visible, setVisible] = useState(!declencheur);
 
   /* Le sommaire n'a rien a annoncer tant que la banniere occupe l'ecran : il
      n'apparait qu'une fois le haut de la premiere section arrive a mi-hauteur,
@@ -44,8 +51,11 @@ export default function SommaireFlottant({
      sa section. Le calcul est cadence par `requestAnimationFrame` : au plus une
      mesure par image, quel que soit le debit des evenements de defilement. */
   useEffect(() => {
-    const cible = declencheur ?? liens[0]?.href;
-    const depart = cible ? document.querySelector<HTMLElement>(cible) : null;
+    /* Sans declencheur, le sommaire est visible d'emblee : rien a mesurer. Ne
+       pas retomber sur `liens[0].href` — quand les liens menent vers d'autres
+       pages, ce sont des chemins d'URL, que `querySelector` rejette. */
+    if (!declencheur) return;
+    const depart = document.querySelector<HTMLElement>(declencheur);
     if (!depart) return;
 
     let image = 0;
@@ -68,7 +78,13 @@ export default function SommaireFlottant({
   }, [liens, declencheur]);
 
   useEffect(() => {
-    const cibles = liens
+    /* Reperage par defilement : n'a de sens que pour des ancres de la page
+       courante. Des liens vers d'autres pages ne designent aucun element ici, et
+       leur chemin ferait lever `querySelector`. */
+    const ancres = liens.filter((l) => l.href.startsWith("#"));
+    if (ancres.length === 0) return;
+
+    const cibles = ancres
       .map((l) => document.querySelector<HTMLElement>(l.href))
       .filter((el): el is HTMLElement => Boolean(el));
     if (cibles.length === 0) return;

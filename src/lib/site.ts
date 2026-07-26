@@ -51,6 +51,12 @@ export const routes = {
   home: "/",
   about: "/osteopahie-animale",
   consultations: "/consulation-osteopathe-animalier",
+  /* Une page par famille d'animaux : les trois sections vivaient sur la page
+     consultations, qui devenait tres longue. Elles sont filles de cette page,
+     l'URL dit donc d'ou elles viennent. */
+  equides: "/consulation-osteopathe-animalier/equides",
+  compagnie: "/consulation-osteopathe-animalier/chiens-chats-nac",
+  rente: "/consulation-osteopathe-animalier/animaux-de-rente",
   certification: "/mon-diplome-dosteopathe-animalier",
   news: "/actualites",
   newsCategory: "/categorie/actualites",

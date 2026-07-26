@@ -768,16 +768,18 @@
       "titre": "Consulti in osteopatia animale",
       "sousTitre": "Cavalli, cani, gatti, NAC e animali da reddito, in Occitania"
     },
-    "sommaireTitre": "Quale animale desidera accompagnare?",
+    "sommaireTitre": "I diversi tipi di consulto per ogni specie",
+    "typesTitre": "I diversi tipi di consulto in osteopatia animale",
     "general": {
-      "surTitre": "Dove può intervenire l'osteopatia animale",
+      "surTitre": "Dove l'osteopatia animale può intervenire in prima istanza",
       "titre": "Un accompagnamento lungo tutta la vita del vostro animale",
       "intro": "L'osteopatia animale può integrarsi nel monitoraggio globale del vostro animale in diversi momenti chiave:"
     },
     "motifs": {
-      "titre": "Motivi di consulto frequenti",
+      "titre": "I motivi di consulto frequenti",
       "locomoteurs": "Disturbi locomotori",
       "emotionnel": "Supporto emozionale e comportamentale",
+      "emotionnelTitre": "Un supporto emozionale e comportamentale",
       "emotionnelNote": "In aggiunta a un percorso con un educatore o un veterinario comportamentalista quando necessario.",
       "premiereIntentionTitre": "In prima istanza, secondo lo stato del vostro animale",
       "premiereIntentionTexte1": "L'osteopatia animale può intervenire in prima istanza solo in base allo stato dell'animale: uno scambio telefonico approfondito vi permetterà di accertarvene; in caso contrario sarete indirizzati verso il vostro veterinario.",
@@ -794,7 +796,7 @@
     },
     "collaboration": {
       "surTitre": "Con il vostro veterinario",
-      "titre": "Un approccio collaborativo per la salute del vostro animale",
+      "titre": "Un approccio collaborativo per la salute e il benessere del vostro animale",
       "texte1": "L'osteopata animale può confrontarsi con il vostro veterinario curante, previo vostro consenso, al fine di favorire una presa in carico coerente e di trasmettergli le proprie osservazioni.",
       "texte2": "Poiché ogni animale è unico, un confronto permetterà di valutare la situazione, rispondere alle vostre domande e orientarvi verso l'approccio più adatto al vostro compagno."
     },

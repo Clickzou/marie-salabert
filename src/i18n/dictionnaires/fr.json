@@ -768,14 +768,16 @@
       "titre": "Consultations en ostéopathie animale",
       "sousTitre": "Chevaux, chiens, chats, NAC et animaux de rente, en Occitanie"
     },
-    "sommaireTitre": "Quel animal souhaitez-vous accompagner ?",
+    "sommaireTitre": "Les différents types de consultations pour chaque espèce",
+    "typesTitre": "Les différents types de consultations en ostéopathie animale",
     "general": {
-      "surTitre": "Où l'ostéopathie animale peut agir",
+      "surTitre": "Où l'ostéopathie animale peut agir en première intention",
       "titre": "Un accompagnement tout au long de la vie de votre animal",
       "intro": "L'ostéopathie animale peut s'intégrer dans le suivi global de votre animal à différents moments clés :"
     },
     "motifs": {
-      "titre": "Motifs de consultation fréquents",
+      "titre": "Les motifs de consultations fréquents",
+      "emotionnelTitre": "Un accompagnement émotionnel et comportemental",
       "locomoteurs": "Troubles locomoteurs",
       "emotionnel": "Accompagnement émotionnel et comportemental",
       "emotionnelNote": "En complément d'un suivi avec un éducateur ou un vétérinaire comportementaliste lorsque cela est nécessaire.",
@@ -794,8 +796,8 @@
     },
     "collaboration": {
       "surTitre": "Avec votre vétérinaire",
-      "titre": "Une approche collaborative pour la santé de votre animal",
-      "texte1": "L'ostéopathe animalier peut échanger avec votre vétérinaire traitant, avec votre accord, afin de favoriser une prise en charge cohérente et de lui transmettre ses observations.",
+      "titre": "Une approche collaborative pour la santé et le bien-être de votre animal",
+      "texte1": "L'ostéopathe animalier peut échanger avec votre vétérinaire traitant, avec votre accord, afin de favoriser une prise en charge cohérente et adaptée, ou de lui transmettre ses observations pour optimiser la continuité des soins.",
       "texte2": "Chaque animal étant unique, un échange permettra d'évaluer la situation, de répondre à vos questions et de vous orienter vers la démarche la plus appropriée pour votre compagnon."
     },
     "secteur": {

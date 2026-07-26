@@ -768,9 +768,10 @@
       "titre": "Animal osteopathy consultations",
       "sousTitre": "Horses, dogs, cats, exotic pets and farm animals, across Occitanie"
     },
-    "sommaireTitre": "Which animal would you like support for?",
+    "sommaireTitre": "The different types of consultation for each species",
+    "typesTitre": "The different types of consultation in animal osteopathy",
     "general": {
-      "surTitre": "Where animal osteopathy can help",
+      "surTitre": "Where animal osteopathy can act as a first port of call",
       "titre": "Support throughout your animal's life",
       "intro": "Animal osteopathy can form part of your animal's overall care at various key moments:"
     },
@@ -778,6 +779,7 @@
       "titre": "Common reasons for consultation",
       "locomoteurs": "Locomotor disorders",
       "emotionnel": "Emotional and behavioural support",
+      "emotionnelTitre": "Emotional and behavioural support",
       "emotionnelNote": "Alongside support from a trainer or veterinary behaviourist where necessary.",
       "premiereIntentionTitre": "As a first-line approach, depending on your animal's condition",
       "premiereIntentionTexte1": "Animal osteopathy can be considered as a first-line approach only depending on the animal's condition: a thorough telephone conversation will help confirm this; otherwise you will be referred to your vet.",
@@ -794,7 +796,7 @@
     },
     "collaboration": {
       "surTitre": "Working with your vet",
-      "titre": "A collaborative approach to your animal's health",
+      "titre": "A collaborative approach to your animal's health and well-being",
       "texte1": "The animal osteopath can liaise with your treating vet, with your consent, to promote consistent care and share their observations.",
       "texte2": "As every animal is unique, a discussion will help assess the situation, answer your questions and guide you towards the most appropriate approach for your companion."
     },
