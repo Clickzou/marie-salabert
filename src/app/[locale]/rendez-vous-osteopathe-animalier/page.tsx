@@ -22,11 +22,11 @@ export async function generateMetadata({
     title: d.contact.meta.titre,
     description: d.contact.meta.description,
     alternates: {
-      canonical: cheminLocalise(routes.contact, locale),
+      canonical: cheminLocalise(routes.rendezVous, locale),
       languages: {
-        fr: routes.contact,
-        en: `/en${routes.contact}`,
-        it: `/it${routes.contact}`,
+        fr: routes.rendezVous,
+        en: `/en${routes.rendezVous}`,
+        it: `/it${routes.rendezVous}`,
       },
     },
     openGraph: { locale: localeTags[locale] },

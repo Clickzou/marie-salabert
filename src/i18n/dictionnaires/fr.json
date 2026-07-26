@@ -37,7 +37,8 @@
     "lireSuite": "Lire la suite",
     "reduire": "Réduire",
     "reconnaissance": "Reconnaissance officielle",
-    "registre": "Inscrite sur le Registre National d'Aptitude tenu par le Conseil National de l'Ordre des Vétérinaires (OA 801)"
+    "registre": "Inscrite sur le Registre National d'Aptitude tenu par le Conseil National de l'Ordre des Vétérinaires (OA 801)",
+    "email": "E-mail"
   },
   "footer": {
     "plusInfos": "Plus d'infos",
@@ -437,8 +438,8 @@
   },
   "contact": {
     "meta": {
-      "titre": "Contact ostéopathe animalier : Marie Salabert",
-      "description": "Ostéopathie animale pour tout type d'animaux. Contactez-moi pour réserver une séance ou en apprendre plus sur l'ostéopathie animale."
+      "titre": "Prendre rendez-vous - Marie Salabert, ostéopathe animalier",
+      "description": "Réservez une séance d'ostéopathie animale à Toulouse et ses environs : par téléphone, par SMS ou via le formulaire. Chevaux, chiens, chats, NAC et animaux d'élevage."
     },
     "hero": {
       "surTitre": "Contact",
@@ -1269,6 +1270,31 @@
         ],
         "note": "La carte du secteur d'intervention s'appuie sur les fonds de plan OpenStreetMap : ils ne déposent aucun cookie, seule l'adresse IP est transmise au serveur de tuiles pour afficher la carte."
       }
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "titre": "Contact - Marie Salabert, ostéopathe animalier",
+      "description": "Une question sur l'ostéopathie animale, une demande de devis ou de partenariat : écrivez-moi, par téléphone, par WhatsApp ou via le formulaire."
+    },
+    "hero": {
+      "surTitre": "Contact",
+      "titre": "Me contacter",
+      "sousTitre": "Une question, une demande de devis ou de partenariat : je vous réponds dans les meilleurs délais."
+    },
+    "coordonnees": "Mes coordonnées",
+    "rdvTitre": "Vous souhaitez prendre rendez-vous ?",
+    "rdvTexte": "La prise de rendez-vous se fait sur une page dédiée, où vous trouverez le secteur d'intervention et les informations utiles avant une séance.",
+    "rdvBouton": "Aller à la prise de rendez-vous",
+    "formulaire": {
+      "titre": "Écrivez-moi",
+      "intro": "Ce formulaire vous permet de me joindre pour toute question sur l'ostéopathie animale, mes interventions ou une collaboration. Pour que je puisse vous répondre utilement, précisez dans votre message :",
+      "puces": [
+        "L'objet de votre demande",
+        "L'espèce concernée, le cas échéant",
+        "Le moyen par lequel vous préférez être recontacté"
+      ],
+      "conclusion": "Chaque demande est étudiée avec attention."
     }
   }
 }

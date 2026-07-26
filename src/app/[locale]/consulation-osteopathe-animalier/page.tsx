@@ -425,7 +425,7 @@ export default async function ConsultationsPage({
                 votre compagnon.
               </p>
               <div className="mt-9">
-                <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.prendreRdv}</Button>
+                <Button href={cheminLocalise(routes.rendezVous, locale)}>{d.commun.prendreRdv}</Button>
               </div>
 
               <div className="mt-12 border-t border-line pt-10">
@@ -518,7 +518,7 @@ export default async function ConsultationsPage({
       <CtaBand
         image="/images/2025/05/a-propos-osteopathe-animalier.jpg"
         title={d.accueil.cta}
-        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.contact, locale) }}
+        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.rendezVous, locale) }}
       />
     </>
   );

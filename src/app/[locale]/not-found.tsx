@@ -32,7 +32,7 @@ export default function NotFound() {
 
         <div className="mt-9 flex flex-wrap justify-center gap-4">
           <Button href={routes.home}>Retour à l&apos;accueil</Button>
-          <Button href={routes.contact} variant="green">
+          <Button href={routes.rendezVous} variant="green">
             {d.commun.prendreRdv}
           </Button>
         </div>

@@ -525,7 +525,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
       <Section className="text-center">
         <Container width="full">
           <Reveal>
-            <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.reserverSeance}</Button>
+            <Button href={cheminLocalise(routes.rendezVous, locale)}>{d.commun.reserverSeance}</Button>
           </Reveal>
         </Container>
       </Section>

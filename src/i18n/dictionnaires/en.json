@@ -37,7 +37,8 @@
     "lireSuite": "Read more",
     "reduire": "Show less",
     "reconnaissance": "Official recognition",
-    "registre": "Listed on the French National Register of Aptitude held by the National Council of the Order of Veterinarians (OA 801)"
+    "registre": "Listed on the French National Register of Aptitude held by the National Council of the Order of Veterinarians (OA 801)",
+    "email": "Email"
   },
   "footer": {
     "plusInfos": "More information",
@@ -437,8 +438,8 @@
   },
   "contact": {
     "meta": {
-      "titre": "Contact animal osteopath: Marie Salabert",
-      "description": "Animal osteopathy for all types of animals. Contact me to book a session or find out more about animal osteopathy."
+      "titre": "Book an appointment - Marie Salabert, animal osteopath",
+      "description": "Book an animal osteopathy session in and around Toulouse: by phone, by text or through the form. Horses, dogs, cats, exotic pets and farm animals."
     },
     "hero": {
       "surTitre": "Contact",
@@ -1269,6 +1270,31 @@
         ],
         "note": "The map of the service area uses OpenStreetMap base layers: they do not set any cookies, only the IP address is sent to the tile server to display the map."
       }
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "titre": "Contact - Marie Salabert, animal osteopath",
+      "description": "A question about animal osteopathy, a quote or a partnership: write to me by phone, on WhatsApp or through the form."
+    },
+    "hero": {
+      "surTitre": "Contact",
+      "titre": "Get in touch",
+      "sousTitre": "A question, a quote or a partnership: I will get back to you as soon as possible."
+    },
+    "coordonnees": "My details",
+    "rdvTitre": "Would you like to book an appointment?",
+    "rdvTexte": "Booking has its own page, where you will find the coverage area and what to know before a session.",
+    "rdvBouton": "Go to booking",
+    "formulaire": {
+      "titre": "Write to me",
+      "intro": "This form lets you reach me with any question about animal osteopathy, my work or a collaboration. So that I can answer usefully, please include in your message:",
+      "puces": [
+        "What your request is about",
+        "The species concerned, if any",
+        "How you would prefer to be contacted"
+      ],
+      "conclusion": "Every request is considered with care."
     }
   }
 }

@@ -196,7 +196,7 @@ export default async function GaleriePage({ params }: { params: Promise<{ locale
 
       <Section className="text-center">
         <Container width="full">
-          <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.reserverSeance}</Button>
+          <Button href={cheminLocalise(routes.rendezVous, locale)}>{d.commun.reserverSeance}</Button>
         </Container>
       </Section>
     </>

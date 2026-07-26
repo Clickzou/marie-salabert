@@ -108,7 +108,7 @@ export default async function ActualitesPage({
                 {n.cta.texte}
               </p>
             </div>
-            <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.meContacter}</Button>
+            <Button href={cheminLocalise(routes.rendezVous, locale)}>{d.commun.meContacter}</Button>
           </Reveal>
         </Container>
       </Section>

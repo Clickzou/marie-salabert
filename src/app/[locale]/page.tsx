@@ -132,7 +132,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         images={photosHero}
         title={a.meta.titreHero}
         subtitle={a.heroSousTitre}
-        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.contact, locale) }}
+        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.rendezVous, locale) }}
       />
       <CertificationBadge
         href={cheminLocalise(routes.certification, locale)}
@@ -245,7 +245,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           />
 
           <Reveal className="mt-12 text-center">
-            <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.prendreRdv}</Button>
+            <Button href={cheminLocalise(routes.rendezVous, locale)}>{d.commun.prendreRdv}</Button>
           </Reveal>
         </Container>
       </Section>
@@ -460,7 +460,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <CtaBand
         image="/images/2025/05/a-propos-osteopathe-animalier.jpg"
         title={a.cta}
-        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.contact, locale) }}
+        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.rendezVous, locale) }}
       />
 
       <Testimonials
@@ -474,7 +474,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Section className="py-16 text-center">
         <Container width="wide">
           <Reveal>
-            <Button href={cheminLocalise(routes.contact, locale)} variant="gold">
+            <Button href={cheminLocalise(routes.rendezVous, locale)} variant="gold">
               {d.commun.reserverSeance}
             </Button>
           </Reveal>

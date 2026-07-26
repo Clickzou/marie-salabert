@@ -44,9 +44,9 @@ const nextConfig: NextConfig = {
          interne de la reecriture de « / », et une redirection ici creerait une
          boucle. La balise canonique de la page pointe vers « / ». */
       { source: "/fr/:chemin+", destination: "/:chemin+", permanent: true },
-      // liens du footer WordPress qui pointaient vers des pages inexistantes
+      /* Lien du footer WordPress qui pointait vers une page inexistante.
+         `/contact` n'est plus redirige : c'est desormais une vraie page. */
       { source: "/a-propos", destination: "/osteopahie-animale", permanent: true },
-      { source: "/contact", destination: "/rendez-vous-osteopathe-animalier", permanent: true },
       /* `/reservation` a ete supprimee : elle reprenait le formulaire et les
          coordonnees de la page de rendez-vous. L'URL etait indexee, elle est
          donc redirigee et non abandonnee. */

@@ -67,7 +67,11 @@ export const routes = {
      coordonnees de la page de rendez-vous. Tous les appels a l'action pointent
      desormais sur cette derniere, et l'ancienne URL y est redirigee dans
      `next.config.ts`. */
-  contact: "/rendez-vous-osteopathe-animalier",
+  rendezVous: "/rendez-vous-osteopathe-animalier",
+  /* Page de contact, distincte de la prise de rendez-vous : on y ecrit pour
+     une question, un devis, un partenariat. Le bouton dore de l'en-tete mene
+     toujours a la prise de rendez-vous, l'entree « Contact » du menu ici. */
+  contact: "/contact",
   legal: "/mentions-legales",
   privacy: "/politique-de-confidentialite",
   cookies: "/politique-de-cookies-ue",
@@ -120,7 +124,7 @@ export const sousMenuInfos = [routes.news, routes.symbiosteo] as const;
 
 export const headerCta = {
   label: "Prendre un rendez-vous",
-  href: routes.contact,
+  href: routes.rendezVous,
 } as const;
 
 /**

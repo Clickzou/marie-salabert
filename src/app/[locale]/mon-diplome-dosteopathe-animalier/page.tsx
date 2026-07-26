@@ -131,7 +131,7 @@ export default function CertificationPage() {
             Vous souhaitez confier votre animal à une praticienne inscrite et reconnue ?
           </p>
           <div className="mt-8">
-            <Button href={routes.contact}>Prendre un rendez-vous</Button>
+            <Button href={routes.rendezVous}>Prendre un rendez-vous</Button>
           </div>
         </Container>
       </Section>

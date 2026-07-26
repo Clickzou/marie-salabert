@@ -37,7 +37,8 @@
     "lireSuite": "Leggi il seguito",
     "reduire": "Riduci",
     "reconnaissance": "Riconoscimento ufficiale",
-    "registre": "Iscritta al Registro Nazionale di Idoneità tenuto dal Consiglio Nazionale dell'Ordine dei Veterinari francese (OA 801)"
+    "registre": "Iscritta al Registro Nazionale di Idoneità tenuto dal Consiglio Nazionale dell'Ordine dei Veterinari francese (OA 801)",
+    "email": "E-mail"
   },
   "footer": {
     "plusInfos": "Altre informazioni",
@@ -437,8 +438,8 @@
   },
   "contact": {
     "meta": {
-      "titre": "Contatto osteopata animale: Marie Salabert",
-      "description": "Osteopatia animale per ogni tipo di animale. Contattatemi per prenotare una seduta o per saperne di più sull'osteopatia animale."
+      "titre": "Prenota un appuntamento - Marie Salabert, osteopata animale",
+      "description": "Prenota una seduta di osteopatia animale a Tolosa e dintorni: per telefono, con un SMS o tramite il modulo. Cavalli, cani, gatti, animali esotici e da allevamento."
     },
     "hero": {
       "surTitre": "Contatto",
@@ -1270,6 +1271,31 @@
         ],
         "note": "La mappa della zona d'intervento si basa sulle mappe OpenStreetMap: queste non depositano alcun cookie, viene trasmesso solo l'indirizzo IP al server delle tessere per visualizzare la mappa."
       }
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "titre": "Contatto - Marie Salabert, osteopata animale",
+      "description": "Una domanda sull'osteopatia animale, un preventivo o una collaborazione: scrivimi per telefono, su WhatsApp o tramite il modulo."
+    },
+    "hero": {
+      "surTitre": "Contatto",
+      "titre": "Contattami",
+      "sousTitre": "Una domanda, un preventivo o una collaborazione: ti rispondo al più presto."
+    },
+    "coordonnees": "I miei recapiti",
+    "rdvTitre": "Vuoi prenotare un appuntamento?",
+    "rdvTexte": "La prenotazione avviene su una pagina dedicata, dove troverai la zona di intervento e le informazioni utili prima di una seduta.",
+    "rdvBouton": "Vai alla prenotazione",
+    "formulaire": {
+      "titre": "Scrivimi",
+      "intro": "Questo modulo permette di contattarmi per qualsiasi domanda sull'osteopatia animale, sui miei interventi o su una collaborazione. Per poterti rispondere in modo utile, indica nel messaggio:",
+      "puces": [
+        "L'oggetto della tua richiesta",
+        "La specie interessata, se pertinente",
+        "Come preferisci essere ricontattato"
+      ],
+      "conclusion": "Ogni richiesta viene esaminata con attenzione."
     }
   }
 }

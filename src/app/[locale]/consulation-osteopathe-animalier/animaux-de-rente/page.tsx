@@ -73,7 +73,7 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
             {/* Appel a l'action des la banniere : le visiteur qui arrive
                 par le menu n'a pas a parcourir la page pour le trouver. */}
             <div className="mt-8">
-              <Button href={cheminLocalise(routes.contact, locale)} variant="gold">
+              <Button href={cheminLocalise(routes.rendezVous, locale)} variant="gold">
                 {d.commun.prendreRdv}
               </Button>
             </div>
@@ -130,7 +130,7 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
       <CtaBand
         image="/images/2025/05/a-propos-osteopathe-animalier.jpg"
         title={d.accueil.cta}
-        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.contact, locale) }}
+        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.rendezVous, locale) }}
       />
     </>
   );
