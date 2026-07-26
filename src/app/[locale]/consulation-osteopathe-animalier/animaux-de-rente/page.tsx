@@ -53,7 +53,7 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
         {/* Hauteur minimale commune aux trois bannieres : sans elle chacune
             suit son propre texte, et elles ne s'alignent pas d'une page a
             l'autre quand on navigue par le menu lateral. */}
-        <div className="grid items-stretch lg:min-h-[520px] lg:grid-cols-2">
+        <div className="grid items-stretch lg:min-h-[610px] lg:grid-cols-2">
           <div className="relative order-2 min-h-[280px] lg:order-1 lg:min-h-[440px]">
             <Image
               src="/images/2025/05/IMG_2057.avif"
@@ -108,10 +108,6 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
               items={L.elevageApprocheGlobale}
               conclusion={c.rente.globaleConclusion}
             />
-          </div>
-
-          <div className="mt-16 text-center">
-            <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.prendreRdv}</Button>
           </div>
 
           <RetourConsultations

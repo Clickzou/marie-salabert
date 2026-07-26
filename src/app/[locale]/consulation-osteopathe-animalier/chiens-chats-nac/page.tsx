@@ -52,14 +52,15 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
     <>
       <NavEspeces locale={locale} libelles={c.sommaire} courant="compagnie" />
 
-      {/* Bandeau d'ouverture : texte a gauche, deux photos a droite, comme sur
-          la page consultations d'origine. */}
+      {/* Bandeau d'ouverture : photos a gauche, texte a droite, comme les deux
+          autres pages d'especes. Le sens de lecture doit etre le meme d'une page
+          a l'autre, on passe de l'une a l'autre par le menu lateral. */}
       <Section tone="green" padding="none">
         {/* Hauteur minimale commune aux trois bannieres : sans elle chacune
             suit son propre texte, et elles ne s'alignent pas d'une page a
             l'autre quand on navigue par le menu lateral. */}
-        <div className="grid items-stretch lg:min-h-[520px] lg:grid-cols-2">
-          <div className="order-2 flex flex-col justify-center px-6 py-14 sm:px-10 lg:order-1 lg:px-14">
+        <div className="grid items-stretch lg:min-h-[610px] lg:grid-cols-2">
+          <div className="order-2 flex flex-col justify-center px-6 py-14 sm:px-10 lg:px-14">
             <NumeroSection numero="02" label={c.compagnie.numero} />
             <h1 className="uppercase mt-3 font-display text-[30px] leading-[1.12] font-light text-white sm:text-[40px] tracking-[0.05em]">
               {c.sommaire[1].label}
@@ -75,7 +76,7 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
               </Button>
             </div>
           </div>
-          <div className="order-1 grid grid-cols-2 lg:order-2">
+          <div className="order-1 grid grid-cols-2">
             <div className="relative min-h-[220px] lg:min-h-[440px]">
               <Image
                 src="/images/2025/05/osteopathe-chien-toulouse.jpg"
@@ -139,10 +140,6 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
               items={L.compagnieApprocheGlobale}
               conclusion={c.compagnie.globaleConclusion}
             />
-          </div>
-
-          <div className="mt-16 text-center">
-            <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.prendreRdv}</Button>
           </div>
 
           <RetourConsultations

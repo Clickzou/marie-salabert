@@ -54,7 +54,7 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
         {/* Hauteur minimale commune aux trois bannieres : sans elle chacune
             suit son propre texte, et elles ne s'alignent pas d'une page a
             l'autre quand on navigue par le menu lateral. */}
-        <div className="grid items-stretch lg:min-h-[520px] lg:grid-cols-2">
+        <div className="grid items-stretch lg:min-h-[610px] lg:grid-cols-2">
           <div className="relative min-h-[280px] lg:min-h-[440px]">
             <Image
               src="/images/2025/05/osteopathe-animaliere-toulouse.jpg"
@@ -68,9 +68,10 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
           <div className="flex flex-col justify-center px-6 py-14 sm:px-10 lg:px-14">
             <NumeroSection numero="01" label={c.equides.numero} />
             <h1 className="uppercase mt-3 font-display text-[32px] leading-[1.1] font-light text-white sm:text-[42px] tracking-[0.05em]">
-              {c.sommaire[0].label}
+              {c.equides.titre}
             </h1>
-            <p className="mt-3 text-[15px] text-white/70">{c.sommaire[0].detail}</p>
+            {/* Pas de sous-titre : le titre enonce deja les profils d'equides,
+                le repeter en dessous faisait doublon mot pour mot. */}
             <p className="mt-6 text-[15px] leading-relaxed text-white/90">{c.equides.chapo}</p>
             {/* Appel a l'action des la banniere : le visiteur qui arrive
                 par le menu n'a pas a parcourir la page pour le trouver. */}
@@ -107,10 +108,6 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
               items={L.equinApprocheGlobale}
               conclusion={c.equides.globaleConclusion}
             />
-          </div>
-
-          <div className="mt-16 text-center">
-            <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.prendreRdv}</Button>
           </div>
 
           <RetourConsultations
