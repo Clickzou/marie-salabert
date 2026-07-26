@@ -48,8 +48,18 @@ export function MotifCard({
   title: string;
   items: readonly string[];
   note?: string;
-  /** Visuel en tete de carte, plein cadre au-dessus du titre. */
-  photo?: { src: string; alt: string; largeur: number; hauteur: number };
+  /**
+   * Visuel en tete de carte, plein cadre au-dessus du titre. `position` regle
+   * la zone conservee au recadrage, pour les cliches dont le sujet n'est pas
+   * la ou le cadrage par defaut le cherche.
+   */
+  photo?: {
+    src: string;
+    alt: string;
+    largeur: number;
+    hauteur: number;
+    position?: string;
+  };
   className?: string;
 }) {
   return (
@@ -64,7 +74,10 @@ export function MotifCard({
             width={photo.largeur}
             height={photo.hauteur}
             sizes="(max-width: 1024px) 100vw, 33vw"
-            className="img-zoom aspect-[4/3] w-full object-cover"
+            /* Cadre moins haut qu'un 4/3, et cadrage decale vers le bas : le
+               sujet y est, le haut ne montrait que du decor. */
+            style={{ objectPosition: photo.position ?? "center 70%" }}
+            className="img-zoom aspect-[8/5] w-full object-cover"
           />
         </div>
       )}

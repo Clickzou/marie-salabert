@@ -109,6 +109,12 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
               intro={c.equides.globaleIntro}
               items={L.equinApprocheGlobale}
               conclusion={c.equides.globaleConclusion}
+              photo={{
+                src: "/images/2026/07/osteopathie-equine-approche-globale.jpeg",
+                alt: c.equides.photoGlobaleAlt,
+                largeur: 1200,
+                hauteur: 1600,
+              }}
             />
           </div>
 

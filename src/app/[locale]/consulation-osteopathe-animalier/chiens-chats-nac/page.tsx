@@ -140,7 +140,9 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
               />
             </div>
 
-            <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {/* Largeur bornee : en pleine largeur, ces deux cartes etiraient
+                leur photo sur plus de 800 px et ecrasaient la liste. */}
+            <div className="mx-auto mt-10 grid max-w-5xl gap-6 lg:grid-cols-2">
               <MotifCard
                 title={c.compagnie.lapinsTitre}
                 items={L.lapinsRongeurs}
@@ -159,6 +161,9 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
                   alt: c.compagnie.photoReptileAlt,
                   largeur: 1080,
                   hauteur: 1350,
+                  /* Le serpent est a mi-hauteur : un cadrage plus bas ne
+                     montrait qu'un buste. */
+                  position: "center 45%",
                 }}
               />
             </div>
