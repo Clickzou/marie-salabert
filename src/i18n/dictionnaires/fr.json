@@ -830,7 +830,7 @@
       "titre": "Ostéopathie canine, féline et pour les nouveaux animaux de compagnie (NAC)",
       "chapo": "Après s'être largement développée dans le milieu équin, l'ostéopathie animale occupe aujourd'hui une place grandissante dans le suivi des animaux de compagnie. Elle peut accompagner les chiens, les chats et les NAC tout au long de leur vie.",
       "lieuFixeTitre": "Un lieu de consultation fixe",
-      "lieuFixeTexte1": "Les zones d'intervention sont identiques à celles proposées pour les équidés : 31, 81, 82, 47, 32, 09, 11, 12 et 46. Les consultations peuvent être réalisées à domicile afin de respecter les habitudes et l'environnement de votre animal.",
+      "lieuFixeTexte1": "Les consultations peuvent être réalisées à domicile afin de respecter les habitudes et l'environnement de votre animal.",
       "lieuFixeTexte2": "Depuis 6 ans, je consulte tous les vendredis après-midi à la clinique vétérinaire du Val Dadou à Graulhet (81). Pour toute prise de rendez-vous dans ce lieu, merci de contacter directement la clinique au",
       "chienTitre": "Motifs de consultation courants chez le chien",
       "chatTitre": "Motifs de consultation courants chez le chat",
@@ -841,6 +841,9 @@
       "globaleTitre": "Une approche globale du bien-être de votre animal",
       "globaleIntro": "La santé et le bien-être de votre animal reposent sur une vision globale associant différentes compétences et différents facteurs essentiels. L'ostéopathie animale s'intègre dans cette démarche aux côtés de :",
       "globaleConclusion": "L'objectif est de proposer une prise en charge cohérente et personnalisée, en plaçant le confort, la santé et le bien-être de l'animal au centre des priorités.",
+      "photoNacAlt": "Marie Salabert porte un lapin noir tenu en harnais, à l'extérieur",
+      "photoLapinAlt": "Marie Salabert travaille le dos d'un lapin bélier gris allongé sur un tapis",
+      "photoReptileAlt": "Un lézard posé sur l'avant-bras de Marie Salabert",
       "photoChienAlt": "Marie Salabert avec un chien de type border collie",
       "photoChatAlt": "Marie Salabert portant un chat noir en consultation"
     },

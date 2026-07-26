@@ -74,26 +74,18 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
               </Button>
             </div>
           </div>
-          <div className="order-1 grid grid-cols-2">
-            <div className="relative min-h-[220px] lg:min-h-[440px]">
-              <Image
-                src="/images/2025/05/osteopathe-chien-toulouse.jpg"
-                alt={c.compagnie.photoChienAlt}
-                fill
-                priority
-                sizes="(max-width: 1024px) 50vw, 25vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="relative min-h-[220px] lg:min-h-[440px]">
-              <Image
-                src="/images/2025/05/osteopathe-chat-toulouse.jpg"
-                alt={c.compagnie.photoChatAlt}
-                fill
-                sizes="(max-width: 1024px) 50vw, 25vw"
-                className="object-cover"
-              />
-            </div>
+          {/* Une seule photo, comme sur les deux autres pages d'especes : le
+              diptyque decoupait la banniere en trois blocs de largeurs
+              inegales. */}
+          <div className="relative order-1 min-h-[280px] lg:min-h-[440px]">
+            <Image
+              src="/images/2026/07/osteopathie-animaux-compagnie.jpeg"
+              alt={c.compagnie.photoChienAlt}
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </Section>
@@ -103,6 +95,12 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
           {/* Encart centre, comme sur les deux autres pages d'especes */}
           <div className="mx-auto max-w-4xl">
             <div className="rounded-lg border border-green/25 bg-green-soft/10 p-8 sm:p-10">
+              {/* Meme phrase de secteur que les deux autres pages d'especes,
+                  prise a la meme source : cette page en donnait sa propre
+                  version, qui avait deja pris du retard sur la liste des
+                  departements. */}
+              <p className="text-[16px] leading-[1.7] text-body">{c.secteur.phraseEspeces}</p>
+              <span aria-hidden="true" className="mt-7 mb-7 block h-px w-full bg-green/20" />
               <p className="eyebrow text-green">{c.compagnie.lieuFixeTitre}</p>
               <p className="mt-4 text-[15px] leading-relaxed text-body">
                 {c.compagnie.lieuFixeTexte1}
@@ -125,9 +123,36 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
           <div className="mt-12">
             <SubHeading>{c.compagnie.nacTitre}</SubHeading>
             <div className="mt-6 grid gap-6 lg:grid-cols-3">
-              <MotifCard title={c.compagnie.nacGeneraux} items={L.nacMotifs} />
-              <MotifCard title={c.compagnie.lapinsTitre} items={L.lapinsRongeurs} />
-              <MotifCard title={c.compagnie.reptilesTitre} items={L.reptiles} />
+              <MotifCard
+                title={c.compagnie.nacGeneraux}
+                items={L.nacMotifs}
+                photo={{
+                  src: "/images/2026/07/osteopathie-nac-lapin.jpg",
+                  alt: c.compagnie.photoNacAlt,
+                  largeur: 1366,
+                  hauteur: 2048,
+                }}
+              />
+              <MotifCard
+                title={c.compagnie.lapinsTitre}
+                items={L.lapinsRongeurs}
+                photo={{
+                  src: "/images/2025/05/IMG_4328.jpg",
+                  alt: c.compagnie.photoLapinAlt,
+                  largeur: 750,
+                  hauteur: 565,
+                }}
+              />
+              <MotifCard
+                title={c.compagnie.reptilesTitre}
+                items={L.reptiles}
+                photo={{
+                  src: "/images/2026/07/osteopathie-reptile-lezard.jpg",
+                  alt: c.compagnie.photoReptileAlt,
+                  largeur: 750,
+                  hauteur: 1000,
+                }}
+              />
             </div>
           </div>
 

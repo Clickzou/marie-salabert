@@ -831,7 +831,7 @@
       "titre": "Osteopatia canina, felina e per i nuovi animali da compagnia (NAC)",
       "chapo": "Dopo essersi ampiamente sviluppata nell'ambito equino, l'osteopatia animale occupa oggi un posto crescente nel monitoraggio degli animali da compagnia. Può accompagnare cani, gatti e NAC lungo tutto il corso della loro vita.",
       "lieuFixeTitre": "Un luogo di consulto fisso",
-      "lieuFixeTexte1": "Le zone di intervento sono identiche a quelle proposte per gli equini: 31, 81, 82, 47, 32, 09, 11, 12 e 46. I consulti possono essere effettuati a domicilio per rispettare le abitudini e l'ambiente del vostro animale.",
+      "lieuFixeTexte1": "I consulti possono essere effettuati a domicilio per rispettare le abitudini e l'ambiente del vostro animale.",
       "lieuFixeTexte2": "Da 6 anni, ricevo tutti i venerdì pomeriggio presso la clinica veterinaria del Val Dadou a Graulhet (81). Per qualsiasi prenotazione presso questa sede, vi preghiamo di contattare direttamente la clinica al",
       "chienTitre": "Motivi di consulto comuni nel cane",
       "chatTitre": "Motivi di consulto comuni nel gatto",
@@ -842,6 +842,9 @@
       "globaleTitre": "Un approccio globale al benessere del vostro animale",
       "globaleIntro": "La salute e il benessere del vostro animale si basano su una visione globale che associa diverse competenze e diversi fattori essenziali. L'osteopatia animale si inserisce in questo percorso accanto a:",
       "globaleConclusion": "L'obiettivo è proporre una presa in carico coerente e personalizzata, ponendo il comfort, la salute e il benessere dell'animale al centro delle priorità.",
+      "photoNacAlt": "Marie Salabert tiene un coniglio nero con pettorina, all'aperto",
+      "photoLapinAlt": "Marie Salabert lavora sul dorso di un coniglio ariete grigio sdraiato su un tappeto",
+      "photoReptileAlt": "Una lucertola posata sull'avambraccio di Marie Salabert",
       "photoChienAlt": "Marie Salabert con un cane di tipo border collie",
       "photoChatAlt": "Marie Salabert con in braccio un gatto nero durante un consulto"
     },

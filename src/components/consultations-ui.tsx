@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
 import { CheckList } from "./sections";
 
@@ -41,20 +42,37 @@ export function MotifCard({
   title,
   items,
   note,
+  photo,
   className,
 }: {
   title: string;
   items: readonly string[];
   note?: string;
+  /** Visuel en tete de carte, plein cadre au-dessus du titre. */
+  photo?: { src: string; alt: string; largeur: number; hauteur: number };
   className?: string;
 }) {
   return (
     <div
-      className={`flex h-full flex-col rounded-lg border border-black/8 bg-white p-6 sm:p-8 ${className ?? ""}`}
+      className={`flex h-full flex-col overflow-hidden rounded-lg border border-black/8 bg-white ${className ?? ""}`}
     >
-      <SubHeading>{title}</SubHeading>
-      {note && <p className="mt-2 text-[14px] leading-relaxed text-muted italic">{note}</p>}
-      <CheckList items={items} className="mt-5" />
+      {photo && (
+        <div className="group/media overflow-hidden">
+          <Image
+            src={photo.src}
+            alt={photo.alt}
+            width={photo.largeur}
+            height={photo.hauteur}
+            sizes="(max-width: 1024px) 100vw, 33vw"
+            className="img-zoom aspect-[4/3] w-full object-cover"
+          />
+        </div>
+      )}
+      <div className="flex flex-1 flex-col p-6 sm:p-8">
+        <SubHeading>{title}</SubHeading>
+        {note && <p className="mt-2 text-[14px] leading-relaxed text-muted italic">{note}</p>}
+        <CheckList items={items} className="mt-5" />
+      </div>
     </div>
   );
 }

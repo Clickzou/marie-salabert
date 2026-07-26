@@ -830,7 +830,7 @@
       "titre": "Canine, feline and exotic pet osteopathy",
       "chapo": "Having grown significantly within the equine world, animal osteopathy now holds an increasingly important place in the care of companion animals. It can support dogs, cats and exotic pets throughout their lives.",
       "lieuFixeTitre": "A fixed consultation location",
-      "lieuFixeTexte1": "The areas covered are the same as those offered for equines: 31, 81, 82, 47, 32, 09, 11, 12 and 46. Consultations can be carried out at home to respect your animal's habits and environment.",
+      "lieuFixeTexte1": "Consultations can be carried out at home to respect your animal's habits and environment.",
       "lieuFixeTexte2": "For the past 6 years, I have held consultations every Friday afternoon at the Val Dadou veterinary clinic in Graulhet (81). To book an appointment at this location, please contact the clinic directly on",
       "chienTitre": "Common reasons for consultation in dogs",
       "chatTitre": "Common reasons for consultation in cats",
@@ -841,6 +841,9 @@
       "globaleTitre": "A holistic approach to your animal's wellbeing",
       "globaleIntro": "Your animal's health and wellbeing rely on a holistic view combining various skills and essential factors. Animal osteopathy fits into this approach alongside:",
       "globaleConclusion": "The aim is to offer consistent, personalised care, placing the animal's comfort, health and wellbeing at the centre of priorities.",
+      "photoNacAlt": "Marie Salabert holding a black rabbit in a harness, outdoors",
+      "photoLapinAlt": "Marie Salabert working on the back of a grey lop rabbit lying on a rug",
+      "photoReptileAlt": "A lizard resting on Marie Salabert's forearm",
       "photoChienAlt": "Marie Salabert with a border collie type dog",
       "photoChatAlt": "Marie Salabert holding a black cat during a consultation"
     },
