@@ -51,7 +51,10 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
       {/* Bandeau d'ouverture : reprend a l'identique la mise en page qu'avait la
           section sur la page consultations. */}
       <Section tone="plum" padding="none">
-        <div className="grid items-stretch lg:grid-cols-2">
+        {/* Hauteur minimale commune aux trois bannieres : sans elle chacune
+            suit son propre texte, et elles ne s'alignent pas d'une page a
+            l'autre quand on navigue par le menu lateral. */}
+        <div className="grid items-stretch lg:min-h-[520px] lg:grid-cols-2">
           <div className="relative min-h-[280px] lg:min-h-[440px]">
             <Image
               src="/images/2025/05/osteopathe-animaliere-toulouse.jpg"

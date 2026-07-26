@@ -55,13 +55,17 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
       {/* Bandeau d'ouverture : texte a gauche, deux photos a droite, comme sur
           la page consultations d'origine. */}
       <Section tone="green" padding="none">
-        <div className="grid items-stretch lg:grid-cols-2">
+        {/* Hauteur minimale commune aux trois bannieres : sans elle chacune
+            suit son propre texte, et elles ne s'alignent pas d'une page a
+            l'autre quand on navigue par le menu lateral. */}
+        <div className="grid items-stretch lg:min-h-[520px] lg:grid-cols-2">
           <div className="order-2 flex flex-col justify-center px-6 py-14 sm:px-10 lg:order-1 lg:px-14">
             <NumeroSection numero="02" label={c.compagnie.numero} />
             <h1 className="uppercase mt-3 font-display text-[30px] leading-[1.12] font-light text-white sm:text-[40px] tracking-[0.05em]">
               {c.sommaire[1].label}
             </h1>
-            <p className="mt-3 text-[15px] text-white/70">{c.sommaire[1].detail}</p>
+            {/* Pas de sous-titre : le sur-titre au-dessus dit deja
+                « chiens · chats · NAC ». */}
             <p className="mt-6 text-[15px] leading-relaxed text-white/90">{c.compagnie.chapo}</p>
             {/* Appel a l'action des la banniere : le visiteur qui arrive
                 par le menu n'a pas a parcourir la page pour le trouver. */}
