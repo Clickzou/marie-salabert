@@ -103,7 +103,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   return (
     <>
       <PageHero
-        image="/images/2025/05/rendez-vous-osteopathe-animalier.jpg"
+        image="/images/2026/07/contact-osteopathe-animalier.jpg"
         eyebrow={c.hero.surTitre}
         title={c.hero.titre}
         subtitle={c.hero.sousTitre}
