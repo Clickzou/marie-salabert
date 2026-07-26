@@ -35,11 +35,11 @@ export async function generateMetadata({
 
 /** Visuels des cinq approches, dans l'ordre du dictionnaire. */
 const photosApproches = [
-  "/images/approches/musculosquelettique.jpg",
-  "/images/approches/tissulaire.jpg",
-  "/images/approches/fasciale.jpg",
-  "/images/approches/viscerale.jpg",
-  "/images/approches/reflexe.jpg",
+  "/images/approches/approche-musculosquelettique-cheval.jpg",
+  "/images/approches/approche-tissulaire-chien.jpg",
+  "/images/approches/approche-fasciale-chien.jpg",
+  "/images/approches/approche-viscerale-poulain.jpg",
+  "/images/approches/approche-reflexe-chien.jpg",
 ];
 
 export default async function AProposPage({ params }: { params: Promise<{ locale: string }> }) {
