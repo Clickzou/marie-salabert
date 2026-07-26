@@ -446,22 +446,22 @@
       "sousTitre": "Per telefono, per SMS o tramite il modulo: la vostra richiesta viene esaminata con attenzione."
     },
     "meJoindre": {
-      "surTitre": "Contattarmi",
-      "titre": "Una chiamata è sufficiente per concordare un orario"
+      "surTitre": "Contattarmi"
     },
     "cartes": {
       "telephoneTexte": "In caso di indisponibilità, lasciatemi un SMS con il motivo, il vostro indirizzo e le vostre disponibilità.",
       "zoneTexte": "Consulti a domicilio, circa 1h45 di strada intorno a Toulouse.",
-      "secretariatTexte": "Anne-Sophie gestisce l'agenda e vi ricontatterà il prima possibile."
+      "secretariatTexte": "In caso di indisponibilità, ti invitiamo a lasciare un SMS con il motivo della chiamata, il tuo indirizzo e la tua disponibilità. Ti ricontatteremo al più presto."
     },
     "formulaire": {
       "titre": "Modulo di contatto",
-      "intro": "Per facilitare l'organizzazione degli spostamenti, precisate nel vostro messaggio:",
+      "intro": "Questo modulo permette di prenotare un appuntamento o di contattarmi per qualsiasi domanda. Per facilitare l'organizzazione degli spostamenti, indica nel messaggio:",
       "puces": [
         "L'indirizzo dove si trova il vostro animale",
         "Le vostre disponibilità",
         "Il motivo del consulto"
-      ]
+      ],
+      "conclusion": "Ogni richiesta viene esaminata con attenzione."
     },
     "secteur": {
       "phraseEspeces": "Interventi principali nei dipartimenti 31, 81, 82, 47, 46, 32, 33, 12, 09 e 11. Altri dipartimenti possono essere presi in considerazione in occasione delle tournée.",
@@ -493,21 +493,14 @@
     },
     "accroche": "Creato nel gennaio 2024, SymbiOsteO Le Podcast è un media che dà voce ai protagonisti del mondo dell'Osteopatia (animale, veterinaria e umana), della salute, agli esploratori del vivente, agli appassionati e curiosi.",
     "paragraphe": "Questo spazio di dialogo e scambio ha lo scopo di raccogliere punti di vista diversificati, favorevoli alla costruzione di un pensiero complesso. Crediamo nella virtù del dialogo come mezzo per creare legami. Attraverso questo podcast ci proponiamo di strutturare una comunità e come progetto di organizzare eventi.",
-    "formatsIntro": "Diversi formati di episodi:",
-    "formats": [
-      "🎤 Interviste",
-      "🏵️ Tavole rotonde",
-      "👫 Duo: Amélie & Marie",
-      "🧍‍♀️ Solo: Amélie o Marie"
-    ],
-    "animePar": "Condotti da Amélie Gardelle e Marie Salabert — contatto",
     "ecouterSpotify": "Ascolta su Spotify",
     "ecouterApple": "Ascolta su Apple Podcasts",
     "suivreSpotify": "Segui il podcast su Spotify",
-    "episodesTitre": "I nostri episodi da ascoltare",
+    "episodesTitre": "Episodi da ascoltare",
     "episodesCompteur": "{n} episodi disponibili",
     "ecouterEpisode": "Ascolta l'episodio",
-    "photoAlt": "Microfono da studio e cuffie, set del podcast SymbiOsteO"
+    "photoAlt": "Microfono da studio e cuffie, set del podcast SymbiOsteO",
+    "contactLibelle": "Contatto:"
   },
   "actualites": {
     "meta": {

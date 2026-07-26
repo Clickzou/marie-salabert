@@ -446,22 +446,22 @@
       "sousTitre": "Par téléphone, par SMS ou via le formulaire : votre demande est étudiée avec attention."
     },
     "meJoindre": {
-      "surTitre": "Me joindre",
-      "titre": "Un appel suffit pour convenir d'un créneau"
+      "surTitre": "Me joindre"
     },
     "cartes": {
       "telephoneTexte": "En cas d'indisponibilité, laissez-moi un SMS avec le motif, votre adresse et vos disponibilités.",
       "zoneTexte": "Consultations à domicile, environ 1h45 de route autour de Toulouse.",
-      "secretariatTexte": "Anne-Sophie gère le planning et vous recontacte dans les meilleurs délais."
+      "secretariatTexte": "En cas d'indisponibilité, nous vous invitons à laisser un SMS avec la raison de votre appel, votre adresse ainsi que vos disponibilités. Nous vous recontacterons dans les meilleurs délais."
     },
     "formulaire": {
       "titre": "Formulaire de contact",
-      "intro": "Pour faciliter l'organisation des déplacements, précisez dans votre message :",
+      "intro": "Ce formulaire vous permet de prendre rendez-vous ou de me contacter pour toute question. Pour faciliter l'organisation des déplacements, précisez dans votre message :",
       "puces": [
         "L'adresse où se trouve votre animal",
         "Vos disponibilités",
         "Le motif de la consultation"
-      ]
+      ],
+      "conclusion": "Chaque demande est étudiée avec attention."
     },
     "secteur": {
       "phraseEspeces": "Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 33, 12, 09 et 11. D'autres départements peuvent être envisagés lors de l'organisation de tournées.",
@@ -493,21 +493,14 @@
     },
     "accroche": "Créé en janvier 2024, SymbiOsteO Le Podcast est un média qui donne la parole aux acteurs du monde de l'Ostéopathie (animale, vétérinaire et humaine), de la santé, aux explorateurs du vivant, aux passionnés et curieux.",
     "paragraphe": "Cet espace de dialogue et d'échanges a pour vocation de recueillir des points de vue diversifiés propices à la construction d'une pensée complexe. Nous croyons à la vertu du dialogue comme moyen de créer du lien. Nous avons pour objectif au travers de ce podcast de structurer une communauté et pour projet d'organiser des évènements.",
-    "formatsIntro": "Différents formats d'épisodes :",
-    "formats": [
-      "🎤 Interviews",
-      "🏵️ Tables rondes",
-      "👫 Duo : Amélie & Marie",
-      "🧍‍♀️ Solo : Amélie ou Marie"
-    ],
-    "animePar": "Animés par Amélie Gardelle et Marie Salabert — contact",
     "ecouterSpotify": "Écouter sur Spotify",
     "ecouterApple": "Écouter sur Apple Podcasts",
     "suivreSpotify": "Suivez le podcast sur Spotify",
-    "episodesTitre": "Nos épisodes à écouter",
+    "episodesTitre": "Épisodes à écouter",
     "episodesCompteur": "{n} épisodes disponibles",
     "ecouterEpisode": "Écouter l'épisode",
-    "photoAlt": "Micro de studio et casque, plateau du podcast SymbiOsteO"
+    "photoAlt": "Micro de studio et casque, plateau du podcast SymbiOsteO",
+    "contactLibelle": "Contact :"
   },
   "actualites": {
     "meta": {

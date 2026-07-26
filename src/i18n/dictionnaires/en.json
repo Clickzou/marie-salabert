@@ -446,22 +446,22 @@
       "sousTitre": "By phone, by text message or via the form: your request is considered with care."
     },
     "meJoindre": {
-      "surTitre": "Get in touch",
-      "titre": "One call is all it takes to arrange a time slot"
+      "surTitre": "Get in touch"
     },
     "cartes": {
       "telephoneTexte": "If I'm unavailable, please leave me a text message with the reason, your address and your availability.",
       "zoneTexte": "Home consultations, approximately 1h45 drive around Toulouse.",
-      "secretariatTexte": "Anne-Sophie manages the schedule and will get back to you as soon as possible."
+      "secretariatTexte": "If no one is available, please leave a text message with the reason for your call, your address and your availability. We will get back to you as soon as possible."
     },
     "formulaire": {
       "titre": "Contact form",
-      "intro": "To help organise travel arrangements, please specify in your message:",
+      "intro": "This form lets you book an appointment or reach me with any question. To help plan visits, please include in your message:",
       "puces": [
         "The address where your animal is located",
         "Your availability",
         "The reason for the consultation"
-      ]
+      ],
+      "conclusion": "Every request is considered with care."
     },
     "secteur": {
       "phraseEspeces": "Main coverage in departments 31, 81, 82, 47, 46, 32, 33, 12, 09 and 11. Other departments may be considered when tours are organised.",
@@ -493,21 +493,14 @@
     },
     "accroche": "Launched in January 2024, SymbiOsteO Le Podcast is a media platform that gives a voice to those involved in the world of Osteopathy (animal, veterinary and human), in health, to explorers of the living world, and to enthusiasts and the curious alike.",
     "paragraphe": "This space for dialogue and exchange aims to gather diverse points of view conducive to building complex thinking. We believe in the value of dialogue as a means of creating connection. Through this podcast, our goal is to build a community, and our project is to organise events.",
-    "formatsIntro": "Different episode formats:",
-    "formats": [
-      "🎤 Interviews",
-      "🏵️ Round tables",
-      "👫 Duo: Amélie & Marie",
-      "🧍‍♀️ Solo: Amélie or Marie"
-    ],
-    "animePar": "Hosted by Amélie Gardelle and Marie Salabert — contact",
     "ecouterSpotify": "Listen on Spotify",
     "ecouterApple": "Listen on Apple Podcasts",
     "suivreSpotify": "Follow the podcast on Spotify",
-    "episodesTitre": "Our episodes to listen to",
+    "episodesTitre": "Episodes to listen to",
     "episodesCompteur": "{n} episodes available",
     "ecouterEpisode": "Listen to the episode",
-    "photoAlt": "Studio microphone and headphones, SymbiOsteO podcast set"
+    "photoAlt": "Studio microphone and headphones, SymbiOsteO podcast set",
+    "contactLibelle": "Contact:"
   },
   "actualites": {
     "meta": {

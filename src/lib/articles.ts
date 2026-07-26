@@ -44,6 +44,11 @@ export type Article = {
   excerpt: string;
   /** Slugs d'articles lies, pour la rubrique « À lire aussi ». */
   related: string[];
+  /**
+   * Boutons places en fin d'article (plateformes d'ecoute, inscription…).
+   * Dans le frontmatter : `boutons: "Libelle|https://… ; Autre|https://…"`.
+   */
+  boutons: { label: string; url: string }[];
   /** Corps de l'article en Markdown */
   body: string;
 };
@@ -101,6 +106,11 @@ function readArticle(fileName: string, locale = "fr"): Article {
       .split(",")
       .map((s) => s.trim())
       .filter(Boolean),
+    boutons: (data.boutons ?? "")
+      .split(";")
+      .map((paire) => paire.split("|").map((s) => s.trim()))
+      .filter((p) => p.length === 2 && p[0] && p[1])
+      .map(([label, url]) => ({ label, url })),
     body,
   };
 }

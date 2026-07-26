@@ -57,9 +57,10 @@ export default async function RendezVousPage({
         <Container width="full">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-20">
             <Reveal className="lg:sticky lg:top-32 lg:self-start">
-              <Eyebrow>{c.meJoindre.surTitre}</Eyebrow>
-              <h2 className="font-light uppercase mt-5 text-[28px] leading-snug tracking-[0.05em] text-ink sm:text-[34px]">
-                {c.meJoindre.titre}
+              {/* « Me joindre » sert de titre : la phrase d'accroche qui le
+                  suivait a ete retiree a la demande de la praticienne. */}
+              <h2 className="font-light uppercase text-[28px] leading-snug tracking-[0.05em] text-ink sm:text-[34px]">
+                {c.meJoindre.surTitre}
               </h2>
 
               <ul className="mt-10 space-y-4">
@@ -169,6 +170,9 @@ export default async function RendezVousPage({
                     </li>
                   ))}
                 </ul>
+                <p className="mt-5 text-[16.5px] leading-[1.7] text-body">
+                  {c.formulaire.conclusion}
+                </p>
                 <div className="mt-10">
                   <ContactForm d={d} />
                 </div>

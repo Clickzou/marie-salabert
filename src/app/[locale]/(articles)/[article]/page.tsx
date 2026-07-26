@@ -6,7 +6,7 @@ import { getArticle, getArticles } from "@/lib/articles";
 import { cheminLocalise, estLocale, locales } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import { routes, site } from "@/lib/site";
-import { Container, Eyebrow, Section } from "@/components/ui";
+import { Button, Container, Eyebrow, Section } from "@/components/ui";
 import ArticleBody from "@/components/ArticleBody";
 import { ImagePlaceholder } from "@/components/ArticleCard";
 import ArticlesCarousel from "@/components/ArticlesCarousel";
@@ -183,6 +183,18 @@ export default async function ArticlePage({
         <Container width="default">
           <article className="mx-auto max-w-[980px]">
             <ArticleBody body={article.body} />
+
+            {/* Liens declares dans le frontmatter (plateformes d'ecoute…) :
+                mis en boutons plutot qu'en liens perdus dans le texte. */}
+            {article.boutons.length > 0 && (
+              <div className="mt-10 flex flex-wrap gap-4">
+                {article.boutons.map((b, i) => (
+                  <Button key={b.url} href={b.url} variant={i === 0 ? "green" : "outline"}>
+                    {b.label}
+                  </Button>
+                ))}
+              </div>
+            )}
 
             <div className="mt-14 border-t border-line pt-10">
               <h2 className="text-[19px] text-ink">{d.actualites.article.partage}</h2>

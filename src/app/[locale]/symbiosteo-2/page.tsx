@@ -117,19 +117,8 @@ export default async function SymbiosteoPage({
                 {sy.accroche}
               </p>
               <p className="mt-6">{sy.paragraphe}</p>
-              <p className="mt-6">{sy.formatsIntro}</p>
-              <ul className="mt-5 flex flex-wrap gap-2.5">
-                {sy.formats.map((f) => (
-                  <li
-                    key={f}
-                    className="inline-flex items-center rounded-full bg-surface px-4 py-2 text-[14px] text-body ring-1 ring-line"
-                  >
-                    {f}
-                  </li>
-                ))}
-              </ul>
               <p className="mt-6">
-                {sy.animePar}{" "}
+                {sy.contactLibelle}{" "}
                 <a
                   href="mailto:symbiosteo3@gmail.com"
                   className="underline-grow font-medium text-plum"
