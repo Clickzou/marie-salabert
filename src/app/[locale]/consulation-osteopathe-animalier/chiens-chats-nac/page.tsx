@@ -116,8 +116,8 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            <MotifCard title={c.compagnie.chienTitre} items={L.chienMotifs} />
-            <MotifCard title={c.compagnie.chatTitre} items={L.chatMotifs} />
+            <MotifCard title={c.compagnie.chienTitre} items={L.chienMotifs} picto="chien" />
+            <MotifCard title={c.compagnie.chatTitre} items={L.chatMotifs} picto="chat" />
           </div>
         </Container>
       </Section>
@@ -175,6 +175,12 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
               intro={c.compagnie.globaleIntro}
               items={L.compagnieApprocheGlobale}
               conclusion={c.compagnie.globaleConclusion}
+              photo={{
+                src: "/images/2026/07/osteopathie-compagnie-approche-globale.jpeg",
+                alt: c.compagnie.photoGlobaleAlt,
+                largeur: 1536,
+                hauteur: 2048,
+              }}
             />
           </div>
 

@@ -37,17 +37,46 @@ export function SubHeading({ children }: { children: ReactNode }) {
   );
 }
 
+/**
+ * Pictogrammes d'espece poses en tete de carte. Traces au filet, comme les
+ * autres icones du site ; purement decoratifs, le titre dit deja l'espece.
+ */
+const pictos = {
+  chien: (
+    <>
+      <path d="M8.2 5.6C6.9 4.7 5.2 4.6 4.2 5.8c-1.2 1.4-.9 3.7.2 5.4.7 1 1.6 1.7 2.5 2" />
+      <path d="M15.8 5.6c1.3-.9 3-1 4 .2 1.2 1.4.9 3.7-.2 5.4-.7 1-1.6 1.7-2.5 2" />
+      <path d="M12 4.6c-2.6 0-4.7 2-4.7 4.5v3.3c0 2.6 2.1 4.7 4.7 4.7s4.7-2.1 4.7-4.7V9.1c0-2.5-2.1-4.5-4.7-4.5Z" />
+      <path d="M10.2 9.6h.01M13.8 9.6h.01" strokeWidth="2.2" strokeLinecap="round" />
+      <path d="M12 12.1a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z" />
+      <path d="M12 14.5v.8M12 15.3c-.6.6-1.5.5-1.9-.2M12 15.3c.6.6 1.5.5 1.9-.2" />
+    </>
+  ),
+  chat: (
+    <>
+      <path d="M5.9 8.9 5 3.9l4.4 2.6M18.1 8.9l.9-5-4.4 2.6" />
+      <path d="M12 6.2c3.6 0 6.5 2.7 6.5 6s-2.9 6-6.5 6-6.5-2.7-6.5-6 2.9-6 6.5-6Z" />
+      <path d="M9.9 11.2h.01M14.1 11.2h.01" strokeWidth="2.2" strokeLinecap="round" />
+      <path d="M12 13.4v1M12 14.4c-.7.6-1.6.5-2.1-.2M12 14.4c.7.6 1.6.5 2.1-.2" />
+      <path d="M5.5 13.4 2.4 12.9M5.5 15.1l-2.9.9M18.5 13.4l3.1-.5M18.5 15.1l2.9.9" />
+    </>
+  ),
+} as const;
+
 /** Carte sobre a bordure legere regroupant une liste de motifs. */
 export function MotifCard({
   title,
   items,
   note,
   photo,
+  picto,
   className,
 }: {
   title: string;
   items: readonly string[];
   note?: string;
+  /** Pictogramme d'espece pose a gauche du titre. */
+  picto?: keyof typeof pictos;
   /**
    * Visuel en tete de carte, plein cadre au-dessus du titre. `position` regle
    * la zone conservee au recadrage, pour les cliches dont le sujet n'est pas
@@ -82,7 +111,28 @@ export function MotifCard({
         </div>
       )}
       <div className="flex flex-1 flex-col p-6 sm:p-8">
-        <SubHeading>{title}</SubHeading>
+        {picto ? (
+          <div className="flex items-center gap-4">
+            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-plum/8 text-plum ring-1 ring-plum/15">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                {pictos[picto]}
+              </svg>
+            </span>
+            <SubHeading>{title}</SubHeading>
+          </div>
+        ) : (
+          <SubHeading>{title}</SubHeading>
+        )}
         {note && <p className="mt-2 text-[14px] leading-relaxed text-muted italic">{note}</p>}
         <CheckList items={items} className="mt-5" />
       </div>

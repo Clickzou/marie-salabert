@@ -40,6 +40,12 @@ export type Article = {
    * sont des logos ou des affiches : les recadrer en coupe les bords.
    */
   imageFit: "cover" | "contain";
+  /**
+   * Couleur du pourtour du visuel, relevee sur ses bords. Elle remplit le
+   * cadre autour d'une couverture affichee en entier : le visuel semble
+   * alors occuper toute la vignette au lieu de flotter sur un gris.
+   */
+  imageBg: string;
   /** Extrait court (25 mots), tel qu'affiche sur les cartes d'Elementor */
   excerpt: string;
   /** Slugs d'articles lies, pour la rubrique « À lire aussi ». */
@@ -101,6 +107,7 @@ function readArticle(fileName: string, locale = "fr"): Article {
     image: data.image ?? "",
     imageAlt: data.imageAlt ?? "",
     imageFit: data.imageFit === "contain" ? "contain" : "cover",
+    imageBg: /^#[0-9a-f]{3,8}$/i.test(data.imageBg ?? "") ? data.imageBg : "",
     excerpt: data.excerpt ?? "",
     related: (data.related ?? "")
       .split(",")
