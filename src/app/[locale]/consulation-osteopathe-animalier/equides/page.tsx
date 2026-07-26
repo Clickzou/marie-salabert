@@ -12,7 +12,6 @@ import {
   NumeroSection,
   RetourConsultations,
 } from "@/components/consultations-ui";
-import { NavEspeces } from "@/components/NavEspeces";
 
 export async function generateMetadata({
   params,
@@ -46,7 +45,6 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
 
   return (
     <>
-      <NavEspeces locale={locale} libelles={c.sommaire} courant="equides" />
 
       {/* Bandeau d'ouverture : reprend a l'identique la mise en page qu'avait la
           section sur la page consultations. */}

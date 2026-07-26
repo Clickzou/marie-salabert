@@ -706,17 +706,17 @@
     ],
     "sommaire": [
       {
-        "menu": "Equines",
+        "menu": "Equine osteopathy",
         "label": "Equine osteopathy",
         "detail": "For all types of horses (racing, equestrian sport, breeding, show, leisure, draught), donkeys and mules"
       },
       {
-        "menu": "Dogs · Cats · Exotic pets",
+        "menu": "Osteopathy for companion animals",
         "label": "Osteopathy for companion animals",
         "detail": "Dogs, cats, exotic pets"
       },
       {
-        "menu": "Farm animals",
+        "menu": "Rural osteopathy",
         "label": "Osteopathy for farm and production animals",
         "detail": "Cattle, sheep, goats and pigs"
       }

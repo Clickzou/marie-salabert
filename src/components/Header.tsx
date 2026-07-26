@@ -99,7 +99,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
         </Link>
 
         <nav aria-label="Navigation principale" className="hidden lg:block">
-          <ul className="flex items-center gap-3 xl:gap-5">
+          <ul className="flex items-center gap-5 xl:gap-8">
             {mainNav.map((item) => {
               const actif =
                 item.href === "/" ? cheminNu === "/" : cheminNu.startsWith(item.href);

@@ -706,17 +706,17 @@
     ],
     "sommaire": [
       {
-        "menu": "Équidés",
+        "menu": "Ostéopathie équine",
         "label": "Ostéopathie équine",
         "detail": "Pour tous types de chevaux (course, sport équestre, élevage, spectacle, loisir, trait), ânes et mules"
       },
       {
-        "menu": "Chiens · Chats · NAC",
+        "menu": "Ostéopathie pour animaux de compagnie",
         "label": "Ostéopathie pour animaux de compagnie",
         "detail": "Chiens, chats, NAC"
       },
       {
-        "menu": "Animaux de rente",
+        "menu": "Ostéopathie rurale",
         "label": "Ostéopathie pour animaux de rente, ferme et production animale",
         "detail": "Bovins, ovins, caprins et porcins"
       }

@@ -13,7 +13,6 @@ import {
   RetourConsultations,
   SubHeading,
 } from "@/components/consultations-ui";
-import { NavEspeces } from "@/components/NavEspeces";
 
 const CLINIQUE_TEL = "05.63.34.51.52";
 const CLINIQUE_HREF = "tel:+33563345152";
@@ -50,7 +49,6 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
 
   return (
     <>
-      <NavEspeces locale={locale} libelles={c.sommaire} courant="compagnie" />
 
       {/* Bandeau d'ouverture : photos a gauche, texte a droite, comme les deux
           autres pages d'especes. Le sens de lecture doit etre le meme d'une page

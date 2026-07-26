@@ -706,17 +706,17 @@
     ],
     "sommaire": [
       {
-        "menu": "Equidi",
+        "menu": "Osteopatia equina",
         "label": "Osteopatia equina",
         "detail": "Per tutti i tipi di cavalli (corsa, sport equestri, allevamento, spettacolo, tempo libero, tiro), asini e muli"
       },
       {
-        "menu": "Cani · Gatti · NAC",
+        "menu": "Osteopatia per animali da compagnia",
         "label": "Osteopatia per animali da compagnia",
         "detail": "Cani, gatti, NAC"
       },
       {
-        "menu": "Animali da reddito",
+        "menu": "Osteopatia rurale",
         "label": "Osteopatia per animali da reddito, fattoria e produzione animale",
         "detail": "Bovini, ovini, caprini e suini"
       }
