@@ -11,7 +11,6 @@ import { CheckList, CtaBand, PageHero, Testimonials } from "@/components/section
 import { avis, googleAvis } from "@/content/avis";
 import Reveal from "@/components/Reveal";
 import SecteurMap from "@/components/SecteurMap";
-import SommaireFlottant from "@/components/SommaireFlottant";
 
 export async function generateMetadata({
   params,
@@ -121,21 +120,15 @@ export default async function ConsultationsPage({
         subtitle={c.hero.sousTitre}
       />
 
-      {/* Sommaire flottant a droite : il mene aux trois pages d'especes, il est
-          donc utile d'un bout a l'autre de la page et n'attend plus une section
-          declencheuse. */}
-      <SommaireFlottant liens={liensEspeces} actifHref="" />
+      {/* Pas de sommaire flottant ici : la page se termine par les trois cartes
+          d'aiguillage, qui remplissent le meme role en plus lisible. Le menu
+          lateral reste sur les pages d'especes, ou il sert a passer de l'une a
+          l'autre sans revenir en arriere. */}
 
-      {/* ================= LES DIFFÉRENTS TYPES DE CONSULTATIONS =================
-          Titre de section qui coiffe l'ensemble : partie A et ses trois points,
-          puis les parties B, C et D. */}
+      {/* Le titre qui coiffait l'ensemble a ete retire : la banniere le porte
+          desormais, l'afficher deux fois de suite n'apprenait rien. Les parties
+          A a D s'enchainent donc directement sous la banniere. */}
       <Section id="general" className={ANCHOR} padding="no-bottom">
-        <Container width="full">
-          <SectionTitle className="max-w-4xl">{c.typesTitre}</SectionTitle>
-        </Container>
-      </Section>
-
-      <Section padding="no-bottom">
         <Container>
           <div className="max-w-3xl">
             <PartieTitre>{c.general.surTitre}</PartieTitre>
