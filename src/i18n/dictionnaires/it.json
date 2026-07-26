@@ -489,7 +489,7 @@
   },
   "symbiosteo": {
     "meta": {
-      "titre": "SymbiOsteO Le Podcast - Marie Salabert Ostéopathe",
+      "titre": "SymbiOsteO Le Podcast - Marie Salabert, osteopata animale",
       "description": "SymbiOsteO Le Podcast, creato nel gennaio 2024, dà voce ai protagonisti del mondo dell'osteopatia animale, veterinaria e umana, della salute e agli esploratori del vivente."
     },
     "accroche": "Creato nel gennaio 2024, SymbiOsteO Le Podcast è un media che dà voce ai protagonisti del mondo dell'Osteopatia (animale, veterinaria e umana), della salute, agli esploratori del vivente, agli appassionati e curiosi.",
@@ -930,50 +930,65 @@
       "consultation": [
         {
           "question": "Come si svolge un consulto?",
-          "risposta": "Un consulto comprende uno scambio sulla storia clinica del vostro animale, un esame locomotorio e posturale, un esame palpatorio, una diagnosi osteopatica e infine un trattamento manuale adeguato. Vengono poi forniti consigli personalizzati per ottimizzare il recupero del vostro animale."
+          "risposta": "Un consulto comprende uno scambio sulla storia clinica del vostro animale, un esame locomotorio e posturale, un esame palpatorio, una diagnosi osteopatica e infine un trattamento manuale adeguato. Vengono poi forniti consigli personalizzati per ottimizzare il recupero del vostro animale.",
+          "reponse": "Un consulto comprende uno scambio sui precedenti del tuo animale, un esame locomotorio e posturale, un esame palpatorio, una diagnosi osteopatica e infine un trattamento manuale adeguato. Ti vengono poi forniti consigli personalizzati per ottimizzare il recupero del tuo animale."
         },
         {
           "question": "Le manipolazioni sono dolorose?",
-          "risposta": "Le tecniche utilizzate sono adattate a ogni animale e al suo stato di salute. Alcuni animali possono manifestare una sensibilità nelle zone già dolorose, ma le manipolazioni vengono eseguite nel rispetto del loro comfort."
+          "risposta": "Le tecniche utilizzate sono adattate a ogni animale e al suo stato di salute. Alcuni animali possono manifestare una sensibilità nelle zone già dolorose, ma le manipolazioni vengono eseguite nel rispetto del loro comfort.",
+          "reponse": "Le tecniche utilizzate sono adattate a ogni animale e al suo stato di salute. Alcuni animali possono manifestare una sensibilità nelle zone già dolorose, ma le manipolazioni vengono eseguite nel rispetto del loro benessere."
         },
         {
           "question": "Quanto dura un consulto?",
-          "risposta": "La durata media è di 35 minuti a 1 ora, in funzione della specie, del motivo del consulto e delle esigenze dell'animale."
+          "risposta": "La durata media è di 35 minuti a 1 ora, in funzione della specie, del motivo del consulto e delle esigenze dell'animale.",
+          "reponse": "La durata media va da 35 minuti a 1 ora, a seconda della specie, del motivo del consulto e delle esigenze dell'animale."
         },
         {
           "question": "Quante sedute sono necessarie?",
-          "risposta": "Ogni animale è unico. A volte una sola seduta può essere sufficiente, mentre alcune situazioni richiedono un monitoraggio regolare. Il numero di consulti viene stabilito in base all'evoluzione dell'animale e alle sue esigenze."
+          "risposta": "Ogni animale è unico. A volte una sola seduta può essere sufficiente, mentre alcune situazioni richiedono un monitoraggio regolare. Il numero di consulti viene stabilito in base all'evoluzione dell'animale e alle sue esigenze.",
+          "reponse": "Ogni animale è unico. A volte una sola seduta può bastare, mentre alcune situazioni richiedono un monitoraggio regolare. Il numero di consulti viene stabilito in base all'evoluzione dell'animale e alle sue esigenze."
         },
         {
           "question": "Il mio animale deve riposare dopo la seduta?",
-          "risposta": "Sì. Un periodo di riposo è generalmente consigliato nelle 24-72 ore successive al consulto, per permettere all'organismo di adattarsi ai cambiamenti indotti dal trattamento. Al termine della seduta vi verranno fornite raccomandazioni adeguate."
+          "risposta": "Sì. Un periodo di riposo è generalmente consigliato nelle 24-72 ore successive al consulto, per permettere all'organismo di adattarsi ai cambiamenti indotti dal trattamento. Al termine della seduta vi verranno fornite raccomandazioni adeguate.",
+          "reponse": "Sì. Un periodo di riposo è generalmente consigliato nelle 24-72 ore successive al consulto, per permettere all'organismo di adattarsi ai cambiamenti indotti dal trattamento. Alla fine della seduta ti verranno date raccomandazioni adeguate."
         },
         {
           "question": "Si può consultare a scopo preventivo?",
-          "risposta": "Sì. L'osteopatia può inserirsi in un percorso preventivo lungo tutta la vita del vostro animale, senza un motivo di consulto specifico."
+          "risposta": "Sì. L'osteopatia può inserirsi in un percorso preventivo lungo tutta la vita del vostro animale, senza un motivo di consulto specifico.",
+          "reponse": "Sì. L'osteopatia può inserirsi in un percorso preventivo lungo tutta la vita del tuo animale, senza un motivo di consulto specifico."
         },
         {
           "question": "Bisogna prevedere qualcosa per il consulto?",
-          "risposta": "È consigliabile portare i referti veterinari recenti se il vostro animale è seguito per una patologia. Per i cavalli e gli animali da allevamento è necessario uno spazio sicuro che consenta la loro osservazione e manipolazione. Per i gatti, si privilegia un asciugamano o una copertina su un tavolo, per il loro comfort e la praticità delle manipolazioni."
+          "risposta": "È consigliabile portare i referti veterinari recenti se il vostro animale è seguito per una patologia. Per i cavalli e gli animali da allevamento è necessario uno spazio sicuro che consenta la loro osservazione e manipolazione. Per i gatti, si privilegia un asciugamano o una copertina su un tavolo, per il loro comfort e la praticità delle manipolazioni.",
+          "reponse": "Si consiglia di preparare i referti veterinari recenti se il tuo animale è seguito per una patologia. Per i cavalli e gli animali d'allevamento è necessario uno spazio sicuro che ne permetta l'osservazione e la manipolazione. Per i gatti si privilegia un asciugamano o un plaid su un tavolo, per il loro comfort e la praticità delle manipolazioni."
         },
         {
           "question": "I consulti sono rimborsati?",
-          "risposta": "Alcune assicurazioni sanitarie per animali coprono in tutto o in parte i consulti di osteopatia. Le modalità variano a seconda dei contratti; si consiglia di rivolgersi alla propria compagnia assicurativa. Se necessario, verrà compilata una scheda di cura."
+          "risposta": "Alcune assicurazioni sanitarie per animali coprono in tutto o in parte i consulti di osteopatia. Le modalità variano a seconda dei contratti; si consiglia di rivolgersi alla propria compagnia assicurativa. Se necessario, verrà compilata una scheda di cura.",
+          "reponse": "Alcune assicurazioni sanitarie per animali coprono in tutto o in parte i consulti di osteopatia. Le modalità variano secondo i contratti: è consigliabile rivolgersi al proprio assicuratore. In caso di necessità, verrà compilato un modulo di cura."
         },
         {
           "question": "Quando non bisogna consultare un osteopata?",
-          "risposta": "In caso di emergenza (frattura, ferita importante, difficoltà respiratoria, febbre, sospetta infezione, sofferenza neurologica, ecc.), è indispensabile contattare prioritariamente un veterinario. L'osteopatia potrà eventualmente intervenire in un secondo momento, come complemento alla presa in carico medica."
+          "risposta": "In caso di emergenza (frattura, ferita importante, difficoltà respiratoria, febbre, sospetta infezione, sofferenza neurologica, ecc.), è indispensabile contattare prioritariamente un veterinario. L'osteopatia potrà eventualmente intervenire in un secondo momento, come complemento alla presa in carico medica.",
+          "reponse": "In caso di urgenza (frattura, ferita importante, difficoltà respiratoria, febbre, sospetta infezione, sofferenza neurologica, ecc.) è indispensabile contattare in via prioritaria un veterinario. L'osteopatia potrà eventualmente intervenire in un secondo momento, a complemento della presa in carico medica."
         },
         {
           "question": "L'osteopata animale può comunicare direttamente con il mio veterinario?",
-          "risposta": "Sì. La comunicazione tra i diversi professionisti che intervengono presso il vostro animale consente una presa in carico globale e coerente. Con il vostro consenso, l'osteopata animale può scambiare informazioni con il vostro veterinario curante al fine di condividere le informazioni utili al monitoraggio del vostro animale, nel rispetto del ruolo e delle competenze di ciascuno. L'osteopatia si inserisce in un percorso complementare al monitoraggio veterinario, con l'obiettivo comune di favorire la salute, il comfort, la mobilità e il benessere del vostro animale."
+          "risposta": "Sì. La comunicazione tra i diversi professionisti che intervengono presso il vostro animale consente una presa in carico globale e coerente. Con il vostro consenso, l'osteopata animale può scambiare informazioni con il vostro veterinario curante al fine di condividere le informazioni utili al monitoraggio del vostro animale, nel rispetto del ruolo e delle competenze di ciascuno. L'osteopatia si inserisce in un percorso complementare al monitoraggio veterinario, con l'obiettivo comune di favorire la salute, il comfort, la mobilità e il benessere del vostro animale.",
+          "reponse": "Sì. La comunicazione tra i diversi professionisti che intervengono sul tuo animale permette una presa in carico globale e coerente. Con il tuo consenso, l'osteopata animale può confrontarsi con il tuo veterinario curante per condividere le informazioni utili al monitoraggio del tuo animale, nel rispetto del ruolo e delle competenze di ciascuno. L'osteopatia si inserisce in un percorso complementare al monitoraggio veterinario, con l'obiettivo comune di favorire la salute, il comfort, la mobilità e il benessere del tuo animale."
         },
         {
           "question": "Posso restare presente durante il consulto di osteopatia?",
-          "risposta": "Sì. La vostra presenza è auspicabile durante il consulto. La vostra conoscenza dell'animale, delle sue abitudini e del suo comportamento costituisce una fonte di informazioni preziosa durante l'anamnesi e lo svolgimento della seduta. La vostra presenza consente inoltre di partecipare agli scambi, di comprendere le osservazioni effettuate e di ricevere i consigli necessari per accompagnare al meglio il vostro animale dopo il consulto."
+          "risposta": "Sì. La vostra presenza è auspicabile durante il consulto. La vostra conoscenza dell'animale, delle sue abitudini e del suo comportamento costituisce una fonte di informazioni preziosa durante l'anamnesi e lo svolgimento della seduta. La vostra presenza consente inoltre di partecipare agli scambi, di comprendere le osservazioni effettuate e di ricevere i consigli necessari per accompagnare al meglio il vostro animale dopo il consulto.",
+          "reponse": "Sì. La tua presenza durante il consulto è auspicata. La tua conoscenza dell'animale, delle sue abitudini e del suo comportamento è una fonte di informazioni preziosa durante l'anamnesi e lo svolgimento della seduta. La tua presenza permette inoltre di partecipare agli scambi, di comprendere le osservazioni effettuate e di ricevere i consigli necessari per accompagnare al meglio il tuo animale dopo il consulto."
         }
       ],
       "situations": [
+        {
+          "question": "Il mio cane è diffidente o reattivo: come si svolge una seduta in questi casi?",
+          "reponse": "I cani reattivi o che faticano a farsi manipolare sono animali che incontro regolarmente in consulto. Sono formata per adattare la presa in carico a ogni profilo e per rispettare i tempi di ciascun animale. Per preparare al meglio la seduta ci sentiamo per telefono prima della mia visita. Questo mi permette di raccogliere le informazioni importanti sul tuo cane e sulle sue reazioni abituali, e di predisporre le condizioni migliori perché l'incontro si svolga serenamente. Se desideri mettere una museruola al tuo cane per rendere la seduta più sicura, potrà essere usata su tua richiesta. Se il tuo animale mostra segni marcati di diffidenza, paura o aggressività, adatteremo anche i nostri atteggiamenti e le nostre posture per favorire un clima di fiducia e di sicurezza per tutti. Il mio obiettivo è sempre rispettare i limiti del tuo cane. Se davvero non è in grado di essere avvicinato o toccato il giorno della seduta, questa non verrà mantenuta, per non rafforzare le sue reazioni di difesa o la sua diffidenza verso le manipolazioni. In tal caso ci limiteremo a concludere l'incontro con un'esperienza positiva e rassicurante prima della mia partenza."
+        },
         {
           "question": "Il mio cane zoppica, l'osteopatia può aiutarlo?",
           "reponse": "Una zoppia può avere numerose origini e talvolta richiede un esame veterinario per identificarne la causa. Quando la causa medica è già stata gestita o quando la situazione rientra in un disturbo funzionale, l'osteopatia può contribuire a migliorare il comfort locomotore dell'animale. Permette di valutare i compensi messi in atto dal corpo, le restrizioni di mobilità e gli squilibri funzionali che possono persistere dopo un episodio doloroso. L'obiettivo è accompagnare il ritorno a una locomozione più armoniosa e limitare l'instaurarsi di compensi, in complemento al monitoraggio veterinario quando necessario."
