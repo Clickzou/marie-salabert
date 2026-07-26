@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import { routes } from "@/lib/site";
-import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
+import { Button, Container, Section, SectionTitle } from "@/components/ui";
 import { CheckList, CtaBand, PageHero, Testimonials } from "@/components/sections";
 import { avis, googleAvis } from "@/content/avis";
 import Reveal from "@/components/Reveal";
@@ -66,9 +66,22 @@ const ANCHOR = "scroll-mt-[150px]";
  * lecteur qu'ils sont de meme rang. Une difference de taille ou de couleur
  * suffirait a en faire passer un pour le titre des autres.
  */
-function PointTitre({ numero, children }: { numero: string; children: ReactNode }) {
+function PointTitre({
+  numero,
+  centre,
+  children,
+}: {
+  numero: string;
+  /** Centre le numero et l'intitule, quand le point chapeaute un bloc centre. */
+  centre?: boolean;
+  children: ReactNode;
+}) {
   return (
-    <div className="flex items-baseline gap-4 border-t-2 border-plum/20 pt-5">
+    <div
+      className={`flex items-baseline gap-4 border-t-2 border-plum/20 pt-5 ${
+        centre ? "justify-center text-center" : ""
+      }`}
+    >
       <span
         aria-hidden="true"
         className="shrink-0 font-display text-[15px] font-semibold text-plum/50"
@@ -83,40 +96,21 @@ function PointTitre({ numero, children }: { numero: string; children: ReactNode 
 }
 
 /**
- * Les trois titres principaux de la page.
+ * Les quatre titres principaux de la page.
  *
- * Ils portent un numero en pastille pleine et un filet epais qui traverse la
- * colonne : deux marques que rien d'autre ne reprend. C'est ce qui les detache
- * des intitules de points, qui n'ont ni pastille pleine ni filet epais, et du
- * titre de la partie collaborative, annonce par un sur-titre. Sans ces marques,
- * seule la taille les separait — un ecart trop tenu pour se voir au defilement.
+ * Bordeaux, gras, 44 px en capitales : aucun autre titre de la page ne reunit
+ * ces trois attributs. C'est ce qui les detache des intitules de points, plus
+ * petits et en noir. Leur largeur est bornee et le retour a la ligne equilibre
+ * (`text-balance`) pour qu'ils tiennent sur deux lignes sur grand ecran.
  */
-function TitrePrincipal({ numero, children }: { numero: string; children: ReactNode }) {
+function TitrePrincipal({ children }: { children: ReactNode }) {
   return (
-    <div className="border-t-4 border-plum pt-7">
-      <div className="flex items-start gap-5">
-        <span
-          aria-hidden="true"
-          className="mt-1 grid h-11 w-11 shrink-0 place-items-center rounded-full bg-plum text-[16px] font-semibold text-white"
-        >
-          {numero}
-        </span>
-        <h2 className="font-display text-[30px] leading-[1.1] font-semibold uppercase tracking-[0.03em] text-plum sm:text-[44px]">
-          {children}
-        </h2>
-      </div>
-    </div>
-  );
-}
-
-/** Intitule de partie secondaire, annonce par un sur-titre. */
-function PartieTitre({ children }: { children: ReactNode }) {
-  return (
-    <h2 className="font-display text-[24px] leading-tight font-light uppercase tracking-[0.05em] text-ink sm:text-[28px]">
+    <h2 className="max-w-[1150px] text-balance font-display text-[28px] leading-[1.12] font-semibold uppercase tracking-[0.03em] text-plum sm:text-[38px]">
       {children}
     </h2>
   );
 }
+
 
 
 export default async function ConsultationsPage({
@@ -157,16 +151,16 @@ export default async function ConsultationsPage({
           A a D s'enchainent donc directement sous la banniere. */}
       <Section id="general" className={ANCHOR}>
         <Container width="full">
-          <div className="max-w-3xl">
-            <TitrePrincipal numero="1">{c.general.surTitre}</TitrePrincipal>
-          </div>
+          <TitrePrincipal>{c.general.surTitre}</TitrePrincipal>
 
-          {/* Point 1 */}
-          <div className="mt-16 max-w-3xl">
-            <PointTitre numero="01">{c.general.titre}</PointTitre>
-            <p className="mt-6 text-[15px] leading-relaxed text-body">
-              {c.general.intro}
-            </p>
+          {/* Point 1, centre : il annonce la frise qui suit, elle-meme etalee
+              sur toute la largeur. Le calage a gauche le laissait pendre d'un
+              cote alors qu'il chapeaute l'ensemble. */}
+          <div className="mx-auto mt-16 max-w-3xl text-center">
+            <PointTitre numero="01" centre>
+              {c.general.titre}
+            </PointTitre>
+            <p className="mt-6 text-[15px] leading-relaxed text-body">{c.general.intro}</p>
           </div>
 
         </Container>
@@ -270,15 +264,35 @@ export default async function ConsultationsPage({
       {/* ================= B ================= */}
       <Section>
         <Container width="full">
-          <div className="max-w-3xl">
-            <TitrePrincipal numero="2">{c.motifs.premiereIntentionTitre}</TitrePrincipal>
-            <p className="mt-10 text-[16px] leading-[1.7] text-body">
-              {c.motifs.premiereIntentionTexte1}
-            </p>
-            <CheckList items={L.premiereIntention} className="mt-7" />
-            <p className="mt-7 text-[16px] leading-[1.7] text-body">
-              {c.motifs.premiereIntentionTexte2}
-            </p>
+          {/* Photo a droite : la colonne de texte laissait la moitie droite de
+              l'ecran vide sur cette section, la seule sans visuel. Le titre est
+              dans la colonne de gauche avec son texte, et `items-center` cale
+              l'ensemble a mi-hauteur de la photo. */}
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+            <div>
+              <TitrePrincipal>{c.motifs.premiereIntentionTitre}</TitrePrincipal>
+              <p className="mt-10 text-[16px] leading-[1.7] text-body">
+                {c.motifs.premiereIntentionTexte1}
+              </p>
+              <CheckList items={L.premiereIntention} className="mt-7" />
+              <p className="mt-7 text-[16px] leading-[1.7] text-body">
+                {c.motifs.premiereIntentionTexte2}
+              </p>
+            </div>
+
+            {/* Colonnes de largeur egale : la photo occupe toute sa moitie et
+                s'etire sur la hauteur du texte, plutot que de flotter dans une
+                colonne plus etroite. */}
+            <figure className="group/media overflow-hidden rounded-lg">
+              <Image
+                src="/images/2025/05/9F3CC3C6-C8CC-45ED-84F6-D54379C346E8.jpg"
+                alt={c.motifs.photoAlt}
+                width={1440}
+                height={963}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="img-zoom aspect-[4/3] w-full object-cover"
+              />
+            </figure>
           </div>
         </Container>
       </Section>
@@ -288,8 +302,10 @@ export default async function ConsultationsPage({
           partir duquel le sommaire flottant apparait. */}
       <Section id="chroniques" tone="surface">
         <Container width="full">
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-end lg:gap-20">
-            <TitrePrincipal numero="3">{c.chroniques.titre}</TitrePrincipal>
+          {/* Titre hors de la grille : dans une demi-colonne il partait sur
+              trois lignes, alors que les autres en tiennent deux. */}
+          <TitrePrincipal>{c.chroniques.titre}</TitrePrincipal>
+          <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-end lg:gap-20">
             {/* rappel important : mis en avant par une pastille et un fond doux */}
             <div className="flex items-start gap-4 rounded-lg bg-surface p-6 sm:p-7">
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-plum ring-1 ring-plum/15">
@@ -370,10 +386,10 @@ export default async function ConsultationsPage({
         <Container width="full">
           <div className="grid gap-12 border-t border-line pt-14 lg:grid-cols-2 lg:gap-20">
             <div>
-              <Eyebrow>{c.collaboration.surTitre}</Eyebrow>
-              <div className="mt-5 max-w-xl">
-                <PartieTitre>{c.collaboration.titre}</PartieTitre>
-              </div>
+              {/* Titre au-dessus de la carte, dans sa colonne. Sur-titre retire :
+                  cette partie est un titre principal comme les trois autres,
+                  aucun d'eux n'en porte. */}
+              <TitrePrincipal>{c.collaboration.titre}</TitrePrincipal>
               <div className="mt-10 overflow-hidden rounded-lg bg-white ring-1 ring-line">
                 <SecteurMap className="h-[320px] sm:h-[440px]" />
               </div>
@@ -424,8 +440,10 @@ export default async function ConsultationsPage({
           renvoie vers le détail propre à chacune. */}
       <Section id="especes" tone="surface">
         <Container width="full">
-          <Eyebrow>{d.commun.sommaire}</Eyebrow>
-          <SectionTitle className="mt-5 max-w-3xl">{c.sommaireTitre}</SectionTitle>
+          {/* Sur-titre « Sommaire » retire : le titre dit deja de quoi il
+              s'agit, et cette section n'est plus un sommaire mais un
+              aiguillage en fin de page. */}
+          <SectionTitle className="mx-auto max-w-3xl text-center">{c.sommaireTitre}</SectionTitle>
           <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {c.sommaire.map((s, i) => (
               <li key={liensEspeces[i].href} className="flex">
