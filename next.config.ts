@@ -55,9 +55,49 @@ const nextConfig: NextConfig = {
         destination: "/rendez-vous-osteopathe-animalier",
         permanent: true,
       },
+      /* URLs du site actuel, osteopathie-animale-toulouse.fr, relevees dans son
+         plan de site. Elles ne servent que le jour ou ce domaine pointera ici,
+         mais autant qu'elles soient prevues : sans elles, chaque lien externe
+         et chaque resultat de recherche existant tomberait sur une 404. */
+      { source: "/oa", destination: "/osteopahie-animale", permanent: true },
+      { source: "/presentation", destination: "/osteopahie-animale", permanent: true },
+      {
+        source: "/quand-consulter",
+        destination: "/consulation-osteopathe-animalier",
+        permanent: true,
+      },
+      {
+        source: "/signification-de-mon-logo",
+        destination: "/mon-logo-et-sa-signification",
+        permanent: true,
+      },
+      {
+        source: "/conference-pour-lifce-etat-des-lieux-pour-losteopathie-animale",
+        destination: "/conference-pour-l-ifce",
+        permanent: true,
+      },
+      {
+        /* L'article racontait la reussite de l'epreuve nationale d'aptitude :
+           la page qui porte aujourd'hui cette information est celle du RNA. */
+        source: "/validation-de-lexamen-national-daptitude",
+        destination: "/mon-diplome-dosteopathe-animalier",
+        permanent: true,
+      },
+      { source: "/author/:slug*", destination: "/osteopahie-animale", permanent: true },
+      { source: "/tag/:slug*", destination: "/actualites", permanent: true },
+
       // anciennes URLs WordPress vers leur equivalent
       { source: "/accueil", destination: "/", permanent: true },
-      { source: "/category/:slug", destination: "/categorie/:slug", permanent: true },
+      /* Seule la categorie « actualites » a survecu au changement de site : les
+         autres (`uncategorized`, `examen-dosteopathie-animale`) n'ont pas
+         d'equivalent et rejoignent l'archive commune. La regle nommee doit
+         preceder la regle generique, la premiere qui correspond l'emportant. */
+      {
+        source: "/category/actualites",
+        destination: "/categorie/actualites",
+        permanent: true,
+      },
+      { source: "/category/:slug*", destination: "/categorie/actualites", permanent: true },
       // les medias servis depuis /wp-content/uploads/... sont desormais dans /images/...
       {
         source: "/wp-content/uploads/:path*",
