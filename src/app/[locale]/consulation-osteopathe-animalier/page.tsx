@@ -82,10 +82,37 @@ function PointTitre({ numero, children }: { numero: string; children: ReactNode 
   );
 }
 
-/** Intitule d'une partie de second niveau (B, C, D). */
+/**
+ * Les trois titres principaux de la page.
+ *
+ * Ils portent un numero en pastille pleine et un filet epais qui traverse la
+ * colonne : deux marques que rien d'autre ne reprend. C'est ce qui les detache
+ * des intitules de points, qui n'ont ni pastille pleine ni filet epais, et du
+ * titre de la partie collaborative, annonce par un sur-titre. Sans ces marques,
+ * seule la taille les separait — un ecart trop tenu pour se voir au defilement.
+ */
+function TitrePrincipal({ numero, children }: { numero: string; children: ReactNode }) {
+  return (
+    <div className="border-t-4 border-plum pt-7">
+      <div className="flex items-start gap-5">
+        <span
+          aria-hidden="true"
+          className="mt-1 grid h-11 w-11 shrink-0 place-items-center rounded-full bg-plum text-[16px] font-semibold text-white"
+        >
+          {numero}
+        </span>
+        <h2 className="font-display text-[30px] leading-[1.1] font-semibold uppercase tracking-[0.03em] text-plum sm:text-[44px]">
+          {children}
+        </h2>
+      </div>
+    </div>
+  );
+}
+
+/** Intitule de partie secondaire, annonce par un sur-titre. */
 function PartieTitre({ children }: { children: ReactNode }) {
   return (
-    <h2 className="font-display text-[26px] leading-tight font-light uppercase tracking-[0.05em] text-ink sm:text-[32px]">
+    <h2 className="font-display text-[24px] leading-tight font-light uppercase tracking-[0.05em] text-ink sm:text-[28px]">
       {children}
     </h2>
   );
@@ -131,7 +158,7 @@ export default async function ConsultationsPage({
       <Section id="general" className={ANCHOR} padding="no-bottom">
         <Container>
           <div className="max-w-3xl">
-            <PartieTitre>{c.general.surTitre}</PartieTitre>
+            <TitrePrincipal numero="1">{c.general.surTitre}</TitrePrincipal>
           </div>
 
           {/* Point 1 */}
@@ -184,62 +211,67 @@ export default async function ConsultationsPage({
       {/* Points 2 et 3 de la partie A : meme rang que le point 1, donc meme
           intitule numerote. Chacun garde sa carte illustree d'origine. */}
       <Section tone="surface" padding="no-bottom">
-        <Container>
-          {[
-            {
-              numero: "02",
-              titre: c.motifs.titre,
-              note: null,
-              items: L.troublesLocomoteurs,
-              icone: "M4 18l4-6 3 3 3-5 6 8",
-              fond: "bg-plum/8 ring-plum/15",
-              couleur: "text-plum",
-            },
-            {
-              numero: "03",
-              titre: c.motifs.emotionnelTitre,
-              note: c.motifs.emotionnelNote,
-              items: L.accompagnementEmotionnel,
-              icone: "M12 21s-7-4.35-9.33-8.5A5.5 5.5 0 0112 6.5a5.5 5.5 0 019.33 6C19 16.65 12 21 12 21z",
-              fond: "bg-green/8 ring-green/15",
-              couleur: "text-green",
-            },
-          ].map((point) => (
-            <div key={point.numero} className="mt-14 max-w-3xl first:mt-0">
-              <PointTitre numero={point.numero}>{point.titre}</PointTitre>
-              {point.note && (
-                <p className="mt-4 text-[15px] leading-relaxed text-muted">{point.note}</p>
-              )}
-              <div className="mt-6 rounded-lg bg-white p-7 ring-1 ring-line sm:p-9">
-                <span
-                  className={`grid h-12 w-12 place-items-center rounded-full ring-1 ${point.fond} ${point.couleur}`}
-                >
-                  <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
+        <Container width="full">
+          {/* Cote a cote : les deux listes se lisent en parallele plutot que
+              l'une sous l'autre, et la page y gagne une pleine hauteur d'ecran.
+              `items-start` : la carte la plus courte n'est pas etiree. */}
+          <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
+            {[
+              {
+                numero: "02",
+                titre: c.motifs.titre,
+                note: null,
+                items: L.troublesLocomoteurs,
+                icone: "M4 18l4-6 3 3 3-5 6 8",
+                fond: "bg-plum/8 ring-plum/15",
+                couleur: "text-plum",
+              },
+              {
+                numero: "03",
+                titre: c.motifs.emotionnelTitre,
+                note: c.motifs.emotionnelNote,
+                items: L.accompagnementEmotionnel,
+                icone: "M12 21s-7-4.35-9.33-8.5A5.5 5.5 0 0112 6.5a5.5 5.5 0 019.33 6C19 16.65 12 21 12 21z",
+                fond: "bg-green/8 ring-green/15",
+                couleur: "text-green",
+              },
+            ].map((point) => (
+              <div key={point.numero}>
+                <PointTitre numero={point.numero}>{point.titre}</PointTitre>
+                {point.note && (
+                  <p className="mt-4 text-[15px] leading-relaxed text-muted">{point.note}</p>
+                )}
+                <div className="mt-6 rounded-lg bg-white p-7 ring-1 ring-line sm:p-9">
+                  <span
+                    className={`grid h-12 w-12 place-items-center rounded-full ring-1 ${point.fond} ${point.couleur}`}
                   >
-                    <path d={point.icone} />
-                  </svg>
-                </span>
-                <CheckList items={point.items} className="mt-6" />
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d={point.icone} />
+                    </svg>
+                  </span>
+                  <CheckList items={point.items} className="mt-6" />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </Container>
       </Section>
 
       {/* ================= B ================= */}
-      <Section tone="surface">
+      <Section>
         <Container>
           <div className="max-w-3xl">
-            <PartieTitre>{c.motifs.premiereIntentionTitre}</PartieTitre>
+            <TitrePrincipal numero="2">{c.motifs.premiereIntentionTitre}</TitrePrincipal>
             <p className="mt-6 text-[16px] leading-[1.7] text-body">
               {c.motifs.premiereIntentionTexte1}
             </p>
@@ -254,10 +286,10 @@ export default async function ConsultationsPage({
       {/* Affections chroniques — pleine largeur, marge de 100 px.
           L'identifiant ne sert pas d'ancre de navigation : il marque le point a
           partir duquel le sommaire flottant apparait. */}
-      <Section id="chroniques">
+      <Section id="chroniques" tone="surface">
         <Container width="full">
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-end lg:gap-20">
-            <PartieTitre>{c.chroniques.titre}</PartieTitre>
+            <TitrePrincipal numero="3">{c.chroniques.titre}</TitrePrincipal>
             {/* rappel important : mis en avant par une pastille et un fond doux */}
             <div className="flex items-start gap-4 rounded-lg bg-surface p-6 sm:p-7">
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-plum ring-1 ring-plum/15">
@@ -334,7 +366,7 @@ export default async function ConsultationsPage({
 
       {/* Approche collaborative + secteur d'intervention : titre et carte a gauche,
           propos, appel a l'action et departements a droite. */}
-      <Section tone="surface" padding="no-top">
+      <Section padding="no-top">
         <Container width="full">
           <div className="grid gap-12 border-t border-line pt-14 lg:grid-cols-2 lg:gap-20">
             <div>
