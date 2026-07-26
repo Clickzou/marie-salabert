@@ -350,11 +350,21 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </Reveal>
           </div>
 
-          <Reveal className="mt-14 rounded-lg border border-plum/15 bg-white p-8 sm:p-10">
-            <h3 className="text-[21px] leading-snug text-plum">{a.lieux.guyaneTitre}</h3>
-            <p className="mt-3 text-[16px] leading-relaxed text-body">{a.lieux.guyaneTexte}</p>
-            <CheckList className="mt-5" items={a.lieux.guyaneLieux} />
-          </Reveal>
+          {/* Deplacements lointains : deux cartes de meme facture, cote a cote
+              sur grand ecran. `items-start` et non `items-stretch` : la carte
+              italienne est bien plus courte, l'etirer creuserait un vide. */}
+          <div className="mt-14 grid items-start gap-6 lg:grid-cols-2 lg:gap-8">
+            <Reveal className="rounded-lg border border-plum/15 bg-white p-8 sm:p-10">
+              <h3 className="text-[21px] leading-snug text-plum">{a.lieux.guyaneTitre}</h3>
+              <p className="mt-3 text-[16px] leading-relaxed text-body">{a.lieux.guyaneTexte}</p>
+              <CheckList className="mt-5" items={a.lieux.guyaneLieux} />
+            </Reveal>
+
+            <Reveal delay={140} className="rounded-lg border border-plum/15 bg-white p-8 sm:p-10">
+              <h3 className="text-[21px] leading-snug text-plum">{a.lieux.italieTitre}</h3>
+              <p className="mt-3 text-[16px] leading-relaxed text-body">{a.lieux.italieTexte}</p>
+            </Reveal>
+          </div>
         </Container>
       </Section>
 
