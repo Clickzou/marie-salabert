@@ -214,7 +214,7 @@ export default async function ConsultationsPage({
               {
                 numero: "02",
                 titre: c.motifs.titre,
-                note: null,
+                note: c.motifs.locomoteursNote,
                 items: L.troublesLocomoteurs,
                 icone: "M4 18l4-6 3 3 3-5 6 8",
                 fond: "bg-plum/8 ring-plum/15",

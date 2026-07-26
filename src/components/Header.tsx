@@ -131,7 +131,9 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                               <Link
                                 href={cheminLocalise(href, locale)}
                                 aria-current={courant ? "page" : undefined}
-                                className={`block whitespace-nowrap px-5 py-2.5 text-[13.5px] font-medium transition-colors ${
+                                /* Capitales espacees, comme les entrees du menu
+                                   principal : le sous-menu en est le prolongement. */
+                                className={`block whitespace-nowrap px-5 py-2.5 text-[12.5px] font-medium uppercase tracking-[0.06em] transition-colors ${
                                   courant ? "text-plum" : "text-body hover:bg-surface hover:text-plum"
                                 }`}
                               >
@@ -217,7 +219,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                               <Link
                                 href={cheminLocalise(href, locale)}
                                 aria-current={courant ? "page" : undefined}
-                                className={`block py-2.5 text-[13.5px] font-medium ${
+                                className={`block py-2.5 text-[12.5px] font-medium uppercase tracking-[0.06em] ${
                                   courant ? "text-plum" : "text-muted"
                                 }`}
                               >
