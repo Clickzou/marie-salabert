@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { cheminLocalise, cheminSansLocale, type Locale } from "@/i18n/config";
 import type { Dictionnaire } from "@/i18n/dictionnaire";
-import { headerCta, heroRoutes, mainNav, site } from "@/lib/site";
+import { headerCta, heroRoutes, mainNav, routes, site, sousMenuConsultations } from "@/lib/site";
 import SelecteurLangue from "./SelecteurLangue";
 import { Container } from "./ui";
 
@@ -89,8 +89,13 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
             {mainNav.map((item) => {
               const actif =
                 item.href === "/" ? cheminNu === "/" : cheminNu.startsWith(item.href);
+              const sousMenu = item.href === routes.consultations ? sousMenuConsultations : null;
+
               return (
-                <li key={item.href}>
+                /* `group/item` et non `group` : le filet anime sous l'intitule
+                   utilise deja `group-hover`, il ne doit pas se declencher au
+                   survol d'une entree du sous-menu. */
+                <li key={item.href} className="group/item relative">
                   <Link
                     href={cheminLocalise(item.href, locale)}
                     aria-current={actif ? "page" : undefined}
@@ -111,6 +116,33 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                       } ${actif ? "scale-x-100" : ""}`}
                     />
                   </Link>
+
+                  {/* Sous-menu : ouvert au survol et des qu'un lien recoit le
+                      focus, pour rester atteignable au clavier. `pt-3` cree un
+                      pont sous l'intitule : sans lui, le sous-menu se referme
+                      quand la souris traverse l'interstice. */}
+                  {sousMenu && (
+                    <div className="invisible absolute left-0 top-full z-50 pt-3 opacity-0 transition-opacity duration-200 group-hover/item:visible group-hover/item:opacity-100 group-focus-within/item:visible group-focus-within/item:opacity-100">
+                      <ul className="min-w-[230px] overflow-hidden rounded-lg border border-line bg-white py-1.5 shadow-[0_20px_45px_-25px_rgba(22,23,26,0.45)]">
+                        {sousMenu.map((href, i) => {
+                          const courant = cheminNu === href;
+                          return (
+                            <li key={href}>
+                              <Link
+                                href={cheminLocalise(href, locale)}
+                                aria-current={courant ? "page" : undefined}
+                                className={`block whitespace-nowrap px-5 py-2.5 text-[13.5px] font-medium transition-colors ${
+                                  courant ? "text-plum" : "text-body hover:bg-surface hover:text-plum"
+                                }`}
+                              >
+                                {d.consultations.sommaire[i].label}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  )}
                 </li>
               );
             })}
@@ -159,6 +191,8 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
               {mainNav.map((item) => {
                 const actif =
                   item.href === "/" ? cheminNu === "/" : cheminNu.startsWith(item.href);
+                const sousMenu = item.href === routes.consultations ? sousMenuConsultations : null;
+
                 return (
                   <li key={item.href}>
                     <Link
@@ -170,6 +204,30 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                     >
                       {d.nav[item.cle]}
                     </Link>
+
+                    {/* Sur mobile le sous-menu est deplie : un menu deja ouvert
+                        n'a pas besoin d'un second niveau a decouvrir, et le
+                        filet a gauche suffit a dire le rattachement. */}
+                    {sousMenu && (
+                      <ul className="mb-2 ml-1 border-l border-plum/20 pl-4">
+                        {sousMenu.map((href, i) => {
+                          const courant = cheminNu === href;
+                          return (
+                            <li key={href}>
+                              <Link
+                                href={cheminLocalise(href, locale)}
+                                aria-current={courant ? "page" : undefined}
+                                className={`block py-2.5 text-[13.5px] font-medium ${
+                                  courant ? "text-plum" : "text-muted"
+                                }`}
+                              >
+                                {d.consultations.sommaire[i].label}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
                   </li>
                 );
               })}

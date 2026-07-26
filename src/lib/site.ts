@@ -85,6 +85,19 @@ export const heroRoutes: readonly string[] = [
   routes.faq,
 ];
 
+/**
+ * Sous-menu de « Consultations » : une entree par famille d'animaux.
+ *
+ * Les libelles ne sont pas repris ici : ils viennent de `consultations.sommaire`
+ * dans les dictionnaires, ou ils servent deja aux cartes d'aiguillage. Une seule
+ * source, donc aucun risque de divergence entre le menu et la page.
+ */
+export const sousMenuConsultations = [
+  routes.equides,
+  routes.compagnie,
+  routes.rente,
+] as const;
+
 /** `cle` renvoie vers l'entree correspondante de `nav` dans les dictionnaires. */
 export const mainNav = [
   { cle: "accueil", href: routes.home },
