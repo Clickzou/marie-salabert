@@ -29,12 +29,18 @@ const COULEURS = {
 const TOULOUSE: [number, number] = [43.6045, 1.444];
 const RAYON_METRES = 105_000;
 
+type Point = { nom: string; position: [number, number] };
+
+/** Prune de la marque pour les passages reguliers, bleu pour les ponctuels. */
+const POINT_REGULIER = "#933a50";
+const POINT_PONCTUEL = "#1d4ea6";
+
 /**
- * Passages reguliers, listes par la praticienne dans le document de contenu.
- * Affiches en petits points prune, sans etiquette permanente : le nom apparait
- * au survol pour ne pas surcharger la carte.
+ * Passages reguliers, dans le rayon d'environ 1h45 autour de Toulouse.
+ * Affiches en petits points, sans etiquette permanente : le nom apparait au
+ * survol pour ne pas surcharger la carte.
  */
-const PASSAGES: readonly { nom: string; position: [number, number] }[] = [
+const PASSAGES_REGULIERS: readonly Point[] = [
   { nom: "Toulouse", position: [43.6045, 1.444] },
   { nom: "Castelnau d'Estrétefonds", position: [43.7833, 1.35] },
   { nom: "Balma", position: [43.6111, 1.5] },
@@ -55,8 +61,26 @@ const PASSAGES: readonly { nom: string; position: [number, number] }[] = [
   { nom: "Nailloux", position: [43.3547, 1.6297] },
   { nom: "Saint-Orens-de-Gameville", position: [43.5522, 1.5308] },
   { nom: "Labège", position: [43.5442, 1.515] },
-  { nom: "Cahors", position: [44.4475, 1.4406] },
   { nom: "Villefranche-de-Rouergue", position: [44.3525, 2.035] },
+  { nom: "Gaillac", position: [43.9014, 1.8975] },
+  { nom: "Lavaur", position: [43.6989, 1.8175] },
+  { nom: "Saint-Sulpice-la-Pointe", position: [43.7719, 1.6839] },
+  { nom: "Castelginest", position: [43.6919, 1.4256] },
+  { nom: "Tournefeuille", position: [43.5847, 1.3444] },
+  { nom: "Plaisance-du-Touch", position: [43.5675, 1.2942] },
+];
+
+/**
+ * Passages ponctuels, au-dela du rayon d'1h45. Ils sortent du cercle prune :
+ * une seconde couleur evite de laisser croire a une desserte reguliere.
+ */
+const PASSAGES_PONCTUELS: readonly Point[] = [
+  { nom: "Bordeaux", position: [44.8378, -0.5792] },
+  { nom: "Mont-de-Marsan", position: [43.8907, -0.4996] },
+  { nom: "Langon", position: [44.5533, -0.2447] },
+  { nom: "Cahors", position: [44.4475, 1.4406] },
+  { nom: "Prayssac", position: [44.5061, 1.1936] },
+  { nom: "Biron (Dordogne)", position: [44.6317, 0.8722] },
 ];
 
 const LIEUX: readonly Lieu[] = [
@@ -78,7 +102,14 @@ const LIEUX: readonly Lieu[] = [
   },
 ];
 
-export default function SecteurMap({ className = "h-[340px] sm:h-[460px]" }: { className?: string }) {
+export default function SecteurMap({
+  className = "h-[340px] sm:h-[460px]",
+  legende,
+}: {
+  className?: string;
+  /** Les deux lignes de legende ; sans elles, la carte est affichee seule. */
+  legende?: { reguliers: string; ponctuels: string };
+}) {
   const conteneur = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -114,18 +145,22 @@ export default function SecteurMap({ className = "h-[340px] sm:h-[460px]" }: { c
         fillOpacity: 0.08,
       }).addTo(carte);
 
-      /* petits points des passages reguliers, sous les deux marqueurs principaux */
-      PASSAGES.forEach((passage) => {
-        L.circleMarker(passage.position, {
-          radius: 5,
-          color: "#fff",
-          weight: 1.5,
-          fillColor: "#933a50",
-          fillOpacity: 0.9,
-        })
-          .addTo(carte!)
-          .bindTooltip(passage.nom, { direction: "top", offset: [0, -6] });
-      });
+      /* petits points des passages, sous les deux marqueurs principaux */
+      const poser = (points: readonly Point[], couleur: string) =>
+        points.forEach((point) => {
+          L.circleMarker(point.position, {
+            radius: 5,
+            color: "#fff",
+            weight: 1.5,
+            fillColor: couleur,
+            fillOpacity: 0.9,
+          })
+            .addTo(carte!)
+            .bindTooltip(point.nom, { direction: "top", offset: [0, -6] });
+        });
+
+      poser(PASSAGES_REGULIERS, POINT_REGULIER);
+      poser(PASSAGES_PONCTUELS, POINT_PONCTUEL);
 
       LIEUX.forEach((lieu) => {
         const couleur = COULEURS[lieu.couleur];
@@ -154,11 +189,33 @@ export default function SecteurMap({ className = "h-[340px] sm:h-[460px]" }: { c
   }, []);
 
   return (
-    <div
-      ref={conteneur}
-      role="application"
-      aria-label="Carte du secteur d'intervention autour de Toulouse"
-      className={`w-full ${className}`}
-    />
+    <>
+      <div
+        ref={conteneur}
+        role="application"
+        aria-label="Carte du secteur d'intervention autour de Toulouse"
+        className={`w-full ${className}`}
+      />
+
+      {/* Chaque ligne porte une pastille de la couleur reelle du point : le
+          lecteur voit la teinte sans dependre du mot qui la nomme. */}
+      {legende && (
+        <ul className="space-y-2.5 border-t border-ink/10 bg-white px-5 py-4">
+          {[
+            { couleur: POINT_REGULIER, texte: legende.reguliers },
+            { couleur: POINT_PONCTUEL, texte: legende.ponctuels },
+          ].map((ligne) => (
+            <li key={ligne.couleur} className="flex items-start gap-3 text-[14px] leading-relaxed text-body">
+              <span
+                aria-hidden="true"
+                className="mt-[6px] h-2.5 w-2.5 shrink-0 rounded-full ring-2 ring-white"
+                style={{ backgroundColor: ligne.couleur }}
+              />
+              {ligne.texte}
+            </li>
+          ))}
+        </ul>
+      )}
+    </>
   );
 }

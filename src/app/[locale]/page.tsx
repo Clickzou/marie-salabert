@@ -346,7 +346,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               delay={140}
               className="overflow-hidden rounded-lg ring-1 ring-ink/10 [&_iframe]:block"
             >
-              <SecteurMap className="h-[340px] sm:h-[460px]" />
+              <SecteurMap
+                className="h-[340px] sm:h-[460px]"
+                legende={{
+                  reguliers: a.lieux.legendeReguliers,
+                  ponctuels: a.lieux.legendePonctuels,
+                }}
+              />
             </Reveal>
           </div>
 
@@ -363,8 +369,18 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <Reveal delay={140} className="rounded-lg border border-plum/15 bg-white p-8 sm:p-10">
               <h3 className="text-[21px] leading-snug text-plum">{a.lieux.italieTitre}</h3>
               <p className="mt-3 text-[16px] leading-relaxed text-body">{a.lieux.italieTexte}</p>
+              <CheckList className="mt-5" items={a.lieux.italieVilles} />
             </Reveal>
           </div>
+
+          {/* Mise au point sur la disponibilite : elle vaut pour les deux
+              destinations, elle est donc placee sous la paire et non dans l'une
+              des cartes. */}
+          <Reveal delay={200} className="mx-auto mt-10 max-w-3xl text-center">
+            <p className="text-[17px] italic leading-relaxed text-body sm:text-[18px]">
+              {a.lieux.tourneesNote}
+            </p>
+          </Reveal>
         </Container>
       </Section>
 

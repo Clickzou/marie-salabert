@@ -173,6 +173,8 @@
       "titre": "Where consultations take place",
       "domicileTitre": "At your home, in Occitanie and Nouvelle-Aquitaine",
       "domicileTexte": "About 1 hour 45 minutes' drive around Toulouse, across the following nine departments:",
+      "legendeReguliers": "The purple dots mark the towns visited regularly.",
+      "legendePonctuels": "The blue dots mark towns visited occasionally, beyond 1 hour 45 minutes' drive.",
       "cliniqueTitre": "At the practice, every Friday afternoon",
       "cliniqueTexte": "Val Dadou veterinary practice, in Graulhet (81).",
       "cliniqueContact": "To book an appointment there, please contact the practice directly on 05 63 34 51 52",
@@ -184,7 +186,9 @@
         "Salon de Toilettage Louloustars in Cayenne"
       ],
       "italieTitre": "Tours in Italy, three times a year",
-      "italieTexte": "Pisa, Florence, Bologna, Parma and Milan, during tours held three times a year.",
+      "italieTexte": "Home visits and at the following locations:",
+      "italieVilles": ["Pisa", "Florence", "Bologna", "Parma", "Milan"],
+      "tourneesNote": "These tours remain occasional; I practise mainly in France throughout the year. If a consultation cannot wait until my return, a trusted colleague takes over the care of your animal. Where applicable, my reception desk will arrange an appointment with that same person.",
       "departements": [
         {
           "code": "31",

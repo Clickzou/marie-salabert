@@ -173,6 +173,8 @@
       "titre": "Les lieux de consultation",
       "domicileTitre": "À votre domicile, en Occitanie et Nouvelle-Aquitaine",
       "domicileTexte": "Environ 1h45 de route autour de Toulouse, sur les neuf départements suivants :",
+      "legendeReguliers": "Les points violets indiquent les villes d'interventions régulières.",
+      "legendePonctuels": "Les points bleus indiquent les villes d'interventions ponctuelles, au-delà de 1h45 de trajet.",
       "cliniqueTitre": "En clinique, tous les vendredis après-midi",
       "cliniqueTexte": "Clinique vétérinaire du Val Dadou, à Graulhet (81).",
       "cliniqueContact": "Pour toute prise de rendez-vous il vous faut contacter directement la clinique au 05 63 34 51 52",
@@ -184,7 +186,9 @@
         "Salon de Toilettage Louloustars à Cayenne"
       ],
       "italieTitre": "Tournées en Italie, trois fois par an",
-      "italieTexte": "Pise, Florence, Bologne, Parme et Milan, à l'occasion de tournées organisées trois fois dans l'année.",
+      "italieTexte": "Déplacement à domicile et dans les endroits suivants :",
+      "italieVilles": ["Pise", "Florence", "Bologne", "Parme", "Milan"],
+      "tourneesNote": "Ces tournées restent ponctuelles ; j'exerce principalement en France tout au long de l'année. Si une consultation ne peut pas attendre mon retour, une personne de confiance assure le relais auprès de votre animal. Le cas échéant, mon secrétariat vous propose un rendez-vous avec cette même personne.",
       "departements": [
         {
           "code": "31",

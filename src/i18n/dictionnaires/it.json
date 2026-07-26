@@ -173,6 +173,8 @@
       "titre": "I luoghi delle sedute",
       "domicileTitre": "A domicilio, in Occitania e Nuova Aquitania",
       "domicileTexte": "Circa 1 ora e 45 minuti di strada intorno a Tolosa, nei seguenti nove dipartimenti:",
+      "legendeReguliers": "I punti viola indicano le città in cui intervengo regolarmente.",
+      "legendePonctuels": "I punti blu indicano le città in cui intervengo occasionalmente, oltre 1 ora e 45 minuti di strada.",
       "cliniqueTitre": "In clinica, ogni venerdì pomeriggio",
       "cliniqueTexte": "Clinica veterinaria du Val Dadou, a Graulhet (81).",
       "cliniqueContact": "Per qualsiasi prenotazione in questa sede, contattate direttamente la clinica al 05 63 34 51 52",
@@ -184,7 +186,9 @@
         "Salone di toelettatura Louloustars a Cayenne"
       ],
       "italieTitre": "Tournée in Italia, tre volte all'anno",
-      "italieTexte": "Pisa, Firenze, Bologna, Parma e Milano, in occasione di tournée organizzate tre volte all'anno.",
+      "italieTexte": "Spostamento a domicilio e nei seguenti luoghi:",
+      "italieVilles": ["Pisa", "Firenze", "Bologna", "Parma", "Milano"],
+      "tourneesNote": "Queste tournée restano occasionali; esercito principalmente in Francia durante tutto l'anno. Se un consulto non può attendere il mio ritorno, una persona di fiducia si occupa del vostro animale. Se necessario, la mia segreteria vi propone un appuntamento con questa stessa persona.",
       "departements": [
         {
           "code": "31",
