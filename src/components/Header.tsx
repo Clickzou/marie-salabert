@@ -73,7 +73,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
           aria-label={site.name}
         >
           <Image
-            src="/images/2024/05/cropped-logo-osteopathe-animalier-toulouse-31.png"
+            src="/images/2024/05/logo-marie-salabert-osteopathie-animale.png"
             alt={`${site.practitioner} — ostéopathe animalier à Toulouse`}
             width={300}
             height={293}

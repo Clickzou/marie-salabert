@@ -38,10 +38,10 @@ export async function generateMetadata({
 
 /** Visuels de l'aiguillage vers les pages d'especes, dans l'ordre du dictionnaire. */
 const photosSommaire = [
-  "/images/2025/05/IMG_5249.jpg",
-  "/images/2025/05/IMG_5516.jpg",
+  "/images/2025/05/osteopathie-cheval-12.jpg",
+  "/images/2025/05/osteopathie-chien-11.jpg",
   // photo de terrain, en bouverie, a la place de l'image d'illustration
-  "/images/2025/05/IMG_2057.avif",
+  "/images/2025/05/osteopathie-animaux-elevage-01.avif",
 ];
 
 /* Marge appliquee aux cibles d'ancres : compense header (88px) + sous-nav collante. */
@@ -303,7 +303,7 @@ export default async function ConsultationsPage({
                 colonne plus etroite. */}
             <figure className="group/media overflow-hidden rounded-lg">
               <Image
-                src="/images/2025/05/9F3CC3C6-C8CC-45ED-84F6-D54379C346E8.jpg"
+                src="/images/2025/05/osteopathie-chien-02.jpg"
                 alt={c.motifs.photoAlt}
                 width={1440}
                 height={963}

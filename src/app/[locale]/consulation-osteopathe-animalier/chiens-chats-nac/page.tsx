@@ -147,7 +147,7 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
                 title={c.compagnie.lapinsTitre}
                 items={L.lapinsRongeurs}
                 photo={{
-                  src: "/images/2025/05/IMG_4328.jpg",
+                  src: "/images/2025/05/osteopathie-lapin-01.jpg",
                   alt: c.compagnie.photoLapinAlt,
                   largeur: 750,
                   hauteur: 565,

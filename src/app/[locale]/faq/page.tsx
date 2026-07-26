@@ -477,7 +477,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
   return (
     <>
       <PageHero
-        image="/images/2025/05/questions-frequentes-osteopathe-animailier.jpg"
+        image="/images/2025/05/questions-frequentes-osteopathie-animale.jpg"
         eyebrow={f.hero.surTitre}
         title={f.hero.titre}
         subtitle={f.hero.sousTitre}

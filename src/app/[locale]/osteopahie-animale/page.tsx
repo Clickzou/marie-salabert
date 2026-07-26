@@ -99,7 +99,7 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
                   recadrer en 4/3, ce qui amputerait la scene en haut et en bas. */}
               <figure className="group/media mt-10 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/2025/05/b2e4d989-d855-48d1-97ef-fdefede9824b.jpg"
+                  src="/images/2025/05/osteopathie-chat-01.jpg"
                   alt={a.histoire.photoAlt}
                   width={2048}
                   height={2048}

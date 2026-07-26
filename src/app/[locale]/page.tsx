@@ -60,37 +60,37 @@ const photosHero = [
  */
 const photosSeances = [
   {
-    src: "/images/2025/05/9F3CC3C6-C8CC-45ED-84F6-D54379C346E8.jpg",
+    src: "/images/2025/05/osteopathie-chien-02.jpg",
     largeur: 1440,
     hauteur: 963,
     alt: "Marie Salabert travaille le dos d'un berger allemand assis dans l'herbe.",
   },
   {
-    src: "/images/2025/05/marie-salabert-osteopathe-animaliere-1.jpg",
+    src: "/images/2025/05/osteopathie-chat-05.jpg",
     largeur: 1440,
     hauteur: 961,
     alt: "Marie Salabert porte un chat siamois contre elle avant une séance.",
   },
   {
-    src: "/images/2025/05/B8F0133C-B03C-433E-A182-443F72A4644B.jpg",
+    src: "/images/2025/05/osteopathie-cheval-02.jpg",
     largeur: 1440,
     hauteur: 961,
     alt: "Marie Salabert mobilise la tête d'un cheval bai dans une écurie.",
   },
   {
-    src: "/images/2025/05/D2FAB58D-7A14-4998-A8AB-85CCBB71F706.jpg",
+    src: "/images/2025/05/osteopathie-cheval-03.jpg",
     largeur: 1440,
     hauteur: 961,
     alt: "Marie Salabert soutient l'encolure d'un poney brun dans un pré fleuri.",
   },
   {
-    src: "/images/2025/05/decouvrir-osteopathe-animale-1.jpg",
+    src: "/images/2025/05/osteopathie-cheval-04.jpg",
     largeur: 1488,
     hauteur: 1304,
     alt: "Marie Salabert mobilise l'antérieur d'un cheval bai, au pré.",
   },
   {
-    src: "/images/2025/05/IMG_8271.jpg",
+    src: "/images/2025/05/osteopathie-cheval-24.jpg",
     largeur: 2000,
     hauteur: 1500,
     alt: "Marie Salabert examine le dos d'un cheval bai en extérieur, au pré.",
@@ -99,10 +99,10 @@ const photosSeances = [
 
 /** Visuels des trois publics, dans l'ordre du dictionnaire. */
 const photosPublics = [
-  "/images/2025/05/IMG_5516.jpg",
-  "/images/2025/05/IMG_5249.jpg",
+  "/images/2025/05/osteopathie-chien-11.jpg",
+  "/images/2025/05/osteopathie-cheval-12.jpg",
   // meme photo de terrain que la carte « Animaux de rente » des consultations
-  "/images/2025/05/IMG_2057.avif",
+  "/images/2025/05/osteopathie-animaux-elevage-01.avif",
 ];
 
 /* Numero de la clinique du Val Dadou. Il est isole du libelle traduit pour
