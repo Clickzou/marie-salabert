@@ -95,16 +95,16 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
             <Reveal className="lg:sticky lg:top-32 lg:self-start">
               <Eyebrow>{a.histoire.surTitre}</Eyebrow>
               <SectionTitle className="mt-5">{a.histoire.titre}</SectionTitle>
-              {/* La discipline s'est d'abord developpee aupres des equides : la
-                  photo illustre ce point de depart. */}
+              {/* Cliche carre a la source : on garde ce format plutot que de le
+                  recadrer en 4/3, ce qui amputerait la scene en haut et en bas. */}
               <figure className="group/media mt-10 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/2023/05/toulouse-ostheopathe-animaux.jpg"
+                  src="/images/2025/05/b2e4d989-d855-48d1-97ef-fdefede9824b.jpg"
                   alt={a.histoire.photoAlt}
-                  width={2121}
-                  height={1414}
+                  width={2048}
+                  height={2048}
                   sizes="(max-width: 1024px) 100vw, 380px"
-                  className="img-zoom aspect-[4/3] w-full object-cover"
+                  className="img-zoom aspect-square w-full object-cover"
                 />
               </figure>
             </Reveal>
