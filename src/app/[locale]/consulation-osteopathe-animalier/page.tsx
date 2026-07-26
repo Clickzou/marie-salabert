@@ -102,10 +102,28 @@ function PointTitre({
  * ces trois attributs. C'est ce qui les detache des intitules de points, plus
  * petits et en noir. Leur largeur est bornee et le retour a la ligne equilibre
  * (`text-balance`) pour qu'ils tiennent sur deux lignes sur grand ecran.
+ *
+ * Deux d'entre eux vivent dans une demi-colonne, ou 38 px les envoyaient sur
+ * trois ou quatre lignes : `colonne` leur donne le corps qui les ramene a
+ * deux, sans toucher aux deux autres qui occupent toute la largeur.
  */
-function TitrePrincipal({ children }: { children: ReactNode }) {
+function TitrePrincipal({
+  children,
+  colonne = false,
+}: {
+  children: ReactNode;
+  colonne?: boolean;
+}) {
   return (
-    <h2 className="max-w-[1150px] text-balance font-display text-[28px] leading-[1.12] font-semibold uppercase tracking-[0.03em] text-plum sm:text-[38px]">
+    <h2
+      className={`max-w-[1150px] text-balance font-display text-[28px] leading-[1.12] font-semibold uppercase tracking-[0.03em] text-plum ${
+        /* La demi-colonne grandit avec la fenetre : un corps proportionnel a
+           la largeur garde ces titres sur deux lignes a toutes les tailles. */
+        colonne
+          ? "sm:text-[34px] lg:tracking-normal lg:text-[clamp(20px,1.7vw,30px)]"
+          : "sm:text-[38px]"
+      }`}
+    >
       {children}
     </h2>
   );
@@ -270,7 +288,7 @@ export default async function ConsultationsPage({
               l'ensemble a mi-hauteur de la photo. */}
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <div>
-              <TitrePrincipal>{c.motifs.premiereIntentionTitre}</TitrePrincipal>
+              <TitrePrincipal colonne>{c.motifs.premiereIntentionTitre}</TitrePrincipal>
               <p className="mt-10 text-[16px] leading-[1.7] text-body">
                 {c.motifs.premiereIntentionTexte1}
               </p>
@@ -389,7 +407,7 @@ export default async function ConsultationsPage({
               {/* Titre au-dessus de la carte, dans sa colonne. Sur-titre retire :
                   cette partie est un titre principal comme les trois autres,
                   aucun d'eux n'en porte. */}
-              <TitrePrincipal>{c.collaboration.titre}</TitrePrincipal>
+              <TitrePrincipal colonne>{c.collaboration.titre}</TitrePrincipal>
               <div className="mt-10 overflow-hidden rounded-lg bg-white ring-1 ring-line">
                 <SecteurMap className="h-[320px] sm:h-[440px]" />
               </div>
