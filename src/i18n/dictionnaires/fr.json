@@ -452,6 +452,7 @@
       ]
     },
     "secteur": {
+      "phraseEspeces": "Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 12, 33, 09 et 11. D'autres départements peuvent être envisagés lors de l'organisation de tournées.",
       "surTitre": "Secteur d'intervention",
       "titre": "Environ 1h45 de route autour de Toulouse"
     }
@@ -807,6 +808,7 @@
       "texte2": "Chaque animal étant unique, un échange permettra d'évaluer la situation, de répondre à vos questions et de vous orienter vers la démarche la plus appropriée pour votre compagnon."
     },
     "secteur": {
+      "phraseEspeces": "Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 12, 33, 09 et 11. D'autres départements peuvent être envisagés lors de l'organisation de tournées.",
       "surTitre": "Secteur d'intervention",
       "intro": "Interventions principales, environ 1h45 de route autour de Toulouse, sur les départements suivants :",
       "complement": "D'autres départements peuvent être envisagés lors de l'organisation de tournées."
@@ -844,7 +846,7 @@
     },
     "rente": {
       "numero": "Ostéopathie bovine, ovine, caprine et porcine",
-      "titre": "Une approche complémentaire au service des élevages",
+      "titre": "Ostéopathie rurale pour animaux de ferme et de production animale",
       "chapo": "L'ostéopathie animale s'est développée dans le secteur de l'élevage à partir des années 2000. Historiquement, les éleveurs ont toujours eu recours dans les campagnes à des pratiques manuelles traditionnelles pour accompagner leurs animaux lors de certaines difficultés fonctionnelles.",
       "paragraphes": [
         "Aujourd'hui, l'ostéopathie animale s'inscrit dans cette continuité en proposant une approche manuelle structurée, adaptée aux exigences actuelles du bien-être animal et complémentaire au suivi vétérinaire.",

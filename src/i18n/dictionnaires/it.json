@@ -452,6 +452,7 @@
       ]
     },
     "secteur": {
+      "phraseEspeces": "Interventi principali nei dipartimenti 31, 81, 82, 47, 46, 32, 12, 33, 09 e 11. Altri dipartimenti possono essere presi in considerazione in occasione delle tournée.",
       "surTitre": "Zona d'intervento",
       "titre": "Circa 1h45 di strada intorno a Toulouse"
     }
@@ -807,6 +808,7 @@
       "texte2": "Poiché ogni animale è unico, un confronto permetterà di valutare la situazione, rispondere alle vostre domande e orientarvi verso l'approccio più adatto al vostro compagno."
     },
     "secteur": {
+      "phraseEspeces": "Interventi principali nei dipartimenti 31, 81, 82, 47, 46, 32, 12, 33, 09 e 11. Altri dipartimenti possono essere presi in considerazione in occasione delle tournée.",
       "surTitre": "Zona di intervento",
       "intro": "Interventi principali, entro circa 1h45 di strada intorno a Toulouse, nei seguenti dipartimenti:",
       "complement": "Altri dipartimenti possono essere presi in considerazione in occasione dell'organizzazione di giri di consulti."
@@ -845,7 +847,7 @@
     },
     "rente": {
       "numero": "Osteopatia bovina, ovina, caprina e suina",
-      "titre": "Un approccio complementare al servizio degli allevamenti",
+      "titre": "Osteopatia rurale per animali da fattoria e da produzione",
       "chapo": "L'osteopatia animale si è sviluppata nel settore dell'allevamento a partire dagli anni 2000. Storicamente, gli allevatori hanno sempre fatto ricorso, nelle campagne, a pratiche manuali tradizionali per accompagnare i loro animali in caso di alcune difficoltà funzionali.",
       "paragraphes": [
         "Oggi, l'osteopatia animale si inserisce in questa continuità proponendo un approccio manuale strutturato, adatto alle esigenze attuali del benessere animale e complementare al monitoraggio veterinario.",

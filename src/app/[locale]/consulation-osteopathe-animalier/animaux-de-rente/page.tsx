@@ -65,7 +65,7 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
           <div className="order-1 flex flex-col justify-center px-6 py-14 sm:px-10 lg:order-2 lg:px-14">
             <NumeroSection numero="03" label={c.rente.numero} />
             <h1 className="uppercase mt-3 font-display text-[30px] leading-[1.12] font-light text-white sm:text-[40px] tracking-[0.05em]">
-              {c.sommaire[2].label}
+              {c.rente.titre}
             </h1>
             {/* Pas de sous-titre ici : le sur-titre au-dessus enumere deja les
                 especes (« ostéopathie bovine, ovine, caprine et porcine »). */}
@@ -84,10 +84,16 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
       <Section>
         <Container width="full">
           {/* encart teinte prune, en echo a la couleur du bandeau */}
-          <div className="mx-auto max-w-4xl space-y-4 rounded-lg border border-plum/15 bg-plum/[0.04] p-8 text-[16.5px] leading-[1.7] text-body sm:p-10">
-            {c.rente.paragraphes.map((par) => (
-              <p key={par.slice(0, 40)}>{par}</p>
-            ))}
+          <div className="mx-auto max-w-4xl rounded-lg border border-plum/15 bg-plum/[0.04] p-8 text-[16.5px] leading-[1.7] text-body sm:p-10">
+            {/* Secteur d'intervention en tete de l'encart : le lecteur sait ou
+                la prestation est proposee avant d'en lire le detail. */}
+            <p className="text-[16px]">{c.secteur.phraseEspeces}</p>
+            <span aria-hidden="true" className="mt-7 mb-7 block h-px w-full bg-plum/15" />
+            <div className="space-y-4">
+              {c.rente.paragraphes.map((par) => (
+                <p key={par.slice(0, 40)}>{par}</p>
+              ))}
+            </div>
           </div>
 
           <div className="mt-12">

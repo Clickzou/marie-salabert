@@ -86,6 +86,10 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
         <Container width="full">
           {/* Encart centre, comme sur les deux autres pages d'especes */}
           <div className="mx-auto max-w-4xl rounded-lg border border-plum/15 bg-plum/[0.04] p-8 sm:p-10">
+            {/* Secteur d'intervention en tete de l'encart : le lecteur sait ou
+                la prestation est proposee avant d'en lire le detail. */}
+            <p className="text-[16px] leading-[1.7] text-body">{c.secteur.phraseEspeces}</p>
+            <span aria-hidden="true" className="mt-7 mb-7 block h-px w-full bg-plum/15" />
             <p className="text-[16.5px] leading-[1.7] text-body">{c.equides.etapesIntro}</p>
             <CheckList items={L.equinEtapes} className="mt-5" />
             <p className="mt-6 text-[15px] leading-relaxed text-body">{c.equides.etapesFin}</p>

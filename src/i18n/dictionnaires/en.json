@@ -452,6 +452,7 @@
       ]
     },
     "secteur": {
+      "phraseEspeces": "Main coverage in departments 31, 81, 82, 47, 46, 32, 12, 33, 09 and 11. Other departments may be considered when tours are organised.",
       "surTitre": "Area covered",
       "titre": "Approximately 1h45 drive around Toulouse"
     }
@@ -807,6 +808,7 @@
       "texte2": "As every animal is unique, a discussion will help assess the situation, answer your questions and guide you towards the most appropriate approach for your companion."
     },
     "secteur": {
+      "phraseEspeces": "Main coverage in departments 31, 81, 82, 47, 46, 32, 12, 33, 09 and 11. Other departments may be considered when tours are organised.",
       "surTitre": "Areas covered",
       "intro": "Main areas of intervention, approximately 1h45 by road around Toulouse, in the following départements:",
       "complement": "Other départements may be considered when organising rounds."
@@ -844,7 +846,7 @@
     },
     "rente": {
       "numero": "Bovine, ovine, caprine and porcine osteopathy",
-      "titre": "A complementary approach in support of farms",
+      "titre": "Rural osteopathy for farm and production animals",
       "chapo": "Animal osteopathy developed within the farming sector from the 2000s onwards. Historically, farmers in rural areas have always relied on traditional manual practices to support their animals through certain functional difficulties.",
       "paragraphes": [
         "Today, animal osteopathy continues this tradition by offering a structured manual approach, suited to current animal welfare standards and complementary to veterinary care.",
