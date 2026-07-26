@@ -92,7 +92,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
           >
             Marie Salabert
             <span
-              className={`block text-[10px] font-normal uppercase tracking-[0.14em] transition-colors duration-500 sm:text-[12px] sm:tracking-[0.18em] ${
+              className={`block text-[11px] font-normal uppercase tracking-[0.12em] transition-colors duration-500 sm:text-[12px] sm:tracking-[0.18em] ${
                 transparent ? "text-white/80" : "text-muted"
               }`}
             >

@@ -113,7 +113,10 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
       <Section>
         <Container width="full">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-20">
-            <Reveal className="lg:sticky lg:top-32 lg:self-start">
+            {/* `min-w-0` : sans lui, l'adresse electronique, mot insecable de
+                pres de 40 caracteres, imposait sa largeur a toute la grille et
+                debordait de l'ecran sur telephone. */}
+            <Reveal className="min-w-0 lg:sticky lg:top-32 lg:self-start">
               <h2 className="font-light uppercase text-[28px] leading-snug tracking-[0.05em] text-ink sm:text-[34px]">
                 {c.coordonnees}
               </h2>
@@ -200,7 +203,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               </div>
             </Reveal>
 
-            <Reveal delay={120}>
+            <Reveal delay={120} className="min-w-0">
               <div className="card p-8 sm:p-12">
                 <h2 className="font-light uppercase text-[24px] leading-snug text-ink sm:text-[28px] tracking-[0.05em]">
                   {c.formulaire.titre}

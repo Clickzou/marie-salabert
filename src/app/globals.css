@@ -362,6 +362,15 @@
 /* Apparitions au defilement (composant Reveal)                         */
 /* ------------------------------------------------------------------ */
 
+/* Les apparitions laterales decalent leur bloc de 28 px avant qu'il n'entre
+   dans le champ : sur telephone, cela suffisait a creer une barre de
+   defilement horizontale. `clip` la supprime sans casser les colonnes
+   collantes, ce que `hidden` aurait fait. */
+html,
+body {
+  overflow-x: clip;
+}
+
 [data-reveal] {
   opacity: 0;
   transition:
