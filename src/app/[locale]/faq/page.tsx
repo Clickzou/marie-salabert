@@ -341,7 +341,7 @@ const consultation: FaqItem[] = [
 const situations: FaqItem[] = [
   {
     question:
-      "Mon chien est très actif, méfiant ou réactif : comment se déroule une séance dans ce type de situation ?",
+      "Mon chien est méfiant ou réactif : comment se déroule une séance dans ce type de situation ?",
     answer: (
       <>
         <p>
