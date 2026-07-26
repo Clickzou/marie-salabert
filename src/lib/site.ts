@@ -98,17 +98,25 @@ export const sousMenuConsultations = [
   routes.rente,
 ] as const;
 
-/** `cle` renvoie vers l'entree correspondante de `nav` dans les dictionnaires. */
+/**
+ * `cle` renvoie vers l'entree correspondante de `nav` dans les dictionnaires.
+ *
+ * « Infos » regroupe les actualites et Symbiosteo, qui occupaient chacun une
+ * entree de premier niveau : deux rubriques editoriales sous un meme chapeau.
+ * Le lien du parent mene aux actualites, pour qu'un clic direct aboutisse.
+ */
 export const mainNav = [
   { cle: "accueil", href: routes.home },
   { cle: "aPropos", href: routes.about },
   { cle: "consultations", href: routes.consultations },
   { cle: "faq", href: routes.faq },
   { cle: "galerie", href: routes.gallery },
-  { cle: "actualites", href: routes.news },
+  { cle: "infos", href: routes.news },
   { cle: "contact", href: routes.contact },
-  { cle: "symbiosteo", href: routes.symbiosteo },
 ] as const;
+
+/** Sous-menu de « Infos ». */
+export const sousMenuInfos = [routes.news, routes.symbiosteo] as const;
 
 export const headerCta = {
   label: "Prendre un rendez-vous",

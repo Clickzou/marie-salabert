@@ -38,6 +38,20 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
 
   const transparent = surHero && !scrolled && !open;
 
+  /* Sous-menus, indexes par le lien de leur parent. Les libelles des especes
+     viennent de `consultations.sommaire`, ou ils servent deja aux cartes ; ceux
+     d'« Infos » viennent de `nav`. Un seul endroit a modifier pour en ajouter. */
+  const sousMenus: Record<string, { href: string; label: string }[]> = {
+    [routes.consultations]: sousMenuConsultations.map((href, i) => ({
+      href,
+      label: d.consultations.sommaire[i].menu,
+    })),
+    [routes.news]: [
+      { href: routes.news, label: d.nav.actualites },
+      { href: routes.symbiosteo, label: d.nav.symbiosteo },
+    ],
+  };
+
   return (
     <>
     <header
@@ -89,7 +103,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
             {mainNav.map((item) => {
               const actif =
                 item.href === "/" ? cheminNu === "/" : cheminNu.startsWith(item.href);
-              const sousMenu = item.href === routes.consultations ? sousMenuConsultations : null;
+              const sousMenu = sousMenus[item.href] ?? null;
 
               return (
                 /* `group/item` et non `group` : le filet anime sous l'intitule
@@ -124,12 +138,12 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                   {sousMenu && (
                     <div className="invisible absolute left-0 top-full z-50 pt-3 opacity-0 transition-opacity duration-200 group-hover/item:visible group-hover/item:opacity-100 group-focus-within/item:visible group-focus-within/item:opacity-100">
                       <ul className="min-w-[230px] overflow-hidden rounded-lg border border-line bg-white py-1.5 shadow-[0_20px_45px_-25px_rgba(22,23,26,0.45)]">
-                        {sousMenu.map((href, i) => {
-                          const courant = cheminNu === href;
+                        {sousMenu.map((entree) => {
+                          const courant = cheminNu === entree.href;
                           return (
-                            <li key={href}>
+                            <li key={entree.href}>
                               <Link
-                                href={cheminLocalise(href, locale)}
+                                href={cheminLocalise(entree.href, locale)}
                                 aria-current={courant ? "page" : undefined}
                                 /* Capitales espacees, comme les entrees du menu
                                    principal : le sous-menu en est le prolongement. */
@@ -137,7 +151,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                                   courant ? "text-plum" : "text-body hover:bg-surface hover:text-plum"
                                 }`}
                               >
-                                {d.consultations.sommaire[i].menu}
+                                {entree.label}
                               </Link>
                             </li>
                           );
@@ -193,7 +207,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
               {mainNav.map((item) => {
                 const actif =
                   item.href === "/" ? cheminNu === "/" : cheminNu.startsWith(item.href);
-                const sousMenu = item.href === routes.consultations ? sousMenuConsultations : null;
+                const sousMenu = sousMenus[item.href] ?? null;
 
                 return (
                   <li key={item.href}>
@@ -212,18 +226,18 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                         filet a gauche suffit a dire le rattachement. */}
                     {sousMenu && (
                       <ul className="mb-2 ml-1 border-l border-plum/20 pl-4">
-                        {sousMenu.map((href, i) => {
-                          const courant = cheminNu === href;
+                        {sousMenu.map((entree) => {
+                          const courant = cheminNu === entree.href;
                           return (
-                            <li key={href}>
+                            <li key={entree.href}>
                               <Link
-                                href={cheminLocalise(href, locale)}
+                                href={cheminLocalise(entree.href, locale)}
                                 aria-current={courant ? "page" : undefined}
                                 className={`block py-2.5 text-[12.5px] font-medium uppercase tracking-[0.06em] ${
                                   courant ? "text-plum" : "text-muted"
                                 }`}
                               >
-                                {d.consultations.sommaire[i].menu}
+                                {entree.label}
                               </Link>
                             </li>
                           );
