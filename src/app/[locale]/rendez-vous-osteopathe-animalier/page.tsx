@@ -71,7 +71,7 @@ export default async function RendezVousPage({
                   </span>
                   <div>
                     <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">
-                      {d.commun.telephone}
+                      {d.commun.joindreOsteopathe}
                     </p>
                     <a
                       href={site.phoneHref}
@@ -132,11 +132,13 @@ export default async function RendezVousPage({
                   </span>
                   <div>
                     <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">
-                      {d.commun.secretariat}
+                      {d.commun.numeroSecretariat}
                     </p>
+                    {/* Meme taille et meme couleur que le numero direct : les
+                        deux se valent, seul l'intitule les distingue. */}
                     <a
                       href={`tel:+33${site.secretariat.replace(/\s/g, "").slice(1)}`}
-                      className="mt-2 block text-[17px] font-medium text-ink transition-colors hover:text-plum"
+                      className="mt-2 block text-[22px] font-semibold text-plum transition-colors hover:text-plum-dark"
                     >
                       {site.secretariat}
                     </a>

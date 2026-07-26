@@ -25,6 +25,8 @@
     "suivant": "Next",
     "telephone": "Phone",
     "secretariat": "Reception desk",
+    "joindreOsteopathe": "To reach your osteopath directly",
+    "numeroSecretariat": "Reception desk number",
     "zoneIntervention": "Area covered",
     "sommaire": "Contents",
     "allerAuContenu": "Skip to content",
@@ -170,9 +172,10 @@
       "surTitre": "Area covered",
       "titre": "Where consultations take place",
       "domicileTitre": "At your home, in Occitanie and Nouvelle-Aquitaine",
-      "domicileTexte": "About 1 hour 45 minutes' drive around Toulouse, across the following eight departments:",
+      "domicileTexte": "About 1 hour 45 minutes' drive around Toulouse, across the following nine departments:",
       "cliniqueTitre": "At the practice, every Friday afternoon",
       "cliniqueTexte": "Val Dadou veterinary practice, in Graulhet (81).",
+      "cliniqueContact": "To book an appointment there, please contact the practice directly on 05 63 34 51 52",
       "guyaneTitre": "Tours in French Guiana, twice a year",
       "guyaneTexte": "Home visits and consultations at the following places:",
       "guyaneLieux": [
@@ -200,6 +203,10 @@
         {
           "code": "32",
           "nom": "Gers"
+        },
+        {
+          "code": "33",
+          "nom": "Gironde"
         },
         {
           "code": "46",
@@ -728,6 +735,10 @@
       {
         "code": "32",
         "nom": "Gers"
+      },
+      {
+        "code": "33",
+        "nom": "Gironde"
       },
       {
         "code": "12",

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { avis, googleAvis } from "@/content/avis";
@@ -17,6 +16,7 @@ import {
 import Reveal from "@/components/Reveal";
 import SecteurMap from "@/components/SecteurMap";
 import { CarrouselPhotos } from "@/components/CarrouselPhotos";
+import { CartesPublics } from "@/components/CartesPublics";
 
 export async function generateMetadata({
   params,
@@ -105,10 +105,9 @@ const photosPublics = [
   "/images/2025/05/IMG_2057.avif",
 ];
 
-const ARTICLE_HEGEL = "https://stm.cairn.info/revue-hegel-2026-1-page-5?lang=fr";
-
-/** Nombre d'indications affichées d'emblée ; les suivantes sont repliées. */
-const INDICATIONS_VISIBLES = 3;
+/* Numero de la clinique du Val Dadou. Il est isole du libelle traduit pour
+   pouvoir en faire un lien `tel:` sans le dupliquer dans chaque langue. */
+const CLINIQUE_TEL = "05 63 34 51 52";
 
 /**
  * Paragraphes du parcours visibles d'emblée ; la suite est repliée.
@@ -120,19 +119,6 @@ const INDICATIONS_VISIBLES = 3;
  * même endroit.
  */
 const PARCOURS_VISIBLE = 4;
-
-/** Ligne d'indication : puce discrète plutôt qu'une coche, les listes étant longues. */
-function Indication({ children }: { children: ReactNode }) {
-  return (
-    <li className="flex gap-3.5 text-[14.5px] leading-relaxed text-body">
-      <span
-        aria-hidden="true"
-        className="mt-[10px] h-[5px] w-[5px] shrink-0 rounded-full bg-plum/45"
-      />
-      <span>{children}</span>
-    </li>
-  );
-}
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -236,10 +222,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   ))}
                 </div>
               </details>
-
-              <div className="mt-8">
-                <Button href={ARTICLE_HEGEL}>{a.parcours.lireArticle}</Button>
-              </div>
             </Reveal>
           </div>
         </Container>
@@ -253,76 +235,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <SectionTitle className="mt-4">{a.pourQui.titre}</SectionTitle>
           </Reveal>
 
-          {/* Trois cartes illustrees : la photo porte la carte, les listes longues
-              sont repliees au-dela de trois lignes. */}
-          <ul className="mt-14 grid gap-6 lg:grid-cols-3 lg:gap-8">
-            {a.pourQui.liste.map((p, idx) => {
-              const visibles = p.indications.slice(0, INDICATIONS_VISIBLES);
-              const repliees = p.indications.slice(INDICATIONS_VISIBLES);
-              return (
-                <Reveal
-                  as="li"
-                  key={p.titre}
-                  delay={idx * 140}
-                  className="card card-hover group/media flex flex-col overflow-hidden border-transparent bg-white"
-                >
-                  <div className="overflow-hidden">
-                    <Image
-                      src={photosPublics[idx]}
-                      alt={p.alt}
-                      width={1024}
-                      height={768}
-                      sizes="(max-width: 1024px) 100vw, 33vw"
-                      className="img-zoom aspect-[16/10] w-full object-cover"
-                    />
-                  </div>
-                  <div className="flex flex-1 flex-col p-8 sm:p-10">
-                    <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">
-                      {p.sousTitre}
-                    </p>
-                    <h3 className="mt-3 text-[24px] leading-snug text-plum">{p.titre}</h3>
-
-                    <ul className="mt-7 space-y-3.5">
-                      {visibles.map((item) => (
-                        <Indication key={item}>{item}</Indication>
-                      ))}
-                    </ul>
-
-                    {repliees.length > 0 && (
-                      /* mt-auto : le lien se cale en bas, les trois cartes finissent alignees */
-                      <details className="disclosure mt-auto pt-6">
-                        <summary className="inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-plum transition-colors hover:text-plum-dark focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-plum">
-                          <span className="when-closed">
-                            {a.pourQui.voirAutres.replace("{n}", String(repliees.length))}
-                          </span>
-                          <span className="when-open">{a.pourQui.reduire}</span>
-                          <svg
-                            className="chevron"
-                            width="14"
-                            height="14"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            aria-hidden="true"
-                          >
-                            <path d="M6 9l6 6 6-6" />
-                          </svg>
-                        </summary>
-                        <ul className="mt-3.5 space-y-3.5">
-                          {repliees.map((item) => (
-                            <Indication key={item}>{item}</Indication>
-                          ))}
-                        </ul>
-                      </details>
-                    )}
-                  </div>
-                </Reveal>
-              );
-            })}
-          </ul>
+          {/* Trois cartes illustrees : la photo porte la carte, les listes
+              longues sont repliees au-dela de trois lignes. Sur ordinateur les
+              trois s'ouvrent d'un seul clic — voir le composant. */}
+          <CartesPublics
+            items={a.pourQui.liste}
+            photos={photosPublics}
+            libelles={{ voirAutres: a.pourQui.voirAutres, reduire: a.pourQui.reduire }}
+          />
 
           <Reveal className="mt-12 text-center">
             <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.prendreRdv}</Button>
@@ -351,26 +271,28 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   <p key={par.slice(0, 40)}>{par}</p>
                 ))}
               </div>
-              <div className="mt-7 flex flex-wrap items-center gap-x-8 gap-y-3">
-                <a
-                  href={site.phoneHref}
-                  className="inline-flex items-center gap-3 text-[24px] font-semibold text-green"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z" />
-                  </svg>
-                  {site.phone}
-                </a>
-                <p className="text-[15px] text-body">
-                  {d.commun.secretariat} :{" "}
-                  <a
-                    href={`tel:+33${site.secretariat.replace(/\s/g, "").slice(1)}`}
-                    className="font-semibold text-green hover:underline"
-                  >
-                    {site.secretariat}
-                  </a>
-                </p>
-              </div>
+              {/* Les deux numeros ont le meme poids : ce sont deux entrees
+                  equivalentes, c'est l'intitule qui les distingue. */}
+              <ul className="mt-7 space-y-3">
+                {[
+                  { label: d.commun.joindreOsteopathe, numero: site.phone, href: site.phoneHref },
+                  {
+                    label: d.commun.numeroSecretariat,
+                    numero: site.secretariat,
+                    href: `tel:+33${site.secretariat.replace(/\s/g, "").slice(1)}`,
+                  },
+                ].map((ligne) => (
+                  <li key={ligne.numero} className="text-[16px] leading-relaxed text-body">
+                    {ligne.label} :{" "}
+                    <a
+                      href={ligne.href}
+                      className="text-[20px] font-semibold text-green transition-colors hover:text-green-light"
+                    >
+                      {ligne.numero}
+                    </a>
+                  </li>
+                ))}
+              </ul>
               <div className="mt-6 space-y-2 text-[15px] leading-relaxed text-body">
                 <p>{a.rendezVous.tarif}</p>
                 <p className="font-medium text-ink">{a.rendezVous.paiement}</p>
@@ -406,6 +328,17 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <div className="mt-10 border-t border-ink/10 pt-8">
                 <h3 className="text-[21px] leading-snug text-plum">{a.lieux.cliniqueTitre}</h3>
                 <p className="mt-3 text-[16px] leading-relaxed text-body">{a.lieux.cliniqueTexte}</p>
+                {/* Les rendez-vous a la clinique ne passent pas par le
+                    secretariat : le numero doit etre appelable au doigt. */}
+                <p className="mt-2 text-[16px] leading-relaxed text-body">
+                  {a.lieux.cliniqueContact.replace(CLINIQUE_TEL, "").trimEnd()}{" "}
+                  <a
+                    href={`tel:+33${CLINIQUE_TEL.replace(/\s/g, "").slice(1)}`}
+                    className="font-semibold text-green transition-colors hover:text-green-light"
+                  >
+                    {CLINIQUE_TEL}
+                  </a>
+                </p>
               </div>
             </Reveal>
 

@@ -25,6 +25,8 @@
     "suivant": "Suivant",
     "telephone": "Téléphone",
     "secretariat": "Secrétariat",
+    "joindreOsteopathe": "Pour joindre directement votre ostéopathe",
+    "numeroSecretariat": "Numéro du Secrétariat",
     "zoneIntervention": "Zone d'intervention",
     "sommaire": "Sommaire",
     "allerAuContenu": "Aller au contenu",
@@ -170,9 +172,10 @@
       "surTitre": "Secteur d'intervention",
       "titre": "Les lieux de consultation",
       "domicileTitre": "À votre domicile, en Occitanie et Nouvelle-Aquitaine",
-      "domicileTexte": "Environ 1h45 de route autour de Toulouse, sur les huit départements suivants :",
+      "domicileTexte": "Environ 1h45 de route autour de Toulouse, sur les neuf départements suivants :",
       "cliniqueTitre": "En clinique, tous les vendredis après-midi",
       "cliniqueTexte": "Clinique vétérinaire du Val Dadou, à Graulhet (81).",
+      "cliniqueContact": "Pour toute prise de rendez-vous il vous faut contacter directement la clinique au 05 63 34 51 52",
       "guyaneTitre": "Tournées en Guyane française, deux fois par an",
       "guyaneTexte": "Déplacement à domicile et dans les endroits suivants :",
       "guyaneLieux": [
@@ -200,6 +203,10 @@
         {
           "code": "32",
           "nom": "Gers"
+        },
+        {
+          "code": "33",
+          "nom": "Gironde"
         },
         {
           "code": "46",
@@ -728,6 +735,10 @@
       {
         "code": "32",
         "nom": "Gers"
+      },
+      {
+        "code": "33",
+        "nom": "Gironde"
       },
       {
         "code": "12",

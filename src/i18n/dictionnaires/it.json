@@ -25,6 +25,8 @@
     "suivant": "Successivo",
     "telephone": "Telefono",
     "secretariat": "Segreteria",
+    "joindreOsteopathe": "Per contattare direttamente la tua osteopata",
+    "numeroSecretariat": "Numero della segreteria",
     "zoneIntervention": "Zona di intervento",
     "sommaire": "Sommario",
     "allerAuContenu": "Vai al contenuto",
@@ -170,9 +172,10 @@
       "surTitre": "Zona di intervento",
       "titre": "I luoghi delle sedute",
       "domicileTitre": "A domicilio, in Occitania e Nuova Aquitania",
-      "domicileTexte": "Circa 1 ora e 45 minuti di strada intorno a Tolosa, nei seguenti otto dipartimenti:",
+      "domicileTexte": "Circa 1 ora e 45 minuti di strada intorno a Tolosa, nei seguenti nove dipartimenti:",
       "cliniqueTitre": "In clinica, ogni venerdì pomeriggio",
       "cliniqueTexte": "Clinica veterinaria du Val Dadou, a Graulhet (81).",
+      "cliniqueContact": "Per qualsiasi prenotazione in questa sede, contattate direttamente la clinica al 05 63 34 51 52",
       "guyaneTitre": "Tour nella Guyana francese, due volte all'anno",
       "guyaneTexte": "Visite a domicilio e nelle sedi seguenti:",
       "guyaneLieux": [
@@ -200,6 +203,10 @@
         {
           "code": "32",
           "nom": "Gers"
+        },
+        {
+          "code": "33",
+          "nom": "Gironde"
         },
         {
           "code": "46",
@@ -728,6 +735,10 @@
       {
         "code": "32",
         "nom": "Gers"
+      },
+      {
+        "code": "33",
+        "nom": "Gironde"
       },
       {
         "code": "12",
