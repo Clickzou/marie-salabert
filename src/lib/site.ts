@@ -57,7 +57,10 @@ export const routes = {
   faq: "/faq",
   gallery: "/galerie",
   symbiosteo: "/symbiosteo-2",
-  booking: "/reservation",
+  /* `/reservation` a ete supprimee : elle reprenait le formulaire et les
+     coordonnees de la page de rendez-vous. Tous les appels a l'action pointent
+     desormais sur cette derniere, et l'ancienne URL y est redirigee dans
+     `next.config.ts`. */
   contact: "/rendez-vous-osteopathe-animalier",
   legal: "/mentions-legales",
   privacy: "/politique-de-confidentialite",
@@ -74,7 +77,6 @@ export const heroRoutes: readonly string[] = [
   routes.consultations,
   routes.certification,
   routes.faq,
-  routes.booking,
 ];
 
 /** `cle` renvoie vers l'entree correspondante de `nav` dans les dictionnaires. */
@@ -101,7 +103,6 @@ export const headerCta = {
 export const footerNav = [
   { cle: "aPropos", href: routes.about },
   { cle: "contact", href: routes.contact },
-  { cle: "reserver", href: routes.booking },
   { cle: "cookies", href: routes.cookies },
   { cle: "mentions", href: routes.legal },
   { cle: "confidentialite", href: routes.privacy },

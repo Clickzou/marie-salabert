@@ -110,6 +110,17 @@ const ARTICLE_HEGEL = "https://stm.cairn.info/revue-hegel-2026-1-page-5?lang=fr"
 /** Nombre d'indications affichées d'emblée ; les suivantes sont repliées. */
 const INDICATIONS_VISIBLES = 3;
 
+/**
+ * Paragraphes du parcours visibles d'emblée ; la suite est repliée.
+ *
+ * La coupe tombe après l'engagement associatif, avant le détail des mandats :
+ * les quatre premiers paragraphes disent qui elle est et où elle exerce, les
+ * suivants entrent dans le détail d'un parcours institutionnel. Le découpage
+ * est le même dans les trois langues, les dictionnaires ayant été scindés au
+ * même endroit.
+ */
+const PARCOURS_VISIBLE = 4;
+
 /** Ligne d'indication : puce discrète plutôt qu'une coche, les listes étant longues. */
 function Indication({ children }: { children: ReactNode }) {
   return (
@@ -135,7 +146,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         images={photosHero}
         title={a.meta.titreHero}
         subtitle={a.heroSousTitre}
-        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.booking, locale) }}
+        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.contact, locale) }}
       />
       <CertificationBadge
         href={cheminLocalise(routes.certification, locale)}
@@ -150,40 +161,84 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Section>
         <Container width="wide">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-            <Reveal className="relative">
-              <div className="group/media overflow-hidden rounded-lg">
+            <Reveal>
+              {/* Le motif decoratif deborde du portrait : il est ancre a
+                  l'image, et non a la colonne, sinon il descendrait se placer
+                  derriere le bouton ajoute dessous. */}
+              <div className="relative">
+                <div className="group/media overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/2023/05/marie-salabert.jpg"
+                    alt={a.parcours.alt}
+                    width={900}
+                    height={900}
+                    sizes="(max-width: 1024px) 100vw, 45vw"
+                    className="img-zoom w-full object-cover"
+                  />
+                </div>
                 <Image
-                  src="/images/2023/05/marie-salabert.jpg"
-                  alt={a.parcours.alt}
-                  width={900}
-                  height={900}
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                  className="img-zoom w-full object-cover"
+                  src="/images/2023/05/square-pattern.png"
+                  alt=""
+                  aria-hidden="true"
+                  width={154}
+                  height={155}
+                  className="pointer-events-none absolute -bottom-10 -left-8 hidden w-[154px] select-none lg:block"
                 />
               </div>
-              <Image
-                src="/images/2023/05/square-pattern.png"
-                alt=""
-                aria-hidden="true"
-                width={154}
-                height={155}
-                className="pointer-events-none absolute -bottom-10 -left-8 hidden w-[154px] select-none lg:block"
-              />
+
+              {/* « Pour en savoir plus » accompagne desormais le portrait : il
+                  quitte la colonne de texte, ou il entrait en concurrence avec
+                  la commande de depliage. La marge haute degage le motif, qui
+                  deborde de 40 px sous l'image. */}
+              <Button
+                href={cheminLocalise(routes.news, locale)}
+                variant="outline"
+                className="mt-10 lg:mt-16"
+              >
+                {a.parcours.enSavoirPlus}
+              </Button>
             </Reveal>
 
             <Reveal delay={120}>
               <Eyebrow>{a.parcours.surTitre}</Eyebrow>
               <SectionTitle className="mt-4">{a.parcours.titre}</SectionTitle>
               <div className="mt-6 space-y-4 text-[16px] leading-relaxed text-body">
-                {a.parcours.paragraphes.map((par) => (
+                {a.parcours.paragraphes.slice(0, PARCOURS_VISIBLE).map((par) => (
                   <p key={par.slice(0, 40)}>{par}</p>
                 ))}
               </div>
-              <div className="mt-8 flex flex-wrap gap-4">
+
+              {/* Repli natif : le texte masque reste dans le document — il est
+                  donc indexe et trouvable par la recherche du navigateur — et
+                  l'ouverture ne demande aucun JavaScript. */}
+              <details className="disclosure mt-3">
+                <summary className="inline-flex items-center gap-2 py-2 text-[14.5px] font-medium text-plum">
+                  <span className="when-closed">{d.commun.lireSuite}</span>
+                  <span className="when-open">{d.commun.reduire}</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                    className="chevron"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </summary>
+                <div className="mt-2 space-y-4 text-[16px] leading-relaxed text-body">
+                  {a.parcours.paragraphes.slice(PARCOURS_VISIBLE).map((par) => (
+                    <p key={par.slice(0, 40)}>{par}</p>
+                  ))}
+                </div>
+              </details>
+
+              <div className="mt-8">
                 <Button href={ARTICLE_HEGEL}>{a.parcours.lireArticle}</Button>
-                <Button href={cheminLocalise(routes.news, locale)} variant="outline">
-                  {a.parcours.enSavoirPlus}
-                </Button>
               </div>
             </Reveal>
           </div>
@@ -270,7 +325,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </ul>
 
           <Reveal className="mt-12 text-center">
-            <Button href={cheminLocalise(routes.booking, locale)}>{d.commun.prendreRdv}</Button>
+            <Button href={cheminLocalise(routes.contact, locale)}>{d.commun.prendreRdv}</Button>
           </Reveal>
         </Container>
       </Section>
@@ -446,7 +501,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <CtaBand
         image="/images/2025/05/a-propos-osteopathe-animalier.jpg"
         title={a.cta}
-        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.booking, locale) }}
+        cta={{ label: d.commun.prendreRdv, href: cheminLocalise(routes.contact, locale) }}
       />
 
       <Testimonials
@@ -460,7 +515,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Section className="py-16 text-center">
         <Container width="wide">
           <Reveal>
-            <Button href={cheminLocalise(routes.booking, locale)} variant="gold">
+            <Button href={cheminLocalise(routes.contact, locale)} variant="gold">
               {d.commun.reserverSeance}
             </Button>
           </Reveal>

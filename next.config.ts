@@ -47,6 +47,14 @@ const nextConfig: NextConfig = {
       // liens du footer WordPress qui pointaient vers des pages inexistantes
       { source: "/a-propos", destination: "/osteopahie-animale", permanent: true },
       { source: "/contact", destination: "/rendez-vous-osteopathe-animalier", permanent: true },
+      /* `/reservation` a ete supprimee : elle reprenait le formulaire et les
+         coordonnees de la page de rendez-vous. L'URL etait indexee, elle est
+         donc redirigee et non abandonnee. */
+      {
+        source: "/reservation",
+        destination: "/rendez-vous-osteopathe-animalier",
+        permanent: true,
+      },
       // anciennes URLs WordPress vers leur equivalent
       { source: "/accueil", destination: "/", permanent: true },
       { source: "/category/:slug", destination: "/categorie/:slug", permanent: true },

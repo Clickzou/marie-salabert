@@ -6,7 +6,6 @@ import Link from "next/link";
 import { routes } from "@/lib/site";
 import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
 import { PageHero } from "@/components/sections";
-import { MissingVisual } from "@/components/AProposPlaceholder";
 
 export async function generateMetadata({
   params,
@@ -30,8 +29,10 @@ export async function generateMetadata({
   };
 }
 
-const RNA_LIST_URL =
-  "https://www.veterinaire.fr/annuaires/liste-des-personnes-non-veterinaires-pouvant-realiser-des-actes-dosteopathie-animale/liste-regionale-occitanie";
+/* Annuaire national des osteopathes inscrits au RNA, tenu par l'Ordre. Il
+   remplace la liste regionale Occitanie : le libelle du bouton perd donc sa
+   mention de region, qui ne correspondrait plus a la page d'arrivee. */
+const RNA_LIST_URL = "https://extranet.veterinaire.fr/annuaires/osteopathes";
 
 export default function CertificationPage() {
   return (
@@ -50,8 +51,9 @@ export default function CertificationPage() {
       <Section>
         <Container>
           <div className="mx-auto max-w-3xl text-center">
-            <Eyebrow className="justify-center">Cadre réglementaire</Eyebrow>
-            <SectionTitle className="mt-3">Une profession réglementée</SectionTitle>
+            {/* « Cadre réglementaire » devient le titre : le sur-titre et le
+                titre disaient la même chose, l'un au-dessus de l'autre. */}
+            <SectionTitle>Cadre réglementaire</SectionTitle>
             <p className="mt-6 text-[17px] leading-relaxed text-body">
               Depuis 2011, l’ostéopathie animale est réglementée et encadrée par la profession
               vétérinaire ! Pour exercer en France il est donc obligatoire de figurer sur ce
@@ -67,7 +69,7 @@ export default function CertificationPage() {
 
             <div className="mt-10">
               <Button href={RNA_LIST_URL} variant="plum">
-                Vérifier mon inscription (liste Occitanie)
+                Vérifier mon inscription
                 <svg
                   width="16"
                   height="16"
@@ -95,46 +97,29 @@ export default function CertificationPage() {
             <Eyebrow className="justify-center">Preuve d’inscription</Eyebrow>
             <SectionTitle className="mt-3">Justificatif d’inscription au RNA</SectionTitle>
             <p className="mt-6 text-[16px] leading-relaxed text-muted">
-              Le document officiel attestant de mon inscription au Registre National d’Aptitude,
-              accompagné de mon diplôme d’ostéopathe animalier.
+              Le document officiel attestant de mon inscription au Registre National d’Aptitude.
             </p>
           </div>
 
-          <div className="mx-auto mt-14 grid max-w-4xl items-start gap-10 md:grid-cols-2">
-            {/* Attestation RNA : emplacement provisoire, document a fournir */}
-            <figure className="flex flex-col">
-              <MissingVisual
-                label="Attestation d’inscription au RNA — document à fournir (PDF ou image)"
-                className="min-h-[420px] w-full bg-white"
+          {/* Un seul justificatif : l'attestation de l'Ordre. Le nom du fichier
+              parle de diplome, mais le document scanne est bien l'attestation
+              d'inscription au RNA — c'est son intitule qui fait foi ici.
+              L'emplacement vide qui l'accompagnait a ete supprime. */}
+          <figure className="mx-auto mt-14 flex max-w-[440px] flex-col">
+            <div className="overflow-hidden rounded-[6px] border border-black/10 bg-white p-3 shadow-sm">
+              <Image
+                src="/images/2023/05/Diplome-osteopathe-animalier-marie-salabert.png"
+                alt="Attestation d’inscription au Registre National d’Aptitude délivrée à Marie Salabert par le Conseil national de l’Ordre des vétérinaires"
+                width={511}
+                height={740}
+                sizes="(max-width: 768px) 90vw, 440px"
+                className="mx-auto h-auto w-full"
               />
-              <figcaption className="mt-4 text-center text-[14px] font-medium text-ink">
-                Attestation d’inscription au RNA
-                <span className="mt-1 block text-[13px] font-normal text-muted">
-                  Document officiel à fournir
-                </span>
-              </figcaption>
-            </figure>
-
-            {/* Justificatif complementaire : diplome deja scanne */}
-            <figure className="flex flex-col">
-              <div className="overflow-hidden rounded-[6px] border border-black/10 bg-white p-3 shadow-sm">
-                <Image
-                  src="/images/2023/05/Diplome-osteopathe-animalier-marie-salabert.png"
-                  alt="Diplôme d’ostéopathe animalier de Marie Salabert"
-                  width={511}
-                  height={740}
-                  sizes="(max-width: 768px) 90vw, 400px"
-                  className="mx-auto h-auto w-full"
-                />
-              </div>
-              <figcaption className="mt-4 text-center text-[14px] font-medium text-ink">
-                Diplôme d’ostéopathe animalier
-                <span className="mt-1 block text-[13px] font-normal text-muted">
-                  Justificatif complémentaire
-                </span>
-              </figcaption>
-            </figure>
-          </div>
+            </div>
+            <figcaption className="mt-4 text-center text-[14px] font-medium text-ink">
+              Attestation d’inscription au RNA
+            </figcaption>
+          </figure>
         </Container>
       </Section>
 
