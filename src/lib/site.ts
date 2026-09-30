@@ -7,8 +7,8 @@ export const site = {
   name: "Ostheopathie animale Toulouse",
   practitioner: "Marie Salabert",
   tagline: "La santé de vos animaux par l'ostéopathie",
-  // A remplacer par le domaine definitif au moment de la mise en production
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://osteopathie-animale.fr",
+  // Domaine de production : la version avec www, deja indexee par Google sur l'ancien site
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.osteopathie-animale-toulouse.fr",
   locale: "fr_FR",
   phone: "06 37 88 00 73",
   phoneHref: "tel:+33637880073",
