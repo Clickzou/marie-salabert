@@ -37,7 +37,7 @@ export default function SelecteurLangue({
         onClick={() => setOuvert((v) => !v)}
         aria-expanded={ouvert}
         aria-label={etiquette}
-        className={`flex items-center gap-1.5 rounded-[10px] px-3 py-2 text-[13px] font-medium uppercase tracking-[0.08em] transition-colors duration-500 ${
+        className={`flex items-center gap-1.5 rounded-[10px] px-2 py-2 text-[13px] sm:px-3 font-medium uppercase tracking-[0.08em] transition-colors duration-500 ${
           transparent
             ? "text-white/90 hover:text-white"
             : "text-body hover:text-plum"

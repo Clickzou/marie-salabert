@@ -63,13 +63,13 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
     >
       <Container
         width="wide"
-        className={`flex items-center justify-between gap-4 transition-[height] duration-500 ${
+        className={`flex items-center justify-between gap-2 transition-[height] sm:gap-4 duration-500 ${
           transparent ? "h-[104px]" : "h-[78px]"
         }`}
       >
         <Link
           href={cheminLocalise("/", locale)}
-          className="flex shrink-0 items-center gap-3"
+          className="flex min-w-0 items-center gap-2 sm:gap-3"
           aria-label={site.name}
         >
           <Image
@@ -78,13 +78,15 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
             width={300}
             height={293}
             priority
-            className={`w-auto transition-all duration-500 ${
+            className={`w-auto shrink-0 transition-all duration-500 ${
               transparent ? "h-[58px] drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]" : "h-[48px]"
             }`}
           />
           {/* Le nom accompagne le pictogramme a toutes les largeurs : sur
               telephone le logo seul ne disait pas de qui est le site. Il y
-              tient parce que l'appel a l'action y est masque. */}
+              tient parce que l'appel a l'action y est masque ; sur les plus
+              petits ecrans (320-360px), le sous-titre passe a la ligne plutot
+              que de pousser le bouton du menu hors de l'ecran. */}
           <span
             className={`font-display text-[16px] font-semibold leading-tight transition-colors duration-500 sm:text-[19px] ${
               transparent ? "text-white drop-shadow-sm" : "text-plum"
@@ -92,7 +94,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
           >
             Marie Salabert
             <span
-              className={`block text-[11px] font-normal uppercase tracking-[0.12em] transition-colors duration-500 sm:text-[12px] sm:tracking-[0.18em] ${
+              className={`block text-[11px] font-normal uppercase tracking-[0.08em] transition-colors duration-500 sm:text-[12px] sm:tracking-[0.18em] ${
                 transparent ? "text-white/80" : "text-muted"
               }`}
             >
@@ -168,7 +170,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
           </ul>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-1 sm:gap-3">
           <SelecteurLangue locale={locale} transparent={transparent} etiquette={d.nav.changerLangue} />
 
           <Link
