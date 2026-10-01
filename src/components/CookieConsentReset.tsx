@@ -11,8 +11,8 @@ export default function CookieConsentReset() {
   const choice = useConsent();
 
   const labels = {
-    accepted: "vous avez accepté les contenus tiers",
-    refused: "vous avez refusé les contenus tiers",
+    accepted: "vous avez accepté les contenus tiers et la mesure d’audience",
+    refused: "vous avez refusé les contenus tiers et la mesure d’audience",
   } as const;
 
   return (

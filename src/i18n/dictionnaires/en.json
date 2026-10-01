@@ -64,7 +64,7 @@
   },
   "cookies": {
     "titre": "Cookie settings",
-    "texte": "This website uses no advertising trackers. Some external content (map, videos) may set cookies: it is only displayed with your consent.",
+    "texte": "This website uses no advertising trackers. With your consent, it measures its traffic (Google Analytics) and displays some external content (map, videos) that may set cookies.",
     "accepter": "Accept",
     "refuser": "Decline",
     "enSavoirPlus": "Learn more"
@@ -1206,7 +1206,7 @@
     "cookies": {
       "titre": "Cookie Policy (EU)",
       "intro": [
-        "This cookie policy was last updated on 22/07/2026 and applies to citizens and legal permanent residents of the European Economic Area and Switzerland."
+        "This cookie policy was last updated on 01/10/2026 and applies to citizens and legal permanent residents of the European Economic Area and Switzerland."
       ],
       "sections": [
         {
@@ -1237,11 +1237,12 @@
           "titre": "5. Cookies",
           "paragraphes": [
             "Certain cookies ensure that particular parts of the website function properly and that your preferences as a user are taken into account. By placing functional cookies, we make it easier for you to visit our website: you will not need to repeatedly enter the same information when visiting our website. We may place these cookies without your consent.",
-            "Marketing/tracking cookies are cookies or any other form of local storage used to build user profiles in order to display advertisements or to track a user on this website or across multiple websites for similar marketing purposes. Our website does not place any marketing or tracking cookies, and does not use any audience measurement tools."
+            "Marketing/tracking cookies are cookies or any other form of local storage used to build user profiles in order to display advertisements or to track a user on this website or across multiple websites for similar marketing purposes. Our website does not place any marketing or advertising tracking cookies. It does, however, use Google Analytics to measure its traffic (pages viewed, where visits come from, type of device): these statistics cookies are only placed with your consent, and the advertising features of Google Analytics are disabled. The data is processed by Google Ireland Limited and may be transferred to the United States under the EU–US Data Privacy Framework."
           ],
           "sousTitres": [
             "5.1 Technical or functional cookies",
-            "5.2 Marketing/tracking cookies"
+            "5.2 Marketing/tracking cookies",
+            "5.3 Statistics cookies"
           ]
         },
         {
@@ -1254,7 +1255,7 @@
         {
           "titre": "7. Consent",
           "paragraphes": [
-            "When you visit our website for the first time, we display a banner with an explanation about cookies. As soon as you click \"Accept\", you authorise us to load the third-party content described in this cookie policy. If you click \"Decline\", no third-party content is loaded and the site remains fully usable. Your choice is stored on your device and is not shared with anyone."
+            "When you visit our website for the first time, we display a banner with an explanation about cookies. As soon as you click \"Accept\", you authorise us to load the third-party content and the audience measurement tool (Google Analytics) described in this cookie policy. If you click \"Decline\", no third-party content is loaded, no audience measurement takes place and the site remains fully usable. Your choice is stored on your device and is not shared with anyone."
           ],
           "sousTitres": [
             "7.1 Manage your consent settings"
@@ -1304,9 +1305,23 @@
           {
             "nom": "cookie-consent",
             "type": "Local storage (localStorage)",
-            "finalite": "Remembers your choice to accept or decline third-party content",
+            "finalite": "Remembers your choice to accept or decline third-party content and audience measurement",
             "duree": "Until deleted from your browser",
             "categorie": "Functional"
+          },
+          {
+            "nom": "_ga",
+            "type": "Cookie (Google Analytics)",
+            "finalite": "Distinguishes visitors in order to produce traffic statistics",
+            "duree": "13 months",
+            "categorie": "Statistics"
+          },
+          {
+            "nom": "_ga_4GSH30VZPE",
+            "type": "Cookie (Google Analytics)",
+            "finalite": "Keeps track of the current visit for traffic statistics",
+            "duree": "13 months",
+            "categorie": "Statistics"
           }
         ],
         "note": "The map of the service area uses OpenStreetMap base layers: they do not set any cookies, only the IP address is sent to the tile server to display the map."

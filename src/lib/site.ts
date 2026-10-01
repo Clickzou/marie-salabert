@@ -10,6 +10,8 @@ export const site = {
   // Domaine de production : la version avec www, deja indexee par Google sur l'ancien site
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.osteopathie-animale-toulouse.fr",
   locale: "fr_FR",
+  // Mesure d'audience Google Analytics 4, chargee seulement apres consentement
+  analyticsId: "G-4GSH30VZPE",
   phone: "06 37 88 00 73",
   phoneHref: "tel:+33637880073",
   whatsapp: "https://wa.me/33637880073",

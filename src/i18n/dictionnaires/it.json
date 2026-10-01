@@ -64,7 +64,7 @@
   },
   "cookies": {
     "titre": "Gestione dei cookie",
-    "texte": "Questo sito non utilizza alcun tracciante pubblicitario. Alcuni contenuti esterni (mappa, video) possono installare cookie: vengono mostrati solo con il tuo consenso.",
+    "texte": "Questo sito non utilizza alcun tracciante pubblicitario. Con il tuo consenso, misura le proprie visite (Google Analytics) e mostra alcuni contenuti esterni (mappa, video) che possono installare cookie.",
     "accepter": "Accetta",
     "refuser": "Rifiuta",
     "enSavoirPlus": "Scopri di più"
@@ -1218,7 +1218,7 @@
     "cookies": {
       "titre": "Politica sui cookie (UE)",
       "intro": [
-        "Questa politica sui cookie è stata aggiornata l'ultima volta il 22/07/2026 e si applica ai cittadini e ai residenti permanenti legali dello Spazio Economico Europeo e della Svizzera."
+        "Questa politica sui cookie è stata aggiornata l'ultima volta il 01/10/2026 e si applica ai cittadini e ai residenti permanenti legali dello Spazio Economico Europeo e della Svizzera."
       ],
       "sections": [
         {
@@ -1249,11 +1249,12 @@
           "titre": "5. Cookie",
           "paragraphes": [
             "Alcuni cookie garantiscono il corretto funzionamento di determinate parti del sito web e la considerazione delle vostre preferenze come utente. Posizionando cookie funzionali, vi facilitiamo la visita al nostro sito web: non dovete inserire ripetutamente le stesse informazioni durante la visita al nostro sito web. Possiamo depositare questi cookie senza il vostro consenso.",
-            "I cookie di marketing/tracciamento sono cookie o qualsiasi altra forma di archiviazione locale, utilizzati per creare profili utente al fine di mostrare pubblicità o tracciare l'utente su questo sito web o su più siti web per finalità di marketing simili. Il nostro sito web non deposita alcun cookie di marketing o di tracciamento, e non utilizza alcuno strumento di misurazione dell'audience."
+            "I cookie di marketing/tracciamento sono cookie o qualsiasi altra forma di archiviazione locale, utilizzati per creare profili utente al fine di mostrare pubblicità o tracciare l'utente su questo sito web o su più siti web per finalità di marketing simili. Il nostro sito web non deposita alcun cookie di marketing o di tracciamento pubblicitario. Utilizza invece Google Analytics per misurare le proprie visite (pagine viste, provenienza delle visite, tipo di dispositivo): questi cookie statistici vengono depositati solo con il vostro consenso, e le funzioni pubblicitarie di Google Analytics sono disattivate. I dati sono trattati da Google Ireland Limited e possono essere trasferiti negli Stati Uniti nell'ambito del Data Privacy Framework UE–USA."
           ],
           "sousTitres": [
             "5.1 Cookie tecnici o funzionali",
-            "5.2 Cookie di marketing/tracciamento"
+            "5.2 Cookie di marketing/tracciamento",
+            "5.3 Cookie statistici"
           ]
         },
         {
@@ -1266,7 +1267,7 @@
         {
           "titre": "7. Consenso",
           "paragraphes": [
-            "Quando visitate il nostro sito web per la prima volta, vi mostriamo un banner con una spiegazione sui cookie. Non appena cliccate su «Accetta», ci autorizzate a caricare i contenuti di terze parti descritti nella presente politica sui cookie. Se cliccate su «Rifiuta», nessun contenuto di terze parti viene caricato e il sito rimane pienamente utilizzabile. La vostra scelta viene conservata sul vostro dispositivo e non viene trasmessa a nessuno."
+            "Quando visitate il nostro sito web per la prima volta, vi mostriamo un banner con una spiegazione sui cookie. Non appena cliccate su «Accetta», ci autorizzate a caricare i contenuti di terze parti e lo strumento di misurazione dell'audience (Google Analytics) descritti nella presente politica sui cookie. Se cliccate su «Rifiuta», nessun contenuto di terze parti viene caricato, nessuna misurazione dell'audience viene effettuata e il sito rimane pienamente utilizzabile. La vostra scelta viene conservata sul vostro dispositivo e non viene trasmessa a nessuno."
           ],
           "sousTitres": [
             "7.1 Gestite le vostre impostazioni di consenso"
@@ -1316,9 +1317,23 @@
           {
             "nom": "cookie-consent",
             "type": "Archiviazione locale (localStorage)",
-            "finalite": "Memorizzare la vostra scelta di accettare o rifiutare i contenuti di terze parti",
+            "finalite": "Memorizzare la vostra scelta di accettare o rifiutare i contenuti di terze parti e la misurazione dell'audience",
             "duree": "Fino alla sua eliminazione dal vostro browser",
             "categorie": "Funzionale"
+          },
+          {
+            "nom": "_ga",
+            "type": "Cookie (Google Analytics)",
+            "finalite": "Distinguere i visitatori per elaborare statistiche sulle visite",
+            "duree": "13 mesi",
+            "categorie": "Statistici"
+          },
+          {
+            "nom": "_ga_4GSH30VZPE",
+            "type": "Cookie (Google Analytics)",
+            "finalite": "Conservare lo stato della visita in corso per le statistiche sulle visite",
+            "duree": "13 mesi",
+            "categorie": "Statistici"
           }
         ],
         "note": "La mappa della zona d'intervento si basa sulle mappe OpenStreetMap: queste non depositano alcun cookie, viene trasmesso solo l'indirizzo IP al server delle tessere per visualizzare la mappa."

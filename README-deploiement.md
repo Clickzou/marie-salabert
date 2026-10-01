@@ -46,6 +46,8 @@ forme que l'ancien site WordPress servait et que Google a indexée.
 | Boîtes mail du domaine | même compte o2switch (webmail) | Marie les utilise |
 | Site | Vercel | certificats émis et renouvelés par Vercel |
 | Envoi du formulaire | Resend (compte clickzou-pro, région eu-west-1) | domaine vérifié |
+| Search Console | propriété « Domaine » `osteopathie-animale-toulouse.fr` | validée par TXT DNS le 01/10/2026 |
+| Google Analytics 4 | flux `G-4GSH30VZPE` (identifiant dans `src/lib/site.ts`) | chargé seulement après « Accepter » dans le bandeau |
 
 ### Enregistrements DNS posés
 
@@ -57,6 +59,7 @@ forme que l'ancien site WordPress servait et que Google a indexée.
 | `mail`, `ftp` | A | `109.234.160.114` | serveur o2switch |
 | `resend._domainkey` | TXT | clé DKIM fournie par Resend | signature des e-mails |
 | `rsend`, `send` | CNAME | `rsend-euw1.forge.rmta.net`, `send.forge.rmta.net` | envoi Resend |
+| `@` | TXT | `google-site-verification=BMD1xYB7AYkSuJaPYwObgZy7VVgjOtRlYwfkmbZemRg` | validation Search Console, à conserver |
 
 `mail` et `ftp` étaient des CNAME du domaine, et le MX pointait sur le domaine
 lui-même : sans ces corrections, les mails auraient suivi le site chez Vercel
