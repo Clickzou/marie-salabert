@@ -246,8 +246,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </Container>
       </Section>
 
-      {/* Comment prendre rendez-vous */}
-      <Section>
+      {/* Comment prendre rendez-vous. Les fonds alternent blanc et gris d'une
+          section a l'autre : depuis l'arrivee des approches (blanc), celle-ci
+          passe en gris et les lieux en blanc. */}
+      <Section tone="surface">
         <Container width="wide">
           <div className="grid items-center gap-12 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-20">
             <Reveal className="group/media mx-auto overflow-hidden rounded-full">
@@ -299,7 +301,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </Section>
 
       {/* Les lieux de consultation */}
-      <Section tone="surface">
+      <Section>
         <Container width="wide">
           <Reveal className="text-center">
             <Eyebrow className="justify-center">{a.lieux.surTitre}</Eyebrow>

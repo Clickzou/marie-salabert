@@ -121,7 +121,9 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
       </Section>
 
       {/* Legislation */}
-      <Section id="legislation" tone="surface" className="scroll-mt-28">
+      {/* Fonds alternes : depuis le depart des approches vers l'accueil, la
+          legislation suit directement l'histoire (grise), elle passe en blanc. */}
+      <Section id="legislation" className="scroll-mt-28">
         <Container width="full">
           <Reveal className="max-w-3xl">
             <Eyebrow>{a.legislation.surTitre}</Eyebrow>
@@ -134,7 +136,7 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
       </Section>
 
       {/* Interdisciplinarite : parole de la praticienne, avec son portrait */}
-      <Section>
+      <Section tone="surface">
         <Container width="wide">
           <figure className="grid items-center gap-12 lg:grid-cols-[minmax(0,440px)_minmax(0,1fr)] lg:gap-20">
             <Reveal variant="right" className="group/media overflow-hidden rounded-lg">

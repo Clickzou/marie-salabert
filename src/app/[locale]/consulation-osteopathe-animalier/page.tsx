@@ -640,6 +640,7 @@ export default async function ConsultationsPage({
         title={d.avis.titre}
         libelles={{ avisGoogle: d.avis.avisGoogle, lireTous: d.avis.lireTous }}
         locale={localeTags[locale]}
+        fond="white"
       />
 
       <CtaBand

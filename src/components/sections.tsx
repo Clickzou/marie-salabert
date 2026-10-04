@@ -245,6 +245,7 @@ export function Testimonials({
   title = "Les avis des propriétaires",
   libelles = { avisGoogle: "avis Google", lireTous: "Lire les {n} avis sur Google" },
   locale = "fr",
+  fond = "surface",
 }: {
   items: readonly { name: string; text: string; stars: number; date?: string; href?: string }[];
   /** note moyenne et nombre total d'avis de la fiche Google */
@@ -254,9 +255,11 @@ export function Testimonials({
   libelles?: { avisGoogle: string; lireTous: string };
   /** sert au format de la note et des dates */
   locale?: string;
+  /** fond de la section, pour alterner avec celle qui precede (gris par defaut) */
+  fond?: "surface" | "white";
 }) {
   return (
-    <section className="bg-surface py-24 sm:py-36">
+    <section className={`${fond === "white" ? "bg-white" : "bg-surface"} py-24 sm:py-36`}>
       <Container width="wide">
         <Reveal className="text-center">
           <h2 className="text-[26px] font-light uppercase tracking-[0.05em] text-ink sm:text-[38px]">
