@@ -42,10 +42,12 @@ export default async function ActualitesPage({
 
   return (
     <>
-      {/* En-tete : titre et propos a gauche, portrait a droite, pleine largeur */}
+      {/* En-tete : propos a gauche, diaporama du parcours a droite. Conteneur
+          « wide » et colonnes proches : en pleine largeur, le texte et la photo
+          se retrouvaient aux deux bouts de l'ecran avec un vide entre eux. */}
       <Section>
-        <Container width="full">
-          <div className="grid items-center gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,480px)] lg:gap-24">
+        <Container width="wide">
+          <div className="grid items-center gap-14 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-20 xl:gap-28">
             <Reveal>
               <Eyebrow>{n.surTitre}</Eyebrow>
               <SectionTitle as="h1" className="mt-5 max-w-3xl">
@@ -54,21 +56,30 @@ export default async function ActualitesPage({
               <p className="mt-8 max-w-2xl text-[19px] leading-[1.6] text-ink sm:text-[21px]">
                 {n.accroche}
               </p>
-              <div className="mt-6 grid max-w-4xl gap-6 text-[16.5px] leading-[1.7] text-body sm:grid-cols-2">
+              {/* Une seule colonne, soulignee d'un filet : sur deux colonnes
+                  etroites, ces paragraphes courts se lisaient mal. */}
+              <div className="mt-8 max-w-2xl space-y-4 border-l-2 border-plum/25 pl-6 text-[16.5px] leading-[1.7] text-body">
                 {n.paragraphes.map((par) => (
                   <p key={par.slice(0, 40)}>{par}</p>
                 ))}
               </div>
             </Reveal>
 
-            {/* Photos du parcours a la place du portrait (retour V2) */}
-            <Reveal variant="left" delay={140}>
-              <Diaporama
-                photos={photosParcours.map((src, i) => ({ src, alt: d.accueil.parcours.photosAlt[i] }))}
-                libelle={d.commun.choisirPhoto}
-                sizes="(max-width: 1024px) 100vw, 480px"
-                className="aspect-[4/5] w-full"
-              />
+            {/* Photos du parcours a la place du portrait (retour V2), sur un
+                cadre decale qui reprend la teinte du site. */}
+            <Reveal variant="left" delay={140} className="mx-auto w-full max-w-[560px]">
+              <div className="relative">
+                <span
+                  aria-hidden="true"
+                  className="absolute -right-5 top-5 hidden aspect-[4/5] w-full rounded-lg bg-plum/10 sm:block"
+                />
+                <Diaporama
+                  photos={photosParcours.map((src, i) => ({ src, alt: d.accueil.parcours.photosAlt[i] }))}
+                  libelle={d.commun.choisirPhoto}
+                  sizes="(max-width: 1024px) 100vw, 560px"
+                  className="relative aspect-[4/5] w-full"
+                />
+              </div>
             </Reveal>
           </div>
         </Container>
