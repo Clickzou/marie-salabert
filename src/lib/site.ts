@@ -70,10 +70,9 @@ export const routes = {
      desormais sur cette derniere, et l'ancienne URL y est redirigee dans
      `next.config.ts`. */
   rendezVous: "/rendez-vous-osteopathe-animalier",
-  /* Page de contact, distincte de la prise de rendez-vous : on y ecrit pour
-     une question, un devis, un partenariat. Le bouton dore de l'en-tete mene
-     toujours a la prise de rendez-vous, l'entree « Contact » du menu ici. */
-  contact: "/contact",
+  /* L'ancienne page `/contact` a ete fusionnee avec la prise de rendez-vous,
+     a la demande de la praticienne : meme formulaire, memes coordonnees.
+     L'URL est redirigee dans `next.config.ts`. */
   /* Plan du site lisible, en complement du sitemap.xml : il donne au visiteur
      — et au robot qui suit les liens — une entree vers chaque page. */
   plan: "/plan-du-site",
@@ -94,38 +93,39 @@ export const heroRoutes: readonly string[] = [
   routes.faq,
 ];
 
-/**
- * Sous-menu de « Consultations » : une entree par famille d'animaux.
- *
- * Les libelles ne sont pas repris ici : ils viennent de `consultations.sommaire`
- * dans les dictionnaires, ou ils servent deja aux cartes d'aiguillage. Une seule
- * source, donc aucun risque de divergence entre le menu et la page.
- */
-export const sousMenuConsultations = [
-  routes.equides,
-  routes.compagnie,
-  routes.rente,
-] as const;
+/** Une entree de menu : `cle` renvoie vers `nav` dans les dictionnaires. */
+export type EntreeMenu = {
+  cle: "accueil" | "consultations" | "equine" | "compagnie" | "rurale" | "infos" | "aPropos" | "actualites" | "symbiosteo" | "faq" | "galerie";
+  href: string;
+  sousMenu?: readonly EntreeMenu[];
+};
 
 /**
- * `cle` renvoie vers l'entree correspondante de `nav` dans les dictionnaires.
- *
- * « Infos » regroupe les actualites et Symbiosteo, qui occupaient chacun une
- * entree de premier niveau : deux rubriques editoriales sous un meme chapeau.
- * Le lien du parent mene aux actualites, pour qu'un clic direct aboutisse.
+ * Menu principal, tel que demande par la praticienne (retour V2) : les trois
+ * familles d'animaux sont visibles des le premier niveau, sinon les visiteurs
+ * ne tombaient jamais dessus. Les rubriques secondaires (a propos, actualites,
+ * Symbiosteo, FAQ, galerie) sont regroupees sous « Infos », dont le lien
+ * parent mene a la premiere d'entre elles pour qu'un clic direct aboutisse.
+ * La prise de rendez-vous n'y figure pas : c'est le bouton dore de l'en-tete.
  */
-export const mainNav = [
+export const mainNav: readonly EntreeMenu[] = [
   { cle: "accueil", href: routes.home },
-  { cle: "aPropos", href: routes.about },
   { cle: "consultations", href: routes.consultations },
-  { cle: "faq", href: routes.faq },
-  { cle: "galerie", href: routes.gallery },
-  { cle: "infos", href: routes.news },
-  { cle: "contact", href: routes.contact },
-] as const;
-
-/** Sous-menu de « Infos ». */
-export const sousMenuInfos = [routes.news, routes.symbiosteo] as const;
+  { cle: "equine", href: routes.equides },
+  { cle: "compagnie", href: routes.compagnie },
+  { cle: "rurale", href: routes.rente },
+  {
+    cle: "infos",
+    href: routes.about,
+    sousMenu: [
+      { cle: "aPropos", href: routes.about },
+      { cle: "actualites", href: routes.news },
+      { cle: "symbiosteo", href: routes.symbiosteo },
+      { cle: "faq", href: routes.faq },
+      { cle: "galerie", href: routes.gallery },
+    ],
+  },
+];
 
 export const headerCta = {
   label: "Prendre un rendez-vous",
@@ -135,10 +135,12 @@ export const headerCta = {
 /**
  * Liens du footer. Sur l'original, « A propos » et « Contact » pointaient vers
  * /a-propos/ et /contact/ qui renvoyaient une 404 : corriges vers les vraies pages.
+ * « Contact » mene au formulaire de la page de rendez-vous, qui fait office de
+ * page de contact depuis la fusion des deux.
  */
 export const footerNav = [
   { cle: "aPropos", href: routes.about },
-  { cle: "contact", href: routes.contact },
+  { cle: "contact", href: `${routes.rendezVous}#formulaire` },
   { cle: "plan", href: routes.plan },
   { cle: "cookies", href: routes.cookies },
   { cle: "mentions", href: routes.legal },

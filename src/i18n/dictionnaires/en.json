@@ -5,9 +5,11 @@
     "actualites": "News",
     "infos": "Info",
     "consultations": "Consultations",
+    "equine": "Equine osteopathy",
+    "compagnie": "Companion animal osteopathy",
+    "rurale": "Rural osteopathy",
     "faq": "FAQ",
     "galerie": "Photo gallery",
-    "contact": "Contact",
     "symbiosteo": "Symbiosteo",
     "ouvrirMenu": "Open the menu",
     "fermerMenu": "Close the menu",
@@ -447,12 +449,12 @@
   "contact": {
     "meta": {
       "titre": "Book an appointment - Marie Salabert, animal osteopath",
-      "description": "Book an animal osteopathy session around Toulouse: by phone, by text or through the form. Horses, dogs, cats, exotic pets and farm animals."
+      "description": "Book an animal osteopathy session or ask a question around Toulouse: by phone, text, WhatsApp, email or through the form. Horses, dogs, cats, exotic pets and farm animals."
     },
     "hero": {
       "surTitre": "Contact",
       "titre": "Book an appointment",
-      "sousTitre": "By phone, by text message or via the form: your request is considered with care."
+      "sousTitre": "An appointment, a question, a quote or a partnership request: by phone, text, WhatsApp, email or via the form."
     },
     "meJoindre": {
       "surTitre": "Get in touch"
@@ -727,17 +729,14 @@
     ],
     "sommaire": [
       {
-        "menu": "Equine osteopathy",
         "label": "Equine osteopathy",
         "detail": "For all types of horses (racing, equestrian sport, breeding, show, leisure, draught), donkeys and mules"
       },
       {
-        "menu": "Osteopathy for companion animals",
         "label": "Osteopathy for companion animals",
         "detail": "Dogs, cats, exotic pets"
       },
       {
-        "menu": "Rural osteopathy",
         "label": "Osteopathy for farm and production animals",
         "detail": "Cattle, sheep, goats and pigs"
       }
@@ -1331,32 +1330,6 @@
         "description": "Cookies set by this site, what each one is for, how long it lasts and how to withdraw your consent at any time."
       }
     }
-  },
-  "contactPage": {
-    "meta": {
-      "titre": "Contact - Marie Salabert, animal osteopath",
-      "description": "A question about animal osteopathy, a quote or a partnership: write to me by phone, on WhatsApp or through the form."
-    },
-    "hero": {
-      "surTitre": "Contact",
-      "titre": "Get in touch",
-      "sousTitre": "A question, a quote or a partnership: I will get back to you as soon as possible."
-    },
-    "coordonnees": "My details",
-    "rdvTitre": "Would you like to book an appointment?",
-    "rdvTexte": "Booking has its own page, where you will find the coverage area and what to know before a session.",
-    "rdvBouton": "Go to booking",
-    "formulaire": {
-      "titre": "Write to me",
-      "intro": "This form lets you reach me with any question about animal osteopathy, my work or a collaboration. So that I can answer usefully, please include in your message:",
-      "puces": [
-        "What your request is about",
-        "The species concerned, if any",
-        "How you would prefer to be contacted"
-      ],
-      "conclusion": "Every request is considered with care."
-    },
-    "heroAlt": "Marie Salabert with a pony in a field, at the end of a consultation"
   },
   "planDuSite": {
     "meta": {

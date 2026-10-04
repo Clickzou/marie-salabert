@@ -145,9 +145,9 @@ export default async function ConsultationsPage({
   /* Les trois pages d'especes : servent a la fois au sommaire flottant et aux
      cartes d'aiguillage en bas de page, dans l'ordre du dictionnaire. */
   const liensEspeces = [
-    { href: cheminLocalise(routes.equides, locale), label: c.sommaire[0].menu },
-    { href: cheminLocalise(routes.compagnie, locale), label: c.sommaire[1].menu },
-    { href: cheminLocalise(routes.rente, locale), label: c.sommaire[2].menu },
+    { href: cheminLocalise(routes.equides, locale), label: d.nav.equine },
+    { href: cheminLocalise(routes.compagnie, locale), label: d.nav.compagnie },
+    { href: cheminLocalise(routes.rente, locale), label: d.nav.rurale },
   ];
 
   return (

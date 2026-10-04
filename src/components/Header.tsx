@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { cheminLocalise, cheminSansLocale, type Locale } from "@/i18n/config";
 import type { Dictionnaire } from "@/i18n/dictionnaire";
-import { headerCta, heroRoutes, mainNav, routes, site, sousMenuConsultations } from "@/lib/site";
+import { headerCta, heroRoutes, mainNav, site, type EntreeMenu } from "@/lib/site";
 import SelecteurLangue from "./SelecteurLangue";
 import { Container } from "./ui";
 
@@ -38,19 +38,20 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
 
   const transparent = surHero && !scrolled && !open;
 
-  /* Sous-menus, indexes par le lien de leur parent. Les libelles des especes
-     viennent de `consultations.sommaire`, ou ils servent deja aux cartes ; ceux
-     d'« Infos » viennent de `nav`. Un seul endroit a modifier pour en ajouter. */
-  const sousMenus: Record<string, { href: string; label: string }[]> = {
-    [routes.consultations]: sousMenuConsultations.map((href, i) => ({
-      href,
-      label: d.consultations.sommaire[i].menu,
-    })),
-    [routes.news]: [
-      { href: routes.news, label: d.nav.actualites },
-      { href: routes.symbiosteo, label: d.nav.symbiosteo },
-    ],
-  };
+  /* Entree active : la plus precise de celles qui correspondent au chemin.
+     Les pages par espece sont filles de `/consulation-osteopathe-animalier` ;
+     sans cette regle, « Consultations » s'allumait en meme temps qu'elles.
+     Une entree a sous-menu est active des que l'une de ses filles l'est. */
+  const correspond = (href: string) =>
+    href === "/" ? cheminNu === "/" : cheminNu === href || cheminNu.startsWith(`${href}/`);
+  const feuilles = mainNav.flatMap((item) => [item, ...(item.sousMenu ?? [])]);
+  const plusPrecise = feuilles
+    .filter((item) => correspond(item.href))
+    .sort((x, y) => y.href.length - x.href.length)[0]?.href;
+  const estActif = (item: EntreeMenu) =>
+    item.sousMenu
+      ? item.sousMenu.some((entree) => entree.href === plusPrecise)
+      : item.href === plusPrecise;
 
   return (
     <>
@@ -61,15 +62,19 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
           : "border-b border-black/5 bg-white/95 shadow-[0_10px_30px_-24px_rgba(30,41,59,0.6)] backdrop-blur-md"
       }`}
     >
+      {/* Pleine largeur (demande du client) : le menu s'etale entre le logo
+          et le bouton au lieu de rester dans une colonne centree. */}
       <Container
-        width="wide"
-        className={`flex items-center justify-between gap-2 transition-[height] sm:gap-4 duration-500 ${
+        width="full"
+        className={`flex items-center justify-between gap-2 transition-[height] sm:gap-4 duration-500 xl:px-10 2xl:px-14 ${
           transparent ? "h-[104px]" : "h-[78px]"
         }`}
       >
+        {/* `xl:px-10` : les marges de 100px du conteneur privaient le menu
+            complet de la place dont il a besoin. */}
         <Link
           href={cheminLocalise("/", locale)}
-          className="flex min-w-0 items-center gap-2 sm:gap-3"
+          className="flex min-w-0 items-center gap-2 sm:gap-3 xl:shrink-0"
           aria-label={site.name}
         >
           <Image
@@ -88,7 +93,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
               petits ecrans (320-360px), le sous-titre passe a la ligne plutot
               que de pousser le bouton du menu hors de l'ecran. */}
           <span
-            className={`font-display text-[16px] font-semibold leading-tight transition-colors duration-500 sm:text-[19px] ${
+            className={`font-display text-[16px] font-semibold leading-tight transition-colors duration-500 sm:text-[19px] xl:whitespace-nowrap ${
               transparent ? "text-white drop-shadow-sm" : "text-plum"
             }`}
           >
@@ -103,12 +108,15 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
           </span>
         </Link>
 
-        <nav aria-label="Navigation principale" className="hidden lg:block">
-          <ul className="flex items-center gap-5 xl:gap-8">
+        {/* Six entrees dont trois longues (« Ostéopathie pour animaux de
+            compagnie ») : le menu complet ne tient qu'a partir de 1280px, en
+            dessous c'est le menu mobile. Les intitules passent sur deux lignes
+            equilibrees (`text-balance`) plutot que d'elargir l'en-tete. */}
+        <nav aria-label="Navigation principale" className="hidden flex-1 xl:block">
+          <ul className="flex items-center justify-evenly gap-4">
             {mainNav.map((item) => {
-              const actif =
-                item.href === "/" ? cheminNu === "/" : cheminNu.startsWith(item.href);
-              const sousMenu = sousMenus[item.href] ?? null;
+              const actif = estActif(item);
+              const sousMenu = item.sousMenu ?? null;
 
               return (
                 /* `group/item` et non `group` : le filet anime sous l'intitule
@@ -118,7 +126,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                   <Link
                     href={cheminLocalise(item.href, locale)}
                     aria-current={actif ? "page" : undefined}
-                    className={`group relative block whitespace-nowrap py-1 text-[13px] font-medium uppercase tracking-[0.06em] transition-colors xl:text-[13.5px] xl:tracking-[0.08em] ${
+                    className={`group relative block max-w-[12.5em] py-1 text-center text-[12.5px] leading-snug font-medium text-balance uppercase tracking-[0.05em] transition-colors 2xl:max-w-[16em] 2xl:text-[13.5px] 2xl:tracking-[0.08em] ${
                       transparent
                         ? "text-white/90 drop-shadow-sm hover:text-white"
                         : actif
@@ -144,7 +152,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                     <div className="invisible absolute left-0 top-full z-50 pt-3 opacity-0 transition-opacity duration-200 group-hover/item:visible group-hover/item:opacity-100 group-focus-within/item:visible group-focus-within/item:opacity-100">
                       <ul className="min-w-[230px] overflow-hidden rounded-lg border border-line bg-white py-1.5 shadow-[0_20px_45px_-25px_rgba(22,23,26,0.45)]">
                         {sousMenu.map((entree) => {
-                          const courant = cheminNu === entree.href;
+                          const courant = entree.href === plusPrecise;
                           return (
                             <li key={entree.href}>
                               <Link
@@ -156,7 +164,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                                   courant ? "text-plum" : "text-body hover:bg-surface hover:text-plum"
                                 }`}
                               >
-                                {entree.label}
+                                {d.nav[entree.cle]}
                               </Link>
                             </li>
                           );
@@ -190,7 +198,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
             aria-expanded={open}
             aria-controls="menu-mobile"
             aria-label={open ? d.nav.fermerMenu : d.nav.ouvrirMenu}
-            className={`grid h-11 w-11 place-items-center rounded transition-colors lg:hidden ${
+            className={`grid h-11 w-11 place-items-center rounded transition-colors xl:hidden ${
               transparent ? "text-white" : "text-plum"
             }`}
           >
@@ -206,13 +214,12 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
       </Container>
 
       {open && (
-        <nav id="menu-mobile" aria-label="Navigation mobile" className="border-t border-black/5 bg-white lg:hidden">
+        <nav id="menu-mobile" aria-label="Navigation mobile" className="border-t border-black/5 bg-white xl:hidden">
           <Container className="py-2">
             <ul className="divide-y divide-black/5">
               {mainNav.map((item) => {
-                const actif =
-                  item.href === "/" ? cheminNu === "/" : cheminNu.startsWith(item.href);
-                const sousMenu = sousMenus[item.href] ?? null;
+                const actif = estActif(item);
+                const sousMenu = item.sousMenu ?? null;
 
                 return (
                   <li key={item.href}>
@@ -232,7 +239,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                     {sousMenu && (
                       <ul className="mb-2 ml-1 border-l border-plum/20 pl-4">
                         {sousMenu.map((entree) => {
-                          const courant = cheminNu === entree.href;
+                          const courant = entree.href === plusPrecise;
                           return (
                             <li key={entree.href}>
                               <Link
@@ -242,7 +249,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                                   courant ? "text-plum" : "text-muted"
                                 }`}
                               >
-                                {entree.label}
+                                {d.nav[entree.cle]}
                               </Link>
                             </li>
                           );

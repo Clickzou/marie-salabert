@@ -60,7 +60,6 @@ export default async function PlanDuSitePage({
         { href: routes.consultations, label: d.consultations.hero.titre },
         { href: routes.gallery, label: d.nav.galerie },
         { href: routes.rendezVous, label: d.commun.prendreRdv },
-        { href: routes.contact, label: d.nav.contact },
       ],
     },
     {

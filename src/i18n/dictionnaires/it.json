@@ -5,9 +5,11 @@
     "actualites": "Attualità",
     "infos": "Info",
     "consultations": "Consulti",
+    "equine": "Osteopatia equina",
+    "compagnie": "Osteopatia animali da compagnia",
+    "rurale": "Osteopatia rurale",
     "faq": "FAQ",
     "galerie": "Galleria fotografica",
-    "contact": "Contatti",
     "symbiosteo": "Symbiosteo",
     "ouvrirMenu": "Apri il menu",
     "fermerMenu": "Chiudi il menu",
@@ -447,12 +449,12 @@
   "contact": {
     "meta": {
       "titre": "Prenota un appuntamento - Marie Salabert, osteopata animale",
-      "description": "Prenota una seduta di osteopatia animale intorno a Tolosa: per telefono, con un SMS o tramite il modulo. Cavalli, cani, gatti, esotici e allevamento."
+      "description": "Prenota una seduta di osteopatia animale o fai una domanda intorno a Tolosa: per telefono, SMS, WhatsApp, e-mail o tramite il modulo. Cavalli, cani, gatti, esotici e allevamento."
     },
     "hero": {
       "surTitre": "Contatto",
       "titre": "Prendere appuntamento",
-      "sousTitre": "Per telefono, per SMS o tramite il modulo: la vostra richiesta viene esaminata con attenzione."
+      "sousTitre": "Un appuntamento, una domanda, una richiesta di preventivo o di collaborazione: per telefono, SMS, WhatsApp, e-mail o tramite il modulo."
     },
     "meJoindre": {
       "surTitre": "Contattarmi"
@@ -727,17 +729,14 @@
     ],
     "sommaire": [
       {
-        "menu": "Osteopatia equina",
         "label": "Osteopatia equina",
         "detail": "Per tutti i tipi di cavalli (corsa, sport equestri, allevamento, spettacolo, tempo libero, tiro), asini e muli"
       },
       {
-        "menu": "Osteopatia per animali da compagnia",
         "label": "Osteopatia per animali da compagnia",
         "detail": "Cani, gatti, NAC"
       },
       {
-        "menu": "Osteopatia rurale",
         "label": "Osteopatia per animali da reddito, fattoria e produzione animale",
         "detail": "Bovini, ovini, caprini e suini"
       }
@@ -1343,32 +1342,6 @@
         "description": "Cookie depositati dal sito, finalità di ciascuno, durata e modo di revocare il consenso in qualsiasi momento."
       }
     }
-  },
-  "contactPage": {
-    "meta": {
-      "titre": "Contatto - Marie Salabert, osteopata animale",
-      "description": "Una domanda sull'osteopatia animale, un preventivo o una collaborazione: scrivimi per telefono, su WhatsApp o tramite il modulo."
-    },
-    "hero": {
-      "surTitre": "Contatto",
-      "titre": "Contattami",
-      "sousTitre": "Una domanda, un preventivo o una collaborazione: ti rispondo al più presto."
-    },
-    "coordonnees": "I miei recapiti",
-    "rdvTitre": "Vuoi prenotare un appuntamento?",
-    "rdvTexte": "La prenotazione avviene su una pagina dedicata, dove troverai la zona di intervento e le informazioni utili prima di una seduta.",
-    "rdvBouton": "Vai alla prenotazione",
-    "formulaire": {
-      "titre": "Scrivimi",
-      "intro": "Questo modulo permette di contattarmi per qualsiasi domanda sull'osteopatia animale, sui miei interventi o su una collaborazione. Per poterti rispondere in modo utile, indica nel messaggio:",
-      "puces": [
-        "L'oggetto della tua richiesta",
-        "La specie interessata, se pertinente",
-        "Come preferisci essere ricontattato"
-      ],
-      "conclusion": "Ogni richiesta viene esaminata con attenzione."
-    },
-    "heroAlt": "Marie Salabert accanto a un pony in un prato, a fine consulto"
   },
   "planDuSite": {
     "meta": {
