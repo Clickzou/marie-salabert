@@ -62,8 +62,8 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
           : "border-b border-black/5 bg-white/95 shadow-[0_10px_30px_-24px_rgba(30,41,59,0.6)] backdrop-blur-md"
       }`}
     >
-      {/* Pleine largeur (demande du client) : le menu s'etale entre le logo
-          et le bouton au lieu de rester dans une colonne centree. */}
+      {/* Pleine largeur : le logo et le bouton vont aux bords de l'ecran, le
+          menu se centre entre les deux sans s'etirer. */}
       <Container
         width="full"
         className={`flex items-center justify-between gap-2 transition-[height] sm:gap-4 duration-500 xl:px-10 2xl:px-14 ${
@@ -108,12 +108,16 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
           </span>
         </Link>
 
-        {/* Six entrees dont trois longues (« Ostéopathie pour animaux de
-            compagnie ») : le menu complet ne tient qu'a partir de 1280px, en
-            dessous c'est le menu mobile. Les intitules passent sur deux lignes
-            equilibrees (`text-balance`) plutot que d'elargir l'en-tete. */}
-        <nav aria-label="Navigation principale" className="hidden flex-1 xl:block">
-          <ul className="flex items-center justify-evenly gap-4">
+        {/* Six entrees dont trois longues (« Ostéopathie animaux de
+            compagnie ») : le menu complet ne s'affiche qu'a partir de 1280px,
+            en dessous c'est le menu mobile. Les entrees gardent un ecart fixe
+            et restent groupees au centre ; chacune peut se replier sur deux
+            lignes (`text-balance`), mais seulement si la place manque : un
+            element flex ne se comprime qu'en dernier recours. Sur grand ecran
+            (1800px et plus) la police grandit, pour ne pas laisser un menu
+            minuscule au milieu d'un en-tete vide. */}
+        <nav aria-label="Navigation principale" className="hidden min-w-0 flex-1 xl:block">
+          <ul className="flex items-center justify-center gap-4 2xl:gap-5 min-[1800px]:gap-9 min-[2200px]:gap-12">
             {mainNav.map((item) => {
               const actif = estActif(item);
               const sousMenu = item.sousMenu ?? null;
@@ -126,7 +130,7 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                   <Link
                     href={cheminLocalise(item.href, locale)}
                     aria-current={actif ? "page" : undefined}
-                    className={`group relative block max-w-[12.5em] py-1 text-center text-[12.5px] leading-snug font-medium text-balance uppercase tracking-[0.05em] transition-colors 2xl:max-w-[16em] 2xl:text-[13.5px] 2xl:tracking-[0.08em] ${
+                    className={`group relative block py-1 text-center text-[12.5px] leading-snug font-medium text-balance uppercase tracking-[0.04em] transition-colors min-[1800px]:text-[15px] min-[1800px]:tracking-[0.06em] min-[2200px]:text-[16px] ${
                       transparent
                         ? "text-white/90 drop-shadow-sm hover:text-white"
                         : actif
