@@ -102,7 +102,7 @@
         "After five years of training and my registration on the National Register of Competence held by the CNOV, I settled in the Toulouse region, where I am originally from, in order to practise there from 2020 onwards.",
         "Sport, and athletics in particular, has held an important place in my journey. It instilled in me values of rigour, perseverance and discipline that continue to guide my professional practice today.",
         "Committed to supporting the development and recognition of animal osteopathy in France, I was involved for several years within associations working towards the structuring of the profession.",
-        "From 2017 to 2020, I served as President of the Union Française des Étudiants Ostéopathes Animaliers (UFEOA), before co-founding the Collectif des Ostéopathes Animaliers, within which I remained actively involved from 2020 to 2025. This has since become the national union representing professionals registered on the RNA held by the CNOV.",
+        "From 2017 to 2020, I served as President of the Union Française des Étudiants Ostéopathes Animaliers (UFEOA), before co-founding the Collectif des Ostéopathes Animaliers, within which I remained actively involved from 2020 to 2025. This has since become the national union representing professionals registered on the RNA, held by the CNOV.",
         "Driven by a desire to create connections between the various stakeholders in animal health, I initiated the organisation of the SymbiOsteo conferences in 2019 and 2022, and later co-created the SymbiOsteo podcast in 2024. These projects aim to foster exchanges between veterinarians practising osteopathy, animal osteopaths and human osteopaths, whilst highlighting developments in practice, current affairs and research prospects in this field.",
         "In 2025, I wished to deepen my knowledge and develop an approach more oriented towards scientific research. I therefore enrolled in the Master 2 'Gestion des Établissements de Formation et de Recherche en Santé' at the Université de Haute-Alsace in Mulhouse. This training led to my first scientific publication in the integrative health journal Hegel: 'Ostéopathie, chiropraxie, thérapies manuelles: analyse bibliométrique (1949–2025)'."
       ],
@@ -115,7 +115,7 @@
       "reduire": "Show less",
       "liste": [
         {
-          "titre": "Companion animals",
+          "titre": "Osteopathy for companion animals",
           "sousTitre": "Dogs · Cats · Exotic pets",
           "alt": "Osteopathy session on a German Shepherd",
           "indications": [
@@ -133,7 +133,7 @@
           ]
         },
         {
-          "titre": "Equines",
+          "titre": "Equine osteopathy",
           "sousTitre": "Racehorses, sport horses, leisure horses · Donkeys · Mules",
           "alt": "Osteopathy session on a pony in the field",
           "indications": [
@@ -150,7 +150,7 @@
           ]
         },
         {
-          "titre": "Farm animals",
+          "titre": "Rural osteopathy",
           "sousTitre": "Cattle · Sheep · Goats · Pigs",
           "alt": "Marie Salabert crouching behind a Charolais bovine in a cattle shed",
           "indications": [
@@ -262,9 +262,10 @@
       "surTitre": "Area covered",
       "titre": "Where consultations take place",
       "domicileTitre": "At your home, in Occitanie and Nouvelle-Aquitaine",
-      "domicileTexte": "About 1 hour 45 minutes' drive around Toulouse, across the following nine departments:",
+      "domicileTexte": "About 1 hour 45 minutes' drive around Toulouse, across the following ten departments:",
       "legendeReguliers": "The purple dots mark the towns visited regularly.",
       "legendePonctuels": "The blue dots mark towns visited occasionally, beyond 1 hour 45 minutes' drive.",
+      "carteNote": "The towns shown are for guidance only. I also visit neighbouring towns depending on my rounds and on requests.",
       "cliniqueTitre": "At the practice, every Friday afternoon",
       "cliniqueTexte": "Val Dadou veterinary practice, in Graulhet (81).",
       "cliniqueContact": "To book an appointment there, please contact the practice directly on 05 63 34 51 52",
@@ -275,8 +276,13 @@
         "Salon de Toilettage la Niche du Bien être in Matoury",
         "Salon de Toilettage Louloustars in Cayenne"
       ],
+      "guyaneAlts": [
+        "Osteopathy session with a pony in a shelter, in French Guiana",
+        "Osteopathy session with a horse under shelter, in French Guiana"
+      ],
       "italieTitre": "Tours in Italy, three times a year",
-      "italieTexte": "Home visits and at the following locations:",
+      "italieDrapeau": "Italian flag",
+      "italieTexte": "Home visits in the following places:",
       "italieVilles": [
         "Pisa",
         "Florence",

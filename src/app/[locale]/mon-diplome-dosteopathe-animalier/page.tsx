@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { routes } from "@/lib/site";
 import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
-import { PageHero } from "@/components/sections";
 
 export async function generateMetadata({
   params,
@@ -38,18 +37,29 @@ const RNA_LIST_URL = "https://extranet.veterinaire.fr/annuaires/osteopathes";
 export default function CertificationPage() {
   return (
     <>
-      {/* Hero : titre principal (unique h1 de la page). Taille de titre reduite
-          pour un enonce long, dans la nouvelle direction serif epuree. */}
-      <div className="[&_h1]:mx-auto [&_h1]:max-w-[860px] [&_h1]:font-display [&_h1]:font-semibold [&_h1]:text-[22px] [&_h1]:leading-snug sm:[&_h1]:text-[28px] lg:[&_h1]:text-[34px]">
-        <PageHero
-          image="/images/2025/05/certification-osteopathe-animalier-toulouse.jpg"
-          /* Cette page n'est pas traduite : son contenu est ecrit en dur, le
-             texte de remplacement suit la meme regle. */
-          alt="Marie Salabert, ostéopathe animalier inscrite au Registre National d’Aptitude"
-          title="Inscrite sur le Registre National d’Aptitude (RNA) tenu par le Conseil National de l’Ordre des Vétérinaires (CNOV) au numéro 801"
-          height="short"
-        />
-      </div>
+      {/* En-tete : logo du Conseil national de l'Ordre des veterinaires, a la
+          place de la photo du cheval (retour V2 de la praticienne). Le logo
+          fourni, 400px de large sur fond blanc, ne supportait ni le plein
+          ecran ni le voile sombre d'une banniere : il est pose sur fond clair,
+          au-dessus du titre (unique h1 de la page). */}
+      <Section padding="no-bottom" className="text-center">
+        <Container>
+          <Image
+            src="/images/2026/10/logo-ordre-national-veterinaires.png"
+            /* Cette page n'est pas traduite : son contenu est ecrit en dur,
+               le texte de remplacement suit la meme regle. */
+            alt="Logo du Conseil national de l’Ordre des vétérinaires"
+            width={400}
+            height={250}
+            priority
+            className="mx-auto h-auto w-[240px] sm:w-[300px]"
+          />
+          <h1 className="mx-auto mt-10 max-w-[860px] font-display text-[22px] leading-snug font-semibold text-ink sm:text-[28px] lg:text-[34px]">
+            Inscrite sur le Registre National d’Aptitude (RNA) tenu par le Conseil National de
+            l’Ordre des Vétérinaires (CNOV) au numéro 801
+          </h1>
+        </Container>
+      </Section>
 
       {/* Cadre reglementaire + verification de l'inscription */}
       <Section>
@@ -60,7 +70,7 @@ export default function CertificationPage() {
             <SectionTitle>Cadre réglementaire</SectionTitle>
             <p className="mt-6 text-[17px] leading-relaxed text-body">
               Depuis 2011, l’ostéopathie animale est réglementée et encadrée par la profession
-              vétérinaire ! Pour exercer en France il est donc obligatoire de figurer sur ce
+              vétérinaire&nbsp;! Pour exercer en France il est donc obligatoire de figurer sur ce
               registre.{" "}
               <Link
                 href={`${routes.about}#legislation`}
@@ -100,11 +110,10 @@ export default function CertificationPage() {
           <div className="mx-auto max-w-3xl text-center">
             <Eyebrow className="justify-center">Preuve d’inscription</Eyebrow>
             <SectionTitle className="mt-3">Justificatif d’inscription au RNA</SectionTitle>
-            <p className="mt-6 text-[16px] leading-relaxed text-muted">
-              Le document officiel attestant de mon inscription au Registre National d’Aptitude.
-            </p>
           </div>
 
+          {/* Phrase d'introduction et legende retirees a la demande de la
+              praticienne : elles repetaient le titre de la section. */}
           {/* Un seul justificatif : l'attestation de l'Ordre. Le nom du fichier
               parle de diplome, mais le document scanne est bien l'attestation
               d'inscription au RNA — c'est son intitule qui fait foi ici.
@@ -120,9 +129,6 @@ export default function CertificationPage() {
                 className="mx-auto h-auto w-full"
               />
             </div>
-            <figcaption className="mt-4 text-center text-[14px] font-medium text-ink">
-              Attestation d’inscription au RNA
-            </figcaption>
           </figure>
         </Container>
       </Section>
@@ -130,8 +136,8 @@ export default function CertificationPage() {
       {/* Appel a l'action */}
       <Section className="text-center">
         <Container>
-          <SectionTitle>Une prise en charge en toute confiance</SectionTitle>
-          <p className="mx-auto mt-5 max-w-xl text-[16px] leading-relaxed text-body">
+          {/* Titre « Une prise en charge en toute confiance » retire (retour V2). */}
+          <p className="mx-auto max-w-xl text-[16px] leading-relaxed text-body">
             Vous souhaitez confier votre animal à une praticienne inscrite et reconnue ?
           </p>
           <div className="mt-8">

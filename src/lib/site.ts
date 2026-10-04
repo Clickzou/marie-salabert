@@ -89,7 +89,6 @@ export const heroRoutes: readonly string[] = [
   routes.home,
   routes.about,
   routes.consultations,
-  routes.certification,
   routes.faq,
 ];
 

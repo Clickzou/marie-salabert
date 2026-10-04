@@ -70,6 +70,30 @@ const photosApproches = (
   Array.from({ length: nombre }, (_, i) => `/images/2026/10/approches/approche-${nom}-${i + 1}.jpg`),
 );
 
+/** Photos des tournees en Guyane, fournies par la praticienne (retour V2). */
+const photosGuyane = [
+  "/images/2026/10/guyane-osteopathie-1.jpg",
+  "/images/2026/10/guyane-osteopathie-2.jpg",
+];
+
+/** Drapeau italien en SVG : net a toutes les tailles, sans fichier image. */
+function DrapeauItalien({ titre }: { titre: string }) {
+  return (
+    <svg
+      viewBox="0 0 3 2"
+      width="30"
+      height="20"
+      role="img"
+      aria-label={titre}
+      className="shrink-0 rounded-[3px] ring-1 ring-ink/10"
+    >
+      <rect width="1" height="2" x="0" fill="#009246" />
+      <rect width="1" height="2" x="1" fill="#ffffff" />
+      <rect width="1" height="2" x="2" fill="#ce2b37" />
+    </svg>
+  );
+}
+
 /* Numero de la clinique du Val Dadou. Il est isole du libelle traduit pour
    pouvoir en faire un lien `tel:` sans le dupliquer dans chaque langue. */
 const CLINIQUE_TEL = "05 63 34 51 52";
@@ -340,17 +364,21 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               </div>
             </Reveal>
 
-            <Reveal
-              delay={140}
-              className="overflow-hidden rounded-lg ring-1 ring-ink/10 [&_iframe]:block"
-            >
-              <SecteurMap
-                className="h-[340px] sm:h-[460px]"
-                legende={{
-                  reguliers: a.lieux.legendeReguliers,
-                  ponctuels: a.lieux.legendePonctuels,
-                }}
-              />
+            <Reveal delay={140}>
+              <div className="overflow-hidden rounded-lg ring-1 ring-ink/10 [&_iframe]:block">
+                <SecteurMap
+                  className="h-[340px] sm:h-[460px]"
+                  legende={{
+                    reguliers: a.lieux.legendeReguliers,
+                    ponctuels: a.lieux.legendePonctuels,
+                  }}
+                />
+              </div>
+              {/* Precision demandee par la praticienne : la carte n'est pas
+                  une liste fermee de communes. */}
+              <p className="mt-4 text-[14.5px] italic leading-relaxed text-muted">
+                {a.lieux.carteNote}
+              </p>
             </Reveal>
           </div>
 
@@ -358,14 +386,33 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               sur grand ecran. `items-start` et non `items-stretch` : la carte
               italienne est bien plus courte, l'etirer creuserait un vide. */}
           <div className="mt-14 grid items-start gap-6 lg:grid-cols-2 lg:gap-8">
-            <Reveal className="rounded-lg border border-plum/15 bg-white p-8 sm:p-10">
-              <h3 className="text-[21px] leading-snug text-plum">{a.lieux.guyaneTitre}</h3>
-              <p className="mt-3 text-[16px] leading-relaxed text-body">{a.lieux.guyaneTexte}</p>
-              <CheckList className="mt-5" items={a.lieux.guyaneLieux} />
+            <Reveal className="overflow-hidden rounded-lg border border-plum/15 bg-white">
+              {/* Photos de tournee fournies par la praticienne */}
+              <div className="grid grid-cols-2 gap-1">
+                {photosGuyane.map((src, i) => (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt={a.lieux.guyaneAlts[i]}
+                    width={900}
+                    height={1200}
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    className="aspect-[4/3] w-full object-cover object-[50%_40%]"
+                  />
+                ))}
+              </div>
+              <div className="p-8 sm:p-10">
+                <h3 className="text-[21px] leading-snug text-plum">{a.lieux.guyaneTitre}</h3>
+                <p className="mt-3 text-[16px] leading-relaxed text-body">{a.lieux.guyaneTexte}</p>
+                <CheckList className="mt-5" items={a.lieux.guyaneLieux} />
+              </div>
             </Reveal>
 
             <Reveal delay={140} className="rounded-lg border border-plum/15 bg-white p-8 sm:p-10">
-              <h3 className="text-[21px] leading-snug text-plum">{a.lieux.italieTitre}</h3>
+              <h3 className="flex items-center gap-3 text-[21px] leading-snug text-plum">
+                <DrapeauItalien titre={a.lieux.italieDrapeau} />
+                {a.lieux.italieTitre}
+              </h3>
               <p className="mt-3 text-[16px] leading-relaxed text-body">{a.lieux.italieTexte}</p>
               <CheckList className="mt-5" items={a.lieux.italieVilles} />
             </Reveal>
