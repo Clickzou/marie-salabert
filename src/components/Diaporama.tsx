@@ -51,7 +51,9 @@ export function Diaporama({
             priority={i === 0}
             aria-hidden={i !== courante}
             className={`transition-opacity duration-1000 ${
-              ajustement === "contain" ? "object-contain p-6" : "object-cover"
+              /* Fond blanc sur l'image entiere : sans lui, pendant le fondu,
+                 la couverture sortante restait visible autour de l'entrante. */
+              ajustement === "contain" ? "bg-white object-contain p-6" : "object-cover"
             } ${i === courante ? "opacity-100" : "opacity-0"}`}
           />
         ))}
