@@ -37,6 +37,8 @@
     "pause": "Mettre le défilement en pause",
     "lecture": "Reprendre le défilement",
     "photosSeances": "Photos de séances",
+    "choisirPhoto": "Choisir une photo",
+    "choisirLivre": "Choisir un livre",
     "lireSuite": "Lire la suite",
     "reduire": "Réduire",
     "reconnaissance": "Reconnaissance officielle",
@@ -106,7 +108,20 @@
         "Animée par la volonté de créer du lien entre les différents acteurs de la santé animale, j'ai été à l'initiative de l'organisation des congrès SymbiOsteo en 2019 et 2022, puis j'ai co-créé SymbiOsteo, le podcast en 2024. Ces projets ont pour objectif de favoriser les échanges entre vétérinaires pratiquant l'ostéopathie, ostéopathes animaliers et ostéopathes humains, tout en mettant en lumière les évolutions des pratiques, l'actualité et les perspectives de recherche dans ce domaine.",
         "En 2025, j'ai souhaité approfondir mes connaissances et développer une approche davantage tournée vers la recherche scientifique. J'ai ainsi intégré le Master 2 « Gestion des Établissements de Formation et de Recherche en Santé » à l'Université de Haute-Alsace de Mulhouse. Cette formation a conduit à ma première publication scientifique dans la revue de santé intégrative Hegel : « Ostéopathie, chiropraxie, thérapies manuelles : analyse bibliométrique (1949–2025) »."
       ],
-      "alt": "Marie Salabert au micro lors d'une conférence sur l'ostéopathie animale"
+      "alt": "Marie Salabert au micro lors d'une conférence sur l'ostéopathie animale",
+      "photosAlt": [
+        "Marie Salabert souriante, joue contre la tête d'un cheval bai",
+        "Marie Salabert tient un chat siamois dans ses bras",
+        "Marie Salabert soutient un poulain pie dans un pré",
+        "Marie Salabert caresse un petit chien noir et blanc",
+        "Marie Salabert examine un berger allemand, en noir et blanc",
+        "Marie Salabert entourée de deux chevaux qui la câlinent",
+        "Marie Salabert accroupie près d'un berger allemand dans l'herbe",
+        "Marie Salabert auprès d'un cochon dans la paille",
+        "Marie Salabert travaille sur un poney au pré",
+        "Marie Salabert avec un chat noir, un chien en arrière-plan",
+        "Marie Salabert au micro lors d'une conférence"
+      ]
     },
     "pourQui": {
       "surTitre": "Champs d'intervention",
@@ -256,7 +271,7 @@
       ],
       "tarif": "Le tarif des consultations dépend de votre localisation, pour connaître le montant exact nous vous invitons à le demander au moment de la prise de rendez-vous.",
       "paiement": "Moyens de paiement acceptés : chèque, virement ou espèces.",
-      "alt": "Marie Salabert, ostéopathe animalier"
+      "alt": "Logo de Marie Salabert Ostéopathie Animale"
     },
     "lieux": {
       "surTitre": "Secteur d'intervention",
@@ -391,7 +406,16 @@
           ]
         }
       ],
-      "synthese": "L'ostéopathie animale est une médecine intégrative dite naturelle : par son approche manuelle, elle apporte une vision globale différente et complémentaire de la médecine vétérinaire."
+      "synthese": "L'ostéopathie animale est une médecine intégrative dite naturelle : par son approche manuelle, elle apporte une vision globale différente et complémentaire de la médecine vétérinaire.",
+      "livresAlt": [
+        "Couverture du livre « La clef de la guérison : l'ostéopathie » de Francis Luzon",
+        "Couverture de « Ostéopathie vétérinaire : introduction à l'ostéopathie structurelle appliquée au cheval » de Pascal Evrard",
+        "Couverture de « Ostéopathie vétérinaire : introduction à l'ostéopathie crânio-sacrée appliquée au cheval » de Pascal Evrard",
+        "Couverture de « Les chevaux m'ont dit » du Dr Dominique Giniaux",
+        "Couverture de « Ostéopathie équine » du Dr Dominique Giniaux",
+        "Couverture de « Soulagez votre cheval aux doigts (et à l'œil) » du Dr Dominique Giniaux",
+        "Couverture de « La consultation ostéopathique et homéopathique du chien et du chat » de Francis Luzon"
+      ]
     },
     "legislation": {
       "surTitre": "Cadre réglementaire",
@@ -431,7 +455,7 @@
       "signature": "Marie Salabert",
       "photoAlt": "Marie Salabert au micro lors d'une conférence sur l'ostéopathie animale"
     },
-    "heroAlt": "Marie Salabert, ostéopathe animalier à Toulouse, auprès d'un cheval"
+    "heroAlt": "Le museau d'un poulain posé sur la main de Marie Salabert"
   },
   "contact": {
     "meta": {
@@ -466,7 +490,7 @@
       "surTitre": "Secteur d'intervention",
       "titre": "Environ 1h45 de route autour de Toulouse"
     },
-    "heroAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un cheval"
+    "heroAlt": "Marie Salabert travaille sur un poney au pré"
   },
   "galerie": {
     "meta": {
@@ -887,7 +911,7 @@
       "globaleTitre": "Une approche globale du bien-être équin",
       "globaleIntro": "La santé et le bien-être du cheval reposent sur une prise en charge globale associant plusieurs compétences complémentaires. L'ostéopathie animale s'intègre dans cette démarche aux côtés de :",
       "globaleConclusion": "L'objectif est de favoriser une prise en charge cohérente, respectueuse et adaptée aux besoins individuels de chaque cheval.",
-      "photoAlt": "Marie Salabert mobilisant le postérieur d'un cheval en écurie",
+      "photoAlt": "Marie Salabert pose les mains sur la tête d'un cheval bai",
       "photoGlobaleAlt": "Marie Salabert auprès d'un cheval et d'un poney sous un abri",
       "meta": {
         "titre": "Ostéopathe équin à Toulouse - Marie Salabert",
@@ -913,7 +937,7 @@
       "photoNacAlt": "Marie Salabert porte un lapin noir tenu en harnais, à l'extérieur",
       "photoLapinAlt": "Marie Salabert travaille le dos d'un lapin bélier gris allongé sur un tapis",
       "photoReptileAlt": "Marie Salabert porte un serpent enroulé sur ses épaules",
-      "photoChienAlt": "Marie Salabert avec un chien de type border collie",
+      "photoChienAlt": "Marie Salabert pose les mains sur un chien noir et blanc",
       "photoChatAlt": "Marie Salabert portant un chat noir en consultation",
       "photoGlobaleAlt": "Chat roux perché dans un arbre, entre les feuilles",
       "meta": {
@@ -935,7 +959,7 @@
       "globaleTitre": "Une approche globale du bien-être des animaux d'élevage",
       "globaleIntro": "La santé et le bien-être des animaux d'élevage reposent sur une prise en charge globale associant plusieurs facteurs essentiels. L'ostéopathie animale s'intègre dans cette démarche aux côtés de :",
       "globaleConclusion": "L'objectif est d'accompagner les éleveurs dans une démarche cohérente, respectueuse et adaptée aux besoins spécifiques de chaque animal et de chaque élevage.",
-      "photoAlt": "Marie Salabert auprès d'un veau dans une stabulation",
+      "photoAlt": "Marie Salabert accroupie près d'un cochon couché dans une cour de ferme",
       "photoGlobaleAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un bovin dans un bâtiment d'élevage",
       "meta": {
         "titre": "Ostéopathie rurale pour animaux d'élevage - Toulouse",

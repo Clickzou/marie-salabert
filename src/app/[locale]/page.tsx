@@ -16,6 +16,8 @@ import {
 import Reveal from "@/components/Reveal";
 import SecteurMap from "@/components/SecteurMap";
 import { Approches } from "@/components/Approches";
+import { Diaporama } from "@/components/Diaporama";
+import { photosParcours } from "@/content/photos";
 import { CartesPublics } from "@/components/CartesPublics";
 
 export async function generateMetadata({
@@ -142,16 +144,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   l'image, et non a la colonne, sinon il descendrait se placer
                   derriere le bouton ajoute dessous. */}
               <div className="relative">
-                <div className="group/media overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/2023/05/marie-salabert.jpg"
-                    alt={a.parcours.alt}
-                    width={900}
-                    height={900}
-                    sizes="(max-width: 1024px) 100vw, 45vw"
-                    className="img-zoom w-full object-cover"
-                  />
-                </div>
+                {/* Photos qui defilent, choisies par la praticienne */}
+                <Diaporama
+                  photos={photosParcours.map((src, i) => ({ src, alt: a.parcours.photosAlt[i] }))}
+                  libelle={d.commun.choisirPhoto}
+                  sizes="(max-width: 1024px) 100vw, 45vw"
+                  className="relative z-10 aspect-square w-full"
+                />
                 <Image
                   src="/images/2023/05/square-pattern.png"
                   alt=""
@@ -278,7 +277,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="grid items-center gap-12 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-20">
             <Reveal className="group/media mx-auto overflow-hidden rounded-full">
               <Image
-                src="/images/2023/05/osteopathie-deroule-seance.jpeg"
+                src="/images/2026/10/logo-rond-marie-salabert.jpg"
                 alt={a.rendezVous.alt}
                 width={400}
                 height={400}

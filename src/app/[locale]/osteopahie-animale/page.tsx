@@ -5,6 +5,8 @@ import { Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
 import { PageHero } from "@/components/sections";
 import { AProposLegislation } from "@/components/AProposLegislation";
 import Reveal from "@/components/Reveal";
+import { Diaporama } from "@/components/Diaporama";
+import { livresHistoire } from "@/content/photos";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import { routes } from "@/lib/site";
@@ -41,7 +43,7 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
   return (
     <>
       <PageHero
-        image="/images/2025/05/a-propos-osteopathe-animalier-toulouse.jpg"
+        image="/images/2026/10/a-propos-osteopathie-poulain.jpg"
         alt={a.heroAlt}
         eyebrow={a.hero.surTitre}
         title={a.hero.titre}
@@ -74,18 +76,15 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
             <Reveal className="lg:sticky lg:top-32 lg:self-start">
               <Eyebrow>{a.histoire.surTitre}</Eyebrow>
               <SectionTitle className="mt-5">{a.histoire.titre}</SectionTitle>
-              {/* Cliche carre a la source : on garde ce format plutot que de le
-                  recadrer en 4/3, ce qui amputerait la scene en haut et en bas. */}
-              <figure className="group/media mt-10 overflow-hidden rounded-lg">
-                <Image
-                  src="/images/2025/05/osteopathie-chat-01.jpg"
-                  alt={a.histoire.photoAlt}
-                  width={2048}
-                  height={2048}
-                  sizes="(max-width: 1024px) 100vw, 380px"
-                  className="img-zoom aspect-square w-full object-cover"
-                />
-              </figure>
+              {/* Couvertures des ouvrages fondateurs, a la place de la photo du
+                  chat (retour V2) : elles illustrent le recit qui suit. */}
+              <Diaporama
+                photos={livresHistoire.map((src, i) => ({ src, alt: a.histoire.livresAlt[i] }))}
+                libelle={d.commun.choisirLivre}
+                ajustement="contain"
+                sizes="(max-width: 1024px) 100vw, 380px"
+                className="mt-10 aspect-[4/5] w-full [&>div:first-child]:bg-white [&>div:first-child]:ring-1 [&>div:first-child]:ring-line"
+              />
             </Reveal>
 
             {/* Recit decoupe en trois epoques : le repere temporel tient la
@@ -141,8 +140,8 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
           <figure className="grid items-center gap-12 lg:grid-cols-[minmax(0,440px)_minmax(0,1fr)] lg:gap-20">
             <Reveal variant="right" className="group/media overflow-hidden rounded-lg">
               <Image
-                src="/images/2023/05/marie-salabert.jpg"
-                alt={a.interdisciplinarite.photoAlt}
+                src="/images/2026/10/parcours/parcours-1.jpg"
+                alt={d.accueil.parcours.photosAlt[0]}
                 width={900}
                 height={900}
                 sizes="(max-width: 1024px) 100vw, 440px"

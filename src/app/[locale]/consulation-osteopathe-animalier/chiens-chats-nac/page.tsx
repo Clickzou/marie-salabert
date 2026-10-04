@@ -79,7 +79,7 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
               inegales. */}
           <div className="relative order-1 min-h-[280px] lg:min-h-[440px]">
             <Image
-              src="/images/2026/07/osteopathie-animaux-compagnie.jpeg"
+              src="/images/2026/10/osteopathie-compagnie-chien.jpg"
               alt={c.compagnie.photoChienAlt}
               fill
               priority

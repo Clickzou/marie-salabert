@@ -92,10 +92,10 @@ const photosSeances = [
 
 /** Visuels de l'aiguillage vers les pages d'especes, dans l'ordre du dictionnaire. */
 const photosSommaire = [
-  "/images/2025/05/osteopathie-cheval-12.jpg",
-  "/images/2025/05/osteopathie-chien-11.jpg",
-  // photo de terrain, en bouverie, a la place de l'image d'illustration
-  "/images/2025/05/osteopathie-animaux-elevage-01.avif",
+  // photos choisies par la praticienne (retour V2), reprises sur chaque page d'espece
+  "/images/2026/10/osteopathie-equine-cheval.jpg",
+  "/images/2026/10/osteopathie-compagnie-chien.jpg",
+  "/images/2026/10/osteopathie-rurale-cochon.jpg",
 ];
 
 /* Marge appliquee aux cibles d'ancres : compense header (88px) + sous-nav collante. */

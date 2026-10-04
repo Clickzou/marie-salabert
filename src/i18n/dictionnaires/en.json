@@ -37,6 +37,8 @@
     "pause": "Pause the carousel",
     "lecture": "Resume the carousel",
     "photosSeances": "Session photos",
+    "choisirPhoto": "Choose a photo",
+    "choisirLivre": "Choose a book",
     "lireSuite": "Read more",
     "reduire": "Show less",
     "reconnaissance": "Official recognition",
@@ -106,7 +108,20 @@
         "Driven by a desire to create connections between the various stakeholders in animal health, I initiated the organisation of the SymbiOsteo conferences in 2019 and 2022, and later co-created the SymbiOsteo podcast in 2024. These projects aim to foster exchanges between veterinarians practising osteopathy, animal osteopaths and human osteopaths, whilst highlighting developments in practice, current affairs and research prospects in this field.",
         "In 2025, I wished to deepen my knowledge and develop an approach more oriented towards scientific research. I therefore enrolled in the Master 2 'Gestion des Établissements de Formation et de Recherche en Santé' at the Université de Haute-Alsace in Mulhouse. This training led to my first scientific publication in the integrative health journal Hegel: 'Ostéopathie, chiropraxie, thérapies manuelles: analyse bibliométrique (1949–2025)'."
       ],
-      "alt": "Marie Salabert speaking at a conference on animal osteopathy"
+      "alt": "Marie Salabert speaking at a conference on animal osteopathy",
+      "photosAlt": [
+        "Marie Salabert smiling, cheek to cheek with a bay horse",
+        "Marie Salabert holding a Siamese cat in her arms",
+        "Marie Salabert supporting a piebald foal in a field",
+        "Marie Salabert stroking a small black and white dog",
+        "Marie Salabert examining a German Shepherd, in black and white",
+        "Marie Salabert surrounded by two affectionate horses",
+        "Marie Salabert crouching next to a German Shepherd in the grass",
+        "Marie Salabert with a pig in the straw",
+        "Marie Salabert treating a pony in a field",
+        "Marie Salabert with a black cat, a dog in the background",
+        "Marie Salabert speaking at a conference"
+      ]
     },
     "pourQui": {
       "surTitre": "Fields of practice",
@@ -256,7 +271,7 @@
       ],
       "tarif": "Consultation fees depend on your location; to find out the exact amount, please ask when booking your appointment.",
       "paiement": "Accepted payment methods: cheque, bank transfer or cash.",
-      "alt": "Marie Salabert, animal osteopath"
+      "alt": "Marie Salabert Animal Osteopathy logo"
     },
     "lieux": {
       "surTitre": "Area covered",
@@ -391,7 +406,16 @@
           ]
         }
       ],
-      "synthese": "Animal osteopathy is a so-called natural integrative medicine: through its manual approach, it offers a different and complementary overall perspective to veterinary medicine."
+      "synthese": "Animal osteopathy is a so-called natural integrative medicine: through its manual approach, it offers a different and complementary overall perspective to veterinary medicine.",
+      "livresAlt": [
+        "Cover of the book “La clef de la guérison : l'ostéopathie” by Francis Luzon",
+        "Cover of “Ostéopathie vétérinaire: introduction to structural osteopathy applied to the horse” by Pascal Evrard",
+        "Cover of “Ostéopathie vétérinaire: introduction to cranio-sacral osteopathy applied to the horse” by Pascal Evrard",
+        "Cover of “Les chevaux m'ont dit” by Dr Dominique Giniaux",
+        "Cover of “Ostéopathie équine” by Dr Dominique Giniaux",
+        "Cover of “Soulagez votre cheval aux doigts (et à l'œil)” by Dr Dominique Giniaux",
+        "Cover of “La consultation ostéopathique et homéopathique du chien et du chat” by Francis Luzon"
+      ]
     },
     "legislation": {
       "surTitre": "Regulatory framework",
@@ -431,7 +455,7 @@
       "signature": "Marie Salabert",
       "photoAlt": "Marie Salabert speaking at a conference on animal osteopathy"
     },
-    "heroAlt": "Marie Salabert, animal osteopath near Toulouse, with a horse"
+    "heroAlt": "A foal's muzzle resting on Marie Salabert's hand"
   },
   "contact": {
     "meta": {
@@ -466,7 +490,7 @@
       "surTitre": "Area covered",
       "titre": "Approximately 1h45 drive around Toulouse"
     },
-    "heroAlt": "Marie Salabert giving an osteopathy consultation to a horse"
+    "heroAlt": "Marie Salabert treating a pony in a field"
   },
   "galerie": {
     "meta": {
@@ -887,7 +911,7 @@
       "globaleTitre": "A holistic approach to equine wellbeing",
       "globaleIntro": "A horse's health and wellbeing rely on comprehensive care combining several complementary skills. Animal osteopathy fits into this approach alongside:",
       "globaleConclusion": "The aim is to promote consistent, respectful care tailored to the individual needs of each horse.",
-      "photoAlt": "Marie Salabert mobilising a horse's hindquarters in a stable",
+      "photoAlt": "Marie Salabert with her hands on the head of a bay horse",
       "photoGlobaleAlt": "Marie Salabert with a horse and a pony under a shelter",
       "meta": {
         "titre": "Equine osteopath near Toulouse - Marie Salabert",
@@ -913,7 +937,7 @@
       "photoNacAlt": "Marie Salabert holding a black rabbit in a harness, outdoors",
       "photoLapinAlt": "Marie Salabert working on the back of a grey lop rabbit lying on a rug",
       "photoReptileAlt": "Marie Salabert carrying a snake coiled over her shoulders",
-      "photoChienAlt": "Marie Salabert with a border collie type dog",
+      "photoChienAlt": "Marie Salabert with her hands on a black and white dog",
       "photoChatAlt": "Marie Salabert holding a black cat during a consultation",
       "photoGlobaleAlt": "Ginger cat perched in a tree among the leaves",
       "meta": {
@@ -935,7 +959,7 @@
       "globaleTitre": "A holistic approach to farm animal wellbeing",
       "globaleIntro": "The health and wellbeing of farm animals rely on comprehensive care combining several essential factors. Animal osteopathy fits into this approach alongside:",
       "globaleConclusion": "The aim is to support farmers in a consistent, respectful approach tailored to the specific needs of each animal and each farm.",
-      "photoAlt": "Marie Salabert beside a calf in a cattle shed",
+      "photoAlt": "Marie Salabert crouching next to a pig lying in a farmyard",
       "photoGlobaleAlt": "Marie Salabert during an osteopathy consultation with a bovine in a farm building",
       "meta": {
         "titre": "Rural osteopathy for farm animals - Toulouse",

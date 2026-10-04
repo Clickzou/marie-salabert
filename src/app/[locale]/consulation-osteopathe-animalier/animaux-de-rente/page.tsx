@@ -54,7 +54,7 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
         <div className="grid items-stretch lg:min-h-[610px] lg:grid-cols-2">
           <div className="relative order-2 min-h-[280px] lg:order-1 lg:min-h-[440px]">
             <Image
-              src="/images/2026/07/osteopathie-animaux-de-rente.jpeg"
+              src="/images/2026/10/osteopathie-rurale-cochon.jpg"
               alt={c.rente.photoAlt}
               fill
               priority

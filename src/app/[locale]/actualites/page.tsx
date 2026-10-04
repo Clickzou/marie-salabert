@@ -1,5 +1,4 @@
 ﻿import type { Metadata } from "next";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getArticles } from "@/lib/articles";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
@@ -8,6 +7,8 @@ import { routes } from "@/lib/site";
 import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
 import ArticleCard from "@/components/ArticleCard";
 import Reveal from "@/components/Reveal";
+import { Diaporama } from "@/components/Diaporama";
+import { photosParcours } from "@/content/photos";
 
 export async function generateMetadata({
   params,
@@ -60,14 +61,13 @@ export default async function ActualitesPage({
               </div>
             </Reveal>
 
-            <Reveal variant="left" delay={140} className="group/media overflow-hidden rounded-lg">
-              <Image
-                src="/images/2025/05/marie-salabert-osteopathe-animalier.jpg"
-                alt={n.photoAlt}
-                width={576}
-                height={1024}
+            {/* Photos du parcours a la place du portrait (retour V2) */}
+            <Reveal variant="left" delay={140}>
+              <Diaporama
+                photos={photosParcours.map((src, i) => ({ src, alt: d.accueil.parcours.photosAlt[i] }))}
+                libelle={d.commun.choisirPhoto}
                 sizes="(max-width: 1024px) 100vw, 480px"
-                className="img-zoom aspect-[4/5] w-full object-cover object-top"
+                className="aspect-[4/5] w-full"
               />
             </Reveal>
           </div>

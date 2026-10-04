@@ -37,6 +37,8 @@
     "pause": "Metti in pausa lo scorrimento",
     "lecture": "Riprendi lo scorrimento",
     "photosSeances": "Foto delle sedute",
+    "choisirPhoto": "Scegli una foto",
+    "choisirLivre": "Scegli un libro",
     "lireSuite": "Leggi il seguito",
     "reduire": "Riduci",
     "reconnaissance": "Riconoscimento ufficiale",
@@ -106,7 +108,20 @@
         "Animata dalla volontà di creare legami tra i diversi attori della salute animale, sono stata all'origine dell'organizzazione dei congressi SymbiOsteo nel 2019 e nel 2022, per poi co-creare SymbiOsteo, il podcast, nel 2024. Questi progetti hanno l'obiettivo di favorire gli scambi tra veterinari che praticano l'osteopatia, osteopati animalieri e osteopati umani, mettendo in luce le evoluzioni delle pratiche, l'attualità e le prospettive di ricerca in questo ambito.",
         "Nel 2025, ho desiderato approfondire le mie conoscenze e sviluppare un approccio maggiormente orientato verso la ricerca scientifica. Ho quindi seguito il Master 2 « Gestion des Établissements de Formation et de Recherche en Santé » presso l'Université de Haute-Alsace di Mulhouse. Questa formazione ha portato alla mia prima pubblicazione scientifica sulla rivista di salute integrativa Hegel: « Ostéopathie, chiropraxie, thérapies manuelles : analyse bibliométrique (1949–2025) »."
       ],
-      "alt": "Marie Salabert al microfono durante una conferenza sull'osteopatia animale"
+      "alt": "Marie Salabert al microfono durante una conferenza sull'osteopatia animale",
+      "photosAlt": [
+        "Marie Salabert sorridente, guancia a guancia con un cavallo baio",
+        "Marie Salabert tiene in braccio un gatto siamese",
+        "Marie Salabert sostiene un puledro pezzato in un prato",
+        "Marie Salabert accarezza un cagnolino bianco e nero",
+        "Marie Salabert esamina un pastore tedesco, in bianco e nero",
+        "Marie Salabert circondata da due cavalli affettuosi",
+        "Marie Salabert accovacciata accanto a un pastore tedesco nell'erba",
+        "Marie Salabert accanto a un maiale nella paglia",
+        "Marie Salabert tratta un pony al pascolo",
+        "Marie Salabert con un gatto nero, un cane sullo sfondo",
+        "Marie Salabert al microfono durante una conferenza"
+      ]
     },
     "pourQui": {
       "surTitre": "Ambiti di intervento",
@@ -256,7 +271,7 @@
       ],
       "tarif": "La tariffa dei consulti dipende dalla vostra localizzazione; per conoscere l'importo esatto, vi invitiamo a richiederlo al momento della presa di appuntamento.",
       "paiement": "Metodi di pagamento accettati: assegno, bonifico o contanti.",
-      "alt": "Marie Salabert, osteopata animale"
+      "alt": "Logo di Marie Salabert Osteopatia Animale"
     },
     "lieux": {
       "surTitre": "Zona di intervento",
@@ -391,7 +406,16 @@
           ]
         }
       ],
-      "synthese": "L'osteopatia animale è una medicina integrativa detta naturale: grazie al suo approccio manuale, offre una visione globale diversa e complementare alla medicina veterinaria."
+      "synthese": "L'osteopatia animale è una medicina integrativa detta naturale: grazie al suo approccio manuale, offre una visione globale diversa e complementare alla medicina veterinaria.",
+      "livresAlt": [
+        "Copertina del libro « La clef de la guérison : l'ostéopathie » di Francis Luzon",
+        "Copertina di « Ostéopathie vétérinaire: introduzione all'osteopatia strutturale applicata al cavallo » di Pascal Evrard",
+        "Copertina di « Ostéopathie vétérinaire: introduzione all'osteopatia cranio-sacrale applicata al cavallo » di Pascal Evrard",
+        "Copertina di « Les chevaux m'ont dit » del Dr Dominique Giniaux",
+        "Copertina di « Ostéopathie équine » del Dr Dominique Giniaux",
+        "Copertina di « Soulagez votre cheval aux doigts (et à l'œil) » del Dr Dominique Giniaux",
+        "Copertina di « La consultation ostéopathique et homéopathique du chien et du chat » di Francis Luzon"
+      ]
     },
     "legislation": {
       "surTitre": "Quadro normativo",
@@ -431,7 +455,7 @@
       "signature": "Marie Salabert",
       "photoAlt": "Marie Salabert al microfono durante una conferenza sull'osteopatia animale"
     },
-    "heroAlt": "Marie Salabert, osteopata animale vicino a Tolosa, con un cavallo"
+    "heroAlt": "Il muso di un puledro posato sulla mano di Marie Salabert"
   },
   "contact": {
     "meta": {
@@ -466,7 +490,7 @@
       "surTitre": "Zona d'intervento",
       "titre": "Circa 1h45 di strada intorno a Toulouse"
     },
-    "heroAlt": "Marie Salabert durante un consulto di osteopatia con un cavallo"
+    "heroAlt": "Marie Salabert tratta un pony al pascolo"
   },
   "galerie": {
     "meta": {
@@ -887,7 +911,7 @@
       "globaleTitre": "Un approccio globale al benessere equino",
       "globaleIntro": "La salute e il benessere del cavallo si basano su una presa in carico globale che associa diverse competenze complementari. L'osteopatia animale si inserisce in questo percorso accanto a:",
       "globaleConclusione": "L'obiettivo è favorire una presa in carico coerente, rispettosa e adatta alle esigenze individuali di ogni cavallo.",
-      "photoAlt": "Marie Salabert mentre mobilizza il posteriore di un cavallo in scuderia",
+      "photoAlt": "Marie Salabert posa le mani sulla testa di un cavallo baio",
       "globaleConclusion": "L'obiettivo è favorire una presa in carico coerente, rispettosa e adatta alle esigenze individuali di ogni cavallo.",
       "photoGlobaleAlt": "Marie Salabert accanto a un cavallo e a un pony sotto una tettoia",
       "meta": {
@@ -914,7 +938,7 @@
       "photoNacAlt": "Marie Salabert tiene un coniglio nero con pettorina, all'aperto",
       "photoLapinAlt": "Marie Salabert lavora sul dorso di un coniglio ariete grigio sdraiato su un tappeto",
       "photoReptileAlt": "Marie Salabert porta un serpente arrotolato sulle spalle",
-      "photoChienAlt": "Marie Salabert con un cane di tipo border collie",
+      "photoChienAlt": "Marie Salabert posa le mani su un cane bianco e nero",
       "photoChatAlt": "Marie Salabert con in braccio un gatto nero durante un consulto",
       "photoGlobaleAlt": "Gatto rosso appollaiato su un albero, tra le foglie",
       "meta": {
@@ -936,7 +960,7 @@
       "globaleTitre": "Un approccio globale al benessere degli animali da allevamento",
       "globaleIntro": "La salute e il benessere degli animali da allevamento si basano su una presa in carico globale che associa diversi fattori essenziali. L'osteopatia animale si inserisce in questo percorso accanto a:",
       "globaleConclusion": "L'obiettivo è accompagnare gli allevatori in un percorso coerente, rispettoso e adatto alle esigenze specifiche di ogni animale e di ogni allevamento.",
-      "photoAlt": "Marie Salabert accanto a un vitello nella stalla",
+      "photoAlt": "Marie Salabert accovacciata accanto a un maiale sdraiato in un cortile",
       "photoGlobaleAlt": "Marie Salabert durante un consulto di osteopatia con un bovino in una stalla",
       "meta": {
         "titre": "Osteopatia rurale per animali d'allevamento - Tolosa",

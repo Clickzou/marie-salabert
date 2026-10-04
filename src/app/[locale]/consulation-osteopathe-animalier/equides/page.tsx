@@ -55,7 +55,7 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
         <div className="grid items-stretch lg:min-h-[610px] lg:grid-cols-2">
           <div className="relative min-h-[280px] lg:min-h-[440px]">
             <Image
-              src="/images/2026/07/osteopathie-equine.jpeg"
+              src="/images/2026/10/osteopathie-equine-cheval.jpg"
               alt={c.equides.photoAlt}
               fill
               priority
