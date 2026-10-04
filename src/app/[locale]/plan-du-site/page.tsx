@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { getArticles } from "@/lib/articles";
 import { cheminLocalise, estLocale, localeLabels, localeTags, locales } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { routes } from "@/lib/site";
+import { imagePartage, routes } from "@/lib/site";
 import { Container, Section } from "@/components/ui";
 import { PageHero } from "@/components/sections";
 import Reveal from "@/components/Reveal";
@@ -36,7 +36,7 @@ export async function generateMetadata({
         it: `/it${routes.plan}`,
       },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 

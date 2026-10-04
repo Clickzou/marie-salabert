@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getArticles } from "@/lib/articles";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { routes } from "@/lib/site";
+import { imagePartage, routes } from "@/lib/site";
 import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
 import ArticleCard from "@/components/ArticleCard";
 import Reveal from "@/components/Reveal";
@@ -25,7 +25,7 @@ export async function generateMetadata({
       canonical: cheminLocalise(routes.news, locale),
       languages: { fr: routes.news, en: `/en${routes.news}`, it: `/it${routes.news}` },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 

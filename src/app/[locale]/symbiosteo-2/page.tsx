@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from "next";
+import { imagePartage } from "@/lib/site";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
@@ -22,7 +23,7 @@ export async function generateMetadata({
       canonical: cheminLocalise("/symbiosteo-2", locale),
       languages: { fr: "/symbiosteo-2", en: "/en/symbiosteo-2", it: "/it/symbiosteo-2" },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 

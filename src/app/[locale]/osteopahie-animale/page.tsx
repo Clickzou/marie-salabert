@@ -9,7 +9,7 @@ import { Diaporama } from "@/components/Diaporama";
 import { livresHistoire } from "@/content/photos";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { routes } from "@/lib/site";
+import { imagePartage, routes } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -30,7 +30,7 @@ export async function generateMetadata({
         it: `/it${routes.about}`,
       },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 

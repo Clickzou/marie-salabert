@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getArticle, getArticles } from "@/lib/articles";
-import { cheminLocalise, estLocale, locales } from "@/i18n/config";
+import { cheminLocalise, estLocale, localeTags, locales } from "@/i18n/config";
+import { filAriane, ID_CABINET, ID_PERSONNE, jsonLdHtml } from "@/lib/jsonld";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import { routes, site } from "@/lib/site";
 import { Button, Container, Eyebrow, Section } from "@/components/ui";
@@ -38,11 +39,13 @@ export async function generateMetadata({
   const article = getArticle(slug, locale);
   if (!article) return {};
 
+  const langue = estLocale(locale) ? locale : "fr";
   return {
-    title: article.title,
+    // Titre court pour Google quand celui de l'article depasse ~65 signes
+    title: article.titreSeo || article.title,
     description: article.description,
     alternates: {
-      canonical: cheminLocalise(`/${article.slug}`, estLocale(locale) ? locale : "fr"),
+      canonical: cheminLocalise(`/${article.slug}`, langue),
       languages: {
         fr: `/${article.slug}`,
         en: `/en/${article.slug}`,
@@ -54,7 +57,8 @@ export async function generateMetadata({
       title: article.title,
       description: article.description,
       publishedTime: article.date,
-      url: `/${article.slug}`,
+      url: cheminLocalise(`/${article.slug}`, langue),
+      locale: localeTags[langue],
       ...(article.image ? { images: [article.image] } : {}),
     },
   };
@@ -71,7 +75,7 @@ export default async function ArticlePage({
   const article = getArticle(slug, locale);
   if (!article) notFound();
 
-  const url = `${site.url}/${article.slug}`;
+  const url = new URL(cheminLocalise(`/${article.slug}`, locale), site.url).toString();
 
   /* « À lire aussi » : les articles explicitement lies d'abord, completes par les
      plus recents jusqu'a neuf — le carrousel a ainsi toujours de quoi defiler. */
@@ -90,17 +94,24 @@ export default async function ArticlePage({
     datePublished: article.date,
     dateModified: article.date,
     ...(article.image ? { image: `${site.url}${article.image}` } : {}),
-    author: { "@type": "Person", name: site.practitioner },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@id": ID_PERSONNE },
+    publisher: { "@id": ID_CABINET },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    inLanguage: "fr-FR",
+    inLanguage: localeTags[locale],
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={jsonLdHtml([
+          jsonLd,
+          filAriane(locale, [
+            { nom: d.nav.accueil, chemin: "/" },
+            { nom: d.nav.actualites, chemin: routes.news },
+            { nom: article.title, chemin: `/${article.slug}` },
+          ]),
+        ])}
       />
 
       {/* Banniere : l'image de l'article en plein ecran, titre en bas a gauche */}

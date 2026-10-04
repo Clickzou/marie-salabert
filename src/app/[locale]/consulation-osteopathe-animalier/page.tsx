@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { routes } from "@/lib/site";
+import { imagePartage, routes } from "@/lib/site";
 import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
 import { CheckList, CtaBand, PageHero, Testimonials } from "@/components/sections";
 import { avis, googleAvis } from "@/content/avis";
@@ -32,7 +32,7 @@ export async function generateMetadata({
         it: `/it${routes.consultations}`,
       },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 

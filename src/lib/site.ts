@@ -49,6 +49,17 @@ export const site = {
   credit: { label: "Conception site internet : Clickzou", url: "https://clickzou.fr/" },
 } as const;
 
+/**
+ * Image de partage par defaut (reseaux sociaux, apercus des assistants IA),
+ * au format 1200 x 630 attendu par Open Graph. Les articles ont la leur.
+ */
+export const imagePartage = {
+  url: "/images/partage/osteopathie-animale-toulouse.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Marie Salabert, ostéopathe animalier à Toulouse, en séance avec un poulain",
+} as const;
+
 export const routes = {
   home: "/",
   about: "/osteopahie-animale",

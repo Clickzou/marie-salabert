@@ -3,7 +3,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { routes } from "@/lib/site";
+import { filAriane, jsonLdHtml, prestation } from "@/lib/jsonld";
+import { imagePartage, routes } from "@/lib/site";
 import { Button, Container, Section } from "@/components/ui";
 import { CheckList, CtaBand } from "@/components/sections";
 import {
@@ -36,7 +37,7 @@ export async function generateMetadata({
         it: `/it${routes.compagnie}`,
       },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 
@@ -49,6 +50,23 @@ export default async function CompagniePage({ params }: { params: Promise<{ loca
 
   return (
     <>
+      {/* Prestation et fil d'Ariane, pour les moteurs et assistants IA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdHtml([
+          prestation(locale, {
+            nom: d.nav.compagnie,
+            description: c.compagnie.meta.description,
+            chemin: routes.compagnie,
+            animaux: c.sommaire[1].detail,
+          }),
+          filAriane(locale, [
+            { nom: d.nav.accueil, chemin: "/" },
+            { nom: d.nav.consultations, chemin: routes.consultations },
+            { nom: d.nav.compagnie, chemin: routes.compagnie },
+          ]),
+        ])}
+      />
 
       {/* Bandeau d'ouverture : photos a gauche, texte a droite, comme les deux
           autres pages d'especes. Le sens de lecture doit etre le meme d'une page

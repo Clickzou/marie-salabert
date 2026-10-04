@@ -3,7 +3,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { routes } from "@/lib/site";
+import { filAriane, jsonLdHtml, prestation } from "@/lib/jsonld";
+import { imagePartage, routes } from "@/lib/site";
 import { Button, Container, Section } from "@/components/ui";
 import { CtaBand } from "@/components/sections";
 import {
@@ -32,7 +33,7 @@ export async function generateMetadata({
         it: `/it${routes.rente}`,
       },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 
@@ -45,6 +46,23 @@ export default async function RentePage({ params }: { params: Promise<{ locale: 
 
   return (
     <>
+      {/* Prestation et fil d'Ariane, pour les moteurs et assistants IA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdHtml([
+          prestation(locale, {
+            nom: d.nav.rurale,
+            description: c.rente.meta.description,
+            chemin: routes.rente,
+            animaux: c.sommaire[2].detail,
+          }),
+          filAriane(locale, [
+            { nom: d.nav.accueil, chemin: "/" },
+            { nom: d.nav.consultations, chemin: routes.consultations },
+            { nom: d.nav.rurale, chemin: routes.rente },
+          ]),
+        ])}
+      />
 
       {/* Bandeau d'ouverture : photo a gauche, texte a droite. */}
       <Section tone="plum" padding="none">

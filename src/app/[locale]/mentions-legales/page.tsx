@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { PageLegale } from "@/components/PageLegale";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { routes, site } from "@/lib/site";
+import { imagePartage, routes, site } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -24,7 +24,7 @@ export async function generateMetadata({
         it: `/it${routes.legal}`,
       },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
     robots: { index: true, follow: true },
   };
 }

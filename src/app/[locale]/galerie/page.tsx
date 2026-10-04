@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { routes } from "@/lib/site";
+import { imagePartage, routes } from "@/lib/site";
 import { Button, Container, Section } from "@/components/ui";
 import { PageHero } from "@/components/sections";
 import GalerieLightbox, { type GaleriePhoto } from "@/components/GalerieLightbox";
@@ -26,7 +26,7 @@ export async function generateMetadata({
         it: `/it${routes.gallery}`,
       },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 
@@ -37,7 +37,8 @@ const G = "/images/2026/07/galerie";
  * Photos de la galerie, dans l'ordre du site d'origine.
  *
  * Trois cliches y figuraient deux fois sous des noms differents — IMG_5312,
- * IMG_5213 et endez-vous-osteopathe-animalier doublaient trois entrees deja
+ * IMG_5213 et 
+endez-vous-osteopathe-animalier doublaient trois entrees deja
  * presentes. Les fichiers restent sur le disque, deux d'entre eux servant
  * ailleurs sur le site ; seules les entrees en double ont disparu.
  *

@@ -20,6 +20,8 @@ export type Article = {
   /** Segment d'URL de l'article : /<slug> */
   slug: string;
   title: string;
+  /** Titre court pour la balise <title>, quand `title` est trop long. */
+  titreSeo: string;
   description: string;
   /** Date de publication ISO 8601 (sert au tri) */
   date: string;
@@ -101,6 +103,7 @@ function readArticle(fileName: string, locale = "fr"): Article {
   return {
     slug,
     title: data.title ?? slug,
+    titreSeo: data.titreSeo ?? "",
     description: data.description ?? "",
     date: data.date ?? "",
     dateLabel: data.dateLabel ?? "",

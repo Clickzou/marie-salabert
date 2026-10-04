@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { avis, googleAvis } from "@/content/avis";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { routes } from "@/lib/site";
+import { imagePartage, routes } from "@/lib/site";
 import { Button, Container, Section } from "@/components/ui";
 import { PageHero, Testimonials } from "@/components/sections";
 import { FaqAccordion, faqPageJsonLd, type FaqItem } from "@/components/FaqAccordion";
@@ -24,7 +24,7 @@ export async function generateMetadata({
       canonical: cheminLocalise(routes.faq, locale),
       languages: { fr: routes.faq, en: `/en${routes.faq}`, it: `/it${routes.faq}` },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 

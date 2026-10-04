@@ -3,7 +3,7 @@ import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import Image from "next/image";
 import Link from "next/link";
-import { routes } from "@/lib/site";
+import { imagePartage, routes } from "@/lib/site";
 import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
 
 export async function generateMetadata({
@@ -25,7 +25,7 @@ export async function generateMetadata({
         it: `/it/mon-diplome-dosteopathe-animalier`,
       },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 

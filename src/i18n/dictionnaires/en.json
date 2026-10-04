@@ -460,7 +460,7 @@
   "contact": {
     "meta": {
       "titre": "Book an appointment - Marie Salabert, animal osteopath",
-      "description": "Book an animal osteopathy session or ask a question around Toulouse: by phone, text, WhatsApp, email or through the form. Horses, dogs, cats, exotic pets and farm animals."
+      "description": "Book an animal osteopathy session or ask a question around Toulouse: phone, text, WhatsApp, email or form. Horses, dogs, cats, exotic pets, farm animals."
     },
     "hero": {
       "surTitre": "Contact",
@@ -528,7 +528,7 @@
   },
   "actualites": {
     "meta": {
-      "titre": "Animal osteopathy news",
+      "titre": "Animal osteopathy news - Marie Salabert, Toulouse",
       "description": "Scientific publications, congresses, podcasts and how the profession is changing: the journal of my work in animal osteopathy."
     },
     "surTitre": "The journal",

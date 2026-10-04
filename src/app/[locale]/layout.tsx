@@ -7,7 +7,8 @@ import CookieBanner from "@/components/CookieBanner";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { estLocale, locales, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { site } from "@/lib/site";
+import { grapheSite, jsonLdHtml } from "@/lib/jsonld";
+import { imagePartage, site } from "@/lib/site";
 import "../globals.css";
 
 /** Les trois langues sont pre-rendues au build. */
@@ -35,29 +36,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: site.locale,
     siteName: site.name,
+    images: [imagePartage],
   },
+  /* Les pages ne redefinissent pas `twitter` : la carte grand format vaut
+     partout, et X reprend l'image Open Graph de chaque page. */
+  twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
-};
-
-const organizationJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "VeterinaryCare",
-  name: `${site.practitioner} — Ostéopathie Animale`,
-  description:
-    "Ostéopathe animalier à Toulouse : chiens, chats, NACs, chevaux, animaux de rente et exotiques.",
-  url: site.url,
-  telephone: "+33637880073",
-  // Praticienne itinerante : on declare une zone d'intervention plutot qu'une
-  // adresse precise, conformement au souhait de ne diffuser l'adresse que dans
-  // les mentions legales.
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Toulouse",
-    addressRegion: "Occitanie",
-    addressCountry: site.address.country,
-  },
-  areaServed: ["Toulouse", "Haute-Garonne", "Tarn", "Tarn-et-Garonne", "Ariège", "Aude"],
-  sameAs: [site.social.facebook, site.social.instagram, site.social.linkedin],
 };
 
 export default async function RootLayout({
@@ -84,7 +68,7 @@ export default async function RootLayout({
         <GoogleAnalytics />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={jsonLdHtml(grapheSite(locale, d.accueil.meta.description))}
         />
       </body>
     </html>

@@ -3,7 +3,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
-import { routes } from "@/lib/site";
+import { filAriane, jsonLdHtml, prestation } from "@/lib/jsonld";
+import { imagePartage, routes } from "@/lib/site";
 import { Button, Container, Section } from "@/components/ui";
 import { CheckList, CtaBand } from "@/components/sections";
 import {
@@ -32,7 +33,7 @@ export async function generateMetadata({
         it: `/it${routes.equides}`,
       },
     },
-    openGraph: { locale: localeTags[locale] },
+    openGraph: { locale: localeTags[locale], images: [imagePartage] },
   };
 }
 
@@ -45,6 +46,23 @@ export default async function EquidesPage({ params }: { params: Promise<{ locale
 
   return (
     <>
+      {/* Prestation et fil d'Ariane, pour les moteurs et assistants IA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdHtml([
+          prestation(locale, {
+            nom: d.nav.equine,
+            description: c.equides.meta.description,
+            chemin: routes.equides,
+            animaux: c.sommaire[0].detail,
+          }),
+          filAriane(locale, [
+            { nom: d.nav.accueil, chemin: "/" },
+            { nom: d.nav.consultations, chemin: routes.consultations },
+            { nom: d.nav.equine, chemin: routes.equides },
+          ]),
+        ])}
+      />
 
       {/* Bandeau d'ouverture : reprend a l'identique la mise en page qu'avait la
           section sur la page consultations. */}
