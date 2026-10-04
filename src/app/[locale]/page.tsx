@@ -15,7 +15,7 @@ import {
 } from "@/components/sections";
 import Reveal from "@/components/Reveal";
 import SecteurMap from "@/components/SecteurMap";
-import { CarrouselPhotos } from "@/components/CarrouselPhotos";
+import { Approches } from "@/components/Approches";
 import { CartesPublics } from "@/components/CartesPublics";
 
 export async function generateMetadata({
@@ -45,58 +45,6 @@ const photosHero = [
   "/images/2025/05/osteopathe-chat-toulouse.jpg",
 ];
 
-/**
- * Carrousel de la section « Deroulement d'une seance ».
- *
- * Six cliches de la galerie. Le tri s'est fait sur le contenu, pas sur le nom de
- * fichier : la banniere sert les memes photos sous d'autres noms — le poulain,
- * le border collie et le chat noir de la galerie sont exactement les cliches de
- * `osteopathe-animalier-toulouse`, `osteopathe-chien-toulouse` et
- * `osteopathe-chat-toulouse`. Chaque image ci-dessous a donc ete comparee une a
- * une aux quatre vues de la banniere, et les especes sont variees.
- *
- * Les textes alternatifs decrivent la scene : ces photos portent une
- * information, elles ne sont pas decoratives.
- */
-const photosSeances = [
-  {
-    src: "/images/2025/05/osteopathie-chien-02.jpg",
-    largeur: 1440,
-    hauteur: 963,
-    alt: "Marie Salabert travaille le dos d'un berger allemand assis dans l'herbe.",
-  },
-  {
-    src: "/images/2025/05/osteopathie-chat-05.jpg",
-    largeur: 1440,
-    hauteur: 961,
-    alt: "Marie Salabert porte un chat siamois contre elle avant une séance.",
-  },
-  {
-    src: "/images/2025/05/osteopathie-cheval-02.jpg",
-    largeur: 1440,
-    hauteur: 961,
-    alt: "Marie Salabert mobilise la tête d'un cheval bai dans une écurie.",
-  },
-  {
-    src: "/images/2025/05/osteopathie-cheval-03.jpg",
-    largeur: 1440,
-    hauteur: 961,
-    alt: "Marie Salabert soutient l'encolure d'un poney brun dans un pré fleuri.",
-  },
-  {
-    src: "/images/2025/05/osteopathie-cheval-04.jpg",
-    largeur: 1488,
-    hauteur: 1304,
-    alt: "Marie Salabert mobilise l'antérieur d'un cheval bai, au pré.",
-  },
-  {
-    src: "/images/2025/05/osteopathie-cheval-24.jpg",
-    largeur: 2000,
-    hauteur: 1500,
-    alt: "Marie Salabert examine le dos d'un cheval bai en extérieur, au pré.",
-  },
-] as const;
-
 /** Visuels des trois publics, dans l'ordre du dictionnaire. */
 const photosPublics = [
   "/images/2025/05/osteopathie-chien-11.jpg",
@@ -104,6 +52,23 @@ const photosPublics = [
   // meme photo de terrain que la carte « Animaux de rente » des consultations
   "/images/2025/05/osteopathie-animaux-elevage-01.avif",
 ];
+
+/**
+ * Photos des six approches, dans l'ordre du dictionnaire, choisies par la
+ * praticienne (retour V2). Leurs textes alternatifs sont dans `photosAlt`.
+ */
+const photosApproches = (
+  [
+    ["musculosquelettique", 4],
+    ["tissulaire", 4],
+    ["fasciale", 4],
+    ["viscerale", 4],
+    ["reflexe", 3],
+    ["cranienne", 4],
+  ] as const
+).map(([nom, nombre]) =>
+  Array.from({ length: nombre }, (_, i) => `/images/2026/10/approches/approche-${nom}-${i + 1}.jpg`),
+);
 
 /* Numero de la clinique du Val Dadou. Il est isole du libelle traduit pour
    pouvoir en faire un lien `tel:` sans le dupliquer dans chaque langue. */
@@ -251,6 +216,36 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </Container>
       </Section>
 
+      {/* Les 6 approches : deplacees depuis la page A propos a la demande de
+          la praticienne, juste apres les champs d'intervention. Pleine
+          largeur d'ecran, comme la section precedente. */}
+      <Section>
+        <Container width="full">
+          <Reveal className="mx-auto max-w-3xl text-center">
+            <Eyebrow className="justify-center">{a.approches.surTitre}</Eyebrow>
+            <SectionTitle className="mt-5">{a.approches.titre}</SectionTitle>
+          </Reveal>
+          <Approches
+            items={a.approches.liste.map((approche, i) => ({
+              title: approche.titre,
+              photos: photosApproches[i].map((src, j) => ({ src, alt: approche.photosAlt[j] })),
+              body: (
+                <>
+                  {approche.paragraphes.map((par) => (
+                    <p key={par.slice(0, 40)}>{par}</p>
+                  ))}
+                </>
+              ),
+            }))}
+            libelles={{
+              faitesDefiler: d.commun.faitesDefiler,
+              precedente: a.approches.precedente,
+              suivante: a.approches.suivante,
+            }}
+          />
+        </Container>
+      </Section>
+
       {/* Comment prendre rendez-vous */}
       <Section>
         <Container width="wide">
@@ -383,79 +378,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </p>
           </Reveal>
         </Container>
-      </Section>
-
-      {/* Déroulement d'une séance d'ostéopathie animale */}
-      <Section>
-        <Container width="wide">
-          <Reveal className="text-center">
-            <Eyebrow className="justify-center">{a.etapes.surTitre}</Eyebrow>
-            <SectionTitle className="mt-4">{a.etapes.titre}</SectionTitle>
-          </Reveal>
-
-          {/* Grille editoriale pleine largeur : chiffre fantome, filet fin, pas de carte */}
-          <ol className="mt-16 grid gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-16">
-            {a.etapes.liste.map((e, i) => (
-              <Reveal
-                as="li"
-                key={e.titre}
-                delay={(i % 3) * 120}
-                className="border-t border-ink/10 pt-7"
-              >
-                <span
-                  aria-hidden="true"
-                  className="block font-display text-[44px] font-semibold leading-none text-plum/20"
-                >
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-4 text-[20px] leading-snug text-ink">{e.titre}</h3>
-                <div className="mt-4 space-y-3 text-[15px] leading-relaxed text-body">
-                  {e.paragraphes.map((par) => (
-                    <p key={par.slice(0, 40)}>{par}</p>
-                  ))}
-                </div>
-                {"lien" in e && e.lien && (
-                  <a
-                    href={e.lien.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="arrow-link mt-4 inline-flex items-center gap-1.5 text-[13.5px] font-medium text-green transition-colors hover:text-plum"
-                  >
-                    {e.lien.libelle}
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M5 12h13M13 6l6 6-6 6" />
-                    </svg>
-                  </a>
-                )}
-              </Reveal>
-            ))}
-          </ol>
-
-        </Container>
-
-        {/* Carrousel de photos, hors grille et hors conteneur pour occuper toute
-            la largeur de l'ecran. Les cliches viennent de la galerie et ne sont
-            utilises nulle part ailleurs sur l'accueil. */}
-        <Reveal variant="fade" className="mt-16">
-          <CarrouselPhotos
-            photos={photosSeances}
-            libelles={{
-              titre: d.commun.photosSeances,
-              precedent: d.commun.precedent,
-              suivant: d.commun.suivant,
-            }}
-          />
-        </Reveal>
       </Section>
 
       <CtaBand

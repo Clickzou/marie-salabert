@@ -6,10 +6,11 @@ import { notFound } from "next/navigation";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
 import { getDictionnaire } from "@/i18n/dictionnaire";
 import { routes } from "@/lib/site";
-import { Button, Container, Section, SectionTitle } from "@/components/ui";
+import { Button, Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
 import { CheckList, CtaBand, PageHero, Testimonials } from "@/components/sections";
 import { avis, googleAvis } from "@/content/avis";
 import Reveal from "@/components/Reveal";
+import { CarrouselPhotos } from "@/components/CarrouselPhotos";
 import SecteurMap from "@/components/SecteurMap";
 
 export async function generateMetadata({
@@ -35,6 +36,59 @@ export async function generateMetadata({
   };
 }
 
+
+/**
+ * Carrousel de la section « Deroulement d'une consultation en 6 etapes »,
+ * arrive de l'accueil avec elle.
+ *
+ * Six cliches de la galerie. Le tri s'est fait sur le contenu, pas sur le nom de
+ * fichier : la banniere sert les memes photos sous d'autres noms — le poulain,
+ * le border collie et le chat noir de la galerie sont exactement les cliches de
+ * `osteopathe-animalier-toulouse`, `osteopathe-chien-toulouse` et
+ * `osteopathe-chat-toulouse`. Chaque image ci-dessous a donc ete comparee une a
+ * une aux quatre vues de la banniere, et les especes sont variees.
+ *
+ * Les textes alternatifs decrivent la scene : ces photos portent une
+ * information, elles ne sont pas decoratives.
+ */
+const photosSeances = [
+  {
+    src: "/images/2025/05/osteopathie-chien-02.jpg",
+    largeur: 1440,
+    hauteur: 963,
+    alt: "Marie Salabert travaille le dos d'un berger allemand assis dans l'herbe.",
+  },
+  {
+    src: "/images/2025/05/osteopathie-chat-05.jpg",
+    largeur: 1440,
+    hauteur: 961,
+    alt: "Marie Salabert porte un chat siamois contre elle avant une séance.",
+  },
+  {
+    src: "/images/2025/05/osteopathie-cheval-02.jpg",
+    largeur: 1440,
+    hauteur: 961,
+    alt: "Marie Salabert mobilise la tête d'un cheval bai dans une écurie.",
+  },
+  {
+    src: "/images/2025/05/osteopathie-cheval-03.jpg",
+    largeur: 1440,
+    hauteur: 961,
+    alt: "Marie Salabert soutient l'encolure d'un poney brun dans un pré fleuri.",
+  },
+  {
+    src: "/images/2025/05/osteopathie-cheval-04.jpg",
+    largeur: 1488,
+    hauteur: 1304,
+    alt: "Marie Salabert mobilise l'antérieur d'un cheval bai, au pré.",
+  },
+  {
+    src: "/images/2025/05/osteopathie-cheval-24.jpg",
+    largeur: 2000,
+    hauteur: 1500,
+    alt: "Marie Salabert examine le dos d'un cheval bai en extérieur, au pré.",
+  },
+] as const;
 
 /** Visuels de l'aiguillage vers les pages d'especes, dans l'ordre du dictionnaire. */
 const photosSommaire = [
@@ -103,27 +157,13 @@ function PointTitre({
  * petits et en noir. Leur largeur est bornee et le retour a la ligne equilibre
  * (`text-balance`) pour qu'ils tiennent sur deux lignes sur grand ecran.
  *
- * Deux d'entre eux vivent dans une demi-colonne, ou 38 px les envoyaient sur
- * trois ou quatre lignes : `colonne` leur donne le corps qui les ramene a
- * deux, sans toucher aux deux autres qui occupent toute la largeur.
+ * Les quatre sont places en pleine largeur, au-dessus de leur grille : deux
+ * d'entre eux vivaient dans une demi-colonne avec un corps reduit, et la
+ * praticienne a releve qu'ils n'etaient « pas ecrits de la meme taille ».
  */
-function TitrePrincipal({
-  children,
-  colonne = false,
-}: {
-  children: ReactNode;
-  colonne?: boolean;
-}) {
+function TitrePrincipal({ children }: { children: ReactNode }) {
   return (
-    <h2
-      className={`max-w-[1150px] text-balance font-display text-[28px] leading-[1.12] font-semibold uppercase tracking-[0.03em] text-plum ${
-        /* La demi-colonne grandit avec la fenetre : un corps proportionnel a
-           la largeur garde ces titres sur deux lignes a toutes les tailles. */
-        colonne
-          ? "sm:text-[34px] lg:tracking-normal lg:text-[clamp(20px,1.7vw,30px)]"
-          : "sm:text-[38px]"
-      }`}
-    >
+    <h2 className="max-w-[1150px] text-balance font-display text-[28px] leading-[1.12] font-semibold uppercase tracking-[0.03em] text-plum sm:text-[38px]">
       {children}
     </h2>
   );
@@ -160,6 +200,80 @@ export default async function ConsultationsPage({
         subtitle={c.hero.sousTitre}
       />
 
+      {/* Déroulement d'une consultation en 6 étapes : déplacé depuis la fin de
+          l'accueil, en tête de page, à la demande de la praticienne. Fond gris :
+          il se détache ainsi de la suite, qui reprend sur fond blanc. */}
+      <Section tone="surface">
+        <Container width="wide">
+          <Reveal className="text-center">
+            <Eyebrow className="justify-center">{c.etapes.surTitre}</Eyebrow>
+            <SectionTitle className="mt-4">{c.etapes.titre}</SectionTitle>
+          </Reveal>
+
+          {/* Grille editoriale pleine largeur : chiffre fantome, filet fin, pas de carte */}
+          <ol className="mt-16 grid gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-16">
+            {c.etapes.liste.map((e, i) => (
+              <Reveal
+                as="li"
+                key={e.titre}
+                delay={(i % 3) * 120}
+                className="border-t border-ink/10 pt-7"
+              >
+                <span
+                  aria-hidden="true"
+                  className="block font-display text-[44px] font-semibold leading-none text-plum/20"
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="mt-4 text-[20px] leading-snug text-ink">{e.titre}</h3>
+                <div className="mt-4 space-y-3 text-[15px] leading-relaxed text-body">
+                  {e.paragraphes.map((par) => (
+                    <p key={par.slice(0, 40)}>{par}</p>
+                  ))}
+                </div>
+                {"lien" in e && e.lien && (
+                  <a
+                    href={e.lien.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="arrow-link mt-4 inline-flex items-center gap-1.5 text-[13.5px] font-medium text-green transition-colors hover:text-plum"
+                  >
+                    {e.lien.libelle}
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h13M13 6l6 6-6 6" />
+                    </svg>
+                  </a>
+                )}
+              </Reveal>
+            ))}
+          </ol>
+
+        </Container>
+
+        {/* Carrousel de photos, hors grille et hors conteneur pour occuper toute
+            la largeur de l'ecran. Les cliches viennent de la galerie. */}
+        <Reveal variant="fade" className="mt-16">
+          <CarrouselPhotos
+            photos={photosSeances}
+            libelles={{
+              titre: d.commun.photosSeances,
+              precedent: d.commun.precedent,
+              suivant: d.commun.suivant,
+            }}
+          />
+        </Reveal>
+      </Section>
+
       {/* Pas de sommaire flottant ici : la page se termine par les trois cartes
           d'aiguillage, qui remplissent le meme role en plus lisible. Le menu
           lateral reste sur les pages d'especes, ou il sert a passer de l'une a
@@ -170,7 +284,9 @@ export default async function ConsultationsPage({
           A a D s'enchainent donc directement sous la banniere. */}
       <Section id="general" className={ANCHOR}>
         <Container width="full">
-          <TitrePrincipal>{c.general.surTitre}</TitrePrincipal>
+          {/* Titre des points 1 a 3, demande par la praticienne : il separe le
+              deroulement d'une seance, valable pour tous, des cas de consultation. */}
+          <TitrePrincipal>{c.typesTitre}</TitrePrincipal>
 
           {/* Point 1, centre : il annonce la frise qui suit, elle-meme etalee
               sur toute la largeur. Le calage a gauche le laissait pendre d'un
@@ -284,13 +400,16 @@ export default async function ConsultationsPage({
       <Section>
         <Container width="full">
           {/* Photo a droite : la colonne de texte laissait la moitie droite de
-              l'ecran vide sur cette section, la seule sans visuel. Le titre est
-              dans la colonne de gauche avec son texte, et `items-center` cale
-              l'ensemble a mi-hauteur de la photo. */}
-          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+              l'ecran vide sur cette section, la seule sans visuel. Le titre
+              coiffe les deux colonnes ; `items-center` cale le texte a
+              mi-hauteur de la photo. */}
+          <TitrePrincipal>{c.motifs.premiereIntentionTitre}</TitrePrincipal>
+          <p className="mt-6 max-w-3xl text-[18px] leading-[1.6] font-medium text-ink">
+            {c.motifs.premiereIntentionChapo}
+          </p>
+          <div className="mt-10 grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <div>
-              <TitrePrincipal colonne>{c.motifs.premiereIntentionTitre}</TitrePrincipal>
-              <p className="mt-10 text-[16px] leading-[1.7] text-body">
+              <p className="text-[16px] leading-[1.7] text-body">
                 {c.motifs.premiereIntentionTexte1}
               </p>
               <CheckList items={L.premiereIntention} className="mt-7" />
@@ -343,10 +462,12 @@ export default async function ConsultationsPage({
                   <path d="M12 8h.01M11 12h1v4h1" />
                 </svg>
               </span>
+              {/* Texte du dictionnaire, coupe autour de la locution mise en gras :
+                  il etait ecrit en dur, donc en francais dans les trois langues. */}
               <p className="text-[16px] leading-[1.7] text-body">
-                L&apos;ostéopathie animale intervient <strong className="text-ink">en complément</strong>{" "}
-                du suivi vétérinaire établi. Elle ne remplace ni le diagnostic ni les traitements
-                prescrits par votre vétérinaire.
+                {c.chroniques.avertissement.split(c.chroniques.avertissementFort)[0]}
+                <strong className="text-ink">{c.chroniques.avertissementFort}</strong>
+                {c.chroniques.avertissement.split(c.chroniques.avertissementFort).slice(1).join(c.chroniques.avertissementFort)}
               </p>
             </div>
           </div>
@@ -356,7 +477,7 @@ export default async function ConsultationsPage({
             {[
               {
                 titre: c.chroniques.ameliorationTitre,
-                note: "Dans certaines situations, l'ostéopathie peut contribuer à améliorer totalement ou partiellement des troubles chroniques dits récidivants.",
+                note: c.chroniques.ameliorationNote,
                 items: L.chroniquesAmelioration,
                 icone: "M12 21s-7-4.35-9.33-8.5A5.5 5.5 0 0112 6.5a5.5 5.5 0 019.33 6C19 16.65 12 21 12 21z",
                 couleur: "text-plum",
@@ -364,7 +485,7 @@ export default async function ConsultationsPage({
               },
               {
                 titre: c.chroniques.confortTitre,
-                note: "Troubles chroniques où la séance a pour rôle d'apporter du confort et/ou d'accompagner la prise en charge faite par votre vétérinaire.",
+                note: c.chroniques.confortNote,
                 items: L.chroniquesConfort,
                 icone: "M10 3h4v5h5v4h-5v5h-4v-5H5V8h5V3z",
                 couleur: "text-green",
@@ -403,27 +524,32 @@ export default async function ConsultationsPage({
           propos, appel a l'action et departements a droite. */}
       <Section>
         <Container width="full">
-          <div className="grid gap-12 border-t border-line pt-14 lg:grid-cols-2 lg:gap-20">
+          {/* Titre au-dessus des deux colonnes, comme les trois autres titres
+              principaux. Sur-titre retire : aucun d'eux n'en porte. */}
+          <div className="border-t border-line pt-14">
+            <TitrePrincipal>{c.collaboration.titre}</TitrePrincipal>
+          </div>
+          <div className="mt-10 grid gap-12 lg:grid-cols-2 lg:gap-20">
             <div>
-              {/* Titre au-dessus de la carte, dans sa colonne. Sur-titre retire :
-                  cette partie est un titre principal comme les trois autres,
-                  aucun d'eux n'en porte. */}
-              <TitrePrincipal colonne>{c.collaboration.titre}</TitrePrincipal>
-              <div className="mt-10 overflow-hidden rounded-lg bg-white ring-1 ring-line">
-                <SecteurMap className="h-[320px] sm:h-[440px]" />
+              <div className="overflow-hidden rounded-lg bg-white ring-1 ring-line">
+                <SecteurMap
+                  className="h-[320px] sm:h-[440px]"
+                  legende={{
+                    reguliers: d.accueil.lieux.legendeReguliers,
+                    ponctuels: d.accueil.lieux.legendePonctuels,
+                  }}
+                />
               </div>
             </div>
 
             <div>
-              <p className="max-w-2xl text-[19px] leading-[1.6] text-ink sm:text-[21px]">
-                L&apos;ostéopathe animalier peut échanger avec votre vétérinaire traitant, avec votre
-                accord, afin de favoriser une prise en charge cohérente et de lui transmettre ses
-                observations.
+              {/* Meme corps que le texte des parties 1 a 3 : le premier
+                  paragraphe, en 21px noir, faisait croire a une autre police. */}
+              <p className="max-w-2xl text-[16px] leading-[1.7] text-body">
+                {c.collaboration.texte1}
               </p>
-              <p className="mt-5 max-w-2xl text-[16.5px] leading-[1.7] text-body">
-                Chaque animal étant unique, un échange permettra d&apos;évaluer la situation, de
-                répondre à vos questions et de vous orienter vers la démarche la plus appropriée pour
-                votre compagnon.
+              <p className="mt-5 max-w-2xl text-[16px] leading-[1.7] text-body">
+                {c.collaboration.texte2}
               </p>
               <div className="mt-9">
                 <Button href={cheminLocalise(routes.rendezVous, locale)}>{d.commun.prendreRdv}</Button>

@@ -17,6 +17,7 @@
   },
   "commun": {
     "prendreRdv": "Prendre un rendez-vous",
+    "rendezVous": "Rendez-vous",
     "reserverSeance": "Réservez une séance d'ostéopathie animale",
     "voirCertification": "Voir ma certification",
     "meContacter": "Me contacter",
@@ -164,6 +165,88 @@
         }
       ]
     },
+    "approches": {
+      "surTitre": "Techniques",
+      "titre": "Les 6 approches en ostéopathie animale",
+      "liste": [
+        {
+          "titre": "Musculosquelettique (os, muscles, articulations, ligaments, tendons)",
+          "paragraphes": [
+            "Par cet aspect de l'ostéopathie nous allons travailler pour rééquilibrer la structure. Il peut s'agir de techniques dites structurelles, myotensives ou fonctionnelles ; dites directes ou indirectes."
+          ],
+          "photosAlt": [
+            "Marie Salabert étire l'antérieur d'un chien dans un pré",
+            "Marie Salabert mobilise l'antérieur d'un cheval bai à l'entrée d'un box",
+            "Mobilisation de la mâchoire d'un chat siamois",
+            "Marie Salabert mobilise le postérieur d'un cheval noir à l'écurie"
+          ]
+        },
+        {
+          "titre": "Tissulaire",
+          "paragraphes": [
+            "Ces techniques peuvent s'appliquer sur l'ensemble du corps. Elles visent à améliorer le mouvement d'une structure ciblée ou plus globalement à rendre une bonne communication tissulaire d'un bout à l'autre de l'organisme."
+          ],
+          "photosAlt": [
+            "Marie Salabert pose les mains sur le flanc d'un cheval bai au pré",
+            "Marie Salabert accompagne un berger allemand assis dans l'herbe",
+            "Mains posées sur un chat noir allongé sur une couverture",
+            "Marie Salabert travaille sur un cochon couché dans une cour de ferme"
+          ]
+        },
+        {
+          "titre": "Fasciale",
+          "paragraphes": [
+            "Le corps est composé en grande partie de fascias, initialement décrit comme du mésoderme au stade embryologique. Lors du développement de l'embryon et du fœtus ce mésoderme va se différencier en plusieurs types de fascias : superficiels (derme - hypoderme) ; intermédiaires (aponévroses, séreuses et mésos splanchniques, enveloppes des différents vaisseaux) et profonds (périoste, tendons, dure mère).",
+            "Ces dernières années les fascias font le sujet de nombreuses recherches scientifiques mais captivent tout autant les ostéopathes."
+          ],
+          "photosAlt": [
+            "Marie Salabert pose la main sur l'épaule d'un cheval au pré",
+            "Marie Salabert palpe l'antérieur d'un cheval bai à l'écurie",
+            "Marie Salabert traite un border collie allongé sur le carrelage",
+            "Travail sur un cochon allongé au sol dans une cour de ferme"
+          ]
+        },
+        {
+          "titre": "Viscérale",
+          "paragraphes": [
+            "Nous nous intéressons à la mobilité des organes et à leur attache ligamentaire. Mon mémoire de fin d'études porte notamment sur la pratique de l'ostéopathie sur les moyens de fixité des différents organes."
+          ],
+          "photosAlt": [
+            "Mains posées à plat sur le flanc d'un cheval bai",
+            "Marie Salabert travaille sur un poney alezan qui mange du foin",
+            "Marie Salabert, souriante, avec un chien noir allongé sur le dos",
+            "Marie Salabert pose les mains sur l'abdomen d'un poulain au pré"
+          ]
+        },
+        {
+          "titre": "Réflexe",
+          "paragraphes": [
+            "Les techniques réflexes permettent de travailler localement sur la peau, afin d'induire une action en profondeur dans l'organisme. J'apprécie particulièrement la réalisation de traits tirés axés sur certaines zones permettant d'avoir une action à la fois localisée et globale sur le système lymphatique, circulatoire et nerveux."
+          ],
+          "photosAlt": [
+            "Marie Salabert travaille le garrot d'un cheval bai",
+            "Marie Salabert auprès d'un cochon noir dans la paille",
+            "Marie Salabert travaille sur un poney Shetland à la crinière fournie"
+          ]
+        },
+        {
+          "titre": "Crânienne",
+          "paragraphes": [
+            "L'approche crânienne est une méthode douce de l'ostéopathie qui s'intéresse aux relations entre le crâne, la colonne vertébrale, le sacrum, les membranes et les tissus qui assurent la continuité du corps.",
+            "Elle repose sur une évaluation fine des mobilités tissulaires et des tensions présentes dans l'ensemble du système. À travers un toucher précis et délicat, l'ostéopathe recherche les zones de restriction de mobilité susceptibles d'influencer l'équilibre fonctionnel de l'organisme.",
+            "Contrairement aux idées reçues, il ne s'agit pas de « faire bouger les os du crâne », mais de percevoir les tensions présentes dans l'ensemble du système et de favoriser son équilibre. Grâce à un toucher précis et délicat, l'ostéopathe identifie les restrictions de mobilité pouvant perturber le bon fonctionnement de l'organisme."
+          ],
+          "photosAlt": [
+            "Mains posées de part et d'autre du front d'un cheval",
+            "Marie Salabert pose les mains sur la tête d'un berger australien",
+            "Mains posées sur la tête d'un lapin gris",
+            "Marie Salabert tient la tête d'un veau entre les barreaux d'un cornadis"
+          ]
+        }
+      ],
+      "precedente": "Approche précédente",
+      "suivante": "Approche suivante"
+    },
     "rendezVous": {
       "surTitre": "Rendez-vous en ostéopathie animale",
       "titre": "Comment prendre rendez-vous ?",
@@ -245,64 +328,6 @@
         }
       ]
     },
-    "etapes": {
-      "surTitre": "Séance d'ostéopathie animale",
-      "titre": "Le déroulement d'une consultation en 6 étapes",
-      "liste": [
-        {
-          "titre": "Anamnèse — recueil des informations sur la santé de votre animal et création de votre dossier",
-          "paragraphes": [
-            "Chaque consultation débute par un temps d'échange afin de recueillir les informations essentielles concernant votre animal et le motif de la séance en ostéopathie. Son historique médical, son mode de vie, son comportement, son alimentation, son activité, son environnement sont abordés afin d'obtenir une vision globale de sa situation.",
-            "Cette étape permet à votre ostéopathe de replacer l'animal dans son contexte de vie et d'orienter l'examen clinique et ostéopathique de manière adaptée.",
-            "Le dossier de votre animal est ensuite créé et sécurisé via Djooka, le carnet de santé numérique dédié aux animaux. Vous y retrouverez les comptes rendus des consultations ainsi que les factures associées."
-          ],
-          "lien": {
-            "libelle": "Découvrir Djooka",
-            "url": "https://djooka.com"
-          }
-        },
-        {
-          "titre": "Examen locomoteur et statique",
-          "paragraphes": [
-            "La consultation se poursuit par une observation dynamique et statique de votre animal.",
-            "L'analyse de la locomotion permet d'évaluer la qualité des déplacements, la symétrie des allures, les amplitudes de mouvement ainsi que l'existence d'éventuelles restrictions de mobilité, compensations ou irrégularités locomotrices.",
-            "L'observation statique complète cet examen en recherchant d'éventuels déséquilibres posturaux, reports de poids, attitudes antalgiques ou adaptations corporelles pouvant traduire un inconfort fonctionnel."
-          ]
-        },
-        {
-          "titre": "Le diagnostic d'opportunité ou d'exclusion",
-          "paragraphes": [
-            "Un examen palpatoire approfondi est ensuite réalisé afin de vérifier que votre animal est bien apte pour une prise en charge ostéopathique.",
-            "Cette étape permet d'identifier d'éventuels signes d'alerte nécessitant une orientation préalable ou complémentaire vers votre vétérinaire. L'ostéopathie intervient toujours dans le respect de ses compétences et en complément du suivi vétérinaire lorsque celui-ci est indiqué."
-          ]
-        },
-        {
-          "titre": "Le diagnostic ostéopathique",
-          "paragraphes": [
-            "À l'aide d'un examen manuel précis, l'ostéopathe évalue la mobilité des articulations, des muscles, des fascias, des viscères, du crâne et des différents tissus de l'organisme.",
-            "Cette évaluation globale permet d'identifier les restrictions de mobilité, les adaptations fonctionnelles et les compensations susceptibles de participer aux déséquilibres observés.",
-            "Un bilan vous est ensuite présenté et expliqué avant la mise en œuvre du traitement ostéopathique."
-          ]
-        },
-        {
-          "titre": "Le traitement ostéopathique",
-          "paragraphes": [
-            "Le traitement repose exclusivement sur des techniques manuelles adaptées à chaque animal, à son espèce, à son âge, à son activité et au motif de consultation.",
-            "L'objectif est de restaurer une mobilité tissulaire optimale, d'améliorer la qualité du mouvement, de favoriser les capacités d'adaptation de l'organisme et de contribuer au confort fonctionnel de l'animal.",
-            "Ma pratique s'appuie sur différentes approches complémentaires : musculo-squelettiques, myofasciales, tissulaires, viscérales, liquidiennes, crâniennes, réflexes et tenségritives."
-          ]
-        },
-        {
-          "titre": "Les conseils après séance",
-          "paragraphes": [
-            "À l'issue de la séance, un compte rendu vous est transmis, accompagné de recommandations personnalisées, adaptées aux besoins de votre animal.",
-            "Ces conseils portent notamment sur la gestion du repos, la reprise progressive de l'activité, les éventuels exercices recommandés ainsi que les points de vigilance à observer dans les jours suivant la consultation.",
-            "L'objectif est de favoriser une récupération optimale et d'inscrire la prise en charge dans une démarche globale de santé et de bien-être, en collaboration avec votre vétérinaire lorsque cela est nécessaire."
-          ]
-        }
-      ],
-      "photoAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un cochon sur la paille"
-    },
     "cta": "À vos côtés pour la santé et le bien-être de votre animal",
     "meta": {
       "titre": "Ostéopathe animalier Toulouse - Marie Salabert",
@@ -319,12 +344,12 @@
   "aPropos": {
     "meta": {
       "titre": "À propos de l'ostéopathie animale - Marie Salabert Ostéopathe",
-      "description": "L'ostéopathie animale : son histoire, ses différentes approches (musculosquelettique, tissulaire, fasciale, viscérale, réflexe) et son cadre légal en France."
+      "description": "L'ostéopathie animale : son histoire, des débuts auprès des équidés à aujourd'hui, et son cadre légal en France (Registre National d'Aptitude, Code rural)."
     },
     "hero": {
       "surTitre": "La discipline",
       "titre": "À propos de l'ostéopathie animale",
-      "sousTitre": "Son histoire, ses approches et son cadre légal en France."
+      "sousTitre": "Son histoire et son cadre légal en France."
     },
     "citation": {
       "texte": "« La santé est un état complet de bien-être physique, mental et social et ne consiste pas seulement en une absence de maladie ou d'infirmité. »",
@@ -361,50 +386,6 @@
         }
       ],
       "synthese": "L'ostéopathie animale est une médecine intégrative dite naturelle : par son approche manuelle, elle apporte une vision globale différente et complémentaire de la médecine vétérinaire."
-    },
-    "approches": {
-      "surTitre": "Techniques",
-      "titre": "Les 5 approches en ostéopathie",
-      "liste": [
-        {
-          "titre": "Musculosquelettique (os, muscles, articulations, ligaments, tendons)",
-          "alt": "Marie Salabert fléchissant l'antérieur d'un cheval au pré",
-          "paragraphes": [
-            "Par cet aspect de l'ostéopathie nous allons travailler pour rééquilibrer la structure. Il peut s'agir de techniques dites structurelles, myotensives ou fonctionnelles ; dites directes ou indirectes."
-          ]
-        },
-        {
-          "titre": "Tissulaire",
-          "alt": "Marie Salabert mobilisant l'arrière-main d'un berger allemand",
-          "paragraphes": [
-            "Ces techniques peuvent s'appliquer sur l'ensemble du corps. Elles visent à améliorer le mouvement d'une structure ciblée ou plus globalement à rendre une bonne communication tissulaire d'un bout à l'autre de l'organisme."
-          ]
-        },
-        {
-          "titre": "Fasciale",
-          "alt": "Mains posées à plat le long du dos d'un berger allemand assis",
-          "paragraphes": [
-            "Le corps est composé en grande partie de fascias, initialement décrit comme du mésoderme au stade embryologique. Lors du développement de l'embryon et du fœtus ce mésoderme va se différencier en plusieurs types de fascias : superficiels (derme - hypoderme) ; intermédiaires (aponévroses, séreuses et mésos splanchniques, enveloppes des différents vaisseaux) et profonds (périoste, tendons, dure mère).",
-            "Ces dernières années les fascias font le sujet de nombreuses recherches scientifiques mais captivent tout autant les ostéopathes."
-          ]
-        },
-        {
-          "titre": "Viscérale",
-          "alt": "Main soutenant l'antérieur d'un poulain, en gros plan",
-          "paragraphes": [
-            "Nous nous intéressons à la mobilité des organes et à leur attache ligamentaire. Mon mémoire de fin d'études porte notamment sur la pratique de l'ostéopathie sur les moyens de fixité des différents organes."
-          ]
-        },
-        {
-          "titre": "Réflexe",
-          "alt": "Mains posées sur la tête et l'encolure d'un jeune chien",
-          "paragraphes": [
-            "Les techniques réflexes permettent de travailler localement sur la peau, afin d'induire une action en profondeur dans l'organisme. J'apprécie particulièrement la réalisation de traits tirés axés sur certaines zones permettant d'avoir une action à la fois localisée et globale sur le système lymphatique, circulatoire et nerveux."
-          ]
-        }
-      ],
-      "precedente": "Approche précédente",
-      "suivante": "Approche suivante"
     },
     "legislation": {
       "surTitre": "Cadre réglementaire",
@@ -737,7 +718,7 @@
         "detail": "Chiens, chats, NAC"
       },
       {
-        "label": "Ostéopathie pour animaux de rente, ferme et production animale",
+        "label": "Ostéopathie rurale",
         "detail": "Bovins, ovins, caprins et porcins"
       }
     ],
@@ -790,12 +771,69 @@
     "hero": {
       "surTitre": "Prestations",
       "titre": "Les différents types de consultations en ostéopathie animale",
-      "sousTitre": "Chevaux, chiens, chats, NAC et animaux de rente, en Occitanie"
+      "sousTitre": "Chevaux, chiens, chats, NAC et animaux ruraux"
     },
     "sommaireTitre": "Les différents types de consultations pour chaque espèce",
+    "etapes": {
+      "surTitre": "Séance d'ostéopathie animale",
+      "titre": "Le déroulement d'une consultation en 6 étapes",
+      "liste": [
+        {
+          "titre": "Anamnèse — recueil des informations sur la santé de votre animal et création de votre dossier",
+          "paragraphes": [
+            "Chaque consultation débute par un temps d'échange afin de recueillir les informations essentielles concernant votre animal et le motif de la séance en ostéopathie. Son historique médical, son mode de vie, son comportement, son alimentation, son activité, son environnement sont abordés afin d'obtenir une vision globale de sa situation.",
+            "Cette étape permet à votre ostéopathe de replacer l'animal dans son contexte de vie et d'orienter l'examen clinique et ostéopathique de manière adaptée.",
+            "Le dossier de votre animal est ensuite créé et sécurisé via Djooka, le carnet de santé numérique dédié aux animaux. Vous y retrouverez les comptes rendus des consultations ainsi que les factures associées."
+          ],
+          "lien": {
+            "libelle": "Découvrir Djooka",
+            "url": "https://djooka.com"
+          }
+        },
+        {
+          "titre": "Examen locomoteur et statique",
+          "paragraphes": [
+            "La consultation se poursuit par une observation dynamique et statique de votre animal.",
+            "L'analyse de la locomotion permet d'évaluer la qualité des déplacements, la symétrie des allures, les amplitudes de mouvement ainsi que l'existence d'éventuelles restrictions de mobilité, compensations ou irrégularités locomotrices.",
+            "L'observation statique complète cet examen en recherchant d'éventuels déséquilibres posturaux, reports de poids, attitudes antalgiques ou adaptations corporelles pouvant traduire un inconfort fonctionnel."
+          ]
+        },
+        {
+          "titre": "Le diagnostic d'opportunité ou d'exclusion",
+          "paragraphes": [
+            "Un examen palpatoire approfondi est ensuite réalisé afin de vérifier que votre animal est bien apte pour une prise en charge ostéopathique.",
+            "Cette étape permet d'identifier d'éventuels signes d'alerte nécessitant une orientation préalable ou complémentaire vers votre vétérinaire. L'ostéopathie intervient toujours dans le respect de ses compétences et en complément du suivi vétérinaire lorsque celui-ci est indiqué."
+          ]
+        },
+        {
+          "titre": "Le diagnostic ostéopathique",
+          "paragraphes": [
+            "À l'aide d'un examen manuel précis, l'ostéopathe évalue la mobilité des articulations, des muscles, des fascias, des viscères, du crâne et des différents tissus de l'organisme.",
+            "Cette évaluation globale permet d'identifier les restrictions de mobilité, les adaptations fonctionnelles et les compensations susceptibles de participer aux déséquilibres observés.",
+            "Un bilan vous est ensuite présenté et expliqué avant la mise en œuvre du traitement ostéopathique."
+          ]
+        },
+        {
+          "titre": "Le traitement ostéopathique",
+          "paragraphes": [
+            "Le traitement repose exclusivement sur des techniques manuelles adaptées à chaque animal, à son espèce, à son âge, à son activité et au motif de consultation.",
+            "L'objectif est de restaurer une mobilité tissulaire optimale, d'améliorer la qualité du mouvement, de favoriser les capacités d'adaptation de l'organisme et de contribuer au confort fonctionnel de l'animal.",
+            "Ma pratique s'appuie sur différentes approches complémentaires : musculo-squelettiques, myofasciales, tissulaires, viscérales, liquidiennes, crâniennes, réflexes et tenségritives."
+          ]
+        },
+        {
+          "titre": "Les conseils après séance",
+          "paragraphes": [
+            "À l'issue de la séance, un compte rendu vous est transmis, accompagné de recommandations personnalisées, adaptées aux besoins de votre animal.",
+            "Ces conseils portent notamment sur la gestion du repos, la reprise progressive de l'activité, les éventuels exercices recommandés ainsi que les points de vigilance à observer dans les jours suivant la consultation.",
+            "L'objectif est de favoriser une récupération optimale et d'inscrire la prise en charge dans une démarche globale de santé et de bien-être, en collaboration avec votre vétérinaire lorsque cela est nécessaire."
+          ]
+        }
+      ],
+      "photoAlt": "Marie Salabert en consultation d'ostéopathie auprès d'un cochon sur la paille"
+    },
     "typesTitre": "Les différents types de consultations en ostéopathie animale",
     "general": {
-      "surTitre": "Où l'ostéopathie animale peut agir en première intention",
       "titre": "Un accompagnement tout au long de la vie de votre animal",
       "intro": "L'ostéopathie animale peut s'intégrer dans le suivi global de votre animal à différents moments clés :"
     },
@@ -806,7 +844,8 @@
       "locomoteursNote": "Les affections locomotrices représentent des motifs de consultation courants en ostéopathie animale.",
       "emotionnel": "Accompagnement émotionnel et comportemental",
       "emotionnelNote": "En complément d'un suivi avec un éducateur ou un vétérinaire comportementaliste lorsque cela est nécessaire.",
-      "premiereIntentionTitre": "En première intention, selon l'état de votre animal",
+      "premiereIntentionTitre": "Où l'ostéopathie animale peut agir en première intention",
+      "premiereIntentionChapo": "En fonction de l'état de santé de votre animal, nous vous indiquerons s'il est nécessaire que vous consultiez en amont votre vétérinaire.",
       "photoAlt": "Marie Salabert travaille le dos d'un berger allemand assis dans l'herbe",
       "premiereIntentionTexte1": "L'ostéopathie animale peut agir en première intention seulement en fonction de l'état de l'animal : un échange téléphonique approfondi vous permettra de vous en assurer ; sinon vous serez réorienté vers votre vétérinaire.",
       "premiereIntentionTexte2": "Ces mêmes motifs peuvent être également traités par une séance d'ostéopathie après une visite chez votre vétérinaire. En cas de doute, une évaluation préalable de la douleur est nécessaire pour réaliser la séance dans les meilleures conditions."
@@ -823,7 +862,7 @@
     "collaboration": {
       "surTitre": "Avec votre vétérinaire",
       "titre": "Une approche collaborative pour la santé et le bien-être de votre animal",
-      "texte1": "L'ostéopathe animalier peut échanger avec votre vétérinaire traitant, avec votre accord, afin de favoriser une prise en charge cohérente et adaptée, ou de lui transmettre ses observations pour optimiser la continuité des soins.",
+      "texte1": "L'ostéopathe animalier peut échanger avec votre vétérinaire traitant, avec votre accord, afin de favoriser une prise en charge cohérente et de lui transmettre ses observations.",
       "texte2": "Chaque animal étant unique, un échange permettra d'évaluer la situation, de répondre à vos questions et de vous orienter vers la démarche la plus appropriée pour votre compagnon."
     },
     "secteur": {

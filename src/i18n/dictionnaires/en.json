@@ -17,6 +17,7 @@
   },
   "commun": {
     "prendreRdv": "Book an appointment",
+    "rendezVous": "Appointment",
     "reserverSeance": "Book an animal osteopathy session",
     "voirCertification": "See my certification",
     "meContacter": "Get in touch",
@@ -164,6 +165,88 @@
         }
       ]
     },
+    "approches": {
+      "surTitre": "Techniques",
+      "titre": "The 6 approaches in animal osteopathy",
+      "liste": [
+        {
+          "titre": "Musculoskeletal (bones, muscles, joints, ligaments, tendons)",
+          "paragraphes": [
+            "Through this aspect of osteopathy, we work to rebalance the structure. This may involve techniques known as structural, myotensive or functional; either direct or indirect."
+          ],
+          "photosAlt": [
+            "Marie Salabert stretching a dog's foreleg in a field",
+            "Marie Salabert mobilising the foreleg of a bay horse at a stable door",
+            "Mobilising the jaw of a Siamese cat",
+            "Marie Salabert mobilising the hind leg of a black horse in the stable"
+          ]
+        },
+        {
+          "titre": "Tissue",
+          "paragraphes": [
+            "These techniques can be applied across the whole body. They aim to improve the movement of a targeted structure or, more broadly, to restore good tissue communication from one end of the body to the other."
+          ],
+          "photosAlt": [
+            "Marie Salabert placing her hands on the flank of a bay horse in a field",
+            "Marie Salabert with a German Shepherd sitting in the grass",
+            "Hands resting on a black cat lying on a blanket",
+            "Marie Salabert treating a pig lying in a farmyard"
+          ]
+        },
+        {
+          "titre": "Fascial",
+          "paragraphes": [
+            "The body is largely composed of fascia, initially described as mesoderm at the embryological stage. During the development of the embryo and foetus, this mesoderm differentiates into several types of fascia: superficial (dermis - hypodermis); intermediate (aponeuroses, serous membranes and splanchnic mesos, vessel sheaths); and deep (periosteum, tendons, dura mater).",
+            "In recent years, fascia has been the subject of much scientific research, and it fascinates osteopaths just as much."
+          ],
+          "photosAlt": [
+            "Marie Salabert with her hand on a horse's shoulder in a field",
+            "Marie Salabert palpating the foreleg of a bay horse in the stable",
+            "Marie Salabert treating a Border Collie lying on a tiled floor",
+            "Treating a pig lying on the ground in a farmyard"
+          ]
+        },
+        {
+          "titre": "Visceral",
+          "paragraphes": [
+            "We focus on the mobility of organs and their ligamentous attachments. My final dissertation notably examined the practice of osteopathy on the means of fixation of the various organs."
+          ],
+          "photosAlt": [
+            "Hands placed flat on the flank of a bay horse",
+            "Marie Salabert treating a chestnut pony eating hay",
+            "Marie Salabert, smiling, with a black dog lying on its back",
+            "Marie Salabert placing her hands on a foal's abdomen in a field"
+          ]
+        },
+        {
+          "titre": "Reflex",
+          "paragraphes": [
+            "Reflex techniques work locally on the skin to induce a deeper action within the body. I particularly enjoy performing drawn lines focused on certain areas, allowing for both a localised and overall action on the lymphatic, circulatory and nervous systems."
+          ],
+          "photosAlt": [
+            "Marie Salabert working on the withers of a bay horse",
+            "Marie Salabert with a black pig in the straw",
+            "Marie Salabert treating a Shetland pony with a thick mane"
+          ]
+        },
+        {
+          "titre": "Cranial",
+          "paragraphes": [
+            "The cranial approach is a gentle osteopathic method that looks at the relationships between the skull, the spine, the sacrum, the membranes and the tissues that ensure the body's continuity.",
+            "It relies on a fine assessment of tissue mobility and of the tensions present throughout the system. Through precise and delicate touch, the osteopath looks for areas of restricted mobility that may affect the functional balance of the body.",
+            "Contrary to popular belief, it is not about “moving the bones of the skull”, but about perceiving the tensions present throughout the system and supporting its balance. Through precise and delicate touch, the osteopath identifies the restrictions of mobility that may disturb the proper functioning of the body."
+          ],
+          "photosAlt": [
+            "Hands placed on either side of a horse's forehead",
+            "Marie Salabert placing her hands on an Australian Shepherd's head",
+            "Hands resting on the head of a grey rabbit",
+            "Marie Salabert holding a calf's head through a feed barrier"
+          ]
+        }
+      ],
+      "precedente": "Previous approach",
+      "suivante": "Next approach"
+    },
     "rendezVous": {
       "surTitre": "Animal osteopathy appointments",
       "titre": "How to book an appointment",
@@ -245,64 +328,6 @@
         }
       ]
     },
-    "etapes": {
-      "surTitre": "Animal osteopathy session",
-      "titre": "A consultation in six steps",
-      "liste": [
-        {
-          "titre": "Case history — gathering information on your animal's health and creating your file",
-          "paragraphes": [
-            "Each consultation begins with a discussion to gather the essential information about your animal and the reason for the osteopathy session. Its medical history, lifestyle, behaviour, diet, activity and environment are all discussed in order to gain a comprehensive view of its situation.",
-            "This step allows your osteopath to place the animal within its living context and to tailor the clinical and osteopathic examination accordingly.",
-            "Your animal's file is then created and securely stored via Djooka, the digital health record dedicated to animals. You will find the consultation reports as well as the associated invoices there."
-          ],
-          "lien": {
-            "libelle": "Discover Djooka",
-            "url": "https://djooka.com"
-          }
-        },
-        {
-          "titre": "Locomotor and static examination",
-          "paragraphes": [
-            "The consultation continues with a dynamic and static observation of your animal.",
-            "The analysis of locomotion allows the quality of movement, the symmetry of gaits and the range of motion to be assessed, as well as identifying any restrictions in mobility, compensations or gait irregularities.",
-            "The static observation complements this examination by looking for any postural imbalances, weight shifting, pain-related postures or bodily adaptations that may indicate functional discomfort."
-          ]
-        },
-        {
-          "titre": "The opportunity or exclusion diagnosis",
-          "paragraphes": [
-            "A thorough palpatory examination is then carried out to confirm that your animal is indeed suitable for osteopathic care.",
-            "This step helps identify any warning signs requiring prior or complementary referral to your veterinarian. Osteopathy is always practised within the scope of its competence and as a complement to veterinary follow-up when this is indicated."
-          ]
-        },
-        {
-          "titre": "The osteopathic diagnosis",
-          "paragraphes": [
-            "Using a precise manual examination, the osteopath assesses the mobility of the joints, muscles, fasciae, viscera, skull and various tissues of the body.",
-            "This overall assessment helps identify restrictions in mobility, functional adaptations and compensations that may contribute to the imbalances observed.",
-            "A summary is then presented and explained to you before the osteopathic treatment is carried out."
-          ]
-        },
-        {
-          "titre": "The osteopathic treatment",
-          "paragraphes": [
-            "Treatment relies exclusively on manual techniques adapted to each animal, its species, age, activity and the reason for the consultation.",
-            "The aim is to restore optimal tissue mobility, improve the quality of movement, support the body's capacity for adaptation and contribute to the animal's functional comfort.",
-            "My practice draws on various complementary approaches: musculoskeletal, myofascial, tissue-based, visceral, fluid-based, cranial, reflex and tensegrity-based."
-          ]
-        },
-        {
-          "titre": "Post-session advice",
-          "paragraphes": [
-            "At the end of the session, you will receive a report along with personalised recommendations tailored to your animal's needs.",
-            "This advice covers, among other things, rest management, the gradual resumption of activity, any recommended exercises, as well as points to watch for in the days following the consultation.",
-            "The aim is to promote optimal recovery and to place the care within an overall health and well-being approach, in collaboration with your veterinarian where necessary."
-          ]
-        }
-      ],
-      "photoAlt": "Marie Salabert during an osteopathy consultation with a pig on straw"
-    },
     "cta": "By your side for your animal's health and well-being",
     "meta": {
       "titre": "Animal Osteopath Toulouse - Marie Salabert",
@@ -319,12 +344,12 @@
   "aPropos": {
     "meta": {
       "titre": "About animal osteopathy - Marie Salabert Osteopath",
-      "description": "Animal osteopathy: its history, its different approaches (musculoskeletal, tissue, fascial, visceral, reflex) and its legal framework in France."
+      "description": "Animal osteopathy: its history, from its beginnings with horses to the present day, and its legal framework in France (National Aptitude Register, Rural Code)."
     },
     "hero": {
       "surTitre": "The discipline",
       "titre": "About animal osteopathy",
-      "sousTitre": "Its history, its approaches and its legal framework in France."
+      "sousTitre": "Its history and its legal framework in France."
     },
     "citation": {
       "texte": "\"Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity.\"",
@@ -361,50 +386,6 @@
         }
       ],
       "synthese": "Animal osteopathy is a so-called natural integrative medicine: through its manual approach, it offers a different and complementary overall perspective to veterinary medicine."
-    },
-    "approches": {
-      "surTitre": "Techniques",
-      "titre": "The 5 approaches in osteopathy",
-      "liste": [
-        {
-          "titre": "Musculoskeletal (bones, muscles, joints, ligaments, tendons)",
-          "alt": "Marie Salabert flexing a horse's foreleg in the field",
-          "paragraphes": [
-            "Through this aspect of osteopathy, we work to rebalance the structure. This may involve techniques known as structural, myotensive or functional; either direct or indirect."
-          ]
-        },
-        {
-          "titre": "Tissue",
-          "alt": "Marie Salabert mobilising a German shepherd's hindquarters",
-          "paragraphes": [
-            "These techniques can be applied across the whole body. They aim to improve the movement of a targeted structure or, more broadly, to restore good tissue communication from one end of the body to the other."
-          ]
-        },
-        {
-          "titre": "Fascial",
-          "alt": "Hands laid flat along the back of a seated German shepherd",
-          "paragraphes": [
-            "The body is largely composed of fascia, initially described as mesoderm at the embryological stage. During the development of the embryo and foetus, this mesoderm differentiates into several types of fascia: superficial (dermis - hypodermis); intermediate (aponeuroses, serous membranes and splanchnic mesos, vessel sheaths); and deep (periosteum, tendons, dura mater).",
-            "In recent years, fascia has been the subject of much scientific research, and it fascinates osteopaths just as much."
-          ]
-        },
-        {
-          "titre": "Visceral",
-          "alt": "A hand supporting a foal's foreleg, in close-up",
-          "paragraphes": [
-            "We focus on the mobility of organs and their ligamentous attachments. My final dissertation notably examined the practice of osteopathy on the means of fixation of the various organs."
-          ]
-        },
-        {
-          "titre": "Reflex",
-          "alt": "Hands resting on a young dog's head and neck",
-          "paragraphes": [
-            "Reflex techniques work locally on the skin to induce a deeper action within the body. I particularly enjoy performing drawn lines focused on certain areas, allowing for both a localised and overall action on the lymphatic, circulatory and nervous systems."
-          ]
-        }
-      ],
-      "precedente": "Previous approach",
-      "suivante": "Next approach"
     },
     "legislation": {
       "surTitre": "Regulatory framework",
@@ -737,7 +718,7 @@
         "detail": "Dogs, cats, exotic pets"
       },
       {
-        "label": "Osteopathy for farm and production animals",
+        "label": "Rural osteopathy",
         "detail": "Cattle, sheep, goats and pigs"
       }
     ],
@@ -790,12 +771,69 @@
     "hero": {
       "surTitre": "Services",
       "titre": "The different types of consultation in animal osteopathy",
-      "sousTitre": "Horses, dogs, cats, exotic pets and farm animals, across Occitanie"
+      "sousTitre": "Horses, dogs, cats, exotic pets and farm animals"
     },
     "sommaireTitre": "The different types of consultation for each species",
+    "etapes": {
+      "surTitre": "Animal osteopathy session",
+      "titre": "A consultation in six steps",
+      "liste": [
+        {
+          "titre": "Case history — gathering information on your animal's health and creating your file",
+          "paragraphes": [
+            "Each consultation begins with a discussion to gather the essential information about your animal and the reason for the osteopathy session. Its medical history, lifestyle, behaviour, diet, activity and environment are all discussed in order to gain a comprehensive view of its situation.",
+            "This step allows your osteopath to place the animal within its living context and to tailor the clinical and osteopathic examination accordingly.",
+            "Your animal's file is then created and securely stored via Djooka, the digital health record dedicated to animals. You will find the consultation reports as well as the associated invoices there."
+          ],
+          "lien": {
+            "libelle": "Discover Djooka",
+            "url": "https://djooka.com"
+          }
+        },
+        {
+          "titre": "Locomotor and static examination",
+          "paragraphes": [
+            "The consultation continues with a dynamic and static observation of your animal.",
+            "The analysis of locomotion allows the quality of movement, the symmetry of gaits and the range of motion to be assessed, as well as identifying any restrictions in mobility, compensations or gait irregularities.",
+            "The static observation complements this examination by looking for any postural imbalances, weight shifting, pain-related postures or bodily adaptations that may indicate functional discomfort."
+          ]
+        },
+        {
+          "titre": "The opportunity or exclusion diagnosis",
+          "paragraphes": [
+            "A thorough palpatory examination is then carried out to confirm that your animal is indeed suitable for osteopathic care.",
+            "This step helps identify any warning signs requiring prior or complementary referral to your veterinarian. Osteopathy is always practised within the scope of its competence and as a complement to veterinary follow-up when this is indicated."
+          ]
+        },
+        {
+          "titre": "The osteopathic diagnosis",
+          "paragraphes": [
+            "Using a precise manual examination, the osteopath assesses the mobility of the joints, muscles, fasciae, viscera, skull and various tissues of the body.",
+            "This overall assessment helps identify restrictions in mobility, functional adaptations and compensations that may contribute to the imbalances observed.",
+            "A summary is then presented and explained to you before the osteopathic treatment is carried out."
+          ]
+        },
+        {
+          "titre": "The osteopathic treatment",
+          "paragraphes": [
+            "Treatment relies exclusively on manual techniques adapted to each animal, its species, age, activity and the reason for the consultation.",
+            "The aim is to restore optimal tissue mobility, improve the quality of movement, support the body's capacity for adaptation and contribute to the animal's functional comfort.",
+            "My practice draws on various complementary approaches: musculoskeletal, myofascial, tissue-based, visceral, fluid-based, cranial, reflex and tensegrity-based."
+          ]
+        },
+        {
+          "titre": "Post-session advice",
+          "paragraphes": [
+            "At the end of the session, you will receive a report along with personalised recommendations tailored to your animal's needs.",
+            "This advice covers, among other things, rest management, the gradual resumption of activity, any recommended exercises, as well as points to watch for in the days following the consultation.",
+            "The aim is to promote optimal recovery and to place the care within an overall health and well-being approach, in collaboration with your veterinarian where necessary."
+          ]
+        }
+      ],
+      "photoAlt": "Marie Salabert during an osteopathy consultation with a pig on straw"
+    },
     "typesTitre": "The different types of consultation in animal osteopathy",
     "general": {
-      "surTitre": "Where animal osteopathy can act as a first port of call",
       "titre": "Support throughout your animal's life",
       "intro": "Animal osteopathy can form part of your animal's overall care at various key moments:"
     },
@@ -807,7 +845,8 @@
       "emotionnelTitre": "Emotional and behavioural support",
       "emotionnelNote": "Alongside support from a trainer or veterinary behaviourist where necessary.",
       "photoAlt": "Marie Salabert working on the back of a German Shepherd sitting in the grass",
-      "premiereIntentionTitre": "As a first-line approach, depending on your animal's condition",
+      "premiereIntentionTitre": "Where animal osteopathy can act as a first port of call",
+      "premiereIntentionChapo": "Depending on your animal's state of health, we will let you know whether you need to see your vet first.",
       "premiereIntentionTexte1": "Animal osteopathy can be considered as a first-line approach only depending on the animal's condition: a thorough telephone conversation will help confirm this; otherwise you will be referred to your vet.",
       "premiereIntentionTexte2": "These same reasons can also be addressed with an osteopathy session following a visit to your vet. If in doubt, a prior assessment of pain is required to carry out the session under the best possible conditions."
     },

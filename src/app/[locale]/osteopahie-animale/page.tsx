@@ -3,7 +3,6 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Container, Eyebrow, Section, SectionTitle } from "@/components/ui";
 import { PageHero } from "@/components/sections";
-import { AProposApproches } from "@/components/AProposApproches";
 import { AProposLegislation } from "@/components/AProposLegislation";
 import Reveal from "@/components/Reveal";
 import { cheminLocalise, estLocale, localeTags } from "@/i18n/config";
@@ -33,33 +32,11 @@ export async function generateMetadata({
   };
 }
 
-/** Visuels des cinq approches, dans l'ordre du dictionnaire. */
-const photosApproches = [
-  "/images/approches/approche-musculosquelettique-cheval.jpg",
-  "/images/approches/approche-tissulaire-chien.jpg",
-  "/images/approches/approche-fasciale-chien.jpg",
-  "/images/approches/approche-viscerale-poulain.jpg",
-  "/images/approches/approche-reflexe-chien.jpg",
-];
-
 export default async function AProposPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!estLocale(locale)) notFound();
   const d = getDictionnaire(locale);
   const a = d.aPropos;
-
-  const approches = a.approches.liste.map((approche, i) => ({
-    title: approche.titre,
-    image: photosApproches[i],
-    alt: approche.alt,
-    body: (
-      <>
-        {approche.paragraphes.map((par) => (
-          <p key={par.slice(0, 40)}>{par}</p>
-        ))}
-      </>
-    ),
-  }));
 
   return (
     <>
@@ -71,13 +48,14 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
         subtitle={a.hero.sousTitre}
       />
 
-      {/* Citation d'ouverture : elle porte seule, en grand, sans encadrement */}
+      {/* Citation d'ouverture, sans encadrement. Corps reduit a la demande de
+          la praticienne : en 38px elle ecrasait le debut de la page. */}
       <Section>
         <Container>
           <Reveal className="mx-auto max-w-4xl text-center">
             <figure>
               <blockquote>
-                <p className="text-[26px] font-semibold leading-[1.25] tracking-[-0.025em] text-ink sm:text-[38px]">
+                <p className="text-[21px] font-semibold leading-[1.3] tracking-[-0.02em] text-ink sm:text-[28px]">
                   {a.citation.texte}
                 </p>
               </blockquote>
@@ -142,24 +120,6 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
         </Container>
       </Section>
 
-      {/* Les differentes approches : pleine largeur d'ecran, marge de 100 px */}
-      <Section>
-        <Container width="full">
-          <Reveal className="mx-auto max-w-3xl text-center">
-            <Eyebrow className="justify-center">{a.approches.surTitre}</Eyebrow>
-            <SectionTitle className="mt-5">{a.approches.titre}</SectionTitle>
-          </Reveal>
-          <AProposApproches
-            items={approches}
-            libelles={{
-              faitesDefiler: d.commun.faitesDefiler,
-              precedente: a.approches.precedente,
-              suivante: a.approches.suivante,
-            }}
-          />
-        </Container>
-      </Section>
-
       {/* Legislation */}
       <Section id="legislation" tone="surface" className="scroll-mt-28">
         <Container width="full">
@@ -192,7 +152,7 @@ export default async function AProposPage({ params }: { params: Promise<{ locale
               <span aria-hidden="true" className="block text-[64px] leading-none text-plum/25">
                 “
               </span>
-              <blockquote className="-mt-6 space-y-6 text-[19px] leading-[1.65] text-ink sm:text-[22px]">
+              <blockquote className="-mt-6 space-y-5 text-[17px] leading-[1.65] text-ink sm:text-[19px]">
                 {a.interdisciplinarite.paragraphes.map((par) => (
                   <p key={par.slice(0, 40)}>{par}</p>
                 ))}

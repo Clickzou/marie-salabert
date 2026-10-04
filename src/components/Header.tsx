@@ -126,7 +126,11 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                 /* `group/item` et non `group` : le filet anime sous l'intitule
                    utilise deja `group-hover`, il ne doit pas se declencher au
                    survol d'une entree du sous-menu. */
-                <li key={item.href} className="group/item relative">
+                <li
+                  key={item.href}
+                  /* Sous 1536px, « Accueil » cede sa place : le logo y mene deja. */
+                  className={`group/item relative ${item.cle === "accueil" ? "hidden 2xl:block" : ""}`}
+                >
                   <Link
                     href={cheminLocalise(item.href, locale)}
                     aria-current={actif ? "page" : undefined}
@@ -193,7 +197,9 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                 : "bg-gold text-ink shadow-[0_10px_24px_-16px_rgba(22,23,26,0.8)] hover:bg-gold-dark"
             }`}
           >
-            {d.commun.prendreRdv}
+            {/* Libelle court sous 1536px, pour laisser la place au menu. */}
+            <span className="2xl:hidden">{d.commun.rendezVous}</span>
+            <span className="hidden 2xl:inline">{d.commun.prendreRdv}</span>
           </Link>
 
           <button

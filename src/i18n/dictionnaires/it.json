@@ -17,6 +17,7 @@
   },
   "commun": {
     "prendreRdv": "Prenota un appuntamento",
+    "rendezVous": "Appuntamento",
     "reserverSeance": "Prenota una seduta di osteopatia animale",
     "voirCertification": "Vedi la mia certificazione",
     "meContacter": "Contattami",
@@ -164,6 +165,88 @@
         }
       ]
     },
+    "approches": {
+      "surTitre": "Tecniche",
+      "titre": "I 6 approcci in osteopatia animale",
+      "liste": [
+        {
+          "titre": "Muscoloscheletrico (ossa, muscoli, articolazioni, legamenti, tendini)",
+          "paragraphes": [
+            "Attraverso questo aspetto dell'osteopatia lavoriamo per riequilibrare la struttura. Possono trattarsi di tecniche dette strutturali, miotensive o funzionali; dette dirette o indirette."
+          ],
+          "photosAlt": [
+            "Marie Salabert allunga l'arto anteriore di un cane in un prato",
+            "Marie Salabert mobilizza l'anteriore di un cavallo baio all'ingresso di un box",
+            "Mobilizzazione della mandibola di un gatto siamese",
+            "Marie Salabert mobilizza il posteriore di un cavallo nero in scuderia"
+          ]
+        },
+        {
+          "titre": "Tissutale",
+          "paragraphes": [
+            "Queste tecniche possono essere applicate su tutto il corpo. Mirano a migliorare il movimento di una struttura specifica o, più globalmente, a ripristinare una buona comunicazione tissutale da un capo all'altro dell'organismo."
+          ],
+          "photosAlt": [
+            "Marie Salabert posa le mani sul fianco di un cavallo baio al pascolo",
+            "Marie Salabert accanto a un pastore tedesco seduto nell'erba",
+            "Mani posate su un gatto nero sdraiato su una coperta",
+            "Marie Salabert tratta un maiale sdraiato in un cortile di fattoria"
+          ]
+        },
+        {
+          "titre": "Fasciale",
+          "paragraphes": [
+            "Il corpo è composto in gran parte da fasce, inizialmente descritte come mesoderma nello stadio embriologico. Durante lo sviluppo dell'embrione e del feto, questo mesoderma si differenzia in diversi tipi di fasce: superficiali (derma - ipoderma); intermedie (aponeurosi, sierose e mesi splancnici, involucri dei diversi vasi) e profonde (periostio, tendini, dura madre).",
+            "Negli ultimi anni le fasce sono oggetto di numerose ricerche scientifiche, ma affascinano altrettanto gli osteopati."
+          ],
+          "photosAlt": [
+            "Marie Salabert posa la mano sulla spalla di un cavallo al pascolo",
+            "Marie Salabert palpa l'anteriore di un cavallo baio in scuderia",
+            "Marie Salabert tratta un border collie sdraiato sulle piastrelle",
+            "Trattamento di un maiale sdraiato a terra in un cortile di fattoria"
+          ]
+        },
+        {
+          "titre": "Viscerale",
+          "paragraphes": [
+            "Ci interessiamo alla mobilità degli organi e alla loro attaccatura legamentosa. La mia tesi di fine studi verte in particolare sulla pratica dell'osteopatia sui mezzi di fissità dei diversi organi."
+          ],
+          "photosAlt": [
+            "Mani posate sul fianco di un cavallo baio",
+            "Marie Salabert tratta un pony sauro che mangia il fieno",
+            "Marie Salabert, sorridente, con un cane nero sdraiato sulla schiena",
+            "Marie Salabert posa le mani sull'addome di un puledro al pascolo"
+          ]
+        },
+        {
+          "titre": "Riflesso",
+          "paragraphes": [
+            "Le tecniche riflesse permettono di lavorare localmente sulla pelle, al fine di indurre un'azione in profondità nell'organismo. Apprezzo particolarmente la realizzazione di tratti mirati su determinate zone, che permettono un'azione al contempo localizzata e globale sul sistema linfatico, circolatorio e nervoso."
+          ],
+          "photosAlt": [
+            "Marie Salabert lavora sul garrese di un cavallo baio",
+            "Marie Salabert accanto a un maiale nero nella paglia",
+            "Marie Salabert tratta un pony Shetland dalla criniera folta"
+          ]
+        },
+        {
+          "titre": "Cranico",
+          "paragraphes": [
+            "L'approccio cranico è un metodo delicato dell'osteopatia che si interessa alle relazioni tra il cranio, la colonna vertebrale, il sacro, le membrane e i tessuti che assicurano la continuità del corpo.",
+            "Si basa su una valutazione accurata della mobilità dei tessuti e delle tensioni presenti nell'intero sistema. Attraverso un tocco preciso e delicato, l'osteopata ricerca le zone di restrizione della mobilità che possono influire sull'equilibrio funzionale dell'organismo.",
+            "Contrariamente a quanto si pensa, non si tratta di « far muovere le ossa del cranio », ma di percepire le tensioni presenti nell'intero sistema e di favorirne l'equilibrio. Grazie a un tocco preciso e delicato, l'osteopata individua le restrizioni di mobilità che possono disturbare il buon funzionamento dell'organismo."
+          ],
+          "photosAlt": [
+            "Mani posate ai lati della fronte di un cavallo",
+            "Marie Salabert posa le mani sulla testa di un pastore australiano",
+            "Mani posate sulla testa di un coniglio grigio",
+            "Marie Salabert tiene la testa di un vitello attraverso la rastrelliera"
+          ]
+        }
+      ],
+      "precedente": "Approccio precedente",
+      "suivante": "Approccio successivo"
+    },
     "rendezVous": {
       "surTitre": "Appuntamenti di osteopatia animale",
       "titre": "Come prenotare un appuntamento",
@@ -245,64 +328,6 @@
         }
       ]
     },
-    "etapes": {
-      "surTitre": "Seduta di osteopatia animale",
-      "titre": "Lo svolgimento di un consulto in 6 fasi",
-      "liste": [
-        {
-          "titre": "Anamnesi — raccolta delle informazioni sulla salute del vostro animale e creazione del vostro fascicolo",
-          "paragraphes": [
-            "Ogni consulto inizia con un momento di scambio per raccogliere le informazioni essenziali riguardanti il vostro animale e il motivo della seduta di osteopatia. Vengono affrontati la sua storia clinica, il suo stile di vita, il suo comportamento, la sua alimentazione, la sua attività e il suo ambiente, al fine di ottenere una visione globale della sua situazione.",
-            "Questa fase permette al vostro osteopata di ricollocare l'animale nel suo contesto di vita e di orientare l'esame clinico e osteopatico in modo adeguato.",
-            "Il fascicolo del vostro animale viene quindi creato e protetto tramite Djooka, il libretto sanitario digitale dedicato agli animali. Vi troverete i resoconti dei consulti così come le relative fatture."
-          ],
-          "lien": {
-            "libelle": "Scoprire Djooka",
-            "url": "https://djooka.com"
-          }
-        },
-        {
-          "titre": "Esame locomotorio e statico",
-          "paragraphes": [
-            "Il consulto prosegue con un'osservazione dinamica e statica del vostro animale.",
-            "L'analisi della locomozione permette di valutare la qualità degli spostamenti, la simmetria delle andature, le ampiezze di movimento nonché l'eventuale presenza di restrizioni di mobilità, compensazioni o irregolarità locomotorie.",
-            "L'osservazione statica completa questo esame ricercando eventuali squilibri posturali, scarichi di peso, atteggiamenti antalgici o adattamenti corporei che possano indicare un disagio funzionale."
-          ]
-        },
-        {
-          "titre": "La diagnosi di opportunità o di esclusione",
-          "paragraphes": [
-            "Viene poi eseguito un esame palpatorio approfondito per verificare che il vostro animale sia effettivamente idoneo per una presa in carico osteopatica.",
-            "Questa fase permette di individuare eventuali segnali d'allarme che richiedono un orientamento preliminare o complementare verso il vostro veterinario. L'osteopatia interviene sempre nel rispetto delle proprie competenze e in complemento al monitoraggio veterinario, quando quest'ultimo è indicato."
-          ]
-        },
-        {
-          "titre": "La diagnosi osteopatica",
-          "paragraphes": [
-            "Attraverso un esame manuale preciso, l'osteopata valuta la mobilità delle articolazioni, dei muscoli, delle fasce, dei visceri, del cranio e dei diversi tessuti dell'organismo.",
-            "Questa valutazione globale permette di individuare le restrizioni di mobilità, gli adattamenti funzionali e le compensazioni che possono contribuire agli squilibri osservati.",
-            "Un bilancio vi viene poi presentato e spiegato prima dell'attuazione del trattamento osteopatico."
-          ]
-        },
-        {
-          "titre": "Il trattamento osteopatico",
-          "paragraphes": [
-            "Il trattamento si basa esclusivamente su tecniche manuali adattate a ciascun animale, alla sua specie, alla sua età, alla sua attività e al motivo del consulto.",
-            "L'obiettivo è ripristinare una mobilità tissutale ottimale, migliorare la qualità del movimento, favorire le capacità di adattamento dell'organismo e contribuire al comfort funzionale dell'animale.",
-            "La mia pratica si basa su diversi approcci complementari: muscolo-scheletrici, miofasciali, tissutali, viscerali, liquidali, craniali, riflessi e tensegritivi."
-          ]
-        },
-        {
-          "titre": "I consigli dopo la seduta",
-          "paragraphes": [
-            "Al termine della seduta, vi viene trasmesso un resoconto, accompagnato da raccomandazioni personalizzate, adattate alle esigenze del vostro animale.",
-            "Questi consigli riguardano in particolare la gestione del riposo, la ripresa graduale dell'attività, gli eventuali esercizi consigliati nonché i punti di attenzione da osservare nei giorni successivi al consulto.",
-            "L'obiettivo è favorire un recupero ottimale e inserire la presa in carico in un percorso globale di salute e benessere, in collaborazione con il vostro veterinario quando necessario."
-          ]
-        }
-      ],
-      "photoAlt": "Marie Salabert durante un consulto di osteopatia su un maiale sulla paglia"
-    },
     "cta": "Al tuo fianco per la salute e il benessere del tuo animale",
     "meta": {
       "titre": "Osteopata animale Toulouse - Marie Salabert",
@@ -319,12 +344,12 @@
   "aPropos": {
     "meta": {
       "titre": "Informazioni sull'osteopatia animale - Marie Salabert Osteopata",
-      "description": "L'osteopatia animale: la sua storia, i suoi diversi approcci (muscoloscheletrico, tissutale, fasciale, viscerale, riflesso) e il suo quadro legale in Francia."
+      "description": "L'osteopatia animale: la sua storia, dagli inizi con gli equidi a oggi, e il suo quadro legale in Francia (Registro Nazionale di Attitudine, Codice rurale)."
     },
     "hero": {
       "surTitre": "La disciplina",
       "titre": "Informazioni sull'osteopatia animale",
-      "sousTitre": "La sua storia, i suoi approcci e il suo quadro legale in Francia."
+      "sousTitre": "La sua storia e il suo quadro legale in Francia."
     },
     "citation": {
       "texte": "« La salute è uno stato di completo benessere fisico, mentale e sociale e non consiste solamente in un'assenza di malattia o infermità. »",
@@ -361,50 +386,6 @@
         }
       ],
       "synthese": "L'osteopatia animale è una medicina integrativa detta naturale: grazie al suo approccio manuale, offre una visione globale diversa e complementare alla medicina veterinaria."
-    },
-    "approches": {
-      "surTitre": "Tecniche",
-      "titre": "I 5 approcci in osteopatia",
-      "liste": [
-        {
-          "titre": "Muscoloscheletrico (ossa, muscoli, articolazioni, legamenti, tendini)",
-          "alt": "Marie Salabert flette l'arto anteriore di un cavallo al pascolo",
-          "paragraphes": [
-            "Attraverso questo aspetto dell'osteopatia lavoriamo per riequilibrare la struttura. Possono trattarsi di tecniche dette strutturali, miotensive o funzionali; dette dirette o indirette."
-          ]
-        },
-        {
-          "titre": "Tissutale",
-          "alt": "Marie Salabert mobilizza il posteriore di un pastore tedesco",
-          "paragraphes": [
-            "Queste tecniche possono essere applicate su tutto il corpo. Mirano a migliorare il movimento di una struttura specifica o, più globalmente, a ripristinare una buona comunicazione tissutale da un capo all'altro dell'organismo."
-          ]
-        },
-        {
-          "titre": "Fasciale",
-          "alt": "Mani appoggiate lungo il dorso di un pastore tedesco seduto",
-          "paragraphes": [
-            "Il corpo è composto in gran parte da fasce, inizialmente descritte come mesoderma nello stadio embriologico. Durante lo sviluppo dell'embrione e del feto, questo mesoderma si differenzia in diversi tipi di fasce: superficiali (derma - ipoderma); intermedie (aponeurosi, sierose e mesi splancnici, involucri dei diversi vasi) e profonde (periostio, tendini, dura madre).",
-            "Negli ultimi anni le fasce sono oggetto di numerose ricerche scientifiche, ma affascinano altrettanto gli osteopati."
-          ]
-        },
-        {
-          "titre": "Viscerale",
-          "alt": "Una mano sostiene l'arto anteriore di un puledro, in primo piano",
-          "paragraphes": [
-            "Ci interessiamo alla mobilità degli organi e alla loro attaccatura legamentosa. La mia tesi di fine studi verte in particolare sulla pratica dell'osteopatia sui mezzi di fissità dei diversi organi."
-          ]
-        },
-        {
-          "titre": "Riflesso",
-          "alt": "Mani appoggiate sulla testa e sul collo di un cane giovane",
-          "paragraphes": [
-            "Le tecniche riflesse permettono di lavorare localmente sulla pelle, al fine di indurre un'azione in profondità nell'organismo. Apprezzo particolarmente la realizzazione di tratti mirati su determinate zone, che permettono un'azione al contempo localizzata e globale sul sistema linfatico, circolatorio e nervoso."
-          ]
-        }
-      ],
-      "precedente": "Approccio precedente",
-      "suivante": "Approccio successivo"
     },
     "legislation": {
       "surTitre": "Quadro normativo",
@@ -737,7 +718,7 @@
         "detail": "Cani, gatti, NAC"
       },
       {
-        "label": "Osteopatia per animali da reddito, fattoria e produzione animale",
+        "label": "Osteopatia rurale",
         "detail": "Bovini, ovini, caprini e suini"
       }
     ],
@@ -790,12 +771,69 @@
     "hero": {
       "surTitre": "Prestazioni",
       "titre": "I diversi tipi di consulto in osteopatia animale",
-      "sousTitre": "Cavalli, cani, gatti, NAC e animali da reddito, in Occitania"
+      "sousTitre": "Cavalli, cani, gatti, NAC e animali rurali"
     },
     "sommaireTitre": "I diversi tipi di consulto per ogni specie",
+    "etapes": {
+      "surTitre": "Seduta di osteopatia animale",
+      "titre": "Lo svolgimento di un consulto in 6 fasi",
+      "liste": [
+        {
+          "titre": "Anamnesi — raccolta delle informazioni sulla salute del vostro animale e creazione del vostro fascicolo",
+          "paragraphes": [
+            "Ogni consulto inizia con un momento di scambio per raccogliere le informazioni essenziali riguardanti il vostro animale e il motivo della seduta di osteopatia. Vengono affrontati la sua storia clinica, il suo stile di vita, il suo comportamento, la sua alimentazione, la sua attività e il suo ambiente, al fine di ottenere una visione globale della sua situazione.",
+            "Questa fase permette al vostro osteopata di ricollocare l'animale nel suo contesto di vita e di orientare l'esame clinico e osteopatico in modo adeguato.",
+            "Il fascicolo del vostro animale viene quindi creato e protetto tramite Djooka, il libretto sanitario digitale dedicato agli animali. Vi troverete i resoconti dei consulti così come le relative fatture."
+          ],
+          "lien": {
+            "libelle": "Scoprire Djooka",
+            "url": "https://djooka.com"
+          }
+        },
+        {
+          "titre": "Esame locomotorio e statico",
+          "paragraphes": [
+            "Il consulto prosegue con un'osservazione dinamica e statica del vostro animale.",
+            "L'analisi della locomozione permette di valutare la qualità degli spostamenti, la simmetria delle andature, le ampiezze di movimento nonché l'eventuale presenza di restrizioni di mobilità, compensazioni o irregolarità locomotorie.",
+            "L'osservazione statica completa questo esame ricercando eventuali squilibri posturali, scarichi di peso, atteggiamenti antalgici o adattamenti corporei che possano indicare un disagio funzionale."
+          ]
+        },
+        {
+          "titre": "La diagnosi di opportunità o di esclusione",
+          "paragraphes": [
+            "Viene poi eseguito un esame palpatorio approfondito per verificare che il vostro animale sia effettivamente idoneo per una presa in carico osteopatica.",
+            "Questa fase permette di individuare eventuali segnali d'allarme che richiedono un orientamento preliminare o complementare verso il vostro veterinario. L'osteopatia interviene sempre nel rispetto delle proprie competenze e in complemento al monitoraggio veterinario, quando quest'ultimo è indicato."
+          ]
+        },
+        {
+          "titre": "La diagnosi osteopatica",
+          "paragraphes": [
+            "Attraverso un esame manuale preciso, l'osteopata valuta la mobilità delle articolazioni, dei muscoli, delle fasce, dei visceri, del cranio e dei diversi tessuti dell'organismo.",
+            "Questa valutazione globale permette di individuare le restrizioni di mobilità, gli adattamenti funzionali e le compensazioni che possono contribuire agli squilibri osservati.",
+            "Un bilancio vi viene poi presentato e spiegato prima dell'attuazione del trattamento osteopatico."
+          ]
+        },
+        {
+          "titre": "Il trattamento osteopatico",
+          "paragraphes": [
+            "Il trattamento si basa esclusivamente su tecniche manuali adattate a ciascun animale, alla sua specie, alla sua età, alla sua attività e al motivo del consulto.",
+            "L'obiettivo è ripristinare una mobilità tissutale ottimale, migliorare la qualità del movimento, favorire le capacità di adattamento dell'organismo e contribuire al comfort funzionale dell'animale.",
+            "La mia pratica si basa su diversi approcci complementari: muscolo-scheletrici, miofasciali, tissutali, viscerali, liquidali, craniali, riflessi e tensegritivi."
+          ]
+        },
+        {
+          "titre": "I consigli dopo la seduta",
+          "paragraphes": [
+            "Al termine della seduta, vi viene trasmesso un resoconto, accompagnato da raccomandazioni personalizzate, adattate alle esigenze del vostro animale.",
+            "Questi consigli riguardano in particolare la gestione del riposo, la ripresa graduale dell'attività, gli eventuali esercizi consigliati nonché i punti di attenzione da osservare nei giorni successivi al consulto.",
+            "L'obiettivo è favorire un recupero ottimale e inserire la presa in carico in un percorso globale di salute e benessere, in collaborazione con il vostro veterinario quando necessario."
+          ]
+        }
+      ],
+      "photoAlt": "Marie Salabert durante un consulto di osteopatia su un maiale sulla paglia"
+    },
     "typesTitre": "I diversi tipi di consulto in osteopatia animale",
     "general": {
-      "surTitre": "Dove l'osteopatia animale può intervenire in prima istanza",
       "titre": "Un accompagnamento lungo tutta la vita del vostro animale",
       "intro": "L'osteopatia animale può integrarsi nel monitoraggio globale del vostro animale in diversi momenti chiave:"
     },
@@ -807,7 +845,8 @@
       "emotionnelTitre": "Un supporto emozionale e comportamentale",
       "emotionnelNote": "In aggiunta a un percorso con un educatore o un veterinario comportamentalista quando necessario.",
       "photoAlt": "Marie Salabert lavora sul dorso di un pastore tedesco seduto nell'erba",
-      "premiereIntentionTitre": "In prima istanza, secondo lo stato del vostro animale",
+      "premiereIntentionTitre": "Dove l'osteopatia animale può intervenire in prima istanza",
+      "premiereIntentionChapo": "In base allo stato di salute del vostro animale, vi indicheremo se è necessario consultare prima il vostro veterinario.",
       "premiereIntentionTexte1": "L'osteopatia animale può intervenire in prima istanza solo in base allo stato dell'animale: uno scambio telefonico approfondito vi permetterà di accertarvene; in caso contrario sarete indirizzati verso il vostro veterinario.",
       "premiereIntentionTexte2": "Questi stessi motivi possono essere trattati anche con una seduta di osteopatia dopo una visita dal vostro veterinario. In caso di dubbio, una valutazione preliminare del dolore è necessaria per svolgere la seduta nelle migliori condizioni."
     },

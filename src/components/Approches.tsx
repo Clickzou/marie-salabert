@@ -5,22 +5,23 @@ import type { ReactNode } from "react";
 import { useCarrousel } from "./useCarrousel";
 
 /**
- * « Les differentes approches en osteopathie » : carrousel horizontal de cartes
- * illustrees. Defilement natif (glisser au doigt, molette horizontale, clavier)
+ * « Les 6 approches en osteopathie animale » (accueil) : carrousel horizontal
+ * de cartes illustrees. Defilement natif (glisser au doigt, molette horizontale, clavier)
  * avec accroche par carte ; les fleches font defiler d'une carte.
  *
  * Le comportement du defilement automatique — et les conditions dans lesquelles
  * il se suspend ou s'arrete — vit dans `useCarrousel`, partage avec le carrousel
  * de photos de l'accueil.
  *
- * Les visuels ont ete generes avec fal.ai (voir scripts/gen-approches-images.mjs) :
- * gros plans de mains, sans visage, pour illustrer chaque technique.
+ * Chaque carte porte une mosaique des photos de seance choisies par la
+ * praticienne pour cette approche (trois ou quatre, d'especes differentes). Elles
+ * remplacent les visuels generes par IA de la premiere version.
  */
-export function AProposApproches({
+export function Approches({
   items,
   libelles,
 }: {
-  items: readonly { title: string; body: ReactNode; image?: string; alt?: string }[];
+  items: readonly { title: string; body: ReactNode; photos: readonly { src: string; alt: string }[] }[];
   libelles: { faitesDefiler: string; precedente: string; suivante: string };
 }) {
   const { debut, fin, defiler, reprendreLaMain, proprietesPiste, proprietesConteneur } =
@@ -39,18 +40,7 @@ export function AProposApproches({
             key={item.title}
             className="card card-hover flex w-[86%] shrink-0 snap-start flex-col overflow-hidden sm:w-[48%] xl:w-[calc(33.333%-1rem)]"
           >
-            {item.image && (
-              <div className="overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.alt ?? ""}
-                  width={1024}
-                  height={768}
-                  sizes="(max-width: 768px) 86vw, (max-width: 1280px) 48vw, 33vw"
-                  className="img-zoom aspect-[4/3] w-full object-cover"
-                />
-              </div>
-            )}
+            <Mosaique photos={item.photos} />
             <div className="flex flex-1 flex-col p-8 sm:p-9">
               <span
                 aria-hidden="true"
@@ -107,6 +97,34 @@ export function AProposApproches({
           ))}
         </div>
       </div>
+    </div>
+  );
+}
+
+/**
+ * Quatre photos : grille 2 x 2. Trois photos : la premiere occupe toute la
+ * hauteur a gauche, les deux autres s'empilent a droite. Le cadre reste au
+ * format 4/3 des cartes ; chaque vignette est recadree un peu au-dessus du
+ * centre, ou se trouvent le plus souvent la tete de l'animal et les mains.
+ */
+function Mosaique({ photos }: { photos: readonly { src: string; alt: string }[] }) {
+  const trois = photos.length === 3;
+  return (
+    <div className="grid aspect-[4/3] grid-cols-2 grid-rows-2 gap-1 overflow-hidden">
+      {photos.map((photo, i) => (
+        <div
+          key={photo.src}
+          className={`relative overflow-hidden ${trois && i === 0 ? "row-span-2" : ""}`}
+        >
+          <Image
+            src={photo.src}
+            alt={photo.alt}
+            fill
+            sizes="(max-width: 768px) 43vw, (max-width: 1280px) 24vw, 17vw"
+            className="img-zoom object-cover object-[50%_30%]"
+          />
+        </div>
+      ))}
     </div>
   );
 }
