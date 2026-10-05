@@ -29,7 +29,7 @@
     "suivant": "Successivo",
     "telephone": "Telefono",
     "secretariat": "Segreteria",
-    "joindreOsteopathe": "Per contattare direttamente la tua osteopata",
+    "joindreOsteopathe": "Per parlare direttamente con la tua osteopata",
     "numeroSecretariat": "Numero della segreteria",
     "zoneIntervention": "Zona di intervento",
     "sommaire": "Sommario",
@@ -249,7 +249,7 @@
           "paragraphes": [
             "L'approccio cranico è un metodo delicato dell'osteopatia che si interessa alle relazioni tra il cranio, la colonna vertebrale, il sacro, le membrane e i tessuti che assicurano la continuità del corpo.",
             "Si basa su una valutazione accurata della mobilità dei tessuti e delle tensioni presenti nell'intero sistema. Attraverso un tocco preciso e delicato, l'osteopata ricerca le zone di restrizione della mobilità che possono influire sull'equilibrio funzionale dell'organismo.",
-            "Contrariamente a quanto si pensa, non si tratta di « far muovere le ossa del cranio », ma di percepire le tensioni presenti nell'intero sistema e di favorirne l'equilibrio. Grazie a un tocco preciso e delicato, l'osteopata individua le restrizioni di mobilità che possono disturbare il buon funzionamento dell'organismo."
+            "Contrariamente a quanto si pensa, non si tratta di « far muovere le ossa del cranio », ma di percepire le tensioni presenti nell'intero sistema e di favorirne l'equilibrio."
           ],
           "photosAlt": [
             "Mani posate ai lati della fronte di un cavallo",
@@ -266,7 +266,7 @@
       "surTitre": "Appuntamenti di osteopatia animale",
       "titre": "Come prenotare un appuntamento",
       "paragraphes": [
-        "La presa di appuntamento avviene per telefono; in caso di indisponibilità, vi invitiamo a lasciarmi un SMS con il motivo della vostra chiamata, il vostro indirizzo e le vostre disponibilità.",
+        "La presa di appuntamento avviene per telefono: vi invito a lasciarmi preferibilmente un SMS.",
         "Da gennaio 2025, ho delegato la gestione della mia agenda alla mia assistente Anne-Sophie. Vi ricontatterà nel più breve tempo possibile per rispondere alle vostre domande e pianificare il vostro appuntamento. Resto comunque disponibile per uno scambio specifico riguardo al vostro animale, in caso di necessità."
       ],
       "tarif": "La tariffa dei consulti dipende dalla vostra localizzazione; per conoscere l'importo esatto, vi invitiamo a richiederlo al momento della presa di appuntamento.",
@@ -464,26 +464,26 @@
     },
     "hero": {
       "surTitre": "Contatto",
-      "titre": "Prendere appuntamento",
-      "sousTitre": "Un appuntamento, una domanda, una richiesta di preventivo o di collaborazione: per telefono, SMS, WhatsApp, e-mail o tramite il modulo."
+      "titre": "Prenota un appuntamento"
     },
     "meJoindre": {
-      "surTitre": "Contattarmi"
+      "surTitre": "Per contattarmi"
     },
     "cartes": {
-      "telephoneTexte": "In caso di indisponibilità, lasciatemi un SMS con il motivo, il vostro indirizzo e le vostre disponibilità.",
+      "telephoneTexte": "Vi invito a lasciarmi preferibilmente un SMS.",
       "zoneTexte": "Consulti a domicilio, circa 1h45 di strada intorno a Toulouse.",
-      "secretariatTexte": "In caso di indisponibilità, ti invitiamo a lasciare un SMS con il motivo della chiamata, il tuo indirizzo e la tua disponibilità. Ti ricontatteremo al più presto."
+      "secretariatTexte": "Per prendere un appuntamento, vi invito a contattare direttamente la mia assistente Anne-Sophie, incaricata della pianificazione dei miei appuntamenti, via SMS, e-mail o tramite questo modulo di contatto. In caso di indisponibilità, ti invitiamo a lasciare un SMS con il motivo della chiamata, il tuo indirizzo e la tua disponibilità. Ti ricontatteremo al più presto."
     },
     "formulaire": {
       "titre": "Modulo di contatto",
-      "intro": "Questo modulo permette di prenotare un appuntamento o di contattarmi per qualsiasi domanda. Per facilitare l'organizzazione degli spostamenti, indica nel messaggio:",
+      "intro": "Questo modulo permette di prenotare un appuntamento o di contattarmi per qualsiasi domanda sui consulti o sulle informazioni presenti nel sito.",
+      "intro2": "Per facilitare l'organizzazione degli spostamenti e consentire una presa in carico nel più breve tempo possibile, si consiglia di indicare nel messaggio:",
       "puces": [
-        "L'indirizzo dove si trova il vostro animale",
-        "Le vostre disponibilità",
-        "Il motivo del consulto"
+        "L'indirizzo dove si trova il vostro animale;",
+        "Le vostre disponibilità;",
+        "Il motivo del consulto."
       ],
-      "conclusion": "Ogni richiesta viene esaminata con attenzione."
+      "conclusion": "Ogni richiesta viene esaminata con attenzione e riceve una risposta nel più breve tempo possibile."
     },
     "secteur": {
       "phraseEspeces": "Interventi principali nei dipartimenti 31, 81, 82, 47, 46, 32, 33, 12, 09 e 11. Altri dipartimenti possono essere presi in considerazione in occasione delle tournée.",

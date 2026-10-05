@@ -275,13 +275,15 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Section tone="surface">
         <Container width="wide">
           <div className="grid items-center gap-12 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-20">
+            {/* Logo recadre au ras du disque (retour V2) : l'image d'origine
+                avait de larges marges blanches qui le rendaient illisible. */}
             <Reveal className="group/media mx-auto overflow-hidden rounded-full">
               <Image
-                src="/images/2026/10/logo-rond-marie-salabert.jpg"
+                src="/images/2026/10/logo-rond-marie-salabert-recadre.jpg"
                 alt={a.rendezVous.alt}
-                width={400}
-                height={400}
-                className="img-zoom h-[260px] w-[260px] object-cover"
+                width={523}
+                height={523}
+                className="img-zoom h-[280px] w-[280px] object-cover sm:h-[320px] sm:w-[320px]"
               />
             </Reveal>
             <Reveal delay={120}>

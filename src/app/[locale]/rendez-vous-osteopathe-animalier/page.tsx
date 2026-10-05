@@ -52,16 +52,34 @@ export default async function RendezVousPage({
         alt={c.heroAlt}
         eyebrow={c.hero.surTitre}
         title={c.hero.titre}
-        subtitle={c.hero.sousTitre}
       />
 
       {/* Coordonnees a gauche (colonne collante), formulaire a droite */}
       <Section>
         <Container width="full">
+          {/* Intro de la page (retour V2) : elle vaut pour le formulaire comme
+              pour le telephone, d'ou sa place au-dessus des deux colonnes. */}
+          <Reveal className="mb-14 max-w-3xl text-[16.5px] leading-[1.7] text-body lg:mb-20">
+            <p>{c.formulaire.intro}</p>
+            <p className="mt-4">{c.formulaire.intro2}</p>
+            <ul className="mt-4 space-y-2.5">
+              {c.formulaire.puces.map((item) => (
+                <li key={item} className="flex gap-3 text-[16px]">
+                  <span
+                    aria-hidden="true"
+                    className="mt-[10px] h-[5px] w-[5px] shrink-0 rounded-full bg-plum/45"
+                  />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4">{c.formulaire.conclusion}</p>
+          </Reveal>
+
           <div className="grid gap-12 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-20">
             <Reveal className="min-w-0 lg:sticky lg:top-32 lg:self-start">
-              {/* « Me joindre » sert de titre : la phrase d'accroche qui le
-                  suivait a ete retiree a la demande de la praticienne. */}
+              {/* « Pour me contacter » sert de titre : la phrase d'accroche qui
+                  le suivait a ete retiree a la demande de la praticienne. */}
               <h2 className="font-light uppercase text-[28px] leading-snug tracking-[0.05em] text-ink sm:text-[34px]">
                 {c.meJoindre.surTitre}
               </h2>
@@ -176,24 +194,7 @@ export default async function RendezVousPage({
                 <h2 className="font-light uppercase text-[24px] leading-snug text-ink sm:text-[28px] tracking-[0.05em]">
                   {c.formulaire.titre}
                 </h2>
-                <p className="mt-5 max-w-2xl text-[16.5px] leading-[1.7] text-body">
-                  {c.formulaire.intro}
-                </p>
-                <ul className="mt-5 space-y-2.5">
-                  {c.formulaire.puces.map((item) => (
-                    <li key={item} className="flex gap-3 text-[16px] text-body">
-                      <span
-                        aria-hidden="true"
-                        className="mt-[10px] h-[5px] w-[5px] shrink-0 rounded-full bg-plum/45"
-                      />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-5 text-[16.5px] leading-[1.7] text-body">
-                  {c.formulaire.conclusion}
-                </p>
-                <div className="mt-10">
+                <div className="mt-8">
                   <ContactForm d={d} />
                 </div>
               </div>

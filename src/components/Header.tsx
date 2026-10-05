@@ -197,9 +197,9 @@ export default function Header({ locale, d }: { locale: Locale; d: Dictionnaire 
                 : "bg-gold text-ink shadow-[0_10px_24px_-16px_rgba(22,23,26,0.8)] hover:bg-gold-dark"
             }`}
           >
-            {/* Libelle court sous 1536px, pour laisser la place au menu. */}
-            <span className="2xl:hidden">{d.commun.rendezVous}</span>
-            <span className="hidden 2xl:inline">{d.commun.prendreRdv}</span>
+            {/* Libelle complet a toutes les largeurs (retour V2) : les entrees
+                du menu se replient sur deux lignes pour lui faire de la place. */}
+            {d.commun.prendreRdv}
           </Link>
 
           <button

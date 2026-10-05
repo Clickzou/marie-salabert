@@ -29,7 +29,7 @@
     "suivant": "Suivant",
     "telephone": "Téléphone",
     "secretariat": "Secrétariat",
-    "joindreOsteopathe": "Pour joindre directement votre ostéopathe",
+    "joindreOsteopathe": "Pour échanger directement avec votre ostéopathe",
     "numeroSecretariat": "Numéro du Secrétariat",
     "zoneIntervention": "Zone d'intervention",
     "sommaire": "Sommaire",
@@ -249,7 +249,7 @@
           "paragraphes": [
             "L'approche crânienne est une méthode douce de l'ostéopathie qui s'intéresse aux relations entre le crâne, la colonne vertébrale, le sacrum, les membranes et les tissus qui assurent la continuité du corps.",
             "Elle repose sur une évaluation fine des mobilités tissulaires et des tensions présentes dans l'ensemble du système. À travers un toucher précis et délicat, l'ostéopathe recherche les zones de restriction de mobilité susceptibles d'influencer l'équilibre fonctionnel de l'organisme.",
-            "Contrairement aux idées reçues, il ne s'agit pas de « faire bouger les os du crâne », mais de percevoir les tensions présentes dans l'ensemble du système et de favoriser son équilibre. Grâce à un toucher précis et délicat, l'ostéopathe identifie les restrictions de mobilité pouvant perturber le bon fonctionnement de l'organisme."
+            "Contrairement aux idées reçues, il ne s'agit pas de « faire bouger les os du crâne », mais de percevoir les tensions présentes dans l'ensemble du système et de favoriser son équilibre."
           ],
           "photosAlt": [
             "Mains posées de part et d'autre du front d'un cheval",
@@ -266,7 +266,7 @@
       "surTitre": "Rendez-vous en ostéopathie animale",
       "titre": "Comment prendre rendez-vous ?",
       "paragraphes": [
-        "La prise de rendez-vous se fait par téléphone, en cas d'indisponibilité je vous invite à me laisser un SMS avec la raison de votre appel, votre adresse ainsi que vos disponibilités.",
+        "La prise de rendez-vous se fait par téléphone : je vous invite à me laisser de préférence un SMS.",
         "Depuis janvier 2025, j'ai délégué mon planning à mon assistante Anne-Sophie. Elle vous recontactera dans les meilleurs délais pour répondre à vos questions et planifier votre rendez-vous. Je reste cependant disponible pour échanger spécifiquement sur votre animal en cas de besoin."
       ],
       "tarif": "Le tarif des consultations dépend de votre localisation, pour connaître le montant exact nous vous invitons à le demander au moment de la prise de rendez-vous.",
@@ -459,31 +459,31 @@
   },
   "contact": {
     "meta": {
-      "titre": "Prendre rendez-vous - Marie Salabert, ostéopathe animalier",
+      "titre": "Prendre un rendez-vous - Marie Salabert, ostéopathe animalier",
       "description": "Rendez-vous ou question en ostéopathie animale autour de Toulouse : téléphone, SMS, WhatsApp, e-mail ou formulaire. Chevaux, chiens, chats, NAC, élevage."
     },
     "hero": {
       "surTitre": "Contact",
-      "titre": "Prendre rendez-vous",
-      "sousTitre": "Un rendez-vous, une question, une demande de devis ou de partenariat : par téléphone, SMS, WhatsApp, e-mail ou via le formulaire."
+      "titre": "Prendre un rendez-vous"
     },
     "meJoindre": {
-      "surTitre": "Me joindre"
+      "surTitre": "Pour me contacter"
     },
     "cartes": {
-      "telephoneTexte": "En cas d'indisponibilité, laissez-moi un SMS avec le motif, votre adresse et vos disponibilités.",
+      "telephoneTexte": "Je vous invite à me laisser de préférence un SMS.",
       "zoneTexte": "Consultations à domicile, environ 1h45 de route autour de Toulouse.",
-      "secretariatTexte": "En cas d'indisponibilité, nous vous invitons à laisser un SMS avec la raison de votre appel, votre adresse ainsi que vos disponibilités. Nous vous recontacterons dans les meilleurs délais."
+      "secretariatTexte": "Pour prendre un rendez-vous, je vous invite à contacter directement mon assistante Anne-Sophie, chargée de la planification de mes rendez-vous, par SMS, e-mail ou par le biais de ce formulaire de contact. En cas d'indisponibilité, nous vous invitons à laisser un SMS avec la raison de votre appel, votre adresse ainsi que vos disponibilités. Nous vous recontacterons dans les meilleurs délais."
     },
     "formulaire": {
       "titre": "Formulaire de contact",
-      "intro": "Ce formulaire vous permet de prendre rendez-vous ou de me contacter pour toute question. Pour faciliter l'organisation des déplacements, précisez dans votre message :",
+      "intro": "Ce formulaire vous permet de prendre rendez-vous ou de me contacter pour toute question concernant les consultations ou les informations présentées sur le site.",
+      "intro2": "Afin de faciliter l'organisation des déplacements et de permettre une prise en charge dans les meilleurs délais, il est recommandé de préciser dans votre message :",
       "puces": [
-        "L'adresse où se trouve votre animal",
-        "Vos disponibilités",
-        "Le motif de la consultation"
+        "L'adresse où se trouve votre animal ;",
+        "Vos disponibilités ;",
+        "Le motif de la consultation."
       ],
-      "conclusion": "Chaque demande est étudiée avec attention."
+      "conclusion": "Chaque demande est étudiée avec attention et une réponse est apportée dans les meilleurs délais."
     },
     "secteur": {
       "phraseEspeces": "Interventions principales dans les départements : 31, 81, 82, 47, 46, 32, 33, 12, 09 et 11. D'autres départements peuvent être envisagés lors de l'organisation de tournées.",

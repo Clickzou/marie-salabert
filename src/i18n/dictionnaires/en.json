@@ -29,7 +29,7 @@
     "suivant": "Next",
     "telephone": "Phone",
     "secretariat": "Reception desk",
-    "joindreOsteopathe": "To reach your osteopath directly",
+    "joindreOsteopathe": "To talk directly with your osteopath",
     "numeroSecretariat": "Reception desk number",
     "zoneIntervention": "Area covered",
     "sommaire": "Contents",
@@ -249,7 +249,7 @@
           "paragraphes": [
             "The cranial approach is a gentle osteopathic method that looks at the relationships between the skull, the spine, the sacrum, the membranes and the tissues that ensure the body's continuity.",
             "It relies on a fine assessment of tissue mobility and of the tensions present throughout the system. Through precise and delicate touch, the osteopath looks for areas of restricted mobility that may affect the functional balance of the body.",
-            "Contrary to popular belief, it is not about “moving the bones of the skull”, but about perceiving the tensions present throughout the system and supporting its balance. Through precise and delicate touch, the osteopath identifies the restrictions of mobility that may disturb the proper functioning of the body."
+            "Contrary to popular belief, it is not about “moving the bones of the skull”, but about perceiving the tensions present throughout the system and supporting its balance."
           ],
           "photosAlt": [
             "Hands placed on either side of a horse's forehead",
@@ -266,7 +266,7 @@
       "surTitre": "Animal osteopathy appointments",
       "titre": "How to book an appointment",
       "paragraphes": [
-        "Appointments are made by telephone; if I am unavailable, please leave me a text message with the reason for your call, your address and your availability.",
+        "Appointments are made by telephone: I recommend leaving me a text message, preferably.",
         "Since January 2025, I have delegated my schedule to my assistant, Anne-Sophie. She will contact you back as soon as possible to answer your questions and arrange your appointment. I nevertheless remain available to discuss your animal's specific situation whenever needed."
       ],
       "tarif": "Consultation fees depend on your location; to find out the exact amount, please ask when booking your appointment.",
@@ -464,26 +464,26 @@
     },
     "hero": {
       "surTitre": "Contact",
-      "titre": "Book an appointment",
-      "sousTitre": "An appointment, a question, a quote or a partnership request: by phone, text, WhatsApp, email or via the form."
+      "titre": "Book an appointment"
     },
     "meJoindre": {
-      "surTitre": "Get in touch"
+      "surTitre": "How to reach me"
     },
     "cartes": {
-      "telephoneTexte": "If I'm unavailable, please leave me a text message with the reason, your address and your availability.",
+      "telephoneTexte": "I recommend leaving me a text message, preferably.",
       "zoneTexte": "Home consultations, approximately 1h45 drive around Toulouse.",
-      "secretariatTexte": "If no one is available, please leave a text message with the reason for your call, your address and your availability. We will get back to you as soon as possible."
+      "secretariatTexte": "To book an appointment, please contact my assistant Anne-Sophie directly, who manages my schedule, by text message, email or through this contact form. If no one is available, please leave a text message with the reason for your call, your address and your availability. We will get back to you as soon as possible."
     },
     "formulaire": {
       "titre": "Contact form",
-      "intro": "This form lets you book an appointment or reach me with any question. To help plan visits, please include in your message:",
+      "intro": "This form lets you book an appointment or reach me with any question about the consultations or the information on this site.",
+      "intro2": "To help plan my travels and see your animal as soon as possible, please include in your message:",
       "puces": [
-        "The address where your animal is located",
-        "Your availability",
-        "The reason for the consultation"
+        "The address where your animal is located;",
+        "Your availability;",
+        "The reason for the consultation."
       ],
-      "conclusion": "Every request is considered with care."
+      "conclusion": "Every request is considered with care and answered as soon as possible."
     },
     "secteur": {
       "phraseEspeces": "Main coverage in departments 31, 81, 82, 47, 46, 32, 33, 12, 09 and 11. Other departments may be considered when tours are organised.",
