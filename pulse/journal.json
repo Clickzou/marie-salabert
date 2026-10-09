@@ -1,0 +1,111 @@
+[
+  {
+    "id": "faq-donnees-structurees-langue-2026-10",
+    "titre": "Questions fréquentes en anglais et en italien : décrire les réponses dans la bonne langue pour Google et les IA",
+    "probleme": "Constat d'audit du 09/10/2026 : sur les versions anglaise et italienne de la page des questions fréquentes, la description lue par Google et les assistants IA liste les 22 questions et réponses en français (« Comment devenir ostéopathe animalier ? Faut-il être vétérinaire ou ostéopathe DO au préalable ? »…), alors que le texte affiché est traduit. La page anglaise est pourtant la plus visible du site en anglais (Search Console 90 jours : 8 affichages, place 2,6).",
+    "correction": "Dans src/app/[locale]/faq/page.tsx : construire le bloc FAQPage à partir des questions et réponses de la langue de la page (dictionnaire en/it, champ reponse), au lieu de la liste française ; la version française reste identique. Aucun texte visible modifié. Un fichier.",
+    "type": "technique",
+    "qui": "pulse",
+    "statut": "prevue",
+    "prevue_le": "2026-10-12",
+    "faite_le": null,
+    "verifiee_le": null,
+    "mesure": "citation",
+    "questions": []
+  },
+  {
+    "id": "nom-du-site-orthographe-2026-10",
+    "titre": "Corriger l'orthographe du nom du site dans la description lue par Google et les IA",
+    "probleme": "Constat d'audit du 09/10/2026 : toutes les pages déclarent comme nom de site « Ostheopathie animale Toulouse » (faute sur « Ostéopathie »), lu par Google et les assistants IA dans les données structurées, et prononcé par les lecteurs d'écran sur le logo. L'activité s'appelle « Marie Salabert Ostéopathie Animale ».",
+    "correction": "Dans src/lib/site.ts : remplacer la valeur de name par « Marie Salabert Ostéopathie Animale ». Le changement se reporte seul sur les données structurées (bloc WebSite), le nom de site de partage et l'étiquette du logo dans l'en-tête et le pied de page. Un fichier.",
+    "type": "technique",
+    "qui": "pulse",
+    "statut": "prevue",
+    "prevue_le": "2026-10-12",
+    "faite_le": null,
+    "verifiee_le": null,
+    "mesure": "citation",
+    "questions": [
+      "Que sais-tu de Marie Salabert, ostéopathe animalier près de Toulouse ?"
+    ]
+  },
+  {
+    "id": "ga4-verifier-identifiant-2026-10",
+    "titre": "Statistiques de visites : vérifier le réglage du compte Google Analytics",
+    "probleme": "Au 06/10/2026, la propriété Google Analytics 556982490 n'a remonté aucune visite, alors que la Search Console compte 26 clics vers la page d'accueil du 09/07 au 06/10/2026. Le code du site est en place (constat d'audit du 09/10/2026) : identifiant G-4GSH30VZPE, chargé après « Accepter » sur le bandeau cookies, comme l'exige la CNIL.",
+    "correction": "Clickzou vérifie dans Google Analytics que le flux web de la propriété 556982490 porte l'identifiant G-4GSH30VZPE et l'adresse www.osteopathie-animale-toulouse.fr, puis contrôle une visite en temps réel après avoir accepté les cookies. Si l'identifiant diffère, la correction du site sera inscrite au journal.",
+    "type": "technique",
+    "qui": "vous",
+    "statut": "prevue",
+    "prevue_le": "2026-10-12",
+    "faite_le": null,
+    "verifiee_le": null,
+    "mesure": "citation",
+    "questions": []
+  },
+  {
+    "id": "llms-txt-cadre-legal-2026-10",
+    "titre": "Fiche de présentation pour les IA : préciser le cadre légal et les lieux de consultation",
+    "probleme": "Constat d'audit du 09/10/2026 sur la fiche de présentation destinée aux IA : elle écrit que l'inscription au RNA est la « condition légale pour exercer l'ostéopathie animale en France depuis 2011 », alors que la page À propos du site date cette exigence des décrets du 19 avril 2017 (2011 étant la reconnaissance de la pratique dans le code rural) ; elle ne dit pas que Marie Salabert n'est pas vétérinaire, parle de consultations « à domicile » sans mentionner l'écurie, et ne renvoie vers aucune réponse des questions fréquentes. Relevé Pulse du 05/10/2026 : 0 réponse sur 7 cite le site sur « Qui a le droit de pratiquer l'ostéopathie animale en France ? », 1 sur 6 sur l'ostéopathe équin qui se déplace à l'écurie.",
+    "correction": "Dans public/llms.txt seulement : reprendre la chronologie de la page À propos (2011 : reconnaissance de la pratique, article L243-3, 12° du code rural ; 2017 : épreuve nationale d'aptitude et inscription au RNA tenu par le Conseil national de l'Ordre des vétérinaires pour les non-vétérinaires) ; ajouter « Elle n'est pas vétérinaire » ; écrire « à domicile ou à l'écurie » ; ajouter sous la FAQ ses questions phares (ordonnance, remboursement, devenir ostéopathe animalier). Faits de la fiche et du site uniquement.",
+    "type": "technique",
+    "qui": "pulse",
+    "statut": "prevue",
+    "prevue_le": "2026-10-19",
+    "faite_le": null,
+    "verifiee_le": null,
+    "mesure": "citation",
+    "questions": [
+      "Qui a le droit de pratiquer l'ostéopathie animale en France ?",
+      "Ostéopathe équin qui se déplace à l'écurie autour de Toulouse"
+    ]
+  },
+  {
+    "id": "refonte-rapport-cgaaer-2026-10",
+    "titre": "Retravailler l'article « Publication du rapport de la CGAAER sur l’ostéopathie animale »",
+    "probleme": "Search Console 90 jours (09/07 au 06/10/2026) : 0 affichage pour cet article en ligne depuis mars 2024. Relevé Pulse du 05/10/2026 : aucune des 7 réponses des IA ne cite le site sur « Qui a le droit de pratiquer l'ostéopathie animale en France ? », alors que l'article parle déjà de l'épreuve d'aptitude et du rôle de l'Ordre des vétérinaires.",
+    "correction": "Refonte dans les trois langues à la fois (fichiers .mdx, .en.mdx, .it.mdx), même adresse : titre et description réécrits autour de la question ; sous un intertitre qui la reprend, une réponse courte en tête (vétérinaires, et non-vétérinaires reçus à l'épreuve nationale d'aptitude et inscrits au RNA tenu par le Conseil national de l'Ordre des vétérinaires depuis les décrets de 2017 ; Marie Salabert y est inscrite sous le numéro OA 801 et n'est pas vétérinaire ; obligation d'orienter vers le vétérinaire) ; les 7 recommandations et le lien du rapport conservés ; liens vers l'accueil, la page de certification RNA, la page À propos (cadre légal), les consultations et la prise de rendez-vous, et vers l'article « Devenir ostéopathe animalier » (champ related des deux côtés) ; date de mise à jour visible et dans les données structurées. Faits de la fiche et du site seulement.",
+    "type": "contenu",
+    "qui": "pulse",
+    "statut": "prevue",
+    "prevue_le": "2026-10-19",
+    "faite_le": null,
+    "verifiee_le": null,
+    "mesure": "citation",
+    "questions": [
+      "Qui a le droit de pratiquer l'ostéopathie animale en France ?"
+    ],
+    "contenu": {
+      "nature": "refonte",
+      "page": "/rapport-cgaaer-osteopathie-animale",
+      "cible": null,
+      "pourquoi": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré (0 affichage du 9 juillet au 6 octobre). Nous le réécrivons autour d'une question que l'on pose vraiment aux IA, « Qui a le droit de pratiquer l'ostéopathie animale en France ? », à laquelle aucune des 7 réponses relevées le 5 octobre ne cite encore votre site.",
+      "avant": { "du": "2026-07-09", "au": "2026-10-06", "impressions": 0, "clics": 0, "position": null },
+      "apres": null
+    }
+  },
+  {
+    "id": "refonte-devenir-osteopathe-2026-10",
+    "titre": "Retravailler l'article « Devenir ostéopathe animalier – Thotis x UFEOA »",
+    "probleme": "Search Console 90 jours (09/07 au 06/10/2026) : 0 affichage pour cet article en ligne depuis mars 2020, qui ne compte que quelques lignes de présentation d'une vidéo. Relevé Pulse du 05/10/2026 : aucune des 6 réponses des IA ne cite le site sur « Comment devenir ostéopathe animalier en France ? ».",
+    "correction": "Refonte dans les trois langues à la fois (fichiers .mdx, .en.mdx, .it.mdx), même adresse : titre et description réécrits autour de la question ; réponse courte en tête sous un intertitre qui la reprend (trois voies, cursus de cinq ans en école, épreuve nationale d'aptitude du Conseil national de l'Ordre des vétérinaires puis inscription au RNA, diplôme inter-écoles pour les vétérinaires), reformulée et non recopiée depuis les questions fréquentes ; le parcours de Marie Salabert tiré de la fiche (cinq années de formation, présidente de l'UFEOA de 2017 à 2020, inscrite au RNA sous le numéro OA 801) ; la vidéo Thotis x UFEOA conservée ; liens vers l'accueil, la page À propos, la page de certification RNA, les questions fréquentes, l'article sur le rapport de la CGAAER et « Mon parcours au sein de l’UFEOA » ; date de mise à jour visible et dans les données structurées. Faits de la fiche et du site seulement.",
+    "type": "contenu",
+    "qui": "pulse",
+    "statut": "prevue",
+    "prevue_le": "2026-10-26",
+    "faite_le": null,
+    "verifiee_le": null,
+    "mesure": "citation",
+    "questions": [
+      "Comment devenir ostéopathe animalier en France ?"
+    ],
+    "contenu": {
+      "nature": "refonte",
+      "page": "/devenir-osteopathe-animalier-thotis-ufeoa",
+      "cible": null,
+      "pourquoi": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré (0 affichage du 9 juillet au 6 octobre). Nous le réécrivons pour qu'il réponde clairement à « Comment devenir ostéopathe animalier en France ? », une question que l'on pose aux IA et à laquelle aucune des 6 réponses relevées le 5 octobre ne cite encore votre site.",
+      "avant": { "du": "2026-07-09", "au": "2026-10-06", "impressions": 0, "clics": 0, "position": null },
+      "apres": null
+    }
+  }
+]
